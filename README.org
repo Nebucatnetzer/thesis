@@ -1,0 +1,7 @@
+#+title: Thesis
+#+setupfile: ~/nextcloud/03_documents/org/settings/html_theme/setup/theme-readtheorg.setup
+#+author: Andreas Zweili
+#+latex_header: \input{/home/andreas/git_repos/notes/settings/latex/style}
+
+This repository contains the documentation and code for my "thesis" at
+the IBZ school.
