@@ -1,0 +1,69 @@
+#+title: Projektantrag
+#+setupfile: ~/nextcloud/03_documents/org/settings/html_theme/setup/theme-readtheorg.setup
+#+author: Andreas Zweili
+#+latex_class: article
+#+latex_class_options: [a4paper,11pt]
+#+latex_header: \input{general/style}
+#+otions: H:5 todo:t
+#+language: de
+#+startup: align
+
+* Zweck des Dokuments
+
+Im Rahmen einer Diplomarbeit an den IBZ-Schulen soll ein Ansatz
+entwickelt werden, durch welchen ein kleiner Anbieter von
+Serviceleistungen seine Marktleistungen korrekt strategisch ausrichten
+und erfolgreich in den Markt bringen kann.
+
+Das Dokument dient als Grundlage für die Freigabe der Diplomarbeit.
+
+* Ausgangslage
+
+* Projektrahmenbedingungen
+
+Das Projekt ist im Rahmen einer Diplomarbeit an den IBZ-Schulen zu
+realisieren. Daraus ergeben sich Ansprüche an:
+
+1. Komplexität des Vorhabens
+2. Umfang des Vorhabens (250 Stunden)
+
+Die Begleitung der Diplomarbeit ist durch die IBZ sichergestellt.
+
+* Zielsetzung
+
+#+CAPTION: Projektziele
+#+ATTR_LATEX: :align |p{9cm}|p{1.5cm}|p{2cm}|
+#+NAME: tab:projektziele
+|---------------------------------------+--------------------------------+--------------------------------------------------------|
+| *Zielsetzung*\cellcolor[HTML]{C0C0C0} | *Muss*\cellcolor[HTML]{C0C0C0} | *Wunsch* (1-5, 5=sehr wichtig)\cellcolor[HTML]{C0C0C0} |
+|---------------------------------------+--------------------------------+--------------------------------------------------------|
+|                                       |                                |                                                        |
+|---------------------------------------+--------------------------------+--------------------------------------------------------|
+|                                       |                                |                                                        |
+|---------------------------------------+--------------------------------+--------------------------------------------------------|
+|                                       |                                |                                                        |
+|---------------------------------------+--------------------------------+--------------------------------------------------------|
+|                                       |                                |                                                        |
+|---------------------------------------+--------------------------------+--------------------------------------------------------|
+
+* Mittelbedarf
+
+Für die Arbeit sind, ausser den 250h des Diplomanden, keine weiteren
+Mittel notwendig.
+
+* Planung
+
+Die Arbeit ist innert 14 Wochen (Vorgabe IBZ-Schulen) abzuwickeln. Die
+Verteilung der anstehenden Arbeiten auf die 14 Wochen ist durch den
+Diplomanden vor dem Start der Phase Voranalyse zu erledigen.
+
+* Wirtschaftlichkeit
+
+* Konsequenzen
+
+Keine speziellen Konsequenzen in dem Vorhaben bekannt.
+
+* Antrag
+
+Der Diplomand beantragt die Freigabe der Phase Voranalyse, diese
+startet mit dem Kick-off vom 10.12.2018.

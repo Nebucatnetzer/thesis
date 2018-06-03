@@ -1,0 +1,43 @@
+\documentclass[a4paper, 11pt]{article}
+\include{general/style}
+\bibliography{general/bibliography}
+%\include{glossary}
+\begin{document}
+
+\include{projektantrag_titlepage}
+
+\newpage
+\microtypesetup{protrusion=false} % disables protrusion locally in the document
+\tableofcontents % prints Table of Contents
+\microtypesetup{protrusion=true} % enables protrusion
+\newpage
+
+
+\include{projektantrag}
+
+% \newpage
+% \nocite{*}
+% \printbibliography[heading=bibintoc]
+
+% \newpage
+% \microtypesetup{protrusion=false}
+% \listoffigures
+% \microtypesetup{protrusion=true}
+% \
+% \newpage
+
+% \microtypesetup{protrusion=false}
+% \listoftables
+% \microtypesetup{protrusion=true}
+% \
+% \newpage
+
+
+%\printglossaries
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
