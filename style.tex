@@ -1,0 +1,142 @@
+%Enable URL highlighting
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+\urlstyle{same}
+
+%glossary
+\usepackage[acronym,toc]{glossaries}
+\makeglossaries
+\setglossarystyle{altlistgroup}
+
+\usepackage{xparse}
+\DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {
+  \newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},
+    description={#6},#1
+  }
+  \makeglossaries
+  \newacronym[see={[Glossary:]{gls-#3}},#2]{#3}{#4}{#5\glsadd{gls-#3}}
+}
+
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{0ex}%
+    {-3.25ex plus -1ex minus -0.2ex}%
+    {0.3ex plus 0.2ex}%
+    {\normalfont\normalsize\bfseries}}
+\makeatother
+
+%page dimensions
+\usepackage[a4paper,includeheadfoot, top=2.5cm, bottom=2.5cm, left=3.5cm, right=3cm]{geometry}
+
+%Font settings
+\usepackage{tgpagella}
+\usepackage[T1]{fontenc}
+
+%Support for German
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+%number everything down to paragraphs
+\setcounter{secnumdepth}{5}
+
+%Enable Microtyping which improves justification
+\usepackage{microtype}
+
+%header
+\setlength{\headheight}{15pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\nouppercase{\leftmark}}
+\rhead{\includegraphics[width=1cm]{pictures/ibzlogo.eps}}
+\cfoot{\thepage}
+
+%footnotes
+\setlength{\skip\footins}{0.5cm}
+\usepackage[bottom,hang]{footmisc}
+
+%each section should start on a new page
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+%European style paragraphs
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+%Make line spacing bigger
+\linespread{1.3}
+
+%Make whitespace in tables bigger
+\renewcommand\arraystretch{1.5}
+
+%Enable colours for tables
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+
+%Needed to rotate graphics and tables
+\usepackage{rotating}
+\usepackage{pdflscape}
+
+%Support for images
+\usepackage{graphicx}
+\usepackage{float}
+
+%Material theme colours
+\definecolor{red}{HTML}{F44336}
+\definecolor{pink}{HTML}{E91E63}
+\definecolor{purple}{HTML}{9C27B0}
+%\definecolor{blue}{HTML}{2196F3}
+\definecolor{brown}{HTML}{795548}
+\definecolor{cyan}{HTML}{00BCD4}
+\definecolor{darkgray}{HTML}{616161}
+\definecolor{gray}{HTML}{9E9E9E}
+\definecolor{lightgray}{HTML}{E0E0E0}
+\definecolor{lime}{HTML}{CDDC39}
+\definecolor{olive}{HTML}{827717}
+\definecolor{orange}{HTML}{FF9800}
+\definecolor{teal}{HTML}{009688}
+\definecolor{yellow}{HTML}{FFEB3B}
+\definecolor{green}{HTML}{388E3C}
+
+%Support for Code Snippets and Syntax Highlighting
+\usepackage{listings}
+\usepackage{color}
+\usepackage{sourcecodepro}
+\lstset{
+  basicstyle=\ttfamily,
+  language=bash,
+  breaklines,
+  literate={ö}{{\"o}}1
+           {ä}{{\"a}}1
+           {ü}{{\"u}}1,
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{green},    % comment style
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  keywordstyle=\color{blue},       % keyword style
+  stringstyle=\color{purple},     % string literal style
+  showstringspaces=false,          % Removes the strange symboles where spaces are
+}
+
+% Listing with a box around it
+\usepackage[most]{tcolorbox}
+\newtcblisting{sexylisting}[2][]{
+  sharp corners,
+  fonttitle=\bfseries,
+  colframe=gray,
+  listing only,
+  listing options={basicstyle=\ttfamily,language=bash},
+  title=\thetcbcounter #2, #1
+}
+\usepackage{tocbibind}
+\usepackage[citestyle=verbose,bibstyle=numeric,sorting=none,backend=bibtex8]{biblatex}
+\DefineBibliographyStrings{german}{%
+  references = {Referenzen},
+}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:
