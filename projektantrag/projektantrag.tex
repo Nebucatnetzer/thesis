@@ -1,19 +1,53 @@
+% Created 2018-07-09 Mo 20:55
+% Intended LaTeX compiler: pdflatex
+\documentclass[a4paper,11pt]{article}
+
+\input{general/style}
+\author{Andreas Zweili}
+\date{\today}
+\title{Projektantrag}
+\hypersetup{
+ pdfauthor={Andreas Zweili},
+ pdftitle={Projektantrag},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.2 (Org mode 9.1.13)},
+ pdflang={Germanb}}
+\begin{document}
+
+\maketitle\newpage
+\tableofcontents
+\newpage
 
 \section{Zweck des Dokuments}
-\label{sec:orgccc22f9}
-
-Im Rahmen einer Diplomarbeit an den IBZ-Schulen soll ein Ansatz
-entwickelt werden, durch welchen ein kleiner Anbieter von
-Serviceleistungen seine Marktleistungen korrekt strategisch ausrichten
-und erfolgreich in den Markt bringen kann.
+\label{sec:org94b8dea}
+Im Rahmen einer Diplomarbeit an den IBZ-Schulen soll die Grundlage für
+ein neues Open Source Projekt geschaffen werden sowie die Entwicklung
+der dazugehörigen Backup Applikation gestartet werden. Die Applikation
+soll es normalen Usern ermöglichen mit der Backup Software BorgBackup
+zu interagieren.
 
 Das Dokument dient als Grundlage für die Freigabe der Diplomarbeit.
 
 \section{Ausgangslage}
-\label{sec:org57c9c5b}
+\label{sec:org42ce4b5}
+
+Das Open Source Projekt \url{https://www.borgbackup.org/} entwickelt eine
+Backup Software welche es einem ermöglicht Backups auf ein externes
+Laufwerk oder einen externen Server zu machen. Für externe Server die
+man nicht selber kontrolliert unterstützt BorgBackup auch eine starke
+Verschlüsselung. Als weiteres wichtiges Feature unterstützt BorgBackup
+auch Deduplikation was es einem erlaubt sehr viele Snapshots zu haben
+ohne das der Speicher allzu fest wächst.
+
+Als freie Software und Aufgrund der interessanten Features wäre
+BorgBackup auch für weniger erfahrene User sehr nützlich. Leider gibt
+es für BorgBackup zur Zeit kein klassisches grafisches User Interface
+mit dem ein User interagieren kann. BorgBackup wird komplett über die
+Kommando Zeile gesteuert.
 
 \section{Projektrahmenbedingungen}
-\label{sec:orgf9f1ee2}
+\label{sec:org8a07e68}
 
 Das Projekt ist im Rahmen einer Diplomarbeit an den IBZ-Schulen zu
 realisieren. Daraus ergeben sich Ansprüche an:
@@ -25,8 +59,21 @@ realisieren. Daraus ergeben sich Ansprüche an:
 
 Die Begleitung der Diplomarbeit ist durch die IBZ sichergestellt.
 
+Als nebenläufiges Ziel soll mit dieser Arbeit auch die Verbreitung von
+freier Softare gefördert werden. Dies wird insbesondere dadurch
+erreicht das die Software selbst unter der GNU Public License Version
+3 veröffentlicht wird. Wenn möglich sollen während der Entwicklung
+auch hauptsächlich freie Software verwendet werden. Die gesamte Arbeit
+wird zudem zu jedem Zeitpunkt öffentlich einsehbar sein. Der Quelltext
+der Dokumentation ist unter diesem Link erreichbar:
+\url{https://git.2li.ch/Nebucatnetzer/thesis}
+
+Das Repository für den Code der Applikation wird während der Umsetzung
+erstellt. Die Dokumentation und der Code werden getrennt da das
+Projekt auch nach der Abgabe weiter existieren soll.
+
 \section{Zielsetzung}
-\label{sec:orgef138bc}
+\label{sec:org0692617}
 
 \begin{table}[htbp]
 \centering
@@ -43,34 +90,34 @@ Die Begleitung der Diplomarbeit ist durch die IBZ sichergestellt.
  &  & \\
 \hline
 \end{tabular}
-\caption{\label{tab:org74fa125}
+\caption{\label{tab:orgba698b7}
 Projektziele}
 
 \end{table}
 
 \section{Mittelbedarf}
-\label{sec:org06f92e4}
+\label{sec:orgc335aa3}
 
 Für die Arbeit sind, ausser den 250h des Diplomanden, keine weiteren
 Mittel notwendig.
 
 \section{Planung}
-\label{sec:orgf74b04c}
+\label{sec:orgb688b2c}
 
 Die Arbeit ist innert 14 Wochen (Vorgabe IBZ-Schulen) abzuwickeln. Die
 Verteilung der anstehenden Arbeiten auf die 14 Wochen ist durch den
 Diplomanden vor dem Start der Phase Voranalyse zu erledigen.
 
 \section{Wirtschaftlichkeit}
-\label{sec:org806cf92}
+\label{sec:org18c6ec8}
+Die Wirtschaftlichkeit ist für dieses Projekt nicht relevant.
 
 \section{Konsequenzen}
-\label{sec:org579a335}
-
+\label{sec:org6bb20d7}
 Keine speziellen Konsequenzen in dem Vorhaben bekannt.
 
 \section{Antrag}
-\label{sec:orgc2405c9}
-
+\label{sec:org3097edf}
 Der Diplomand beantragt die Freigabe der Phase Voranalyse, diese
 startet mit dem Kick-off vom 10.12.2018.
+\end{document}
