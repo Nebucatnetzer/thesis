@@ -416,3 +416,4 @@ TSWLatexianTemp*
 
 *.pdf
 auto
+*.el
