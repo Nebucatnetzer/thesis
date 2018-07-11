@@ -1,4 +1,4 @@
-% Created 2018-07-09 Mo 20:55
+% Created 2018-07-11 Mi 21:57
 % Intended LaTeX compiler: pdflatex
 \documentclass[a4paper,11pt]{article}
 
@@ -20,7 +20,7 @@
 \newpage
 
 \section{Zweck des Dokuments}
-\label{sec:org94b8dea}
+\label{sec:orgab10096}
 Im Rahmen einer Diplomarbeit an den IBZ-Schulen soll die Grundlage für
 ein neues Open Source Projekt geschaffen werden sowie die Entwicklung
 der dazugehörigen Backup Applikation gestartet werden. Die Applikation
@@ -30,15 +30,18 @@ zu interagieren.
 Das Dokument dient als Grundlage für die Freigabe der Diplomarbeit.
 
 \section{Ausgangslage}
-\label{sec:org42ce4b5}
-
+\label{sec:org0593429}
 Das Open Source Projekt \url{https://www.borgbackup.org/} entwickelt eine
 Backup Software welche es einem ermöglicht Backups auf ein externes
 Laufwerk oder einen externen Server zu machen. Für externe Server die
 man nicht selber kontrolliert unterstützt BorgBackup auch eine starke
 Verschlüsselung. Als weiteres wichtiges Feature unterstützt BorgBackup
-auch Deduplikation was es einem erlaubt sehr viele Snapshots zu haben
-ohne das der Speicher allzu fest wächst.
+auch Deduplikation auf Block Ebene was es einem erlaubt sehr viele
+Snapshots zu haben ohne das der Speicher allzu fest wächst.
+Desweiteren erlaubt die Deduplikation von BorgBackup dem User grosse
+Dateien zu bearbeiten ohne das bei einem weiteren Backup die ganze
+Datei erneut gespeichert werden muss. Es werden dann nur die effektiv
+veränderten Blöcke gespeichert.
 
 Als freie Software und Aufgrund der interessanten Features wäre
 BorgBackup auch für weniger erfahrene User sehr nützlich. Leider gibt
@@ -46,8 +49,11 @@ es für BorgBackup zur Zeit kein klassisches grafisches User Interface
 mit dem ein User interagieren kann. BorgBackup wird komplett über die
 Kommando Zeile gesteuert.
 
+Aus diesem Grund soll der Student im Rahmen der Projektarbeit eine
+grafische Oberfläche für BorgBackup entwickeln.
+
 \section{Projektrahmenbedingungen}
-\label{sec:org8a07e68}
+\label{sec:org9c4e3fa}
 
 Das Projekt ist im Rahmen einer Diplomarbeit an den IBZ-Schulen zu
 realisieren. Daraus ergeben sich Ansprüche an:
@@ -65,59 +71,126 @@ erreicht das die Software selbst unter der GNU Public License Version
 3 veröffentlicht wird. Wenn möglich sollen während der Entwicklung
 auch hauptsächlich freie Software verwendet werden. Die gesamte Arbeit
 wird zudem zu jedem Zeitpunkt öffentlich einsehbar sein. Der Quelltext
-der Dokumentation ist unter diesem Link erreichbar:
+der Dokumentation ist bereits unter diesem Link erreichbar:
 \url{https://git.2li.ch/Nebucatnetzer/thesis}
 
 Das Repository für den Code der Applikation wird während der Umsetzung
-erstellt. Die Dokumentation und der Code werden getrennt da das
-Projekt auch nach der Abgabe weiter existieren soll.
+erstellt. Die Dokumentation und der Code werden in getrennten
+Repositories veröffentlicht, da das Projekt auch nach der Abgabe
+weiter existieren soll.
+
+Die Entwicklung wird hauptsächlich auf einem Linux System stattfinden.
+Da BorgBackup einerseitz hauptsächlich auf Unix Systeme ausgelegt ist
+und anderseits die Hauptzielgruppe des Projektes auch auf Linux Usern
+liegt. Trotzdem sollen im Projekt Cross-Plattform fähige Techonologien
+eingesetzt werden damit es in der Zukunft möglich ist das Projekt auf
+andere Plattformen auszuweiten.
 
 \section{Zielsetzung}
-\label{sec:org0692617}
+\label{sec:orgea12289}
 
-\begin{table}[htbp]
-\centering
-\begin{tabular}{|p{9cm}|p{1.5cm}|p{2cm}|}
+\begin{longtable}{|p{9cm}|p{1.5cm}|p{2cm}|}
 \hline
-\textbf{Zielsetzung}\cellcolor[HTML]{C0C0C0} & \textbf{Muss}\cellcolor[HTML]{C0C0C0} & \textbf{Wunsch} (1-5, 5=sehr wichtig)\cellcolor[HTML]{C0C0C0}\\
+\textbf{Zielsetzung}\cellcolor[HTML]{C0C0C0} & \textbf{Muss}\cellcolor[HTML]{C0C0C0} & \textbf{Wunsch}\newline (1-5, 5=sehr wichtig)\cellcolor[HTML]{C0C0C0}\\
 \hline
+\endfirsthead
+\multicolumn{3}{l}{Fortsetzung von vorheriger Seite} \\
+\hline
+
+\textbf{Zielsetzung}\cellcolor[HTML]{C0C0C0} & \textbf{Muss}\cellcolor[HTML]{C0C0C0} & \textbf{Wunsch}\newline (1-5, 5=sehr wichtig)\cellcolor[HTML]{C0C0C0} \\
+
+\hline
+\endhead
+\hline\multicolumn{3}{r}{Fortsetzung nächste Seite} \\
+\endfoot
+\endlastfoot
+\hline
+Die Anwendung setzt auf Cross-Plattform (Linux, Windows, OSX) fähige Technologien. & X & \\
+\hline
+Die Anwendung steht unter der GPLv3 der Öffentlichkeit zur Verfügung. & X & \\
+\hline
+Der User kann mit weniger als 3 Klicks ein Backup ausführen. &  & \\
+\hline
+Die Einstellungen werden in einer Plain-Text Datei gespeichert. &  & \\
+\hline
+Die Anwendung cached Informationen in einer SQLite Datenbank. &  & 3\\
+\hline
+Der User kann ein mit zwei Klicks lesbar mounten. &  & \\
+\hline
+Der User kann ein Archive mit 2 Klicks löschen. &  & \\
+\hline
+Der User kann sein Repository auf einer Harddisk ablegen. &  & \\
+\hline
+Der User kann sein Repository auf einem über SSH erreichbaren Server ablegen. &  & \\
+\hline
+Der User kann den Namen eins Archives selbst bestimmen. &  & \\
+\hline
+Der User kann entscheiden was mit gemounteten Archiven passiert. &  & \\
+\hline
+Das Repository wird nach jedem Backup bereinigt. &  & \\
+\hline
+Die Anwendung exkludiert sinnvolle Pfade bereits zu Beginn. &  & \\
+\hline
+Die Anwenung zeigt beim ersten Starten einen Setup Wizard. &  & \\
+\hline
+Die Anwendung melden transparent wenn das Repository nicht erreichbar ist. &  & \\
+\hline
+Die Anwendung meldet dem User wenn noch ein Hypervisor am Laufen ist. &  & \\
+\hline
+Der User kann sich mit 3 Klicks das Log eines Archives anschauen. &  & \\
+\hline
+Der User kann automatische Hintergrundbackups in der Anwendung konfigurieren. &  & \\
+\hline
+Der User kann das Repository wechseln. &  & \\
+\hline
+Die Anwenung meldet transparent wenn BorgBackup ein Problem hat. &  & \\
+\hline
+Die Anwendung kann Systembenachrichtigungen auslösen. &  & \\
+\hline
+Die Anwendung zeigt transparent an das BorgBackup im Hintergrund bereits läuft. &  & \\
+\hline
+Der User kann ein Archiv durchsuchen. &  & \\
+\hline
+Die Anwendung kann mit allen Features von BargBackup umgehen. &  & \\
+\hline
+Die Anwendung gibt dem User die Möglichkeit ein passendes Repository zu erstellen wenn keines gefunden wird, die Anwendung jedoch bereits konfiguriert ist. &  & \\
+\hline
+Der User kann den zu sichernden Pfad manuell in der Anwendung definieren. &  & \\
+Der User kann die Anwendung grafisch konfigurieren. &  & \\
+ &  & \\
+ &  & \\
+ &  & \\
+ &  & \\
+ &  & \\
  &  & \\
 \hline
- &  & \\
-\hline
- &  & \\
-\hline
- &  & \\
-\hline
-\end{tabular}
-\caption{\label{tab:orgba698b7}
+\caption{\label{tab:org20a0d42}
 Projektziele}
-
-\end{table}
+\\
+\end{longtable}
 
 \section{Mittelbedarf}
-\label{sec:orgc335aa3}
-
+\label{sec:org18fd829}
 Für die Arbeit sind, ausser den 250h des Diplomanden, keine weiteren
 Mittel notwendig.
 
 \section{Planung}
-\label{sec:orgb688b2c}
+\label{sec:org6d8741c}
 
 Die Arbeit ist innert 14 Wochen (Vorgabe IBZ-Schulen) abzuwickeln. Die
 Verteilung der anstehenden Arbeiten auf die 14 Wochen ist durch den
 Diplomanden vor dem Start der Phase Voranalyse zu erledigen.
 
 \section{Wirtschaftlichkeit}
-\label{sec:org18c6ec8}
+\label{sec:org1616a61}
 Die Wirtschaftlichkeit ist für dieses Projekt nicht relevant.
 
 \section{Konsequenzen}
-\label{sec:org6bb20d7}
+\label{sec:orgc59ef1c}
 Keine speziellen Konsequenzen in dem Vorhaben bekannt.
 
 \section{Antrag}
-\label{sec:org3097edf}
+\label{sec:org26c416b}
 Der Diplomand beantragt die Freigabe der Phase Voranalyse, diese
 startet mit dem Kick-off vom 10.12.2018.
 \end{document}

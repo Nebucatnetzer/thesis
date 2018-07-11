@@ -70,27 +70,80 @@ Repositories veröffentlicht, da das Projekt auch nach der Abgabe
 weiter existieren soll.
 
 Die Entwicklung wird hauptsächlich auf einem Linux System stattfinden.
-Da BorgBackup hauptsächlich auf Unix Systeme ausgelegt ist. Trotzdem
-sollen im Projekt Cross-Plattform fähige Techonologien eingesetzt
-werden damit es in der Zukunft möglich ist das Projekt auf andere
-Plattformen auszuweiten.
+Da BorgBackup einerseitz hauptsächlich auf Unix Systeme ausgelegt ist
+und anderseits die Hauptzielgruppe des Projektes auch auf Linux Usern
+liegt. Trotzdem sollen im Projekt Cross-Plattform fähige Techonologien
+eingesetzt werden damit es in der Zukunft möglich ist das Projekt auf
+andere Plattformen auszuweiten.
 
 * Zielsetzung
 
 #+CAPTION: Projektziele
-#+ATTR_LATEX: :align |p{9cm}|p{1.5cm}|p{2cm}|
+#+ATTR_LATEX: :environment longtable :align |p{9cm}|p{1.5cm}|p{2cm}|
 #+NAME: tab:projektziele
-|---------------------------------------+--------------------------------+--------------------------------------------------------|
-| *Zielsetzung*\cellcolor[HTML]{C0C0C0} | *Muss*\cellcolor[HTML]{C0C0C0} | *Wunsch* (1-5, 5=sehr wichtig)\cellcolor[HTML]{C0C0C0} |
-|---------------------------------------+--------------------------------+--------------------------------------------------------|
-|                                       |                                |                                                        |
-|---------------------------------------+--------------------------------+--------------------------------------------------------|
-|                                       |                                |                                                        |
-|---------------------------------------+--------------------------------+--------------------------------------------------------|
-|                                       |                                |                                                        |
-|---------------------------------------+--------------------------------+--------------------------------------------------------|
-|                                       |                                |                                                        |
-|---------------------------------------+--------------------------------+--------------------------------------------------------|
+|------------------------------------------+------------+------------|
+| *Zielsetzung*\cellcolor[HTML]{C0C0C0}    | *Muss*\cellcolor[HTML]{C0C0C0} | *Wunsch*\newline (1-5, 5=sehr wichtig)\cellcolor[HTML]{C0C0C0} |
+| <40>                                     | <10>       | <10>       |
+|------------------------------------------+------------+------------|
+| Die Anwendung setzt auf Cross-Plattform (Linux, Windows, OSX) fähige Technologien. | X          |            |
+|------------------------------------------+------------+------------|
+| Die Anwendung steht unter der GPLv3 der Öffentlichkeit zur Verfügung. | X          |            |
+|------------------------------------------+------------+------------|
+| Der User kann mit weniger als 3 Klicks ein Backup ausführen. |            |            |
+|------------------------------------------+------------+------------|
+| Die Einstellungen werden in einer Plain-Text Datei gespeichert. |            |            |
+|------------------------------------------+------------+------------|
+| Die Anwendung cached Informationen in einer SQLite Datenbank. |            | 3          |
+|------------------------------------------+------------+------------|
+| Der User kann ein mit zwei Klicks lesbar mounten. |            |            |
+|------------------------------------------+------------+------------|
+| Der User kann ein Archive mit 2 Klicks löschen. |            |            |
+|------------------------------------------+------------+------------|
+| Der User kann sein Repository auf einer Harddisk ablegen. |            |            |
+|------------------------------------------+------------+------------|
+| Der User kann sein Repository auf einem über SSH erreichbaren Server ablegen. |            |            |
+|------------------------------------------+------------+------------|
+| Der User kann den Namen eins Archives selbst bestimmen. |            |            |
+|------------------------------------------+------------+------------|
+| Der User kann entscheiden was mit gemounteten Archiven passiert. |            |            |
+|------------------------------------------+------------+------------|
+| Das Repository wird nach jedem Backup bereinigt. |            |            |
+|------------------------------------------+------------+------------|
+| Die Anwendung exkludiert sinnvolle Pfade bereits zu Beginn. |            |            |
+|------------------------------------------+------------+------------|
+| Die Anwenung zeigt beim ersten Starten einen Setup Wizard. |            |            |
+|------------------------------------------+------------+------------|
+| Die Anwendung melden transparent wenn das Repository nicht erreichbar ist. |            |            |
+|------------------------------------------+------------+------------|
+| Die Anwendung meldet dem User wenn noch ein Hypervisor am Laufen ist. |            |            |
+|------------------------------------------+------------+------------|
+| Der User kann sich mit 3 Klicks das Log eines Archives anschauen. |            |            |
+|------------------------------------------+------------+------------|
+| Der User kann automatische Hintergrundbackups in der Anwendung konfigurieren. |            |            |
+|------------------------------------------+------------+------------|
+| Der User kann das Repository wechseln.   |            |            |
+|------------------------------------------+------------+------------|
+| Die Anwenung meldet transparent wenn BorgBackup ein Problem hat. |            |            |
+|------------------------------------------+------------+------------|
+| Die Anwendung kann Systembenachrichtigungen auslösen. |            |            |
+|------------------------------------------+------------+------------|
+| Die Anwendung zeigt transparent an das BorgBackup im Hintergrund bereits läuft. |            |            |
+|------------------------------------------+------------+------------|
+| Der User kann ein Archiv durchsuchen.    |            |            |
+|------------------------------------------+------------+------------|
+| Die Anwendung kann mit allen Features von BargBackup umgehen. |            |            |
+|------------------------------------------+------------+------------|
+| Die Anwendung gibt dem User die Möglichkeit ein passendes Repository zu erstellen wenn keines gefunden wird, die Anwendung jedoch bereits konfiguriert ist. |            |            |
+|------------------------------------------+------------+------------|
+| Der User kann den zu sichernden Pfad manuell in der Anwendung definieren. |            |            |
+| Der User kann die Anwendung grafisch konfigurieren. |            |            |
+|                                          |            |            |
+|                                          |            |            |
+|                                          |            |            |
+|                                          |            |            |
+|                                          |            |            |
+|                                          |            |            |
+|------------------------------------------+------------+------------|
 
 * DONE Mittelbedarf
 CLOSED: [2018-07-09 Mo 21:37]
