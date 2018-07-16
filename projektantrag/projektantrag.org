@@ -14,8 +14,8 @@
 CLOSED: [2018-07-09 Mo 20:55]
 
 Im Rahmen einer Diplomarbeit an den IBZ-Schulen soll die Grundlage für ein neues
-Open Source Projekt geschaffen werden sowie die Entwicklung der dazugehörigen
-Backup Applikation gestartet werden. Die Applikation soll es normalen Usern
+Open-Source-Projekt geschaffen werden, sowie die Entwicklung der dazugehörigen
+Backup-Applikation gestartet werden. Die Applikation soll es normalen Usern
 ermöglichen mit der Backup Software BorgBackup zu interagieren.
 
 Das Dokument dient als Grundlage für die Freigabe der Diplomarbeit.
@@ -23,20 +23,21 @@ Das Dokument dient als Grundlage für die Freigabe der Diplomarbeit.
 * DONE Ausgangslage
 CLOSED: [2018-07-09 Mo 21:16]
 
-Das Open Source Projekt https://www.borgbackup.org/ entwickelt eine Backup
-Software welche es einem ermöglicht Backups auf ein externes Laufwerk oder einen
-externen Server zu machen. Für externe Server die man nicht selber kontrolliert
-unterstützt BorgBackup auch eine starke Verschlüsselung. Als weiteres wichtiges
-Feature unterstützt BorgBackup auch Deduplikation auf Block Ebene was es einem
-erlaubt sehr viele Snapshots zu haben ohne das der Speicher allzu fest wächst.
-Desweiteren erlaubt die Deduplikation von BorgBackup dem User grosse Dateien zu
-bearbeiten ohne das bei einem weiteren Backup die ganze Datei erneut gespeichert
-werden muss. Es werden dann nur die effektiv veränderten Blöcke gespeichert.
+Das Open-Source-Projekt BorgBackup\footcite{borgbackup} entwickelt eine
+Backup-Software welche es einem ermöglicht Backups auf ein externes Laufwerk
+oder einen externen Server zu machen. Für externe Server die man nicht selber
+kontrolliert unterstützt BorgBackup auch eine starke Verschlüsselung. Als
+weiteres wichtiges Feature unterstützt BorgBackup auch Deduplikation auf Block
+Ebene was es einem erlaubt sehr viele Snapshots zu haben ohne das der Speicher
+allzu fest wächst. Des Weiteren erlaubt die Deduplikation von BorgBackup dem
+User grosse Dateien zu bearbeiten ohne das bei einem weiteren Backup die ganze
+Datei erneut gespeichert werden muss. Es werden dann nur die effektiv
+veränderten Blöcke gespeichert.
 
-Als freie Software und Aufgrund der interessanten Features wäre BorgBackup auch
-für weniger erfahrene User sehr nützlich. Leider gibt es für BorgBackup zur Zeit
+Als freie Software und aufgrund der interessanten Features wäre BorgBackup auch
+für weniger erfahrene User sehr nützlich. Leider gibt es für BorgBackup zurzeit
 kein klassisches grafisches User Interface mit dem ein User interagieren kann.
-BorgBackup wird komplett über die Kommando Zeile gesteuert.
+BorgBackup wird komplett über die Kommando-Zeile gesteuert.
 
 Aus diesem Grund soll der Student im Rahmen der Projektarbeit eine grafische
 Oberfläche für BorgBackup entwickeln.
@@ -52,22 +53,22 @@ Daraus ergeben sich Ansprüche an:
 Die Begleitung der Diplomarbeit ist durch die IBZ sichergestellt.
 
 Als nebenläufiges Ziel soll mit dieser Arbeit auch die Verbreitung von freier
-Softare gefördert werden. Dies wird insbesondere dadurch erreicht das die
-Software selbst unter der GNU Public License Version 3 veröffentlicht wird. Wenn
-möglich sollen während der Entwicklung auch hauptsächlich freie Software
-verwendet werden. Die gesamte Arbeit wird zudem zu jedem Zeitpunkt öffentlich
-einsehbar sein. Der Quelltext der Dokumentation ist bereits unter diesem Link
-erreichbar: https://git.2li.ch/Nebucatnetzer/thesis
+Software gefördert werden. Dies wird insbesondere dadurch erreicht, dass die
+Software selbst unter der GNU Public License Version 3\footcite{gplv3}
+veröffentlicht wird. Wenn möglich sollen während der Entwicklung auch
+hauptsächlich freie Software verwendet werden. Die gesamte Arbeit wird zudem zu
+jedem Zeitpunkt öffentlich einsehbar sein. Der Quelltext der Dokumentation ist
+bereits unter diesem Link erreichbar: [https://git.2li.ch/Nebucatnetzer/thesis]
 
 Das Repository für den Code der Applikation wird während der Umsetzung erstellt.
-Die Dokumentation und der Code werden in getrennten Repositories veröffentlicht,
+Die Dokumentation und der Code werden in getrennten Repositorys veröffentlicht,
 da das Projekt auch nach der Abgabe weiter existieren soll.
 
 Die Entwicklung wird hauptsächlich auf einem Linux System stattfinden. Da
-BorgBackup einerseitz hauptsächlich auf Unix Systeme ausgelegt ist und
+BorgBackup einerseits hauptsächlich auf Unix Systeme ausgelegt ist und
 anderseits die Hauptzielgruppe des Projektes auch auf Linux Usern liegt.
-Trotzdem sollen im Projekt Cross-Plattform fähige Techonologien eingesetzt
-werden damit es in der Zukunft möglich ist das Projekt auf andere Plattformen
+Trotzdem sollen im Projekt Cross-Plattform fähige Technologien eingesetzt werden
+damit es in der Zukunft möglich ist das Projekt auf andere Plattformen
 auszuweiten.
 
 * Zielsetzung
@@ -164,5 +165,5 @@ Keine speziellen Konsequenzen in dem Vorhaben bekannt.
 * DONE Antrag
 CLOSED: [2018-07-09 Mo 20:55]
 
-Der Diplomand beantragt die Freigabe der Phase Voranalyse, diese
-startet mit dem Kick-off vom 10.12.2018.
+Der Diplomand beantragt die Freigabe der Phase Voranalyse, diese startet mit dem
+Kick-off vom 10.12.2018.
