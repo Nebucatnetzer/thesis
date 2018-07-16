@@ -71,74 +71,80 @@ Trotzdem sollen im Projekt Cross-Plattform fähige Technologien eingesetzt werde
 damit es in der Zukunft möglich ist das Projekt auf andere Plattformen
 auszuweiten.
 
-* Zielsetzung
+* DONE Zielsetzung
+CLOSED: [2018-07-16 Mo 21:10]
 
 #+CAPTION: Projektziele
 #+ATTR_LATEX: :environment longtable :align |p{9cm}|p{1.5cm}|p{2cm}|
 #+NAME: tab:projektziele
-|------------------------------------------+------------+------------|
-| *Zielsetzung*\cellcolor[HTML]{C0C0C0}    | *Muss*\cellcolor[HTML]{C0C0C0} | *Wunsch*\newline (1-5, 5=sehr wichtig)\cellcolor[HTML]{C0C0C0} |
-| <40>                                     | <10>       | <10>       |
-|------------------------------------------+------------+------------|
-| Die Anwendung setzt auf Cross-Plattform (Linux, Windows, OSX) fähige Technologien. | X          |            |
-|------------------------------------------+------------+------------|
-| Die Anwendung steht unter der GPLv3 der Öffentlichkeit zur Verfügung. | X          |            |
-|------------------------------------------+------------+------------|
-| Der User kann mit weniger als 3 Klicks ein Backup ausführen. |            |            |
-|------------------------------------------+------------+------------|
-| Die Einstellungen werden in einer Plain-Text Datei gespeichert. |            |            |
-|------------------------------------------+------------+------------|
-| Die Anwendung cached Informationen in einer SQLite Datenbank. |            | 3          |
-|------------------------------------------+------------+------------|
-| Der User kann ein mit zwei Klicks lesbar mounten. |            |            |
-|------------------------------------------+------------+------------|
-| Der User kann ein Archive mit 2 Klicks löschen. |            |            |
-|------------------------------------------+------------+------------|
-| Der User kann sein Repository auf einer Harddisk ablegen. |            |            |
-|------------------------------------------+------------+------------|
-| Der User kann sein Repository auf einem über SSH erreichbaren Server ablegen. |            |            |
-|------------------------------------------+------------+------------|
-| Der User kann den Namen eins Archives selbst bestimmen. |            |            |
-|------------------------------------------+------------+------------|
-| Der User kann entscheiden was mit gemounteten Archiven passiert. |            |            |
-|------------------------------------------+------------+------------|
-| Das Repository wird nach jedem Backup bereinigt. |            |            |
-|------------------------------------------+------------+------------|
-| Die Anwendung exkludiert sinnvolle Pfade bereits zu Beginn. |            |            |
-|------------------------------------------+------------+------------|
-| Die Anwenung zeigt beim ersten Starten einen Setup Wizard. |            |            |
-|------------------------------------------+------------+------------|
-| Die Anwendung melden transparent wenn das Repository nicht erreichbar ist. |            |            |
-|------------------------------------------+------------+------------|
-| Die Anwendung meldet dem User wenn noch ein Hypervisor am Laufen ist. |            |            |
-|------------------------------------------+------------+------------|
-| Der User kann sich mit 3 Klicks das Log eines Archives anschauen. |            |            |
-|------------------------------------------+------------+------------|
-| Der User kann automatische Hintergrundbackups in der Anwendung konfigurieren. |            |            |
-|------------------------------------------+------------+------------|
-| Der User kann das Repository wechseln.   |            |            |
-|------------------------------------------+------------+------------|
-| Die Anwenung meldet transparent wenn BorgBackup ein Problem hat. |            |            |
-|------------------------------------------+------------+------------|
-| Die Anwendung kann Systembenachrichtigungen auslösen. |            |            |
-|------------------------------------------+------------+------------|
-| Die Anwendung zeigt transparent an das BorgBackup im Hintergrund bereits läuft. |            |            |
-|------------------------------------------+------------+------------|
-| Der User kann ein Archiv durchsuchen.    |            |            |
-|------------------------------------------+------------+------------|
-| Die Anwendung kann mit allen Features von BargBackup umgehen. |            |            |
-|------------------------------------------+------------+------------|
-| Die Anwendung gibt dem User die Möglichkeit ein passendes Repository zu erstellen wenn keines gefunden wird, die Anwendung jedoch bereits konfiguriert ist. |            |            |
-|------------------------------------------+------------+------------|
-| Der User kann den zu sichernden Pfad manuell in der Anwendung definieren. |            |            |
-| Der User kann die Anwendung grafisch konfigurieren. |            |            |
-|                                          |            |            |
-|                                          |            |            |
-|                                          |            |            |
-|                                          |            |            |
-|                                          |            |            |
-|                                          |            |            |
-|------------------------------------------+------------+------------|
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| *Zielsetzung*\cellcolor[HTML]{C0C0C0}                                                                | *Muss*\cellcolor[HTML]{C0C0C0} | *Wunsch*\newline (1-5, 5=sehr wichtig)\cellcolor[HTML]{C0C0C0} |
+| <100>                                                                                                | <10>       |       <10> |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Anwendung setzt auf Cross-Plattform (Linux, Windows, OSX) fähige Technologien.                   | X          |            |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Anwendung steht unter der GPLv3 der Öffentlichkeit zur Verfügung.                                | X          |            |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann mit weniger als 3 Klicks ein Backup ausführen.                                         | x          |            |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann ein Archiv mit 3 Klicks löschen.                                                       | x          |            |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann unter Linux ein Archiv mit zwei Klicks "read-only" als Laufwerk mounten.               | x          |            |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann ein Archiv wieder herstellen.                                                          | x          |            |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann den zu sichernden Pfad manuell in der Anwendung definieren.                            | x          |            |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Applikation holt ihre Konfiguration aus einer Plain-Text Datei.                                  | x          |            |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann sein Repository auf einer Harddisk ablegen.                                            | x          |            |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Anwendung exkludiert für einen Linux Computer sinnvolle Pfade bereits zu Beginn.                 | x          |            |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Archivliste wird nach einer Aktion automatisch aktualisiert.                                     | x          |            |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann sein Repository auf einem über SSH erreichbaren Server ablegen.                        |            |          5 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann den Namen eines Archives selbst bestimmen.                                             |            |          5 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Anwendung meldet transparent, wenn das Repository nicht erreichbar ist.                          |            |          5 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Anwendung meldet dem User, wenn noch ein Hypervisor am Laufen ist.                               |            |          5 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Anwendung leitet Meldungen von BorgBackup transparent weiter.                                    |            |          5 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Anwendung zeigt transparent an das BorgBackup im Hintergrund bereits läuft.                      |            |          5 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Das Repository wird nach jedem Backup bereinigt.                                                     |            |          4 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann automatische Hintergrundbackups in der Anwendung konfigurieren.                        |            |          4 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Anwendung gibt dem User die Möglichkeit ein passendes Repository zu erstellen, wenn keines gefunden wird, die Anwendung jedoch bereits konfiguriert ist. |            |          4 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Applikation verwendet, wann immer möglich allgemeingültige Umgebungsvariablen.                   |            |          4 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Anwendung cached/speichert (evtl. zusätzliche) Informationen in einer Datenbank.                 |            |          3 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Anwendung zeigt beim ersten Starten einen Setup Wizard.                                          |            |          3 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann sich mit 3 Klicks das Log eines Archives anschauen. Nur möglich mit einer zusätzlichen DB. |            |          3 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Anwendung kann Systembenachrichtigungen auslösen.                                                |            |          3 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann die Anwendung grafisch konfigurieren.                                                  |            |          3 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann entscheiden ob, ein gemountetes Archiv nach dem Schliessen der Applikation noch weiter verfügbar ist. |            |          2 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann das Repository wechseln.                                                               |            |          2 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann ein Archiv nach einer Datei oder einem Ordner durchsuchen.                             |            |          2 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Der User kann die "Retention Policy" konfigurieren.                                                  |            |          2 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Anwendung kann mit allen Features von BargBackup umgehen.                                        |            |          2 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
+| Die Applikation prüft, ob sie sich im richtigen Netzwerk befindet bevor sie eine Verbindung zum Server aufbaut. |            |          2 |
+|------------------------------------------------------------------------------------------------------+------------+------------|
 
 * DONE Mittelbedarf
 CLOSED: [2018-07-09 Mo 21:37]
