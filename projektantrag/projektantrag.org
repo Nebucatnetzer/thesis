@@ -13,68 +13,62 @@
 * DONE Zweck des Dokuments
 CLOSED: [2018-07-09 Mo 20:55]
 
-Im Rahmen einer Diplomarbeit an den IBZ-Schulen soll die Grundlage für
-ein neues Open Source Projekt geschaffen werden sowie die Entwicklung
-der dazugehörigen Backup Applikation gestartet werden. Die Applikation
-soll es normalen Usern ermöglichen mit der Backup Software BorgBackup
-zu interagieren.
+Im Rahmen einer Diplomarbeit an den IBZ-Schulen soll die Grundlage für ein neues
+Open Source Projekt geschaffen werden sowie die Entwicklung der dazugehörigen
+Backup Applikation gestartet werden. Die Applikation soll es normalen Usern
+ermöglichen mit der Backup Software BorgBackup zu interagieren.
 
 Das Dokument dient als Grundlage für die Freigabe der Diplomarbeit.
 
 * DONE Ausgangslage
 CLOSED: [2018-07-09 Mo 21:16]
 
-Das Open Source Projekt https://www.borgbackup.org/ entwickelt eine
-Backup Software welche es einem ermöglicht Backups auf ein externes
-Laufwerk oder einen externen Server zu machen. Für externe Server die
-man nicht selber kontrolliert unterstützt BorgBackup auch eine starke
-Verschlüsselung. Als weiteres wichtiges Feature unterstützt BorgBackup
-auch Deduplikation auf Block Ebene was es einem erlaubt sehr viele
-Snapshots zu haben ohne das der Speicher allzu fest wächst.
-Desweiteren erlaubt die Deduplikation von BorgBackup dem User grosse
-Dateien zu bearbeiten ohne das bei einem weiteren Backup die ganze
-Datei erneut gespeichert werden muss. Es werden dann nur die effektiv
-veränderten Blöcke gespeichert.
+Das Open Source Projekt https://www.borgbackup.org/ entwickelt eine Backup
+Software welche es einem ermöglicht Backups auf ein externes Laufwerk oder einen
+externen Server zu machen. Für externe Server die man nicht selber kontrolliert
+unterstützt BorgBackup auch eine starke Verschlüsselung. Als weiteres wichtiges
+Feature unterstützt BorgBackup auch Deduplikation auf Block Ebene was es einem
+erlaubt sehr viele Snapshots zu haben ohne das der Speicher allzu fest wächst.
+Desweiteren erlaubt die Deduplikation von BorgBackup dem User grosse Dateien zu
+bearbeiten ohne das bei einem weiteren Backup die ganze Datei erneut gespeichert
+werden muss. Es werden dann nur die effektiv veränderten Blöcke gespeichert.
 
-Als freie Software und Aufgrund der interessanten Features wäre
-BorgBackup auch für weniger erfahrene User sehr nützlich. Leider gibt
-es für BorgBackup zur Zeit kein klassisches grafisches User Interface
-mit dem ein User interagieren kann. BorgBackup wird komplett über die
-Kommando Zeile gesteuert.
+Als freie Software und Aufgrund der interessanten Features wäre BorgBackup auch
+für weniger erfahrene User sehr nützlich. Leider gibt es für BorgBackup zur Zeit
+kein klassisches grafisches User Interface mit dem ein User interagieren kann.
+BorgBackup wird komplett über die Kommando Zeile gesteuert.
 
-Aus diesem Grund soll der Student im Rahmen der Projektarbeit eine
-grafische Oberfläche für BorgBackup entwickeln.
+Aus diesem Grund soll der Student im Rahmen der Projektarbeit eine grafische
+Oberfläche für BorgBackup entwickeln.
 
 * Projektrahmenbedingungen
 
-Das Projekt ist im Rahmen einer Diplomarbeit an den IBZ-Schulen zu
-realisieren. Daraus ergeben sich Ansprüche an:
+Das Projekt ist im Rahmen einer Diplomarbeit an den IBZ-Schulen zu realisieren.
+Daraus ergeben sich Ansprüche an:
 
 1. Komplexität des Vorhabens
 2. Umfang des Vorhabens (250 Stunden)
 
 Die Begleitung der Diplomarbeit ist durch die IBZ sichergestellt.
 
-Als nebenläufiges Ziel soll mit dieser Arbeit auch die Verbreitung von
-freier Softare gefördert werden. Dies wird insbesondere dadurch
-erreicht das die Software selbst unter der GNU Public License Version
-3 veröffentlicht wird. Wenn möglich sollen während der Entwicklung
-auch hauptsächlich freie Software verwendet werden. Die gesamte Arbeit
-wird zudem zu jedem Zeitpunkt öffentlich einsehbar sein. Der Quelltext
-der Dokumentation ist bereits unter diesem Link erreichbar:
-https://git.2li.ch/Nebucatnetzer/thesis
+Als nebenläufiges Ziel soll mit dieser Arbeit auch die Verbreitung von freier
+Softare gefördert werden. Dies wird insbesondere dadurch erreicht das die
+Software selbst unter der GNU Public License Version 3 veröffentlicht wird. Wenn
+möglich sollen während der Entwicklung auch hauptsächlich freie Software
+verwendet werden. Die gesamte Arbeit wird zudem zu jedem Zeitpunkt öffentlich
+einsehbar sein. Der Quelltext der Dokumentation ist bereits unter diesem Link
+erreichbar: https://git.2li.ch/Nebucatnetzer/thesis
 
-Das Repository für den Code der Applikation wird während der Umsetzung
-erstellt. Die Dokumentation und der Code werden in getrennten
-Repositories veröffentlicht, da das Projekt auch nach der Abgabe
-weiter existieren soll.
+Das Repository für den Code der Applikation wird während der Umsetzung erstellt.
+Die Dokumentation und der Code werden in getrennten Repositories veröffentlicht,
+da das Projekt auch nach der Abgabe weiter existieren soll.
 
-Die Entwicklung wird hauptsächlich auf einem Linux System stattfinden.
-Da BorgBackup einerseitz hauptsächlich auf Unix Systeme ausgelegt ist
-und anderseits die Hauptzielgruppe des Projektes auch auf Linux Usern
-liegt. Trotzdem sollen im Projekt Cross-Plattform fähige Techonologien
-eingesetzt werden damit es in der Zukunft möglich ist das Projekt auf
-andere Plattformen auszuweiten.
+Die Entwicklung wird hauptsächlich auf einem Linux System stattfinden. Da
+BorgBackup einerseitz hauptsächlich auf Unix Systeme ausgelegt ist und
+anderseits die Hauptzielgruppe des Projektes auch auf Linux Usern liegt.
+Trotzdem sollen im Projekt Cross-Plattform fähige Techonologien eingesetzt
+werden damit es in der Zukunft möglich ist das Projekt auf andere Plattformen
+auszuweiten.
 
 * Zielsetzung
 
@@ -148,14 +142,14 @@ andere Plattformen auszuweiten.
 * DONE Mittelbedarf
 CLOSED: [2018-07-09 Mo 21:37]
 
-Für die Arbeit sind, ausser den 250h des Diplomanden, keine weiteren
-Mittel notwendig.
+Für die Arbeit sind, ausser den 250h des Diplomanden, keine weiteren Mittel
+notwendig.
 
 * Planung
 
 Die Arbeit ist innert 14 Wochen (Vorgabe IBZ-Schulen) abzuwickeln. Die
-Verteilung der anstehenden Arbeiten auf die 14 Wochen ist durch den
-Diplomanden vor dem Start der Phase Voranalyse zu erledigen.
+Verteilung der anstehenden Arbeiten auf die 14 Wochen ist durch den Diplomanden
+vor dem Start der Phase Voranalyse zu erledigen.
 
 * DONE Wirtschaftlichkeit
 CLOSED: [2018-07-09 Mo 20:55]
