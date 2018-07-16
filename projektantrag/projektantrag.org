@@ -58,7 +58,7 @@ Software selbst unter der GNU Public License Version 3\footcite{gplv3}
 veröffentlicht wird. Wenn möglich sollen während der Entwicklung auch
 hauptsächlich freie Software verwendet werden. Die gesamte Arbeit wird zudem zu
 jedem Zeitpunkt öffentlich einsehbar sein. Der Quelltext der Dokumentation ist
-bereits unter diesem Link erreichbar: [https://git.2li.ch/Nebucatnetzer/thesis]
+bereits unter diesem Link erreichbar: https://git.2li.ch/Nebucatnetzer/thesis
 
 Das Repository für den Code der Applikation wird während der Umsetzung erstellt.
 Die Dokumentation und der Code werden in getrennten Repositorys veröffentlicht,
