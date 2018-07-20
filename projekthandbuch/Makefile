@@ -16,7 +16,7 @@ PUML_PDF=$(FIGURES_PUML:.puml=.svg)
 all: projekthandbuch_main.pdf ## Build full thesis (LaTeX + figures)
 
 projekthandbuch_main.pdf: $(SVG_PDF) $(EPS_PDF) $(DOT_PDF) $(TEX_PDF) $(PUML_PDF) projekthandbuch.tex general/ibzlogo.pdf
-	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make $(PAPER)
+	latexmk -quiet -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make $(PAPER)
 
 clean:  ## Clean LaTeX and output figure files
 	latexmk -c
@@ -48,7 +48,7 @@ pictures/%.pdf: pictures/%.dot  ## Figures for the manuscript
 	dot -Tpdf $< -o $@
 
 pictures/%.pdf: pictures/%.tex  ## Figures for the manuscript
-	latexmk -pdf -outdir=pictures -pdflatex="pdflatex -interaction=nonstopmode" -use-make $<
+	latexmk -quiet -pdf -outdir=pictures -pdflatex="pdflatex -interaction=nonstopmode" -use-make $<
 
 pictures/%.svg: pictures/%.puml
 	java -jar ~/bin/plantuml.jar -tsvg $<
