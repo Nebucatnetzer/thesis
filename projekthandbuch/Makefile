@@ -24,7 +24,6 @@ clean:  ## Clean LaTeX and output figure files
 	rm -f $(EPS_PDF)
 	rm -f $(DOT_PDF)
 	rm -f $(PUML_PDF)
-	rm -f projekthandbuch.tex
 	rm -f general/ibzlogo.pdf
 	rm -f *.acn
 	rm -f *.bbl
