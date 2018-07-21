@@ -42,6 +42,12 @@ BorgBackup wird komplett über die Kommando-Zeile gesteuert.
 Aus diesem Grund soll der Student im Rahmen der Projektarbeit eine grafische
 Oberfläche für BorgBackup entwickeln.
 
+BorgBackup stell keine direkte API im Python Code für externe Applikationen zur
+Verfügung. Allerdings gibt es einen Kommandozeilen-Parameter, mit welchem der
+Output im JSON Format zurückgegeben wird. Die Entwickler raten dazu, BorgBackup
+direkt über die Kommandozeilen Befehle anzusteuern und anschliessend den JSON
+Output zu parsen.\footcite{jsonapi}
+
 * Projektrahmenbedingungen
 
 Das Projekt ist im Rahmen einer Diplomarbeit an den IBZ-Schulen zu realisieren.
@@ -70,6 +76,9 @@ anderseits die Hauptzielgruppe des Projektes auch auf Linux Usern liegt.
 Trotzdem sollen im Projekt Cross-Plattform fähige Technologien eingesetzt werden
 damit es in der Zukunft möglich ist das Projekt auf andere Plattformen
 auszuweiten.
+
+Bugs von BorgBackup welche während der Dauer der Diplomarbeit vom Studenten
+entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
 
 * DONE Zielsetzung
 CLOSED: [2018-07-16 Mo 21:10]
@@ -157,6 +166,9 @@ notwendig.
 Die Arbeit ist innert 14 Wochen (Vorgabe IBZ-Schulen) abzuwickeln. Die
 Verteilung der anstehenden Arbeiten auf die 14 Wochen ist durch den Diplomanden
 vor dem Start der Phase Voranalyse zu erledigen.
+
+Der Student wird die Projektmethodik, "Wasserfall" einsetzen. Da sie sich für
+eine einzelne Person am ehesten eignet.
 
 * DONE Wirtschaftlichkeit
 CLOSED: [2018-07-09 Mo 20:55]
