@@ -7,3 +7,6 @@
 
 This repository contains the documentation and code for my "thesis" at
 the IBZ school.
+
+The original location of this repository is:
+https://git.2li.ch/Nebucatnetzer/thesis
