@@ -167,8 +167,7 @@ Die Arbeit ist innert 14 Wochen (Vorgabe IBZ-Schulen) abzuwickeln. Die
 Verteilung der anstehenden Arbeiten auf die 14 Wochen ist durch den Diplomanden
 vor dem Start der Phase Voranalyse zu erledigen.
 
-Der Student wird die Projektmethodik, "Wasserfall" einsetzen. Da sie sich für
-eine einzelne Person am ehesten eignet.
+Der Student wird die Projektmethodik, "Wasserfall" einsetzen.
 
 * DONE Wirtschaftlichkeit
 CLOSED: [2018-07-09 Mo 20:55]
