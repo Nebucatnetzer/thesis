@@ -23,7 +23,7 @@ projekthandbuch_main.pdf: $(SVG_PDF) $(EPS_PDF) $(DOT_PDF) $(TEX_PDF) \
 	-use-make $(PAPER)
 
 clean:  ## Clean LaTeX and output figure files
-	latexmk -c
+	latexmk -c $(PAPER)
 	rm -f $(SVG_PDF)
 	rm -f $(EPS_PDF)
 	rm -f $(DOT_PDF)
