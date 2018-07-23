@@ -38,6 +38,10 @@ clean:  ## Clean LaTeX and output figure files
 	rm -rf auto/
 	rm -rf general/auto/
 	rm -rf general/style.aux
+	rm -f projekthandbuch.tex
+
+distclean: clean
+	rm -f projekthandbuch_main.pdf
 
 pictures/%.pdf: pictures/%.svg  ## Figures for the manuscript
 	inkscape -C -z --file=$< --export-pdf=$@
