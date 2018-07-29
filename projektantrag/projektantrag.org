@@ -91,9 +91,9 @@ CLOSED: [2018-07-16 Mo 21:10]
 | *Zielsetzung*\cellcolor[HTML]{C0C0C0}                                                                | *Muss*\cellcolor[HTML]{C0C0C0} | *Wunsch*\newline (1-5, 5=sehr wichtig)\cellcolor[HTML]{C0C0C0} |
 | <100>                                                                                                | <10>       |       <10> |
 |------------------------------------------------------------------------------------------------------+------------+------------|
-| Die Anwendung setzt auf Cross-Plattform (Linux, Windows, OSX) fähige Technologien.                   | X          |            |
+| Die Anwendung setzt auf Cross-Plattform (Linux, Windows, OSX) fähige Technologien.                   | x          |            |
 |------------------------------------------------------------------------------------------------------+------------+------------|
-| Die Anwendung steht unter der GPLv3 der Öffentlichkeit zur Verfügung.                                | X          |            |
+| Die Anwendung steht unter der GPLv3 der Öffentlichkeit zur Verfügung.                                | x          |            |
 |------------------------------------------------------------------------------------------------------+------------+------------|
 | Der User kann mit weniger als 3 Klicks ein Backup ausführen.                                         | x          |            |
 |------------------------------------------------------------------------------------------------------+------------+------------|
