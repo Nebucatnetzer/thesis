@@ -8,6 +8,7 @@
 #+otions: H:5 todo:f
 #+language: de
 #+startup: align
+#+bibliography: general/bibliography.bib
 :end:
 
 * DONE Zweck des Dokuments
@@ -23,7 +24,7 @@ Das Dokument dient als Grundlage für die Freigabe der Diplomarbeit.
 * DONE Ausgangslage
 CLOSED: [2018-07-09 Mo 21:16]
 
-Das Open-Source-Projekt BorgBackup\footcite{borgbackup} entwickelt eine
+Das Open-Source-Projekt BorgBackup footcite:borgbackup entwickelt eine
 Backup-Software welche es einem ermöglicht Backups auf ein externes Laufwerk
 oder einen externen Server zu machen. Für externe Server die man nicht selber
 kontrolliert unterstützt BorgBackup auch eine starke Verschlüsselung. Als
@@ -46,7 +47,7 @@ BorgBackup stell keine direkte API im Python Code für externe Applikationen zur
 Verfügung. Allerdings gibt es einen Kommandozeilen-Parameter, mit welchem der
 Output im JSON Format zurückgegeben wird. Die Entwickler raten dazu, BorgBackup
 direkt über die Kommandozeilen Befehle anzusteuern und anschliessend den JSON
-Output zu parsen.\footcite{jsonapi}
+Output zu parsen. footcite:jsonapi
 
 * Projektrahmenbedingungen
 
@@ -60,7 +61,7 @@ Die Begleitung der Diplomarbeit ist durch die IBZ sichergestellt.
 
 Als nebenläufiges Ziel soll mit dieser Arbeit auch die Verbreitung von freier
 Software gefördert werden. Dies wird insbesondere dadurch erreicht, dass die
-Software selbst unter der GNU Public License Version 3\footcite{gplv3}
+Software selbst unter der GNU Public License Version 3 footcite:gplv3
 veröffentlicht wird. Wenn möglich sollen während der Entwicklung auch
 hauptsächlich freie Software verwendet werden. Die gesamte Arbeit wird zudem zu
 jedem Zeitpunkt öffentlich einsehbar sein. Der Quelltext der Dokumentation ist
