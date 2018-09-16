@@ -7,4 +7,5 @@
 #+otions: H:5 todo:t
 #+language: de
 #+startup: align
+#+bibliography: general/bibliography.bib
 
