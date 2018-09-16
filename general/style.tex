@@ -123,13 +123,14 @@
 
 % Listing with a box around it
 \usepackage[most]{tcolorbox}
-\newtcblisting{sexylisting}[2][]{
-  sharp corners,
-  fonttitle=\bfseries,
-  colframe=gray,
-  listing only,
-  listing options={basicstyle=\ttfamily,language=bash},
-  title=\thetcbcounter #2, #1
+\AtBeginDocument{
+\newtcblisting[blend into=listings]{sexylisting}[2][]{
+    sharp corners,
+    fonttitle=\bfseries,
+    colframe=gray,
+    listing only,
+    listing options={basicstyle=\ttfamily,language=Python},
+    title=#2, #1}
 }
 \usepackage{tocbibind}
 \usepackage[citestyle=verbose,bibstyle=numeric,sorting=none,backend=bibtex8]{biblatex}
