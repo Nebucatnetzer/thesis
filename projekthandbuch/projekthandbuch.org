@@ -1,4 +1,5 @@
 #+title: Projekthandbuch
+:preamble:
 #+setupfile: ~/nextcloud/03_documents/org/settings/html_theme/setup/theme-readtheorg.setup
 #+author: Andreas Zweili
 #+latex_class: article
@@ -8,4 +9,5 @@
 #+language: de
 #+startup: align
 #+bibliography: general/bibliography.bib
+:end:
 
