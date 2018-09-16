@@ -1,6 +1,6 @@
 ALL=$(wildcard *.sty *.tex *.org pictures/*.svg pictures/*.eps pictures/*.dot \
 	pictures/*.tex pictures/*.puml)
-PAPER=projekthandbuch_main.tex
+PAPER=Projekthandbuch_Andreas_Zweili.tex
 SHELL=/bin/bash
 
 FIGURES_SVG=$(wildcard pictures/*.svg)
@@ -15,9 +15,9 @@ DOT_PDF=$(FIGURES_DOT:.dot=.pdf)
 TEX_PDF=$(FIGURES_TEX:.tex=.pdf)
 PUML_PDF=$(FIGURES_PUML:.puml=.svg)
 
-all: projekthandbuch_main.pdf ## Build full thesis (LaTeX + figures)
+all: Projekthandbuch_Andreas_Zweili.pdf ## Build full thesis (LaTeX + figures)
 
-projekthandbuch_main.pdf: $(SVG_PDF) $(EPS_PDF) $(DOT_PDF) $(TEX_PDF) \
+Projekthandbuch_Andreas_Zweili.pdf: $(SVG_PDF) $(EPS_PDF) $(DOT_PDF) $(TEX_PDF) \
 	$(PUML_PDF) projekthandbuch.tex general/ibzlogo.pdf $(BIBLIOGRAPHY)
 	latexmk -quiet -pdf -pdflatex="pdflatex -interaction=nonstopmode" \
 	-use-make $(PAPER)
@@ -30,18 +30,23 @@ clean:  ## Clean LaTeX and output figure files
 	rm -f $(PUML_PDF)
 	rm -f general/ibzlogo.pdf
 	rm -f *.acn
+	rm -f *.acr
 	rm -f *.bbl
 	rm -f *.glo
 	rm -f *.ist
+	rm -f *.alg
+	rm -f *.glg
+	rm -f *.gls
+	rm -f *.lol
 	rm -f *.run.xml
 	rm -f *-blx.bib
 	rm -rf auto/
 	rm -rf general/auto/
-	rm -rf general/style.aux
+	rm -rf general/*.aux
 	rm -f projekthandbuch.tex
 
 distclean: clean
-	rm -f projekthandbuch_main.pdf
+	rm -f Projekthandbuch_Andreas_Zweili.pdf
 
 pictures/%.pdf: pictures/%.svg  ## Figures for the manuscript
 	inkscape -C -z --file=$< --export-pdf=$@
