@@ -8,7 +8,7 @@
 #+otions: H:5 todo:f
 #+language: de
 #+startup: align
-#+bibliography: general/bibliography.bib
+#+exclude_tags: no_export
 :end:
 
 * DONE Zweck des Dokuments
@@ -185,3 +185,7 @@ CLOSED: [2018-07-09 Mo 20:55]
 
 Der Diplomand beantragt die Freigabe der Phase Voranalyse, diese startet mit dem
 Kick-off vom 10.12.2018.
+
+* Bibliography                                                    :no_export:
+
+bibliography:general/bibliography.bib

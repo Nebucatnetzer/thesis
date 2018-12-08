@@ -8,6 +8,11 @@
 #+otions: H:5 todo:t
 #+language: de
 #+startup: align
-#+bibliography: general/bibliography.bib
+#+exclude_tags: no_export
 :end:
 
+
+
+* Bibliography                                                    :no_export:
+
+bibliography:general/bibliography.bib
