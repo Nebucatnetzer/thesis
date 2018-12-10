@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="Diplomarbeit" company="" manager="Andreas Zweili" phase="Vorphase" project-start="20181001T000000Z" mrproject-version="2" calendar="1">
+<project name="Diplomarbeit" company="" manager="Andreas Zweili" phase="" project-start="20181210T000000Z" mrproject-version="2" calendar="1">
   <properties/>
   <phases/>
   <calendars>
@@ -7,80 +7,325 @@
       <day-type id="0" name="Working" description="A default working day"/>
       <day-type id="1" name="Nonworking" description="A default non working day"/>
       <day-type id="2" name="Use base" description="Use day from base calendar"/>
+      <day-type id="3" name="Evening" description=""/>
     </day-types>
     <calendar id="1" name="Default">
-      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <default-week mon="3" tue="3" wed="3" thu="3" fri="3" sat="1" sun="0"/>
       <overridden-day-types>
+        <overridden-day-type id="3">
+          <interval start="1900" end="2100"/>
+        </overridden-day-type>
         <overridden-day-type id="0">
           <interval start="0800" end="1200"/>
           <interval start="1300" end="1700"/>
         </overridden-day-type>
       </overridden-day-types>
-      <days/>
+      <days>
+        <day date="20181213" type="day-type" id="3"/>
+        <day date="20181228" type="day-type" id="0"/>
+        <day date="20190304" type="day-type" id="0"/>
+        <day date="20190102" type="day-type" id="0"/>
+        <day date="20190204" type="day-type" id="0"/>
+        <day date="20181210" type="day-type" id="3"/>
+        <day date="20190209" type="day-type" id="0"/>
+        <day date="20181220" type="day-type" id="3"/>
+        <day date="20181225" type="day-type" id="0"/>
+        <day date="20190211" type="day-type" id="0"/>
+        <day date="20181230" type="day-type" id="0"/>
+        <day date="20190104" type="day-type" id="0"/>
+        <day date="20190114" type="day-type" id="0"/>
+        <day date="20190311" type="day-type" id="0"/>
+        <day date="20181212" type="day-type" id="3"/>
+        <day date="20190316" type="day-type" id="0"/>
+        <day date="20190119" type="day-type" id="0"/>
+        <day date="20181222" type="day-type" id="0"/>
+        <day date="20181227" type="day-type" id="0"/>
+        <day date="20190101" type="day-type" id="1"/>
+        <day date="20181214" type="day-type" id="1"/>
+        <day date="20190218" type="day-type" id="0"/>
+        <day date="20190121" type="day-type" id="0"/>
+        <day date="20181224" type="day-type" id="3"/>
+        <day date="20190126" type="day-type" id="0"/>
+        <day date="20181229" type="day-type" id="0"/>
+        <day date="20190103" type="day-type" id="0"/>
+        <day date="20181211" type="day-type" id="3"/>
+        <day date="20181231" type="day-type" id="3"/>
+        <day date="20190225" type="day-type" id="0"/>
+        <day date="20181226" type="day-type" id="3"/>
+        <day date="20190128" type="day-type" id="0"/>
+        <day date="20190302" type="day-type" id="0"/>
+        <day date="20190202" type="day-type" id="0"/>
+        <day date="20190105" type="day-type" id="0"/>
+      </days>
     </calendar>
   </calendars>
   <tasks>
-    <task id="1" name="Vorphase" note="" work="0" start="20181027T000000Z" end="20181027T000000Z" work-start="20181029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="2" name="Diplomantrag abgeben" note="" work="0" start="20181027T000000Z" end="20181027T000000Z" work-start="20181029T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
-        <constraint type="must-start-on" time="20181027T000000Z"/>
-      </task>
+    <task id="1" name="Start Diplomarbeit" note="" work="0" start="20181210T000000Z" end="20181210T000000Z" work-start="20181210T190000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20181210T000000Z"/>
     </task>
-    <task id="3" name="Planung" note="" work="162000" start="20181210T000000Z" end="20181228T170000Z" work-start="20181210T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="4" name="Start Diplomarbeit" note="" work="0" start="20181210T000000Z" end="20181210T000000Z" work-start="20181210T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+    <task id="2" name="Planung" note="" work="162000" start="20181210T000000Z" end="20181228T000000Z" work-start="20181210T190000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="3" name="Zeitplan erarbeiten" note="" work="18000" start="20181210T000000Z" end="20181212T200000Z" work-start="20181210T190000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <constraint type="must-start-on" time="20181210T000000Z"/>
       </task>
-      <task id="5" name="Placeholder1" note="" work="162000" duration="432000" start="20181210T000000Z" end="20181228T170000Z" work-start="20181210T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
-        <constraint type="start-no-earlier-than" time="20181210T000000Z"/>
+      <task id="4" name="Ziele dokumentieren" note="" work="18000" start="20181212T200000Z" end="20181216T100000Z" work-start="20181212T200000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="4" type="FS"/>
+          <predecessor id="1" predecessor-id="3" type="FS"/>
         </predecessors>
+      </task>
+      <task id="5" name="L&#xF6;sungsvariante erarbeiten" note="" work="61200" duration="61200" start="20181216T100000Z" end="20181222T090000Z" work-start="20181216T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <constraint type="start-no-earlier-than" time="20181210T000000Z"/>
+        <task id="6" name="L&#xF6;sungsvarianten erfassen" note="" work="18000" start="20181216T100000Z" end="20181216T160000Z" work-start="20181216T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="4" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="7" name="L&#xF6;sungsvarianten bewerten" note="" work="28800" start="20181216T160000Z" end="20181220T200000Z" work-start="20181216T160000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="6" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="8" name="L&#xF6;sungsvariante bestimmen" note="" work="14400" start="20181220T200000Z" end="20181222T090000Z" work-start="20181220T200000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="7" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="9" name="SWOT Analyse erstellen" note="" work="18000" start="20181222T090000Z" end="20181222T150000Z" work-start="20181222T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="8" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="10" name="Umweltanalyse erstellen" note="" work="10800" start="20181222T150000Z" end="20181223T090000Z" work-start="20181222T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="11" name="Stakeholder Diagramm erstellen" note="" work="10800" start="20181222T150000Z" end="20181223T090000Z" work-start="20181222T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="9" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="12" name="Risikoanalyse erstellen" note="" work="36000" start="20181223T090000Z" end="20181225T090000Z" work-start="20181223T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="13" name="Risiken erfassen" note="" work="14400" start="20181223T090000Z" end="20181223T140000Z" work-start="20181223T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="11" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="14" name="Risiken bewerten" note="" work="7200" start="20181223T140000Z" end="20181223T160000Z" work-start="20181223T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="13" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="15" name="Massnahmen Katalog erarbeiten" note="" work="14400" start="20181223T160000Z" end="20181225T090000Z" work-start="20181223T160000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="14" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="16" name="Meeting #1" note="" work="0" start="20181228T000000Z" end="20181228T000000Z" work-start="20181228T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20181228T000000Z"/>
       </task>
     </task>
-    <task id="6" name="Durchf&#xFC;hrung" note="" work="460800" start="20181228T170000Z" end="20190225T170000Z" work-start="20181231T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <predecessors>
-        <predecessor id="1" predecessor-id="5" type="FS"/>
-      </predecessors>
-      <task id="7" name="Placeholder2" note="" work="432000" duration="1152000" start="20181228T170000Z" end="20190222T170000Z" work-start="20181231T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
-        <constraint type="start-no-earlier-than" time="20181210T000000Z"/>
-      </task>
-      <task id="8" name="Testing" note="" work="28800" duration="28800" start="20190222T170000Z" end="20190225T170000Z" work-start="20190225T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+    <task id="17" name="Durchf&#xFC;hrung" note="" work="795600" start="20181225T090000Z" end="20190310T120000Z" work-start="20181225T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="18" name="User Stories erarbeiten" note="" work="18000" start="20181225T090000Z" end="20181225T150000Z" work-start="20181225T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="7" type="FS"/>
+          <predecessor id="1" predecessor-id="15" type="FS"/>
         </predecessors>
+      </task>
+      <task id="19" name="Use Cases erarbeiten" note="" work="43200" start="20181225T150000Z" end="20181227T170000Z" work-start="20181225T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="20" name="Use Case Diagramm erstellen" note="" work="14400" start="20181225T150000Z" end="20181226T210000Z" work-start="20181225T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="18" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="21" name="Use Cases ausarbeiten" note="" work="28800" start="20181226T210000Z" end="20181227T170000Z" work-start="20181227T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="20" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="22" name="UI" note="" work="108000" start="20181227T170000Z" end="20190102T120000Z" work-start="20181228T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="23" name="UI Test ausarbeiten" note="" work="28800" start="20181227T170000Z" end="20181228T170000Z" work-start="20181228T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="24" name="UI ausarbeiten" note="" work="28800" start="20181228T170000Z" end="20181229T170000Z" work-start="20181229T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="23" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="25" name="UI von Usern testen lassen" note="" work="18000" start="20181229T170000Z" end="20181230T140000Z" work-start="20181230T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="24" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="26" name="UI Test Resultate auswerten" note="" work="14400" start="20181230T140000Z" end="20181231T200000Z" work-start="20181230T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="25" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="27" name="UI anpassen" note="" work="18000" start="20181231T200000Z" end="20190102T120000Z" work-start="20181231T200000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="26" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="28" name="Testing" note="" work="115200" duration="554400" start="20190102T120000Z" end="20190204T120000Z" work-start="20190102T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <task id="29" name="Testf&#xE4;lle erstellen" note="" work="43200" start="20190102T120000Z" end="20190103T170000Z" work-start="20190102T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="27" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="30" name="Meeting #2" note="" work="0" start="20190201T000000Z" end="20190201T000000Z" work-start="20190201T190000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20190201T000000Z"/>
+        </task>
+        <task id="31" name="Testf&#xE4;lle anwenden" note="" work="72000" start="20190201T210000Z" end="20190204T120000Z" work-start="20190202T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="46" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="32" name="Github Repository erstellen" note="" work="7200" start="20190103T170000Z" end="20190104T100000Z" work-start="20190104T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="29" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="33" name="Coding" note="" work="432000" start="20190104T100000Z" end="20190201T210000Z" work-start="20190104T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="34" name="Backend Read Config Funktion" note="" work="28800" start="20190104T100000Z" end="20190105T100000Z" work-start="20190104T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="32" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="35" name="Frontend Read Config Funktion" note="" work="28800" start="20190105T100000Z" end="20190106T100000Z" work-start="20190105T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="34" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="36" name="Backend Write Config Funktion" note="" work="28800" start="20190106T100000Z" end="20190107T210000Z" work-start="20190106T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="35" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="37" name="Frontend Write Config Funktion" note="" work="28800" start="20190107T210000Z" end="20190111T210000Z" work-start="20190108T190000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="36" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="38" name="Backend Backup Funktion" note="" work="28800" start="20190111T210000Z" end="20190113T170000Z" work-start="20190113T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="37" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="39" name="Frontend Backup Funktion" note="" work="28800" start="20190113T170000Z" end="20190114T170000Z" work-start="20190114T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="38" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="40" name="Backend Restore Funktion" note="" work="28800" start="20190114T170000Z" end="20190118T210000Z" work-start="20190115T190000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="39" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="41" name="Frontend Restore Funktion" note="" work="28800" start="20190118T210000Z" end="20190119T170000Z" work-start="20190119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="40" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="42" name="Backend Mounting Funktion" note="" work="28800" start="20190119T170000Z" end="20190120T170000Z" work-start="20190120T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="41" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="43" name="Frontend Mounting Funktion" note="" work="28800" start="20190120T170000Z" end="20190121T170000Z" work-start="20190121T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="42" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="44" name="Backend Delete Funktion" note="" work="28800" start="20190121T170000Z" end="20190125T210000Z" work-start="20190122T190000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="43" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="45" name="Frontend Delete Funktion" note="" work="28800" start="20190125T210000Z" end="20190126T170000Z" work-start="20190126T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="44" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="46" name="Coding Filler" note="" work="86400" start="20190126T170000Z" end="20190201T210000Z" work-start="20190127T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="45" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="47" name="Meeting #3" note="" work="0" start="20190301T000000Z" end="20190301T000000Z" work-start="20190301T190000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20190301T000000Z"/>
+      </task>
+      <task id="48" name="Arbeit korrigieren" note="" work="72000" start="20190304T000000Z" end="20190310T120000Z" work-start="20190304T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20190304T000000Z"/>
       </task>
     </task>
-    <task id="9" name="Abschluss" note="" work="180000" start="20190225T170000Z" end="20190427T000000Z" work-start="20190226T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="49" name="Diplomarbeit abgeben" note="" work="0" start="20190318T000000Z" end="20190318T000000Z" work-start="20190318T190000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20190318T000000Z"/>
+    </task>
+    <task id="50" name="Pr&#xE4;sentation" note="" work="0" start="20190402T000000Z" end="20190402T000000Z" work-start="20190402T190000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20190402T000000Z"/>
       <predecessors>
-        <predecessor id="1" predecessor-id="8" type="FS"/>
+        <predecessor id="1" predecessor-id="49" type="FS"/>
       </predecessors>
-      <task id="10" name="Arbeit korrigieren" note="" work="151200" duration="403200" start="20190225T170000Z" end="20190315T170000Z" work-start="20190226T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
-      <task id="11" name="Diplomarbeit abgeben" note="" work="0" start="20190318T000000Z" end="20190318T000000Z" work-start="20190318T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
-        <constraint type="must-start-on" time="20190318T000000Z"/>
+    </task>
+    <task id="51" name="Ausstellung" note="" work="86400" start="20190331T000000Z" end="20190428T170000Z" work-start="20190331T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20190427T000000Z"/>
+      <task id="52" name="Ausstellung vorbereiten" note="" work="86400" duration="288000" start="20190331T000000Z" end="20190428T170000Z" work-start="20190331T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <constraint type="start-no-earlier-than" time="20190331T000000Z"/>
       </task>
-      <task id="12" name="Pr&#xE4;sentationen" note="" work="28800" duration="403200" start="20190325T000000Z" end="20190411T170000Z" work-start="20190325T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
-        <constraint type="start-no-earlier-than" time="20190325T000000Z"/>
-        <predecessors>
-          <predecessor id="1" predecessor-id="11" type="FS"/>
-        </predecessors>
-      </task>
-      <task id="13" name="Ausstellung" note="" work="0" start="20190427T000000Z" end="20190427T000000Z" work-start="20190429T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <task id="53" name="Arbeit ausstellen" note="" work="0" start="20190427T000000Z" end="20190427T000000Z" work-start="20190428T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <constraint type="must-start-on" time="20190427T000000Z"/>
       </task>
     </task>
   </tasks>
   <resource-groups/>
   <resources>
-    <resource id="1" name="Andreas Zweili" short-name="AZ" type="1" units="0" email="" note="" std-rate="60"/>
+    <resource id="1" name="Andreas Zweili" short-name="AZ" type="1" units="0" email="" note="" std-rate="60" calendar="1"/>
   </resources>
   <allocations>
-    <allocation task-id="10" resource-id="1" units="38"/>
-    <allocation task-id="13" resource-id="1" units="100"/>
-    <allocation task-id="12" resource-id="1" units="7"/>
-    <allocation task-id="11" resource-id="1" units="100"/>
-    <allocation task-id="8" resource-id="1" units="100"/>
-    <allocation task-id="7" resource-id="1" units="38"/>
-    <allocation task-id="5" resource-id="1" units="38"/>
+    <allocation task-id="30" resource-id="1" units="100"/>
+    <allocation task-id="47" resource-id="1" units="100"/>
+    <allocation task-id="16" resource-id="1" units="100"/>
+    <allocation task-id="44" resource-id="1" units="100"/>
+    <allocation task-id="42" resource-id="1" units="100"/>
+    <allocation task-id="40" resource-id="1" units="100"/>
+    <allocation task-id="38" resource-id="1" units="100"/>
+    <allocation task-id="36" resource-id="1" units="100"/>
+    <allocation task-id="34" resource-id="1" units="100"/>
+    <allocation task-id="35" resource-id="1" units="100"/>
+    <allocation task-id="37" resource-id="1" units="100"/>
+    <allocation task-id="39" resource-id="1" units="100"/>
+    <allocation task-id="41" resource-id="1" units="100"/>
+    <allocation task-id="43" resource-id="1" units="100"/>
+    <allocation task-id="45" resource-id="1" units="100"/>
+    <allocation task-id="46" resource-id="1" units="100"/>
     <allocation task-id="4" resource-id="1" units="100"/>
-    <allocation task-id="2" resource-id="1" units="100"/>
+    <allocation task-id="32" resource-id="1" units="100"/>
+    <allocation task-id="53" resource-id="1" units="100"/>
+    <allocation task-id="21" resource-id="1" units="100"/>
+    <allocation task-id="9" resource-id="1" units="100"/>
+    <allocation task-id="11" resource-id="1" units="100"/>
+    <allocation task-id="13" resource-id="1" units="100"/>
+    <allocation task-id="14" resource-id="1" units="100"/>
+    <allocation task-id="15" resource-id="1" units="100"/>
+    <allocation task-id="20" resource-id="1" units="100"/>
+    <allocation task-id="23" resource-id="1" units="100"/>
+    <allocation task-id="24" resource-id="1" units="100"/>
+    <allocation task-id="25" resource-id="1" units="100"/>
+    <allocation task-id="26" resource-id="1" units="100"/>
+    <allocation task-id="27" resource-id="1" units="100"/>
+    <allocation task-id="29" resource-id="1" units="100"/>
+    <allocation task-id="8" resource-id="1" units="100"/>
+    <allocation task-id="7" resource-id="1" units="100"/>
+    <allocation task-id="6" resource-id="1" units="100"/>
+    <allocation task-id="3" resource-id="1" units="100"/>
+    <allocation task-id="48" resource-id="1" units="100"/>
+    <allocation task-id="50" resource-id="1" units="100"/>
+    <allocation task-id="49" resource-id="1" units="0"/>
+    <allocation task-id="18" resource-id="1" units="100"/>
+    <allocation task-id="1" resource-id="1" units="100"/>
   </allocations>
 </project>
