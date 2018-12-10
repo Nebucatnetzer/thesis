@@ -50,6 +50,7 @@
         <day date="20190103" type="day-type" id="0"/>
         <day date="20181211" type="day-type" id="3"/>
         <day date="20181231" type="day-type" id="3"/>
+        <day date="20190427" type="day-type" id="0"/>
         <day date="20190225" type="day-type" id="0"/>
         <day date="20181226" type="day-type" id="3"/>
         <day date="20190128" type="day-type" id="0"/>
@@ -271,12 +272,12 @@
         <predecessor id="1" predecessor-id="49" type="FS"/>
       </predecessors>
     </task>
-    <task id="51" name="Ausstellung" note="" work="86400" start="20190331T000000Z" end="20190428T170000Z" work-start="20190331T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="51" name="Ausstellung" note="" work="86400" start="20190331T000000Z" end="20190427T000000Z" work-start="20190331T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20190427T000000Z"/>
-      <task id="52" name="Ausstellung vorbereiten" note="" work="86400" duration="288000" start="20190331T000000Z" end="20190428T170000Z" work-start="20190331T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+      <task id="52" name="Ausstellung vorbereiten" note="" work="86400" duration="259200" start="20190331T000000Z" end="20190426T210000Z" work-start="20190331T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
         <constraint type="start-no-earlier-than" time="20190331T000000Z"/>
       </task>
-      <task id="53" name="Arbeit ausstellen" note="" work="0" start="20190427T000000Z" end="20190427T000000Z" work-start="20190428T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <task id="53" name="Arbeit ausstellen" note="" work="0" start="20190427T000000Z" end="20190427T000000Z" work-start="20190427T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <constraint type="must-start-on" time="20190427T000000Z"/>
       </task>
     </task>
