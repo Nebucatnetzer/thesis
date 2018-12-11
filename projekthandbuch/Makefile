@@ -68,5 +68,5 @@ pictures/%.svg: pictures/%.puml
 	java -jar ~/bin/plantuml.jar -tsvg $<
 
 projekthandbuch.tex: projekthandbuch.org
-	emacs -l ~/.emacs.d/init.el --batch \
+	emacs -l general/thesis.el --batch \
 	--eval="(progn (find-file \"projekthandbuch.org\") (org-latex-export-to-latex nil nil nil t))"
