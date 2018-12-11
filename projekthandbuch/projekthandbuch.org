@@ -27,6 +27,12 @@ PLACEHOLDER
 ** TODO Lizenz
 
 PLACEHOLDER
+** Lizenz
+
+Dieses Dokument wurde von Andreas Zweili im Rahmen der Diplomarbeit an der IBZ
+Schule erstellt und steht unter der gls:cc BY-SA 4.0 footcite:cc Lizenz.
+Dadurch darf die Arbeit unter beibehalten der Lizenz kopiert und
+weiterverarbeitet werden.
 
 * TODO Projektanalyse
 ** TODO Projektziele
