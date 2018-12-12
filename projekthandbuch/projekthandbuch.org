@@ -41,25 +41,183 @@ Dadurch darf die Arbeit unter beibehalten der Lizenz kopiert und
 weiterverarbeitet werden. Zusätzlich muss der Urheber gennant werden.
 
 * TODO Projektanalyse
-** TODO Projektziele
+** Vision
+
+Die Software soll gls:bb für den durschnittlichen Computer User zugänglich
+machen. Die Backups sollen dabei schnell und unkompliziert erstellt werden
+können. Die Möglichkeit automatischer im Hintergrund laufender Backups soll dem
+User gegeben sein damit die Hürde für Backups so tief wie möglich gehalten wird.
+
+Die besten Backups sind solche bei denen man gar nicht mehr weiss das man sie
+hat bis man sie braucht.
+
+** Ausgangslage
+
+gls:bb ist deshalb interessant weil es wärend einem Backup relativ
+wenig Ressource im Vergleich zu anderen Systemen benötigt und schon relativ
+lange aktiv entwickelt wird. Dadurch ist es im Altag geprüft worden.
+Desweiteren bietet gls:bb die Funktion für Verschlüsselung was es einem User
+ermöglicht die Daten auf einem unsicheren Cloud Speicher abzulegen.
+
+Desweiteren speichert gls:bb die Daten mit blockbasierter gls:dedup ab. Dies
+hat den riesigen Vorteil das bei einem Backup nur die Änderungen auf
+Block-Ebene gespeichert werden und nicht jedes Mal die ganze Datei kopiert
+werden muss.
+
+Damit ermöglicht die Software auch Backups von sehr grossen Dateien, wie Videos
+oder Disk Images von virtuellen Maschinen, in mehreren Version. Ohne dabei
+jedoch signifikant mehr an Speicher zu benötigen. Zusätzlich werden die Backups
+dadurch rasend schnell ausgeführt. Gerade dieses Feature macht gls:bb in den
+Augen des Authors besonders interessant da sich der durschnittliche User
+möglichst wenig mit Dingen wie Backups ausseinander setzen möchte. Umsobesser
+also wenn sie schnell gehen und so wenig Speicherplatz wie möglich verbrauchen.
+
+gls:bb bietet Entwicklern eine gls:json, gls:api, mit welcher sie, von gls:bb
+ausgegebenen Dateinen einfach weiterverarbeiten können.
+
+gls:bb steht unter einer gls:bsd footcite:bsd Lizenz zur Verfügung und ist somit
+gls:libre.
+
+Das Projekt muss dabei vom Studenten in Eigenarbeit und einer Zeit von 250
+Stunden bis zum 18. März 2019 erarbeitet werden.
+
+** Projektziele
+
+Das Hauptziel der Arbeit soll es sein eine einfach nutzbare grafische
+Oberfläche für gls:bb zu entwickeln. Da gls:bb selber freie Software ist und
+der Author mit gls:libre viel gute Erfahrungen gemacht hat soll das Projekt
+selber auch wieder gls:libre sein. Zum einen um der Community etwas
+zurückzugeben des weiteren um anderen Entwicklern die Möglichkeit zu geben die
+Software zu verbessern und weiterzu entwickeln.
+
+Als nebenläufiges Ziel soll mit dieser Arbeit auch die Verbreitung von freier
+Software gefördert werden. Dies wird insbesondere dadurch erreicht, dass die
+Software selbst unter der gls:gpl Version 3 footcite:gplv3
+veröffentlicht wird. Wenn möglich sollen während der Entwicklung auch
+hauptsächlich freie Software verwendet werden. Die gesamte Arbeit wird zudem zu
+jedem Zeitpunkt öffentlich einsehbar sein. Der Quelltext der Dokumentation ist
+unter diesem Link erreichbar: https://git.2li.ch/Nebucatnetzer/thesis
+
+Die Entwicklung wird hauptsächlich auf einem Linux System stattfinden. Da
+BorgBackup einerseits hauptsächlich auf Unix Systeme ausgelegt ist und
+anderseits die Hauptzielgruppe des Projektes auch auf Linux Usern liegt.
+Trotzdem sollen im Projekt Cross-Plattform fähige Technologien eingesetzt werden
+damit es in der Zukunft möglich ist das Projekt auf andere Plattformen
+auszuweiten.
+
+*** Ziele inklusive Gewichtung
+
+Im Projektantrag wurden vorgängig vollgende Ziele definiert und entsprechend
+gewichtet. Die Gewichtung wurde dabei so vorgenommen, dass Ziele mit einer
+Muss-Gewichtung den Minimalanforderungen der Software entsprechen.
+Die weiteren Ziele wurden dann mit Ziffern von 5 - 1 gewichtet. Eine 5 bedeutet
+dabei dass, das Ziel in naher Zukunft sehr nützlich/wichtig für die Software
+wär ist. Eine tiefe Zahl sollte dabei wenn möglich auch einmal in die Software
+integriert werden und ist nicht unwichtig.
+
+#+CAPTION: Projektziele
+#+ATTR_LATEX: :environment longtable :align |p{1cm}|p{9cm}|p{1.5cm}|p{2cm}|
+#+NAME: tab:projektziele
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+| *Ziel-Nr.*\cellcolor[HTML]{C0C0C0} | *Zielsetzung*\cellcolor[HTML]{C0C0C0}                                                                | *Muss*\cellcolor[HTML]{C0C0C0} | *Wunsch*\newline (1-5, 5=sehr wichtig)\cellcolor[HTML]{C0C0C0} |
+|   <5> | <100>                                                                                                | <10>       |       <10> |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|    1. | Die Anwendung setzt auf Cross-Plattform (Linux, Windows, OSX) fähige Technologien.                   | x          |            |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|    2. | Die Anwendung steht unter der gls:gpl v3 footcite:gplv3 der Öffentlichkeit zur Verfügung.            | x          |            |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|    3. | Der User kann mit weniger als 3 Klicks ein Backup ausführen.                                         | x          |            |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|    4. | Der User kann ein Archiv mit 3 Klicks löschen.                                                       | x          |            |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|    5. | Der User kann unter Linux ein Archiv mit zwei Klicks "read-only" als Laufwerk mounten.               | x          |            |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|    6. | Der User kann ein Archiv wieder herstellen.                                                          | x          |            |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|    7. | Der User kann den zu sichernden Pfad manuell in der Anwendung definieren.                            | x          |            |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|    8. | Die Applikation holt ihre Konfiguration aus einer Plain-Text Datei.                                  | x          |            |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|    9. | Der User kann sein Repository auf einer Harddisk ablegen.                                            | x          |            |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   10. | Die Anwendung exkludiert für einen Linux Computer sinnvolle Pfade bereits zu Beginn.                 | x          |            |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   11. | Die Archivliste wird nach einer Aktion automatisch aktualisiert.                                     | x          |            |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   12. | Der User kann sein Repository auf einem über SSH erreichbaren Server ablegen.                        |            |          5 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   13. | Der User kann den Namen eines Archives selbst bestimmen.                                             |            |          5 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   14. | Die Anwendung meldet transparent, wenn das Repository nicht erreichbar ist.                          |            |          5 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   15. | Die Anwendung meldet dem User, wenn noch ein Hypervisor am Laufen ist.                               |            |          5 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   16. | Die Anwendung leitet Meldungen von gls:bb transparent weiter.                                        |            |          5 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   17. | Die Anwendung zeigt transparent an das gls:bb im Hintergrund bereits läuft.                          |            |          5 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   18. | Das Repository wird nach jedem Backup bereinigt.                                                     |            |          4 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   19. | Der User kann automatische Hintergrundbackups in der Anwendung konfigurieren.                        |            |          4 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   20. | Die Anwendung gibt dem User die Möglichkeit ein passendes Repository zu erstellen, wenn keines gefunden wird, die Anwendung jedoch bereits konfiguriert ist. |            |          4 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   21. | Die Applikation verwendet, wann immer möglich allgemeingültige Umgebungsvariablen.                   |            |          4 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   22. | Die Anwendung cached/speichert (evtl. zusätzliche) Informationen in einer Datenbank.                 |            |          3 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   23. | Die Anwendung zeigt beim ersten Starten einen Setup Wizard.                                          |            |          3 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   24. | Der User kann sich mit 3 Klicks das Log eines Archives anschauen. Nur möglich mit einer zusätzlichen DB. |            |          3 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   25. | Die Anwendung kann Systembenachrichtigungen auslösen.                                                |            |          3 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   26. | Der User kann die Anwendung grafisch konfigurieren.                                                  |            |          3 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   27. | Der User kann entscheiden ob, ein gemountetes Archiv nach dem Schliessen der Applikation noch weiter verfügbar ist. |            |          2 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   28. | Der User kann das Repository wechseln.                                                               |            |          2 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   29. | Der User kann ein Archiv nach einer Datei oder einem Ordner durchsuchen.                             |            |          2 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   30. | Der User kann die "Retention Policy" konfigurieren.                                                  |            |          2 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   31. | Die Anwendung kann mit allen Features von BargBackup umgehen.                                        |            |          2 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+|   32. | Die Applikation prüft, ob sie sich im richtigen Netzwerk befindet bevor sie eine Verbindung zum Server aufbaut. |            |          2 |
+|-------+------------------------------------------------------------------------------------------------------+------------+------------|
+#+LATEX:\newpage
+
+** Projektabgrenzung
+
+Die Anwendung beschränkt sich darauf Funktionen von gls:bb grafisch
+darzustellen oder nützlich zu erweitern soweit dies über die gls:api möglich
+ist. Eine Erweiterung von gls:bb ist nicht vorgesehen. Backup und
+Verschlüsselung sind heikle Themen und sollten umbedingt nur von Experten
+angegangen werden. Das Potential für Fehler und die Auswirkungen deren sind
+einfach schlicht zu gross.
+
+Bugs von gls:bb welche während der Dauer der Diplomarbeit vom Studenten
+entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
+
+** TODO Umweltanalyse
+
+PLACEHOLDER
+
+** TODO Varianten
+
+PLACEHOLDER
+
+*** TODO Ergebnis
 
 PLACEHOLDER
 
 ** TODO Vorkenntnisse
 
-PLACEHOLDER
-
-** TODO Vision
-
-PLACEHOLDER
-
-** TODO SWOT-Analyse
-
-PLACEHOLDER
-
-** TODO Umweltanalyse
-
-PLACEHOLDER
+Die benötigten Vorkenntnisse wurden in den vorangegangenen Semestern erarbeitet
+und sind in der Basis gefestigt. Erfahrungen im Bereich der Entwicklung von
+Desktop Applikationen sind zum Teil vorhanden. Jedoch hauptsächlich für Windows
+Systemenen.
 
 ** TODO Risikomanagement
 *** TODO Risikobeschreibung
@@ -70,24 +228,15 @@ PLACEHOLDER
 
 PLACEHOLDER
 
-** TODO Projektabgrenzung
+** TODO SWOT-Analyse
 
 PLACEHOLDER
 
-* TODO Projektmanagement
 ** TODO Methoden
 
 PLACEHOLDER
 
 ** TODO Organigramm
-
-PLACEHOLDER
-
-** TODO Varianten
-
-PLACEHOLDER
-
-*** TODO Ergebnis
 
 PLACEHOLDER
 
