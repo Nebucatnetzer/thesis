@@ -19,8 +19,9 @@ diesem Dokument.
 
 ** Beschreibung
 
-Planung und Erstellung einer grafischen Oberfläche zum einfachen bedienen der
-Software BorgBackup sowie deren Konfiguration.
+Diese Arbeit hat zum Ziel die Planung und Erstellung einer grafischen
+Oberfläche zum einfachen Bedienen der Software gls:bb footcite:borgbackup
+sowie deren Konfiguration, durchzuführen.
 
 ** Zweck und Inhalt
 
