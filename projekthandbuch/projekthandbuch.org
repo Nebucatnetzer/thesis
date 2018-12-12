@@ -272,9 +272,9 @@ Gründen ausgewählt:
 *** Editor
 
 Sowohl bei der Dokumentation wie auch bei der Programmierung wurde
-hauptsächlich der Editor GNU Emacsfootcite:emacs verwendet. GNU Emacs ist mit
+hauptsächlich der Editor GNU Emacs footcite:emacs verwendet. GNU Emacs ist mit
 32 Jahren (obwohl seine Wurzeln bis ins Jahre 1976 zurückgehen) wohl eines der
-ältesten noch "aktiven" Software Projekte. Emacs ist gls:libre unter der
+ältesten noch aktiven Software Projekte. Emacs ist gls:libre unter der
 gls:gpl v3. Emacs wurde gewählt da es ein schneller, schlanker und sehr
 flexibler Texteditior ist. Von normaler Textmanipulation über Taskmanagement
 und Emails schreiben ist alles möglich.
