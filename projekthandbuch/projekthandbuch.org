@@ -124,7 +124,7 @@ integriert werden und ist nicht unwichtig.
 |-------+------------------------------------------------------------------------------------------------------+------------+------------|
 |    1. | Die Anwendung setzt auf Cross-Plattform (Linux, Windows, OSX) fähige Technologien.                   | x          |            |
 |-------+------------------------------------------------------------------------------------------------------+------------+------------|
-|    2. | Die Anwendung steht unter der gls:gpl v3 footcite:gplv3 der Öffentlichkeit zur Verfügung.            | x          |            |
+|    2. | Die Anwendung steht unter der gls:gpl v3 der Öffentlichkeit zur Verfügung.                           | x          |            |
 |-------+------------------------------------------------------------------------------------------------------+------------+------------|
 |    3. | Der User kann mit weniger als 3 Klicks ein Backup ausführen.                                         | x          |            |
 |-------+------------------------------------------------------------------------------------------------------+------------+------------|
