@@ -206,11 +206,96 @@ PLACEHOLDER
 
 ** TODO Varianten
 
-PLACEHOLDER
+Da Borg eine JSON API zur Verfügung stellt bieten sich diverse Möglichkeiten um
+das Programm anzubinden. Da das Ziel ist, das Programm normalen Nutzern
+zugänglicher zu machen, bietet sich ein normales Desktop Programm am ehesten
+an. Desktop Programme werden von allen Computer Usern täglich genutzt und sind
+somit etwas was sie kennen.
 
-*** TODO Ergebnis
+Daraus ergeben sich weitere Möglichkeiten für das Projekt.
 
-PLACEHOLDER
+*** Backend
+
+Fürs Backend bieten sich folgende Sprachen an.
+- C#
+- C++
+- Python
+
+*C#*
+
+C# ist eine von Microsoft entwickelte Programmiersprache sowie mit .NET auch
+ein Framework. Zudem ist es die Programmierspache welche an der IBZ
+hauptsächlich gelehrt wird. Dadurch sind die Kenntnisse der Sprache und ihrer
+Anwendung bereits relativ gross. Insbesondere Aufgrund der grossen
+kommerziellen Nutzung in Windows hat C# eine relative grosse Verbreitung.
+
+C# ist eine stark typisierte Sprache, heisst man muss bei Objekten den
+Datentyp bereits beim erstellen definieren. Desweiteren ist C# eine kompilierte
+Sprache und setzt stark auf objekt-orientierte Programmierung.
+
+C# wird dabei hauptsächlich mit der gls:ide Microsoft Visual Studio. Eine sehr
+umfangreiche und komlexe Software. Visual Studio ist dabei nur für Windows und
+OS X erhältlich. Es ist auch möglich C# Projekte ausserhalb von Visual Studio
+zu erstellen ist jedoch nicht sehr einfach.
+
+C# ist zu Teilen freie Software. Die Common Language Runtime welche für das
+Ausführen von Software zuständig ist, ist unter der MIT Lizenz lizenziert
+footcite:csharp der aktuelle Compiler Roslyn ist unter der Apache Lizenz
+verfügbar footcite:roslyn.
+
+*C++*
+
+C++ ist eine stark typisierte und kompilierte Programmiersprache. Sie ist seit
+1998 Teil des ISO Standards footcite:cpp98. ISO/IEC 14882:2017 footcite:cpp17
+ist zur Zeit die aktuellste Variante. Die Sprache existiert seit ca. 33 Jahren
+und hat eine weitreichende Verbreitung gefunden. C++ ist auf allen
+Betriebssystemen gut unterstützt.
+
+C++ kompiliert direkt zu Maschinensprache und ist dadurch sehr performant. C++
+ist im Vergleich zu modernen Sprachen jedoch relativ komplex und bietet diverse
+Stolpersteine für Programmierer.
+
+Da C++ auch heute noch zu den meistgenutzten Sprachen gehört gibt es
+entsprechend viele Ressourcen dazu und Beispiel Projekte von denen man ableiten
+kann. Auch hilfreiche Libraries gibts es sehr viele welche den Programmierer
+unterstützen können.
+
+*Python*
+
+Python ist eine dynamisch typisierte und interpretierte Sprache. Dies bedeutet
+das man bei Variabeln nicht explizit den Typ angeben muss und die Programme zur
+Laufzeit für den Computer übersetzt werden. Interpretierte Sprachen haben den
+Vorteil das man mit ihnen in der Regel sehr schnell und unkompliziert
+entwickeln kann, dies jedoch auf Kosten der Performance.
+
+Python unterstützt mehrere Programmierungsparadigmen wie etwa
+objekt-orientiert, funktionale oder Prozedurale Paradigmen. Der Python
+Interpreter ist für eine Vielzahl an Betriebssystemen erhältlich, inklusive
+Windows, OS X und Linux. Nahezu jedes Desktop Linux System kommt mit Python vor
+installiert.
+
+Bei der Entwicklung von Python wurde sehr grossen Wert auf die Lesbarkeit der
+Sprache gelegt. Dies mit dem Hintergedanken das eine Programmierspache viel
+häufiger gelesen als effektiv geschrieben wird.
+
+Python ist freie Software unter der Python Software Foundation License
+footcite:python und wird durch die Python Software Foundation in einem
+Community basierten Modell entwickelt.
+
+*** FrontEnd
+
+Fürs Frontend sind folgende Projekte interessant:
+- Qt
+- Gtk
+- Electron
+
+*** TODO Bewertung
+
+Die Bewertungspunkte setzen sich einerseits aus den Projektzielen anderseits
+aus für das Projekt sinnvollen Punkten zusammen. Dadurch ergeben sich dann die
+Punkte welche in der nachfolgenden Tabelle aufgenommen wurden. Die möglichen
+Varianten wurden dann bewertet und die Variante mit der höchsten Bewertung
+wurde für das Projekt ausgewählt.
 
 ** TODO Vorkenntnisse
 
