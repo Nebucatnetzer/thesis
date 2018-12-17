@@ -54,7 +54,7 @@ pictures/%.pdf: pictures/%.svg  ## Figures for the manuscript
 pictures/%.pdf: pictures/%.eps  ## Figures for the manuscript
 	inkscape -C -z --file=$< --export-pdf=$@
 
-general/ibzlogo.pdf: general/ibzlogo.eps
+general/ibzlogo.pdf: general/ibzlogo.svg
 	inkscape -C -z --file=$< --export-pdf=$@
 
 pictures/%.pdf: pictures/%.dot  ## Figures for the manuscript
