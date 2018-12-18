@@ -1,0 +1,18 @@
+:preamble:
+#+setupfile: ~/git_repos/notes/settings/html_theme/setup/theme-readtheorg.setup
+#+latex_header: \input{/home/andreas/git_repos/notes/settings/latex/style}
+#+options: toc:nil num:nil
+#+exclude_tags: no_export
+:end:
+
+* Command                                                         :no_export:
+
+#+BEGIN_SRC bash :results silent
+git log --pretty=format:'*%aD, %an:* %s%n' | sed s/+0100//g | sed s/+0200//g > git.org
+#+END_SRC
+
+* Dokumenten Version
+
+#+latex: {\small
+#+include:git.org
+#+latex: }
