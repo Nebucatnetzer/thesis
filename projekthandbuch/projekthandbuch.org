@@ -315,34 +315,55 @@ Betriebssystemen gut unterstützt.
 Von C++ sind innerhalb des Projektes keinerlei Vorkenntnisse vorhanden. Dies
 ist ein sehr hoher Risikofaktor.
 
-C++ kompiliert direkt zu Maschinensprache und ist dadurch sehr performant. C++
-ist im Vergleich zu modernen Sprachen jedoch relativ komplex und bietet diverse
-Stolpersteine für Programmierer.
+C++ kompiliert direkt zu Maschinensprache und ist dadurch sehr performant und
+läuft sehr gut auf jedem System. C++ ist im Vergleich zu modernen Sprachen
+jedoch relativ komplex und bietet diverse Stolpersteine für Programmierer.
+
+Zum entwickeln braucht es verhältnismässig wenig. Da die Sprache bereits sehr
+alt ist, stammt sie noch aus einer Zeit wo man noch etwas rudimentärer
+programmierte. Allerdings braucht man in jedem Fall einen gls:compiler um ein
+ausführbares Programm zu erzeugen. Bei komplexeren Programmen wird man um
+mindestens so etwas wie glspl:makefile auch nicht herumkommen.
+
+Im Vergleich zu Python oder C# ist C++ wohl die am schwersten lesbare Sprache.
+Zudem gibt es auch keinen zentralen Styleguide welcher einem vorgeben würde wie
+der Code am besten aussschauen sollte. Somit haben sich über die Jahre mehrere
+Standards etabliert.
+
+Der Lernfaktor wäre Aufgrund der mangelnden Vorkenntnisse hier ganz klar am
+Grössten.
+
+Da C++ eine alte Sprache ist geniesst sie auch eine dementsprechende
+Verbreitung. Daher ist anzunehmen das sicher mindestens ein grössere Teil der
+älteren BorgBackup Entwickler C++ oder C gelernt haben.
 
 Da C++ auch heute noch zu den meistgenutzten Sprachen gehört gibt es
 entsprechend viele Ressourcen dazu und Beispiel Projekte von denen man ableiten
 kann. Auch hilfreiche Libraries gibts es sehr viele welche den Programmierer
-unterstützen können.
+unterstützen können. Die Sprache selber ist jedoch eher umständlich zu
+schreiben. Hinzu kommt noch das man während der Entwicklung immer wieder den
+Code kompilieren muss. In einem Projekt mit dieser begrenzten Zeitspanne eher
+ungeeignet.
 
 #+CAPTION: C++ Bewertungstabelle
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|
 #+NAME: tab:cpp
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| <20>                 |                 <20> |                 <20> | <20>                 |                 <20> |
+| <20>                 |                 <20> |                 <20> |                 <20> |                 <20> |
 | *Kriterium*\cellcolor[HTML]{C0C0C0} | *Gewichtung*\cellcolor[HTML]{C0C0C0} | *max. Punktzahl*\cellcolor[HTML]{C0C0C0} | *erreichte Punktzahl*\cellcolor[HTML]{C0C0C0} | *Kriteriums- ergebnis*\cellcolor[HTML]{C0C0C0} |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| 1. Cross Plattform nutzbar |                   10 |                   10 | 10                   |                    0 |
-| 2. Freie Software    |                    5 |                   10 | 10                   |                    0 |
-| 3. Vorkenntnisse     |                    5 |                   10 | 0                    |                    0 |
-| 4. Integriert sich gut ins System |                    5 |                   10 |                      |                    0 |
-| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                      |                    0 |
-| 6. Lesbarkeit des Codes |                    5 |                    5 |                      |                    0 |
-| 7. Einfachheit des Setups |                    5 |                    5 |                      |                    0 |
-| 8. Lernfaktor        |                    5 |                    5 |                      |                    0 |
-| 9. Verbreitung bei der BorgBackup Community |                    5 |                    5 |                      |                    0 |
-| 10. Geschwindigkeit der Entwicklung |                    3 |                    5 |                      |                    0 |
+| 1. Cross Plattform nutzbar |                   10 |                   10 |                   10 |                  100 |
+| 2. Freie Software    |                    5 |                   10 |                   10 |                   50 |
+| 3. Vorkenntnisse     |                    5 |                   10 |                    0 |                    0 |
+| 4. Integriert sich gut ins System |                    5 |                   10 |                   10 |                   50 |
+| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                    7 |                   35 |
+| 6. Lesbarkeit des Codes |                    5 |                    5 |                    2 |                   10 |
+| 7. Einfachheit des Setups |                    5 |                    5 |                    3 |                   15 |
+| 8. Lernfaktor        |                    5 |                    5 |                    5 |                   25 |
+| 9. Verbreitung bei der BorgBackup Community |                    5 |                    5 |                    3 |                   15 |
+| 10. Geschwindigkeit der Entwicklung |                    3 |                    5 |                    2 |                    6 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| *Total*              |                      |                      |                      |                    0 |
+| *Total*              |                      |                      |                      |                  306 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
 #+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4::@11$5=@11$2 * @11$4::@12$5=@12$2 * @12$4
 #+TBLFM: @>$5=vsum(@3..@-1)
