@@ -70,3 +70,4 @@ pictures/%.svg: pictures/%.puml
 projekthandbuch.tex: projekthandbuch.org
 	emacs -l general/thesis.el --batch \
 	--eval="(progn (find-file \"projekthandbuch.org\") (org-latex-export-to-latex nil nil nil t))"
+	replace-listings.sh projekthandbuch.tex
