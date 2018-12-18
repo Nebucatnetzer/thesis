@@ -379,9 +379,8 @@ effektiv geschrieben wird footcite:pep8.
 
 Um ein Python Programm zu starten braucht es eigentlich kein grosses Setup.
 Solange die Abhängigkeiten vorhanden sind, kann man ein Skript mit einem
-einfachen Befehl, Codesnippet ([[minimal_code]]), starten.
+einfachen Befehl starten.
 
-#+name: minimal_code
 #+caption: Minimal Python Setup
 #+BEGIN_SRC bash
 python3 example.py
@@ -392,7 +391,7 @@ Sprache selber nicht mehr so hoch. Allerdings gibt es noch viele interessante
 Konzepte die man im Zusammenhang mit der Sprache lernen kann. Wie etwa zum
 Beispiel multiple Vererbung von Klassen.
 
-gls:borg selber wurde in Python geschrieben. Daher ist davon auszugehen das
+gls:bb selber wurde in Python geschrieben. Daher ist davon auszugehen das
 Python innerhalb dieser Community eine sehr hohe Verbreitung geniesst.
 
 Python ist eine dynamisch typisierte und interpretierte Sprache. Dies bedeutet
