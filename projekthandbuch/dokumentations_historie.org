@@ -5,14 +5,94 @@
 #+exclude_tags: no_export
 :end:
 
-* Command                                                         :no_export:
+* Dokument Historie
 
-#+BEGIN_SRC bash :results silent
-git log --pretty=format:'*%aD, %an:* %s%n' | sed s/+0100//g | sed s/+0200//g > git.org
+#+BEGIN_SRC bash :exports results :eval never-export
+echo "*Datum*, *Author*, *Änderung*"
+git log --pretty=format:'%ai, %an, %s' | sed s/+0100//g | sed s/+0200//g
 #+END_SRC
 
-* Dokumenten Version
-
-#+latex: {\small
-#+include:git.org
-#+latex: }
+#+ATTR_LATEX: :environment longtable :align |p{3cm}|p{3cm}|p{8cm}|
+#+RESULTS:
+|---------------------+----------------+----------------------------------------------------------------|
+| *Datum*             | *Author*       | *Änderung*                                                     |
+|---------------------+----------------+----------------------------------------------------------------|
+| 2018-12-18 17:52:28 | Andreas Zweili | add dokument_historie.org                                      |
+| 2018-12-17 22:53:54 | Andreas Zweili | add Konfigurationsmanagement and Projektmethode to Gantt Chart |
+| 2018-12-17 22:53:09 | Andreas Zweili | change the eps logo to svg                                     |
+| 2018-12-17 22:44:54 | Andreas Zweili | add org-mode config to the thesis.el file                      |
+| 2018-12-16 21:51:22 | Andreas Zweili | Variantenbewertung                                             |
+| 2018-12-15 08:40:16 | Andreas Zweili | add stakeholder diagramm                                       |
+| 2018-12-12 21:53:14 | Andreas Zweili | various smaller fixes                                          |
+| 2018-12-12 21:47:39 | Andreas Zweili | fix the glossary entries                                       |
+| 2018-12-12 21:47:20 | Andreas Zweili | add section about Werkzeuge                                    |
+| 2018-12-12 21:18:25 | Andreas Zweili | remove duplicate reference                                     |
+| 2018-12-12 21:14:50 | Andreas Zweili | extend the documentation                                       |
+| 2018-12-12 21:12:27 | Andreas Zweili | update the Beschreibung                                        |
+| 2018-12-12 21:12:10 | Andreas Zweili | remove whitespace                                              |
+| 2018-12-12 21:11:46 | Andreas Zweili | add various glossary und bibliography entries                  |
+| 2018-12-11 22:47:58 | Andreas Zweili | add a minimal config for emacs                                 |
+| 2018-12-11 22:39:31 | Andreas Zweili | clean up the bibliography                                      |
+| 2018-12-11 22:39:22 | Andreas Zweili | remove the emacs config from the Makefile                      |
+| 2018-12-11 22:31:40 | Andreas Zweili | write the introduction                                         |
+| 2018-12-11 22:28:27 | Andreas Zweili | change the license to CC-BY-SA                                 |
+| 2018-12-11 22:03:02 | Andreas Zweili | remove the emacs config from the Makefile                      |
+| 2018-12-10 21:16:57 | Andreas Zweili | add an outline of the documentation                            |
+| 2018-12-10 20:54:37 | Andreas Zweili | update the html theme path                                     |
+| 2018-12-10 20:53:15 | Andreas Zweili | update time plan                                               |
+| 2018-12-10 20:18:20 | Andreas Zweili | update the time planning                                       |
+| 2018-12-08 08:28:12 | Andreas Zweili | fix the bibliography for org-ref                               |
+| 2018-09-28 18:20:55 | Andreas Zweili | add the lstlistlistingname to the toc                          |
+| 2018-09-16 19:32:06 | Andreas Zweili | add glossary entry for API                                     |
+| 2018-09-16 19:25:06 | Andreas Zweili | ignore .listing files                                          |
+| 2018-09-16 19:24:56 | Andreas Zweili | rename the listings section                                    |
+| 2018-09-16 19:05:53 | Andreas Zweili | ignore the org-mode generate tex file                          |
+| 2018-09-16 19:05:18 | Andreas Zweili | fix the glossary and acronyms                                  |
+| 2018-09-16 18:45:03 | Andreas Zweili | add a preamble                                                 |
+| 2018-09-16 18:44:51 | Andreas Zweili | add a bibliography to the preamble                             |
+| 2018-09-16 18:44:39 | Andreas Zweili | add support for a glossary                                     |
+| 2018-09-16 12:24:19 | Andreas Zweili | rename the main tex file                                       |
+| 2018-09-16 12:22:33 | Andreas Zweili | fix the sexylisting code block                                 |
+| 2018-07-29 23:05:27 | Andreas Zweili | make all the x in the target table lowercase                   |
+| 2018-07-29 23:05:16 | Andreas Zweili | implement org-ref                                              |
+| 2018-07-23 22:35:01 | Andreas Zweili | add a distclean function to the Makefile                       |
+| 2018-07-23 22:18:56 | Andreas Zweili | update the projektantrag tex source                            |
+| 2018-07-23 22:17:46 | Andreas Zweili | don't remove the compiled PDF file                             |
+| 2018-07-21 17:46:39 | Andreas Zweili | remove a missleading sentence                                  |
+| 2018-07-21 17:38:52 | Andreas Zweili | add information about the main repository location             |
+| 2018-07-21 17:23:39 | Andreas Zweili | update the tex file                                            |
+| 2018-07-21 17:23:21 | Andreas Zweili | move the Mittelbedarf heading to a new page                    |
+| 2018-07-21 17:23:07 | Andreas Zweili | refactor the Makefile                                          |
+| 2018-07-21 17:12:03 | Andreas Zweili | add information about the API and the project method           |
+| 2018-07-21 17:11:20 | Andreas Zweili | update the author name of the borgbackup reference             |
+| 2018-07-20 19:03:32 | Andreas Zweili | make the makefile quieter                                      |
+| 2018-07-20 18:57:34 | Andreas Zweili | add a makefile for the projektantrag                           |
+| 2018-07-20 18:57:20 | Andreas Zweili | don't cleanup the content tex file                             |
+| 2018-07-20 18:53:28 | Andreas Zweili | add a makefile to the projekthandbuch                          |
+| 2018-07-20 18:28:02 | Andreas Zweili | fix a typo                                                     |
+| 2018-07-20 17:49:25 | Andreas Zweili | don't ignore makefiles                                         |
+| 2018-07-20 08:40:39 | Andreas Zweili | extend the setup file                                          |
+| 2018-07-16 22:00:49 | Andreas Zweili | fix a link and update the latex export                         |
+| 2018-07-16 21:56:44 | Andreas Zweili | update the tex code                                            |
+| 2018-07-16 21:56:24 | Andreas Zweili | enable the bibliography and the list of tables in the antrag   |
+| 2018-07-16 21:56:04 | Andreas Zweili | extend the targets table                                       |
+| 2018-07-16 21:55:49 | Andreas Zweili | correct spelling mistakes                                      |
+| 2018-07-16 21:54:31 | Andreas Zweili | add borgbackup to the bibliography                             |
+| 2018-07-16 20:37:57 | Andreas Zweili | correct line lengths to 80 characters                          |
+| 2018-07-11 21:58:02 | Andreas Zweili | continue working on the diplomantrag                           |
+| 2018-07-09 22:31:31 | Andreas Zweili | extend the projektantrag                                       |
+| 2018-07-09 22:31:14 | Andreas Zweili | wrap the org settings in a preamble                            |
+| 2018-07-09 22:31:05 | Andreas Zweili | add a planner file                                             |
+| 2018-07-09 21:50:00 | Andreas Zweili | untrack a few more files                                       |
+| 2018-07-09 21:47:51 | Andreas Zweili | ignore the auto directory                                      |
+| 2018-07-09 21:47:07 | Andreas Zweili | remove .el file                                                |
+| 2018-07-09 21:46:18 | Andreas Zweili | ignore .el files                                               |
+| 2018-06-03 17:34:51 | Andreas Zweili | add setup script                                               |
+| 2018-06-03 17:25:15 | Andreas Zweili | correct the paths to the general files                         |
+| 2018-06-03 17:24:46 | Andreas Zweili | ignore the auto folders generated by emacs                     |
+| 2018-06-03 17:21:58 | Andreas Zweili | move the handbuch and the antrag into their own folder         |
+| 2018-06-03 15:08:19 | Andreas Zweili | add the inital files for the documentations                    |
+| 2018-06-03 15:07:10 | Andreas Zweili | ignore the compiled pdfs                                       |
+| 2018-06-03 13:56:41 | Andreas Zweili | change readme from markdown to org-mode format                 |
+| 2018-05-26 15:00:47 | Andreas Zweili | Initial commit                                                 |
+|---------------------+----------------+----------------------------------------------------------------|
