@@ -40,7 +40,7 @@ Schule erstellt und steht unter der gls:cc BY-SA 4.0 footcite:cc Lizenz.
 Dadurch darf die Arbeit unter beibehalten der Lizenz kopiert und
 weiterverarbeitet werden. Zusätzlich muss der Urheber gennant werden.
 
-* TODO Projektanalyse
+* TODO Projektanalyse und Planung
 ** Vision
 
 Die Software soll gls:bb für den durschnittlichen Computer User zugänglich
