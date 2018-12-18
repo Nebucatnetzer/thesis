@@ -200,6 +200,10 @@ einfach schlicht zu gross.
 Bugs von gls:bb welche während der Dauer der Diplomarbeit vom Studenten
 entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
 
+** TODO Projektmethode
+
+** TODO Konfigurationsmanagement
+
 ** TODO Umweltanalyse
 
 PLACEHOLDER
