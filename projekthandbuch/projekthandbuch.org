@@ -478,37 +478,69 @@ entwickeln kann, dies jedoch zu Lasten der Performance.
 
 *** TODO FrontEnd
 
-Fürs Frontend sind folgende Projekte interessant:
-- [[Qt][Qt]]
-- [[Gtk][Gtk]]
-- [[Electron][Electron]]
+Fürs Frontend sind folgende Projekte interessant: [[Qt][Qt]], [[Gtk][Gtk]] und [[Electron][Electron]]. Alle
+drei sind Cross Plattform fähige gls:gui Frameworks und nicht von einer
+spezifischen Sprache abhängig. Da nahezu keine Erfahrung mit den aufgeführten
+Frameworks vorhanden ist werden bei den Frontenend Frameworks die Punkte der
+Verbreitung in der Community und Geschwindigkeit der Entwicklung ausgeschlossen
+da in allen Fällen nicht mal eine ungenaune Schätzung wirklich möglich wäre.
 
-**** TODO Qt
+**** Qt
+
+Qt footcite:qt, "cute" ausgesprochen, ist ein Framework zum Entwickeln von
+grafischen Oberflächen welche auf verschiedenen System ohne grosse Änderungen
+laufen sollen und sich dabei soweit als möglich wie eine native Applikation
+verhalten und "anfühlen" soll.
+
+Die Rechte an Qt hält die Firma "The Qt Company". Das Framework Qt wird jedoch
+offen entwickelt und die Community hat ein Mitspracherecht. Die Linux
+Desktopumgebung KDE nutzt das Qt Framework intensiv. Qt ist gls:libre und der
+gls:gpl v3 footcite:qtlicense oder mit einer kostenpflichtigen proprietären
+Lizen erhältlich falls die gls:gpl nicht genutzt werden kann.
+
+Vorkenntnisse zu Qt sind nur sehr wenig vorhanden. Mehr als ein paar Tests
+wurden damit noch nicht gemacht.
+
+Eine Qt Oberfläche kann direkt in der jeweiligen Sprache des Backends
+geschrieben werden oder Mittels des Qt Designers als XML Datei gespeichert und
+dann in die eigentliche Applikation importiert werden. Somit ist keine
+spezielle Software nötig.
+
+XML ist nicht übermässig gut lesbar allerdings kann man Qt in der verwendeten
+Sprache programmiert werden somit ist es hauptsächlich von der Sprache im
+Backend abhängig. Die Dokumentation ist in C++ geschrieben was für einen
+Entwickler ohne C++ Kenntnisse die Software etwas unzugänglich macht.
+
+Qt scheint, soweit dies bis jetzt abgeschätzt werden kann, sehr leicht in ein
+Projekt zu integrieren sein.
+
+Da noch sehr wenig Kenntnisse vorhanden sind ist der Lernfaktor entsprechend
+gross.
 
 #+CAPTION: Qt Bewertungstabelle
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|
 #+NAME: tab:qt
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| <20>                 |                 <20> |                 <20> | <20>                 |                 <20> |
+| <20>                 |                 <20> |                 <20> |                 <20> |                 <20> |
 | *Kriterium*\cellcolor[HTML]{C0C0C0} | *Gewichtung*\cellcolor[HTML]{C0C0C0} | *max. Punktzahl*\cellcolor[HTML]{C0C0C0} | *erreichte Punktzahl*\cellcolor[HTML]{C0C0C0} | *Kriteriums- ergebnis*\cellcolor[HTML]{C0C0C0} |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| 1. Cross Plattform nutzbar |                   10 |                   10 |                      |                    0 |
-| 2. Freie Software    |                    5 |                   10 |                      |                    0 |
-| 3. Vorkenntnisse     |                    5 |                   10 |                      |                    0 |
-| 4. Integriert sich gut ins System |                    5 |                   10 |                      |                    0 |
-| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                      |                    0 |
-| 6. Lesbarkeit des Codes |                    5 |                    5 |                      |                    0 |
-| 7. Einfachheit des Setups |                    5 |                    5 |                      |                    0 |
-| 8. Lernfaktor        |                    5 |                    5 |                      |                    0 |
-| 9. Verbreitung bei der BorgBackup Community |                    5 |                    5 |                      |                    0 |
-| 10. Geschwindigkeit der Entwicklung |                    3 |                    5 |                      |                    0 |
+| 1. Cross Plattform nutzbar |                   10 |                   10 |                   10 |                  100 |
+| 2. Freie Software    |                    5 |                   10 |                   10 |                   50 |
+| 3. Vorkenntnisse     |                    5 |                   10 |                    2 |                   10 |
+| 4. Integriert sich gut ins System |                    5 |                   10 |                    8 |                   40 |
+| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                    8 |                   40 |
+| 6. Lesbarkeit des Codes |                    5 |                    5 |                    3 |                   15 |
+| 7. Einfachheit des Setups |                    5 |                    5 |                    4 |                   20 |
+| 8. Lernfaktor        |                    5 |                    5 |                    4 |                   20 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| *Total*              |                      |                      |                      |                    0 |
+| *Total*              |                      |                      |                      |                  295 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-#+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4::@11$5=@11$2 * @11$4::@12$5=@12$2 * @12$4
+#+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4
 #+TBLFM: @>$5=vsum(@3..@-1)
 
 **** TODO Gtk
+
+footcite:gtklicense
 
 #+CAPTION: Gtk Bewertungstabelle
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|
