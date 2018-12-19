@@ -219,7 +219,7 @@ somit etwas was sie kennen.
 Daraus ergeben sich die in diesem Kapitel aufgeführten Möglichkeiten für das
 Projekt.
 
-*** TODO Bewertung
+*** Bewertung
 
 Die Bewertungspunkte setzen sich einerseits aus den Projektzielen anderseits
 aus für das Projekt sinnvollen Punkten zusammen. Dadurch ergeben sich dann die
@@ -254,52 +254,83 @@ der Tabelle Projektziele ([[tab:projektziele]]).
 
 *** Backend
 
-Fürs Backend bieten sich folgende Sprachen an.
-- [[C#][C#]]
-- [[C++][C++]]
-- [[Python][Python]]
+Fürs Backend bieten sich die folgende drei Sprachen an: [[C#][C#]], [[C++][C++]], [[Python][Python]].
+Dies vorallem weil alle Allrounder Sprachen sind und sich gut für Desktop
+Applikationen eignen.
 
 **** C#
 
-C# ist eine von Microsoft entwickelte Programmiersprache sowie mit .NET auch
-ein Framework. Zudem ist es die Programmierspache welche an der IBZ
-hauptsächlich gelehrt wird. Dadurch sind die Kenntnisse der Sprache und ihrer
-Anwendung bereits relativ gross. Insbesondere Aufgrund der grossen
-kommerziellen Nutzung in Windows hat C# eine relative grosse Verbreitung.
+C# ist eine von Microsoft entwickelte Programmiersprache welche viele
+Frameworks zur Verfügung hat. Insbesondere Aufgrund der grossen kommerziellen
+Nutzung und der guten Integration mit Windows hat C# eine relative grosse
+Verbreitung. Bei Linux und OS X ist es jedoch schwieriger C# zu integrieren und
+zu nutzen.
 
-C# ist eine stark typisierte Sprache, heisst man muss bei Objekten den
-Datentyp bereits beim erstellen definieren. Desweiteren ist C# eine kompilierte
-Sprache und setzt stark auf objekt-orientierte Programmierung.
-
-C# wird dabei hauptsächlich mit der gls:ide Microsoft Visual Studio. Eine sehr
-umfangreiche und komlexe Software. Visual Studio ist dabei nur für Windows und
-OS X erhältlich. Es ist auch möglich C# Projekte ausserhalb von Visual Studio
-zu erstellen ist jedoch nicht sehr einfach.
-
-C# ist zu Teilen freie Software. Die Common Language Runtime welche für das
+Sie ist zu Teilen gls:libre. Die Common Language Runtime welche für das
 Ausführen von Software zuständig ist, ist unter der MIT Lizenz lizenziert
 footcite:csharp der aktuelle Compiler Roslyn ist unter der Apache Lizenz
-verfügbar footcite:roslyn.
+verfügbar footcite:roslyn. Da es sehr viele offiziele Teile um die Sprache C#
+gibt kann im Rahmen des Projektes nicht direkt abgeschätzt werden ob alle
+benötigten Teile gls:libre sind. Für die Bewertung wird deshalb ein kleinerer
+Wert als bei C++ und Python genommen.
+
+C# ist die Programmierspache welche an der IBZ hauptsächlich gelehrt wird.
+Dadurch sind die Kenntnisse der Sprache und ihrer Anwendung bereits
+einigermassen vorhanden. Ausserhalb der Schule wurde die Sprache jedoch noch nie
+eingesetzt.
+
+Entwickelt wird C# hauptsächlich mit der gls:ide Microsoft Visual Studio.
+Eine sehr umfangreiche und komlexe Software. Visual Studio ist dabei nur für
+Windows und OS X erhältlich. Es ist auch möglich C# Projekte ausserhalb von
+Visual Studio zu erstellen ist jedoch nicht sehr einfach.
+
+Der Code ist gut lesbar und es gibt offizielle Styleguides von Microsoft was
+den Code über Projekte hinaus einigermassen einheitlich aussehen lässt. Zudem
+hilft hier auch Visual Studio stark den Code entsprechend zu formatieren.
+Besonders angenehm sind die Klassen- und Methodennamen der offiziellen
+Frameworks. Insgesamt sehr gut gelöst aber in Sachen Lesbarkeit noch etwas
+hinter Python.
+
+Unter Windows ist das Setup von C# relativ einfach. Allerdings ist es auch dort
+im Vergleich zu Python eine umfangreiche Angelegenheit Visual Studio sauber zu
+installieren und nutzbar zu machen. Auf anderen Plattform wird dies leider
+nicht einfacher und unter Linux ist es bereits schwierig eine funktionierende
+Umgebung in gang zu bringen.
+
+Da C# bereits an der IBZ gelernt wird ist der Lernfaktor hier im Vergleich zu
+den anderen Sprachen sicher am kleinsten. Allerdings gibt es noch keinerlei
+Kenntnisse beim Einbinden eines der unten aufgeführten gls:gui Frameworks.
+Daher gibt es auf jeden Fall noch genügend zu lernen.
+
+Die gls:bb Community hat vor relativ kurzer Zeit die offizielle Unterstützung
+von Windows zurückgezogen. Da C# eine sehr Windows lastige Sprache ist wird
+daher davon ausgegangen das die Sprache innerhalb der gls:borg Community nicht
+sehr verbreitet ist.
+
+C# ist eine stark typisiert Sprache und kompilierte Sprache. Desweiteren ist
+Visual Studio der Erfahrung nach nicht die schnellste Software. Dies alles
+führt dazu das C# nicht gerade die schnellste Sprache zum programmmieren ist.
+Jedoch aufgrund des moderneren Unterbaus sicher schneller als C++.
 
 #+CAPTION: C# Bewertungstabelle
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|
 #+NAME: tab:csharp
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| <20>                 |                 <20> |                 <20> | <20>                 |                 <20> |
+| <20>                 |                 <20> |                 <20> |                 <20> |                 <20> |
 | *Kriterium*\cellcolor[HTML]{C0C0C0} | *Gewichtung*\cellcolor[HTML]{C0C0C0} | *max. Punktzahl*\cellcolor[HTML]{C0C0C0} | *erreichte Punktzahl*\cellcolor[HTML]{C0C0C0} | *Kriteriums- ergebnis*\cellcolor[HTML]{C0C0C0} |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| 1. Cross Plattform nutzbar |                   10 |                   10 |                      |                    0 |
-| 2. Freie Software    |                    5 |                   10 |                      |                    0 |
-| 3. Vorkenntnisse     |                    5 |                   10 |                      |                    0 |
-| 4. Integriert sich gut ins System |                    5 |                   10 |                      |                    0 |
-| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                      |                    0 |
-| 6. Lesbarkeit des Codes |                    5 |                    5 |                      |                    0 |
-| 7. Einfachheit des Setups |                    5 |                    5 |                      |                    0 |
-| 8. Lernfaktor        |                    5 |                    5 |                      |                    0 |
-| 9. Verbreitung bei der BorgBackup Community |                    5 |                    5 |                      |                    0 |
-| 10. Geschwindigkeit der Entwicklung |                    3 |                    5 |                      |                    0 |
+| 1. Cross Plattform nutzbar |                   10 |                   10 |                    8 |                   80 |
+| 2. Freie Software    |                    5 |                   10 |                    8 |                   40 |
+| 3. Vorkenntnisse     |                    5 |                   10 |                    6 |                   30 |
+| 4. Integriert sich gut ins System |                    5 |                   10 |                    8 |                   40 |
+| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                    6 |                   30 |
+| 6. Lesbarkeit des Codes |                    5 |                    5 |                    4 |                   20 |
+| 7. Einfachheit des Setups |                    5 |                    5 |                    2 |                   10 |
+| 8. Lernfaktor        |                    5 |                    5 |                    3 |                   15 |
+| 9. Verbreitung bei der BorgBackup Community |                    5 |                    5 |                    1 |                    5 |
+| 10. Geschwindigkeit der Entwicklung |                    3 |                    5 |                    3 |                    9 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| *Total*              |                      |                      |                      |                    0 |
+| *Total*              |                      |                      |                      |                  279 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
 #+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4::@11$5=@11$2 * @11$4::@12$5=@12$2 * @12$4
 #+TBLFM: @>$5=vsum(@3..@-1)
@@ -310,7 +341,8 @@ C++ ist eine stark typisierte und kompilierte Programmiersprache. Sie ist seit
 1998 Teil des ISO Standards footcite:cpp98. ISO/IEC 14882:2017 footcite:cpp17
 ist zur Zeit die aktuellste Variante. Die Sprache existiert seit ca. 33 Jahren
 und hat eine weitreichende Verbreitung gefunden. C++ ist auf allen
-Betriebssystemen gut unterstützt.
+Betriebssystemen gut unterstützt muss jedoch für jedes System separat
+kompiliert werden.
 
 Von C++ sind innerhalb des Projektes keinerlei Vorkenntnisse vorhanden. Dies
 ist ein sehr hoher Risikofaktor.
@@ -352,18 +384,18 @@ ungeeignet.
 | <20>                 |                 <20> |                 <20> |                 <20> |                 <20> |
 | *Kriterium*\cellcolor[HTML]{C0C0C0} | *Gewichtung*\cellcolor[HTML]{C0C0C0} | *max. Punktzahl*\cellcolor[HTML]{C0C0C0} | *erreichte Punktzahl*\cellcolor[HTML]{C0C0C0} | *Kriteriums- ergebnis*\cellcolor[HTML]{C0C0C0} |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| 1. Cross Plattform nutzbar |                   10 |                   10 |                   10 |                  100 |
+| 1. Cross Plattform nutzbar |                   10 |                   10 |                    8 |                   80 |
 | 2. Freie Software    |                    5 |                   10 |                   10 |                   50 |
 | 3. Vorkenntnisse     |                    5 |                   10 |                    0 |                    0 |
-| 4. Integriert sich gut ins System |                    5 |                   10 |                   10 |                   50 |
-| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                    7 |                   35 |
+| 4. Integriert sich gut ins System |                    5 |                   10 |                    8 |                   40 |
+| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                    6 |                   30 |
 | 6. Lesbarkeit des Codes |                    5 |                    5 |                    2 |                   10 |
 | 7. Einfachheit des Setups |                    5 |                    5 |                    3 |                   15 |
 | 8. Lernfaktor        |                    5 |                    5 |                    5 |                   25 |
 | 9. Verbreitung bei der BorgBackup Community |                    5 |                    5 |                    3 |                   15 |
 | 10. Geschwindigkeit der Entwicklung |                    3 |                    5 |                    2 |                    6 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| *Total*              |                      |                      |                      |                  306 |
+| *Total*              |                      |                      |                      |                  271 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
 #+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4::@11$5=@11$2 * @11$4::@12$5=@12$2 * @12$4
 #+TBLFM: @>$5=vsum(@3..@-1)
@@ -419,7 +451,7 @@ Python ist eine dynamisch typisierte und interpretierte Sprache. Dies bedeutet
 das man bei Variabeln nicht explizit den Typ angeben muss und die Programme zur
 Laufzeit für den Computer übersetzt werden. Interpretierte Sprachen haben den
 Vorteil das man mit ihnen in der Regel sehr schnell und unkompliziert
-entwickeln kann, dies jedoch auf Kosten der Performance.
+entwickeln kann, dies jedoch zu Lasten der Performance.
 
 #+CAPTION: Python Bewertungstabelle
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|
@@ -428,18 +460,18 @@ entwickeln kann, dies jedoch auf Kosten der Performance.
 | <20>                 |                 <20> |                 <20> |                 <20> |                 <20> |
 | *Kriterium*\cellcolor[HTML]{C0C0C0} | *Gewichtung*\cellcolor[HTML]{C0C0C0} | *max. Punktzahl*\cellcolor[HTML]{C0C0C0} | *erreichte Punktzahl*\cellcolor[HTML]{C0C0C0} | *Kriteriums- ergebnis*\cellcolor[HTML]{C0C0C0} |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| 1. Cross Plattform nutzbar |                   10 |                   10 |                    8 |                   80 |
+| 1. Cross Plattform nutzbar |                   10 |                    8 |                    8 |                   80 |
 | 2. Freie Software    |                    5 |                   10 |                   10 |                   50 |
-| 3. Vorkenntnisse     |                    5 |                   10 |                    6 |                   30 |
+| 3. Vorkenntnisse     |                    5 |                   10 |                    5 |                   25 |
 | 4. Integriert sich gut ins System |                    5 |                   10 |                    8 |                   40 |
-| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                    8 |                   50 |
-| 6. Lesbarkeit des Codes |                    5 |                    5 |                    5 |                   25 |
+| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                    7 |                   35 |
+| 6. Lesbarkeit des Codes |                    5 |                    5 |                    4 |                   20 |
 | 7. Einfachheit des Setups |                    5 |                    5 |                    4 |                   20 |
 | 8. Lernfaktor        |                    5 |                    5 |                    3 |                   15 |
 | 9. Verbreitung in der BorgBackup Community |                    5 |                    5 |                    5 |                   25 |
 | 10. Geschwindigkeit der Entwicklung |                    3 |                    5 |                    4 |                   12 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| *Total*              |                      |                      |                      |                  347 |
+| *Total*              |                      |                      |                      |                  322 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
 #+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4::@11$5=@11$2 * @11$4::@12$5=@12$2 * @12$4
 #+TBLFM: @>$5=vsum(@3..@-1)
