@@ -432,9 +432,10 @@ effektiv geschrieben wird footcite:pep8.
 
 Um ein Python Programm zu starten braucht es eigentlich kein grosses Setup.
 Solange die Abhängigkeiten vorhanden sind, kann man ein Skript mit einem
-einfachen Befehl starten.
+einfachen Befehl, Code Snippet ([[code:minimal_python]]) starten.
 
 #+caption: Minimal Python Setup
+#+name: code:minimal_python
 #+BEGIN_SRC bash
 python3 example.py
 #+END_SRC
