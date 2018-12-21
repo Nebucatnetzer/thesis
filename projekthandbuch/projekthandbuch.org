@@ -539,56 +539,98 @@ gross.
 #+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4
 #+TBLFM: @>$5=vsum(@3..@-1)
 
-**** TODO Gtk
+**** Gtk
 
-footcite:gtklicense
+Gtk ist sowohl für Linux wie auch für Windows und OS X erhältlich. Gtk hat als
+Projekt der Gnome Foundation seine Wurzeln jedoch ganz klar in der Linux Welt.
+Gtk ist gls:libre under der Lesser General Public Lizenz footcite:gtklicense.
+Gtk ist ein Projekt der GNOME Foundation einer nicht für Profit Organisation
+welche die Entwicklung diverser freier Software Projekte koordiniert.
+
+Zu Gtk gibt es keinerlei Vorkenntnisse als Programmierer. Gtk wurde bis jetzt
+nur intensiv User verwendet.
+
+Gtk integriert sich nur unter Linux wirklich gut ins System. Unter Windows und
+OS X können die Applikation schnell etwas fremd wirken. Dies ist gut bei der
+Applikation Meld footcite:meld zu sehen wenn man eine Datei auswählen möchte,
+Abbildung ([[fig:meld]]).
+
+#+caption: Screenshot der Applikation Meld unter Windows 10
+#+name: fig:meld
+#+attr_latex: :center
+[[file:pictures/meld.png]]
+
+Die Gtk Dokumentation empfiehlt footcite:gtk_setup, das man unter Windows das
+Programm MSYS2 installiert um Gtk einzurichten. Zum Programmieren an sich
+braucht es offenbar nicht zwingend weitere Tools aus einem Editor. Wie auch bei
+Qt hat man jedoch die Möglichkeit das gls:gui mit einem gls:gui Designer
+grafisch zu erstellen.
+
+Wie auch Qt kann man Gtk entweder direkt in der Backend Sprach programmieren
+oder aus dem gls:gui Designer dann als XML exportieren. Der Code in der
+Dokumentation ist in C geschrieben was auch nicht die zugängliste Sprache ist.
+
+Die Verwendung von Gtk innerhalb des Programms scheint ähnlich einfach zu sein
+wie bei Qt. Die Installation ist allerdings unter Windows eher das Gegenteil
+von einfach.
+
+Da die Kenntnisse gleich null sind ist der Lernfaktor auf dem Maximum.
 
 #+CAPTION: Gtk Bewertungstabelle
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|
 #+NAME: tab:gtk
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| <20>                 |                 <20> |                 <20> | <20>                 |                 <20> |
+| <20>                 |                 <20> |                 <20> |                 <20> |                 <20> |
 | *Kriterium*\cellcolor[HTML]{C0C0C0} | *Gewichtung*\cellcolor[HTML]{C0C0C0} | *max. Punktzahl*\cellcolor[HTML]{C0C0C0} | *erreichte Punktzahl*\cellcolor[HTML]{C0C0C0} | *Kriteriums- ergebnis*\cellcolor[HTML]{C0C0C0} |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| 1. Cross Plattform nutzbar |                   10 |                   10 |                      |                    0 |
-| 2. Freie Software    |                    5 |                   10 |                      |                    0 |
-| 3. Vorkenntnisse     |                    5 |                   10 |                      |                    0 |
-| 4. Integriert sich gut ins System |                    5 |                   10 |                      |                    0 |
-| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                      |                    0 |
-| 6. Lesbarkeit des Codes |                    5 |                    5 |                      |                    0 |
-| 7. Einfachheit des Setups |                    5 |                    5 |                      |                    0 |
-| 8. Lernfaktor        |                    5 |                    5 |                      |                    0 |
-| 9. Verbreitung bei der BorgBackup Community |                    5 |                    5 |                      |                    0 |
-| 10. Geschwindigkeit der Entwicklung |                    3 |                    5 |                      |                    0 |
+| 1. Cross Plattform nutzbar |                   10 |                   10 |                   10 |                  100 |
+| 2. Freie Software    |                    5 |                   10 |                   10 |                   50 |
+| 3. Vorkenntnisse     |                    5 |                   10 |                    0 |                    0 |
+| 4. Integriert sich gut ins System |                    5 |                   10 |                    6 |                   30 |
+| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                    8 |                   40 |
+| 6. Lesbarkeit des Codes |                    5 |                    5 |                    3 |                   15 |
+| 7. Einfachheit des Setups |                    5 |                    5 |                    3 |                   15 |
+| 8. Lernfaktor        |                    5 |                    5 |                    5 |                   25 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| *Total*              |                      |                      |                      |                    0 |
+| *Total*              |                      |                      |                      |                  275 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-#+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4::@11$5=@11$2 * @11$4::@12$5=@12$2 * @12$4
+#+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4
 #+TBLFM: @>$5=vsum(@3..@-1)
 
 **** TODO Electron
+
+Electron ist ein cross-platform Framework zum entwickeln von glspl:gui welches
+dabei jedoch auf Technologien aus der Webentwicklung benutzt. Entwickelt wird
+Electron von der Firma Github und ist gls:libre unter der MIT Lizenz
+footcite:electronlicense.
+
+Da Electron auf Technologien aus der Webentwicklung setzt sind hier im
+Vergleich bereit gute Kenntnisse vorhanden. Über die genau Funktion und
+Implementierung sind noch keine Kenntnisse vorhanden.
+
+Die Verwendung von Webtechnologien macht Electron zwar sehr kompatibel auf den
+unterstützten Systemen, sich oft nicht an die Standards des Betriebssystems
+halten und auch optisch schnell herausstechen.
 
 #+CAPTION: Electron Bewertungstabelle
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|
 #+NAME: tab:electron
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| <20>                 |                 <20> |                 <20> | <20>                 |                 <20> |
+| <20>                 |                 <20> |                 <20> |                 <20> |                 <20> |
 | *Kriterium*\cellcolor[HTML]{C0C0C0} | *Gewichtung*\cellcolor[HTML]{C0C0C0} | *max. Punktzahl*\cellcolor[HTML]{C0C0C0} | *erreichte Punktzahl*\cellcolor[HTML]{C0C0C0} | *Kriteriums- ergebnis*\cellcolor[HTML]{C0C0C0} |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| 1. Cross Plattform nutzbar |                   10 |                   10 |                      |                    0 |
-| 2. Freie Software    |                    5 |                   10 |                      |                    0 |
-| 3. Vorkenntnisse     |                    5 |                   10 |                      |                    0 |
-| 4. Integriert sich gut ins System |                    5 |                   10 |                      |                    0 |
-| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                      |                    0 |
-| 6. Lesbarkeit des Codes |                    5 |                    5 |                      |                    0 |
-| 7. Einfachheit des Setups |                    5 |                    5 |                      |                    0 |
-| 8. Lernfaktor        |                    5 |                    5 |                      |                    0 |
-| 9. Verbreitung bei der BorgBackup Community |                    5 |                    5 |                      |                    0 |
-| 10. Geschwindigkeit der Entwicklung |                    3 |                    5 |                      |                    0 |
+| 1. Cross Plattform nutzbar |                   10 |                   10 |                   10 |                  100 |
+| 2. Freie Software    |                    5 |                   10 |                   10 |                   50 |
+| 3. Vorkenntnisse     |                    5 |                   10 |                    5 |                   25 |
+| 4. Integriert sich gut ins System |                    5 |                   10 |                    4 |                   20 |
+| 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                    7 |                   35 |
+| 6. Lesbarkeit des Codes |                    5 |                    5 |                    3 |                   15 |
+| 7. Einfachheit des Setups |                    5 |                    5 |                    2 |                   10 |
+| 8. Lernfaktor        |                    5 |                    5 |                    3 |                   15 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| *Total*              |                      |                      |                      |                    0 |
+| *Total*              |                      |                      |                      |                  270 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-#+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4::@11$5=@11$2 * @11$4::@12$5=@12$2 * @12$4
+#+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4
 #+TBLFM: @>$5=vsum(@3..@-1)
 
 *** TODO Ergebnis
