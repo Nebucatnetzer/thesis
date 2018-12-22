@@ -17,7 +17,7 @@ class HelloWindow(QMainWindow):
         gridLayout = QGridLayout(self)
         widget.setLayout(gridLayout)
 
-        text = QLabel("Hello World für die IBZ Diplomarbeit", self)
+        text = QLabel("Hello World \n für die IBZ Diplomarbeit", self)
         text.setFont(QtGui.QFont('SansSerif', 20))
         text.setAlignment(QtCore.Qt.AlignCenter)
         gridLayout.addWidget(text, 0, 0)
