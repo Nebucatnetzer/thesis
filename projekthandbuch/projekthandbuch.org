@@ -568,8 +568,8 @@ Abbildung ([[fig:meld]]).
 
 #+caption: Screenshot der Applikation Meld unter Windows 10
 #+name: fig:meld
-#+attr_latex: :center
 [[file:pictures/meld.png]]
+#+attr_latex: :center
 
 Die Gtk Dokumentation empfiehlt footcite:gtk_setup, das man unter Windows das
 Programm MSYS2 installiert um Gtk einzurichten. Zum Programmieren an sich
@@ -691,8 +691,8 @@ OS X läuft, Abbildung:([[fig:hello_world]]).
 
 #+caption: Python und Qt Applikation unter Windows, Linux und OS X
 #+name: fig:hello_world
-#+attr_latex: :center
 [[file:pictures/hello_world.png]]
+#+attr_latex: :center
 
 ** TODO Vorkenntnisse
 
