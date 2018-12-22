@@ -224,8 +224,19 @@ Projekt.
 Die Bewertungspunkte setzen sich einerseits aus den Projektzielen anderseits
 aus für das Projekt sinnvollen Punkten zusammen. Dadurch ergeben sich dann die
 Bewertungen welche in der nachfolgenden Tabelle aufgenommen wurden. Die
-möglichen Varianten wurden danach bewertet und die Variante mit der höchsten
-Punktzahl wurde für das Projekt ausgewählt. Mussziele erhalten dabei eine
+möglichen Varianten wurden danach bewertet. Die effektive Berechnung des
+Resultats wird nach folgender Formel durchgeführt.
+
+\begin{equation}
+G * EP = KE
+\end{equation}
+
+Also die Gewichtung(/G/) multipliziert mit der erreichten Punktzahl(/EP/)
+ergibt das Kriteriumsergebnis(/KE/). Für das Endresultat wird dann die Summe
+über alle Kriterien gebildet. Die Variante mit der höchsten Summe wurde für das
+Projekt ausgewählt.
+
+Mussziele erhalten dabei eine
 Gewichtung von 10 und Wunschziele eine Gewichtung entsprechend der Bewertung in
 der Tabelle Projektziele ([[tab:projektziele]]).
 
