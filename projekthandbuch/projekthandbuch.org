@@ -714,9 +714,19 @@ PLACEHOLDER
 
 PLACEHOLDER
 
-** TODO SWOT-Analyse
+** SWOT-Analyse
 
-PLACEHOLDER
+Die SWOT-Analyse ist eine Methode, die Stärken, Schwächen, Chancen und
+Gefahren zu erkennen, indem eine 4-Felder-Matrix ausgefüllt wird.
+
+Wichtig vor dem Ausfüllen der SWOT-Analyse ist es, ein klares Ziel zu
+haben. Die ausgefüllte SWOT-Analyse für dieses Projekt ist in der
+Abbildung:([[fig:swot]]) zu sehen.
+
+#+caption: SWOT Analyse des Projektes
+#+name: fig:swot
+[[file:pictures/swot_analyse.pdf]]
+#+attr_latex: :center
 
 ** TODO Organigramm
 
