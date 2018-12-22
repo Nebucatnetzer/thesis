@@ -204,7 +204,6 @@ Community im Bezug auf die Entwicklung entgegengenommen.
 Bugs von gls:borg welche während der Dauer der Diplomarbeit vom Studenten
 entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
 
-** TODO Konfigurationsmanagement
 ** Projektmethode
 
 Für das Projekt wurde die Wasserfall-projektmethode gewählt. Da nur eine
@@ -213,6 +212,28 @@ abgearbeitet werden und viele Aufgaben stehen in Abhängigkeiten zu einander.
 Somit macht das iterative Vorgehen der Wassfall-methode für dieses Projekt am
 meisten Sinn.
 
+** Konfigurationsmanagement
+
+Die komplette Dokumentation, der Quellcode der Applikation sowie jeglich
+zusäzliche Dokumente wie etwa die Zeitplanung werden mittels der Software Git
+Versioniert. Thematisch zusammengehörende Änderungen werden in einem Commit
+zusammengefasst. Somit ist jederzeit nachvollziehbar was wann geändert hat.
+
+Versionsnummern sind für die Applikation zum jetzigen Zeitpunkt noch nicht
+vorgesehen. Sollten sie trotzdem verwendet werden soll eine semantische
+Versionierung footcite:semver verwendet.
+Dabei ist eine Versionsnummer immer nach diesem Schema aufgebaut,
+MAJOR.MINOR.PATCH. Bei Änderungen wir die:
+1. MAJOR Version erhöt wenn man inkompatible Änderungen an der gls:api macht.
+2. MINOR Version erhöt wenn man Funktionalität hinzufügt die
+   rückwärtskompatibel ist.
+3. PATCH Version erhöt wenn man rückwärtskompatible Bug-Fixes hinzufügt.
+
+Auf jeden Fall sollte wenn möglich immer nur lauffähiger Code im Master Branch
+eingecheckt sein damit der Master Branch immer eine funktionierende Software
+repräsentiert. Dies gilt auch für das Repository der Dokumentation. Der Master
+Branch der Dokumentation sollte maximal mit zwei Befehlen ~make clean~ und
+~make~ "kompilierbar " sein.
 
 ** Umweltanalyse
 
