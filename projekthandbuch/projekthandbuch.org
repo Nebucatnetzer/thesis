@@ -204,9 +204,15 @@ Community im Bezug auf die Entwicklung entgegengenommen.
 Bugs von gls:borg welche während der Dauer der Diplomarbeit vom Studenten
 entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
 
-** TODO Projektmethode
-
 ** TODO Konfigurationsmanagement
+** Projektmethode
+
+Für das Projekt wurde die Wasserfall-projektmethode gewählt. Da nur eine
+einzige Person am Projekt arbeitet kann nur ein Task nach dem anderen
+abgearbeitet werden und viele Aufgaben stehen in Abhängigkeiten zu einander.
+Somit macht das iterative Vorgehen der Wassfall-methode für dieses Projekt am
+meisten Sinn.
+
 
 ** Umweltanalyse
 
