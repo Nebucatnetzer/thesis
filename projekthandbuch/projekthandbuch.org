@@ -477,10 +477,10 @@ entwickeln kann, dies jedoch zu Lasten der Performance.
 #+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4::@11$5=@11$2 * @11$4::@12$5=@12$2 * @12$4
 #+TBLFM: @>$5=vsum(@3..@-1)
 
-*** TODO FrontEnd
+*** FrontEnd
 
 Fürs Frontend sind folgende Projekte interessant: [[Qt][Qt]], [[Gtk][Gtk]] und [[Electron][Electron]]. Alle
-drei sind Cross Plattform fähige gls:gui Frameworks und nicht von einer
+drei sind cross-plattfrom fähige gls:gui Frameworks und nicht von einer
 spezifischen Sprache abhängig. Da nahezu keine Erfahrung mit den aufgeführten
 Frameworks vorhanden ist werden bei den Frontenend Frameworks die Punkte der
 Verbreitung in der Community und Geschwindigkeit der Entwicklung ausgeschlossen
@@ -597,7 +597,7 @@ Da die Kenntnisse gleich null sind ist der Lernfaktor auf dem Maximum.
 #+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4
 #+TBLFM: @>$5=vsum(@3..@-1)
 
-**** TODO Electron
+**** Electron
 
 Electron ist ein cross-platform Framework zum entwickeln von glspl:gui welches
 dabei jedoch auf Technologien aus der Webentwicklung benutzt. Entwickelt wird
@@ -609,8 +609,29 @@ Vergleich bereit gute Kenntnisse vorhanden. Über die genau Funktion und
 Implementierung sind noch keine Kenntnisse vorhanden.
 
 Die Verwendung von Webtechnologien macht Electron zwar sehr kompatibel auf den
-unterstützten Systemen, sich oft nicht an die Standards des Betriebssystems
-halten und auch optisch schnell herausstechen.
+unterstützten Systemen, oftmals sehen die Applikationen jedoch doch eher wie
+eine Webseite als wie eine Desktop Applikation aus. Ein weitere Nachteil ist
+der hohe Ressourcenverbrauch da jede Applikation nahezu einer eigenene Instanz
+des Google Chrome Browsers gleich kommt.
+
+Bei der Installation muss Nodejs und der Paket Manager von Nodejs, NPM,
+vorhanden sein. Zum Programmieren selber braucht es keine speziellen Tools. Ein
+Editor und ein Webbrowser sollten aussreichend sein.
+
+Electron Applikationen bestehen hauptsächlich aus HTML, CSS und JavaScript
+Code. Wenn man nich die komplette Applikation in NodeJS programmieren möchte
+kommt dann noch eine zusätzliche Sprache hinzu. HTML ist ähnlich müsahm zu
+lesen wie XML. CSS und JavaScript sind relativ angenehm zu lesen wobei es für
+beide keine offiziellen Style Guides gibt. Was bei Webanwendungen jedoch immer
+das schwierigste ist, ist der wechsel zwischen verschiedenen Sprachen und
+Konzepten. Dieses Problem hat man bei Electron leider auch.
+
+Das Setup von Electron ist etwa ähnlich kompliziert wie das Setup von Gtk und
+ist sehr ähnlich dem Entwickeln einer normalen Webapplikation.
+
+Da an der IBZ Webtechnologien bereits intensiv behandelt worden sind und man in
+diesem Rahmen bereits ein paar Webapplikationen erstellt hat wäre der
+Lernfaktor bei Electron wohl nicht so gross wie etwa bei Qt oder Gtk.
 
 #+CAPTION: Electron Bewertungstabelle
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|
@@ -625,15 +646,42 @@ halten und auch optisch schnell herausstechen.
 | 4. Integriert sich gut ins System |                    5 |                   10 |                    4 |                   20 |
 | 5. Ohne spezielle Tools nutzbar |                    5 |                   10 |                    7 |                   35 |
 | 6. Lesbarkeit des Codes |                    5 |                    5 |                    3 |                   15 |
-| 7. Einfachheit des Setups |                    5 |                    5 |                    2 |                   10 |
+| 7. Einfachheit des Setups |                    5 |                    5 |                    3 |                   15 |
 | 8. Lernfaktor        |                    5 |                    5 |                    3 |                   15 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
-| *Total*              |                      |                      |                      |                  270 |
+| *Total*              |                      |                      |                      |                  275 |
 |----------------------+----------------------+----------------------+----------------------+----------------------|
 #+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4
 #+TBLFM: @>$5=vsum(@3..@-1)
 
 *** TODO Ergebnis
+
+Aufgrund der erreichten Punktzahl, Tabelle:([[tab:result]]), bei den vorhergehenden
+Variantenbewertungen, wurde entschieden für das Backend der Applikation auf
+Python zu setzen und fürs Frontend Qt zu benutzen. Ein kleiner Test zeigt auch
+das die Kombination ohne grosse Probleme und Anpassung auf Windows, Linux und
+OS X läuft, Abbildung:([[fig:hello_world]]).
+
+#+CAPTION: Variantenbewertung Ergebnis
+#+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{4.5cm}|r| :placement [H]
+#+NAME: tab:result
+|------------------------------------+-----------------------------------------------|
+| *Variante*\cellcolor[HTML]{C0C0C0} | *Erreichte Punktzahl*\cellcolor[HTML]{C0C0C0} |
+|------------------------------------+-----------------------------------------------|
+| *Backend*                          |                                               |
+| C#                                 |                                           279 |
+| C++                                |                                           271 |
+| Python                             |                                           322 |
+| *Frontend*                         |                                               |
+| Qt                                 |                                           295 |
+| Gtk                                |                                           275 |
+| Electron                           |                                           275 |
+|------------------------------------+-----------------------------------------------|
+
+#+caption: Python und Qt Applikation unter Windows, Linux und OS X
+#+name: fig:hello_world
+#+attr_latex: :center
+[[file:pictures/hello_world.png]]
 
 ** TODO Vorkenntnisse
 
