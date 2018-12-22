@@ -217,13 +217,14 @@ meisten Sinn.
 Die komplette Dokumentation, der Quellcode der Applikation sowie jeglich
 zusäzliche Dokumente wie etwa die Zeitplanung werden mittels der Software Git
 Versioniert. Thematisch zusammengehörende Änderungen werden in einem Commit
-zusammengefasst. Somit ist jederzeit nachvollziehbar was wann geändert hat.
+zusammengefasst. Somit ist jederzeit nachvollziehbar was wann geändert hat. Ein
+Commit sollte dabei gemäss dem Artikel von Chris Beams "How to write a Git
+Commit Message" footcite:commit und in englischer Sprache geschrieben sein.
 
 Versionsnummern sind für die Applikation zum jetzigen Zeitpunkt noch nicht
 vorgesehen. Sollten sie trotzdem verwendet werden soll eine semantische
-Versionierung footcite:semver verwendet.
-Dabei ist eine Versionsnummer immer nach diesem Schema aufgebaut,
-MAJOR.MINOR.PATCH. Bei Änderungen wir die:
+Versionierung footcite:semver verwendet. Dabei ist eine Versionsnummer immer
+nach diesem Schema aufgebaut, MAJOR.MINOR.PATCH. Bei Änderungen wir die:
 1. MAJOR Version erhöt wenn man inkompatible Änderungen an der gls:api macht.
 2. MINOR Version erhöt wenn man Funktionalität hinzufügt die
    rückwärtskompatibel ist.
