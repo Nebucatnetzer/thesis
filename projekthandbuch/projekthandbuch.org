@@ -694,12 +694,12 @@ OS X läuft, Abbildung:([[fig:hello_world]]).
 [[file:pictures/hello_world.png]]
 #+attr_latex: :center
 
-** TODO Vorkenntnisse
+** Vorkenntnisse
 
 Die benötigten Vorkenntnisse wurden in den vorangegangenen Semestern erarbeitet
 und sind in der Basis gefestigt. Erfahrungen im Bereich der Entwicklung von
 Desktop Applikationen sind zum Teil vorhanden. Jedoch hauptsächlich für Windows
-Systemenen.
+Systeme und C#.
 
 ** TODO Risikomanagement
 *** TODO Risikobeschreibung
