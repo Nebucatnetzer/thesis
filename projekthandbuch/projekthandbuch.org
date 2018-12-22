@@ -230,6 +230,11 @@ Nach Ende der Diplomarbeit soll das Projekt für interessierte Entwickler jedoch
 offen sein. Der Quellcode wird bereits während der Arbeit öffentlich zur
 Verfügung gestellt.
 
+#+CAPTION: Stakeholder Diagramm
+#+ATTR_LATEX: :width .9\textwidth
+#+NAME: fig:umweltgrafik
+[[file:pictures/stakeholder_diagramm.pdf]]
+
 #+LATEX:\newpage
 #+LATEX:\begin{landscape}
 #+CAPTION: Umwelt-Analyse
@@ -254,11 +259,6 @@ Verfügung gestellt.
 |       |                      |                      | - Anerkennung im fachlichen Umfeld                       | hoch                                         |
 |-------+----------------------+----------------------+----------------------------------------------------------+----------------------------------------------|
 #+LATEX:\end{landscape}
-
-#+CAPTION: Stakeholder Diagramm
-#+ATTR_LATEX: :width .9\textwidth
-#+NAME: fig:umweltgrafik
-[[file:diagrammes/stakeholder_diagramm.pdf]]
 
 ** TODO Varianten
 
