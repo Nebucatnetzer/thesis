@@ -197,6 +197,10 @@ Verschlüsselung sind heikle Themen und sollten umbedingt nur von Experten
 angegangen werden. Das Potential für Fehler und die Auswirkungen deren sind
 einfach schlicht zu gross.
 
+Desweiteren wird die Grundlage für eine kolaborative Entwicklung geschaffen.
+Wärend der Laufzeit der Diplomarbeit werden jedoch keine Inputs aus der Borg
+Community im Bezug auf die Entwicklung entgegengenommen.
+
 Bugs von gls:borg welche während der Dauer der Diplomarbeit vom Studenten
 entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
 
