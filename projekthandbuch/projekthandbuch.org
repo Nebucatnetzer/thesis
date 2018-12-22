@@ -208,9 +208,57 @@ entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
 
 ** TODO Konfigurationsmanagement
 
-** TODO Umweltanalyse
+** Umweltanalyse
 
-PLACEHOLDER
+Die Projektumwelt-Analyse ist eine Methode, die Beziehungen,
+Erwartungshaltungen und Einflüsse auf das Projekt durch interne und
+externe soziale Umwelten zu betrachten und zu bewerten. Auf Grundlage
+der Analyseergebnisse werden erforderliche Massnahmen zur Gestaltung
+der Umweltbeziehungen abgeleitet. Die Gestaltung der
+Projektumweltbeziehungen ist eine Projektmanagementaufgabe. In der
+Tabelle:([[tab:umweltanalyse]]) wurden die Anforderungen und Wünsche
+mit Einschätzung der Wahrscheinlichkeit und der Einflussnahme aufgenommen.
+Zusätzlich ist die Beziehung der Stakeholder zum Projekt noch in der
+Abbildung:([[fig:umweltgrafik]]) grafisch dargestellt.
+
+Da das Projekt so ausgelegt ist das der Projektleiter es in Eigenarbeit
+verwirklichen kann ist der Einfluss der Stakeholder wärend der Umsetzung sehr
+gering. Die User werden bei der Entwicklung mittels einer "Usability" Studie
+miteinbezogen und die gls:borg Community wird mit regelmässigen Posts auf dem
+offiziellen Github Repository auf dem Laufenden gehalten.
+Nach Ende der Diplomarbeit soll das Projekt für interessierte Entwickler jedoch
+offen sein. Der Quellcode wird bereits während der Arbeit öffentlich zur
+Verfügung gestellt.
+
+#+LATEX:\newpage
+#+LATEX:\begin{landscape}
+#+CAPTION: Umwelt-Analyse
+#+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{0.8cm}|l|l|p{8cm}|l|
+#+NAME: tab:umweltanalyse
+|-------+----------------------+----------------------+----------------------------------------------------------+----------------------------------------------|
+|   <5> | <20>                 | <20>                 |                                                          |                                              |
+| *Nr*.\cellcolor[HTML]{C0C0C0} | *Stakeholder*\cellcolor[HTML]{C0C0C0} | *Einfluss*\cellcolor[HTML]{C0C0C0} | *Anforderung/Wünsche*\cellcolor[HTML]{C0C0C0}            | *Wahrscheinlichkeit*\cellcolor[HTML]{C0C0C0} |
+|-------+----------------------+----------------------+----------------------------------------------------------+----------------------------------------------|
+|    1. | BorgBackup Community | gering               | - Eine Applikation die den Umfang von BorgBackup abdeckt | mittel                                       |
+|       |                      |                      | - Open-Source                                            | hoch                                         |
+|       |                      |                      | - Mitsprachrecht bei der Entwicklung                     | niedrig                                      |
+|-------+----------------------+----------------------+----------------------------------------------------------+----------------------------------------------|
+|    2. | User                 | gering               | - Eine einfache Anwendung                                | hoch                                         |
+|       |                      |                      | - Einmal einrichten und vergessen                        | mittel                                       |
+|-------+----------------------+----------------------+----------------------------------------------------------+----------------------------------------------|
+|    3. | Interessenten        | gering               | - Einfach verständliches Projekt Repository              | hoch                                         |
+|       |                      |                      | - Einfaches Setup zum testen                             | hoch                                         |
+|-------+----------------------+----------------------+----------------------------------------------------------+----------------------------------------------|
+|    4. | Projektleiter        | hoch                 | - Stabile Anwendung erstellen                            | mittel                                       |
+|       |                      |                      | - Ein nachhaltiges Projekt starten                       | mittel                                       |
+|       |                      |                      | - Anerkennung im fachlichen Umfeld                       | hoch                                         |
+|-------+----------------------+----------------------+----------------------------------------------------------+----------------------------------------------|
+#+LATEX:\end{landscape}
+
+#+CAPTION: Stakeholder Diagramm
+#+ATTR_LATEX: :width .9\textwidth
+#+NAME: fig:umweltgrafik
+[[file:diagrammes/stakeholder_diagramm.pdf]]
 
 ** TODO Varianten
 
