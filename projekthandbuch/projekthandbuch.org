@@ -769,7 +769,7 @@ OS X läuft, Abbildung:([[fig:hello_world]]).
 | Electron                           |                                           275 |
 |------------------------------------+-----------------------------------------------|
 
-#+caption: Python und Qt Applikation unter Windows, Linux und OS X
+#+caption: Python und Qt Applikation unter Windows (links), Linux (rechts) und OS X (unten)
 #+name: fig:hello_world
 [[file:pictures/hello_world.png]]
 #+attr_latex: :center
