@@ -784,11 +784,48 @@ Systeme und C#.
 ** TODO Risikomanagement
 *** TODO Risikobeschreibung
 
-PLACEHOLDER
+#+CAPTION: Risikobeschreibung
+#+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{0.8cm}|p{5cm}|p{5cm}|p{0.8cm}|p{0.8cm}| :placement [H]
+#+NAME: tab:risikobeschreibung
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|       <10> | <30>                           | <30>                           |                               |                               |
+| *Nr.*\cellcolor[HTML]{C0C0C0} | *Beschreibung*\cellcolor[HTML]{C0C0C0} | *Massnahmen*\cellcolor[HTML]{C0C0C0} | *W^1*\cellcolor[HTML]{C0C0C0} | *A^2*\cellcolor[HTML]{C0C0C0} |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|         1. | Die Datenbank ist schlecht modelliert | Das ERM, nach dessen Erstellung, gründlich auf Fehler prüfen, falls nötig extern prüfen lassen. |                             2 |                             3 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|         2. | Viel Arbeit an der Arbeitsstelle, dabei bleibt weniger Zeit für die Casestudy. | Die Zeit die einem zur Verfügung steht, nutzen und fixe Tage definieren. Projektplanung machen. |                             1 |                             2 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|         3. | Know-How zur Umsetzung ist nicht vollständig vorhanden. | Gute Informationsbeschaffung im Internet, Mitschülern, Arbeitgebern, Dozenten etc. |                             2 |                             2 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|         4. | Kommunikation innerhalb des Teams. | Klare Arbeitsaufteilung innerhalb des Teams und alle 2 Wochen Besprechungen über offene Aufgaben oder Problembehandlungen. |                             1 |                             1 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|         5. | Die Programmierung des Shops benötigt zu viel Zeit. | Bei der Projektplanung genau definieren was die GUI Applikation beinhalten muss. Ziele definieren, Abgrenzungen treffen. |                             3 |                             1 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
 
 *** TODO Risikobewertung
 
-PLACEHOLDER
+#+CAPTION: Risikobewertung Wahrscheinlichkeit
+#+ATTR_LATEX: :align l|l :placement [H]
+#+NAME: tab:wahrscheinlichkeit
+| *Bewertung* | *Beschreibung: Wahrscheinlichkeit (W)* |
+|-------------+----------------------------------------|
+| 1 = gering  | Unwahrscheinlich, <20%                 |
+| 2 = mittel  | Mässig wahrscheinlich, 20-50%          |
+| 3 = hoch    | Hohe Wahrscheinlichkeit > 50%          |
+
+#+CAPTION: Risikobewertung Auswirkung
+#+ATTR_LATEX: :align l|l :placement [H]
+#+NAME: tab:auswirkung
+| *Bewertung* | *Beschreibung: Auswirkung (A)*                  |
+|-------------+-------------------------------------------------|
+| 1 = gering  | Geringe Auswirkungen auf das Gesamtergebnis     |
+| 2 = mittel  | Arbeitsumstellung oder grösserer Arbeitsaufwand |
+| 3 = hoch    | Projekt erfüllt nicht alle Anforderungen        |
+
+#+CAPTION: Grafische Darstellung der Risikoanalyse
+#+ATTR_LATEX: :width 9cm :placement [H]
+#+NAME: fig:risk
+[[file:diagrammes/risk_analysis.eps]]
 
 ** SWOT-Analyse
 
