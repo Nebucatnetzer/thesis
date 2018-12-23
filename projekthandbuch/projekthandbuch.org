@@ -825,7 +825,7 @@ Systeme und C#.
 #+CAPTION: Grafische Darstellung der Risikoanalyse
 #+ATTR_LATEX: :width 9cm :placement [H]
 #+NAME: fig:risk
-[[file:diagrammes/risk_analysis.eps]]
+[[file:pictures/risk_analyse.pdf]]
 
 ** SWOT-Analyse
 
