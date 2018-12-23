@@ -45,7 +45,7 @@ clean:  ## Clean LaTeX and output figure files
 	rm -rf general/*.aux
 	rm -f projekthandbuch.tex
 
-distclean: clean
+distclean:
 	rm -f Projekthandbuch_Andreas_Zweili.pdf
 
 pictures/%.pdf: pictures/%.svg  ## Figures for the manuscript
