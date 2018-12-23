@@ -152,9 +152,9 @@ integriert werden und ist nicht unwichtig.
 |-------+------------------------------------------------------------------------------------------------------+------------+------------|
 |   15. | Die Anwendung meldet dem User, wenn noch ein Hypervisor am Laufen ist.                               |            |          5 |
 |-------+------------------------------------------------------------------------------------------------------+------------+------------|
-|   16. | Die Anwendung leitet Meldungen von gls:borg transparent weiter.                                        |            |          5 |
+|   16. | Die Anwendung leitet Meldungen von gls:borg transparent weiter.                                      |            |          5 |
 |-------+------------------------------------------------------------------------------------------------------+------------+------------|
-|   17. | Die Anwendung zeigt transparent an das gls:borg im Hintergrund bereits läuft.                          |            |          5 |
+|   17. | Die Anwendung zeigt transparent an das gls:borg im Hintergrund bereits läuft.                        |            |          5 |
 |-------+------------------------------------------------------------------------------------------------------+------------+------------|
 |   18. | Das Repository wird nach jedem Backup bereinigt.                                                     |            |          4 |
 |-------+------------------------------------------------------------------------------------------------------+------------+------------|
@@ -781,8 +781,20 @@ und sind in der Basis gefestigt. Erfahrungen im Bereich der Entwicklung von
 Desktop Applikationen sind zum Teil vorhanden. Jedoch hauptsächlich für Windows
 Systeme und C#.
 
+#+LATEX:\newpage
 ** TODO Risikomanagement
+
+Das Risikomanagement dient dazu Risiken im Projekt zu erkennen und Massnahmen
+zur Vermeidung der Risiken zu definieren. Dadurch steht man ihnen nicht
+unvorbereitet gegenüber sollten sie eintreffen.
+
 *** TODO Risikobeschreibung
+
+In der Tabelle: ([[tab:risikobeschreibung]]), sind die Risiken des Projektes
+gemeinsam mit ihren Gegenmassnahmen aufgelistet. Jedes Risiko wurde
+entsprechend der Tabelle: ([[tab:wahrscheinlichkeit]]) nach der Wahrscheinlichkeit
+des Eintreffens bewertet und entsprechend der Tabelle: ([[tab:auswirkung]]) nach
+seiner Auswirkung bewertet.
 
 #+CAPTION: Risikobeschreibung
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{0.8cm}|p{5cm}|p{5cm}|p{0.8cm}|p{0.8cm}| :placement [H]
@@ -791,18 +803,20 @@ Systeme und C#.
 |       <10> | <30>                           | <30>                           |                               |                               |
 | *Nr.*\cellcolor[HTML]{C0C0C0} | *Beschreibung*\cellcolor[HTML]{C0C0C0} | *Massnahmen*\cellcolor[HTML]{C0C0C0} | *W^1*\cellcolor[HTML]{C0C0C0} | *A^2*\cellcolor[HTML]{C0C0C0} |
 |------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         1. | Die Datenbank ist schlecht modelliert | Das ERM, nach dessen Erstellung, gründlich auf Fehler prüfen, falls nötig extern prüfen lassen. |                             2 |                             3 |
+|         1. | Ein grösseres Problem in der Programmierung blockiert den Fortschritt. | Immer nur eine Sache auf einmal in der Code-Basis ändern, alle Fehler beheben und erst dann zur nächsten Aufgabe weitergehen. |                             1 |                             3 |
 |------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         2. | Viel Arbeit an der Arbeitsstelle, dabei bleibt weniger Zeit für die Casestudy. | Die Zeit die einem zur Verfügung steht, nutzen und fixe Tage definieren. Projektplanung machen. |                             1 |                             2 |
+|         2. | Viel Arbeit an der Arbeitsstelle, dabei bleibt weniger Zeit für die Diplomarbeit. | Auf der Arbeit Freitage eingeben um die Last etwas zu verteilen. Projektplanung machen. |                             2 |                             2 |
 |------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         3. | Know-How zur Umsetzung ist nicht vollständig vorhanden. | Gute Informationsbeschaffung im Internet, Mitschülern, Arbeitgebern, Dozenten etc. |                             2 |                             2 |
+|         3. | Know-How zur Umsetzung ist nicht vollständig vorhanden. | Gute Informationsbeschaffung im Internet, Büchern, etc. |                             2 |                             3 |
 |------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         4. | Kommunikation innerhalb des Teams. | Klare Arbeitsaufteilung innerhalb des Teams und alle 2 Wochen Besprechungen über offene Aufgaben oder Problembehandlungen. |                             1 |                             1 |
+|         4. | Manuelle Tests brauchen zu viel Zeit. | Soviel wie möglich automatisieren. Dabei jedoch nicht den Fokus auf die eigentliche Entwicklung verlieren. |                             1 |                             2 |
 |------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         5. | Die Programmierung des Shops benötigt zu viel Zeit. | Bei der Projektplanung genau definieren was die GUI Applikation beinhalten muss. Ziele definieren, Abgrenzungen treffen. |                             3 |                             1 |
+|         5. | Die Programmierung des Programms benötigt zu viel Zeit. | Bei der Projektplanung genau definieren was die GUI Applikation beinhalten muss. Ziele definieren, Abgrenzungen treffen. |                             1 |                             3 |
 |------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-
-*** TODO Risikobewertung
+|         6. | User haben keine Zeit für Utility Tests. | Vorgängig einen Termin abmachen. |                             3 |                             2 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|         7. | gls:borg ändert fundamental seine gls:api. | Gegen eine fixe Version von gls:borg entwickeln. |                             1 |                             3 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
 
 #+CAPTION: Risikobewertung Wahrscheinlichkeit
 #+ATTR_LATEX: :align l|l :placement [H]
@@ -821,6 +835,8 @@ Systeme und C#.
 | 1 = gering  | Geringe Auswirkungen auf das Gesamtergebnis     |
 | 2 = mittel  | Arbeitsumstellung oder grösserer Arbeitsaufwand |
 | 3 = hoch    | Projekt erfüllt nicht alle Anforderungen        |
+
+*** TODO Risikobewertung
 
 #+CAPTION: Grafische Darstellung der Risikoanalyse
 #+ATTR_LATEX: :width 9cm :placement [H]
