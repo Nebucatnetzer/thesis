@@ -10,3 +10,21 @@ the IBZ school.
 
 The original location of this repository is:
 https://git.2li.ch/Nebucatnetzer/thesis
+
+To build the documents you need the following applications installed on your
+system:
+- inkscape
+- texlive-full
+- emacs
+- graphviz
+
+If your system fullfills this depencies then you can navigate in either the
+folder "projekantrag" or the folder "projekthandbuch" and execute the following
+command:
+
+#+BEGIN_SRC bash
+make
+#+END_SRC
+
+This should build the document for you and create a PDF document in the
+directory you executed the command.
