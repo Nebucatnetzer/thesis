@@ -1,0 +1,157 @@
+#+title: Meeting Protokolle
+:preamble:
+#+author: Andreas Zweili
+#+latex_class: article
+#+latex_class_options: [a4paper,11pt]
+#+latex_header: \input{general/style}
+#+options: toc:nil num:nil
+:end:
+
+* Meeting vom 23.12.2018
+Protokoll der 1. Besprechung
+
+Treffpunkt: Bhf Olten
+
+Datum: 23.12.2018, 14:00 Uhr - 15:30 Uhr
+
+** Informationen:
+
+*** Vorstellungsrunde
+**** Marco
+- Beruflich :: Bereits viel gemacht mit ca. 40 selbständig gemacht.
+- Schulisch :: Kam nach und nach und nimmt mittlerweile einen Grossteil seiner
+               Zeit in Anspruch.
+- Familie :: Hat Frau und Kinder.
+- Hobbies/Interessen :: Südamerika (lebte 2 Jahre dort) und Salsa?
+
+**** Andreas
+- Beruflich :: Quereinsteiger, gelernter Automatiker, Faszination Informatik,
+             Deployment, Orchestrierung, Automatisation
+- Schulisch :: API Spezialisierung mehr angesprochen aufgrund der Dozenten
+               während IBZ Ausbildung.
+- Hobbies :: IBZ, Musik, Konzerte
+
+*** Termine besprochen
+
+Abgabe der DA Informatik erfolgt vereinfacht, Widerspruch zur offiziellen
+Vorgabe. Email mit den Unterlagen am 18.3. an Marco Frei reicht. Man muss
+nichts beim Sekretariat abgeben.
+
+Nur 1 Diplomordner z.Hd. Kandidat mit separat Selbständigkeitserklärung
+unterschrieben. Ist an der Präsentation mitzunehmen. Die Erklärung wird dann
+gleich von C.Herren kontrolliert.
+
+*** Beobachtung von Marco Frei:
+Exakte Zeitplanung, auch Miteinbezug der eigenen Intensität (geplante Stunden
+Aufwand) pro Woche, Arbeitspakte verständlich, PSP soweit detailliert.
+
+Einige Kapitel des DA Antrags können 1:1 in die Doku oder allenfalls mit
+ergänzenden Resultaten aus der Analyse übernommen werden.
+
+Feinziele entsprechen bereits den ausgearbeiteten Anforderungen aus der bereits
+durchgeführten Projektanalyse.
+
+*** Feedback Andreas:
+Mussziele müssen erreicht werden.
+
+** Aufbau der Arbeit
+*** Initialisierung / Voranalyse
+
+- Einleitung
+- Umfeld, Motivation
+- Projekthandbuch (Projektdokumentation) mit Ausgangslage, Problembeschreibung,
+  Projektziele, Abgrenzungen, Zeitplanung, Projektplanung, Projektmethodik
+  Wasserfallmethodik (Begründung)
+- Projektrisiken (betriebliches Umfeld) der Ist Umgebung
+- Projektcontrolling Soll-Ist (Zeit, Ressourcen, Kosten (eigene Lohnkosten
+  annehmen)), Bewertung
+- allenfalls Zeitplan mit Phasen der Wasserfallmethodik anpassen, Milestone
+  setzen
+
+*** Analyse
+
+- Ist - Analyse, Stakeholderanalyse, Umweltanalyse, Marktanalyse
+- SWOT (Stärken, Schwächen)
+- quasi hypothetische Risikoanalyse der Ist Umgebung, um daraus Bewertung der
+  eigenen Lösung auch mit einer Risikoanalyse miteinzubeziehen, evtl. durch
+  fiktiver User, Use Case
+- Soll - Analyse
+- Use Case mit Aktoren festlegen
+- Anforderungskatalog kann aus den Zielen hergeleitet werden, kann evtl. noch
+  erweitert oder angepasst werden, z.B. Präzision, Umwelt, Verwendung von
+  Testarten etc.
+
+*** Konzept
+
+- Big Picture aufzeigen, Zusammenspiel erläutern
+- Start der Variantendiskussion
+- Entscheid, Begründung des Lösungswegs
+- Detailkonzept mit techn. Plan
+- Diagramme. UML, Klassendiagramm, etc.
+- Testkonzept. Testarten (Unit, Integrations-Testing), Festlegung der
+  Testarten, Rahmenbed.
+
+*** Realisierung
+
+- Open-Source Projekt als gesamtes Werk, leistet im Rahmen der DA wichtige
+  Vorarbeit
+- mit minimalen Funktionen (welche?) -> Backup, Restore, mount, delete, Archiv
+- Beweis der Funktion? wie? -> Testumgebung aufbauen, erläutern
+- Linux System Python Skript -> self extracting binary wird interpretieren
+
+*** Ausblick:
+
+- kritische Würdigung, lessons learned
+- Verwendung im kommerziellen Umfeld
+- Bewertung der Risiken anhand der eigenen Lösung
+
+** Nächste Termine
+
+Meeting #2: 26.01.2019 14:00
+
+Meeting #3: Ende Feb. exakter Termin noch ausstehend.
+
+** Pendent
+
+- roter Faden der Gesamtstruktur anhand Analyse und Synthese abgleichen
+- Grobstruktur trennen auf Analyse und Konzept, z.B. vor dem Start der
+  Variantendiskussion
+- zusätzlich Grundidee, Vision in der Einleitung
+- fiktive Situation im Rahmen der Analyse -> Ist Risikoanalyse zum Leben bringen
+- Überlegung, ob alle Ziele 1:1 den Anforderungen genügen, welche als
+  Voraussetzung fürs Testing dienen
+- möglicher Zugriff auf Datenablage
+
+** Doing
+
+Andreas erstellt folgende Lieferobjekte:
+- Besprechungsprotokoll mit Entscheidungen
+- Arbeitsjournal, wochengenau (einfaches Logbuch, z.B. Excel oder in Zeitplan
+  integriert, mit Bezug zur erstellten Projektplanung) -> Gitlog führen plus
+  erweitern (Planung, Ergebnis, Eindruck)
+- Projektplan mit Phasen, Milestones, Arbeitspaketen
+- Zeitplan mit Intensität als Tabelle oder Gantt (250h inkl. mögliche
+  Pufferzeit 50h), Einbau in Bericht
+- Festlegung der Systemgrenze, evtl. mit UML Werkzeugen (Bubble Charts)
+- messbare Muss- und Kannziele
+- Traktandenliste für nächstes Meeting erstellen
+- Risikoanalyse machen
+- Festlegung der Grobstruktur, in Bezug zum Projektantrag
+
+** Noch unvollständig
+
+Nichts.
+
+** Persönlicher Eindruck von Marco Frei:
+
+- präzise Analyse
+- klare Ziele, Vorstellung
+- ausgezeichnet im Zeitplan
+- detaillierte Ergebnisse
+- aktuelle Ausgangssituation könnte präziser formuliert werden
+- Engineering Vorgehen verstärkt hervorheben
+
+
+
+
+
