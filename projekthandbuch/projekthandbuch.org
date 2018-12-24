@@ -40,7 +40,7 @@ Schule erstellt und steht unter der gls:cc BY-SA 4.0 footcite:cc Lizenz.
 Dadurch darf die Arbeit unter beibehalten der Lizenz kopiert und
 weiterverarbeitet werden. Zusätzlich muss der Urheber gennant werden.
 
-* TODO Projektanalyse und Planung
+* TODO Initialisierung
 ** Vision
 
 Die Software soll gls:borg für den durschnittlichen Computer User zugänglich
@@ -80,6 +80,8 @@ gls:libre.
 
 Das Projekt muss dabei vom Studenten in Eigenarbeit und einer Zeit von 250
 Stunden bis zum 18. März 2019 erarbeitet werden.
+
+** TODO Problembeschreibung
 
 ** Projektziele
 
@@ -236,6 +238,16 @@ repräsentiert. Dies gilt auch für das Repository der Dokumentation. Der Master
 Branch der Dokumentation sollte maximal mit zwei Befehlen ~make clean~ und
 ~make~ "kompilierbar " sein.
 
+** TODO Organigramm
+
+PLACEHOLDER
+
+** TODO Zeitplanung
+
+PLACEHOLDER
+
+* TODO Analyse
+
 ** Umweltanalyse
 
 Die Projektumwelt-Analyse ist eine Methode, die Beziehungen,
@@ -287,6 +299,83 @@ Verfügung gestellt.
 |       |                      |                      | - Anerkennung im fachlichen Umfeld                       | hoch                                         |
 |-------+----------------------+----------------------+----------------------------------------------------------+----------------------------------------------|
 #+LATEX:\end{landscape}
+
+** TODO Risikomanagement
+
+Das Risikomanagement dient dazu Risiken im Projekt zu erkennen und Massnahmen
+zur Vermeidung der Risiken zu definieren. Dadurch steht man ihnen nicht
+unvorbereitet gegenüber sollten sie eintreffen.
+
+*** TODO Risikobeschreibung
+
+In der Tabelle: ([[tab:risikobeschreibung]]), sind die Risiken des Projektes
+gemeinsam mit ihren Gegenmassnahmen aufgelistet. Jedes Risiko wurde
+entsprechend der Tabelle: ([[tab:wahrscheinlichkeit]]) nach der Wahrscheinlichkeit
+des Eintreffens bewertet und entsprechend der Tabelle: ([[tab:auswirkung]]) nach
+seiner Auswirkung bewertet.
+
+#+CAPTION: Risikobeschreibung
+#+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{0.8cm}|p{5cm}|p{5cm}|p{0.8cm}|p{0.8cm}| :placement [H]
+#+NAME: tab:risikobeschreibung
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|       <10> | <30>                           | <30>                           |                               |                               |
+| *Nr.*\cellcolor[HTML]{C0C0C0} | *Beschreibung*\cellcolor[HTML]{C0C0C0} | *Massnahmen*\cellcolor[HTML]{C0C0C0} | *W^1*\cellcolor[HTML]{C0C0C0} | *A^2*\cellcolor[HTML]{C0C0C0} |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|         1. | Ein grösseres Problem in der Programmierung blockiert den Fortschritt. | Immer nur eine Sache auf einmal in der Code-Basis ändern, alle Fehler beheben und erst dann zur nächsten Aufgabe weitergehen. |                             1 |                             3 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|         2. | Viel Arbeit an der Arbeitsstelle, dabei bleibt weniger Zeit für die Diplomarbeit. | Auf der Arbeit Freitage eingeben um die Last etwas zu verteilen. Projektplanung machen. |                             2 |                             2 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|         3. | Know-How zur Umsetzung ist nicht vollständig vorhanden. | Gute Informationsbeschaffung im Internet, Büchern, etc. |                             2 |                             3 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|         4. | Manuelle Tests brauchen zu viel Zeit. | Soviel wie möglich automatisieren. Dabei jedoch nicht den Fokus auf die eigentliche Entwicklung verlieren. |                             1 |                             2 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|         5. | Die Programmierung des Programms benötigt zu viel Zeit. | Bei der Projektplanung genau definieren was die GUI Applikation beinhalten muss. Ziele definieren, Abgrenzungen treffen. |                             1 |                             3 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|         6. | User haben keine Zeit für Utility Tests. | Vorgängig einen Termin abmachen. |                             3 |                             2 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+|         7. | gls:borg ändert fundamental seine gls:api. | Gegen eine fixe Version von gls:borg entwickeln. |                             1 |                             3 |
+|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
+
+#+CAPTION: Risikobewertung Wahrscheinlichkeit
+#+ATTR_LATEX: :align l|l :placement [H]
+#+NAME: tab:wahrscheinlichkeit
+| *Bewertung* | *Beschreibung: Wahrscheinlichkeit (W)* |
+|-------------+----------------------------------------|
+| 1 = gering  | Unwahrscheinlich, <20%                 |
+| 2 = mittel  | Mässig wahrscheinlich, 20-50%          |
+| 3 = hoch    | Hohe Wahrscheinlichkeit > 50%          |
+
+#+CAPTION: Risikobewertung Auswirkung
+#+ATTR_LATEX: :align l|l :placement [H]
+#+NAME: tab:auswirkung
+| *Bewertung* | *Beschreibung: Auswirkung (A)*                  |
+|-------------+-------------------------------------------------|
+| 1 = gering  | Geringe Auswirkungen auf das Gesamtergebnis     |
+| 2 = mittel  | Arbeitsumstellung oder grösserer Arbeitsaufwand |
+| 3 = hoch    | Projekt erfüllt nicht alle Anforderungen        |
+
+*** TODO Risikobewertung
+
+#+CAPTION: Grafische Darstellung der Risikoanalyse
+#+ATTR_LATEX: :width 9cm :placement [H]
+#+NAME: fig:risk
+[[file:pictures/risk_analyse.pdf]]
+
+** SWOT-Analyse
+
+Die SWOT-Analyse ist eine Methode, die Stärken, Schwächen, Chancen und
+Gefahren zu erkennen, indem eine 4-Felder-Matrix ausgefüllt wird.
+
+Wichtig vor dem Ausfüllen der SWOT-Analyse ist es, ein klares Ziel zu
+haben. Die ausgefüllte SWOT-Analyse für dieses Projekt ist in der
+Abbildung:([[fig:swot]]) zu sehen.
+
+#+caption: SWOT Analyse des Projektes
+#+name: fig:swot
+[[file:pictures/swot_analyse.pdf]]
+#+attr_latex: :center
+
+* TODO Konzept
 
 ** Varianten
 
@@ -781,91 +870,14 @@ und sind in der Basis gefestigt. Erfahrungen im Bereich der Entwicklung von
 Desktop Applikationen sind zum Teil vorhanden. Jedoch hauptsächlich für Windows
 Systeme und C#.
 
-#+LATEX:\newpage
-** TODO Risikomanagement
-
-Das Risikomanagement dient dazu Risiken im Projekt zu erkennen und Massnahmen
-zur Vermeidung der Risiken zu definieren. Dadurch steht man ihnen nicht
-unvorbereitet gegenüber sollten sie eintreffen.
-
-*** TODO Risikobeschreibung
-
-In der Tabelle: ([[tab:risikobeschreibung]]), sind die Risiken des Projektes
-gemeinsam mit ihren Gegenmassnahmen aufgelistet. Jedes Risiko wurde
-entsprechend der Tabelle: ([[tab:wahrscheinlichkeit]]) nach der Wahrscheinlichkeit
-des Eintreffens bewertet und entsprechend der Tabelle: ([[tab:auswirkung]]) nach
-seiner Auswirkung bewertet.
-
-#+CAPTION: Risikobeschreibung
-#+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{0.8cm}|p{5cm}|p{5cm}|p{0.8cm}|p{0.8cm}| :placement [H]
-#+NAME: tab:risikobeschreibung
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|       <10> | <30>                           | <30>                           |                               |                               |
-| *Nr.*\cellcolor[HTML]{C0C0C0} | *Beschreibung*\cellcolor[HTML]{C0C0C0} | *Massnahmen*\cellcolor[HTML]{C0C0C0} | *W^1*\cellcolor[HTML]{C0C0C0} | *A^2*\cellcolor[HTML]{C0C0C0} |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         1. | Ein grösseres Problem in der Programmierung blockiert den Fortschritt. | Immer nur eine Sache auf einmal in der Code-Basis ändern, alle Fehler beheben und erst dann zur nächsten Aufgabe weitergehen. |                             1 |                             3 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         2. | Viel Arbeit an der Arbeitsstelle, dabei bleibt weniger Zeit für die Diplomarbeit. | Auf der Arbeit Freitage eingeben um die Last etwas zu verteilen. Projektplanung machen. |                             2 |                             2 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         3. | Know-How zur Umsetzung ist nicht vollständig vorhanden. | Gute Informationsbeschaffung im Internet, Büchern, etc. |                             2 |                             3 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         4. | Manuelle Tests brauchen zu viel Zeit. | Soviel wie möglich automatisieren. Dabei jedoch nicht den Fokus auf die eigentliche Entwicklung verlieren. |                             1 |                             2 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         5. | Die Programmierung des Programms benötigt zu viel Zeit. | Bei der Projektplanung genau definieren was die GUI Applikation beinhalten muss. Ziele definieren, Abgrenzungen treffen. |                             1 |                             3 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         6. | User haben keine Zeit für Utility Tests. | Vorgängig einen Termin abmachen. |                             3 |                             2 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         7. | gls:borg ändert fundamental seine gls:api. | Gegen eine fixe Version von gls:borg entwickeln. |                             1 |                             3 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-
-#+CAPTION: Risikobewertung Wahrscheinlichkeit
-#+ATTR_LATEX: :align l|l :placement [H]
-#+NAME: tab:wahrscheinlichkeit
-| *Bewertung* | *Beschreibung: Wahrscheinlichkeit (W)* |
-|-------------+----------------------------------------|
-| 1 = gering  | Unwahrscheinlich, <20%                 |
-| 2 = mittel  | Mässig wahrscheinlich, 20-50%          |
-| 3 = hoch    | Hohe Wahrscheinlichkeit > 50%          |
-
-#+CAPTION: Risikobewertung Auswirkung
-#+ATTR_LATEX: :align l|l :placement [H]
-#+NAME: tab:auswirkung
-| *Bewertung* | *Beschreibung: Auswirkung (A)*                  |
-|-------------+-------------------------------------------------|
-| 1 = gering  | Geringe Auswirkungen auf das Gesamtergebnis     |
-| 2 = mittel  | Arbeitsumstellung oder grösserer Arbeitsaufwand |
-| 3 = hoch    | Projekt erfüllt nicht alle Anforderungen        |
-
-*** TODO Risikobewertung
-
-#+CAPTION: Grafische Darstellung der Risikoanalyse
-#+ATTR_LATEX: :width 9cm :placement [H]
-#+NAME: fig:risk
-[[file:pictures/risk_analyse.pdf]]
-
-** SWOT-Analyse
-
-Die SWOT-Analyse ist eine Methode, die Stärken, Schwächen, Chancen und
-Gefahren zu erkennen, indem eine 4-Felder-Matrix ausgefüllt wird.
-
-Wichtig vor dem Ausfüllen der SWOT-Analyse ist es, ein klares Ziel zu
-haben. Die ausgefüllte SWOT-Analyse für dieses Projekt ist in der
-Abbildung:([[fig:swot]]) zu sehen.
-
-#+caption: SWOT Analyse des Projektes
-#+name: fig:swot
-[[file:pictures/swot_analyse.pdf]]
-#+attr_latex: :center
-
-** TODO Organigramm
+** TODO Testing
 
 PLACEHOLDER
 
-** TODO Zeitplanung
+*** TODO Testfälle
 
 PLACEHOLDER
 
-* TODO Umsetzung
 ** TODO Werkzeuge
 
 PLACEHOLDER
@@ -942,28 +954,21 @@ PLACEHOLDER
 
 PLACEHOLDER
 
+* TODO Realisierung
 ** TODO Benutzerinterface
-*** TODO Inspiration
+**** TODO Inspiration
 
 PLACEHOLDER
 
-*** TODO Frontend Umsetzung
+**** TODO Frontend Umsetzung
 
 PLACEHOLDER
 
-*** TODO Backend Umsetzung
+**** TODO Backend Umsetzung
 
 PLACEHOLDER
 
-* TODO Testing
-
-PLACEHOLDER
-
-** TODO Testfälle
-
-PLACEHOLDER
-
-* TODO Fazit
+* TODO Ausblick
 ** TODO Projektmanagement
 
 PLACEHOLDER
@@ -972,7 +977,7 @@ PLACEHOLDER
 
 PLACEHOLDER
 
-** Gelerntes
+** TODO Gelerntes
 
 PLACEHOLDER
 
