@@ -85,8 +85,6 @@ gls:libre.
 Das Projekt muss dabei vom Studenten in Eigenarbeit und einer Zeit von 250
 Stunden bis zum 18. März 2019 erarbeitet werden.
 
-** TODO Problembeschreibung
-
 ** Projektziele
 
 Das Hauptziel der Arbeit soll es sein eine einfach nutzbare grafische
@@ -234,7 +232,7 @@ Commit sollte dabei gemäss dem Artikel von Chris Beams "How to write a Git
 Commit Message" footcite:commit und in englischer Sprache geschrieben sein.
 
 Versionsnummern sind für die Applikation zum jetzigen Zeitpunkt noch nicht
-vorgesehen. Sollten sie trotzdem verwendet werden soll eine semantische
+vorgesehen. Sollten sie zukünftig einmal verwendet werden soll eine semantische
 Versionierung footcite:semver verwendet. Dabei ist eine Versionsnummer immer
 nach diesem Schema aufgebaut, MAJOR.MINOR.PATCH. Bei Änderungen wir die:
 1. MAJOR Version erhöt wenn man inkompatible Änderungen an der gls:api macht.
@@ -247,10 +245,6 @@ eingecheckt sein damit der Master Branch immer eine funktionierende Software
 repräsentiert. Dies gilt auch für das Repository der Dokumentation. Der Master
 Branch der Dokumentation sollte maximal mit zwei Befehlen ~make clean~ und
 ~make~ "kompilierbar " sein.
-
-** TODO Organigramm
-
-PLACEHOLDER
 
 ** Zeitplanung
 
