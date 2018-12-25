@@ -346,7 +346,7 @@ des Eintreffens bewertet und entsprechend der Tabelle: ([[tab:auswirkung]]) nach
 seiner Auswirkung bewertet.
 
 #+CAPTION: Projektrisiken
-#+ATTR_LATEX: :environment longtable :align |p{5cm}|p{5cm}| :placement [H]
+#+ATTR_LATEX: :environment longtable :align |p{0.45\textwidth}|p{0.45\textwidth}| :placement [H]
 #+NAME: tab:projektrisiken
 |--------------------------------+--------------------------------|
 | <30>                           | <30>                           |
@@ -462,7 +462,7 @@ Arbeit reduzieren kann.
 | 3 = hoch    | Hohe Auswirkung auf die Nützlichkeit     |
 
 #+CAPTION: Risikobeschreibung
-#+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{0.8cm}|p{8cm}| :placement [H]
+#+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{0.1\textwidth}|p{0.8\textwidth}| :placement [H]
 #+NAME: tab:risikobeschreibung
 |------------+--------------------------------|
 |       <10> | <30>                           |
@@ -489,6 +489,7 @@ Arbeit reduzieren kann.
 #+NAME: fig:sollrisiko
 [[file:pictures/sollrisiko.pdf]]
 
+#+LATEX:\newpage
 ** SWOT-Analyse
 
 Die SWOT-Analyse ist eine Methode, die Stärken, Schwächen, Chancen und
@@ -501,7 +502,7 @@ Abbildung:([[fig:swot]]) zu sehen.
 #+caption: SWOT Analyse des Projektes
 #+name: fig:swot
 [[file:pictures/swot_analyse.pdf]]
-#+attr_latex: :center
+#+attr_latex: :center :width 0.9\textwidth
 
 * TODO Konzept
 

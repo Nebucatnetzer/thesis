@@ -1,0 +1,1297 @@
+
+\section{Über dieses Dokument}
+\label{sec:org8394a2a}
+
+Im nachfolgenden Abschnitt finden Sie allgemeine Informationen zu
+diesem Dokument.
+
+\subsection{Beschreibung}
+\label{sec:org7e61b0f}
+
+Diese Arbeit hat zum Ziel die Planung und Erstellung einer grafischen
+Oberfläche zum einfachen Bedienen der Software \gls{borg} \footcite{borgbackup}
+sowie deren Konfiguration, durchzuführen.
+
+\subsection{Zweck und Inhalt}
+\label{sec:org5e0fb2f}
+
+Zweck dieses Dokumentes ist die vollständige und nachvollziehbare Dokumentation
+zur Diplomarbeit von Andreas Zweili.
+
+\subsection{Aufbau}
+\label{sec:org9632371}
+
+Alle Inhalte sind chronologisch sortiert, vom ältesten zum jüngsten
+Ereignis, und nach Kapiteln getrennt.
+
+\subsection{Lizenz}
+\label{sec:org6f468a4}
+
+Dieses Dokument wurde von Andreas Zweili im Rahmen der Diplomarbeit an der IBZ
+Schule erstellt und steht unter der \gls{cc} BY-SA 4.0 \footcite{cc} Lizenz.
+Dadurch darf die Arbeit unter beibehalten der Lizenz kopiert und
+weiterverarbeitet werden. Zusätzlich muss der Urheber gennant werden.
+
+\section{Initialisierung}
+\label{sec:org71a0502}
+\subsection{Vision}
+\label{sec:orgb55d3a4}
+
+Die Software soll \gls{borg} für den durschnittlichen Computer User zugänglich
+machen. Die Backups sollen dabei schnell und unkompliziert erstellt werden
+können. Die Möglichkeit automatischer im Hintergrund laufender Backups soll dem
+User gegeben sein damit die Hürde für Backups so tief wie möglich gehalten wird.
+
+Die besten Backups sind solche bei denen man gar nicht mehr weiss das man sie
+hat bis man sie braucht.
+
+\subsection{Ausgangslage}
+\label{sec:orgb9a4fdf}
+
+\gls{borg} ist deshalb interessant weil es wärend einem Backup relativ
+wenig Ressource im Vergleich zu anderen Systemen benötigt und schon relativ
+lange aktiv entwickelt wird. Dadurch ist es im Altag geprüft worden.
+Desweiteren bietet \gls{borg} die Funktion für Verschlüsselung was es einem User
+ermöglicht die Daten auf einem unsicheren Cloud Speicher abzulegen.
+
+Desweiteren speichert \gls{borg} die Daten mit blockbasierter \gls{dedup} ab. Dies
+hat den riesigen Vorteil das bei einem Backup nur die Änderungen auf
+Block-Ebene gespeichert werden und nicht jedes Mal die ganze Datei kopiert
+werden muss.
+
+Damit ermöglicht die Software auch Backups von sehr grossen Dateien, wie Videos
+oder Disk Images von virtuellen Maschinen, in mehreren Version. Ohne dabei
+jedoch signifikant mehr an Speicher zu benötigen. Zusätzlich werden die Backups
+dadurch rasend schnell ausgeführt. Gerade dieses Feature macht \gls{borg} in den
+Augen des Authors besonders interessant da sich der durschnittliche User
+möglichst wenig mit Dingen wie Backups ausseinander setzen möchte. Umsobesser
+also wenn sie schnell gehen und so wenig Speicherplatz wie möglich verbrauchen.
+
+\gls{borg} wird jedoch komplett über die Kommandozeile bedient. Somit ist es für
+normale Benutzer eher schwierig den Zugang zu der Software zu finden geschweige
+denn sie zu bedienen.
+
+\gls{borg} bietet Entwicklern eine \gls{json}, \gls{api}, mit welcher sie, von \gls{borg}
+ausgegebenen Dateinen einfach weiterverarbeiten können.
+
+\gls{borg} steht unter einer \gls{bsd} \footcite{bsd} Lizenz zur Verfügung und ist somit
+\gls{libre}.
+
+Das Projekt muss dabei vom Studenten in Eigenarbeit und einer Zeit von 250
+Stunden bis zum 18. März 2019 erarbeitet werden.
+
+\subsection{Projektziele}
+\label{sec:orgb764186}
+
+Das Hauptziel der Arbeit soll es sein eine einfach nutzbare grafische
+Oberfläche für \gls{borg} zu entwickeln. Da \gls{borg} selber freie Software ist und
+der Author mit \gls{libre} viel gute Erfahrungen gemacht hat soll das Projekt
+selber auch wieder \gls{libre} sein. Zum einen um der Community etwas
+zurückzugeben des weiteren um anderen Entwicklern die Möglichkeit zu geben die
+Software zu verbessern und weiterzu entwickeln.
+
+Als nebenläufiges Ziel soll mit dieser Arbeit auch die Verbreitung von freier
+Software gefördert werden. Dies wird insbesondere dadurch erreicht, dass die
+Software selbst unter der \gls{gpl} Version 3 \footcite{gplv3}
+veröffentlicht wird. Wenn möglich sollen während der Entwicklung auch
+hauptsächlich freie Software verwendet werden. Die gesamte Arbeit wird zudem zu
+jedem Zeitpunkt öffentlich einsehbar sein. Der Quelltext der Dokumentation ist
+unter diesem Link erreichbar: \url{https://git.2li.ch/Nebucatnetzer/thesis}
+
+Die Entwicklung wird hauptsächlich auf einem Linux System stattfinden. Da
+BorgBackup einerseits hauptsächlich auf Unix Systeme ausgelegt ist und
+anderseits die Hauptzielgruppe des Projektes auch auf Linux Usern liegt.
+Trotzdem sollen im Projekt Cross-Plattform fähige Technologien eingesetzt werden
+damit es in der Zukunft möglich ist das Projekt auf andere Plattformen
+auszuweiten.
+
+\subsubsection{Ziele inklusive Gewichtung}
+\label{sec:org2d2a3a5}
+
+Im Projektantrag wurden vorgängig vollgende Ziele definiert und entsprechend
+gewichtet. Die Gewichtung wurde dabei so vorgenommen, dass Ziele mit einer
+Muss-Gewichtung den Minimalanforderungen der Software entsprechen.
+Die weiteren Ziele wurden dann mit Ziffern von 5 - 1 gewichtet. Eine 5 bedeutet
+dabei dass, das Ziel in naher Zukunft sehr nützlich/wichtig für die Software
+wär ist. Eine tiefe Zahl sollte dabei wenn möglich auch einmal in die Software
+integriert werden und ist nicht unwichtig.
+
+\begin{longtable}{|p{1cm}|p{9cm}|p{1.5cm}|p{2cm}|}
+\hline
+\textbf{Ziel-Nr.}\cellcolor[HTML]{C0C0C0} & \textbf{Zielsetzung}\cellcolor[HTML]{C0C0C0} & \textbf{Muss}\cellcolor[HTML]{C0C0C0} & \textbf{Wunsch}\newline (1-5, 5=sehr wichtig)\cellcolor[HTML]{C0C0C0}\\
+\hline
+\endfirsthead
+\multicolumn{4}{l}{Fortsetzung von vorheriger Seite} \\
+\hline
+
+\textbf{Ziel-Nr.}\cellcolor[HTML]{C0C0C0} & \textbf{Zielsetzung}\cellcolor[HTML]{C0C0C0} & \textbf{Muss}\cellcolor[HTML]{C0C0C0} & \textbf{Wunsch}\newline (1-5, 5=sehr wichtig)\cellcolor[HTML]{C0C0C0} \\
+
+\hline
+\endhead
+\hline\multicolumn{4}{r}{Fortsetzung nächste Seite} \\
+\endfoot
+\endlastfoot
+\hline
+1. & Die Anwendung setzt auf Cross-Plattform (Linux, Windows, OSX) fähige Technologien. & x & \\
+\hline
+2. & Die Anwendung steht unter der \gls{gpl} v3 der Öffentlichkeit zur Verfügung. & x & \\
+\hline
+3. & Der User kann mit weniger als 3 Klicks ein Backup ausführen. & x & \\
+\hline
+4. & Der User kann ein Archiv mit 3 Klicks löschen. & x & \\
+\hline
+5. & Der User kann unter Linux ein Archiv mit zwei Klicks "`read-only"' als Laufwerk mounten. & x & \\
+\hline
+6. & Der User kann ein Archiv wieder herstellen. & x & \\
+\hline
+7. & Der User kann den zu sichernden Pfad manuell in der Anwendung definieren. & x & \\
+\hline
+8. & Die Applikation holt ihre Konfiguration aus einer Plain-Text Datei. & x & \\
+\hline
+9. & Der User kann sein Repository auf einer Harddisk ablegen. & x & \\
+\hline
+10. & Die Anwendung exkludiert für einen Linux Computer sinnvolle Pfade bereits zu Beginn. & x & \\
+\hline
+11. & Die Archivliste wird nach einer Aktion automatisch aktualisiert. & x & \\
+\hline
+12. & Der User kann sein Repository auf einem über SSH erreichbaren Server ablegen. &  & 5\\
+\hline
+13. & Der User kann den Namen eines Archives selbst bestimmen. &  & 5\\
+\hline
+14. & Die Anwendung meldet transparent, wenn das Repository nicht erreichbar ist. &  & 5\\
+\hline
+15. & Die Anwendung meldet dem User, wenn noch ein Hypervisor am Laufen ist. &  & 5\\
+\hline
+16. & Die Anwendung leitet Meldungen von \gls{borg} transparent weiter. &  & 5\\
+\hline
+17. & Die Anwendung zeigt transparent an das \gls{borg} im Hintergrund bereits läuft. &  & 5\\
+\hline
+18. & Das Repository wird nach jedem Backup bereinigt. &  & 4\\
+\hline
+19. & Der User kann automatische Hintergrundbackups in der Anwendung konfigurieren. &  & 4\\
+\hline
+20. & Die Anwendung gibt dem User die Möglichkeit ein passendes Repository zu erstellen, wenn keines gefunden wird, die Anwendung jedoch bereits konfiguriert ist. &  & 4\\
+\hline
+21. & Die Applikation verwendet, wann immer möglich allgemeingültige Umgebungsvariablen. &  & 4\\
+\hline
+22. & Die Anwendung cached/speichert (evtl. zusätzliche) Informationen in einer Datenbank. &  & 3\\
+\hline
+23. & Die Anwendung zeigt beim ersten Starten einen Setup Wizard. &  & 3\\
+\hline
+24. & Der User kann sich mit 3 Klicks das Log eines Archives anschauen. Nur möglich mit einer zusätzlichen DB. &  & 3\\
+\hline
+25. & Die Anwendung kann Systembenachrichtigungen auslösen. &  & 3\\
+\hline
+26. & Der User kann die Anwendung grafisch konfigurieren. &  & 3\\
+\hline
+27. & Der User kann entscheiden ob, ein gemountetes Archiv nach dem Schliessen der Applikation noch weiter verfügbar ist. &  & 2\\
+\hline
+28. & Der User kann das Repository wechseln. &  & 2\\
+\hline
+29. & Der User kann ein Archiv nach einer Datei oder einem Ordner durchsuchen. &  & 2\\
+\hline
+30. & Der User kann die "`Retention Policy"' konfigurieren. &  & 2\\
+\hline
+31. & Die Anwendung kann mit allen Features von BargBackup umgehen. &  & 2\\
+\hline
+32. & Die Applikation prüft, ob sie sich im richtigen Netzwerk befindet bevor sie eine Verbindung zum Server aufbaut. &  & 2\\
+\hline
+\caption{\label{tab:org0d17f53}
+Projektziele}
+\\
+\end{longtable}
+\newpage
+
+\subsection{Projektabgrenzung}
+\label{sec:org880aef4}
+
+Die Anwendung beschränkt sich darauf Funktionen von \gls{borg} grafisch
+darzustellen oder nützlich zu erweitern soweit dies über die \gls{api} möglich
+ist. Wie in, Abbildung:(\ref{fig:org76deb14}), zu sehen ist werden die Aktion effektiv
+immer vom Borg Binary ausgeführt und nicht von der grafischen Oberfläche. Eine
+Erweiterung von \gls{borg} ist nicht vorgesehen. Backup und Verschlüsselung sind
+heikle Themen und sollten umbedingt nur von Experten angegangen werden. Das
+Potential für Fehler und die Auswirkungen deren sind einfach schlicht zu gross.
+
+Desweiteren wird die Grundlage für eine kolaborative Entwicklung geschaffen.
+Wärend der Laufzeit der Diplomarbeit werden jedoch keine Inputs aus der Borg
+Community im Bezug auf die Entwicklung entgegengenommen.
+
+Bugs von \gls{borg} welche während der Dauer der Diplomarbeit vom Studenten
+entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{pictures/kontextdiagramm.pdf}
+\caption{\label{fig:org76deb14}
+Kontextdiagramm des Borg GUI}
+\end{figure}
+
+\subsection{Projektmethode}
+\label{sec:org80b7496}
+
+Für das Projekt wurde die Wasserfall-methode gewählt. Da nur eine
+einzige Person am Projekt arbeitet kann nur ein Task nach dem anderen
+abgearbeitet werden und viele Aufgaben stehen in Abhängigkeiten zu einander.
+Somit macht das iterative Vorgehen der Wassfall-methode für dieses Projekt am
+meisten Sinn.
+
+\subsection{Konfigurationsmanagement}
+\label{sec:org4265bb4}
+
+Die komplette Dokumentation, der Quellcode der Applikation sowie jeglich
+zusäzliche Dokumente wie etwa die Zeitplanung werden mittels der Software Git
+Versioniert. Thematisch zusammengehörende Änderungen werden in einem Commit
+zusammengefasst. Somit ist jederzeit nachvollziehbar was wann geändert hat. Ein
+Commit sollte dabei gemäss dem Artikel von Chris Beams "`How to write a Git
+Commit Message"' \footcite{commit} und in englischer Sprache geschrieben sein.
+
+Versionsnummern sind für die Applikation zum jetzigen Zeitpunkt noch nicht
+vorgesehen. Sollten sie zukünftig einmal verwendet werden soll eine semantische
+Versionierung \footcite{semver} verwendet. Dabei ist eine Versionsnummer immer
+nach diesem Schema aufgebaut, MAJOR.MINOR.PATCH. Bei Änderungen wir die:
+\begin{enumerate}
+\item MAJOR Version erhöt wenn man inkompatible Änderungen an der \gls{api} macht.
+\item MINOR Version erhöt wenn man Funktionalität hinzufügt die
+rückwärtskompatibel ist.
+\item PATCH Version erhöt wenn man rückwärtskompatible Bug-Fixes hinzufügt.
+\end{enumerate}
+
+Auf jeden Fall sollte wenn möglich immer nur lauffähiger Code im Master Branch
+eingecheckt sein damit der Master Branch immer eine funktionierende Software
+repräsentiert. Dies gilt auch für das Repository der Dokumentation. Der Master
+Branch der Dokumentation sollte maximal mit zwei Befehlen \texttt{make clean} und
+\texttt{make} "`kompilierbar "' sein.
+
+\subsection{Zeitplanung}
+\label{sec:orgb1efd39}
+
+Die detaillierte Zeitplanung ist dem Ganttchart in der Datei
+\href{Zeitplanung\_Andreas\_Zweili.html}{Zeitplanung\_Andreas\_Zweili.html} zu entnehmen. Bei der Zeitplanung wurde darauf
+geachtet das die Arbeit soweit als möglich nicht mit dem Berufsleben kolidiert.
+An einem normalen Arbeitstag wurde dabei damit gerechnet das ca. 2 Stunden
+Arbeit am Abend möglich sein sollten. An einem arbeitsfreien Tag wurde mit 6
+Stunden arbeit gerechnet. Über die Festtage wurden diverse Tage von der Planung
+ausgenommen da es nicht realistisch schien das an diesen Tagen die Arbeit
+signifikant vorwärts gehen würde. Auch Schultage wurde nicht als Arbeitstage
+gerechnet da man meist nicht mehr für weitere Tätigkeiten gross motiviert ist.
+
+Als zusätliche Massnahme um die Arbeitslast zu verteilen wurde vom 14. Januar
+bis zum 11. März jeder Montag auf der Arbeitsstelle als frei eingegeben.
+Dadurch steht wärend des Projektes etwas mehr Zeit zur verfügung als sonst mit
+einer 100\% Arbeitsstelle möglich wäre.
+
+\subsection{Controlling}
+\label{sec:orgdc0083e}
+
+Das Controlling wird verwendet um zu kontrollieren das die eigentliche Planung
+mit dem effektiv geleisteten Aufwand respektive den effektiv verwendeten
+Ressourcen übereinstimmt. Somit können für zukünftige Projekte Lehren gezogen
+werden.
+
+\newpage
+\begin{landscape}
+\subsubsection{Zeit}
+\label{sec:org40b0db6}
+
+\begin{longtable}{|p{3cm}|p{5cm}|p{3cm}|p{7cm}|}
+\hline
+\textbf{Aufgabe}\cellcolor[HTML]{C0C0C0} & \textbf{Gesch. Aufwand}\cellcolor[HTML]{C0C0C0} & \textbf{Effekt. Aufwand}\cellcolor[HTML]{C0C0C0} & \textbf{Begründung}\cellcolor[HTML]{C0C0C0}\\
+\hline
+\endfirsthead
+\multicolumn{4}{l}{Fortsetzung von vorheriger Seite} \\
+\hline
+
+\textbf{Aufgabe}\cellcolor[HTML]{C0C0C0} & \textbf{Gesch. Aufwand}\cellcolor[HTML]{C0C0C0} & \textbf{Effekt. Aufwand}\cellcolor[HTML]{C0C0C0} & \textbf{Begründung}\cellcolor[HTML]{C0C0C0} \\
+
+\hline
+\endhead
+\hline\multicolumn{4}{r}{Fortsetzung nächste Seite} \\
+\endfoot
+\endlastfoot
+\hline
+\hline
+ & \textbf{Gesamter Aufwand} &  & \\
+\hline
+\caption{\label{tab:org666fef9}
+Zeitcontrolling}
+\\
+\end{longtable}
+
+\newpage
+\subsubsection{Ressourcen}
+\label{sec:orgc2ff234}
+
+Folgende Ressourcen werden wärend der Arbeit benötigt:
+\begin{longtable}{|p{5cm}|p{3cm}|p{3cm}|p{7cm}|}
+\hline
+\textbf{Ressource}\cellcolor[HTML]{C0C0C0} & \textbf{geschätzte Stück}\cellcolor[HTML]{C0C0C0} & \textbf{effekt. Stück}\cellcolor[HTML]{C0C0C0} & \textbf{Begründung}\cellcolor[HTML]{C0C0C0}\\
+\hline
+\endfirsthead
+\multicolumn{4}{l}{Fortsetzung von vorheriger Seite} \\
+\hline
+
+\textbf{Ressource}\cellcolor[HTML]{C0C0C0} & \textbf{geschätzte Stück}\cellcolor[HTML]{C0C0C0} & \textbf{effekt. Stück}\cellcolor[HTML]{C0C0C0} & \textbf{Begründung}\cellcolor[HTML]{C0C0C0} \\
+
+\hline
+\endhead
+\hline\multicolumn{4}{r}{Fortsetzung nächste Seite} \\
+\endfoot
+\endlastfoot
+\hline
+Projektleiter/Mitarbeiter & 1 & 1 & \\
+Diplombetreuer & 1 & 1 & \\
+Testuser & 5 &  & \\
+Korrekturleser & 3 &  & \\
+iPad & 1 & 1 & \\
+Notebook & 1 & 1 & \\
+\hline
+\caption{\label{tab:orgb4a7b96}
+Ressourcen}
+\\
+\end{longtable}
+\end{landscape}
+
+\subsubsection{Kosten}
+\label{sec:org3b0553f}
+
+Werden die internen Lohnkosten des Projektleiters auf ca. 60 CHF pro Stunde
+geschätzt ergeben sich aus der Zeitplanung somit theoretische Kosten von 19'200
+CHF für die Umsetzung dieser Arbeit. Da dieses Projekt finanziell jedoch in
+keinster Weise wirtschaftliche relevant ist, sind die Kosten nur ein rein
+theoretischer Faktor.
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lrr}
+\hline
+\textbf{Name}\cellcolor[HTML]{C0C0C0} & \textbf{Aufwand in h}\cellcolor[HTML]{C0C0C0} & \textbf{Kosten in CHF}\cellcolor[HTML]{C0C0C0}\\
+\hline
+Initialisierung & 24 & 1440\\
+Analyse & 47 & 2820\\
+Konzept & 34 & 2040\\
+Realisierung & 172 & 10320\\
+Ausblick & 8 & 480\\
+Arbeit korrigieren & 20 & 1200\\
+Meeting \#1 & 5 & 300\\
+Meeting \#2 & 5 & 300\\
+Meeting \#3 & 5 & 300\\
+\hline
+\textbf{Total} & 320 & 19200\\
+\hline
+\end{tabular}
+\caption{\label{tab:org2678f20}
+Kostenrechnung}
+
+\end{table}
+
+\subsection{Projektrisiken}
+\label{sec:org2b56deb}
+
+Das Risikomanagement dient dazu Risiken im Projekt zu erkennen und Massnahmen
+zur Vermeidung der Risiken zu definieren. Dadurch steht man ihnen nicht
+unvorbereitet gegenüber sollten sie eintreffen.
+
+\subsubsection{Risikobeschreibung}
+\label{sec:orgfec4900}
+
+In der Tabelle: (\ref{tab:orgc2b848f}), sind die Risiken des Projektes
+gemeinsam mit ihren Gegenmassnahmen aufgelistet. Jedes Risiko wurde
+entsprechend der Tabelle: (\ref{tab:org463c5d5}) nach der Wahrscheinlichkeit
+des Eintreffens bewertet und entsprechend der Tabelle: (\ref{tab:org7556e15}) nach
+seiner Auswirkung bewertet.
+
+\begin{longtable}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\textbf{Beschreibung}\cellcolor[HTML]{C0C0C0} & \textbf{Massnahmen}\cellcolor[HTML]{C0C0C0}\\
+\hline
+\endfirsthead
+\multicolumn{2}{l}{Fortsetzung von vorheriger Seite} \\
+\hline
+
+\textbf{Beschreibung}\cellcolor[HTML]{C0C0C0} & \textbf{Massnahmen}\cellcolor[HTML]{C0C0C0} \\
+
+\hline
+\endhead
+\hline\multicolumn{2}{r}{Fortsetzung nächste Seite} \\
+\endfoot
+\endlastfoot
+\hline
+Ein grösseres Problem in der Programmierung blockiert den Fortschritt. & Immer nur eine Sache auf einmal in der Code-Basis ändern, alle Fehler beheben und erst dann zur nächsten Aufgabe weitergehen.\\
+\hline
+Viel Arbeit an der Arbeitsstelle, dabei bleibt weniger Zeit für die Diplomarbeit. & Auf der Arbeit Freitage eingeben um die Last etwas zu verteilen. Projektplanung machen.\\
+\hline
+Know-How zur Umsetzung ist nicht vollständig vorhanden. & Gute Informationsbeschaffung im Internet, Büchern, etc.\\
+\hline
+Manuelle Tests brauchen zu viel Zeit. & Soviel wie möglich automatisieren. Dabei jedoch nicht den Fokus auf die eigentliche Entwicklung verlieren.\\
+\hline
+Die Programmierung des Programms benötigt zu viel Zeit. & Bei der Projektplanung genau definieren was die GUI Applikation beinhalten muss. Ziele definieren, Abgrenzungen treffen.\\
+\hline
+User haben keine Zeit für Utility Tests. & Vorgängig einen Termin abmachen.\\
+\hline
+\gls{borg} ändert fundamental seine \gls{api}. & Gegen eine fixe Version von \gls{borg} entwickeln.\\
+\hline
+\caption{\label{tab:orge163d32}
+Projektrisiken}
+\\
+\end{longtable}
+
+\section{Analyse}
+\label{sec:orgd2e8df3}
+\subsection{Umweltanalyse}
+\label{sec:org65077db}
+
+Die Projektumwelt-Analyse ist eine Methode, die Beziehungen,
+Erwartungshaltungen und Einflüsse auf das Projekt durch interne und
+externe soziale Umwelten zu betrachten und zu bewerten. Auf Grundlage
+der Analyseergebnisse werden erforderliche Massnahmen zur Gestaltung
+der Umweltbeziehungen abgeleitet. Die Gestaltung der
+Projektumweltbeziehungen ist eine Projektmanagementaufgabe. In der
+Tabelle:(\ref{tab:org092919f}) wurden die Anforderungen und Wünsche
+mit Einschätzung der Wahrscheinlichkeit und der Einflussnahme aufgenommen.
+Zusätzlich ist die Beziehung der Stakeholder zum Projekt noch in der
+Abbildung:(\ref{fig:org1ce1a4e}) grafisch dargestellt.
+
+Da das Projekt so ausgelegt ist das der Projektleiter es in Eigenarbeit
+verwirklichen kann ist der Einfluss der Stakeholder wärend der Umsetzung sehr
+gering. Die User werden bei der Entwicklung mittels einer "`Usability"' Studie
+miteinbezogen und die \gls{borg} Community wird mit regelmässigen Posts auf dem
+offiziellen Github Repository auf dem Laufenden gehalten.
+Nach Ende der Diplomarbeit soll das Projekt für interessierte Entwickler jedoch
+offen sein. Der Quellcode wird bereits während der Arbeit öffentlich zur
+Verfügung gestellt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\textwidth]{pictures/stakeholder_diagramm.pdf}
+\caption{\label{fig:org1ce1a4e}
+Stakeholder Diagramm}
+\end{figure}
+
+\newpage
+\begin{landscape}
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|>{\columncolor[HTML]{EFEFEF}}p{0.8cm}|l|l|p{8cm}|l|}
+\hline
+\textbf{Nr}.\cellcolor[HTML]{C0C0C0} & \textbf{Stakeholder}\cellcolor[HTML]{C0C0C0} & \textbf{Einfluss}\cellcolor[HTML]{C0C0C0} & \textbf{Anforderung/Wünsche}\cellcolor[HTML]{C0C0C0} & \textbf{Wahrscheinlichkeit}\cellcolor[HTML]{C0C0C0}\\
+\hline
+1. & BorgBackup Community & gering & - Eine Applikation die den Umfang von BorgBackup abdeckt & mittel\\
+ &  &  & - Open-Source & hoch\\
+ &  &  & - Mitsprachrecht bei der Entwicklung & niedrig\\
+\hline
+2. & User & gering & - Eine einfache Anwendung & hoch\\
+ &  &  & - Einmal einrichten und vergessen & mittel\\
+\hline
+3. & Interessenten & gering & - Einfach verständliches Projekt Repository & hoch\\
+ &  &  & - Einfaches Setup zum testen & hoch\\
+\hline
+4. & Projektleiter & hoch & - Stabile Anwendung erstellen & mittel\\
+ &  &  & - Ein nachhaltiges Projekt starten & mittel\\
+ &  &  & - Anerkennung im fachlichen Umfeld & hoch\\
+\hline
+\end{tabular}
+\caption{\label{tab:org092919f}
+Umwelt-Analyse}
+
+\end{table}
+\end{landscape}
+
+\subsection{Risiko-Analyse}
+\label{sec:org659e913}
+
+Bei der Risikoanalyse wird von einem durchschnittlichen Benutzer ausgegangen
+der zur Zeit noch keine Backups macht und beginnen möchte \gls{borg} zu nutzen um
+auf einer externen Harddisk seine Backups zu speichern.
+
+Es wird dabei eine Ist/Soll Analyse gemacht um die Lösung gegenüber der
+bestehenden Möglichkeiten zu vergleichen. Jedes Risiko wurde entsprechend der
+Tabelle: (\ref{tab:org463c5d5}) nach der Wahrscheinlichkeit des Eintreffens
+bewertet und entsprechend der Tabelle: (\ref{tab:org7556e15}) nach seiner Auswirkung
+im Bezug auf die Nützlichkeit der gemachten Backups.
+
+In der Tabelle: (\ref{tab:orgc2b848f}) sind dabei die Risiken für das
+Szenario aufgelistet und nummeriert. In der, Abbildung:(\ref{fig:org8251252}), ist die
+Bewertung des Ist-Risikos grafisch dargestellt und in der,
+Abbildung:(\ref{fig:org38b227a}), ist das Soll-Risiko welches mit dieser Arbeit
+angestrebt wird ebenfalls grafisch dargestellt.
+
+Es sollte im Rahmen der Arbeit möglich sein die meisten Risiken zu verringern.
+Da automatische Hintergrundbackups jedoch nur ein Kann-Ziel sind wir in dieser
+Analyse nicht davon ausgegangen das man das Risiko Nr. 5 im Rahmen dieser
+Arbeit reduzieren kann.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{l|l}
+\textbf{Bewertung} & \textbf{Beschreibung: Wahrscheinlichkeit (W)}\\
+\hline
+1 = gering & Unwahrscheinlich, <20\%\\
+2 = mittel & Mässig wahrscheinlich, 20-50\%\\
+3 = hoch & Hohe Wahrscheinlichkeit > 50\%\\
+\end{tabular}
+\caption{\label{tab:org463c5d5}
+Risikobewertung Wahrscheinlichkeit}
+
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{l|l}
+\textbf{Bewertung} & \textbf{Beschreibung: Auswirkung (A)}\\
+\hline
+1 = gering & Geringe Auswirkungen auf Nützlichkeit\\
+2 = mittel & Mittlere Auswirkung auf die Nützlichkeit\\
+3 = hoch & Hohe Auswirkung auf die Nützlichkeit\\
+\end{tabular}
+\caption{\label{tab:org7556e15}
+Risikobewertung Auswirkung}
+
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\columncolor[HTML]{EFEFEF}}p{0.1\textwidth}|p{0.8\textwidth}|}
+\hline
+\textbf{Nr.}\cellcolor[HTML]{C0C0C0} & \textbf{Beschreibung}\cellcolor[HTML]{C0C0C0}\\
+\hline
+1. & Der Benutzer hat noch nie die Kommandozeile verwendet und scheitert bereits an der Installation von \gls{borg}.\\
+\hline
+2. & Der Benutzer verwendet keine Verschlüsselung und verliert seine Harddisk.\\
+\hline
+3. & Der Benutzer speichert die Backups auf der internen statt der externen Harddisk.\\
+\hline
+4. & Der Benutzer löscht aus Versehen ein Backup.\\
+\hline
+5. & Der Anwender vergisst die Backups zu machen.\\
+\hline
+\end{tabular}
+\caption{\label{tab:orgc2b848f}
+Risikobeschreibung}
+
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=9cm]{pictures/istrisiko.pdf}
+\caption{\label{fig:org8251252}
+Grafische Darstellung der Ist-Risikoanalyse}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=9cm]{pictures/sollrisiko.pdf}
+\caption{\label{fig:org38b227a}
+Grafische Darstellung der Soll-Risikoanalyse}
+\end{figure}
+
+\newpage
+\subsection{SWOT-Analyse}
+\label{sec:org78e590a}
+
+Die SWOT-Analyse ist eine Methode, die Stärken, Schwächen, Chancen und
+Gefahren zu erkennen, indem eine 4-Felder-Matrix ausgefüllt wird.
+
+Wichtig vor dem Ausfüllen der SWOT-Analyse ist es, ein klares Ziel zu
+haben. Die ausgefüllte SWOT-Analyse für dieses Projekt ist in der
+Abbildung:(\ref{fig:org8d92421}) zu sehen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{pictures/swot_analyse.pdf}
+\caption{\label{fig:org8d92421}
+SWOT Analyse des Projektes}
+\end{figure}
+
+\section{Konzept}
+\label{sec:org34777b1}
+
+\subsection{Varianten}
+\label{sec:orgee7897b}
+
+Da Borg eine JSON API zur Verfügung stellt bieten sich diverse Möglichkeiten um
+das Programm anzubinden. Da das Ziel ist, das Programm normalen Nutzern
+zugänglicher zu machen, bietet sich ein normales Desktop Programm am ehesten
+an. Desktop Programme werden von allen Computer Usern täglich genutzt und sind
+somit etwas was sie kennen.
+
+Daraus ergeben sich die in diesem Kapitel aufgeführten Möglichkeiten für das
+Projekt.
+
+\subsubsection{Bewertung}
+\label{sec:orgd04a5af}
+
+Die Bewertungspunkte setzen sich einerseits aus den Projektzielen anderseits
+aus für das Projekt sinnvollen Punkten zusammen. Dadurch ergeben sich dann die
+Bewertungen welche in der nachfolgenden Tabelle aufgenommen wurden. Die
+möglichen Varianten wurden danach bewertet. Die effektive Berechnung des
+Resultats wird nach folgender Formel durchgeführt.
+
+\begin{equation}
+G * EP = KE
+\end{equation}
+
+Also die Gewichtung(\emph{G}) multipliziert mit der erreichten Punktzahl(\emph{EP})
+ergibt das Kriteriumsergebnis(\emph{KE}). Für das Endresultat wird dann die Summe
+über alle Kriterien gebildet. Die Variante mit der höchsten Summe wurde für das
+Projekt ausgewählt.
+
+Mussziele erhalten dabei eine
+Gewichtung von 10 und Wunschziele eine Gewichtung entsprechend der Bewertung in
+der Tabelle Projektziele (\ref{tab:org0d17f53}).
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Kriterium}\cellcolor[HTML]{C0C0C0} & \textbf{Gewichtung}\cellcolor[HTML]{C0C0C0} & \textbf{max. Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{erreichte Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{Kriteriums- ergebnis}\cellcolor[HTML]{C0C0C0}\\
+\hline
+1. Cross Plattform nutzbar & 10 & 10 & 10 & 100\\
+2. Freie Software & 5 & 10 & 10 & 50\\
+3. Vorkenntnisse & 5 & 10 & 10 & 50\\
+4. Integriert sich gut ins System & 5 & 10 & 10 & 50\\
+5. Ohne spezielle Tools nutzbar & 5 & 10 & 10 & 50\\
+6. Lesbarkeit des Codes & 5 & 5 & 5 & 25\\
+7. Einfachheit des Setups & 5 & 5 & 5 & 25\\
+8. Lernfaktor & 5 & 5 & 5 & 25\\
+9. Verbreitung bei der BorgBackup Community & 5 & 5 & 5 & 25\\
+10. Geschwindigkeit der Entwicklung & 3 & 5 & 5 & 15\\
+\hline
+\textbf{Total} &  &  &  & 415\\
+\hline
+\end{tabular}
+\caption{\label{tab:org3882be1}
+Muster Bewertungstabelle}
+
+\end{table}
+
+\subsubsection{Backend}
+\label{sec:orgc7043d0}
+
+Fürs Backend bieten sich die folgende drei Sprachen an: \hyperref[sec:org87cfed6]{C\#}, \hyperref[sec:org8faf346]{C++}, \hyperref[sec:org7ab72b4]{Python}.
+Dies vorallem weil alle Allrounder Sprachen sind und sich gut für Desktop
+Applikationen eignen.
+
+\paragraph{C\#}
+\label{sec:org87cfed6}
+
+C\# ist eine von Microsoft entwickelte Programmiersprache welche viele
+Frameworks zur Verfügung hat. Insbesondere Aufgrund der grossen kommerziellen
+Nutzung und der guten Integration mit Windows hat C\# eine relative grosse
+Verbreitung. Bei Linux und OS X ist es jedoch schwieriger C\# zu integrieren und
+zu nutzen.
+
+Sie ist zu Teilen \gls{libre}. Die Common Language Runtime welche für das
+Ausführen von Software zuständig ist, ist unter der MIT Lizenz lizenziert
+\footcite{csharp} der aktuelle Compiler Roslyn ist unter der Apache Lizenz
+verfügbar \footcite{roslyn}. Da es sehr viele offiziele Teile um die Sprache C\#
+gibt kann im Rahmen des Projektes nicht direkt abgeschätzt werden ob alle
+benötigten Teile \gls{libre} sind. Für die Bewertung wird deshalb ein kleinerer
+Wert als bei C++ und Python genommen.
+
+C\# ist die Programmierspache welche an der IBZ hauptsächlich gelehrt wird.
+Dadurch sind die Kenntnisse der Sprache und ihrer Anwendung bereits
+einigermassen vorhanden. Ausserhalb der Schule wurde die Sprache jedoch noch nie
+eingesetzt.
+
+Entwickelt wird C\# hauptsächlich mit der \gls{ide} Microsoft Visual Studio.
+Eine sehr umfangreiche und komlexe Software. Visual Studio ist dabei nur für
+Windows und OS X erhältlich. Es ist auch möglich C\# Projekte ausserhalb von
+Visual Studio zu erstellen ist jedoch nicht sehr einfach.
+
+Der Code ist gut lesbar und es gibt offizielle Styleguides von Microsoft was
+den Code über Projekte hinaus einigermassen einheitlich aussehen lässt. Zudem
+hilft hier auch Visual Studio stark den Code entsprechend zu formatieren.
+Besonders angenehm sind die Klassen- und Methodennamen der offiziellen
+Frameworks. Insgesamt sehr gut gelöst aber in Sachen Lesbarkeit noch etwas
+hinter Python.
+
+Unter Windows ist das Setup von C\# relativ einfach. Allerdings ist es auch dort
+im Vergleich zu Python eine umfangreiche Angelegenheit Visual Studio sauber zu
+installieren und nutzbar zu machen. Auf anderen Plattform wird dies leider
+nicht einfacher und unter Linux ist es bereits schwierig eine funktionierende
+Umgebung in gang zu bringen.
+
+Da C\# bereits an der IBZ gelernt wird ist der Lernfaktor hier im Vergleich zu
+den anderen Sprachen sicher am kleinsten. Allerdings gibt es noch keinerlei
+Kenntnisse beim Einbinden eines der unten aufgeführten \gls{gui} Frameworks.
+Daher gibt es auf jeden Fall noch genügend zu lernen.
+
+Die \gls{borg} Community hat vor relativ kurzer Zeit die offizielle Unterstützung
+von Windows zurückgezogen. Da C\# eine sehr Windows lastige Sprache ist wird
+daher davon ausgegangen das die Sprache innerhalb der \gls{borg} Community nicht
+sehr verbreitet ist.
+
+C\# ist eine stark typisiert Sprache und kompilierte Sprache. Desweiteren ist
+Visual Studio der Erfahrung nach nicht die schnellste Software. Dies alles
+führt dazu das C\# nicht gerade die schnellste Sprache zum programmmieren ist.
+Jedoch aufgrund des moderneren Unterbaus sicher schneller als C++.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Kriterium}\cellcolor[HTML]{C0C0C0} & \textbf{Gewichtung}\cellcolor[HTML]{C0C0C0} & \textbf{max. Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{erreichte Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{Kriteriums- ergebnis}\cellcolor[HTML]{C0C0C0}\\
+\hline
+1. Cross Plattform nutzbar & 10 & 10 & 8 & 80\\
+2. Freie Software & 5 & 10 & 8 & 40\\
+3. Vorkenntnisse & 5 & 10 & 6 & 30\\
+4. Integriert sich gut ins System & 5 & 10 & 8 & 40\\
+5. Ohne spezielle Tools nutzbar & 5 & 10 & 6 & 30\\
+6. Lesbarkeit des Codes & 5 & 5 & 4 & 20\\
+7. Einfachheit des Setups & 5 & 5 & 2 & 10\\
+8. Lernfaktor & 5 & 5 & 3 & 15\\
+9. Verbreitung bei der BorgBackup Community & 5 & 5 & 1 & 5\\
+10. Geschwindigkeit der Entwicklung & 3 & 5 & 3 & 9\\
+\hline
+\textbf{Total} &  &  &  & 279\\
+\hline
+\end{tabular}
+\caption{\label{tab:org30f2838}
+C\# Bewertungstabelle}
+
+\end{table}
+
+\paragraph{C++}
+\label{sec:org8faf346}
+
+C++ ist eine stark typisierte und kompilierte Programmiersprache. Sie ist seit
+1998 Teil des ISO Standards \footcite{cpp98}. ISO/IEC 14882:2017 \footcite{cpp17}
+ist zur Zeit die aktuellste Variante. Die Sprache existiert seit ca. 33 Jahren
+und hat eine weitreichende Verbreitung gefunden. C++ ist auf allen
+Betriebssystemen gut unterstützt muss jedoch für jedes System separat
+kompiliert werden.
+
+Von C++ sind innerhalb des Projektes keinerlei Vorkenntnisse vorhanden. Dies
+ist ein sehr hoher Risikofaktor.
+
+C++ kompiliert direkt zu Maschinensprache und ist dadurch sehr performant und
+läuft sehr gut auf jedem System. C++ ist im Vergleich zu modernen Sprachen
+jedoch relativ komplex und bietet diverse Stolpersteine für Programmierer.
+
+Zum entwickeln braucht es verhältnismässig wenig. Da die Sprache bereits sehr
+alt ist, stammt sie noch aus einer Zeit wo man noch etwas rudimentärer
+programmierte. Allerdings braucht man in jedem Fall einen \gls{compiler} um ein
+ausführbares Programm zu erzeugen. Bei komplexeren Programmen wird man um
+mindestens so etwas wie \glspl{makefile} auch nicht herumkommen.
+
+Im Vergleich zu Python oder C\# ist C++ wohl die am schwersten lesbare Sprache.
+Zudem gibt es auch keinen zentralen Styleguide welcher einem vorgeben würde wie
+der Code am besten aussschauen sollte. Somit haben sich über die Jahre mehrere
+Standards etabliert.
+
+Der Lernfaktor wäre Aufgrund der mangelnden Vorkenntnisse hier ganz klar am
+Grössten.
+
+Da C++ eine alte Sprache ist geniesst sie auch eine dementsprechende
+Verbreitung. Daher ist anzunehmen das sicher mindestens ein grössere Teil der
+älteren BorgBackup Entwickler C++ oder C gelernt haben.
+
+Da C++ auch heute noch zu den meistgenutzten Sprachen gehört gibt es
+entsprechend viele Ressourcen dazu und Beispiel Projekte von denen man ableiten
+kann. Auch hilfreiche Libraries gibts es sehr viele welche den Programmierer
+unterstützen können. Die Sprache selber ist jedoch eher umständlich zu
+schreiben. Hinzu kommt noch das man während der Entwicklung immer wieder den
+Code kompilieren muss. In einem Projekt mit dieser begrenzten Zeitspanne eher
+ungeeignet.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Kriterium}\cellcolor[HTML]{C0C0C0} & \textbf{Gewichtung}\cellcolor[HTML]{C0C0C0} & \textbf{max. Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{erreichte Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{Kriteriums- ergebnis}\cellcolor[HTML]{C0C0C0}\\
+\hline
+1. Cross Plattform nutzbar & 10 & 10 & 8 & 80\\
+2. Freie Software & 5 & 10 & 10 & 50\\
+3. Vorkenntnisse & 5 & 10 & 0 & 0\\
+4. Integriert sich gut ins System & 5 & 10 & 8 & 40\\
+5. Ohne spezielle Tools nutzbar & 5 & 10 & 6 & 30\\
+6. Lesbarkeit des Codes & 5 & 5 & 2 & 10\\
+7. Einfachheit des Setups & 5 & 5 & 3 & 15\\
+8. Lernfaktor & 5 & 5 & 5 & 25\\
+9. Verbreitung bei der BorgBackup Community & 5 & 5 & 3 & 15\\
+10. Geschwindigkeit der Entwicklung & 3 & 5 & 2 & 6\\
+\hline
+\textbf{Total} &  &  &  & 271\\
+\hline
+\end{tabular}
+\caption{\label{tab:org9bb70a9}
+C++ Bewertungstabelle}
+
+\end{table}
+
+\paragraph{Python}
+\label{sec:org7ab72b4}
+
+Der Python Interpreter ist für eine Vielzahl an Betriebssystemen erhältlich,
+inklusive Windows, OS X und Linux. Nahezu jedes Desktop Linux System kommt mit
+Python vor installiert. Auch OS X kommt bereits ab Werk mit Python Version 2.
+Version 3 lässt sich sehr einfach nachinstallieren und ist einfach nutzbar.
+Unter Windows geschtaltet sich die Installation etwas aufwändiger aber auch
+nicht sehr kompliziert integriert sich in Windows jedoch etwas weniger elegant
+als C\#.
+
+Python ist freie Software unter der Python Software Foundation License
+\footcite{python} und wird durch die Python Software Foundation in einem
+Community basierten Modell entwickelt.
+
+Die Vorkenntnisse sind im Vergleich zu C++ relativ gross und zu C\# etwas
+weniger ausgeprägt. Es wurden damit im Rahmen der Ausbildung schon ein
+grösseres Projekt realisiert und ansonsten mehrere kleine Projekte im Privaten
+erstellen.
+
+Für Python gibt es ein paar \glspl{ide} welchen den Programmierer bei seiner
+Arbeit unterstützen können. Keine davon ist allerdings ein Muss um Python
+programmieren zu können. Im einfachsten Fall wäre dies mit Notepad möglich. Ein
+Editor mit etwas vortgeschritteren Features wäre jedoch empfehlenswert.
+
+Python unterstützt mehrere Programmierungsparadigmen wie etwa
+objekt-orientiert, funktionale oder Prozedurale Paradigmen. Bei der Entwicklung
+von Python wurde sehr grossen Wert auf die Lesbarkeit der Sprache gelegt. Dies
+mit dem Hintergedanken das eine Programmierspache viel häufiger gelesen als
+effektiv geschrieben wird \footcite{pep8}.
+
+Um ein Python Programm zu starten braucht es eigentlich kein grosses Setup.
+Solange die Abhängigkeiten vorhanden sind, kann man ein Skript mit einem
+einfachen Befehl, Code Snippet (\ref{orgd952351}) starten.
+
+\lstset{language=bash,label=orgd952351,caption={Minimal Python Setup},captionpos=b,numbers=none}
+\begin{sexylisting}{Minimal Python Setup}
+python3 example.py
+\end{sexylisting}
+
+Da Python schon eine etwas bekanntere Sprache ist, ist der Lernfaktor der
+Sprache selber nicht mehr so hoch. Allerdings gibt es noch viele interessante
+Konzepte die man im Zusammenhang mit der Sprache lernen kann. Wie etwa zum
+Beispiel multiple Vererbung von Klassen.
+
+\gls{borg} selber wurde in Python geschrieben. Daher ist davon auszugehen das
+Python innerhalb dieser Community eine sehr hohe Verbreitung geniesst.
+
+Python ist eine dynamisch typisierte und interpretierte Sprache. Dies bedeutet
+das man bei Variabeln nicht explizit den Typ angeben muss und die Programme zur
+Laufzeit für den Computer übersetzt werden. Interpretierte Sprachen haben den
+Vorteil das man mit ihnen in der Regel sehr schnell und unkompliziert
+entwickeln kann, dies jedoch zu Lasten der Performance.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Kriterium}\cellcolor[HTML]{C0C0C0} & \textbf{Gewichtung}\cellcolor[HTML]{C0C0C0} & \textbf{max. Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{erreichte Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{Kriteriums- ergebnis}\cellcolor[HTML]{C0C0C0}\\
+\hline
+1. Cross Plattform nutzbar & 10 & 8 & 8 & 80\\
+2. Freie Software & 5 & 10 & 10 & 50\\
+3. Vorkenntnisse & 5 & 10 & 5 & 25\\
+4. Integriert sich gut ins System & 5 & 10 & 8 & 40\\
+5. Ohne spezielle Tools nutzbar & 5 & 10 & 7 & 35\\
+6. Lesbarkeit des Codes & 5 & 5 & 4 & 20\\
+7. Einfachheit des Setups & 5 & 5 & 4 & 20\\
+8. Lernfaktor & 5 & 5 & 3 & 15\\
+9. Verbreitung in der BorgBackup Community & 5 & 5 & 5 & 25\\
+10. Geschwindigkeit der Entwicklung & 3 & 5 & 4 & 12\\
+\hline
+\textbf{Total} &  &  &  & 322\\
+\hline
+\end{tabular}
+\caption{\label{tab:orgb80f575}
+Python Bewertungstabelle}
+
+\end{table}
+
+\subsubsection{FrontEnd}
+\label{sec:org61883bb}
+
+Fürs Frontend sind folgende Projekte interessant: \hyperref[sec:orgab8580b]{Qt}, \hyperref[sec:orgd25230f]{Gtk} und \hyperref[sec:orgde09806]{Electron}. Alle
+drei sind cross-plattfrom fähige \gls{gui} Frameworks und nicht von einer
+spezifischen Sprache abhängig. Da nahezu keine Erfahrung mit den aufgeführten
+Frameworks vorhanden ist werden bei den Frontenend Frameworks die Punkte der
+Verbreitung in der Community und Geschwindigkeit der Entwicklung ausgeschlossen
+da in allen Fällen nicht mal eine ungenaune Schätzung wirklich möglich wäre.
+
+\paragraph{Qt}
+\label{sec:orgab8580b}
+
+Qt \footcite{qt}, "`cute"' ausgesprochen, ist ein Framework zum Entwickeln von
+grafischen Oberflächen welche auf verschiedenen System ohne grosse Änderungen
+laufen sollen und sich dabei soweit als möglich wie eine native Applikation
+verhalten und "`anfühlen"' soll.
+
+Die Rechte an Qt hält die Firma "`The Qt Company"'. Das Framework Qt wird jedoch
+offen entwickelt und die Community hat ein Mitspracherecht. Die Linux
+Desktopumgebung KDE nutzt das Qt Framework intensiv. Qt ist \gls{libre} und der
+\gls{gpl} v3 \footcite{qtlicense} oder mit einer kostenpflichtigen proprietären
+Lizen erhältlich falls die \gls{gpl} nicht genutzt werden kann.
+
+Vorkenntnisse zu Qt sind nur sehr wenig vorhanden. Mehr als ein paar Tests
+wurden damit noch nicht gemacht.
+
+Eine Qt Oberfläche kann direkt in der jeweiligen Sprache des Backends
+geschrieben werden oder Mittels des Qt Designers als XML Datei gespeichert und
+dann in die eigentliche Applikation importiert werden. Somit ist keine
+spezielle Software nötig.
+
+XML ist nicht übermässig gut lesbar allerdings kann man Qt in der verwendeten
+Sprache programmiert werden somit ist es hauptsächlich von der Sprache im
+Backend abhängig. Die Dokumentation ist in C++ geschrieben was für einen
+Entwickler ohne C++ Kenntnisse die Software etwas unzugänglich macht.
+
+Qt scheint, soweit dies bis jetzt abgeschätzt werden kann, sehr leicht in ein
+Projekt zu integrieren sein.
+
+Da noch sehr wenig Kenntnisse vorhanden sind ist der Lernfaktor entsprechend
+gross.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Kriterium}\cellcolor[HTML]{C0C0C0} & \textbf{Gewichtung}\cellcolor[HTML]{C0C0C0} & \textbf{max. Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{erreichte Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{Kriteriums- ergebnis}\cellcolor[HTML]{C0C0C0}\\
+\hline
+1. Cross Plattform nutzbar & 10 & 10 & 10 & 100\\
+2. Freie Software & 5 & 10 & 10 & 50\\
+3. Vorkenntnisse & 5 & 10 & 2 & 10\\
+4. Integriert sich gut ins System & 5 & 10 & 8 & 40\\
+5. Ohne spezielle Tools nutzbar & 5 & 10 & 8 & 40\\
+6. Lesbarkeit des Codes & 5 & 5 & 3 & 15\\
+7. Einfachheit des Setups & 5 & 5 & 4 & 20\\
+8. Lernfaktor & 5 & 5 & 4 & 20\\
+\hline
+\textbf{Total} &  &  &  & 295\\
+\hline
+\end{tabular}
+\caption{\label{tab:org3bbc552}
+Qt Bewertungstabelle}
+
+\end{table}
+
+\paragraph{Gtk}
+\label{sec:orgd25230f}
+
+Gtk ist sowohl für Linux wie auch für Windows und OS X erhältlich. Gtk hat als
+Projekt der Gnome Foundation seine Wurzeln jedoch ganz klar in der Linux Welt.
+Gtk ist \gls{libre} under der Lesser General Public Lizenz \footcite{gtklicense}.
+Gtk ist ein Projekt der GNOME Foundation einer nicht für Profit Organisation
+welche die Entwicklung diverser freier Software Projekte koordiniert.
+
+Zu Gtk gibt es keinerlei Vorkenntnisse als Programmierer. Gtk wurde bis jetzt
+nur intensiv User verwendet.
+
+Gtk integriert sich nur unter Linux wirklich gut ins System. Unter Windows und
+OS X können die Applikation schnell etwas fremd wirken. Dies ist gut bei der
+Applikation Meld \footcite{meld} zu sehen wenn man eine Datei auswählen möchte,
+Abbildung (\ref{fig:org0ecf563}).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{pictures/meld.png}
+\caption{\label{fig:org0ecf563}
+Screenshot der Applikation Meld unter Windows 10}
+\end{figure}
+Die Gtk Dokumentation empfiehlt \footcite{gtk_setup}, das man unter Windows das
+Programm MSYS2 installiert um Gtk einzurichten. Zum Programmieren an sich
+braucht es offenbar nicht zwingend weitere Tools aus einem Editor. Wie auch bei
+Qt hat man jedoch die Möglichkeit das \gls{gui} mit einem \gls{gui} Designer
+grafisch zu erstellen.
+
+Wie auch Qt kann man Gtk entweder direkt in der Backend Sprach programmieren
+oder aus dem \gls{gui} Designer dann als XML exportieren. Der Code in der
+Dokumentation ist in C geschrieben was auch nicht die zugängliste Sprache ist.
+
+Die Verwendung von Gtk innerhalb des Programms scheint ähnlich einfach zu sein
+wie bei Qt. Die Installation ist allerdings unter Windows eher das Gegenteil
+von einfach.
+
+Da die Kenntnisse gleich null sind ist der Lernfaktor auf dem Maximum.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Kriterium}\cellcolor[HTML]{C0C0C0} & \textbf{Gewichtung}\cellcolor[HTML]{C0C0C0} & \textbf{max. Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{erreichte Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{Kriteriums- ergebnis}\cellcolor[HTML]{C0C0C0}\\
+\hline
+1. Cross Plattform nutzbar & 10 & 10 & 10 & 100\\
+2. Freie Software & 5 & 10 & 10 & 50\\
+3. Vorkenntnisse & 5 & 10 & 0 & 0\\
+4. Integriert sich gut ins System & 5 & 10 & 6 & 30\\
+5. Ohne spezielle Tools nutzbar & 5 & 10 & 8 & 40\\
+6. Lesbarkeit des Codes & 5 & 5 & 3 & 15\\
+7. Einfachheit des Setups & 5 & 5 & 3 & 15\\
+8. Lernfaktor & 5 & 5 & 5 & 25\\
+\hline
+\textbf{Total} &  &  &  & 275\\
+\hline
+\end{tabular}
+\caption{\label{tab:org20e83bc}
+Gtk Bewertungstabelle}
+
+\end{table}
+
+\paragraph{Electron}
+\label{sec:orgde09806}
+
+Electron ist ein cross-platform Framework zum entwickeln von \glspl{gui} welches
+dabei jedoch auf Technologien aus der Webentwicklung benutzt. Entwickelt wird
+Electron von der Firma Github und ist \gls{libre} unter der MIT Lizenz
+\footcite{electronlicense}.
+
+Da Electron auf Technologien aus der Webentwicklung setzt sind hier im
+Vergleich bereit gute Kenntnisse vorhanden. Über die genau Funktion und
+Implementierung sind noch keine Kenntnisse vorhanden.
+
+Die Verwendung von Webtechnologien macht Electron zwar sehr kompatibel auf den
+unterstützten Systemen, oftmals sehen die Applikationen jedoch doch eher wie
+eine Webseite als wie eine Desktop Applikation aus. Ein weitere Nachteil ist
+der hohe Ressourcenverbrauch da jede Applikation nahezu einer eigenene Instanz
+des Google Chrome Browsers gleich kommt.
+
+Bei der Installation muss Nodejs und der Paket Manager von Nodejs, NPM,
+vorhanden sein. Zum Programmieren selber braucht es keine speziellen Tools. Ein
+Editor und ein Webbrowser sollten aussreichend sein.
+
+Electron Applikationen bestehen hauptsächlich aus HTML, CSS und JavaScript
+Code. Wenn man nich die komplette Applikation in NodeJS programmieren möchte
+kommt dann noch eine zusätzliche Sprache hinzu. HTML ist ähnlich müsahm zu
+lesen wie XML. CSS und JavaScript sind relativ angenehm zu lesen wobei es für
+beide keine offiziellen Style Guides gibt. Was bei Webanwendungen jedoch immer
+das schwierigste ist, ist der wechsel zwischen verschiedenen Sprachen und
+Konzepten. Dieses Problem hat man bei Electron leider auch.
+
+Das Setup von Electron ist etwa ähnlich kompliziert wie das Setup von Gtk und
+ist sehr ähnlich dem Entwickeln einer normalen Webapplikation.
+
+Da an der IBZ Webtechnologien bereits intensiv behandelt worden sind und man in
+diesem Rahmen bereits ein paar Webapplikationen erstellt hat wäre der
+Lernfaktor bei Electron wohl nicht so gross wie etwa bei Qt oder Gtk.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Kriterium}\cellcolor[HTML]{C0C0C0} & \textbf{Gewichtung}\cellcolor[HTML]{C0C0C0} & \textbf{max. Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{erreichte Punktzahl}\cellcolor[HTML]{C0C0C0} & \textbf{Kriteriums- ergebnis}\cellcolor[HTML]{C0C0C0}\\
+\hline
+1. Cross Plattform nutzbar & 10 & 10 & 10 & 100\\
+2. Freie Software & 5 & 10 & 10 & 50\\
+3. Vorkenntnisse & 5 & 10 & 5 & 25\\
+4. Integriert sich gut ins System & 5 & 10 & 4 & 20\\
+5. Ohne spezielle Tools nutzbar & 5 & 10 & 7 & 35\\
+6. Lesbarkeit des Codes & 5 & 5 & 3 & 15\\
+7. Einfachheit des Setups & 5 & 5 & 3 & 15\\
+8. Lernfaktor & 5 & 5 & 3 & 15\\
+\hline
+\textbf{Total} &  &  &  & 275\\
+\hline
+\end{tabular}
+\caption{\label{tab:org9fdb0dc}
+Electron Bewertungstabelle}
+
+\end{table}
+
+\subsubsection{Ergebnis}
+\label{sec:org802bfbd}
+
+Aufgrund der erreichten Punktzahl, Tabelle:(\ref{tab:org618aea0}), bei den vorhergehenden
+Variantenbewertungen, wurde entschieden für das Backend der Applikation auf
+Python zu setzen und fürs Frontend Qt zu benutzen. Ein kleiner Test zeigt auch
+das die Kombination ohne grosse Probleme und Anpassung auf Windows, Linux und
+OS X läuft, Abbildung:(\ref{fig:org6c1e76f}).
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\columncolor[HTML]{EFEFEF}}p{4.5cm}|r|}
+\hline
+\textbf{Variante}\cellcolor[HTML]{C0C0C0} & \textbf{Erreichte Punktzahl}\cellcolor[HTML]{C0C0C0}\\
+\hline
+\textbf{Backend} & \\
+C\# & 279\\
+C++ & 271\\
+Python & 322\\
+\textbf{Frontend} & \\
+Qt & 295\\
+Gtk & 275\\
+Electron & 275\\
+\hline
+\end{tabular}
+\caption{\label{tab:org618aea0}
+Variantenbewertung Ergebnis}
+
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{pictures/hello_world.png}
+\caption{\label{fig:org6c1e76f}
+Python und Qt Applikation unter Windows (links), Linux (rechts) und OS X (unten)}
+\end{figure}
+
+\subsection{Vorkenntnisse}
+\label{sec:org9e04095}
+
+Die benötigten Vorkenntnisse wurden in den vorangegangenen Semestern erarbeitet
+und sind in der Basis gefestigt. Erfahrungen im Bereich der Entwicklung von
+Desktop Applikationen sind zum Teil vorhanden. Jedoch hauptsächlich für Windows
+Systeme und C\#.
+
+\subsection{Testing}
+\label{sec:org76a0fb9}
+
+PLACEHOLDER
+
+\subsubsection{Testfälle}
+\label{sec:orgbfae27e}
+
+PLACEHOLDER
+
+\subsection{Werkzeuge}
+\label{sec:org59ef66e}
+
+PLACEHOLDER
+
+\subsubsection{Versionskontrolle}
+\label{sec:org28d9476}
+
+Eine Versionskontrollsoftware ist in der Software Entwicklung heutzutage
+praktisch nicht mehr wegzudenken. So wurde auch bei diesem Projekt eine
+eingesetzt.
+
+Als Software für die Versionskontrolle wurde Git \footcite{git} aus folgenden
+Gründen ausgewählt:
+
+\begin{itemize}
+\item Ist der de facto Standard bei Versionskontrollsoftware
+\item Läuft auf allen gängigen Betriebssystemen
+\item Es gäbe gratis Services die man nutzen könnte (Github, Gitlab)
+\item Man kann offline arbeiten und Commits erstellen
+\item Der Author hat bereits einen eigenen Git Server zur Verfügung
+\item Der Author ist bereits mit Git aus vorhergehenden Projekten vertraut,
+dadurch muss man keine Ressourcen aufwenden eine neue Software zu lernen.
+Zusätzlich hat sich Git in den vorhergehenden Projekten als robuste
+und schnelle Software erwiesen.
+\item Git ist \gls{libre} unter der \gls{gpl} v2.
+\end{itemize}
+
+\subsubsection{Editor}
+\label{sec:org3519e9e}
+
+Sowohl bei der Dokumentation wie auch bei der Programmierung wurde
+hauptsächlich der Editor GNU Emacs \footcite{emacs} verwendet. GNU Emacs ist mit
+32 Jahren (obwohl seine Wurzeln bis ins Jahre 1976 zurückgehen) wohl eines der
+ältesten noch aktiven Software Projekte. Emacs ist \gls{libre} unter der
+\gls{gpl} v3. Emacs wurde gewählt da es ein schneller, schlanker und sehr
+flexibler Texteditior ist. Von normaler Textmanipulation über Taskmanagement
+und Emails schreiben ist alles möglich.
+
+\subsubsection{Dokumentation}
+\label{sec:org3761443}
+
+Diese Dokumentation wurde in Org-mode \footcite{orgmode}, einer Erweiterung für
+den Text Editor Emacs, geschrieben. Die Syntax erinnert an Markdown und
+Org-mode bietet einem eine vielzahl an Hilfen dafür inklusive dem erstellen von
+Tabellen und Spreadsheet Funktionen. Für finalle Version des Dokuments kann
+Org-mode die ursprünglich Textdatei über \LaTeX{} in ein PDF exportieren.
+
+\LaTeX{} \footcite{latex} ist eine Software, welche einem die Benutzung des
+Textsatzsystems TeXs vereinfacht. \LaTeX{} wurde gegenüber einem "`What You See Is
+What You Get"' (z.Bsp. MS. Word), Editor gewählt weil es einem mit seiner Markup
+Sprache erlaubt das Dokument in Text Dateien zu erstellen, gerade für
+Programmiere ist dies eine sehr interessante Lösung. Dadurch, dass \LaTeX{} auch
+nur aus reinen Textdateien besteht, kann man die Dokumente auch ohne weiteres
+in die Versionskontrollsoftware einchecken und die Entwicklung im Log
+zurückverfolgen. \LaTeX{} ist \gls{libre} unter der \LaTeX{} Project Public
+License.
+
+Die Grafiken in diesem Dokument wurden hauptsächlich mit dem Vektor Grafik
+Editor Inkscape \footcite{inkscape} erstellt. Inkscape ist \gls{libre} unter der
+GNU Public License v3.
+
+Die Diagramme wurden mit Draw.io \footcite{draw} erstellt. Draw.io ist \gls{libre}
+unter Apache Lizenz Version 2.0 \footcite{apache} und kann sowohl als Desktop
+Applikation wie auch als Webanwendung genutzt werden.
+
+\subsection{User Stories}
+\label{sec:org8b5f298}
+
+PLACEHOLDER
+
+\subsection{Use Cases}
+\label{sec:org965b415}
+
+PLACEHOLDER
+
+\paragraph{Anwendungsfalldiagramm}
+\label{sec:org92e0194}
+
+PLACEHOLDER
+
+\paragraph{Use Cases Detailbeschreibung}
+\label{sec:org76d468c}
+
+PLACEHOLDER
+
+\section{Realisierung}
+\label{sec:org4ce6199}
+\subsection{Benutzerinterface}
+\label{sec:org55de277}
+\paragraph{Inspiration}
+\label{sec:orgdbc0d9f}
+
+PLACEHOLDER
+
+\paragraph{Frontend Umsetzung}
+\label{sec:org60a9be2}
+
+PLACEHOLDER
+
+\paragraph{Backend Umsetzung}
+\label{sec:orgbd3aeee}
+
+PLACEHOLDER
+
+\section{Ausblick}
+\label{sec:org8bd82c3}
+\subsection{Projektmanagement}
+\label{sec:org39784a5}
+
+PLACEHOLDER
+
+\subsection{Umsetzung}
+\label{sec:org0d3255b}
+
+PLACEHOLDER
+
+\subsection{Gelerntes}
+\label{sec:org8f28034}
+
+PLACEHOLDER
+
+\newpage
+\begin{landscape}
+\section{Arbeitsjournal}
+\label{sec:org64fdba0}
+
+\begin{longtable}{|p{2cm}|p{5cm}|p{5cm}|p{7cm}|}
+\hline
+\textbf{Datum}\cellcolor[HTML]{C0C0C0} & \textbf{Geplante Arbeiten}\cellcolor[HTML]{C0C0C0} & \textbf{Erreichte Arbeiten}\cellcolor[HTML]{C0C0C0} & \textbf{Eindruck}\cellcolor[HTML]{C0C0C0}\\
+\hline
+\endfirsthead
+\multicolumn{4}{l}{Fortsetzung von vorheriger Seite} \\
+\hline
+
+\textbf{Datum}\cellcolor[HTML]{C0C0C0} & \textbf{Geplante Arbeiten}\cellcolor[HTML]{C0C0C0} & \textbf{Erreichte Arbeiten}\cellcolor[HTML]{C0C0C0} & \textbf{Eindruck}\cellcolor[HTML]{C0C0C0} \\
+
+\hline
+\endhead
+\hline\multicolumn{4}{r}{Fortsetzung nächste Seite} \\
+\endfoot
+\endlastfoot
+\hline
+16.12.2018 & Zeitplan erarbeiten, Ziele dokumentieren & keine Abweichung & -\\
+\hline
+23.12.2018 & Lösungsvarianten erfassen, Lösungsvarianten bewerten, Lösungsvariante bestimmen, SWOT Analyse erstellen, 1. Meeting & keine Abweichung & Marco Frei hat noch diverse Punkte eingebracht die, die Planung ziemlich durcheinander bringen. Bedeute viel zusätzliche Arbeit.\\
+\hline
+30.12.2018 & Controlling erarbeiten, Ist- und Soll-Analyse, SWOT Analyse, Umweltanalyse, Massnahmen Katalog erarbeiten, User Stories erarbeiten, Use Case Diagramm erstellen, Use Cases ausarbeiten, Anforderungskatalog erstellen, UML Diagramme &  & \\
+\hline
+\caption{\label{tab:org270babe}
+Arbeitsjournal}
+\\
+\end{longtable}
+\end{landscape}

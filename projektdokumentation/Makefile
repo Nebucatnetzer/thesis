@@ -1,6 +1,6 @@
 ALL=$(wildcard *.sty *.tex *.org pictures/*.svg pictures/*.eps pictures/*.dot \
 	pictures/*.tex pictures/*.puml)
-PAPER=Projekthandbuch_Andreas_Zweili.tex
+PAPER=Projektdokumentation_Andreas_Zweili.tex
 SHELL=/bin/bash
 
 FIGURES_SVG=$(wildcard pictures/*.svg)
@@ -15,9 +15,9 @@ DOT_PDF=$(FIGURES_DOT:.dot=.pdf)
 TEX_PDF=$(FIGURES_TEX:.tex=.pdf)
 PUML_PDF=$(FIGURES_PUML:.puml=.svg)
 
-all: Projekthandbuch_Andreas_Zweili.pdf ## Build full thesis (LaTeX + figures)
+all: Projektdokumentation_Andreas_Zweili.pdf ## Build full thesis (LaTeX + figures)
 
-Projekthandbuch_Andreas_Zweili.pdf: $(SVG_PDF) $(EPS_PDF) $(DOT_PDF) $(TEX_PDF) \
+Projektdokumentation_Andreas_Zweili.pdf: $(SVG_PDF) $(EPS_PDF) $(DOT_PDF) $(TEX_PDF) \
 	$(PUML_PDF) projekthandbuch.tex general/ibzlogo.pdf $(BIBLIOGRAPHY)
 	latexmk -quiet -pdf -pdflatex="pdflatex -interaction=nonstopmode" \
 	-use-make $(PAPER)
@@ -46,7 +46,7 @@ clean:  ## Clean LaTeX and output figure files
 	rm -f projekthandbuch.tex
 
 distclean:
-	rm -f Projekthandbuch_Andreas_Zweili.pdf
+	rm -f Projektdokumentation_Andreas_Zweili.pdf
 
 pictures/%.pdf: pictures/%.svg  ## Figures for the manuscript
 	inkscape -C -z --file=$< --export-pdf=$@
@@ -67,7 +67,7 @@ pictures/%.pdf: pictures/%.tex  ## Figures for the manuscript
 pictures/%.svg: pictures/%.puml
 	java -jar ~/bin/plantuml.jar -tsvg $<
 
-projekthandbuch.tex: projekthandbuch.org
+projekthandbuch.tex: projektdokumentation.org
 	emacs -l general/thesis.el --batch \
-	--eval="(progn (find-file \"projekthandbuch.org\") (org-latex-export-to-latex nil nil nil t))"
-	replace-listings.sh projekthandbuch.tex
+	--eval="(progn (find-file \"projektdokumentation.org\") (org-latex-export-to-latex nil nil nil t))"
+	replace-listings.sh projektdokumentation.tex
