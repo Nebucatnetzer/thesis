@@ -40,7 +40,7 @@ Schule erstellt und steht unter der gls:cc BY-SA 4.0 footcite:cc Lizenz.
 Dadurch darf die Arbeit unter beibehalten der Lizenz kopiert und
 weiterverarbeitet werden. Zusätzlich muss der Urheber gennant werden.
 
-* TODO Initialisierung
+* Initialisierung
 ** Vision
 
 Die Software soll gls:borg für den durschnittlichen Computer User zugänglich
@@ -391,7 +391,7 @@ Das Risikomanagement dient dazu Risiken im Projekt zu erkennen und Massnahmen
 zur Vermeidung der Risiken zu definieren. Dadurch steht man ihnen nicht
 unvorbereitet gegenüber sollten sie eintreffen.
 
-*** TODO Risikobeschreibung
+*** Risikobeschreibung
 
 In der Tabelle: ([[tab:risikobeschreibung]]), sind die Risiken des Projektes
 gemeinsam mit ihren Gegenmassnahmen aufgelistet. Jedes Risiko wurde
@@ -439,7 +439,7 @@ seiner Auswirkung bewertet.
 | 2 = mittel  | Arbeitsumstellung oder grösserer Arbeitsaufwand |
 | 3 = hoch    | Projekt erfüllt nicht alle Anforderungen        |
 
-*** TODO Risikobewertung
+*** Risikobewertung
 
 #+CAPTION: Grafische Darstellung der Risikoanalyse
 #+ATTR_LATEX: :width 9cm :placement [H]
