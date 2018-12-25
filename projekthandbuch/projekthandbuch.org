@@ -252,9 +252,22 @@ Branch der Dokumentation sollte maximal mit zwei Befehlen ~make clean~ und
 
 PLACEHOLDER
 
-** TODO Zeitplanung
+** Zeitplanung
 
-PLACEHOLDER
+Die detaillierte Zeitplanung ist dem Ganttchart in der Datei
+[[file:Zeitplanung_Andreas_Zweili.html][Zeitplanung_Andreas_Zweili.html]] zu entnehmen. Bei der Zeitplanung wurde darauf
+geachtet das die Arbeit soweit als möglich nicht mit dem Berufsleben kolidiert.
+An einem normalen Arbeitstag wurde dabei damit gerechnet das ca. 2 Stunden
+Arbeit am Abend möglich sein sollten. An einem arbeitsfreien Tag wurde mit 6
+Stunden arbeit gerechnet. Über die Festtage wurden diverse Tage von der Planung
+ausgenommen da es nicht realistisch schien das an diesen Tagen die Arbeit
+signifikant vorwärts gehen würde. Auch Schultage wurde nicht als Arbeitstage
+gerechnet da man meist nicht mehr für weitere Tätigkeiten gross motiviert ist.
+
+Als zusätliche Massnahme um die Arbeitslast zu verteilen wurde vom 14. Januar
+bis zum 11. März jeder Montag auf der Arbeitsstelle als frei eingegeben.
+Dadurch steht wärend des Projektes etwas mehr Zeit zur verfügung als sonst mit
+einer 100% Arbeitsstelle möglich wäre.
 
 * TODO Analyse
 
