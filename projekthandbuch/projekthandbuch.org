@@ -420,20 +420,28 @@ Verfügung gestellt.
 |-------+----------------------+----------------------+----------------------------------------------------------+----------------------------------------------|
 #+LATEX:\end{landscape}
 
-** Risikomanagement
+** Risiko-Analyse
 
-Das Risikomanagement dient dazu Risiken im Projekt zu erkennen und Massnahmen
-zur Vermeidung der Risiken zu definieren. Dadurch steht man ihnen nicht
-unvorbereitet gegenüber sollten sie eintreffen.
+Bei der Risikoanalyse wird von einem durchschnittlichen Benutzer ausgegangen
+der zur Zeit noch keine Backups macht und beginnen möchte gls:borg zu nutzen um
+auf einer externen Harddisk seine Backups zu speichern.
 
-*** Risikobeschreibung
+Es wird dabei eine Ist/Soll Analyse gemacht um die Lösung gegenüber der
+bestehenden Möglichkeiten zu vergleichen. Jedes Risiko wurde entsprechend der
+Tabelle: ([[tab:wahrscheinlichkeit]]) nach der Wahrscheinlichkeit des Eintreffens
+bewertet und entsprechend der Tabelle: ([[tab:auswirkung]]) nach seiner Auswirkung
+im Bezug auf die Nützlichkeit der gemachten Backups.
 
-In der Tabelle: ([[tab:risikobeschreibung]]), sind die Risiken des Projektes
-gemeinsam mit ihren Gegenmassnahmen aufgelistet. Jedes Risiko wurde
-entsprechend der Tabelle: ([[tab:wahrscheinlichkeit]]) nach der Wahrscheinlichkeit
-des Eintreffens bewertet und entsprechend der Tabelle: ([[tab:auswirkung]]) nach
-seiner Auswirkung bewertet.
+In der Tabelle: ([[tab:risikobeschreibung]]) sind dabei die Risiken für das
+Szenario aufgelistet und nummeriert. In der, Abbildung:([[fig:istrisiko]]), ist die
+Bewertung des Ist-Risikos grafisch dargestellt und in der,
+Abbildung:([[fig:sollrisiko]]), ist das Soll-Risiko welches mit dieser Arbeit
+angestrebt wird ebenfalls grafisch dargestellt.
 
+Es sollte im Rahmen der Arbeit möglich sein die meisten Risiken zu verringern.
+Da automatische Hintergrundbackups jedoch nur ein Kann-Ziel sind wir in dieser
+Analyse nicht davon ausgegangen das man das Risiko Nr. 5 im Rahmen dieser
+Arbeit reduzieren kann.
 
 #+CAPTION: Risikobewertung Wahrscheinlichkeit
 #+ATTR_LATEX: :align l|l :placement [H]
@@ -447,18 +455,39 @@ seiner Auswirkung bewertet.
 #+CAPTION: Risikobewertung Auswirkung
 #+ATTR_LATEX: :align l|l :placement [H]
 #+NAME: tab:auswirkung
-| *Bewertung* | *Beschreibung: Auswirkung (A)*                  |
-|-------------+-------------------------------------------------|
-| 1 = gering  | Geringe Auswirkungen auf das Gesamtergebnis     |
-| 2 = mittel  | Arbeitsumstellung oder grösserer Arbeitsaufwand |
-| 3 = hoch    | Projekt erfüllt nicht alle Anforderungen        |
+| *Bewertung* | *Beschreibung: Auswirkung (A)*           |
+|-------------+------------------------------------------|
+| 1 = gering  | Geringe Auswirkungen auf Nützlichkeit    |
+| 2 = mittel  | Mittlere Auswirkung auf die Nützlichkeit |
+| 3 = hoch    | Hohe Auswirkung auf die Nützlichkeit     |
 
-*** Risikobewertung
+#+CAPTION: Risikobeschreibung
+#+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{0.8cm}|p{8cm}| :placement [H]
+#+NAME: tab:risikobeschreibung
+|------------+--------------------------------|
+|       <10> | <30>                           |
+| *Nr.*\cellcolor[HTML]{C0C0C0} | *Beschreibung*\cellcolor[HTML]{C0C0C0} |
+|------------+--------------------------------|
+|         1. | Der Benutzer hat noch nie die Kommandozeile verwendet und scheitert bereits an der Installation von gls:borg. |
+|------------+--------------------------------|
+|         2. | Der Benutzer verwendet keine Verschlüsselung und verliert seine Harddisk. |
+|------------+--------------------------------|
+|         3. | Der Benutzer speichert die Backups auf der internen statt der externen Harddisk. |
+|------------+--------------------------------|
+|         4. | Der Benutzer löscht aus Versehen ein Backup. |
+|------------+--------------------------------|
+|         5. | Der Anwender vergisst die Backups zu machen. |
+|------------+--------------------------------|
 
-#+CAPTION: Grafische Darstellung der Risikoanalyse
+#+CAPTION: Grafische Darstellung der Ist-Risikoanalyse
 #+ATTR_LATEX: :width 9cm :placement [H]
-#+NAME: fig:risk
-[[file:pictures/risk_analyse.pdf]]
+#+NAME: fig:istrisiko
+[[file:pictures/istrisiko.pdf]]
+
+#+CAPTION: Grafische Darstellung der Soll-Risikoanalyse
+#+ATTR_LATEX: :width 9cm :placement [H]
+#+NAME: fig:sollrisiko
+[[file:pictures/sollrisiko.pdf]]
 
 ** SWOT-Analyse
 
