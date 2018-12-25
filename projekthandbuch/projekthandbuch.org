@@ -194,10 +194,11 @@ integriert werden und ist nicht unwichtig.
 
 Die Anwendung beschränkt sich darauf Funktionen von gls:borg grafisch
 darzustellen oder nützlich zu erweitern soweit dies über die gls:api möglich
-ist. Eine Erweiterung von gls:borg ist nicht vorgesehen. Backup und
-Verschlüsselung sind heikle Themen und sollten umbedingt nur von Experten
-angegangen werden. Das Potential für Fehler und die Auswirkungen deren sind
-einfach schlicht zu gross.
+ist. Wie in, Abbildung:([[fig:kontext]]), zu sehen ist werden die Aktion effektiv
+immer vom Borg Binary ausgeführt und nicht von der grafischen Oberfläche. Eine
+Erweiterung von gls:borg ist nicht vorgesehen. Backup und Verschlüsselung sind
+heikle Themen und sollten umbedingt nur von Experten angegangen werden. Das
+Potential für Fehler und die Auswirkungen deren sind einfach schlicht zu gross.
 
 Desweiteren wird die Grundlage für eine kolaborative Entwicklung geschaffen.
 Wärend der Laufzeit der Diplomarbeit werden jedoch keine Inputs aus der Borg
@@ -206,9 +207,14 @@ Community im Bezug auf die Entwicklung entgegengenommen.
 Bugs von gls:borg welche während der Dauer der Diplomarbeit vom Studenten
 entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
 
+#+caption: Kontextdiagramm des Borg GUI
+#+name: fig:kontext
+[[file:pictures/kontextdiagramm.pdf]]
+#+attr_latex: :center
+
 ** Projektmethode
 
-Für das Projekt wurde die Wasserfall-projektmethode gewählt. Da nur eine
+Für das Projekt wurde die Wasserfall-methode gewählt. Da nur eine
 einzige Person am Projekt arbeitet kann nur ein Task nach dem anderen
 abgearbeitet werden und viele Aufgaben stehen in Abhängigkeiten zu einander.
 Somit macht das iterative Vorgehen der Wassfall-methode für dieses Projekt am
