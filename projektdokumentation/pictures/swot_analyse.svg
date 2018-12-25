@@ -245,17 +245,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1053"
+     inkscape:window-width="839"
+     inkscape:window-height="1023"
      id="namedview31"
      showgrid="false"
-     inkscape:zoom="0.84361768"
-     inkscape:cx="657.98909"
-     inkscape:cy="273.55054"
-     inkscape:window-x="1680"
+     inkscape:zoom="0.42180884"
+     inkscape:cx="434.58903"
+     inkscape:cy="259.18454"
+     inkscape:window-x="840"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -266,123 +266,140 @@
      style="display:inline"
      transform="translate(-102,-1.8e-5)"
      sodipodi:insensitive="true"><g
-       id="g1526"><g
-         transform="matrix(1.3333333,0,0,-1.3333333,0,720)"
-         id="g51"><g
-           clip-path="url(#clipPath57)"
-           id="g53"><path
-             inkscape:connector-curvature="0"
-             id="path59"
-             style="fill:#70ad47;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             d="m 76.5,268.5 v 226.25 c 0,24.99 20.259,45.25 45.25,45.25 h 365 V 268.5 Z" /></g></g><g
-         transform="matrix(1.3333333,0,0,-1.3333333,0,720)"
-         id="g61"><g
-           clip-path="url(#clipPath67)"
-           id="g63"><text
-   id="text71"
+       id="g51"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,720)"
+       style="fill:#4caf50;fill-opacity:1"><g
+         id="g53"
+         clip-path="url(#clipPath57)"
+         style="fill:#4caf50;fill-opacity:1"><path
+           d="m 76.5,268.5 v 226.25 c 0,24.99 20.259,45.25 45.25,45.25 h 365 V 268.5 Z"
+           style="fill:#4caf50;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path59"
+           inkscape:connector-curvature="0" /></g></g><g
+       id="g61"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,720)"><g
+         id="g63"
+         clip-path="url(#clipPath67)"><text
+   transform="matrix(1,0,0,-1,208.55,488.98)"
    style="font-variant:normal;font-weight:normal;font-size:48.04999924px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-   transform="matrix(1,0,0,-1,208.55,488.98)"><tspan
-     id="tspan69"
-     sodipodi:role="line"
+   id="text71"><tspan
+     x="0 21.766649 36.806301 60.01445 76.543648 96.820747 120.74965"
      y="0"
-     x="0 21.766649 36.806301 60.01445 76.543648 96.820747 120.74965">Stärken</tspan></text>
+     sodipodi:role="line"
+     id="tspan69">Stärken</tspan></text>
+
+
 
 </g></g><g
-         transform="matrix(1.3333333,0,0,-1.3333333,0,720)"
-         id="g145"><g
-           clip-path="url(#clipPath151)"
-           id="g147"><path
-             inkscape:connector-curvature="0"
-             id="path153"
-             style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             d="m 486.75,540 h 365 C 876.74,540 897,519.74 897,494.75 V 268.5 H 486.75 Z" /></g></g><g
-         transform="matrix(1.3333333,0,0,-1.3333333,0,720)"
-         id="g155"><g
-           clip-path="url(#clipPath161)"
-           id="g157"><text
-   id="text165"
+       clip-path="url(#clipPath151)"
+       id="g147"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,720)"
+       style="fill:#f44336;fill-opacity:1"><path
+         inkscape:connector-curvature="0"
+         id="path153"
+         style="fill:#f44336;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="m 486.75,540 h 365 C 876.74,540 897,519.74 897,494.75 V 268.5 H 486.75 Z" /></g><g
+       id="g155"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,720)"><g
+         id="g157"
+         clip-path="url(#clipPath161)"><text
+   transform="matrix(1,0,0,-1,582.47,488.98)"
    style="font-variant:normal;font-weight:normal;font-size:48.04999924px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-   transform="matrix(1,0,0,-1,582.47,488.98)"><tspan
-     id="tspan163"
-     sodipodi:role="line"
+   id="text165"><tspan
+     x="0 21.766649 42.091801 67.510246 101.2894 124.49755 144.82269 170.24115 194.17004"
      y="0"
-     x="0 21.766649 42.091801 67.510246 101.2894 124.49755 144.82269 170.24115 194.17004">Schwächen</tspan></text>
+     sodipodi:role="line"
+     id="tspan163">Schwächen</tspan></text>
+
+
 
 </g></g><g
-         transform="matrix(1.3333333,0,0,-1.3333333,0,720)"
-         id="g251"><g
-           clip-path="url(#clipPath257)"
-           id="g253"><path
-             inkscape:connector-curvature="0"
-             id="path259"
-             style="fill:#4a86e8;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             d="m 486.75,-3 h -365 C 96.76,-3 76.5,17.26 76.5,42.251 V 268.5 h 410.25 z" /></g></g><g
-         transform="matrix(1.3333333,0,0,-1.3333333,0,720)"
-         id="g261"><g
-           clip-path="url(#clipPath267)"
-           id="g263"><text
-   id="text271"
+       id="g251"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,720)"
+       style="fill:#2196f3;fill-opacity:1"><g
+         id="g253"
+         clip-path="url(#clipPath257)"
+         style="fill:#2196f3;fill-opacity:1"><path
+           d="m 486.75,-3 h -365 C 96.76,-3 76.5,17.26 76.5,42.251 V 268.5 h 410.25 z"
+           style="fill:#2196f3;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path259"
+           inkscape:connector-curvature="0" /></g></g><g
+       id="g261"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,720)"><g
+         id="g263"
+         clip-path="url(#clipPath267)"><text
+   transform="matrix(1,0,0,-1,196.52,210.5)"
    style="font-variant:normal;font-weight:normal;font-size:48.07500076px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-   transform="matrix(1,0,0,-1,196.52,210.5)"><tspan
-     id="tspan269"
-     sodipodi:role="line"
+   id="text271"><tspan
+     x="0 25.623976 51.007576 74.227798 99.70755 120.04327 143.98462"
      y="0"
-     x="0 25.623976 51.007576 74.227798 99.70755 120.04327 143.98462">Chancen</tspan></text>
+     sodipodi:role="line"
+     id="tspan269">Chancen</tspan></text>
+
+
 
 </g></g><g
-         transform="matrix(1.3333333,0,0,-1.3333333,0,720)"
-         id="g297"><g
-           clip-path="url(#clipPath303)"
-           id="g299"><path
-             inkscape:connector-curvature="0"
-             id="path305"
-             style="fill:#ff9900;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             d="M 897,268.5 V 42.251 C 897,17.26 876.74,-3 851.75,-3 h -365 v 271.5 z" /></g></g><g
-         transform="matrix(1.3333333,0,0,-1.3333333,0,720)"
-         id="g307"><g
-           clip-path="url(#clipPath313)"
-           id="g309"><text
-   id="text317"
+       id="g297"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,720)"
+       style="fill:#ffc107;fill-opacity:1"><g
+         id="g299"
+         clip-path="url(#clipPath303)"
+         style="fill:#ffc107;fill-opacity:1"><path
+           d="M 897,268.5 V 42.251 C 897,17.26 876.74,-3 851.75,-3 h -365 v 271.5 z"
+           style="fill:#ffc107;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path305"
+           inkscape:connector-curvature="0" /></g></g><g
+       id="g307"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,720)"><g
+         id="g309"
+         clip-path="url(#clipPath313)"><text
+   transform="matrix(1,0,0,-1,623.73,210.5)"
    style="font-variant:normal;font-weight:normal;font-size:48.07500076px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-   transform="matrix(1,0,0,-1,623.73,210.5)"><tspan
-     id="tspan315"
-     sodipodi:role="line"
+   id="text317"><tspan
+     x="0 26.248949 37.450424 56.247749 67.401154 87.640724 111.58208"
      y="0"
-     x="0 26.248949 37.450424 56.247749 67.401154 87.640724 111.58208">Risiken</tspan></text>
+     sodipodi:role="line"
+     id="tspan315">Risiken</tspan></text>
+
+
 
 </g></g><path
-         inkscape:connector-curvature="0"
-         id="path403"
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.12991893"
-         d="m 530.68102,320.13457 c 0,-11.50667 6.70276,-20.84 14.96631,-20.84 h 205.62163 c 8.26355,0 14.96632,9.33333 14.96632,20.84 v 83.32 c 0,11.50666 -6.70277,20.84 -14.96632,20.84 H 545.64733 c -8.26355,0 -14.96631,-9.33334 -14.96631,-20.84 z" /><g
-         transform="matrix(1.3333333,0,0,-1.3333333,0,717.29456)"
-         id="g405"><g
-           clip-path="url(#clipPath411)"
-           id="g407"><text
-   id="text415"
+       d="m 530.68102,320.13457 c 0,-11.50667 6.70276,-20.84 14.96631,-20.84 h 205.62163 c 8.26355,0 14.96632,9.33333 14.96632,20.84 v 83.32 c 0,11.50666 -6.70277,20.84 -14.96632,20.84 H 545.64733 c -8.26355,0 -14.96631,-9.33334 -14.96631,-20.84 z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.12991893"
+       id="path403"
+       inkscape:connector-curvature="0" /><g
+       id="g405"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,717.29456)"><g
+         id="g407"
+         clip-path="url(#clipPath411)"><text
+   transform="matrix(1,0,0,-1,442.47,280.13)"
    style="font-variant:normal;font-weight:normal;font-size:36.04999924px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-   transform="matrix(1,0,0,-1,442.47,280.13)"><tspan
-     id="tspan413"
-     sodipodi:role="line"
+   id="text415"><tspan
+     x="0 16.546949 48.054649 71.342949"
      y="0"
-     x="0 16.546949 48.054649 71.342949">SWOT</tspan></text>
+     sodipodi:role="line"
+     id="tspan413">SWOT</tspan></text>
+
+
 
 </g></g><g
-         transform="matrix(1.3333333,0,0,-1.3333333,0,712)"
-         id="g417"><g
-           clip-path="url(#clipPath423)"
-           id="g419"><text
-   y="-228.07906"
-   x="429.73001"
-   id="text427"
+       id="g417"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,712)"><g
+         id="g419"
+         clip-path="url(#clipPath423)"><text
+   transform="scale(1,-1)"
    style="font-variant:normal;font-weight:normal;font-size:36.04999924px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-   transform="scale(1,-1)"><tspan
-     id="tspan425"
-     sodipodi:role="line"
+   id="text427"
+   x="429.73001"
+   y="-228.07906"><tspan
+     x="429.73001 450.71109 469.45709 486.72504 495.01654 511.41931 525.62299"
      y="-228.07906"
-     x="429.73001 450.71109 469.45709 486.72504 495.01654 511.41931 525.62299">Analyse</tspan></text>
+     sodipodi:role="line"
+     id="tspan425">Analyse</tspan></text>
 
-</g></g></g></g><g
+
+
+</g></g></g><g
      id="g37"
      inkscape:groupmode="layer"
      inkscape:label="strengths"
@@ -400,6 +417,8 @@
      y="0"
      id="tspan81">•</tspan></text>
 
+
+
 </g></g><g
    id="g97"
    transform="translate(0,-10.5)"><g
@@ -412,6 +431,8 @@
      y="0"
      id="tspan105">•</tspan></text>
 
+
+
 </g></g><g
    id="g121"
    transform="translate(0,-24)"><g
@@ -423,6 +444,8 @@
      x="0"
      y="0"
      id="tspan129">•</tspan></text>
+
+
 
 </g></g><g
    id="g167"
@@ -441,6 +464,8 @@
      y="-150.37367"
      style="fill:#ffffff;stroke-width:0.75" /></text>
 
+
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
@@ -453,6 +478,8 @@
      x="113.79562"
      y="-151.2627"
      style="stroke-width:0.75" /></text>
+
+
 
 <flowRoot
    xml:space="preserve"
@@ -489,6 +516,8 @@
      y="0"
      id="tspan129-3">•</tspan></text>
 
+
+
 </g></g></g><g
      inkscape:groupmode="layer"
      id="layer2"
@@ -522,6 +551,8 @@
      y="0"
      id="tspan175">•</tspan></text>
 
+
+
 <g
    style="display:inline"
    id="g203"
@@ -535,6 +566,8 @@
      y="0"
      id="tspan211">•</tspan></text>
 
+
+
 </g></g><g
    style="display:inline"
    id="g227"
@@ -547,6 +580,8 @@
      x="0"
      y="0"
      id="tspan235">•</tspan></text>
+
+
 
 </g></g></g><g
      inkscape:groupmode="layer"
@@ -586,6 +621,8 @@
      y="0"
      id="tspan281">•</tspan></text>
 
+
+
 </g></g><g
        transform="matrix(1.3333333,0,0,-1.3333333,-9.1040168,819.32841)"
        style="display:inline"
@@ -599,6 +636,8 @@
      y="0"
      id="tspan281-6">•</tspan></text>
 
+
+
 </g></g><g
        transform="matrix(1.3333333,0,0,-1.3333333,-9.2713816,869.25513)"
        style="display:inline"
@@ -611,6 +650,8 @@
      x="0"
      y="0"
      id="tspan281-9">•</tspan></text>
+
+
 
 </g></g></g><g
      inkscape:groupmode="layer"
@@ -632,6 +673,8 @@
      y="-188.81113"
      id="tspan327">•</tspan></text>
 
+
+
 </g></g><g
        transform="matrix(1.3333333,0,0,-1.3333333,-8.419092,742.79667)"
        style="display:inline"
@@ -645,6 +688,8 @@
      y="0"
      id="tspan363">•</tspan></text>
 
+
+
 </g></g><g
        transform="matrix(1.3333333,0,0,-1.3333333,-8.518286,760.74085)"
        style="display:inline"
@@ -657,6 +702,8 @@
      x="0"
      y="0"
      id="tspan387">•</tspan></text>
+
+
 
 </g></g><flowRoot
        xml:space="preserve"
