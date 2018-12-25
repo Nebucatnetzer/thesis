@@ -72,6 +72,10 @@ Augen des Authors besonders interessant da sich der durschnittliche User
 möglichst wenig mit Dingen wie Backups ausseinander setzen möchte. Umsobesser
 also wenn sie schnell gehen und so wenig Speicherplatz wie möglich verbrauchen.
 
+gls:borg wird jedoch komplett über die Kommandozeile bedient. Somit ist es für
+normale Benutzer eher schwierig den Zugang zu der Software zu finden geschweige
+denn sie zu bedienen.
+
 gls:borg bietet Entwicklern eine gls:json, gls:api, mit welcher sie, von gls:borg
 ausgegebenen Dateinen einfach weiterverarbeiten können.
 
