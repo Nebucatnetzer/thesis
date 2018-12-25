@@ -331,8 +331,43 @@ theoretischer Faktor.
 #+TBLFM: @>$2=vsum(@2..@-1)
 #+TBLFM: @>$3=vsum(@2..@-1)
 
-* TODO Analyse
+** Projektrisiken
 
+Das Risikomanagement dient dazu Risiken im Projekt zu erkennen und Massnahmen
+zur Vermeidung der Risiken zu definieren. Dadurch steht man ihnen nicht
+unvorbereitet gegenüber sollten sie eintreffen.
+
+*** Risikobeschreibung
+
+In der Tabelle: ([[tab:risikobeschreibung]]), sind die Risiken des Projektes
+gemeinsam mit ihren Gegenmassnahmen aufgelistet. Jedes Risiko wurde
+entsprechend der Tabelle: ([[tab:wahrscheinlichkeit]]) nach der Wahrscheinlichkeit
+des Eintreffens bewertet und entsprechend der Tabelle: ([[tab:auswirkung]]) nach
+seiner Auswirkung bewertet.
+
+#+CAPTION: Projektrisiken
+#+ATTR_LATEX: :environment longtable :align |p{5cm}|p{5cm}| :placement [H]
+#+NAME: tab:projektrisiken
+|--------------------------------+--------------------------------|
+| <30>                           | <30>                           |
+| *Beschreibung*\cellcolor[HTML]{C0C0C0} | *Massnahmen*\cellcolor[HTML]{C0C0C0} |
+|--------------------------------+--------------------------------|
+| Ein grösseres Problem in der Programmierung blockiert den Fortschritt. | Immer nur eine Sache auf einmal in der Code-Basis ändern, alle Fehler beheben und erst dann zur nächsten Aufgabe weitergehen. |
+|--------------------------------+--------------------------------|
+| Viel Arbeit an der Arbeitsstelle, dabei bleibt weniger Zeit für die Diplomarbeit. | Auf der Arbeit Freitage eingeben um die Last etwas zu verteilen. Projektplanung machen. |
+|--------------------------------+--------------------------------|
+| Know-How zur Umsetzung ist nicht vollständig vorhanden. | Gute Informationsbeschaffung im Internet, Büchern, etc. |
+|--------------------------------+--------------------------------|
+| Manuelle Tests brauchen zu viel Zeit. | Soviel wie möglich automatisieren. Dabei jedoch nicht den Fokus auf die eigentliche Entwicklung verlieren. |
+|--------------------------------+--------------------------------|
+| Die Programmierung des Programms benötigt zu viel Zeit. | Bei der Projektplanung genau definieren was die GUI Applikation beinhalten muss. Ziele definieren, Abgrenzungen treffen. |
+|--------------------------------+--------------------------------|
+| User haben keine Zeit für Utility Tests. | Vorgängig einen Termin abmachen. |
+|--------------------------------+--------------------------------|
+| gls:borg ändert fundamental seine gls:api. | Gegen eine fixe Version von gls:borg entwickeln. |
+|--------------------------------+--------------------------------|
+
+* Analyse
 ** Umweltanalyse
 
 Die Projektumwelt-Analyse ist eine Methode, die Beziehungen,
@@ -399,27 +434,6 @@ entsprechend der Tabelle: ([[tab:wahrscheinlichkeit]]) nach der Wahrscheinlichke
 des Eintreffens bewertet und entsprechend der Tabelle: ([[tab:auswirkung]]) nach
 seiner Auswirkung bewertet.
 
-#+CAPTION: Risikobeschreibung
-#+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{0.8cm}|p{5cm}|p{5cm}|p{0.8cm}|p{0.8cm}| :placement [H]
-#+NAME: tab:risikobeschreibung
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|       <10> | <30>                           | <30>                           |                               |                               |
-| *Nr.*\cellcolor[HTML]{C0C0C0} | *Beschreibung*\cellcolor[HTML]{C0C0C0} | *Massnahmen*\cellcolor[HTML]{C0C0C0} | *W^1*\cellcolor[HTML]{C0C0C0} | *A^2*\cellcolor[HTML]{C0C0C0} |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         1. | Ein grösseres Problem in der Programmierung blockiert den Fortschritt. | Immer nur eine Sache auf einmal in der Code-Basis ändern, alle Fehler beheben und erst dann zur nächsten Aufgabe weitergehen. |                             1 |                             3 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         2. | Viel Arbeit an der Arbeitsstelle, dabei bleibt weniger Zeit für die Diplomarbeit. | Auf der Arbeit Freitage eingeben um die Last etwas zu verteilen. Projektplanung machen. |                             2 |                             2 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         3. | Know-How zur Umsetzung ist nicht vollständig vorhanden. | Gute Informationsbeschaffung im Internet, Büchern, etc. |                             2 |                             3 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         4. | Manuelle Tests brauchen zu viel Zeit. | Soviel wie möglich automatisieren. Dabei jedoch nicht den Fokus auf die eigentliche Entwicklung verlieren. |                             1 |                             2 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         5. | Die Programmierung des Programms benötigt zu viel Zeit. | Bei der Projektplanung genau definieren was die GUI Applikation beinhalten muss. Ziele definieren, Abgrenzungen treffen. |                             1 |                             3 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         6. | User haben keine Zeit für Utility Tests. | Vorgängig einen Termin abmachen. |                             3 |                             2 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
-|         7. | gls:borg ändert fundamental seine gls:api. | Gegen eine fixe Version von gls:borg entwickeln. |                             1 |                             3 |
-|------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------|
 
 #+CAPTION: Risikobewertung Wahrscheinlichkeit
 #+ATTR_LATEX: :align l|l :placement [H]
