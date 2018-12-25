@@ -263,6 +263,74 @@ bis zum 11. März jeder Montag auf der Arbeitsstelle als frei eingegeben.
 Dadurch steht wärend des Projektes etwas mehr Zeit zur verfügung als sonst mit
 einer 100% Arbeitsstelle möglich wäre.
 
+** Controlling
+
+Das Controlling wird verwendet um zu kontrollieren das die eigentliche Planung
+mit dem effektiv geleisteten Aufwand respektive den effektiv verwendeten
+Ressourcen übereinstimmt. Somit können für zukünftige Projekte Lehren gezogen
+werden.
+
+#+LATEX:\newpage
+#+LATEX:\begin{landscape}
+*** Zeit
+
+#+CAPTION: Zeitcontrolling
+#+ATTR_LATEX: :environment longtable :align |p{3cm}|p{5cm}|p{3cm}|p{7cm}|
+#+NAME: tab:zeitcontr
+|-----------------------------------+------------------------------------------+-------------------------------------------+--------------------------------------|
+| *Aufgabe*\cellcolor[HTML]{C0C0C0} | *Gesch. Aufwand*\cellcolor[HTML]{C0C0C0} | *Effekt. Aufwand*\cellcolor[HTML]{C0C0C0} | *Begründung*\cellcolor[HTML]{C0C0C0} |
+|-----------------------------------+------------------------------------------+-------------------------------------------+--------------------------------------|
+|-----------------------------------+------------------------------------------+-------------------------------------------+--------------------------------------|
+|                                   | *Gesamter Aufwand*                       |                                           |                                      |
+|-----------------------------------+------------------------------------------+-------------------------------------------+--------------------------------------|
+
+#+LATEX:\newpage
+*** Ressourcen
+
+Folgende Ressourcen werden wärend der Arbeit benötigt:
+#+CAPTION: Ressourcen
+#+ATTR_LATEX: :environment longtable :align |p{5cm}|p{3cm}|p{3cm}|p{7cm}|
+#+NAME: tab:zeitcontr
+|-------------------------------------+--------------------------------------------+-----------------------------------------+--------------------------------------|
+| *Ressource*\cellcolor[HTML]{C0C0C0} | *geschätzte Stück*\cellcolor[HTML]{C0C0C0} | *effekt. Stück*\cellcolor[HTML]{C0C0C0} | *Begründung*\cellcolor[HTML]{C0C0C0} |
+|-------------------------------------+--------------------------------------------+-----------------------------------------+--------------------------------------|
+| Projektleiter/Mitarbeiter           |                                          1 |                                       1 |                                      |
+| Diplombetreuer                      |                                          1 |                                       1 |                                      |
+| Testuser                            |                                          5 |                                         |                                      |
+| Korrekturleser                      |                                          3 |                                         |                                      |
+| iPad                                |                                          1 |                                       1 |                                      |
+| Notebook                            |                                          1 |                                       1 |                                      |
+|-------------------------------------+--------------------------------------------+-----------------------------------------+--------------------------------------|
+#+LATEX:\end{landscape}
+
+*** Kosten
+
+Werden die internen Lohnkosten des Projektleiters auf ca. 60 CHF pro Stunde
+geschätzt ergeben sich aus der Zeitplanung somit theoretische Kosten von 19'200
+CHF für die Umsetzung dieser Arbeit. Da dieses Projekt finanziell jedoch in
+keinster Weise wirtschaftliche relevant ist, sind die Kosten nur ein rein
+theoretischer Faktor.
+#+CAPTION: Kostenrechnung
+#+NAME: tab:kosten
+|--------------------------------+----------------------------------------+-----------------------------------------|
+| *Name*\cellcolor[HTML]{C0C0C0} | *Aufwand in h*\cellcolor[HTML]{C0C0C0} | *Kosten in CHF*\cellcolor[HTML]{C0C0C0} |
+|--------------------------------+----------------------------------------+-----------------------------------------|
+| Initialisierung                |                                     24 |                                    1440 |
+| Analyse                        |                                     47 |                                    2820 |
+| Konzept                        |                                     34 |                                    2040 |
+| Realisierung                   |                                    172 |                                   10320 |
+| Ausblick                       |                                      8 |                                     480 |
+| Arbeit korrigieren             |                                     20 |                                    1200 |
+| Meeting #1                     |                                      5 |                                     300 |
+| Meeting #2                     |                                      5 |                                     300 |
+| Meeting #3                     |                                      5 |                                     300 |
+|--------------------------------+----------------------------------------+-----------------------------------------|
+| *Total*                        |                                    320 |                                   19200 |
+|--------------------------------+----------------------------------------+-----------------------------------------|
+#+TBLFM: @2$3=@2$2 * 60::@3$3=@3$2 * 60::@4$3=@4$2 *60::@5$3=@5$2 *60::@6$3=@6$2 *60::@7$3=@7$2 *60::@8$3=@8$2 *60::@9$3=@9$2 *60::@10$3=@10$2 *60
+#+TBLFM: @>$2=vsum(@2..@-1)
+#+TBLFM: @>$3=vsum(@2..@-1)
+
 * TODO Analyse
 
 ** Umweltanalyse
