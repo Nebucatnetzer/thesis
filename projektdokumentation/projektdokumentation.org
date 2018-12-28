@@ -224,6 +224,11 @@ meisten Sinn.
 
 ** Konfigurationsmanagement
 
+In der nachfolgenden Sektion wird definiert wie die Software und Dokumentation
+versioniert wird und welche allgemeinen Werkzeuge eingesetzt werden.
+
+*** Versionskontrolle
+
 Die komplette Dokumentation, der Quellcode der Applikation sowie jeglich
 zusäzliche Dokumente wie etwa die Zeitplanung werden mittels der Software Git
 Versioniert. Thematisch zusammengehörende Änderungen werden in einem Commit
@@ -245,6 +250,61 @@ eingecheckt sein damit der Master Branch immer eine funktionierende Software
 repräsentiert. Dies gilt auch für das Repository der Dokumentation. Der Master
 Branch der Dokumentation sollte maximal mit zwei Befehlen ~make clean~ und
 ~make~ "kompilierbar " sein.
+
+Als Software für die Versionskontrolle wurde Git footcite:git aus folgenden
+Gründen ausgewählt:
+
+- Ist der de facto Standard bei Versionskontrollsoftware
+- Läuft auf allen gängigen Betriebssystemen
+- Es gäbe gratis Services die man nutzen könnte (Github, Gitlab)
+- Man kann offline arbeiten und Commits erstellen
+- Der Author hat bereits einen eigenen Git Server zur Verfügung
+- Der Author ist bereits mit Git aus vorhergehenden Projekten vertraut,
+  dadurch muss man keine Ressourcen aufwenden eine neue Software zu lernen.
+  Zusätzlich hat sich Git in den vorhergehenden Projekten als robuste
+  und schnelle Software erwiesen.
+- Git ist gls:libre unter der gls:gpl v2.
+
+*** Editor
+
+Sowohl bei der Dokumentation wie auch bei der Programmierung wurde
+hauptsächlich der Editor GNU Emacs footcite:emacs verwendet. GNU Emacs ist mit
+32 Jahren (obwohl seine Wurzeln bis ins Jahre 1976 zurückgehen) wohl eines der
+ältesten noch aktiven Software Projekte. Emacs ist gls:libre unter der
+gls:gpl v3. Emacs wurde gewählt da es ein schneller, schlanker und sehr
+flexibler Texteditior ist. Von normaler Textmanipulation über Taskmanagement
+und Emails schreiben ist alles möglich.
+
+*** Dokumentation
+
+Diese Dokumentation wurde in Org-mode footcite:orgmode, einer Erweiterung für
+den Text Editor Emacs, geschrieben. Die Syntax erinnert an Markdown und
+Org-mode bietet einem eine vielzahl an Hilfen dafür inklusive dem erstellen von
+Tabellen und Spreadsheet Funktionen. Für finalle Version des Dokuments kann
+Org-mode die ursprünglich Textdatei über LaTeX in ein PDF exportieren.
+
+LaTeX footcite:latex ist eine Software, welche einem die Benutzung des
+Textsatzsystems TeXs vereinfacht. LaTeX wurde gegenüber einem "What You See Is
+What You Get" (z.Bsp. MS. Word), Editor gewählt weil es einem mit seiner Markup
+Sprache erlaubt das Dokument in Text Dateien zu erstellen, gerade für
+Programmiere ist dies eine sehr interessante Lösung. Dadurch, dass LaTeX auch
+nur aus reinen Textdateien besteht, kann man die Dokumente auch ohne weiteres
+in die Versionskontrollsoftware einchecken und die Entwicklung im Log
+zurückverfolgen. LaTeX ist gls:libre unter der LaTeX Project Public
+License.
+
+Die Grafiken in diesem Dokument wurden hauptsächlich mit dem Vektor Grafik
+Editor Inkscape footcite:inkscape erstellt. Inkscape ist gls:libre unter der
+GNU Public License v3.
+
+Die Diagramme wurden mit Draw.io footcite:draw erstellt. Draw.io ist gls:libre
+unter Apache Lizenz Version 2.0 footcite:apache und kann sowohl als Desktop
+Applikation wie auch als Webanwendung genutzt werden.
+
+Beim Design der Arbeit wurden soweit als möglich die typgraphischen Regeln aus
+dem Buch "Practical Typography" von Matthew Butterick footcite:typo angewandt.
+Bei den Diagrammen wurden aussschliesslich Farben aus der von Google
+entwickelten Design Sprache "Material"footcite:material eingesetzt.
 
 ** Zeitplanung
 
@@ -1007,65 +1067,9 @@ PLACEHOLDER
 
 PLACEHOLDER
 
-** TODO Werkzeuge
 
 PLACEHOLDER
 
-*** Versionskontrolle
-
-Eine Versionskontrollsoftware ist in der Software Entwicklung heutzutage
-praktisch nicht mehr wegzudenken. So wurde auch bei diesem Projekt eine
-eingesetzt.
-
-Als Software für die Versionskontrolle wurde Git footcite:git aus folgenden
-Gründen ausgewählt:
-
-- Ist der de facto Standard bei Versionskontrollsoftware
-- Läuft auf allen gängigen Betriebssystemen
-- Es gäbe gratis Services die man nutzen könnte (Github, Gitlab)
-- Man kann offline arbeiten und Commits erstellen
-- Der Author hat bereits einen eigenen Git Server zur Verfügung
-- Der Author ist bereits mit Git aus vorhergehenden Projekten vertraut,
-  dadurch muss man keine Ressourcen aufwenden eine neue Software zu lernen.
-  Zusätzlich hat sich Git in den vorhergehenden Projekten als robuste
-  und schnelle Software erwiesen.
-- Git ist gls:libre unter der gls:gpl v2.
-
-*** Editor
-
-Sowohl bei der Dokumentation wie auch bei der Programmierung wurde
-hauptsächlich der Editor GNU Emacs footcite:emacs verwendet. GNU Emacs ist mit
-32 Jahren (obwohl seine Wurzeln bis ins Jahre 1976 zurückgehen) wohl eines der
-ältesten noch aktiven Software Projekte. Emacs ist gls:libre unter der
-gls:gpl v3. Emacs wurde gewählt da es ein schneller, schlanker und sehr
-flexibler Texteditior ist. Von normaler Textmanipulation über Taskmanagement
-und Emails schreiben ist alles möglich.
-
-*** Dokumentation
-
-Diese Dokumentation wurde in Org-mode footcite:orgmode, einer Erweiterung für
-den Text Editor Emacs, geschrieben. Die Syntax erinnert an Markdown und
-Org-mode bietet einem eine vielzahl an Hilfen dafür inklusive dem erstellen von
-Tabellen und Spreadsheet Funktionen. Für finalle Version des Dokuments kann
-Org-mode die ursprünglich Textdatei über LaTeX in ein PDF exportieren.
-
-LaTeX footcite:latex ist eine Software, welche einem die Benutzung des
-Textsatzsystems TeXs vereinfacht. LaTeX wurde gegenüber einem "What You See Is
-What You Get" (z.Bsp. MS. Word), Editor gewählt weil es einem mit seiner Markup
-Sprache erlaubt das Dokument in Text Dateien zu erstellen, gerade für
-Programmiere ist dies eine sehr interessante Lösung. Dadurch, dass LaTeX auch
-nur aus reinen Textdateien besteht, kann man die Dokumente auch ohne weiteres
-in die Versionskontrollsoftware einchecken und die Entwicklung im Log
-zurückverfolgen. LaTeX ist gls:libre unter der LaTeX Project Public
-License.
-
-Die Grafiken in diesem Dokument wurden hauptsächlich mit dem Vektor Grafik
-Editor Inkscape footcite:inkscape erstellt. Inkscape ist gls:libre unter der
-GNU Public License v3.
-
-Die Diagramme wurden mit Draw.io footcite:draw erstellt. Draw.io ist gls:libre
-unter Apache Lizenz Version 2.0 footcite:apache und kann sowohl als Desktop
-Applikation wie auch als Webanwendung genutzt werden.
 
 ** TODO User Stories
 
