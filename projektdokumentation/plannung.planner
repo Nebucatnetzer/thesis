@@ -12,12 +12,12 @@
     <calendar id="1" name="Default">
       <default-week mon="3" tue="3" wed="3" thu="3" fri="3" sat="1" sun="0"/>
       <overridden-day-types>
+        <overridden-day-type id="3">
+          <interval start="1900" end="2100"/>
+        </overridden-day-type>
         <overridden-day-type id="0">
           <interval start="1000" end="1200"/>
           <interval start="1300" end="1700"/>
-        </overridden-day-type>
-        <overridden-day-type id="3">
-          <interval start="1900" end="2100"/>
         </overridden-day-type>
       </overridden-day-types>
       <days>
@@ -49,19 +49,19 @@
         <day date="20181229" type="day-type" id="0"/>
         <day date="20190103" type="day-type" id="0"/>
         <day date="20181211" type="day-type" id="3"/>
-        <day date="20181231" type="day-type" id="3"/>
-        <day date="20190225" type="day-type" id="0"/>
-        <day date="20190427" type="day-type" id="0"/>
-        <day date="20181226" type="day-type" id="3"/>
-        <day date="20190128" type="day-type" id="0"/>
         <day date="20190302" type="day-type" id="0"/>
+        <day date="20181226" type="day-type" id="3"/>
+        <day date="20190427" type="day-type" id="0"/>
+        <day date="20190225" type="day-type" id="0"/>
+        <day date="20190128" type="day-type" id="0"/>
+        <day date="20181231" type="day-type" id="3"/>
         <day date="20190202" type="day-type" id="0"/>
         <day date="20190105" type="day-type" id="0"/>
       </days>
     </calendar>
   </calendars>
   <tasks>
-    <task id="1" name="Start Diplomarbeit" note="" work="0" start="20181210T000000Z" end="20181210T000000Z" work-start="20181210T190000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+    <task id="1" name="Meilenstein: Start Diplomarbeit" note="" work="0" start="20181210T000000Z" end="20181210T000000Z" work-start="20181210T190000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
       <constraint type="must-start-on" time="20181210T000000Z"/>
     </task>
     <task id="2" name="Initialisierung" note="" work="79200" start="20181210T000000Z" end="20181221T210000Z" work-start="20181210T190000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
@@ -105,7 +105,7 @@
           </predecessors>
         </task>
       </task>
-      <task id="12" name="Initialisierung abgeschlossen" note="" work="0" start="20181221T210000Z" end="20181221T210000Z" work-start="20181221T210000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <task id="12" name="Meilenstein: Initialisierung abgeschlossen" note="" work="0" start="20181221T210000Z" end="20181221T210000Z" work-start="20181221T210000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="11" type="FS"/>
         </predecessors>
@@ -176,7 +176,7 @@
           <predecessor id="1" predecessor-id="26" type="FS"/>
         </predecessors>
       </task>
-      <task id="28" name="Analyse abgeschlossen" note="" work="0" start="20190102T150000Z" end="20190102T150000Z" work-start="20190102T150000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <task id="28" name="Meilenstein: Analyse abgeschlossen" note="" work="0" start="20190102T150000Z" end="20190102T150000Z" work-start="20190102T150000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="27" type="FS"/>
         </predecessors>
@@ -213,7 +213,7 @@
           </predecessors>
         </task>
       </task>
-      <task id="37" name="Konzeptionierung abgeschlossen" note="" work="0" start="20190110T210000Z" end="20190110T210000Z" work-start="20190110T210000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <task id="37" name="Meilenstein: Konzeptionierung abgeschlossen" note="" work="0" start="20190110T210000Z" end="20190110T210000Z" work-start="20190110T210000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="36" type="FS"/>
         </predecessors>
@@ -324,7 +324,7 @@
           <predecessor id="1" predecessor-id="59" type="FS"/>
         </predecessors>
       </task>
-      <task id="61" name="Realisierung abgeschlossen" note="" work="0" start="20190302T170000Z" end="20190302T170000Z" work-start="20190302T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <task id="61" name="Meilenstein: Realisierung abgeschlossen" note="" work="0" start="20190302T170000Z" end="20190302T170000Z" work-start="20190302T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="60" type="FS"/>
         </predecessors>
@@ -346,7 +346,7 @@
           <predecessor id="1" predecessor-id="64" type="FS"/>
         </predecessors>
       </task>
-      <task id="66" name="Ausblick abgeschlossen" note="" work="0" start="20190304T120000Z" end="20190304T120000Z" work-start="20190304T120000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <task id="66" name="Meilenstein: Ausblick abgeschlossen" note="" work="0" start="20190304T120000Z" end="20190304T120000Z" work-start="20190304T120000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="65" type="FS"/>
         </predecessors>
@@ -382,21 +382,21 @@
         <constraint type="must-start-on" time="20190301T000000Z"/>
       </task>
     </task>
-    <task id="77" name="Diplomarbeit abgeben" note="" work="0" start="20190318T000000Z" end="20190318T000000Z" work-start="20190318T190000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+    <task id="77" name="Meilenstein: Diplomarbeit abgeben" note="" work="0" start="20190318T000000Z" end="20190318T000000Z" work-start="20190318T190000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
       <constraint type="must-start-on" time="20190318T000000Z"/>
     </task>
-    <task id="78" name="Pr&#xE4;sentation" note="" work="0" start="20190402T000000Z" end="20190402T000000Z" work-start="20190402T190000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+    <task id="78" name="Meilenstein: Pr&#xE4;sentation" note="" work="0" start="20190402T000000Z" end="20190402T000000Z" work-start="20190402T190000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
       <constraint type="start-no-earlier-than" time="20190402T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="77" type="FS"/>
       </predecessors>
     </task>
-    <task id="79" name="Ausstellung" note="" work="86400" start="20190331T000000Z" end="20190428T120000Z" work-start="20190331T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="79" name="Ausstellung" note="" work="86400" start="20190402T000000Z" end="20190427T150000Z" work-start="20190402T190000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20190427T000000Z"/>
-      <task id="80" name="Ausstellung vorbereiten" note="" work="86400" duration="259200" start="20190331T000000Z" end="20190428T120000Z" work-start="20190331T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
-        <constraint type="start-no-earlier-than" time="20190331T000000Z"/>
+      <task id="80" name="Ausstellung vorbereiten" note="" work="86400" duration="216000" start="20190402T000000Z" end="20190427T150000Z" work-start="20190402T190000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <constraint type="start-no-earlier-than" time="20190402T000000Z"/>
       </task>
-      <task id="81" name="Arbeit ausstellen" note="" work="0" start="20190427T000000Z" end="20190427T000000Z" work-start="20190427T100000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <task id="81" name="Meilenstein: Arbeit ausstellen" note="" work="0" start="20190427T000000Z" end="20190427T000000Z" work-start="20190427T100000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <constraint type="must-start-on" time="20190427T000000Z"/>
       </task>
     </task>
@@ -406,7 +406,7 @@
     <resource id="1" name="Andreas Zweili" short-name="AZ" type="1" units="0" email="" note="" std-rate="60" calendar="1"/>
   </resources>
   <allocations>
-    <allocation task-id="80" resource-id="1" units="33"/>
+    <allocation task-id="80" resource-id="1" units="40"/>
     <allocation task-id="69" resource-id="1" units="100"/>
     <allocation task-id="60" resource-id="1" units="100"/>
     <allocation task-id="35" resource-id="1" units="100"/>
