@@ -1059,17 +1059,6 @@ und sind in der Basis gefestigt. Erfahrungen im Bereich der Entwicklung von
 Desktop Applikationen sind zum Teil vorhanden. Jedoch hauptsächlich für Windows
 Systeme und C#.
 
-** TODO Testing
-
-PLACEHOLDER
-
-*** TODO Testfälle
-
-PLACEHOLDER
-
-
-PLACEHOLDER
-
 
 ** TODO User Stories
 
@@ -1084,6 +1073,14 @@ PLACEHOLDER
 PLACEHOLDER
 
 **** TODO Use Cases Detailbeschreibung
+
+PLACEHOLDER
+
+** TODO Testing
+
+PLACEHOLDER
+
+*** TODO Testfälle
 
 PLACEHOLDER
 
