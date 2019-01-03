@@ -1507,7 +1507,9 @@ PLACEHOLDER
 |----------+----------------------+----------------------+----------------------|
 | 23.12.2018 | Lösungsvarianten erfassen, Lösungsvarianten bewerten, Lösungsvariante bestimmen, SWOT Analyse erstellen, 1. Meeting | keine Abweichung     | Marco Frei hat noch diverse Punkte eingebracht die, die Planung ziemlich durcheinander bringen. Bedeute viel zusätzliche Arbeit. |
 |----------+----------------------+----------------------+----------------------|
-| 30.12.2018 | Controlling erarbeiten, Ist- und Soll-Analyse, SWOT Analyse, Umweltanalyse, Massnahmen Katalog erarbeiten, User Stories erarbeiten, Use Case Diagramm erstellen, Use Cases ausarbeiten, Anforderungskatalog erstellen, UML Diagramme |                      |                      |
+| 30.12.2018 | Controlling erarbeiten, Ist- und Soll-Analyse, SWOT Analyse, Umweltanalyse, Massnahmen Katalog erarbeiten, User Stories erarbeiten, Use Case Diagramm erstellen, Use Cases ausarbeiten, Anforderungskatalog erstellen, UML Diagramme | keine Abweichung     | UML Diagramme für eine Software zu erstellen die nicht existiert ist noch eine interessante Herausforderung. |
+|----------+----------------------+----------------------+----------------------|
+| 06.01.2019 | Lösungsvarianten erarbeiten und entscheiden, Test Konzept beschreiben und Testfälle erstellen |                      |                      |
 |----------+----------------------+----------------------+----------------------|
 #+LATEX:\end{landscape}
 
