@@ -564,6 +564,399 @@ Abbildung:([[fig:swot]]) zu sehen.
 [[file:pictures/swot_analyse.pdf]]
 #+attr_latex: :center :width 0.9\textwidth
 
+** Anforderungskatalog
+
+Der Anforderungskatalog entspricht 1:1 den Zielen welche in der Tabelle
+[[tab:projektziele]] definiert wurden.
+
+** Use Cases
+
+Ein Use Case sammelt alle möglichen Szenarien, die eintreten können,
+wenn ein Akteur versucht, mit Hilfe des betrachteten Systems ein
+bestimmtes Ziel zu erreichen. Dabei beschreibt er, was beim Versuch der
+Zielerreichung passieren kann. Je nach Ablauf kann auch ein Fehlschlag
+ein Ergebnis eines Anwendungsfalls sein (e.g. falsches Passwort beim
+Login). Dabei wird die technische Lösung nicht konkret beschrieben.
+Die Detailstufe kann dabei sehr unterschiedlich sein.footcite:usecase
+
+*** Anwendungsfalldiagramm
+
+"Ein Anwendungsfalldiagramm ... ist eine der 14 Diagrammarten der
+Unified Modelling Language (UML), einer Sprache für die Modellierung
+der Strukturen und des Verhaltens von Software- und anderen Systemen.
+Es stellt Anwendungsfälle und Akteure mit ihren jeweiligen
+Abhängigkeiten und Beziehungen dar."\footcite{usecasediagramm}
+
+Das Anwendungsfalldiagramm für das gls:borg gls:gui ist in der Abbildung:
+([[fig:usecase]]) zu sehen.
+
+#+LATEX:\newpage
+#+LATEX:\begin{landscape}
+#+CAPTION: Anwendungsfalldiagramm
+#+ATTR_LATEX: :height.9\textwidth
+#+NAME: fig:usecase
+[[file:pictures/use_case.pdf]]
+#+LATEX:\end{landscape}
+#+LATEX:\newpage
+
+*** Use Cases Detailbeschreibung
+
+Use Cases werden in der Regel mit Hilfe einer sogenannten Use Case Schablone im
+Detail beschrieben, damit klar ist, wie der Ablauf jeweils genau aussieht. Die
+in diesem Projekt verwendete Schablone wurde von Alistair Cockburn definiert.
+
+Die nachfolgend aufgeführten Use Cases, Tabellen:([[tab:uc_backup]], [[tab:uc_delete]],
+[[tab:uc_restore]], [[tab:uc_file]], [[tab:uc_mount]], [[tab:uc_config]], [[tab:uc_automatic]])
+wurden dem Anwendungsfalldiagramm, Abbildung:([[fig:usecase]]), entnommen und
+zusätzlich noch um jeweils ein Aktivitätsdiagramm , Abbildungen:
+([[fig:activity_backup]], [[fig:activity_delete]], [[fig:activity_restore]],
+[[fig:activity_mount]], [[fig:activity_settings]], [[fig:activity_automatic]]), erweitert
+um den Ablauf verständlicher zu machen.
+
+Ein Aktivitätsdiagramm ist dabei ein hilfreiches UML Diagramm zum Erweitern von
+Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
+
+**** Use Case 1.0 Backup erstellen
+
+#+LATEX:{\footnotesize
+#+CAPTION: Use Case 1.0 Backup erstellen
+#+ATTR_LATEX::environment longtable :align |>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}| :placement [H]
+#+NAME: tab:uc_backup
+|---------------------+--------------------------------|
+|                     | <30>                           |
+| *Identifier + Name* | 1.0 Backup erstellen           |
+|---------------------+--------------------------------|
+| *Description*       | Das erstellen einer Datensicherung durch gls:borg anstossen. |
+|---------------------+--------------------------------|
+| *Actors*            | Benutzer                       |
+|---------------------+--------------------------------|
+| *Status*            | Freigegeben                    |
+|---------------------+--------------------------------|
+| *Includes*          | -                              |
+|---------------------+--------------------------------|
+| *Trigger*           | User möchte ein Backup erstellen. |
+|---------------------+--------------------------------|
+| *Preconditions*     | Die Applikation wurde gestartet. |
+|---------------------+--------------------------------|
+| *Postconditions*    | Das erstellte Backup wird angezeigt. |
+|---------------------+--------------------------------|
+| *Normal Flow*       | 1. Den Quellpfad auswählen.    |
+|                     | 2. Den Button "Backup" anklicken. |
+|                     | 3. Ein Pop mit Fortschrittsbalken erscheint und zeigt die Zeit bis zum Ende des Backups an. |
+|                     | 4. Am Ende des Backups verschwindet das Pop-up wieder. |
+|                     | 5. Die Liste der Backups aktualisiert sich. |
+|---------------------+--------------------------------|
+| *Alternative Flow*  | -                              |
+|---------------------+--------------------------------|
+| *Notes*             | -                              |
+|---------------------+--------------------------------|
+| *UC History*        | 1.0 Draft erstellt durch AZ    |
+|---------------------+--------------------------------|
+| *Author*            | A. Zweili                      |
+|---------------------+--------------------------------|
+| *Date*              | 30.12.2018                     |
+|---------------------+--------------------------------|
+#+LATEX:}
+#+caption: Aktivitätsdiagramm zum Erstellen eines Backups
+#+name: fig:activity_backup
+[[file:pictures/activity_backup.pdf]]
+#+attr_latex: :center :placement [H]
+
+#+LATEX:\newpage
+**** Use Case 2.0 Backup löschen
+
+#+LATEX:{\footnotesize
+#+CAPTION: Use Case 2.0 Backup löschen
+#+ATTR_LATEX::environment longtable :align |>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}| :placement [H]
+#+NAME: tab:uc_delete
+|---------------------+--------------------------------|
+|                     | <30>                           |
+| *Identifier + Name* | 2.0 Backup löschen             |
+|---------------------+--------------------------------|
+| *Description*       | Ein zuvor erstelltes Backup wird gelöscht. |
+|---------------------+--------------------------------|
+| *Actors*            | Benutzer                       |
+|---------------------+--------------------------------|
+| *Status*            | Freigegeben                    |
+|---------------------+--------------------------------|
+| *Includes*          | -                              |
+|---------------------+--------------------------------|
+| *Trigger*           | Ein User möchte ein bestehendes Backup löschen. |
+|---------------------+--------------------------------|
+| *Preconditions*     | Use Case 1.0 ausgeführt.       |
+|---------------------+--------------------------------|
+| *Postconditions*    | Das gelöschte Backup wird nicht mehr aufgelistet. |
+|---------------------+--------------------------------|
+| *Normal Flow*       | 1. Ein Backup aus der Liste auswählen. |
+|                     | 2. Den Button "Delete anklicken". |
+|                     | 3. Ein Bestätigungsdialog erscheint. |
+|                     | 4. Im Dialog den "Ok" Button anklicken. |
+|---------------------+--------------------------------|
+| *Alternative Flow*  | 1. Ein Backup aus der Liste auswählen. |
+|                     | 2. Den Button "Delete anklicken". |
+|                     | 3. Ein Bestätigungsdialog erscheint. |
+|                     | 4. Die Aktion mit einem Klick auf den "Cancel" Button abbrechen. |
+|---------------------+--------------------------------|
+| *Notes*             | -                              |
+|---------------------+--------------------------------|
+| *UC History*        | 1.0 Draft erstellt durch AZ    |
+|---------------------+--------------------------------|
+| *Author*            | A. Zweili                      |
+|---------------------+--------------------------------|
+| *Date*              | 30.12.2018                     |
+|---------------------+--------------------------------|
+#+LATEX:}
+#+caption: Aktivitätsdiagramm zum Löschen eines Backups
+#+name: fig:activity_delete
+[[file:pictures/activity_delete.pdf]]
+#+attr_latex: :center :placement [H]
+
+#+LATEX:\newpage
+**** Use Case 3.0 Backup wiederherstellen
+
+#+LATEX:{\footnotesize
+#+CAPTION: Use Case 3.0 Backup wiederherstellen
+#+ATTR_LATEX::environment longtable :align |>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}| :placement [H]
+#+NAME: tab:uc_restore
+|---------------------+--------------------------------|
+|                     | <30>                           |
+| *Identifier + Name* | 3.0 Backup wiederherstellen    |
+|---------------------+--------------------------------|
+| *Description*       | Alle Dateien eines Backups wiederherstellen. |
+|---------------------+--------------------------------|
+| *Actors*            | User                           |
+|---------------------+--------------------------------|
+| *Status*            | Freigegeben                    |
+|---------------------+--------------------------------|
+| *Includes*          | -                              |
+|---------------------+--------------------------------|
+| *Trigger*           | Daten sollen wieder hergestellt werden. |
+|---------------------+--------------------------------|
+| *Preconditions*     | Use Case 1.0 wurde ausgeführt. |
+|---------------------+--------------------------------|
+| *Postconditions*    | Die Dateien aus dem Backup wurde im angegeben Pfad wiederhergestellt. |
+|---------------------+--------------------------------|
+| *Normal Flow*       | 1. Ein Backup aus der Liste auswählen. |
+|                     | 2. Den Button "Restore" klicken. |
+|                     | 3. Ein Pop-Up zur Auswahl eines Zielpfades erscheint. |
+|                     | 4. Den Zielpfad mit klick auf "Choose" bestätigen. |
+|                     | 5. Ein Dateiexplorer öffnet sich mit dem ausgewählt Pfad und enthält die Dateien aus dem Backup. |
+|---------------------+--------------------------------|
+| *Alternative Flow*  | 1. Ein Backup aus der Liste auswählen. |
+|                     | 2. Den Button "Restore" klicken. |
+|                     | 3. Ein Pop-Up zur Auswahl eines Zielpfades erscheint. |
+|                     | 4. Die Aktion mit klick auf "Cancel" abbrechen. |
+|---------------------+--------------------------------|
+| *Notes*             | -                              |
+|---------------------+--------------------------------|
+| *UC History*        | 1.0 Draft erstellt durch AZ    |
+|---------------------+--------------------------------|
+| *Author*            | A. Zweili                      |
+|---------------------+--------------------------------|
+| *Date*              | 30.12.2018                     |
+|---------------------+--------------------------------|
+#+LATEX:}
+
+#+caption: Aktivitätsdiagramm zum Wiederherstellen eines Backups
+#+name: fig:activity_restore
+[[file:pictures/activity_restore.pdf]]
+#+attr_latex: :center :placement [H]
+
+#+LATEX:\newpage
+**** Use Case 4.0 Einzelne Datei wiederherstellen
+
+#+LATEX:{\footnotesize
+#+CAPTION: Use Case 4.0 Einzelne Datei wiederherstellen
+#+ATTR_LATEX::environment longtable :align |>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}| :placement [H]
+#+NAME: tab:uc_file
+|---------------------+--------------------------------|
+|                     | <30>                           |
+| *Identifier + Name* | 4.0 Einzelne Datei wiederherstellen |
+|---------------------+--------------------------------|
+| *Description*       | Das spezifische Wiederherstellen von einer oder mehreren Dateien. |
+|---------------------+--------------------------------|
+| *Actors*            | User                           |
+|---------------------+--------------------------------|
+| *Status*            | Freigegeben                    |
+|---------------------+--------------------------------|
+| *Includes*          | Use Case 4.1                   |
+|---------------------+--------------------------------|
+| *Trigger*           | Daten sollen wieder hergestellt werden. |
+|---------------------+--------------------------------|
+| *Preconditions*     | Use Case 1.0 wurde ausgeführt. |
+|---------------------+--------------------------------|
+| *Postconditions*    | -                              |
+|---------------------+--------------------------------|
+| *Normal Flow*       | 1. Ein Backup aus der Liste auswählen. |
+|                     | 2. Auf den Button "Mount" klicken. |
+|                     | 3. Use Case 4.1 wird ausgeführt. |
+|                     | 4. Ein Dateiexplorer öffnet sich mit dem ausgewählt Pfad und enthält die Dateien aus dem Backup. |
+|                     | 5. Wird die Applikation geschlossen wird das Backup ausgehängt. |
+|---------------------+--------------------------------|
+| *Alternative Flow*  | -                              |
+|---------------------+--------------------------------|
+| *Notes*             | -                              |
+|---------------------+--------------------------------|
+| *UC History*        | 1.0 Draft erstellt durch AZ    |
+|---------------------+--------------------------------|
+| *Author*            | A. Zweili                      |
+|---------------------+--------------------------------|
+| *Date*              | 30.12.2018                     |
+|---------------------+--------------------------------|
+#+LATEX:}
+
+#+caption: Aktivitätsdiagramm für das spezifische Wiederherstellen einer Datei
+#+name: fig:activity_mount
+[[file:pictures/activity_mount.pdf]]
+#+attr_latex: :center :placement [H]
+
+#+LATEX:\newpage
+**** Use Case 4.1 Backup mounten
+
+#+LATEX:{\footnotesize
+#+CAPTION: Use Case 4.1 Backup mounten
+#+ATTR_LATEX::environment longtable :align |>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}| :placement [H]
+#+NAME: tab:uc_mount
+|---------------------+--------------------------------|
+|                     | <30>                           |
+| *Identifier + Name* | 4.1 Backup mounten             |
+|---------------------+--------------------------------|
+| *Description*       | Ein Backup wird als FUSE gemountet. |
+|---------------------+--------------------------------|
+| *Actors*            | Borg GUI, gls:borg             |
+|---------------------+--------------------------------|
+| *Status*            | Freigegeben                    |
+|---------------------+--------------------------------|
+| *Includes*          | -                              |
+|---------------------+--------------------------------|
+| *Trigger*           | Das Borg GUI gibt an gls:borg den Input zum mounten weiter. |
+|---------------------+--------------------------------|
+| *Preconditions*     | Use Case 1.0 wurde ausgeführt. |
+|---------------------+--------------------------------|
+| *Postconditions*    | Das Backup wurde gemountet.    |
+|---------------------+--------------------------------|
+| *Normal Flow*       | 1. Borg GUI sammelt die Backup ID in Use Case 4.0. |
+|                     | 2. Borg GUI übergibt die Backup ID an gls:borg zusammen mit einem Zielpfad. |
+|                     | 3. gls:borg hängt das Backup als FUSE Laufwerk am Zielpfad ein. |
+|                     | 4. gls:borg meldet Erfolg an Borg GUI. |
+|---------------------+--------------------------------|
+| *Alternative Flow*  | 1. Borg GUI sammelt die Backup ID in Use Case 4.0. |
+|                     | 2. Borg GUI übergibt die Backup ID an gls:borg zusammen mit einem Zielpfad. |
+|                     | 3. gls:borg hängt das Backup als FUSE Laufwerk am Zielpfad ein. |
+|                     | 4. gls:borg meldet einen Fehler an Borg GUI. |
+|---------------------+--------------------------------|
+| *Notes*             | -                              |
+|---------------------+--------------------------------|
+| *UC History*        | 1.0 Draft erstellt durch AZ    |
+|---------------------+--------------------------------|
+| *Author*            | A. Zweili                      |
+|---------------------+--------------------------------|
+| *Date*              | 30.12.2018                     |
+|---------------------+--------------------------------|
+#+LATEX:}
+
+#+LATEX:\newpage
+**** Use Case 5.0 Konfiguration ändern
+
+#+LATEX:{\footnotesize
+#+CAPTION: Use Case 5.0 Konfiguration ändern
+#+ATTR_LATEX::environment longtable :align |>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}| :placement [H]
+#+NAME: tab:uc_config
+|---------------------+--------------------------------|
+|                     | <30>                           |
+| *Identifier + Name* | 5.0 Konfiguration ändern       |
+|---------------------+--------------------------------|
+| *Description*       | Das Verändern und Speichern der Konfiguration der Applikation. |
+|---------------------+--------------------------------|
+| *Actors*            | User                           |
+|---------------------+--------------------------------|
+| *Status*            | Freigegeben                    |
+|---------------------+--------------------------------|
+| *Includes*          | -                              |
+|---------------------+--------------------------------|
+| *Trigger*           | Ein User möchte die Einstellungen der Applikation anpassen. |
+|---------------------+--------------------------------|
+| *Preconditions*     | Applikation gestartet.         |
+|---------------------+--------------------------------|
+| *Postconditions*    | -                              |
+|---------------------+--------------------------------|
+| *Normal Flow*       | 1. Auf den Button "Settings" klicken. |
+|                     | 2. Ein neues Fenster mit den Einstellungen öffnet sich. |
+|                     | 3. Der Benutzer ändert mindestens eine Einstellung. |
+|                     | 4. Der Button "OK" wird angeklickt. |
+|                     | 5. Die Konfiguration wird in die Konfigurationsdatei geschrieben und in der Applikation geladen. |
+|---------------------+--------------------------------|
+| *Alternative Flow*  | 1. Auf den Button "Settings" klicken. |
+|                     | 2. Ein neues Fenster mit den Einstellungen öffnet sich. |
+|                     | 3. Der Benutzer kann Einstellungen ändern. |
+|                     | 4. Der Button "Cancel" wird angeklickt. |
+|                     | 5. Jeglich Änderungen werden verworfen und die Konfigurationsdatei bleibt im aktuellen Zustand. |
+|---------------------+--------------------------------|
+| *Notes*             | -                              |
+|---------------------+--------------------------------|
+| *UC History*        | 1.0 Draft erstellt durch AZ    |
+|---------------------+--------------------------------|
+| *Author*            | A. Zweili                      |
+|---------------------+--------------------------------|
+| *Date*              | 30.12.2018                     |
+|---------------------+--------------------------------|
+#+LATEX:}
+
+#+caption: Aktivitätsdiagramm zum Ändern von Einstellungen
+#+name: fig:activity_settings
+[[file:pictures/activity_settings.pdf]]
+#+attr_latex: :center :placement [H]
+
+#+LATEX:\newpage
+**** Use Case 6.0 automatische Backups aktivieren
+
+#+LATEX:{\footnotesize
+#+CAPTION: Use Case 6.0 automatische Backups aktivieren
+#+ATTR_LATEX::environment longtable :align |>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}| :placement [H]
+#+NAME: tab:uc_automatic
+|---------------------+--------------------------------|
+|                     | <30>                           |
+| *Identifier + Name* | 6.0 automatische Backups aktivieren |
+|---------------------+--------------------------------|
+| *Description*       | Ein Systemdienst wird hinterlegt zum ausführen automatischer Backups. |
+|---------------------+--------------------------------|
+| *Actors*            | User                           |
+|---------------------+--------------------------------|
+| *Status*            | Freigegeben                    |
+|---------------------+--------------------------------|
+| *Includes*          | -                              |
+|---------------------+--------------------------------|
+| *Trigger*           | Ein User möchte automatisierte Backups haben. |
+|---------------------+--------------------------------|
+| *Preconditions*     | Eine funktionierende Konfiguration muss hinterlegt sein. |
+|                     | Applikation gestartet.         |
+|---------------------+--------------------------------|
+| *Postconditions*    | Ein Systemdienst wurde erstellt welcher jeden Tag ein Backup macht. |
+|---------------------+--------------------------------|
+| *Normal Flow*       | 1. Auf den Button "Settings" klicken. |
+|                     | 2. Bei der Option "Automatic Backups" den Hacken setzen. |
+|                     | 3. Die Settings mit klick auf "Ok" schliessen und speichern. |
+|---------------------+--------------------------------|
+| *Alternative Flow*  | 1. Auf den Button "Settings" klicken. |
+|                     | 2. Bei der Option "Automatic Backups" den Hacken setzen. |
+|                     | 3. Die Aktion mit klick auf "Cancel" abrechen. |
+|---------------------+--------------------------------|
+| *Notes*             | -                              |
+|---------------------+--------------------------------|
+| *UC History*        | 1.0 Draft erstellt durch AZ    |
+|---------------------+--------------------------------|
+| *Author*            | A. Zweili                      |
+|---------------------+--------------------------------|
+| *Date*              | 30.12.2018                     |
+|---------------------+--------------------------------|
+#+LATEX:}
+
+#+caption: Aktivitätsdiagramm zum Aktivieren von automatischen Backups
+#+name: fig:activity_automatic
+[[file:pictures/activity_automatic.pdf]]
+#+attr_latex: :center :placement [H]
+
+#+LATEX:\newpage
 * TODO Konzept
 
 ** Varianten
@@ -1027,10 +1420,7 @@ Lernfaktor bei Electron wohl nicht so gross wie etwa bei Qt oder Gtk.
 
 Aufgrund der erreichten Punktzahl, Tabelle:([[tab:result]]), bei den vorhergehenden
 Variantenbewertungen, wurde entschieden für das Backend der Applikation auf
-Python zu setzen und fürs Frontend Qt zu benutzen. Ein kleiner Test zeigt auch
-das die Kombination ohne grosse Probleme und Anpassung auf Windows, Linux und
-OS X läuft, Abbildung:([[fig:hello_world]]).
-
+Python zu setzen und fürs Frontend Qt zu benutzen.
 #+CAPTION: Variantenbewertung Ergebnis
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{4.5cm}|r| :placement [H]
 #+NAME: tab:result
@@ -1047,34 +1437,12 @@ OS X läuft, Abbildung:([[fig:hello_world]]).
 | Electron                           |                                           275 |
 |------------------------------------+-----------------------------------------------|
 
-#+caption: Python und Qt Applikation unter Windows (links), Linux (rechts) und OS X (unten)
-#+name: fig:hello_world
-[[file:pictures/hello_world.png]]
-#+attr_latex: :center
-
 ** Vorkenntnisse
 
 Die benötigten Vorkenntnisse wurden in den vorangegangenen Semestern erarbeitet
 und sind in der Basis gefestigt. Erfahrungen im Bereich der Entwicklung von
 Desktop Applikationen sind zum Teil vorhanden. Jedoch hauptsächlich für Windows
 Systeme und C#.
-
-
-** TODO User Stories
-
-PLACEHOLDER
-
-** TODO Use Cases
-
-PLACEHOLDER
-
-**** TODO Anwendungsfalldiagramm
-
-PLACEHOLDER
-
-**** TODO Use Cases Detailbeschreibung
-
-PLACEHOLDER
 
 ** TODO Testing
 
@@ -1085,6 +1453,19 @@ PLACEHOLDER
 PLACEHOLDER
 
 * TODO Realisierung
+** TODO Cross-plattform Kompatibilität
+
+Um sicherzugehen das die gewählten Technologien auch den Anforderungen
+entsprechen wurde ein kleines "Hello World" Programm mit Python3 und Qt
+geschrieben. Dieses läuft ohne jegliche Probleme und Anpassung auf Windows,
+Linux und OS X. Wie in den Screenshots in Abbildung:([[fig:hello_world]]) zu sehen
+ist.
+
+#+caption: Python und Qt Applikation unter Windows (links), Linux (rechts) und OS X (unten)
+#+name: fig:hello_world
+[[file:pictures/hello_world.png]]
+#+attr_latex: :center
+
 ** TODO Benutzerinterface
 **** TODO Inspiration
 
