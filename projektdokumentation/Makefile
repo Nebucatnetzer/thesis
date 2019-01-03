@@ -40,10 +40,12 @@ clean:  ## Clean LaTeX and output figure files
 	rm -f *.lol
 	rm -f *.run.xml
 	rm -f *-blx.bib
+	rm -f *.listing
 	rm -rf auto/
 	rm -rf general/auto/
 	rm -rf general/*.aux
 	rm -f projekthandbuch.tex
+	rm *.zip
 
 distclean:
 	rm -f Projektdokumentation_Andreas_Zweili.pdf
@@ -71,3 +73,8 @@ projekthandbuch.tex: projektdokumentation.org
 	emacs -l general/thesis.el --batch \
 	--eval="(progn (find-file \"projektdokumentation.org\") (org-latex-export-to-latex nil nil nil t))"
 	replace-listings.sh projektdokumentation.tex
+
+final: Projektdokumentation_Andreas_Zweili.pdf
+	zip -r Projektdokumentation_Andreas_Zweili.zip \
+		Projektdokumentation_Andreas_Zweili.pdf \
+		Zeitplanung_Andreas_Zweili.html
