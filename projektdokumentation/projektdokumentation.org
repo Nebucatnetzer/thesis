@@ -37,40 +37,41 @@ Ereignis, und nach Kapiteln getrennt.
 
 Dieses Dokument wurde von Andreas Zweili im Rahmen der Diplomarbeit an der IBZ
 Schule erstellt und steht unter der gls:cc BY-SA 4.0 footcite:cc Lizenz.
-Dadurch darf die Arbeit unter beibehalten der Lizenz kopiert und
+Dadurch darf die Arbeit unter Beibehalten der Lizenz kopiert und
 weiterverarbeitet werden. Zusätzlich muss der Urheber genannt werden.
 
 * Initialisierung
 ** Vision
 
 Die Software soll gls:borg für den durchschnittlichen Computer User zugänglich
-machen. Die Backups sollen dabei schnell und unkompliziert erstellt werden
-können. Die Möglichkeit automatischer im Hintergrund laufender Backups soll dem
-User gegeben sein damit die Hürde für Backups so tief wie möglich gehalten wird.
+machen. Backups sollen dabei schnell und unkompliziert erstellt werden können.
+Auch die Möglichkeit automatischer im Hintergrund laufender Backups soll dem
+User gegeben sein damit die Hürde für Backups so tief wie möglich gehalten
+wird.
 
 Die besten Backups sind solche bei denen man gar nicht mehr weiss das man sie
 hat bis man sie braucht.
 
 ** Ausgangslage
 
-gls:borg ist deshalb interessant weil es während einem Backup relativ
+gls:borg ist deshalb interessant, weil es während einem Backup relativ
 wenig Ressource im Vergleich zu anderen Systemen benötigt und schon relativ
 lange aktiv entwickelt wird. Dadurch ist es im Alltag geprüft worden.
-Des weiteren bietet gls:borg die Funktion für Verschlüsselung was es einem User
+Des Weiteren bietet gls:borg die Funktion für Verschlüsselung was es einem User
 ermöglicht die Daten auf einem unsicheren Cloud Speicher abzulegen.
 
-Des weiteren speichert gls:borg die Daten mit Block basierter gls:dedup ab. Dies
+Des Weiteren speichert gls:borg die Daten mit Block basierter gls:dedup ab. Dies
 hat den riesigen Vorteil das bei einem Backup nur die Änderungen auf
 Block-Ebene gespeichert werden und nicht jedes Mal die ganze Datei kopiert
 werden muss.
 
 Damit ermöglicht die Software auch Backups von sehr grossen Dateien, wie Videos
-oder Disk Images von virtuellen Maschinen, in mehreren Version. Ohne dabei
+oder Disk Images von virtuellen Maschinen, in mehreren Versionen. Ohne dabei
 jedoch signifikant mehr an Speicher zu benötigen. Zusätzlich werden die Backups
 dadurch rasend schnell ausgeführt. Gerade dieses Feature macht gls:borg in den
 Augen des Autors besonders interessant da sich der durchschnittliche User
-möglichst wenig mit Dingen wie Backups auseinander setzen möchte. Umso besser
-also wenn sie schnell gehen und so wenig Speicherplatz wie möglich verbrauchen.
+möglichst wenig mit Dingen wie Backups auseinandersetzen möchte. Umso besser
+also, wenn sie schnell gehen und so wenig Speicherplatz wie möglich verbrauchen.
 
 gls:borg wird jedoch komplett über die Kommandozeile bedient. Somit ist es für
 normale Benutzer eher schwierig den Zugang zu der Software zu finden geschweige
@@ -89,9 +90,9 @@ Stunden bis zum 18. März 2019 erarbeitet werden.
 
 Das Hauptziel der Arbeit soll es sein eine einfach nutzbare grafische
 Oberfläche für gls:borg zu entwickeln. Da gls:borg selber freie Software ist und
-der Autor mit gls:libre viel gute Erfahrungen gemacht hat soll das Projekt
+der Autor mit gls:libre viel gute Erfahrungen gemacht hat, soll das Projekt
 selber auch wieder gls:libre sein. Zum einen um der Community etwas
-zurückzugeben des weiteren um anderen Entwicklern die Möglichkeit zu geben die
+zurückzugeben des weiteren, um anderen Entwicklern die Möglichkeit zu geben die
 Software zu verbessern und weiter zu entwickeln.
 
 Als neben läufiges Ziel soll mit dieser Arbeit auch die Verbreitung von freier
@@ -113,10 +114,10 @@ auszuweiten.
 
 Im Projektantrag wurden vor gängig folgende Ziele definiert und entsprechend
 gewichtet. Die Gewichtung wurde dabei so vorgenommen, dass Ziele mit einer
-Muss-Gewichtung den Minimalanforderungen der Software entsprechen.
-Die weiteren Ziele wurden dann mit Ziffern von 5-1 gewichtet. Eine 5 bedeutet
-dabei dass, das Ziel in naher Zukunft sehr nützlich/wichtig für die Software
-wäre ist. Eine tiefe Zahl sollte dabei wenn möglich auch einmal in die Software
+Muss-Gewichtung den Minimalanforderungen der Software entsprechen. Die weiteren
+Ziele wurden dann mit Ziffern von 5 bis 1 gewichtet. Eine 5 bedeutet dabei
+dass, das Ziel in naher Zukunft sehr nützlich/wichtig für die Software wäre
+ist. Eine tiefe Zahl sollte dabei, wenn möglich, auch einmal in die Software
 integriert werden und ist nicht unwichtig.
 
 #+CAPTION: Projektziele
@@ -196,13 +197,13 @@ integriert werden und ist nicht unwichtig.
 
 Die Anwendung beschränkt sich darauf Funktionen von gls:borg grafisch
 darzustellen oder nützlich zu erweitern soweit dies über die gls:api möglich
-ist. Wie in, Abbildung:([[fig:kontext]]), zu sehen ist werden die Aktion effektiv
+ist. Wie in Abbildung:([[fig:kontext]]) zu sehen ist, werden die Aktionen effektiv
 immer vom Borg Binary ausgeführt und nicht von der grafischen Oberfläche. Eine
 Erweiterung von gls:borg ist nicht vorgesehen. Backup und Verschlüsselung sind
 heikle Themen und sollten unbedingt nur von Experten angegangen werden. Das
-Potential für Fehler und die Auswirkungen deren sind einfach schlicht zu gross.
+Potenzial für Fehler und die Auswirkungen derer, sind einfach schlicht zu gross.
 
-Des weiteren wird die Grundlage für eine kollaborative Entwicklung geschaffen.
+Des Weiteren wird die Grundlage für eine kollaborative Entwicklung geschaffen.
 Während der Laufzeit der Diplomarbeit werden jedoch keine Inputs aus der Borg
 Community im Bezug auf die Entwicklung entgegengenommen.
 
@@ -217,8 +218,8 @@ entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
 ** Projektmethode
 
 Für das Projekt wurde die Wasserfall-Methode gewählt. Da nur eine
-einzige Person am Projekt arbeitet kann nur ein Task nach dem anderen
-abgearbeitet werden und viele Aufgaben stehen in Abhängigkeiten zu einander.
+einzige Person am Projekt arbeitet, kann nur ein Task nach dem anderen
+abgearbeitet werden und viele Aufgaben stehen in Abhängigkeiten zueinander.
 Somit macht das iterative Vorgehen der Wasserfall-Methode für dieses Projekt am
 meisten Sinn.
 
@@ -240,26 +241,26 @@ Versionsnummern sind für die Applikation zum jetzigen Zeitpunkt noch nicht
 vorgesehen. Sollten sie zukünftig einmal verwendet werden soll eine semantische
 Versionierung footcite:semver verwendet. Dabei ist eine Versionsnummer immer
 nach diesem Schema aufgebaut, MAJOR.MINOR.PATCH. Bei Änderungen wir die:
-1. MAJOR Version erhöht wenn man inkompatible Änderungen an der gls:api macht.
-2. MINOR Version erhöht wenn man Funktionalität hinzufügt die
+1. MAJOR Version erhöht, wenn man inkompatible Änderungen an der gls:api macht.
+2. MINOR Version erhöht, wenn man Funktionalität hinzufügt, die
    abwärtskompatibel ist.
-3. PATCH Version erhöht wenn man abwärtskompatibel Bug-Fixes hinzufügt.
+3. PATCH Version erhöht, wenn man abwärtskompatibel Bug-Fixes hinzufügt.
 
-Auf jeden Fall sollte wenn möglich immer nur lauffähiger Code im Master Branch
+Auf jeden Fall sollte, wenn möglich immer nur lauffähiger Code im Master Branch
 eingecheckt sein damit der Master Branch immer eine funktionierende Software
 repräsentiert. Dies gilt auch für das Repository der Dokumentation. Der Master
 Branch der Dokumentation sollte maximal mit zwei Befehlen ~make clean~ und
-~make~ "kompilierbar " sein.
+~make~ "kompilierbar" sein.
 
 Als Software für die Versionskontrolle wurde Git footcite:git aus folgenden
 Gründen ausgewählt:
 
 - Ist der de facto Standard bei Versionskontrollsoftware
 - Läuft auf allen gängigen Betriebssystemen
-- Es gäbe gratis Services die man nutzen könnte (Github, Gitlab)
+- Es gäbe gratis Services, die man nutzen könnte (Github, Gitlab)
 - Man kann offline arbeiten und Commits erstellen
-- Der Author hat bereits einen eigenen Git Server zur Verfügung
-- Der Author ist bereits mit Git aus vorhergehenden Projekten vertraut,
+- Der Autor hat bereits einen eigenen Git Server zur Verfügung
+- Der Autor ist bereits mit Git aus vorhergehenden Projekten vertraut,
   dadurch muss man keine Ressourcen aufwenden eine neue Software zu lernen.
   Zusätzlich hat sich Git in den vorhergehenden Projekten als robuste
   und schnelle Software erwiesen.
@@ -279,13 +280,13 @@ und Emails schreiben ist alles möglich.
 
 Diese Dokumentation wurde in Org-mode footcite:orgmode, einer Erweiterung für
 den Text Editor Emacs, geschrieben. Die Syntax erinnert an Markdown und
-Org-mode bietet einem eine Vielzahl an Hilfen dafür inklusive dem erstellen von
+Org-mode bietet einem eine Vielzahl an Hilfen dafür inklusive dem Erstellen von
 Tabellen und Spreadsheet Funktionen. Für finale Version des Dokuments kann
 Org-mode die ursprünglich Textdatei über LaTeX in ein PDF exportieren.
 
 LaTeX footcite:latex ist eine Software, welche einem die Benutzung des
 Textsatzsystems TeXs vereinfacht. LaTeX wurde gegenüber einem "What You See Is
-What You Get" (z.Bsp. MS. Word), Editor gewählt weil es einem mit seiner Markup
+What You Get" (z.Bsp. MS. Word) Editor gewählt, weil es einem mit seiner Markup
 Sprache erlaubt das Dokument in Text Dateien zu erstellen, gerade für
 Programmiere ist dies eine sehr interessante Lösung. Dadurch, dass LaTeX auch
 nur aus reinen Textdateien besteht, kann man die Dokumente auch ohne weiteres
@@ -301,34 +302,35 @@ Die Diagramme wurden mit Draw.io footcite:draw erstellt. Draw.io ist gls:libre
 unter Apache Lizenz Version 2.0 footcite:apache und kann sowohl als Desktop
 Applikation wie auch als Webanwendung genutzt werden.
 
-Beim Design der Arbeit wurden soweit als möglich die typographischen Regeln aus
+Beim Design der Arbeit wurden soweit als möglich die typografischen Regeln aus
 dem Buch "Practical Typography" von Matthew Butterick footcite:typo angewandt.
 Bei den Diagrammen wurden ausschliesslich Farben aus der von Google
-entwickelten Design Sprache "Material"footcite:material eingesetzt.
+entwickelten Design Sprache "Material" footcite:material eingesetzt.
 
 ** Zeitplanung
 
 Die detaillierte Zeitplanung ist dem Ganttchart in der Datei
 [[file:Zeitplanung_Andreas_Zweili.html][Zeitplanung_Andreas_Zweili.html]] zu entnehmen. Bei der Zeitplanung wurde darauf
-geachtet das die Arbeit soweit als möglich nicht mit dem Berufsleben kollidiert
-An einem normalen Arbeitstag wurde dabei damit gerechnet das ca. 2 Stunden
-Arbeit am Abend möglich sein sollten. An einem arbeitsfreien Tag wurde mit 6
-Stunden Arbeit gerechnet. Über die Festtage wurden diverse Tage von der Planung
-ausgenommen da es nicht realistisch schien das an diesen Tagen die Arbeit
-signifikant vorwärts gehen würde. Auch Schultage wurde nicht als Arbeitstage
-gerechnet da man meist nicht mehr für weitere Tätigkeiten gross motiviert ist.
+geachtet das die Arbeit soweit, als möglich nicht mit dem Berufsleben
+kollidiert An einem normalen Arbeitstag wurde dabei damit gerechnet das ca. 2
+Stunden Arbeit am Abend möglich sein sollten. An einem arbeitsfreien Tag wurde
+mit 6 Stunden Arbeit gerechnet. Über die Festtage wurden diverse Tage von der
+Planung ausgenommen, da es nicht realistisch schien das an diesen Tagen die
+Arbeit signifikant vorwärtsgehen würde. Auch Schultage wurde nicht, als
+Arbeitstage gerechnet da man meist nicht mehr für weitere Tätigkeiten gross
+motiviert ist.
 
 Als zusätzliche Massnahme um die Arbeitslast zu verteilen wurde vom 14. Januar
 bis zum 11. März jeder Montag auf der Arbeitsstelle als frei eingegeben.
 Dadurch steht wägend des Projektes etwas mehr Zeit zur Verfügung als sonst mit
-einer 100% Arbeitsstelle möglich wäre.
+einer 100 Prozent Arbeitsstelle möglich wäre.
 
 ** Controlling
 
-Das Controlling wird verwendet um zu kontrollieren das die eigentliche Planung
-mit dem effektiv geleisteten Aufwand respektive den effektiv verwendeten
-Ressourcen übereinstimmt. Somit können für zukünftige Projekte Lehren gezogen
-werden.
+Das Controlling wird verwendet, um zu kontrollieren, dass die eigentliche
+Planung mit dem effektiv geleisteten Aufwand respektive den effektiv
+verwendeten Ressourcen übereinstimmt. Somit können für zukünftige Projekte
+Lehren gezogen werden.
 
 #+LATEX:\newpage
 #+LATEX:\begin{landscape}
@@ -395,7 +397,7 @@ theoretischer Faktor.
 
 Das Risikomanagement dient dazu Risiken im Projekt zu erkennen und Massnahmen
 zur Vermeidung der Risiken zu definieren. Dadurch steht man ihnen nicht
-unvorbereitet gegenüber sollten sie eintreffen.
+unvorbereitet gegenüber, sollten sie eintreffen.
 
 *** Risikobeschreibung
 
@@ -482,19 +484,19 @@ Verfügung gestellt.
 
 ** Risiko-Analyse
 
-Bei der Risikoanalyse wird von einem durchschnittlichen Benutzer ausgegangen
-der zur Zeit noch keine Backups macht und beginnen möchte gls:borg zu nutzen um
+Bei der Risiko-Analyse wird von einem durchschnittlichen Benutzer ausgegangen,
+der zur Zeit noch keine Backups macht und beginnen möchte gls:borg zu nutzen, um
 auf einer externen Harddisk seine Backups zu speichern.
 
-Es wird dabei eine Ist/Soll Analyse gemacht um die Lösung gegenüber der
+Es wird dabei eine Ist/Soll Analyse gemacht, um die Lösung gegenüber der
 bestehenden Möglichkeiten zu vergleichen. Jedes Risiko wurde entsprechend der
 Tabelle: ([[tab:wahrscheinlichkeit]]) nach der Wahrscheinlichkeit des Eintreffens
 bewertet und entsprechend der Tabelle: ([[tab:auswirkung]]) nach seiner Auswirkung
 im Bezug auf die Nützlichkeit der gemachten Backups.
 
 In der Tabelle: ([[tab:risikobeschreibung]]) sind dabei die Risiken für das
-Szenario aufgelistet und nummeriert. In der, Abbildung:([[fig:istrisiko]]), ist die
-Bewertung des Ist-Risikos grafisch dargestellt und in der,
+Szenario aufgelistet und nummeriert. In der Abbildung:([[fig:istrisiko]]), ist die
+Bewertung des Ist-Risikos grafisch dargestellt und in der
 Abbildung:([[fig:sollrisiko]]), ist das Soll-Risiko welches mit dieser Arbeit
 angestrebt wird ebenfalls grafisch dargestellt.
 
@@ -566,13 +568,13 @@ Abbildung:([[fig:swot]]) zu sehen.
 
 ** Anforderungskatalog
 
-Der Anforderungskatalog entspricht 1:1 den Zielen welche in der Tabelle
+Der Anforderungskatalog entspricht 1 zu 1 den Zielen, welche in der Tabelle
 [[tab:projektziele]] definiert wurden.
 
 ** Use Cases
 
 Ein Use Case sammelt alle möglichen Szenarien, die eintreten können,
-wenn ein Akteur versucht, mit Hilfe des betrachteten Systems ein
+wenn ein Akteur versucht, mithilfe des betrachteten Systems ein
 bestimmtes Ziel zu erreichen. Dabei beschreibt er, was beim Versuch der
 Zielerreichung passieren kann. Je nach Ablauf kann auch ein Fehlschlag
 ein Ergebnis eines Anwendungsfalls sein (e.g. falsches Passwort beim
@@ -601,14 +603,14 @@ Das Anwendungsfalldiagramm für das gls:borg gls:gui ist in der Abbildung:
 
 *** Use Cases Detailbeschreibung
 
-Use Cases werden in der Regel mit Hilfe einer sogenannten Use Case Schablone im
+Use Cases werden in der Regel mithilfe einer sogenannten Use Case Schablone im
 Detail beschrieben, damit klar ist, wie der Ablauf jeweils genau aussieht. Die
 in diesem Projekt verwendete Schablone wurde von Alistair Cockburn definiert.
 
 Die nachfolgend aufgeführten Use Cases, Tabellen:([[tab:uc_backup]], [[tab:uc_delete]],
 [[tab:uc_restore]], [[tab:uc_file]], [[tab:uc_mount]], [[tab:uc_config]], [[tab:uc_automatic]])
 wurden dem Anwendungsfalldiagramm, Abbildung:([[fig:usecase]]), entnommen und
-zusätzlich noch um jeweils ein Aktivitätsdiagramm , Abbildungen:
+zusätzlich noch um jeweils ein Aktivitätsdiagramm, Abbildungen:
 ([[fig:activity_backup]], [[fig:activity_delete]], [[fig:activity_restore]],
 [[fig:activity_mount]], [[fig:activity_settings]], [[fig:activity_automatic]]), erweitert
 um den Ablauf verständlicher zu machen.
@@ -961,7 +963,7 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 
 ** Varianten
 
-Da Borg eine JSON API zur Verfügung stellt bieten sich diverse Möglichkeiten um
+Da Borg eine JSON API zur Verfügung stellt bieten sich diverse Möglichkeiten, um
 das Programm anzubinden. Da das Ziel ist, das Programm normalen Nutzern
 zugänglicher zu machen, bietet sich ein normales Desktop Programm am ehesten
 an. Desktop Programme werden von allen Computer Usern täglich genutzt und sind
@@ -974,7 +976,7 @@ Projekt.
 
 Die Bewertungspunkte setzen sich einerseits aus den Projektzielen anderseits
 aus für das Projekt sinnvollen Punkten zusammen. Dadurch ergeben sich dann die
-Bewertungen welche in der nachfolgenden Tabelle aufgenommen wurden. Die
+Bewertungen, welche in der nachfolgenden Tabelle aufgenommen wurden. Die
 möglichen Varianten wurden danach bewertet. Die effektive Berechnung des
 Resultats wird nach folgender Formel durchgeführt.
 
@@ -1017,26 +1019,26 @@ der Tabelle Projektziele ([[tab:projektziele]]).
 *** Backend
 
 Fürs Backend bieten sich die folgende drei Sprachen an: [[C#][C#]], [[C++][C++]], [[Python][Python]].
-Dies vor allem weil alle Allrounder Sprachen sind und sich gut für Desktop
+Dies vor allem, weil alle Allrounder Sprachen sind und sich gut für Desktop
 Applikationen eignen.
 
 **** C#
 
 C# ist eine von Microsoft entwickelte Programmiersprache welche viele
-Frameworks zur Verfügung hat. Insbesondere Aufgrund der grossen kommerziellen
+Frameworks zur Verfügung hat. Insbesondere aufgrund der grossen kommerziellen
 Nutzung und der guten Integration mit Windows hat C# eine relative grosse
 Verbreitung. Bei Linux und OS X ist es jedoch schwieriger C# zu integrieren und
 zu nutzen.
 
-Sie ist zu Teilen gls:libre. Die Common Language Runtime welche für das
+Sie ist zu Teilen gls:libre. Die Common Language Runtime, welche für das
 Ausführen von Software zuständig ist, ist unter der MIT Lizenz lizenziert
 footcite:csharp der aktuelle Compiler Roslyn ist unter der Apache Lizenz
 verfügbar footcite:roslyn. Da es sehr viele offizielle Teile um die Sprache C#
-gibt kann im Rahmen des Projektes nicht direkt abgeschätzt werden ob alle
+gibt, kann im Rahmen des Projektes nicht direkt abgeschätzt werden, ob alle
 benötigten Teile gls:libre sind. Für die Bewertung wird deshalb ein kleinerer
 Wert als bei C++ und Python genommen.
 
-C# ist die Programmiersprache welche an der IBZ hauptsächlich gelehrt wird.
+C# ist die Programmiersprache, welche an der IBZ hauptsächlich gelehrt wird.
 Dadurch sind die Kenntnisse der Sprache und ihrer Anwendung bereits
 einigermassen vorhanden. Ausserhalb der Schule wurde die Sprache jedoch noch nie
 eingesetzt.
@@ -1044,7 +1046,7 @@ eingesetzt.
 Entwickelt wird C# hauptsächlich mit der gls:ide Microsoft Visual Studio.
 Eine sehr umfangreiche und komplexe Software. Visual Studio ist dabei nur für
 Windows und OS X erhältlich. Es ist auch möglich C# Projekte ausserhalb von
-Visual Studio zu erstellen ist jedoch nicht sehr einfach.
+Visual Studio zu erstellen, es ist jedoch nicht sehr einfach.
 
 Der Code ist gut lesbar und es gibt offizielle Styleguides von Microsoft was
 den Code über Projekte hinaus einigermassen einheitlich aussehen lässt. Zudem
@@ -1059,17 +1061,17 @@ installieren und nutzbar zu machen. Auf anderen Plattform wird dies leider
 nicht einfacher und unter Linux ist es bereits schwierig eine funktionierende
 Umgebung in Gang zu bringen.
 
-Da C# bereits an der IBZ gelernt wird ist der Lernfaktor hier im Vergleich zu
+Da C# bereits an der IBZ gelernt wird, ist der Lernfaktor hier im Vergleich zu
 den anderen Sprachen sicher am kleinsten. Allerdings gibt es noch keinerlei
 Kenntnisse beim Einbinden eines der unten aufgeführten gls:gui Frameworks.
 Daher gibt es auf jeden Fall noch genügend zu lernen.
 
 Die gls:borg Community hat vor relativ kurzer Zeit die offizielle Unterstützung
-von Windows zurückgezogen. Da C# eine sehr Windows lastige Sprache ist wird
+von Windows zurückgezogen. Da C# eine sehr Windows lastige Sprache ist, wird
 daher davon ausgegangen das die Sprache innerhalb der gls:borg Community nicht
 sehr verbreitet ist.
 
-C# ist eine stark typisiert Sprache und kompilierte Sprache. Des weiteren ist
+C# ist eine stark typisiert Sprache und kompilierte Sprache. Des Weiteren ist
 Visual Studio der Erfahrung nach nicht die schnellste Software. Dies alles
 führt dazu das C# nicht gerade die schnellste Sprache zum Programmieren ist.
 Jedoch aufgrund des moderneren Unterbaus sicher schneller als C++.
@@ -1101,7 +1103,7 @@ Jedoch aufgrund des moderneren Unterbaus sicher schneller als C++.
 
 C++ ist eine stark typisierte und kompilierte Programmiersprache. Sie ist seit
 1998 Teil des ISO Standards footcite:cpp98. ISO/IEC 14882:2017 footcite:cpp17
-ist zur Zeit die aktuellste Variante. Die Sprache existiert seit ca. 33 Jahren
+ist zurzeit die aktuellste Variante. Die Sprache existiert seit ca. 33 Jahren
 und hat eine weitreichende Verbreitung gefunden. C++ ist auf allen
 Betriebssystemen gut unterstützt muss jedoch für jedes System separat
 kompiliert werden.
@@ -1113,18 +1115,18 @@ C++ kompiliert direkt zu Maschinensprache und ist dadurch sehr performant und
 läuft sehr gut auf jedem System. C++ ist im Vergleich zu modernen Sprachen
 jedoch relativ komplex und bietet diverse Stolpersteine für Programmierer.
 
-Zum entwickeln braucht es verhältnismässig wenig. Da die Sprache bereits sehr
+Zum Entwickeln braucht es verhältnismässig wenig. Da die Sprache bereits sehr
 alt ist, stammt sie noch aus einer Zeit wo man noch etwas rudimentärer
 programmierte. Allerdings braucht man in jedem Fall einen gls:compiler um ein
 ausführbares Programm zu erzeugen. Bei komplexeren Programmen wird man um
-mindestens so etwas wie glspl:makefile auch nicht herum kommen
+mindestens so etwas wie glspl:makefile auch nicht herumkommen
 
 Im Vergleich zu Python oder C# ist C++ wohl die am schwersten lesbare Sprache.
-Zudem gibt es auch keinen zentralen Styleguide welcher einem vorgeben würde wie
+Zudem gibt es auch keinen zentralen Styleguide, welcher einem vorgeben würde wie
 der Code am besten ausschauen sollte. Somit haben sich über die Jahre mehrere
 Standards etabliert.
 
-Der Lernfaktor wäre Aufgrund der mangelnden Vorkenntnisse hier ganz klar am
+Der Lernfaktor wäre aufgrund der mangelnden Vorkenntnisse hier ganz klar am
 Grössten.
 
 Da C++ eine alte Sprache ist geniesst sie auch eine dementsprechende
@@ -1132,10 +1134,10 @@ Verbreitung. Daher ist anzunehmen das sicher mindestens ein grössere Teil der
 älteren BorgBackup Entwickler C++ oder C gelernt haben.
 
 Da C++ auch heute noch zu den meistgenutzten Sprachen gehört gibt es
-entsprechend viele Ressourcen dazu und Beispiel Projekte von denen man ableiten
-kann. Auch hilfreiche Libraries gibt es sehr viele welche den Programmierer
+entsprechend viele Ressourcen dazu und Beispiel Projekte, von denen man ableiten
+kann. Auch hilfreiche Libraries gibt es sehr viele, welche den Programmierer
 unterstützen können. Die Sprache selber ist jedoch eher umständlich zu
-schreiben. Hinzu kommt noch das man während der Entwicklung immer wieder den
+schreiben. Hinzu kommt noch das man, während der Entwicklung immer wieder den
 Code kompilieren muss. In einem Projekt mit dieser begrenzten Zeitspanne eher
 ungeeignet.
 
@@ -1168,7 +1170,7 @@ Der Python Interpreter ist für eine Vielzahl an Betriebssystemen erhältlich,
 inklusive Windows, OS X und Linux. Nahezu jedes Desktop Linux System kommt mit
 Python vor installiert. Auch OS X kommt bereits ab Werk mit Python Version 2.
 Version 3 lässt sich sehr einfach nachinstallieren und ist einfach nutzbar.
-Unter Windows gestaltetet sich die Installation etwas aufwändiger aber auch
+Unter Windows gestaltetet sich die Installation etwas aufwendiger aber auch
 nicht sehr kompliziert integriert sich in Windows jedoch etwas weniger elegant
 als C#.
 
@@ -1204,7 +1206,7 @@ python3 example.py
 
 Da Python schon eine etwas bekanntere Sprache ist, ist der Lernfaktor der
 Sprache selber nicht mehr so hoch. Allerdings gibt es noch viele interessante
-Konzepte die man im Zusammenhang mit der Sprache lernen kann. Wie etwa zum
+Konzepte, die man im Zusammenhang mit der Sprache lernen kann. Wie etwa zum
 Beispiel multiple Vererbung von Klassen.
 
 gls:borg selber wurde in Python geschrieben. Daher ist davon auszugehen das
@@ -1214,7 +1216,7 @@ Python ist eine dynamisch typisierte und interpretierte Sprache. Dies bedeutet
 das man bei Variablen nicht explizit den Typ angeben muss und die Programme zur
 Laufzeit für den Computer übersetzt werden. Interpretierte Sprachen haben den
 Vorteil das man mit ihnen in der Regel sehr schnell und unkompliziert
-entwickeln kann, dies jedoch zu Lasten der Performance.
+entwickeln kann, dies jedoch zulasten der Performance.
 
 #+CAPTION: Python Bewertungstabelle
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|
@@ -1244,14 +1246,14 @@ entwickeln kann, dies jedoch zu Lasten der Performance.
 Fürs Frontend sind folgende Projekte interessant: [[Qt][Qt]], [[Gtk][Gtk]] und [[Electron][Electron]]. Alle
 drei sind cross-plattform fähige gls:gui Frameworks und nicht von einer
 spezifischen Sprache abhängig. Da nahezu keine Erfahrung mit den aufgeführten
-Frameworks vorhanden ist werden bei den Frontend Frameworks die Punkte der
-Verbreitung in der Community und Geschwindigkeit der Entwicklung ausgeschlossen
-da in allen Fällen nicht mal eine ungenaue Schätzung wirklich möglich wäre.
+Frameworks vorhanden ist, werden bei den Frontend Frameworks die Punkte der
+Verbreitung in der Community und Geschwindigkeit der Entwicklung ausgeschlossen.
+In beiden Fällen wäre nicht mal eine ungenaue Schätzung wirklich möglich.
 
 **** Qt
 
 Qt footcite:qt, "cute" ausgesprochen, ist ein Framework zum Entwickeln von
-grafischen Oberflächen welche auf verschiedenen System ohne grosse Änderungen
+grafischen Oberflächen, welche auf verschiedenen System ohne grosse Änderungen
 laufen sollen und sich dabei soweit als möglich wie eine native Applikation
 verhalten und "anfühlen" soll.
 
