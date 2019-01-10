@@ -38,12 +38,12 @@ Ereignis, und nach Kapiteln getrennt.
 Dieses Dokument wurde von Andreas Zweili im Rahmen der Diplomarbeit an der IBZ
 Schule erstellt und steht unter der gls:cc BY-SA 4.0 footcite:cc Lizenz.
 Dadurch darf die Arbeit unter beibehalten der Lizenz kopiert und
-weiterverarbeitet werden. Zusätzlich muss der Urheber gennant werden.
+weiterverarbeitet werden. Zusätzlich muss der Urheber genannt werden.
 
 * Initialisierung
 ** Vision
 
-Die Software soll gls:borg für den durschnittlichen Computer User zugänglich
+Die Software soll gls:borg für den durchschnittlichen Computer User zugänglich
 machen. Die Backups sollen dabei schnell und unkompliziert erstellt werden
 können. Die Möglichkeit automatischer im Hintergrund laufender Backups soll dem
 User gegeben sein damit die Hürde für Backups so tief wie möglich gehalten wird.
@@ -53,13 +53,13 @@ hat bis man sie braucht.
 
 ** Ausgangslage
 
-gls:borg ist deshalb interessant weil es wärend einem Backup relativ
+gls:borg ist deshalb interessant weil es während einem Backup relativ
 wenig Ressource im Vergleich zu anderen Systemen benötigt und schon relativ
-lange aktiv entwickelt wird. Dadurch ist es im Altag geprüft worden.
-Desweiteren bietet gls:borg die Funktion für Verschlüsselung was es einem User
+lange aktiv entwickelt wird. Dadurch ist es im Alltag geprüft worden.
+Des weiteren bietet gls:borg die Funktion für Verschlüsselung was es einem User
 ermöglicht die Daten auf einem unsicheren Cloud Speicher abzulegen.
 
-Desweiteren speichert gls:borg die Daten mit blockbasierter gls:dedup ab. Dies
+Des weiteren speichert gls:borg die Daten mit Block basierter gls:dedup ab. Dies
 hat den riesigen Vorteil das bei einem Backup nur die Änderungen auf
 Block-Ebene gespeichert werden und nicht jedes Mal die ganze Datei kopiert
 werden muss.
@@ -68,8 +68,8 @@ Damit ermöglicht die Software auch Backups von sehr grossen Dateien, wie Videos
 oder Disk Images von virtuellen Maschinen, in mehreren Version. Ohne dabei
 jedoch signifikant mehr an Speicher zu benötigen. Zusätzlich werden die Backups
 dadurch rasend schnell ausgeführt. Gerade dieses Feature macht gls:borg in den
-Augen des Authors besonders interessant da sich der durschnittliche User
-möglichst wenig mit Dingen wie Backups ausseinander setzen möchte. Umsobesser
+Augen des Autors besonders interessant da sich der durchschnittliche User
+möglichst wenig mit Dingen wie Backups auseinander setzen möchte. Umso besser
 also wenn sie schnell gehen und so wenig Speicherplatz wie möglich verbrauchen.
 
 gls:borg wird jedoch komplett über die Kommandozeile bedient. Somit ist es für
@@ -77,7 +77,7 @@ normale Benutzer eher schwierig den Zugang zu der Software zu finden geschweige
 denn sie zu bedienen.
 
 gls:borg bietet Entwicklern eine gls:json, gls:api, mit welcher sie, von gls:borg
-ausgegebenen Dateinen einfach weiterverarbeiten können.
+ausgegebenen Dateien einfach weiterverarbeiten können.
 
 gls:borg steht unter einer gls:bsd footcite:bsd Lizenz zur Verfügung und ist somit
 gls:libre.
@@ -89,12 +89,12 @@ Stunden bis zum 18. März 2019 erarbeitet werden.
 
 Das Hauptziel der Arbeit soll es sein eine einfach nutzbare grafische
 Oberfläche für gls:borg zu entwickeln. Da gls:borg selber freie Software ist und
-der Author mit gls:libre viel gute Erfahrungen gemacht hat soll das Projekt
+der Autor mit gls:libre viel gute Erfahrungen gemacht hat soll das Projekt
 selber auch wieder gls:libre sein. Zum einen um der Community etwas
 zurückzugeben des weiteren um anderen Entwicklern die Möglichkeit zu geben die
-Software zu verbessern und weiterzu entwickeln.
+Software zu verbessern und weiter zu entwickeln.
 
-Als nebenläufiges Ziel soll mit dieser Arbeit auch die Verbreitung von freier
+Als neben läufiges Ziel soll mit dieser Arbeit auch die Verbreitung von freier
 Software gefördert werden. Dies wird insbesondere dadurch erreicht, dass die
 Software selbst unter der gls:gpl Version 3 footcite:gplv3
 veröffentlicht wird. Wenn möglich sollen während der Entwicklung auch
@@ -105,18 +105,18 @@ unter diesem Link erreichbar: https://git.2li.ch/Nebucatnetzer/thesis
 Die Entwicklung wird hauptsächlich auf einem Linux System stattfinden. Da
 BorgBackup einerseits hauptsächlich auf Unix Systeme ausgelegt ist und
 anderseits die Hauptzielgruppe des Projektes auch auf Linux Usern liegt.
-Trotzdem sollen im Projekt Cross-Plattform fähige Technologien eingesetzt werden
+Trotzdem sollen im Projekt cross-plattform fähige Technologien eingesetzt werden
 damit es in der Zukunft möglich ist das Projekt auf andere Plattformen
 auszuweiten.
 
 *** Ziele inklusive Gewichtung
 
-Im Projektantrag wurden vorgängig vollgende Ziele definiert und entsprechend
+Im Projektantrag wurden vor gängig folgende Ziele definiert und entsprechend
 gewichtet. Die Gewichtung wurde dabei so vorgenommen, dass Ziele mit einer
 Muss-Gewichtung den Minimalanforderungen der Software entsprechen.
-Die weiteren Ziele wurden dann mit Ziffern von 5 - 1 gewichtet. Eine 5 bedeutet
+Die weiteren Ziele wurden dann mit Ziffern von 5-1 gewichtet. Eine 5 bedeutet
 dabei dass, das Ziel in naher Zukunft sehr nützlich/wichtig für die Software
-wär ist. Eine tiefe Zahl sollte dabei wenn möglich auch einmal in die Software
+wäre ist. Eine tiefe Zahl sollte dabei wenn möglich auch einmal in die Software
 integriert werden und ist nicht unwichtig.
 
 #+CAPTION: Projektziele
@@ -126,7 +126,7 @@ integriert werden und ist nicht unwichtig.
 | *Ziel-Nr.*\cellcolor[HTML]{C0C0C0} | *Zielsetzung*\cellcolor[HTML]{C0C0C0}                                                                                                                        | *Muss*\cellcolor[HTML]{C0C0C0} | *Wunsch*\newline (1-5, 5=sehr wichtig)\cellcolor[HTML]{C0C0C0} |
 |                                <5> | <30>                                                                                                                                                         | <10>                           |                                                           <10> |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
-|                                 1. | Die Anwendung setzt auf Cross-Plattform (Linux, Windows, OSX) fähige Technologien.                                                                           | x                              |                                                                |
+|                                 1. | Die Anwendung setzt auf cross-plattform (Linux, Windows, OS X) fähige Technologien.                                                                           | x                              |                                                                |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                 2. | Die Anwendung steht unter der gls:gpl v3 der Öffentlichkeit zur Verfügung.                                                                                   | x                              |                                                                |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
@@ -150,7 +150,7 @@ integriert werden und ist nicht unwichtig.
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                12. | Der User kann sein Repository auf einem über SSH erreichbaren Server ablegen.                                                                                |                                |                                                              5 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
-|                                13. | Der User kann den Namen eines Archives selbst bestimmen.                                                                                                     |                                |                                                              5 |
+|                                13. | Der User kann den Namen eines Archivs selbst bestimmen.                                                                                                     |                                |                                                              5 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                14. | Die Anwendung meldet transparent, wenn das Repository nicht erreichbar ist.                                                                                  |                                |                                                              5 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
@@ -172,7 +172,7 @@ integriert werden und ist nicht unwichtig.
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                23. | Die Anwendung zeigt beim ersten Starten einen Setup Wizard.                                                                                                  |                                |                                                              3 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
-|                                24. | Der User kann sich mit 3 Klicks das Log eines Archives anschauen. Nur möglich mit einer zusätzlichen DB.                                                     |                                |                                                              3 |
+|                                24. | Der User kann sich mit 3 Klicks das Log eines Archivs anschauen. Nur möglich mit einer zusätzlichen DB.                                                     |                                |                                                              3 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                25. | Die Anwendung kann Systembenachrichtigungen auslösen.                                                                                                        |                                |                                                              3 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
@@ -186,7 +186,7 @@ integriert werden und ist nicht unwichtig.
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                30. | Der User kann die "Retention Policy" konfigurieren.                                                                                                          |                                |                                                              2 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
-|                                31. | Die Anwendung kann mit allen Features von BargBackup umgehen.                                                                                                |                                |                                                              2 |
+|                                31. | Die Anwendung kann mit allen Features von BorgBackup umgehen.                                                                                                |                                |                                                              2 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                32. | Die Applikation prüft, ob sie sich im richtigen Netzwerk befindet bevor sie eine Verbindung zum Server aufbaut.                                              |                                |                                                              2 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
@@ -199,11 +199,11 @@ darzustellen oder nützlich zu erweitern soweit dies über die gls:api möglich
 ist. Wie in, Abbildung:([[fig:kontext]]), zu sehen ist werden die Aktion effektiv
 immer vom Borg Binary ausgeführt und nicht von der grafischen Oberfläche. Eine
 Erweiterung von gls:borg ist nicht vorgesehen. Backup und Verschlüsselung sind
-heikle Themen und sollten umbedingt nur von Experten angegangen werden. Das
+heikle Themen und sollten unbedingt nur von Experten angegangen werden. Das
 Potential für Fehler und die Auswirkungen deren sind einfach schlicht zu gross.
 
-Desweiteren wird die Grundlage für eine kolaborative Entwicklung geschaffen.
-Wärend der Laufzeit der Diplomarbeit werden jedoch keine Inputs aus der Borg
+Des weiteren wird die Grundlage für eine kollaborative Entwicklung geschaffen.
+Während der Laufzeit der Diplomarbeit werden jedoch keine Inputs aus der Borg
 Community im Bezug auf die Entwicklung entgegengenommen.
 
 Bugs von gls:borg welche während der Dauer der Diplomarbeit vom Studenten
@@ -216,10 +216,10 @@ entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
 
 ** Projektmethode
 
-Für das Projekt wurde die Wasserfall-methode gewählt. Da nur eine
+Für das Projekt wurde die Wasserfall-Methode gewählt. Da nur eine
 einzige Person am Projekt arbeitet kann nur ein Task nach dem anderen
 abgearbeitet werden und viele Aufgaben stehen in Abhängigkeiten zu einander.
-Somit macht das iterative Vorgehen der Wassfall-methode für dieses Projekt am
+Somit macht das iterative Vorgehen der Wasserfall-Methode für dieses Projekt am
 meisten Sinn.
 
 ** Konfigurationsmanagement
@@ -229,9 +229,9 @@ versioniert wird und welche allgemeinen Werkzeuge eingesetzt werden.
 
 *** Versionskontrolle
 
-Die komplette Dokumentation, der Quellcode der Applikation sowie jeglich
-zusäzliche Dokumente wie etwa die Zeitplanung werden mittels der Software Git
-Versioniert. Thematisch zusammengehörende Änderungen werden in einem Commit
+Die komplette Dokumentation, der Quellcode der Applikation sowie jegliche
+zusätzliche Dokumente wie etwa die Zeitplanung werden mittels der Software Git
+versioniert. Thematisch zusammengehörende Änderungen werden in einem Commit
 zusammengefasst. Somit ist jederzeit nachvollziehbar was wann geändert hat. Ein
 Commit sollte dabei gemäss dem Artikel von Chris Beams "How to write a Git
 Commit Message" footcite:commit und in englischer Sprache geschrieben sein.
@@ -240,10 +240,10 @@ Versionsnummern sind für die Applikation zum jetzigen Zeitpunkt noch nicht
 vorgesehen. Sollten sie zukünftig einmal verwendet werden soll eine semantische
 Versionierung footcite:semver verwendet. Dabei ist eine Versionsnummer immer
 nach diesem Schema aufgebaut, MAJOR.MINOR.PATCH. Bei Änderungen wir die:
-1. MAJOR Version erhöt wenn man inkompatible Änderungen an der gls:api macht.
-2. MINOR Version erhöt wenn man Funktionalität hinzufügt die
-   rückwärtskompatibel ist.
-3. PATCH Version erhöt wenn man rückwärtskompatible Bug-Fixes hinzufügt.
+1. MAJOR Version erhöht wenn man inkompatible Änderungen an der gls:api macht.
+2. MINOR Version erhöht wenn man Funktionalität hinzufügt die
+   abwärtskompatibel ist.
+3. PATCH Version erhöht wenn man abwärtskompatibel Bug-Fixes hinzufügt.
 
 Auf jeden Fall sollte wenn möglich immer nur lauffähiger Code im Master Branch
 eingecheckt sein damit der Master Branch immer eine funktionierende Software
@@ -272,15 +272,15 @@ hauptsächlich der Editor GNU Emacs footcite:emacs verwendet. GNU Emacs ist mit
 32 Jahren (obwohl seine Wurzeln bis ins Jahre 1976 zurückgehen) wohl eines der
 ältesten noch aktiven Software Projekte. Emacs ist gls:libre unter der
 gls:gpl v3. Emacs wurde gewählt da es ein schneller, schlanker und sehr
-flexibler Texteditior ist. Von normaler Textmanipulation über Taskmanagement
+flexibler Texteditor ist. Von normaler Textmanipulation über Taskmanagement
 und Emails schreiben ist alles möglich.
 
 *** Dokumentation
 
 Diese Dokumentation wurde in Org-mode footcite:orgmode, einer Erweiterung für
 den Text Editor Emacs, geschrieben. Die Syntax erinnert an Markdown und
-Org-mode bietet einem eine vielzahl an Hilfen dafür inklusive dem erstellen von
-Tabellen und Spreadsheet Funktionen. Für finalle Version des Dokuments kann
+Org-mode bietet einem eine Vielzahl an Hilfen dafür inklusive dem erstellen von
+Tabellen und Spreadsheet Funktionen. Für finale Version des Dokuments kann
 Org-mode die ursprünglich Textdatei über LaTeX in ein PDF exportieren.
 
 LaTeX footcite:latex ist eine Software, welche einem die Benutzung des
@@ -301,26 +301,26 @@ Die Diagramme wurden mit Draw.io footcite:draw erstellt. Draw.io ist gls:libre
 unter Apache Lizenz Version 2.0 footcite:apache und kann sowohl als Desktop
 Applikation wie auch als Webanwendung genutzt werden.
 
-Beim Design der Arbeit wurden soweit als möglich die typgraphischen Regeln aus
+Beim Design der Arbeit wurden soweit als möglich die typographischen Regeln aus
 dem Buch "Practical Typography" von Matthew Butterick footcite:typo angewandt.
-Bei den Diagrammen wurden aussschliesslich Farben aus der von Google
+Bei den Diagrammen wurden ausschliesslich Farben aus der von Google
 entwickelten Design Sprache "Material"footcite:material eingesetzt.
 
 ** Zeitplanung
 
 Die detaillierte Zeitplanung ist dem Ganttchart in der Datei
 [[file:Zeitplanung_Andreas_Zweili.html][Zeitplanung_Andreas_Zweili.html]] zu entnehmen. Bei der Zeitplanung wurde darauf
-geachtet das die Arbeit soweit als möglich nicht mit dem Berufsleben kolidiert.
+geachtet das die Arbeit soweit als möglich nicht mit dem Berufsleben kollidiert
 An einem normalen Arbeitstag wurde dabei damit gerechnet das ca. 2 Stunden
 Arbeit am Abend möglich sein sollten. An einem arbeitsfreien Tag wurde mit 6
-Stunden arbeit gerechnet. Über die Festtage wurden diverse Tage von der Planung
+Stunden Arbeit gerechnet. Über die Festtage wurden diverse Tage von der Planung
 ausgenommen da es nicht realistisch schien das an diesen Tagen die Arbeit
 signifikant vorwärts gehen würde. Auch Schultage wurde nicht als Arbeitstage
 gerechnet da man meist nicht mehr für weitere Tätigkeiten gross motiviert ist.
 
-Als zusätliche Massnahme um die Arbeitslast zu verteilen wurde vom 14. Januar
+Als zusätzliche Massnahme um die Arbeitslast zu verteilen wurde vom 14. Januar
 bis zum 11. März jeder Montag auf der Arbeitsstelle als frei eingegeben.
-Dadurch steht wärend des Projektes etwas mehr Zeit zur verfügung als sonst mit
+Dadurch steht wägend des Projektes etwas mehr Zeit zur Verfügung als sonst mit
 einer 100% Arbeitsstelle möglich wäre.
 
 ** Controlling
@@ -347,7 +347,7 @@ werden.
 #+LATEX:\newpage
 *** Ressourcen
 
-Folgende Ressourcen werden wärend der Arbeit benötigt:
+Folgende Ressourcen werden während der Arbeit benötigt:
 #+CAPTION: Ressourcen
 #+ATTR_LATEX: :environment longtable :align |p{5cm}|p{3cm}|p{3cm}|p{7cm}|
 #+NAME: tab:zeitcontr
@@ -422,7 +422,7 @@ seiner Auswirkung bewertet.
 |-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------|
 | Die Programmierung des Programms benötigt zu viel Zeit.                           | Bei der Projektplanung genau definieren was die GUI Applikation beinhalten muss. Ziele definieren, Abgrenzungen treffen.      |
 |-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------|
-| User haben keine Zeit für Utility Tests.                                          | Vorgängig einen Termin abmachen.                                                                                              |
+| User haben keine Zeit für Utility Tests.                                          | Vor gängig einen Termin abmachen.                                                                                              |
 |-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------|
 | gls:borg ändert fundamental seine gls:api.                                        | Gegen eine fixe Version von gls:borg entwickeln.                                                                              |
 |-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------|
@@ -432,7 +432,7 @@ seiner Auswirkung bewertet.
 
 Die Projektumwelt-Analyse ist eine Methode, die Beziehungen,
 Erwartungshaltungen und Einflüsse auf das Projekt durch interne und
-externe soziale Umwelten zu betrachten und zu bewerten. Auf Grundlage
+externe soziale Umwelt zu betrachten und zu bewerten. Auf Grundlage
 der Analyseergebnisse werden erforderliche Massnahmen zur Gestaltung
 der Umweltbeziehungen abgeleitet. Die Gestaltung der
 Projektumweltbeziehungen ist eine Projektmanagementaufgabe. In der
@@ -442,7 +442,7 @@ Zusätzlich ist die Beziehung der Stakeholder zum Projekt noch in der
 Abbildung:([[fig:umweltgrafik]]) grafisch dargestellt.
 
 Da das Projekt so ausgelegt ist das der Projektleiter es in Eigenarbeit
-verwirklichen kann ist der Einfluss der Stakeholder wärend der Umsetzung sehr
+verwirklichen kann ist der Einfluss der Stakeholder während der Umsetzung sehr
 gering. Die User werden bei der Entwicklung mittels einer "Usability" Studie
 miteinbezogen und die gls:borg Community wird mit regelmässigen Posts auf dem
 offiziellen Github Repository auf dem Laufenden gehalten.
@@ -738,13 +738,13 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 |---------------------+--------------------------------------------------------------------------------------------------|
 | *Normal Flow*       | 1. Ein Backup aus der Liste auswählen.                                                           |
 |                     | 2. Den Button "Restore" klicken.                                                                 |
-|                     | 3. Ein Pop-Up zur Auswahl eines Zielpfades erscheint.                                            |
+|                     | 3. Ein Pop-up zur Auswahl eines Zielpfades erscheint.                                            |
 |                     | 4. Den Zielpfad mit klick auf "Choose" bestätigen.                                               |
 |                     | 5. Ein Dateiexplorer öffnet sich mit dem ausgewählt Pfad und enthält die Dateien aus dem Backup. |
 |---------------------+--------------------------------------------------------------------------------------------------|
 | *Alternative Flow*  | 1. Ein Backup aus der Liste auswählen.                                                           |
 |                     | 2. Den Button "Restore" klicken.                                                                 |
-|                     | 3. Ein Pop-Up zur Auswahl eines Zielpfades erscheint.                                            |
+|                     | 3. Ein Pop-up zur Auswahl eines Zielpfades erscheint.                                            |
 |                     | 4. Die Aktion mit klick auf "Cancel" abbrechen.                                                  |
 |---------------------+--------------------------------------------------------------------------------------------------|
 | *Notes*             | -                                                                                                |
@@ -890,7 +890,7 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 |                     | 2. Ein neues Fenster mit den Einstellungen öffnet sich.                                          |
 |                     | 3. Der Benutzer kann Einstellungen ändern.                                                       |
 |                     | 4. Der Button "Cancel" wird angeklickt.                                                          |
-|                     | 5. Jeglich Änderungen werden verworfen und die Konfigurationsdatei bleibt im aktuellen Zustand.  |
+|                     | 5. Jegliche Änderungen werden verworfen und die Konfigurationsdatei bleibt im aktuellen Zustand.  |
 |---------------------+--------------------------------------------------------------------------------------------------|
 | *Notes*             | -                                                                                                |
 |---------------------+--------------------------------------------------------------------------------------------------|
@@ -939,7 +939,7 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 |---------------------+-----------------------------------------------------------------------|
 | *Alternative Flow*  | 1. Auf den Button "Settings" klicken.                                 |
 |                     | 2. Bei der Option "Automatic Backups" den Hacken setzen.              |
-|                     | 3. Die Aktion mit klick auf "Cancel" abrechen.                        |
+|                     | 3. Die Aktion mit klick auf "Cancel" abbrechen                        |
 |---------------------+-----------------------------------------------------------------------|
 | *Notes*             | -                                                                     |
 |---------------------+-----------------------------------------------------------------------|
@@ -1017,7 +1017,7 @@ der Tabelle Projektziele ([[tab:projektziele]]).
 *** Backend
 
 Fürs Backend bieten sich die folgende drei Sprachen an: [[C#][C#]], [[C++][C++]], [[Python][Python]].
-Dies vorallem weil alle Allrounder Sprachen sind und sich gut für Desktop
+Dies vor allem weil alle Allrounder Sprachen sind und sich gut für Desktop
 Applikationen eignen.
 
 **** C#
@@ -1031,18 +1031,18 @@ zu nutzen.
 Sie ist zu Teilen gls:libre. Die Common Language Runtime welche für das
 Ausführen von Software zuständig ist, ist unter der MIT Lizenz lizenziert
 footcite:csharp der aktuelle Compiler Roslyn ist unter der Apache Lizenz
-verfügbar footcite:roslyn. Da es sehr viele offiziele Teile um die Sprache C#
+verfügbar footcite:roslyn. Da es sehr viele offizielle Teile um die Sprache C#
 gibt kann im Rahmen des Projektes nicht direkt abgeschätzt werden ob alle
 benötigten Teile gls:libre sind. Für die Bewertung wird deshalb ein kleinerer
 Wert als bei C++ und Python genommen.
 
-C# ist die Programmierspache welche an der IBZ hauptsächlich gelehrt wird.
+C# ist die Programmiersprache welche an der IBZ hauptsächlich gelehrt wird.
 Dadurch sind die Kenntnisse der Sprache und ihrer Anwendung bereits
 einigermassen vorhanden. Ausserhalb der Schule wurde die Sprache jedoch noch nie
 eingesetzt.
 
 Entwickelt wird C# hauptsächlich mit der gls:ide Microsoft Visual Studio.
-Eine sehr umfangreiche und komlexe Software. Visual Studio ist dabei nur für
+Eine sehr umfangreiche und komplexe Software. Visual Studio ist dabei nur für
 Windows und OS X erhältlich. Es ist auch möglich C# Projekte ausserhalb von
 Visual Studio zu erstellen ist jedoch nicht sehr einfach.
 
@@ -1057,7 +1057,7 @@ Unter Windows ist das Setup von C# relativ einfach. Allerdings ist es auch dort
 im Vergleich zu Python eine umfangreiche Angelegenheit Visual Studio sauber zu
 installieren und nutzbar zu machen. Auf anderen Plattform wird dies leider
 nicht einfacher und unter Linux ist es bereits schwierig eine funktionierende
-Umgebung in gang zu bringen.
+Umgebung in Gang zu bringen.
 
 Da C# bereits an der IBZ gelernt wird ist der Lernfaktor hier im Vergleich zu
 den anderen Sprachen sicher am kleinsten. Allerdings gibt es noch keinerlei
@@ -1069,9 +1069,9 @@ von Windows zurückgezogen. Da C# eine sehr Windows lastige Sprache ist wird
 daher davon ausgegangen das die Sprache innerhalb der gls:borg Community nicht
 sehr verbreitet ist.
 
-C# ist eine stark typisiert Sprache und kompilierte Sprache. Desweiteren ist
+C# ist eine stark typisiert Sprache und kompilierte Sprache. Des weiteren ist
 Visual Studio der Erfahrung nach nicht die schnellste Software. Dies alles
-führt dazu das C# nicht gerade die schnellste Sprache zum programmmieren ist.
+führt dazu das C# nicht gerade die schnellste Sprache zum Programmieren ist.
 Jedoch aufgrund des moderneren Unterbaus sicher schneller als C++.
 
 #+CAPTION: C# Bewertungstabelle
@@ -1117,11 +1117,11 @@ Zum entwickeln braucht es verhältnismässig wenig. Da die Sprache bereits sehr
 alt ist, stammt sie noch aus einer Zeit wo man noch etwas rudimentärer
 programmierte. Allerdings braucht man in jedem Fall einen gls:compiler um ein
 ausführbares Programm zu erzeugen. Bei komplexeren Programmen wird man um
-mindestens so etwas wie glspl:makefile auch nicht herumkommen.
+mindestens so etwas wie glspl:makefile auch nicht herum kommen
 
 Im Vergleich zu Python oder C# ist C++ wohl die am schwersten lesbare Sprache.
 Zudem gibt es auch keinen zentralen Styleguide welcher einem vorgeben würde wie
-der Code am besten aussschauen sollte. Somit haben sich über die Jahre mehrere
+der Code am besten ausschauen sollte. Somit haben sich über die Jahre mehrere
 Standards etabliert.
 
 Der Lernfaktor wäre Aufgrund der mangelnden Vorkenntnisse hier ganz klar am
@@ -1133,7 +1133,7 @@ Verbreitung. Daher ist anzunehmen das sicher mindestens ein grössere Teil der
 
 Da C++ auch heute noch zu den meistgenutzten Sprachen gehört gibt es
 entsprechend viele Ressourcen dazu und Beispiel Projekte von denen man ableiten
-kann. Auch hilfreiche Libraries gibts es sehr viele welche den Programmierer
+kann. Auch hilfreiche Libraries gibt es sehr viele welche den Programmierer
 unterstützen können. Die Sprache selber ist jedoch eher umständlich zu
 schreiben. Hinzu kommt noch das man während der Entwicklung immer wieder den
 Code kompilieren muss. In einem Projekt mit dieser begrenzten Zeitspanne eher
@@ -1144,7 +1144,7 @@ ungeeignet.
 #+NAME: tab:cpp
 |---------------------------------------------+--------------------------------------+------------------------------------------+-----------------------------------------------+------------------------------------------------|
 | <20>                                        |                                 <20> |                                     <20> |                                          <20> |                                           <20> |
-| *Kriterium*\cellcolor[HTML]{C0C0C0}         | *Gewichtung*\cellcolor[HTML]{C0C0C0} | *max. Punktzahl*\cellcolor[HTML]{C0C0C0} | *erreichte Punktzahl*\cellcolor[HTML]{C0C0C0} | *Kriteriums- ergebnis*\cellcolor[HTML]{C0C0C0} |
+| *Kriterium*\cellcolor[HTML]{C0C0C0}         | *Gewichtung*\cellcolor[HTML]{C0C0C0} | *max. Punktzahl*\cellcolor[HTML]{C0C0C0} | *erreichte Punktzahl*\cellcolor[HTML]{C0C0C0} | *Kriteriums- -ergebnis*\cellcolor[HTML]{C0C0C0} |
 |---------------------------------------------+--------------------------------------+------------------------------------------+-----------------------------------------------+------------------------------------------------|
 | 1. Cross Plattform nutzbar                  |                                   10 |                                       10 |                                             8 |                                             80 |
 | 2. Freie Software                           |                                    5 |                                       10 |                                            10 |                                             50 |
@@ -1168,7 +1168,7 @@ Der Python Interpreter ist für eine Vielzahl an Betriebssystemen erhältlich,
 inklusive Windows, OS X und Linux. Nahezu jedes Desktop Linux System kommt mit
 Python vor installiert. Auch OS X kommt bereits ab Werk mit Python Version 2.
 Version 3 lässt sich sehr einfach nachinstallieren und ist einfach nutzbar.
-Unter Windows geschtaltet sich die Installation etwas aufwändiger aber auch
+Unter Windows gestaltetet sich die Installation etwas aufwändiger aber auch
 nicht sehr kompliziert integriert sich in Windows jedoch etwas weniger elegant
 als C#.
 
@@ -1184,12 +1184,12 @@ erstellen.
 Für Python gibt es ein paar glspl:ide welchen den Programmierer bei seiner
 Arbeit unterstützen können. Keine davon ist allerdings ein Muss um Python
 programmieren zu können. Im einfachsten Fall wäre dies mit Notepad möglich. Ein
-Editor mit etwas vortgeschritteren Features wäre jedoch empfehlenswert.
+Editor mit etwas fortgeschritteneren Features wäre jedoch empfehlenswert.
 
 Python unterstützt mehrere Programmierungsparadigmen wie etwa
-objekt-orientiert, funktionale oder Prozedurale Paradigmen. Bei der Entwicklung
+objektorientiert, funktionale oder Prozedurale Paradigmen. Bei der Entwicklung
 von Python wurde sehr grossen Wert auf die Lesbarkeit der Sprache gelegt. Dies
-mit dem Hintergedanken das eine Programmierspache viel häufiger gelesen als
+mit dem Hintergedanken das eine Programmiersprache viel häufiger gelesen als
 effektiv geschrieben wird footcite:pep8.
 
 Um ein Python Programm zu starten braucht es eigentlich kein grosses Setup.
@@ -1211,7 +1211,7 @@ gls:borg selber wurde in Python geschrieben. Daher ist davon auszugehen das
 Python innerhalb dieser Community eine sehr hohe Verbreitung geniesst.
 
 Python ist eine dynamisch typisierte und interpretierte Sprache. Dies bedeutet
-das man bei Variabeln nicht explizit den Typ angeben muss und die Programme zur
+das man bei Variablen nicht explizit den Typ angeben muss und die Programme zur
 Laufzeit für den Computer übersetzt werden. Interpretierte Sprachen haben den
 Vorteil das man mit ihnen in der Regel sehr schnell und unkompliziert
 entwickeln kann, dies jedoch zu Lasten der Performance.
@@ -1221,7 +1221,7 @@ entwickeln kann, dies jedoch zu Lasten der Performance.
 #+NAME: tab:python
 |--------------------------------------------+--------------------------------------+------------------------------------------+-----------------------------------------------+------------------------------------------------|
 | <20>                                       |                                 <20> |                                     <20> |                                          <20> |                                           <20> |
-| *Kriterium*\cellcolor[HTML]{C0C0C0}        | *Gewichtung*\cellcolor[HTML]{C0C0C0} | *max. Punktzahl*\cellcolor[HTML]{C0C0C0} | *erreichte Punktzahl*\cellcolor[HTML]{C0C0C0} | *Kriteriums- ergebnis*\cellcolor[HTML]{C0C0C0} |
+| *Kriterium*\cellcolor[HTML]{C0C0C0}        | *Gewichtung*\cellcolor[HTML]{C0C0C0} | *max. Punktzahl*\cellcolor[HTML]{C0C0C0} | *erreichte Punktzahl*\cellcolor[HTML]{C0C0C0} | *Kriteriums- -ergebnis*\cellcolor[HTML]{C0C0C0} |
 |--------------------------------------------+--------------------------------------+------------------------------------------+-----------------------------------------------+------------------------------------------------|
 | 1. Cross Plattform nutzbar                 |                                   10 |                                        8 |                                             8 |                                             80 |
 | 2. Freie Software                          |                                    5 |                                       10 |                                            10 |                                             50 |
@@ -1239,14 +1239,14 @@ entwickeln kann, dies jedoch zu Lasten der Performance.
 #+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4::@11$5=@11$2 * @11$4::@12$5=@12$2 * @12$4
 #+TBLFM: @>$5=vsum(@3..@-1)
 
-*** FrontEnd
+*** Frontend
 
 Fürs Frontend sind folgende Projekte interessant: [[Qt][Qt]], [[Gtk][Gtk]] und [[Electron][Electron]]. Alle
-drei sind cross-plattfrom fähige gls:gui Frameworks und nicht von einer
+drei sind cross-plattform fähige gls:gui Frameworks und nicht von einer
 spezifischen Sprache abhängig. Da nahezu keine Erfahrung mit den aufgeführten
-Frameworks vorhanden ist werden bei den Frontenend Frameworks die Punkte der
+Frameworks vorhanden ist werden bei den Frontend Frameworks die Punkte der
 Verbreitung in der Community und Geschwindigkeit der Entwicklung ausgeschlossen
-da in allen Fällen nicht mal eine ungenaune Schätzung wirklich möglich wäre.
+da in allen Fällen nicht mal eine ungenaue Schätzung wirklich möglich wäre.
 
 **** Qt
 
@@ -1259,7 +1259,7 @@ Die Rechte an Qt hält die Firma "The Qt Company". Das Framework Qt wird jedoch
 offen entwickelt und die Community hat ein Mitspracherecht. Die Linux
 Desktopumgebung KDE nutzt das Qt Framework intensiv. Qt ist gls:libre und der
 gls:gpl v3 footcite:qtlicense oder mit einer kostenpflichtigen proprietären
-Lizen erhältlich falls die gls:gpl nicht genutzt werden kann.
+Lizenz erhältlich falls die gls:gpl nicht genutzt werden kann.
 
 Vorkenntnisse zu Qt sind nur sehr wenig vorhanden. Mehr als ein paar Tests
 wurden damit noch nicht gemacht.
@@ -1305,7 +1305,7 @@ gross.
 
 Gtk ist sowohl für Linux wie auch für Windows und OS X erhältlich. Gtk hat als
 Projekt der Gnome Foundation seine Wurzeln jedoch ganz klar in der Linux Welt.
-Gtk ist gls:libre under der Lesser General Public Lizenz footcite:gtklicense.
+Gtk ist gls:libre unter der Lesser General Public Lizenz footcite:gtklicense.
 Gtk ist ein Projekt der GNOME Foundation einer nicht für Profit Organisation
 welche die Entwicklung diverser freier Software Projekte koordiniert.
 
@@ -1330,7 +1330,7 @@ grafisch zu erstellen.
 
 Wie auch Qt kann man Gtk entweder direkt in der Backend Sprach programmieren
 oder aus dem gls:gui Designer dann als XML exportieren. Der Code in der
-Dokumentation ist in C geschrieben was auch nicht die zugängliste Sprache ist.
+Dokumentation ist in C geschrieben was auch nicht die zugänglichste Sprache ist.
 
 Die Verwendung von Gtk innerhalb des Programms scheint ähnlich einfach zu sein
 wie bei Qt. Die Installation ist allerdings unter Windows eher das Gegenteil
@@ -1361,7 +1361,7 @@ Da die Kenntnisse gleich null sind ist der Lernfaktor auf dem Maximum.
 
 **** Electron
 
-Electron ist ein cross-platform Framework zum entwickeln von glspl:gui welches
+Electron ist ein cross-plattform Framework zum entwickeln von glspl:gui welches
 dabei jedoch auf Technologien aus der Webentwicklung benutzt. Entwickelt wird
 Electron von der Firma Github und ist gls:libre unter der MIT Lizenz
 footcite:electronlicense.
@@ -1373,18 +1373,18 @@ Implementierung sind noch keine Kenntnisse vorhanden.
 Die Verwendung von Webtechnologien macht Electron zwar sehr kompatibel auf den
 unterstützten Systemen, oftmals sehen die Applikationen jedoch doch eher wie
 eine Webseite als wie eine Desktop Applikation aus. Ein weitere Nachteil ist
-der hohe Ressourcenverbrauch da jede Applikation nahezu einer eigenene Instanz
+der hohe Ressourcenverbrauch da jede Applikation nahezu einer eigenen Instanz
 des Google Chrome Browsers gleich kommt.
 
-Bei der Installation muss Nodejs und der Paket Manager von Nodejs, NPM,
+Bei der Installation muss Node.js und der Paket Manager von Node.js, NPM,
 vorhanden sein. Zum Programmieren selber braucht es keine speziellen Tools. Ein
 Editor und ein Webbrowser sollten aussreichend sein.
 
 Electron Applikationen bestehen hauptsächlich aus HTML, CSS und JavaScript
-Code. Wenn man nich die komplette Applikation in NodeJS programmieren möchte
-kommt dann noch eine zusätzliche Sprache hinzu. HTML ist ähnlich müsahm zu
+Code. Wenn man sich die komplette Applikation in Node.js programmieren möchte
+kommt dann noch eine zusätzliche Sprache hinzu. HTML ist ähnlich mühsam zu
 lesen wie XML. CSS und JavaScript sind relativ angenehm zu lesen wobei es für
-beide keine offiziellen Style Guides gibt. Was bei Webanwendungen jedoch immer
+beide keine offiziellen Styleguides gibt. Was bei Webanwendungen jedoch immer
 das schwierigste ist, ist der wechsel zwischen verschiedenen Sprachen und
 Konzepten. Dieses Problem hat man bei Electron leider auch.
 
@@ -1442,8 +1442,8 @@ Python zu setzen und fürs Frontend Qt zu benutzen.
 Da die einzusetzende Technologie nun feststeht lässt sich auch gut ein Name für
 die Applikation ableiten. Oftmals werden die grafischen Applikationen gleich
 benannt wie die Kommandozeilen Applikation aber mit dem Namen des gls:gui
-Frameworks als Sufix. Somit wird das zu erstellende gls:gui für gls:borg im
-weiteren Verlauf der Arbeit nun Borg-Qt gennant.
+Frameworks als Suffix Somit wird das zu erstellende gls:gui für gls:borg im
+weiteren Verlauf der Arbeit nun Borg-Qt genannt
 
 ** Testing
 
@@ -1458,7 +1458,7 @@ werden das nicht funktionierende automatische Tests den Abschluss des Projektes
 verhindern.
 
 Getestet wird die Applikation jeweils auf dem Computer des Projektleiters. Auf
-diesem läuft die aktuelle langzeitsupport Version (18.04) von Ubuntu
+diesem läuft die aktuelle Langzeitsupport Version (18.04) von Ubuntu
 footcite:ubuntu Linux, mit der GNOME Desktop Umgebung footcite:gnome, als
 Betriebssystem. Die Tests werden jeweils gegen eine von PyInstaller generierte
 Binärdatei ausgeführt. Der genaue Vorgang der Erstellung dieser Datei wird in
@@ -1514,7 +1514,7 @@ folgt aus:
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
 | *TC-10*                      | Lokales Backup löschen                             | TC-04 ausgeführt.                                                               | 1. Den Button “Delete” betätigen.                                                                                                                                                                                                                                                      | -                                                     | Die Anwendung wirft eine Fehlermeldung das der User ein Backup auswählen soll.                                                           | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    |                                  |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
-| *TC-11*                      | Lokales Backup wiederherstellen                    | TC-04 ausgeführt.                                                               | 1. In der Backup Liste das Backup auswählen.\newline 2. Den Button “Restore” betätigen.\newline 3. Im geöffneten Dateidialog den Pfad "/home/andreas/Downloads" auswählen.\newline 4. Den Button “Open” anklicken.                                                                     | -                                                     | Nach erfolgtem Wiederherstellen öffnet ein Datei Explorer den Ziel Pfad.                                                                 | Die Anwendung und ein Datei Explorer wird angezeigt.                                                                                                                      |                                  |
+| *TC-11*                      | Lokales Backup wiederherstellen                    | TC-04 ausgeführt.                                                               | 1. In der Backup Liste das Backup auswählen.\newline 2. Den Button “Restore” betätigen.\newline 3. Im geöffneten Dateidialog den Pfad "/home/andreas/Downloads" auswählen.\newline 4. Den Button “Open” anklicken.                                                                     | -                                                     | Nach erfolgtem Wiederherstellen öffnet ein Dateiexplorer den Ziel Pfad.                                                                 | Die Anwendung und ein Dateiexplorer wird angezeigt.                                                                                                                      |                                  |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
 | *TC-12*                      | Lokales Backup wiederherstellen                    | TC-01 ausgeführt.                                                               | 1. Den Button “Backup” betätigen.                                                                                                                                                                                                                                                      | -                                                     | Die Anwendung wirft eine Fehlermeldung das der User ein Backup auswählen soll.                                                           | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    |                                  |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
@@ -1522,21 +1522,21 @@ folgt aus:
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
 | *TC-14*                      | Lokales Backup wiederherstellen                    | TC-01 ausgeführt.                                                               | 1. In der Backup Liste das Backup auswählen.\newline 2. Den Button “Restore” betätigen.\newline 3. Im geöffneten Dateidialog den Pfad "/home/andreas/Downloads" auswählen.\newline 4. Den Button “Cancel” anklicken.                                                                   | -                                                     | Der Datei Dialog schliesst sich wieder.                                                                                                  | Die Anwendung wird angezeigt.                                                                                                                                             |                                  |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
-| *TC-15*                      | Home Directory sichern und wiederherstellen        | TC-01 ausgeführt.                                                               | 1. Vom Pfad "/home/andreas/" ein Backup erstellen.\newline 2. In der Backup Liste das gemachte Backup auswählen.\newline 3. Den Button “Restore” betätigen.\newline 4. Im geöffneten Dateidialog den Pfad "/home/andreas/Downloads" auswählen.\newline 5. Den Button “Open” anklicken. | "/home/andreas/"                                      | Nach erfolgtem Wiederherstellen öffnet ein Datei Explorer den Ziel Pfad.\newline Darin fehlen jedoch temporäre Pfade wie “~/.cache” etc. | Die Anwendung und ein Datei Explorer wird angezeigt.                                                                                                                      |                                  |
+| *TC-15*                      | Home Directory sichern und wiederherstellen        | TC-01 ausgeführt.                                                               | 1. Vom Pfad "/home/andreas/" ein Backup erstellen.\newline 2. In der Backup Liste das gemachte Backup auswählen.\newline 3. Den Button “Restore” betätigen.\newline 4. Im geöffneten Dateidialog den Pfad "/home/andreas/Downloads" auswählen.\newline 5. Den Button “Open” anklicken. | "/home/andreas/"                                      | Nach erfolgtem Wiederherstellen öffnet ein Dateiexplorer den Ziel Pfad.\newline Darin fehlen jedoch temporäre Pfade wie “~/.cache” etc. | Die Anwendung und ein Dateiexplorer wird angezeigt.                                                                                                                      |                                  |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
-| *TC-16*                      | Einzelne Datei wiederherstellen                    | TC-04 ausgeführt.                                                               | 1. In der Backup Liste das Backup auswählen.\newline 2. Den Button “Mount” betätigen.\newline 3. Aus dem sich öffnenden Datei Explorer die Datei README.org nach "/home/andreas/Downloads" kopieren.                                                                                   | -                                                     | Die wiederhergestellte Datei ist identisch mit der in TC-04 gesicherten.                                                                 | Die Anwendung und ein Datei Explorer wird angezeigt.                                                                                                                      |                                  |
+| *TC-16*                      | Einzelne Datei wiederherstellen                    | TC-04 ausgeführt.                                                               | 1. In der Backup Liste das Backup auswählen.\newline 2. Den Button “Mount” betätigen.\newline 3. Aus dem sich öffnenden Dateiexplorer die Datei README.org nach "/home/andreas/Downloads" kopieren.                                                                                   | -                                                     | Die wiederhergestellte Datei ist identisch mit der in TC-04 gesicherten.                                                                 | Die Anwendung und ein Dateiexplorer wird angezeigt.                                                                                                                      |                                  |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
 | *TC-17*                      | Einzelne Datei wiederherstellen                    | TC-01 ausgeführt.                                                               | 1. Das Lokale Repository an einen beliebigen Ort verschieben.\newline 2. In der Backup Liste das Backup auswählen.\newline 3. Den Button “Mount” betätigen.                                                                                                                            | -                                                     | Die Anwendung wirft eine Fehlermeldung das sie das lokale Repository nicht finden kann.                                                  | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    |                                  |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
-| *TC-18*                      | Pfad des lokalen Backup Repositorys anpassen       | TC-04 ausgeführt.\newline Backup Repository nach "/tmp/test-borgqt2" verschoben | 1. Den Button "Settings" betätigen.\newline 2. Den Repository Pfad auf "/tmp/test-borgqt2/" ändern.\newline 3. Den Button "Apply" betätigen.                                                                                                                                           | -                                                     | Die Backup Liste wird aktualisiert und zeigt wieder das Backup von TC-04 an.                                                             | Die Anwendung wird angezeigt. Die Konfigurationsdatei zeigt auf den neuen Pfad.                                                                                           |                                  |
+| *TC-18*                      | Pfad des lokalen Backup Repository anpassen       | TC-04 ausgeführt.\newline Backup Repository nach "/tmp/test-borgqt2" verschoben | 1. Den Button "Settings" betätigen.\newline 2. Den Repository Pfad auf "/tmp/test-borgqt2/" ändern.\newline 3. Den Button "Apply" betätigen.                                                                                                                                           | -                                                     | Die Backup Liste wird aktualisiert und zeigt wieder das Backup von TC-04 an.                                                             | Die Anwendung wird angezeigt. Die Konfigurationsdatei zeigt auf den neuen Pfad.                                                                                           |                                  |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
 | *TC-19*                      | Backup Name ändern                                 | TC-01 ausgeführt.                                                               | 1. Den Button "Settings" betätigen.\newline 2. Bei der Option "Archive Prefix" "Muster" eintragen.\newline 3. Den Button "Apply" betätigen.\newline 4. TC-04 durchführen.                                                                                                              | Backupname: Muster                                    | Die Anwendung zeigt einen Fortschrittsbalken der nach erfolgtem Backup verschwindet.                                                     | Die Backup Liste wird aktualisiert und zeigt ein Backup mit dem Präfix "Muster" an. Die Konfigurationsdatei beinhaltet die Option des Präfixes.                           |                                  |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
 | *TC-20*                      | Keine Einstellungen ändern                         | TC-01 ausgeführt.                                                               | 1. Den Button "Settings" betätigen.\newline 2. Eine beliebige Option ändern.\newline 3. Den Button "Cancel" betätigen.                                                                                                                                                                 | -                                                     | Der Einstellungsdialog schliesst sich.                                                                                                   | Die Anwendung wird angezeigt. Die Konfigurationsdatei ist noch im selben Zustand wie bei TC-01.                                                                           |                                  |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
-| *TC-21*                      | Automtische Backups konfigurieren                  | TC-01 ausgeführt.                                                               | 1. Den Button "Settings" betätigen.\newline 2. Bei der Option "Automatic Backups" bei "Backup Path" die Testdateien angeben sowie "Hourly" auswählen und bei "Time" die nächste Stunde angeben.\newline 3. Den Button Apply betätigen.                                                 | Backupzeit: 2 Minuten nach aktueller Zeit Testdateien | Der Datei Dialog schliesst sich wieder.                                                                                                  | Die Anwendung wird angezeigt. Die Konfigurationsdatei wurde um die Option des automatischen Backups erweitert. Die Anwendung hat einen "Service" auf dem System erstellt. |                                  |
+| *TC-21*                      | Automatische Backups konfigurieren                  | TC-01 ausgeführt.                                                               | 1. Den Button "Settings" betätigen.\newline 2. Bei der Option "Automatic Backups" bei "Backup Path" die Testdateien angeben sowie "Hourly" auswählen und bei "Time" die nächste Stunde angeben.\newline 3. Den Button Apply betätigen.                                                 | Backup-zeit: 2 Minuten nach aktueller Zeit Testdateien | Der Datei Dialog schliesst sich wieder.                                                                                                  | Die Anwendung wird angezeigt. Die Konfigurationsdatei wurde um die Option des automatischen Backups erweitert. Die Anwendung hat einen "Service" auf dem System erstellt. |                                  |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
-| *TC-22*                      | Automtische Backups durchführen                    | TC-16 ausgeführt.                                                               | 1. TC-21 durchführen.\newline 2. Auf Ablauf der Zeit warten.\newline 3. Die Anwendung öffnen.                                                                                                                                                                                          | -                                                     | In der Backup Liste wird ein Backup angezeigt.                                                                                           | Die Anwendung wird angezeigt.                                                                                                                                             |                                  |
+| *TC-22*                      | Automatische Backups durchführen                    | TC-16 ausgeführt.                                                               | 1. TC-21 durchführen.\newline 2. Auf Ablauf der Zeit warten.\newline 3. Die Anwendung öffnen.                                                                                                                                                                                          | -                                                     | In der Backup Liste wird ein Backup angezeigt.                                                                                           | Die Anwendung wird angezeigt.                                                                                                                                             |                                  |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
 | *TC-23*                      | Server Backup erstellen                            | Server Repository bereit.\newline Server Konfigurationsdatei erstellt.          | TC-04 durchführen.                                                                                                                                                                                                                                                                     | Testdateien                                           | Die Anwendung zeigt einen Fortschrittsbalken der nach erfolgtem Backup verschwindet.                                                     | Die Backup Liste wird aktualisiert und zeigt ein Backup an.                                                                                                               |                                  |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------|
