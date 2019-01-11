@@ -1261,7 +1261,7 @@ Die Rechte an Qt hält die Firma "The Qt Company". Das Framework Qt wird jedoch
 offen entwickelt und die Community hat ein Mitspracherecht. Die Linux
 Desktopumgebung KDE nutzt das Qt Framework intensiv. Qt ist gls:libre und der
 gls:gpl v3 footcite:qtlicense oder mit einer kostenpflichtigen proprietären
-Lizenz erhältlich falls die gls:gpl nicht genutzt werden kann.
+Lizenz erhältlich, falls die gls:gpl nicht genutzt werden kann.
 
 Vorkenntnisse zu Qt sind nur sehr wenig vorhanden. Mehr als ein paar Tests
 wurden damit noch nicht gemacht.
@@ -1271,7 +1271,7 @@ geschrieben werden oder Mittels des Qt Designers als XML Datei gespeichert und
 dann in die eigentliche Applikation importiert werden. Somit ist keine
 spezielle Software nötig.
 
-XML ist nicht übermässig gut lesbar allerdings kann man Qt in der verwendeten
+XML ist nicht übermässig gut lesbar, allerdings kann man Qt in der verwendeten
 Sprache programmiert werden somit ist es hauptsächlich von der Sprache im
 Backend abhängig. Die Dokumentation ist in C++ geschrieben was für einen
 Entwickler ohne C++ Kenntnisse die Software etwas unzugänglich macht.
@@ -1279,7 +1279,7 @@ Entwickler ohne C++ Kenntnisse die Software etwas unzugänglich macht.
 Qt scheint, soweit dies bis jetzt abgeschätzt werden kann, sehr leicht in ein
 Projekt zu integrieren sein.
 
-Da noch sehr wenig Kenntnisse vorhanden sind ist der Lernfaktor entsprechend
+Da noch sehr wenig Kenntnisse vorhanden sind, ist der Lernfaktor entsprechend
 gross.
 
 #+CAPTION: Qt Bewertungstabelle
@@ -1308,7 +1308,7 @@ gross.
 Gtk ist sowohl für Linux wie auch für Windows und OS X erhältlich. Gtk hat als
 Projekt der Gnome Foundation seine Wurzeln jedoch ganz klar in der Linux Welt.
 Gtk ist gls:libre unter der Lesser General Public Lizenz footcite:gtklicense.
-Gtk ist ein Projekt der GNOME Foundation einer nicht für Profit Organisation
+Gtk ist ein Projekt der GNOME Foundation einer nicht für Profit Organisation,
 welche die Entwicklung diverser freier Software Projekte koordiniert.
 
 Zu Gtk gibt es keinerlei Vorkenntnisse als Programmierer. Gtk wurde bis jetzt
@@ -1316,7 +1316,7 @@ nur intensiv User verwendet.
 
 Gtk integriert sich nur unter Linux wirklich gut ins System. Unter Windows und
 OS X können die Applikation schnell etwas fremd wirken. Dies ist gut bei der
-Applikation Meld footcite:meld zu sehen wenn man eine Datei auswählen möchte,
+Applikation Meld footcite:meld zu sehen, wenn man eine Datei auswählen möchte,
 Abbildung ([[fig:meld]]).
 
 #+caption: Screenshot der Applikation Meld unter Windows 10
@@ -1324,21 +1324,22 @@ Abbildung ([[fig:meld]]).
 [[file:pictures/meld.png]]
 #+attr_latex: :center
 
-Die Gtk Dokumentation empfiehlt footcite:gtk_setup, das man unter Windows das
-Programm MSYS2 installiert um Gtk einzurichten. Zum Programmieren an sich
+Die Gtk Dokumentation empfiehlt footcite:gtk_setup, dass man unter Windows das
+Programm MSYS2 installiert, um Gtk einzurichten. Zum Programmieren an sich
 braucht es offenbar nicht zwingend weitere Tools aus einem Editor. Wie auch bei
 Qt hat man jedoch die Möglichkeit das gls:gui mit einem gls:gui Designer
 grafisch zu erstellen.
 
-Wie auch Qt kann man Gtk entweder direkt in der Backend Sprach programmieren
+Wie auch Qt kann man Gtk entweder direkt in der Backend Sprache programmieren
 oder aus dem gls:gui Designer dann als XML exportieren. Der Code in der
-Dokumentation ist in C geschrieben was auch nicht die zugänglichste Sprache ist.
+Dokumentation ist in C geschrieben, welches auch nicht die zugänglichste
+Sprache ist.
 
 Die Verwendung von Gtk innerhalb des Programms scheint ähnlich einfach zu sein
 wie bei Qt. Die Installation ist allerdings unter Windows eher das Gegenteil
 von einfach.
 
-Da die Kenntnisse gleich null sind ist der Lernfaktor auf dem Maximum.
+Da die Kenntnisse gleich null sind, ist der Lernfaktor auf dem Maximum.
 
 #+CAPTION: Gtk Bewertungstabelle
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|
@@ -1363,38 +1364,38 @@ Da die Kenntnisse gleich null sind ist der Lernfaktor auf dem Maximum.
 
 **** Electron
 
-Electron ist ein cross-plattform Framework zum entwickeln von glspl:gui welches
+Electron ist ein cross-plattform Framework zum Entwickeln von glspl:gui welches
 dabei jedoch auf Technologien aus der Webentwicklung benutzt. Entwickelt wird
 Electron von der Firma Github und ist gls:libre unter der MIT Lizenz
 footcite:electronlicense.
 
-Da Electron auf Technologien aus der Webentwicklung setzt sind hier im
-Vergleich bereit gute Kenntnisse vorhanden. Über die genau Funktion und
-Implementierung sind noch keine Kenntnisse vorhanden.
+Da Electron auf Technologien aus der Webentwicklung setzt, sind hier im
+Vergleich zu den anderen Frameworks bereit gute Kenntnisse vorhanden. Über die
+genau Funktion und Implementierung sind noch keine Kenntnisse vorhanden.
 
 Die Verwendung von Webtechnologien macht Electron zwar sehr kompatibel auf den
 unterstützten Systemen, oftmals sehen die Applikationen jedoch doch eher wie
-eine Webseite als wie eine Desktop Applikation aus. Ein weitere Nachteil ist
-der hohe Ressourcenverbrauch da jede Applikation nahezu einer eigenen Instanz
+eine Webseite als wie eine Desktop Applikation aus. Ein weiterer Nachteil ist
+der hohe Ressourcenverbrauch, da jede Applikation nahezu einer eigenen Instanz
 des Google Chrome Browsers gleich kommt.
 
 Bei der Installation muss Node.js und der Paket Manager von Node.js, NPM,
 vorhanden sein. Zum Programmieren selber braucht es keine speziellen Tools. Ein
-Editor und ein Webbrowser sollten aussreichend sein.
+Editor und ein Webbrowser sollten ausreichend sein.
 
 Electron Applikationen bestehen hauptsächlich aus HTML, CSS und JavaScript
 Code. Wenn man sich die komplette Applikation in Node.js programmieren möchte
 kommt dann noch eine zusätzliche Sprache hinzu. HTML ist ähnlich mühsam zu
-lesen wie XML. CSS und JavaScript sind relativ angenehm zu lesen wobei es für
+lesen wie XML. CSS und JavaScript sind relativ angenehm zu lesen, wobei es für
 beide keine offiziellen Styleguides gibt. Was bei Webanwendungen jedoch immer
-das schwierigste ist, ist der wechsel zwischen verschiedenen Sprachen und
+das schwierigste ist, ist der Wechsel zwischen verschiedenen Sprachen und
 Konzepten. Dieses Problem hat man bei Electron leider auch.
 
 Das Setup von Electron ist etwa ähnlich kompliziert wie das Setup von Gtk und
 ist sehr ähnlich dem Entwickeln einer normalen Webapplikation.
 
 Da an der IBZ Webtechnologien bereits intensiv behandelt worden sind und man in
-diesem Rahmen bereits ein paar Webapplikationen erstellt hat wäre der
+diesem Rahmen bereits ein paar Webapplikationen erstellt hat, wäre der
 Lernfaktor bei Electron wohl nicht so gross wie etwa bei Qt oder Gtk.
 
 #+CAPTION: Electron Bewertungstabelle
@@ -1444,7 +1445,7 @@ Python zu setzen und fürs Frontend Qt zu benutzen.
 Da die einzusetzende Technologie nun feststeht lässt sich auch gut ein Name für
 die Applikation ableiten. Oftmals werden die grafischen Applikationen gleich
 benannt wie die Kommandozeilen Applikation aber mit dem Namen des gls:gui
-Frameworks als Suffix Somit wird das zu erstellende gls:gui für gls:borg im
+Frameworks als Suffix. Somit wird das zu erstellende gls:gui für gls:borg im
 weiteren Verlauf der Arbeit nun Borg-Qt genannt
 
 ** Testing
