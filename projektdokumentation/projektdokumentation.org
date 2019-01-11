@@ -1458,7 +1458,17 @@ Zukunft des Projektes zu bauen.
 Aufgrund der Unerfahrenheit in diesem Bereich werden die Testfälle,
 Tabelle:([[tab:testcases]]), final jedoch von Hand überprüft. Somit kann vermieden
 werden das nicht funktionierende automatische Tests den Abschluss des Projektes
-verhindern.
+verhindern. Da die Testfälle sich hauptsächlich an den Use Cases orientieren
+gibt es ein paar Ziele die dadurch nicht getestet werden können. Zudem sind zur
+Zeit nur ca. 20. der Ziele durch die Use Cases abgedeckt. Die weiteren Ziele
+lassen sich erst sinnvoll integrieren wenn die Basis für das Programm
+geschaffen wurde.
+
+Die Ziele die nicht durch die Testfälle getestet werden können sind Ziel Nr. 1
+und Nr. 2. Für Ziel Nr. 1 wird in der Sektion [[Realisierung]] ein Proof of Concept
+erstellt um die cross-plattform Fähigkeit zu beweisen. Ziel Nr. 2 ist mit
+folgendem Link erfüllt. https://github.com/borg-qt/borg-qt/blob/master/LICENSE.
+Dabei handelt es sich um die Lizenz des Borg-Qt Repository.
 
 Getestet wird die Applikation jeweils auf dem Computer des Projektleiters. Auf
 diesem läuft die aktuelle Langzeitsupport Version (18.04) von Ubuntu
