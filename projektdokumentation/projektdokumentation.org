@@ -19,9 +19,9 @@ diesem Dokument.
 
 ** Beschreibung
 
-Diese Arbeit hat zum Ziel die Planung und Erstellung einer grafischen
-Oberfläche zum einfachen Bedienen der Software gls:borg footcite:borgbackup
-sowie deren Konfiguration, durchzuführen.
+Diese Arbeit hat zum Ziel, die Planung und Erstellung einer grafischen
+Oberfläche zum einfachen Bedienen der Software gls:borg footcite:borgbackup ,
+durchzuführen sowie zu dokumentieren.
 
 ** Zweck und Inhalt
 
@@ -46,7 +46,7 @@ weiterverarbeitet werden. Zusätzlich muss der Urheber genannt werden.
 Die Software soll gls:borg für den durchschnittlichen Computer User zugänglich
 machen. Backups sollen dabei schnell und unkompliziert erstellt werden können.
 Auch die Möglichkeit automatischer im Hintergrund laufender Backups soll dem
-User gegeben sein damit die Hürde für Backups so tief wie möglich gehalten
+User gegeben sein, damit die Hürde für Backups so tief wie möglich gehalten
 wird.
 
 Die besten Backups sind solche bei denen man gar nicht mehr weiss das man sie
@@ -1171,8 +1171,8 @@ inklusive Windows, OS X und Linux. Nahezu jedes Desktop Linux System kommt mit
 Python vor installiert. Auch OS X kommt bereits ab Werk mit Python Version 2.
 Version 3 lässt sich sehr einfach nachinstallieren und ist einfach nutzbar.
 Unter Windows gestaltetet sich die Installation etwas aufwendiger aber auch
-nicht sehr kompliziert integriert sich in Windows jedoch etwas weniger elegant
-als C#.
+nicht sehr kompliziert. Python integriert sich in Windows jedoch etwas weniger
+elegant als C#.
 
 Python ist freie Software unter der Python Software Foundation License
 footcite:python und wird durch die Python Software Foundation in einem
@@ -1312,10 +1312,10 @@ Gtk ist ein Projekt der GNOME Foundation einer nicht für Profit Organisation,
 welche die Entwicklung diverser freier Software Projekte koordiniert.
 
 Zu Gtk gibt es keinerlei Vorkenntnisse als Programmierer. Gtk wurde bis jetzt
-nur intensiv User verwendet.
+nur intensiv als User verwendet.
 
 Gtk integriert sich nur unter Linux wirklich gut ins System. Unter Windows und
-OS X können die Applikation schnell etwas fremd wirken. Dies ist gut bei der
+OS X können die Applikationen schnell etwas fremd wirken. Dies ist gut bei der
 Applikation Meld footcite:meld zu sehen, wenn man eine Datei auswählen möchte,
 Abbildung ([[fig:meld]]).
 
