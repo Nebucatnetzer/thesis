@@ -1596,8 +1596,68 @@ Da sie es dem User so einfach wie möglich macht ein Backup zu erstellen.
 
 *** TODO Umsetzung
 
+Qt bietet einem mehrere Möglichkeiten zum erstellen der graphischen Oberfläche.
+Zum einen kann die ganze Oberfläche programmatisch erstellt werden. Dies gibt
+dem ein grosses Mass an Kontrolle über das Erstellte ist allerdings nicht sehr
+intuitiv.
 
-PLACEHOLDER
+Die angenehmere Variante ist des den Qt Designer, Abbildung:([[fig:qt_designer]]),
+zu nutzen. Mit diesem lassen sich die Oberflächen in einer graphischen
+Oberfläche designen und mit einem Befehl auch gleich starten damit man direkt
+sieht wie sich die Oberflächen auf dem System verhalten.
+
+#+caption: Ein Screenshot der Applikation Qt Designer
+#+name: fig:qt_designer
+[[file:pictures/qt_designer.png]]
+#+attr_latex: :center
+
+Auf Basis der Ziele und der Use Cases wurde eine erste Version des glspl:gui
+erstellt. Im Hauptfenster, Abbildung:([[fig:borgqt_main_v1]]), befinden sich wie
+auch bei "Back in Time" in der einen Hälfte eine Liste der vorhandenen Backups
+(bei Borg Archive genannt) und in der anderen Hälfte ein Dateimanagemer. Dieser
+dient zur Auswahl des zu sichernden Pfades. Im oberen Bereich findet sich die
+Toolbar mit den Aktionen die der User ausführen kann. Gemäss den Use Cases sind
+dies "Backup", "Restore", "Mount", "Delete" und "Settings".
+
+#+caption: Screenshot des Borg-Qt Hauptfensters Version 1
+#+name: fig:borgqt_main_v1
+#+attr_latex: :placement [H]
+[[file:pictures/borgqt_main_v1.png]]
+
+Im Einstellungsfenster gibt es zwei Tabs zur Auswahl. Einmal den "General" Tab,
+Abbildung:([[fig:borgqt_settings_general_v1]]), dieser zeigt allgemeine Optionen
+an. Der zweite Tab "Exlcude", Abbildung:([[fig:borgqt_settings_exclude_v1]]), gibt
+dem User die Möglichkeit einzelne Ordner oder Dateien von den Backups
+auszuschliessen.
+
+#+caption: Screenshot der Borg-Qt "General" Einstellungen Version 1
+#+name: fig:borgqt_settings_general_v1
+#+attr_latex: :width .7\textwidth :placement [H]
+[[file:pictures/borgqt_settings_general_v1.png]]
+
+#+caption: Screenshot der Borg-Qt "Exclude" Einstellungen Version 1
+#+name: fig:borgqt_settings_exclude_v1
+#+attr_latex: :width .7\textwidth :placement [H]
+[[file:pictures/borgqt_settings_exclude_v1.png]]
+
+Das "Progress" Dialogfenster, Abbildung:([[fig:borgqt_progress_v1]]), zeigt dem
+User einen Fortschrittsbalken und einen einen "Cancel" Button zum Abbrechen der
+Aktion an. Das Fenster ist generisch gehalten damit es von verschiedenen Tasks
+gleichermassen genutzt werden kann.
+
+#+caption: Screenshot des Borg-Qt "Progress" Dialogfensters Version 1
+#+name: fig:borgqt_progress_v1
+#+attr_latex: :width .6\textwidth :placement [H]
+[[file:pictures/borgqt_progress_v1.png]]
+
+Im "Archive" Dialogfenster, Abbildung:([[fig:borgqt_archiv_v1]]), werden
+Detailinformationen eines Archives angezeigt. Diese sind etwa die Grösse des
+Archives, wieviele Dateien es beinhaltet, wie lange das Erstellen dauerte, etc.
+
+#+caption: Screenshot des Borg-Qt Archivinformationsfenster Version 1
+#+name: fig:borgqt_archiv_v1
+#+attr_latex: :width .6\textwidth :placement [H]
+[[file:pictures/borgqt_archive_v1.png]]
 
 ** TODO Backend Umsetzung
 
