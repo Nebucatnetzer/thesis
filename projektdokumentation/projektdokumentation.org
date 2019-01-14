@@ -1576,7 +1576,23 @@ ist.
 #+attr_latex: :center
 
 ** TODO Benutzerinterface
-**** TODO Inspiration
+*** Inspiration
+
+Bevor gls:borg vom Projektleiter als Backup Software eingesetzt wurde, nutzte
+er die Software "Back in Time"footcite:backintime. Die Software setzt auf Rsync
+zum kopieren der Dateien. Dies erlaubt auch schnelle Backups über SSH zu
+machen. "Back in Time" hat allerdings das Problem, dass es keine gls:dedup
+beherrscht.
+
+Das Userinterface, zu sehen in Abbildung:([[fig:bit_main]]), ist jedoch sehr
+gelungen und soll Borg-Qt als Vorlage dienen. Insbesondere die einfache und
+direkte Art ein Backup eines spezifischen Pfades zu machen ist sehr spannend.
+Da sie es dem User so einfach wie möglich macht ein Backup zu erstellen.
+
+#+caption: Screenshot des Hauptfensters der Software "Back in Time"
+#+name: fig:bit_main
+[[file:pictures/bit_main.png]]
+#+attr_latex: :center
 
 PLACEHOLDER
 
