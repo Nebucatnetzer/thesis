@@ -1594,13 +1594,12 @@ Da sie es dem User so einfach wie möglich macht ein Backup zu erstellen.
 [[file:pictures/bit_main.png]]
 #+attr_latex: :center
 
+*** TODO Umsetzung
+
+
 PLACEHOLDER
 
-**** TODO Frontend Umsetzung
-
-PLACEHOLDER
-
-**** TODO Backend Umsetzung
+** TODO Backend Umsetzung
 
 PLACEHOLDER
 
