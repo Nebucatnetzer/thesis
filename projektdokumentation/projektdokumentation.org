@@ -1562,7 +1562,7 @@ folgt aus:
 #+LATEX:\newpage
 
 * TODO Realisierung
-** TODO Cross-plattform Kompatibilität
+** Cross-plattform Kompatibilität
 
 Um sicherzugehen das die gewählten Technologien auch den Anforderungen
 entsprechen wurde ein kleines "Hello World" Programm mit Python3 und Qt
