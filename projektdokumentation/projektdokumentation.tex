@@ -1,31 +1,31 @@
 
 \section{Über dieses Dokument}
-\label{sec:org8368ce3}
+\label{sec:org3e817e2}
 
 Im nachfolgenden Abschnitt finden Sie allgemeine Informationen zu
 diesem Dokument.
 
 \subsection{Beschreibung}
-\label{sec:orgdd00899}
+\label{sec:org4722874}
 
-Diese Arbeit hat zum Ziel die Planung und Erstellung einer grafischen
-Oberfläche zum einfachen Bedienen der Software \gls{borg} \footcite{borgbackup}
-sowie deren Konfiguration, durchzuführen.
+Diese Arbeit hat zum Ziel, die Planung und Erstellung einer grafischen
+Oberfläche zum einfachen Bedienen der Software \gls{borg} \footcite{borgbackup} ,
+durchzuführen sowie zu dokumentieren.
 
 \subsection{Zweck und Inhalt}
-\label{sec:org326e962}
+\label{sec:org68956a6}
 
 Zweck dieses Dokumentes ist die vollständige und nachvollziehbare Dokumentation
 zur Diplomarbeit von Andreas Zweili.
 
 \subsection{Aufbau}
-\label{sec:org7adb1c9}
+\label{sec:org0d37fdc}
 
 Alle Inhalte sind chronologisch sortiert, vom ältesten zum jüngsten
 Ereignis, und nach Kapiteln getrennt.
 
 \subsection{Lizenz}
-\label{sec:org9c857f3}
+\label{sec:orgd1bc1a7}
 
 Dieses Dokument wurde von Andreas Zweili im Rahmen der Diplomarbeit an der IBZ
 Schule erstellt und steht unter der \gls{cc} BY-SA 4.0 \footcite{cc} Lizenz.
@@ -33,21 +33,21 @@ Dadurch darf die Arbeit unter Beibehalten der Lizenz kopiert und
 weiterverarbeitet werden. Zusätzlich muss der Urheber genannt werden.
 
 \section{Initialisierung}
-\label{sec:org731e1a3}
+\label{sec:org7d5dba1}
 \subsection{Vision}
-\label{sec:orgfe6b059}
+\label{sec:org9ec13ed}
 
 Die Software soll \gls{borg} für den durchschnittlichen Computer User zugänglich
 machen. Backups sollen dabei schnell und unkompliziert erstellt werden können.
 Auch die Möglichkeit automatischer im Hintergrund laufender Backups soll dem
-User gegeben sein damit die Hürde für Backups so tief wie möglich gehalten
+User gegeben sein, damit die Hürde für Backups so tief wie möglich gehalten
 wird.
 
 Die besten Backups sind solche bei denen man gar nicht mehr weiss das man sie
 hat bis man sie braucht.
 
 \subsection{Ausgangslage}
-\label{sec:org92c2b54}
+\label{sec:org7711a96}
 
 \gls{borg} ist deshalb interessant, weil es während einem Backup relativ
 wenig Ressource im Vergleich zu anderen Systemen benötigt und schon relativ
@@ -82,7 +82,7 @@ Das Projekt muss dabei vom Studenten in Eigenarbeit und einer Zeit von 250
 Stunden bis zum 18. März 2019 erarbeitet werden.
 
 \subsection{Projektziele}
-\label{sec:org1e95952}
+\label{sec:orge51f115}
 
 Das Hauptziel der Arbeit soll es sein eine einfach nutzbare grafische
 Oberfläche für \gls{borg} zu entwickeln. Da \gls{borg} selber freie Software ist und
@@ -107,7 +107,7 @@ damit es in der Zukunft möglich ist das Projekt auf andere Plattformen
 auszuweiten.
 
 \subsubsection{Ziele inklusive Gewichtung}
-\label{sec:orgd336798}
+\label{sec:org008e35c}
 
 Im Projektantrag wurden vor gängig folgende Ziele definiert und entsprechend
 gewichtet. Die Gewichtung wurde dabei so vorgenommen, dass Ziele mit einer
@@ -197,18 +197,18 @@ integriert werden und ist nicht unwichtig.
 \hline
 32. & Die Applikation prüft, ob sie sich im richtigen Netzwerk befindet bevor sie eine Verbindung zum Server aufbaut. &  & 2\\
 \hline
-\caption{\label{tab:orgb950580}
+\caption{\label{tab:org4d44292}
 Projektziele}
 \\
 \end{longtable}
 \newpage
 
 \subsection{Projektabgrenzung}
-\label{sec:org24a842c}
+\label{sec:org8b97319}
 
 Die Anwendung beschränkt sich darauf Funktionen von \gls{borg} grafisch
 darzustellen oder nützlich zu erweitern soweit dies über die \gls{api} möglich
-ist. Wie in Abbildung:(\ref{fig:orgeda5bf4}) zu sehen ist, werden die Aktionen effektiv
+ist. Wie in Abbildung:(\ref{fig:org9f2696c}) zu sehen ist, werden die Aktionen effektiv
 immer vom Borg Binary ausgeführt und nicht von der grafischen Oberfläche. Eine
 Erweiterung von \gls{borg} ist nicht vorgesehen. Backup und Verschlüsselung sind
 heikle Themen und sollten unbedingt nur von Experten angegangen werden. Das
@@ -224,12 +224,12 @@ entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/kontextdiagramm.pdf}
-\caption{\label{fig:orgeda5bf4}
+\caption{\label{fig:org9f2696c}
 Kontextdiagramm des Borg GUI}
 \end{figure}
 
 \subsection{Projektmethode}
-\label{sec:orgc654eb0}
+\label{sec:orga79d291}
 
 Für das Projekt wurde die Wasserfall-Methode gewählt. Da nur eine
 einzige Person am Projekt arbeitet, kann nur ein Task nach dem anderen
@@ -238,13 +238,13 @@ Somit macht das iterative Vorgehen der Wasserfall-Methode für dieses Projekt am
 meisten Sinn.
 
 \subsection{Konfigurationsmanagement}
-\label{sec:org4463929}
+\label{sec:org9479973}
 
 In der nachfolgenden Sektion wird definiert wie die Software und Dokumentation
 versioniert wird und welche allgemeinen Werkzeuge eingesetzt werden.
 
 \subsubsection{Versionskontrolle}
-\label{sec:org4623da2}
+\label{sec:orge6b8a04}
 
 Die komplette Dokumentation, der Quellcode der Applikation sowie jegliche
 zusätzliche Dokumente wie etwa die Zeitplanung werden mittels der Software Git
@@ -287,7 +287,7 @@ und schnelle Software erwiesen.
 \end{itemize}
 
 \subsubsection{Editor}
-\label{sec:org2d99ea2}
+\label{sec:orge9cf706}
 
 Sowohl bei der Dokumentation wie auch bei der Programmierung wurde
 hauptsächlich der Editor GNU Emacs \footcite{emacs} verwendet. GNU Emacs ist mit
@@ -298,7 +298,7 @@ flexibler Texteditor ist. Von normaler Textmanipulation über Taskmanagement
 und Emails schreiben ist alles möglich.
 
 \subsubsection{Dokumentation}
-\label{sec:orgfc28cc6}
+\label{sec:org84f7d80}
 
 Diese Dokumentation wurde in Org-mode \footcite{orgmode}, einer Erweiterung für
 den Text Editor Emacs, geschrieben. Die Syntax erinnert an Markdown und
@@ -330,7 +330,7 @@ Bei den Diagrammen wurden ausschliesslich Farben aus der von Google
 entwickelten Design Sprache "`Material"' \footcite{material} eingesetzt.
 
 \subsection{Zeitplanung}
-\label{sec:org2d06edb}
+\label{sec:org67dae7c}
 
 Die detaillierte Zeitplanung ist dem Ganttchart in der Datei
 \href{Zeitplanung\_Andreas\_Zweili.html}{Zeitplanung\_Andreas\_Zweili.html} zu entnehmen. Bei der Zeitplanung wurde darauf
@@ -349,7 +349,7 @@ Dadurch steht wägend des Projektes etwas mehr Zeit zur Verfügung als sonst mit
 einer 100 Prozent Arbeitsstelle möglich wäre.
 
 \subsection{Controlling}
-\label{sec:org1eee806}
+\label{sec:org943b282}
 
 Das Controlling wird verwendet, um zu kontrollieren, dass die eigentliche
 Planung mit dem effektiv geleisteten Aufwand respektive den effektiv
@@ -359,7 +359,7 @@ Lehren gezogen werden.
 \newpage
 \begin{landscape}
 \subsubsection{Zeit}
-\label{sec:org6c378f2}
+\label{sec:orgf7535b8}
 
 \begin{longtable}{|p{3cm}|p{5cm}|p{3cm}|p{7cm}|}
 \hline
@@ -380,14 +380,14 @@ Lehren gezogen werden.
 \hline
  & \textbf{Gesamter Aufwand} &  & \\
 \hline
-\caption{\label{tab:org4f7ed33}
+\caption{\label{tab:orgce7c191}
 Zeitcontrolling}
 \\
 \end{longtable}
 
 \newpage
 \subsubsection{Ressourcen}
-\label{sec:orge05c839}
+\label{sec:orgc87dca1}
 
 Folgende Ressourcen werden während der Arbeit benötigt:
 \begin{longtable}{|p{5cm}|p{3cm}|p{3cm}|p{7cm}|}
@@ -413,14 +413,14 @@ Korrekturleser & 3 &  & \\
 iPad & 1 & 1 & \\
 Notebook & 1 & 1 & \\
 \hline
-\caption{\label{tab:org0509673}
+\caption{\label{tab:orgea23da7}
 Ressourcen}
 \\
 \end{longtable}
 \end{landscape}
 
 \subsubsection{Kosten}
-\label{sec:orgfc48fd5}
+\label{sec:org3e4bd81}
 
 Werden die internen Lohnkosten des Projektleiters auf ca. 60 CHF pro Stunde
 geschätzt ergeben sich aus der Zeitplanung somit theoretische Kosten von 19'200
@@ -446,25 +446,25 @@ Meeting \#3 & 5 & 300\\
 \textbf{Total} & 320 & 19200\\
 \hline
 \end{tabular}
-\caption{\label{tab:orgd153ce1}
+\caption{\label{tab:org60421fb}
 Kostenrechnung}
 
 \end{table}
 
 \subsection{Projektrisiken}
-\label{sec:orgff876a1}
+\label{sec:orge73eaac}
 
 Das Risikomanagement dient dazu Risiken im Projekt zu erkennen und Massnahmen
 zur Vermeidung der Risiken zu definieren. Dadurch steht man ihnen nicht
 unvorbereitet gegenüber, sollten sie eintreffen.
 
 \subsubsection{Risikobeschreibung}
-\label{sec:org60cc8a5}
+\label{sec:org5560dc3}
 
-In der Tabelle: (\ref{tab:org51a4574}), sind die Risiken des Projektes
+In der Tabelle: (\ref{tab:org2ee8009}), sind die Risiken des Projektes
 gemeinsam mit ihren Gegenmassnahmen aufgelistet. Jedes Risiko wurde
-entsprechend der Tabelle: (\ref{tab:org82d6ae9}) nach der Wahrscheinlichkeit
-des Eintreffens bewertet und entsprechend der Tabelle: (\ref{tab:org5fbd2d6}) nach
+entsprechend der Tabelle: (\ref{tab:org1415985}) nach der Wahrscheinlichkeit
+des Eintreffens bewertet und entsprechend der Tabelle: (\ref{tab:org6aad5da}) nach
 seiner Auswirkung bewertet.
 
 \begin{longtable}{|p{0.45\textwidth}|p{0.45\textwidth}|}
@@ -497,15 +497,15 @@ User haben keine Zeit für Utility Tests. & Vor gängig einen Termin abmachen.\\
 \hline
 \gls{borg} ändert fundamental seine \gls{api}. & Gegen eine fixe Version von \gls{borg} entwickeln.\\
 \hline
-\caption{\label{tab:org3d54c4e}
+\caption{\label{tab:orge9ee080}
 Projektrisiken}
 \\
 \end{longtable}
 
 \section{Analyse}
-\label{sec:org49a3b73}
+\label{sec:org7504602}
 \subsection{Umweltanalyse}
-\label{sec:org7988060}
+\label{sec:org4b546fd}
 
 Die Projektumwelt-Analyse ist eine Methode, die Beziehungen,
 Erwartungshaltungen und Einflüsse auf das Projekt durch interne und
@@ -513,10 +513,10 @@ externe soziale Umwelt zu betrachten und zu bewerten. Auf Grundlage
 der Analyseergebnisse werden erforderliche Massnahmen zur Gestaltung
 der Umweltbeziehungen abgeleitet. Die Gestaltung der
 Projektumweltbeziehungen ist eine Projektmanagementaufgabe. In der
-Tabelle:(\ref{tab:orgc6f0b4e}) wurden die Anforderungen und Wünsche
+Tabelle:(\ref{tab:orgb24f1e2}) wurden die Anforderungen und Wünsche
 mit Einschätzung der Wahrscheinlichkeit und der Einflussnahme aufgenommen.
 Zusätzlich ist die Beziehung der Stakeholder zum Projekt noch in der
-Abbildung:(\ref{fig:orgbc1d314}) grafisch dargestellt.
+Abbildung:(\ref{fig:org5970836}) grafisch dargestellt.
 
 Da das Projekt so ausgelegt ist das der Projektleiter es in Eigenarbeit
 verwirklichen kann ist der Einfluss der Stakeholder während der Umsetzung sehr
@@ -530,7 +530,7 @@ Verfügung gestellt.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\textwidth]{pictures/stakeholder_diagramm.pdf}
-\caption{\label{fig:orgbc1d314}
+\caption{\label{fig:org5970836}
 Stakeholder Diagramm}
 \end{figure}
 
@@ -557,14 +557,14 @@ Stakeholder Diagramm}
  &  &  & - Anerkennung im fachlichen Umfeld & hoch\\
 \hline
 \end{tabular}
-\caption{\label{tab:orgc6f0b4e}
+\caption{\label{tab:orgb24f1e2}
 Umwelt-Analyse}
 
 \end{table}
 \end{landscape}
 
 \subsection{Risiko-Analyse}
-\label{sec:orga137bc9}
+\label{sec:orgb87b606}
 
 Bei der Risiko-Analyse wird von einem durchschnittlichen Benutzer ausgegangen,
 der zur Zeit noch keine Backups macht und beginnen möchte \gls{borg} zu nutzen, um
@@ -572,14 +572,14 @@ auf einer externen Harddisk seine Backups zu speichern.
 
 Es wird dabei eine Ist/Soll Analyse gemacht, um die Lösung gegenüber der
 bestehenden Möglichkeiten zu vergleichen. Jedes Risiko wurde entsprechend der
-Tabelle: (\ref{tab:org82d6ae9}) nach der Wahrscheinlichkeit des Eintreffens
-bewertet und entsprechend der Tabelle: (\ref{tab:org5fbd2d6}) nach seiner Auswirkung
+Tabelle: (\ref{tab:org1415985}) nach der Wahrscheinlichkeit des Eintreffens
+bewertet und entsprechend der Tabelle: (\ref{tab:org6aad5da}) nach seiner Auswirkung
 im Bezug auf die Nützlichkeit der gemachten Backups.
 
-In der Tabelle: (\ref{tab:org51a4574}) sind dabei die Risiken für das
-Szenario aufgelistet und nummeriert. In der Abbildung:(\ref{fig:org54045c9}), ist die
+In der Tabelle: (\ref{tab:org2ee8009}) sind dabei die Risiken für das
+Szenario aufgelistet und nummeriert. In der Abbildung:(\ref{fig:orge722da1}), ist die
 Bewertung des Ist-Risikos grafisch dargestellt und in der
-Abbildung:(\ref{fig:org521926b}), ist das Soll-Risiko welches mit dieser Arbeit
+Abbildung:(\ref{fig:org8df460b}), ist das Soll-Risiko welches mit dieser Arbeit
 angestrebt wird ebenfalls grafisch dargestellt.
 
 Es sollte im Rahmen der Arbeit möglich sein die meisten Risiken zu verringern.
@@ -596,7 +596,7 @@ Arbeit reduzieren kann.
 2 = mittel & Mässig wahrscheinlich, 20-50\%\\
 3 = hoch & Hohe Wahrscheinlichkeit > 50\%\\
 \end{tabular}
-\caption{\label{tab:org82d6ae9}
+\caption{\label{tab:org1415985}
 Risikobewertung Wahrscheinlichkeit}
 
 \end{table}
@@ -610,7 +610,7 @@ Risikobewertung Wahrscheinlichkeit}
 2 = mittel & Mittlere Auswirkung auf die Nützlichkeit\\
 3 = hoch & Hohe Auswirkung auf die Nützlichkeit\\
 \end{tabular}
-\caption{\label{tab:org5fbd2d6}
+\caption{\label{tab:org6aad5da}
 Risikobewertung Auswirkung}
 
 \end{table}
@@ -632,7 +632,7 @@ Risikobewertung Auswirkung}
 5. & Der Anwender vergisst die Backups zu machen.\\
 \hline
 \end{tabular}
-\caption{\label{tab:org51a4574}
+\caption{\label{tab:org2ee8009}
 Risikobeschreibung}
 
 \end{table}
@@ -640,43 +640,43 @@ Risikobeschreibung}
 \begin{figure}[H]
 \centering
 \includegraphics[width=9cm]{pictures/istrisiko.pdf}
-\caption{\label{fig:org54045c9}
+\caption{\label{fig:orge722da1}
 Grafische Darstellung der Ist-Risikoanalyse}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=9cm]{pictures/sollrisiko.pdf}
-\caption{\label{fig:org521926b}
+\caption{\label{fig:org8df460b}
 Grafische Darstellung der Soll-Risikoanalyse}
 \end{figure}
 
 \newpage
 \subsection{SWOT-Analyse}
-\label{sec:org23a1f62}
+\label{sec:orgcbb6fed}
 
 Die SWOT-Analyse ist eine Methode, die Stärken, Schwächen, Chancen und
 Gefahren zu erkennen, indem eine 4-Felder-Matrix ausgefüllt wird.
 
 Wichtig vor dem Ausfüllen der SWOT-Analyse ist es, ein klares Ziel zu
 haben. Die ausgefüllte SWOT-Analyse für dieses Projekt ist in der
-Abbildung:(\ref{fig:org2df4f8b}) zu sehen.
+Abbildung:(\ref{fig:org6a4313c}) zu sehen.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/swot_analyse.pdf}
-\caption{\label{fig:org2df4f8b}
+\caption{\label{fig:org6a4313c}
 SWOT Analyse des Projektes}
 \end{figure}
 
 \subsection{Anforderungskatalog}
-\label{sec:org533b486}
+\label{sec:org52c8a33}
 
 Der Anforderungskatalog entspricht 1 zu 1 den Zielen, welche in der Tabelle
-\ref{tab:orgb950580} definiert wurden.
+\ref{tab:org4d44292} definiert wurden.
 
 \subsection{Use Cases}
-\label{sec:org68b8f67}
+\label{sec:org0b3462a}
 
 Ein Use Case sammelt alle möglichen Szenarien, die eintreten können,
 wenn ein Akteur versucht, mithilfe des betrachteten Systems ein
@@ -687,7 +687,7 @@ Login). Dabei wird die technische Lösung nicht konkret beschrieben.
 Die Detailstufe kann dabei sehr unterschiedlich sein.\footcite{usecase}
 
 \subsubsection{Anwendungsfalldiagramm}
-\label{sec:orgff81c16}
+\label{sec:org1e310b4}
 
 "`Ein Anwendungsfalldiagramm \ldots{} ist eine der 14 Diagrammarten der
 Unified Modelling Language (UML), einer Sprache für die Modellierung
@@ -696,39 +696,39 @@ Es stellt Anwendungsfälle und Akteure mit ihren jeweiligen
 Abhängigkeiten und Beziehungen dar."'\footcite{usecasediagramm}
 
 Das Anwendungsfalldiagramm für das \gls{borg} \gls{gui} ist in der Abbildung:
-(\ref{fig:org1057174}) zu sehen.
+(\ref{fig:orgac72df5}) zu sehen.
 
 \newpage
 \begin{landscape}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/use_case.pdf}
-\caption{\label{fig:org1057174}
+\caption{\label{fig:orgac72df5}
 Anwendungsfalldiagramm}
 \end{figure}
 \end{landscape}
 \newpage
 
 \subsubsection{Use Cases Detailbeschreibung}
-\label{sec:orgb97b945}
+\label{sec:orgf807122}
 
 Use Cases werden in der Regel mithilfe einer sogenannten Use Case Schablone im
 Detail beschrieben, damit klar ist, wie der Ablauf jeweils genau aussieht. Die
 in diesem Projekt verwendete Schablone wurde von Alistair Cockburn definiert.
 
-Die nachfolgend aufgeführten Use Cases, Tabellen:(\ref{tab:org10be5a1}, \ref{tab:org4fe80d8},
-\ref{tab:orgab70314}, \ref{tab:orgf4f8321}, \ref{tab:orgf240273}, \ref{tab:orgdcbae89}, \ref{tab:org336605d})
-wurden dem Anwendungsfalldiagramm, Abbildung:(\ref{fig:org1057174}), entnommen und
+Die nachfolgend aufgeführten Use Cases, Tabellen:(\ref{tab:orgeb722bc}, \ref{tab:org81c3985},
+\ref{tab:org2b70273}, \ref{tab:org99a07b6}, \ref{tab:orgdd135a9}, \ref{tab:org6ee4133}, \ref{tab:org9a825e9})
+wurden dem Anwendungsfalldiagramm, Abbildung:(\ref{fig:orgac72df5}), entnommen und
 zusätzlich noch um jeweils ein Aktivitätsdiagramm, Abbildungen:
-(\ref{fig:orge7c2d4c}, \ref{fig:org82c09db}, \ref{fig:orgfb3e0f0},
-\ref{fig:org92ca552}, \ref{fig:org915780c}, \ref{fig:org08367e9}), erweitert
+(\ref{fig:org572104a}, \ref{fig:org5eea2c8}, \ref{fig:org79bf08f},
+\ref{fig:org9809f26}, \ref{fig:orgd0571c5}, \ref{fig:orge9f0020}), erweitert
 um den Ablauf verständlicher zu machen.
 
 Ein Aktivitätsdiagramm ist dabei ein hilfreiches UML Diagramm zum Erweitern von
 Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 
 \paragraph{Use Case 1.0 Backup erstellen}
-\label{sec:org07a29c5}
+\label{sec:org2b8ffdd}
 
 {\footnotesize
 \begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}|}
@@ -777,7 +777,7 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 \hline
 \textbf{Date} & 30.12.2018\\
 \hline
-\caption{\label{tab:org10be5a1}
+\caption{\label{tab:orgeb722bc}
 Use Case 1.0 Backup erstellen}
 \\
 \end{longtable}
@@ -785,12 +785,12 @@ Use Case 1.0 Backup erstellen}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/activity_backup.pdf}
-\caption{\label{fig:orge7c2d4c}
+\caption{\label{fig:org572104a}
 Aktivitätsdiagramm zum Erstellen eines Backups}
 \end{figure}
 \newpage
 \paragraph{Use Case 2.0 Backup löschen}
-\label{sec:orgbaf4de8}
+\label{sec:orgcad52e3}
 
 {\footnotesize
 \begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}|}
@@ -841,7 +841,7 @@ Aktivitätsdiagramm zum Erstellen eines Backups}
 \hline
 \textbf{Date} & 30.12.2018\\
 \hline
-\caption{\label{tab:org4fe80d8}
+\caption{\label{tab:org81c3985}
 Use Case 2.0 Backup löschen}
 \\
 \end{longtable}
@@ -849,12 +849,12 @@ Use Case 2.0 Backup löschen}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/activity_delete.pdf}
-\caption{\label{fig:org82c09db}
+\caption{\label{fig:org5eea2c8}
 Aktivitätsdiagramm zum Löschen eines Backups}
 \end{figure}
 \newpage
 \paragraph{Use Case 3.0 Backup wiederherstellen}
-\label{sec:orga3299e4}
+\label{sec:org3a5e2e3}
 
 {\footnotesize
 \begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}|}
@@ -906,7 +906,7 @@ Aktivitätsdiagramm zum Löschen eines Backups}
 \hline
 \textbf{Date} & 30.12.2018\\
 \hline
-\caption{\label{tab:orgab70314}
+\caption{\label{tab:org2b70273}
 Use Case 3.0 Backup wiederherstellen}
 \\
 \end{longtable}
@@ -915,12 +915,12 @@ Use Case 3.0 Backup wiederherstellen}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/activity_restore.pdf}
-\caption{\label{fig:orgfb3e0f0}
+\caption{\label{fig:org79bf08f}
 Aktivitätsdiagramm zum Wiederherstellen eines Backups}
 \end{figure}
 \newpage
 \paragraph{Use Case 4.0 Einzelne Datei wiederherstellen}
-\label{sec:org153257d}
+\label{sec:org21855b6}
 
 {\footnotesize
 \begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}|}
@@ -969,7 +969,7 @@ Aktivitätsdiagramm zum Wiederherstellen eines Backups}
 \hline
 \textbf{Date} & 30.12.2018\\
 \hline
-\caption{\label{tab:orgf4f8321}
+\caption{\label{tab:org99a07b6}
 Use Case 4.0 Einzelne Datei wiederherstellen}
 \\
 \end{longtable}
@@ -978,12 +978,12 @@ Use Case 4.0 Einzelne Datei wiederherstellen}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/activity_mount.pdf}
-\caption{\label{fig:org92ca552}
+\caption{\label{fig:org9809f26}
 Aktivitätsdiagramm für das spezifische Wiederherstellen einer Datei}
 \end{figure}
 \newpage
 \paragraph{Use Case 4.1 Backup mounten}
-\label{sec:org967b8db}
+\label{sec:orgf91ab2d}
 
 {\footnotesize
 \begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}|}
@@ -1034,7 +1034,7 @@ Aktivitätsdiagramm für das spezifische Wiederherstellen einer Datei}
 \hline
 \textbf{Date} & 30.12.2018\\
 \hline
-\caption{\label{tab:orgf240273}
+\caption{\label{tab:orgdd135a9}
 Use Case 4.1 Backup mounten}
 \\
 \end{longtable}
@@ -1042,7 +1042,7 @@ Use Case 4.1 Backup mounten}
 
 \newpage
 \paragraph{Use Case 5.0 Konfiguration ändern}
-\label{sec:org6b23d8c}
+\label{sec:org284bcc3}
 
 {\footnotesize
 \begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}|}
@@ -1095,7 +1095,7 @@ Use Case 4.1 Backup mounten}
 \hline
 \textbf{Date} & 30.12.2018\\
 \hline
-\caption{\label{tab:orgdcbae89}
+\caption{\label{tab:org6ee4133}
 Use Case 5.0 Konfiguration ändern}
 \\
 \end{longtable}
@@ -1104,12 +1104,12 @@ Use Case 5.0 Konfiguration ändern}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/activity_settings.pdf}
-\caption{\label{fig:org915780c}
+\caption{\label{fig:orgd0571c5}
 Aktivitätsdiagramm zum Ändern von Einstellungen}
 \end{figure}
 \newpage
 \paragraph{Use Case 6.0 automatische Backups aktivieren}
-\label{sec:org89987e0}
+\label{sec:orge629d92}
 
 {\footnotesize
 \begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}|}
@@ -1159,7 +1159,7 @@ Aktivitätsdiagramm zum Ändern von Einstellungen}
 \hline
 \textbf{Date} & 30.12.2018\\
 \hline
-\caption{\label{tab:org336605d}
+\caption{\label{tab:org9a825e9}
 Use Case 6.0 automatische Backups aktivieren}
 \\
 \end{longtable}
@@ -1168,15 +1168,15 @@ Use Case 6.0 automatische Backups aktivieren}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/activity_automatic.pdf}
-\caption{\label{fig:org08367e9}
+\caption{\label{fig:orge9f0020}
 Aktivitätsdiagramm zum Aktivieren von automatischen Backups}
 \end{figure}
 \newpage
 \section{Konzept}
-\label{sec:org7c1c6e2}
+\label{sec:orge7882d5}
 
 \subsection{Varianten}
-\label{sec:orgef5d7e8}
+\label{sec:orgfa272c2}
 
 Da Borg eine JSON API zur Verfügung stellt bieten sich diverse Möglichkeiten, um
 das Programm anzubinden. Da das Ziel ist, das Programm normalen Nutzern
@@ -1188,7 +1188,7 @@ Daraus ergeben sich die in diesem Kapitel aufgeführten Möglichkeiten für das
 Projekt.
 
 \subsubsection{Bewertung}
-\label{sec:orgfa17796}
+\label{sec:org68dad6e}
 
 Die Bewertungspunkte setzen sich einerseits aus den Projektzielen anderseits
 aus für das Projekt sinnvollen Punkten zusammen. Dadurch ergeben sich dann die
@@ -1207,7 +1207,7 @@ Projekt ausgewählt.
 
 Mussziele erhalten dabei eine
 Gewichtung von 10 und Wunschziele eine Gewichtung entsprechend der Bewertung in
-der Tabelle Projektziele (\ref{tab:orgb950580}).
+der Tabelle Projektziele (\ref{tab:org4d44292}).
 
 \begin{table}[htbp]
 \centering
@@ -1229,20 +1229,20 @@ der Tabelle Projektziele (\ref{tab:orgb950580}).
 \textbf{Total} &  &  &  & 415\\
 \hline
 \end{tabular}
-\caption{\label{tab:org4e0b79a}
+\caption{\label{tab:orgca2479c}
 Muster Bewertungstabelle}
 
 \end{table}
 
 \subsubsection{Backend}
-\label{sec:org351b4d8}
+\label{sec:org992057e}
 
-Fürs Backend bieten sich die folgende drei Sprachen an: \hyperref[sec:org6dc83fa]{C\#}, \hyperref[sec:org9726297]{C++}, \hyperref[sec:org88671d5]{Python}.
+Fürs Backend bieten sich die folgende drei Sprachen an: \hyperref[sec:orgf14b096]{C\#}, \hyperref[sec:org5dffd72]{C++}, \hyperref[sec:org24cf9d5]{Python}.
 Dies vor allem, weil alle Allrounder Sprachen sind und sich gut für Desktop
 Applikationen eignen.
 
 \paragraph{C\#}
-\label{sec:org6dc83fa}
+\label{sec:orgf14b096}
 
 C\# ist eine von Microsoft entwickelte Programmiersprache welche viele
 Frameworks zur Verfügung hat. Insbesondere aufgrund der grossen kommerziellen
@@ -1316,13 +1316,13 @@ Jedoch aufgrund des moderneren Unterbaus sicher schneller als C++.
 \textbf{Total} &  &  &  & 279\\
 \hline
 \end{tabular}
-\caption{\label{tab:org5f3234b}
+\caption{\label{tab:orga12f405}
 C\# Bewertungstabelle}
 
 \end{table}
 
 \paragraph{C++}
-\label{sec:org9726297}
+\label{sec:org5dffd72}
 
 C++ ist eine stark typisierte und kompilierte Programmiersprache. Sie ist seit
 1998 Teil des ISO Standards \footcite{cpp98}. ISO/IEC 14882:2017 \footcite{cpp17}
@@ -1384,21 +1384,21 @@ ungeeignet.
 \textbf{Total} &  &  &  & 271\\
 \hline
 \end{tabular}
-\caption{\label{tab:org9de043b}
+\caption{\label{tab:org254d62e}
 C++ Bewertungstabelle}
 
 \end{table}
 
 \paragraph{Python}
-\label{sec:org88671d5}
+\label{sec:org24cf9d5}
 
 Der Python Interpreter ist für eine Vielzahl an Betriebssystemen erhältlich,
 inklusive Windows, OS X und Linux. Nahezu jedes Desktop Linux System kommt mit
 Python vor installiert. Auch OS X kommt bereits ab Werk mit Python Version 2.
 Version 3 lässt sich sehr einfach nachinstallieren und ist einfach nutzbar.
 Unter Windows gestaltetet sich die Installation etwas aufwendiger aber auch
-nicht sehr kompliziert integriert sich in Windows jedoch etwas weniger elegant
-als C\#.
+nicht sehr kompliziert. Python integriert sich in Windows jedoch etwas weniger
+elegant als C\#.
 
 Python ist freie Software unter der Python Software Foundation License
 \footcite{python} und wird durch die Python Software Foundation in einem
@@ -1422,9 +1422,9 @@ effektiv geschrieben wird \footcite{pep8}.
 
 Um ein Python Programm zu starten braucht es eigentlich kein grosses Setup.
 Solange die Abhängigkeiten vorhanden sind, kann man ein Skript mit einem
-einfachen Befehl, Code Snippet (\ref{org21e4047}) starten.
+einfachen Befehl, Code Snippet (\ref{org4ae1134}) starten.
 
-\lstset{language=bash,label=org21e4047,caption={Minimal Python Setup},captionpos=b,numbers=none}
+\lstset{language=bash,label=org4ae1134,caption={Minimal Python Setup},captionpos=b,numbers=none}
 \begin{sexylisting}{Minimal Python Setup}
 python3 example.py
 \end{sexylisting}
@@ -1463,15 +1463,15 @@ entwickeln kann, dies jedoch zulasten der Performance.
 \textbf{Total} &  &  &  & 322\\
 \hline
 \end{tabular}
-\caption{\label{tab:org09176af}
+\caption{\label{tab:orgb91e860}
 Python Bewertungstabelle}
 
 \end{table}
 
 \subsubsection{Frontend}
-\label{sec:orgf48e554}
+\label{sec:org9fc9cc4}
 
-Fürs Frontend sind folgende Projekte interessant: \hyperref[sec:orge6f1dad]{Qt}, \hyperref[sec:orgb8f4e3d]{Gtk} und \hyperref[sec:org159ca63]{Electron}. Alle
+Fürs Frontend sind folgende Projekte interessant: \hyperref[sec:orgf8894b8]{Qt}, \hyperref[sec:orgb489720]{Gtk} und \hyperref[sec:org14fe91f]{Electron}. Alle
 drei sind cross-plattform fähige \gls{gui} Frameworks und nicht von einer
 spezifischen Sprache abhängig. Da nahezu keine Erfahrung mit den aufgeführten
 Frameworks vorhanden ist, werden bei den Frontend Frameworks die Punkte der
@@ -1479,7 +1479,7 @@ Verbreitung in der Community und Geschwindigkeit der Entwicklung ausgeschlossen.
 In beiden Fällen wäre nicht mal eine ungenaue Schätzung wirklich möglich.
 
 \paragraph{Qt}
-\label{sec:orge6f1dad}
+\label{sec:orgf8894b8}
 
 Qt \footcite{qt}, "`cute"' ausgesprochen, ist ein Framework zum Entwickeln von
 grafischen Oberflächen, welche auf verschiedenen System ohne grosse Änderungen
@@ -1529,13 +1529,13 @@ gross.
 \textbf{Total} &  &  &  & 295\\
 \hline
 \end{tabular}
-\caption{\label{tab:orgbd7bf27}
+\caption{\label{tab:org72ac2ae}
 Qt Bewertungstabelle}
 
 \end{table}
 
 \paragraph{Gtk}
-\label{sec:orgb8f4e3d}
+\label{sec:orgb489720}
 
 Gtk ist sowohl für Linux wie auch für Windows und OS X erhältlich. Gtk hat als
 Projekt der Gnome Foundation seine Wurzeln jedoch ganz klar in der Linux Welt.
@@ -1544,17 +1544,17 @@ Gtk ist ein Projekt der GNOME Foundation einer nicht für Profit Organisation,
 welche die Entwicklung diverser freier Software Projekte koordiniert.
 
 Zu Gtk gibt es keinerlei Vorkenntnisse als Programmierer. Gtk wurde bis jetzt
-nur intensiv User verwendet.
+nur intensiv als User verwendet.
 
 Gtk integriert sich nur unter Linux wirklich gut ins System. Unter Windows und
-OS X können die Applikation schnell etwas fremd wirken. Dies ist gut bei der
+OS X können die Applikationen schnell etwas fremd wirken. Dies ist gut bei der
 Applikation Meld \footcite{meld} zu sehen, wenn man eine Datei auswählen möchte,
-Abbildung (\ref{fig:org1567490}).
+Abbildung (\ref{fig:org0603414}).
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/meld.png}
-\caption{\label{fig:org1567490}
+\caption{\label{fig:org0603414}
 Screenshot der Applikation Meld unter Windows 10}
 \end{figure}
 Die Gtk Dokumentation empfiehlt \footcite{gtk_setup}, dass man unter Windows das
@@ -1592,13 +1592,13 @@ Da die Kenntnisse gleich null sind, ist der Lernfaktor auf dem Maximum.
 \textbf{Total} &  &  &  & 275\\
 \hline
 \end{tabular}
-\caption{\label{tab:org23e94b9}
+\caption{\label{tab:org55a53be}
 Gtk Bewertungstabelle}
 
 \end{table}
 
 \paragraph{Electron}
-\label{sec:org159ca63}
+\label{sec:org14fe91f}
 
 Electron ist ein cross-plattform Framework zum Entwickeln von \glspl{gui} welches
 dabei jedoch auf Technologien aus der Webentwicklung benutzt. Entwickelt wird
@@ -1652,15 +1652,15 @@ Lernfaktor bei Electron wohl nicht so gross wie etwa bei Qt oder Gtk.
 \textbf{Total} &  &  &  & 275\\
 \hline
 \end{tabular}
-\caption{\label{tab:org9bb7ec2}
+\caption{\label{tab:orgf2c29a8}
 Electron Bewertungstabelle}
 
 \end{table}
 
 \subsubsection{Ergebnis}
-\label{sec:org6c303b3}
+\label{sec:org21fc8cb}
 
-Aufgrund der erreichten Punktzahl, Tabelle:(\ref{tab:org6208ba1}), bei den vorhergehenden
+Aufgrund der erreichten Punktzahl, Tabelle:(\ref{tab:orgf54ee61}), bei den vorhergehenden
 Variantenbewertungen, wurde entschieden für das Backend der Applikation auf
 Python zu setzen und fürs Frontend Qt zu benutzen.
 \begin{table}[H]
@@ -1679,13 +1679,13 @@ Gtk & 275\\
 Electron & 275\\
 \hline
 \end{tabular}
-\caption{\label{tab:org6208ba1}
+\caption{\label{tab:orgf54ee61}
 Variantenbewertung Ergebnis}
 
 \end{table}
 
 \subsection{Applikationsname}
-\label{sec:org515da8d}
+\label{sec:org525ca03}
 
 Da die einzusetzende Technologie nun feststeht lässt sich auch gut ein Name für
 die Applikation ableiten. Oftmals werden die grafischen Applikationen gleich
@@ -1694,7 +1694,7 @@ Frameworks als Suffix. Somit wird das zu erstellende \gls{gui} für \gls{borg} i
 weiteren Verlauf der Arbeit nun Borg-Qt genannt
 
 \subsection{Testing}
-\label{sec:org87a731b}
+\label{sec:org8458d46}
 
 Die Anwendung wird während der Realisierung soweit als möglich mit
 automatischen Unittests und Funktionstests überprüft. Dies hauptsächlich um die
@@ -1702,16 +1702,26 @@ Erfahrung in diesem Bereich zu erweitern und um ein gutes Fundament für die
 Zukunft des Projektes zu bauen.
 
 Aufgrund der Unerfahrenheit in diesem Bereich werden die Testfälle,
-Tabelle:(\ref{tab:org7421cce}), final jedoch von Hand überprüft. Somit kann vermieden
+Tabelle:(\ref{tab:org69257f5}), final jedoch von Hand überprüft. Somit kann vermieden
 werden das nicht funktionierende automatische Tests den Abschluss des Projektes
-verhindern.
+verhindern. Da die Testfälle sich hauptsächlich an den Use Cases orientieren
+gibt es ein paar Ziele die dadurch nicht getestet werden können. Zudem sind zur
+Zeit nur ca. 20. der Ziele durch die Use Cases abgedeckt. Die weiteren Ziele
+lassen sich erst sinnvoll integrieren wenn die Basis für das Programm
+geschaffen wurde.
+
+Die Ziele die nicht durch die Testfälle getestet werden können sind Ziel Nr. 1
+und Nr. 2. Für Ziel Nr. 1 wird in der Sektion \ref{sec:orgcbae1a5} ein Proof of Concept
+erstellt um die cross-plattform Fähigkeit zu beweisen. Ziel Nr. 2 ist mit
+folgendem Link erfüllt. \url{https://github.com/borg-qt/borg-qt/blob/master/LICENSE}.
+Dabei handelt es sich um die Lizenz des Borg-Qt Repository.
 
 Getestet wird die Applikation jeweils auf dem Computer des Projektleiters. Auf
 diesem läuft die aktuelle Langzeitsupport Version (18.04) von Ubuntu
 \footcite{ubuntu} Linux, mit der GNOME Desktop Umgebung \footcite{gnome}, als
 Betriebssystem. Die Tests werden jeweils gegen eine von PyInstaller generierte
 Binärdatei ausgeführt. Der genaue Vorgang der Erstellung dieser Datei wird in
-der Sektion: \hyperref[sec:org7f34c6e]{Releases} beschrieben. Somit werden die Tests immer gegen eine
+der Sektion: \hyperref[sec:org8ba8c5e]{Releases} beschrieben. Somit werden die Tests immer gegen eine
 veröffentlichbare Version gemacht.
 
 Als Testdateien wird jeweils das Code Repository von Borg-Qt selber verwendet.
@@ -1737,7 +1747,7 @@ ermöglicht Passwort freie Logins.
 \newpage
 \begin{landscape}
 \subsection{Testfälle}
-\label{sec:org54488aa}
+\label{sec:org1c1016b}
 {\footnotesize
 \begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}l|p{2cm}|p{2cm}|p{3.5cm}|p{2cm}|p{3cm}|p{3.5cm}|p{2.5cm}|}
 \hline
@@ -1805,7 +1815,7 @@ ermöglicht Passwort freie Logins.
 \hline
 \textbf{TC-25} & Abgebrochenes Backup bereinigen & TC-01 ausgeführt. & 1. In der Ordnerübersicht das Code Repository auswählen.\newline 2. Den Button “Backup” betätigen.\newline 3. Die Anwendung schliessen.\newline 4. Anwendung wieder öffnen.\newline 5. TC-04 Durchführen. & Testdateien & Bei Schritt 4. sollte ein Teilbackup zu sehen sein.\newline Bei Schritt 5 sollte einfach ein normales Backup zu sehen sein. & Die Anwendung wird angezeigt. & \\
 \hline
-\caption{\label{tab:org7421cce}
+\caption{\label{tab:org69257f5}
 Testfälle}
 \\
 \end{longtable}
@@ -1813,65 +1823,258 @@ Testfälle}
 \end{landscape}
 \newpage
 
+\subsection{Benutzerfreundlichkeitsstudie}
+\label{sec:org41a9343}
+
+Um Borg-Qt auf seine Nutzerfreundlichkeit zu testen wird im Rahmen der
+Diplomarbeit noch eine kleine Benutzerfreundlichkeitsstudie gemacht. Bei einer
+solchen Studie erhalten die Propanden, Tabelle:(\ref{tab:org79b1e7d}) ein paar
+Aufgaben, abgebildet in der Sektion \ref{sec:org7336e25}, welche sie in einer begrenzten
+Zeit zu erledigen haben. Die Aufsichtsperson gibt ihnen dabei keinerlei
+Hilfestellungen. Die Propanden sollen die Aufgaben alleine mit Hilfe der Tipps
+und Hinweisen in der Anwendung lössen. Im Anschluss bewerten die Propanden dann
+die einzelnen Aufgaben nach ihrer Schwierigkeit,
+Tabelle:(\ref{tab:org0009551}). Daraus lässt sich dann eine sogenannte Heatmap
+erstellen. Aus der Heatmap kann man anschaulich herauslesen welche Bereiche für
+die User noch zu kompliziert sind und Nacharbeit benötigen.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\columncolor[HTML]{EFEFEF}}r|c|c|c|c|}
+\hline
+\textbf{Nr.}\cellcolor[HTML]{C0C0C0} & \textbf{Geschlecht}\cellcolor[HTML]{C0C0C0} & \textbf{Alter}\cellcolor[HTML]{C0C0C0} & \textbf{Englischkenntnisse}\cellcolor[HTML]{C0C0C0} & \textbf{Computerkenntnisse}\cellcolor[HTML]{C0C0C0}\\
+\hline
+1 & Männlich & 30 & Sehr gut & Sehr gut\\
+\hline
+2 & Männlich & 35 & Gut & Sehr gut\\
+\hline
+3 & Weiblich & 27 & Gut & Mittel\\
+\hline
+4 & Männlich & 30 &  & \\
+\hline
+5 & Weiblich & 26 &  & \\
+\hline
+\end{tabular}
+\caption{\label{tab:org79b1e7d}
+Benutzerfreundlichkeitsstudie Propanden}
+
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Grün}\cellcolor[HTML]{4CAF50} & Die Aufgabe war sehr einfach.\\
+\hline
+\textbf{Gelb}\cellcolor[HTML]{FFEB3B} & Die Aufgabe war etwas herausfordernd.\\
+\hline
+\textbf{Orange}\cellcolor[HTML]{FF9800} & Die Aufgabe war schwierig.\\
+\hline
+\textbf{Rot}\cellcolor[HTML]{f44336} & Die Aufgabe war sehr schwierig.\\
+\hline
+\textbf{Schwarz}\cellcolor[HTML]{424242} & Die Aufgabe war unlösbar.\\
+\hline
+\end{tabular}
+\caption{\label{tab:org0009551}
+Benutzerfreundlichkeitsstudie Bewertungsraster}
+
+\end{table}
+
+\subsubsection{Aufgaben}
+\label{sec:org7336e25}
+
+\begin{enumerate}
+\item Du möchtest deine Dateien sichern. Erstelle dazu eine Datensicherung des Ordners \texttt{/home/testuser/Downloads}.
+\item Du hast aus versehen die Datei \texttt{/home/testuser/Downloads/Example.pdf}
+gelöscht. Stelle die Datei wieder her. Am Ende soll sie unter
+\texttt{/home/testuser/Documents/Example.pdf} zu finden sein.
+\item Stelle ein beliebiges Archiv wieder her. Der Zielpfad ist \texttt{/home/testuser/Documents/}.
+\item Lösche ein Archiv deiner Wahl.
+\item Du möchtest das der Ordner \texttt{/home/testuser/Pictures/} nicht mehr gesichert
+wird. Konfiguriere die Applikation entsprechend.
+\end{enumerate}
+
+\subsubsection{Resultate}
+\label{sec:org4179596}
+
+\begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}l|l|l|l|l|l|}
+\hline
+\textbf{Test}\cellcolor[HTML]{C0C0C0} & \textbf{Propand 1}\cellcolor[HTML]{C0C0C0} & \textbf{Propand 2}\cellcolor[HTML]{C0C0C0} & \textbf{Propand 3}\cellcolor[HTML]{C0C0C0} & \textbf{Propand 4}\cellcolor[HTML]{C0C0C0} & \textbf{Propand 5}\cellcolor[HTML]{C0C0C0}\\
+\hline
+\endfirsthead
+\multicolumn{6}{l}{Fortsetzung von vorheriger Seite} \\
+\hline
+
+\textbf{Test}\cellcolor[HTML]{C0C0C0} & \textbf{Propand 1}\cellcolor[HTML]{C0C0C0} & \textbf{Propand 2}\cellcolor[HTML]{C0C0C0} & \textbf{Propand 3}\cellcolor[HTML]{C0C0C0} & \textbf{Propand 4}\cellcolor[HTML]{C0C0C0} & \textbf{Propand 5}\cellcolor[HTML]{C0C0C0} \\
+
+\hline
+\endhead
+\hline\multicolumn{6}{r}{Fortsetzung nächste Seite} \\
+\endfoot
+\endlastfoot
+\hline
+1. & \cellcolor[HTML]{4CAF50} & \cellcolor[HTML]{FFEB3B} & \cellcolor[HTML]{FF9800} & \cellcolor[HTML]{f44336} & \cellcolor[HTML]{424242}\\
+\hline
+2. &  &  &  &  & \\
+\hline
+3. &  &  &  &  & \\
+\hline
+4. &  &  &  &  & \\
+\hline
+5. &  &  &  &  & \\
+\hline
+\caption{\label{tab:orgf2c44d9}
+Benutzerfreundlichkeitsstudie Resultate}
+\\
+\end{longtable}
+
 \section{Realisierung}
-\label{sec:orgc9d2eb3}
+\label{sec:orgcbae1a5}
 \subsection{Cross-plattform Kompatibilität}
-\label{sec:orga3fa7b8}
+\label{sec:org445f656}
 
 Um sicherzugehen das die gewählten Technologien auch den Anforderungen
 entsprechen wurde ein kleines "`Hello World"' Programm mit Python3 und Qt
 geschrieben. Dieses läuft ohne jegliche Probleme und Anpassung auf Windows,
-Linux und OS X. Wie in den Screenshots in Abbildung:(\ref{fig:orgc389f8e}) zu sehen
+Linux und OS X. Wie in den Screenshots in Abbildung:(\ref{fig:orgf39d17a}) zu sehen
 ist.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/hello_world.png}
-\caption{\label{fig:orgc389f8e}
+\caption{\label{fig:orgf39d17a}
 Python und Qt Applikation unter Windows (links), Linux (rechts) und OS X (unten)}
 \end{figure}
 
 \subsection{Benutzerinterface}
-\label{sec:orgdec9bd7}
-\paragraph{Inspiration}
-\label{sec:org43aedbb}
+\label{sec:orgebaec30}
+\subsubsection{Inspiration}
+\label{sec:orgda858d3}
 
-PLACEHOLDER
+Bevor \gls{borg} vom Projektleiter als Backup Software eingesetzt wurde, nutzte
+er die Software "`Back in Time"'\footcite{backintime}. Die Software setzt auf Rsync
+zum kopieren der Dateien. Dies erlaubt auch schnelle Backups über SSH zu
+machen. "`Back in Time"' hat allerdings das Problem, dass es keine \gls{dedup}
+beherrscht.
 
-\paragraph{Frontend Umsetzung}
-\label{sec:orgc7c5ae3}
+Das Userinterface, zu sehen in Abbildung:(\ref{fig:orgc56cec1}), ist jedoch sehr
+gelungen und soll Borg-Qt als Vorlage dienen. Insbesondere die einfache und
+direkte Art ein Backup eines spezifischen Pfades zu machen ist sehr spannend.
+Da sie es dem User so einfach wie möglich macht ein Backup zu erstellen.
 
-PLACEHOLDER
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{pictures/bit_main.png}
+\caption{\label{fig:orgc56cec1}
+Screenshot des Hauptfensters der Software "`Back in Time"'}
+\end{figure}
 
-\paragraph{Backend Umsetzung}
-\label{sec:org817e067}
+\subsubsection{Umsetzung}
+\label{sec:orgf72f50d}
+
+Qt bietet einem mehrere Möglichkeiten zum erstellen der graphischen Oberfläche.
+Zum einen kann die ganze Oberfläche programmatisch erstellt werden. Dies gibt
+dem ein grosses Mass an Kontrolle über das Erstellte ist allerdings nicht sehr
+intuitiv.
+
+Die angenehmere Variante ist des den Qt Designer, Abbildung:(\ref{fig:org663b709}),
+zu nutzen. Mit diesem lassen sich die Oberflächen in einer graphischen
+Oberfläche designen und mit einem Befehl auch gleich starten damit man direkt
+sieht wie sich die Oberflächen auf dem System verhalten.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{pictures/qt_designer.png}
+\caption{\label{fig:org663b709}
+Ein Screenshot der Applikation Qt Designer}
+\end{figure}
+Auf Basis der Ziele und der Use Cases wurde eine erste Version des \glspl{gui}
+erstellt. Im Hauptfenster, Abbildung:(\ref{fig:org2e387c6}), befinden sich wie
+auch bei "`Back in Time"' in der einen Hälfte eine Liste der vorhandenen Backups
+(bei Borg Archive genannt) und in der anderen Hälfte ein Dateimanagemer. Dieser
+dient zur Auswahl des zu sichernden Pfades. Im oberen Bereich findet sich die
+Toolbar mit den Aktionen die der User ausführen kann. Gemäss den Use Cases sind
+dies "`Backup"', "`Restore"', "`Mount"', "`Delete"' und "`Settings"'.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.9\linewidth]{pictures/borgqt_main_v1.png}
+\caption{\label{fig:org2e387c6}
+Screenshot des Borg-Qt Hauptfensters Version 1}
+\end{figure}
+
+Im Einstellungsfenster gibt es zwei Tabs zur Auswahl. Einmal den "`General"' Tab,
+Abbildung:(\ref{fig:org588f6f1}), dieser zeigt allgemeine Optionen
+an. Der zweite Tab "`Exlcude"', Abbildung:(\ref{fig:org89e6126}), gibt
+dem User die Möglichkeit einzelne Ordner oder Dateien von den Backups
+auszuschliessen.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.7\textwidth]{pictures/borgqt_settings_general_v1.png}
+\caption{\label{fig:org588f6f1}
+Screenshot der Borg-Qt "`General"' Einstellungen Version 1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.7\textwidth]{pictures/borgqt_settings_exclude_v1.png}
+\caption{\label{fig:org89e6126}
+Screenshot der Borg-Qt "`Exclude"' Einstellungen Version 1}
+\end{figure}
+
+Das "`Progress"' Dialogfenster, Abbildung:(\ref{fig:orgcb30462}), zeigt dem
+User einen Fortschrittsbalken und einen einen "`Cancel"' Button zum Abbrechen der
+Aktion an. Das Fenster ist generisch gehalten damit es von verschiedenen Tasks
+gleichermassen genutzt werden kann.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.6\textwidth]{pictures/borgqt_progress_v1.png}
+\caption{\label{fig:orgcb30462}
+Screenshot des Borg-Qt "`Progress"' Dialogfensters Version 1}
+\end{figure}
+
+Im "`Archive"' Dialogfenster, Abbildung:(\ref{fig:org7511fd2}), werden
+Detailinformationen eines Archives angezeigt. Diese sind etwa die Grösse des
+Archives, wieviele Dateien es beinhaltet, wie lange das Erstellen dauerte, etc.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.6\textwidth]{pictures/borgqt_archive_v1.png}
+\caption{\label{fig:org7511fd2}
+Screenshot des Borg-Qt Archivinformationsfenster Version 1}
+\end{figure}
+
+\subsection{Backend Umsetzung}
+\label{sec:org61c609d}
 
 PLACEHOLDER
 
 \subsection{Releases}
-\label{sec:org7f34c6e}
+\label{sec:org8ba8c5e}
 
 \section{Ausblick}
-\label{sec:org2dfa673}
+\label{sec:org86bdafa}
 \subsection{Projektmanagement}
-\label{sec:org552185a}
+\label{sec:orgfeb0d16}
 
 PLACEHOLDER
 
 \subsection{Umsetzung}
-\label{sec:org365accc}
+\label{sec:org207420a}
 
 PLACEHOLDER
 
 \subsection{Gelerntes}
-\label{sec:org33a52a9}
+\label{sec:org4c37065}
 
 PLACEHOLDER
 
 \newpage
 \begin{landscape}
 \section{Arbeitsjournal}
-\label{sec:orgb2f71a7}
+\label{sec:org7205e48}
 
 \begin{longtable}{|p{2cm}|p{5cm}|p{5cm}|p{7cm}|}
 \hline
@@ -1895,9 +2098,11 @@ PLACEHOLDER
 \hline
 30.12.2018 & Controlling erarbeiten, Ist- und Soll-Analyse, SWOT Analyse, Umweltanalyse, Massnahmen Katalog erarbeiten, User Stories erarbeiten, Use Case Diagramm erstellen, Use Cases ausarbeiten, Anforderungskatalog erstellen, UML Diagramme & keine Abweichung & UML Diagramme für eine Software zu erstellen die nicht existiert ist noch eine interessante Herausforderung.\\
 \hline
-06.01.2019 & Lösungsvarianten erarbeiten und entscheiden, Test Konzept beschreiben und Testfälle erstellen &  & \\
+06.01.2019 & Lösungsvarianten erarbeiten und entscheiden, Test Konzept beschreiben und Testfälle erstellen, Github Repository erstellen & Testfälle liessen sich noch nicht für alle Ziele erstellen. Gewisse Features hängen noch sehr davon ab wie die Basis der Applikation sich entwickelt. & Insgesamt gut gelaufen. Das Repository auf Github konnte ich unter einer eigenen Organisation erstellen dadurch wird das Zusammenarbeiten in der Zukunf einfacher.\\
 \hline
-\caption{\label{tab:orgb6bc908}
+13.01.2019 & UI ausarbeiten, UI Test ausarbeiten, Backend "`Read Config"' Funktion schreiben, Frontend "`Read Config"'  Funktion beginnen &  & Das Erstellen der Benutzerfreundlichkeitsstudie ging schneller als erwartet.\\
+\hline
+\caption{\label{tab:orgf1596d1}
 Arbeitsjournal}
 \\
 \end{longtable}
