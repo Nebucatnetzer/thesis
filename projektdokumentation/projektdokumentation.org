@@ -1561,6 +1561,82 @@ folgt aus:
 #+LATEX:\end{landscape}
 #+LATEX:\newpage
 
+** TODO Benutzerfreundlichkeitsstudie
+
+Um Borg-Qt auf seine Nutzerfreundlichkeit zu testen wird im Rahmen der
+Diplomarbeit noch eine kleine Benutzerfreundlichkeitsstudie gemacht. Bei einer
+solchen Studie erhalten die Propanden, Tabelle:([[tab:propanden]]) ein paar
+Aufgaben, abgebildet in der Sektion [[Aufgaben]], welche sie in einer begrenzten
+Zeit zu erledigen haben. Die Aufsichtsperson gibt ihnen dabei keinerlei
+Hilfestellungen. Die Propanden sollen die Aufgaben alleine mit Hilfe der Tipps
+und Hinweisen in der Anwendung lössen. Im Anschluss bewerten die Propanden dann
+die einzelnen Aufgaben nach ihrer Schwierigkeit,
+Tabelle:([[tab:usability_colours]]). Daraus lässt sich dann eine sogenannte Heatmap
+erstellen. Aus der Heatmap kann man anschaulich herauslesen welche Bereiche für
+die User noch zu kompliziert sind und Nacharbeit benötigen.
+
+#+CAPTION: Benutzerfreundlichkeitsstudie Propanden
+#+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}r|c|c|c|c| :placement [H]
+#+NAME: tab:propanden
+|-------------------------------+--------------------------------------+---------------------------------+----------------------------------------------+----------------------------------------------|
+| *Nr.*\cellcolor[HTML]{C0C0C0} | *Geschlecht*\cellcolor[HTML]{C0C0C0} | *Alter*\cellcolor[HTML]{C0C0C0} | *Englischkenntnisse*\cellcolor[HTML]{C0C0C0} | *Computerkenntnisse*\cellcolor[HTML]{C0C0C0} |
+|-------------------------------+--------------------------------------+---------------------------------+----------------------------------------------+----------------------------------------------|
+|                             1 | Männlich                             |                              30 | Sehr gut                                     | Sehr gut                                     |
+|-------------------------------+--------------------------------------+---------------------------------+----------------------------------------------+----------------------------------------------|
+|                             2 | Männlich                             |                              35 | Gut                                          | Sehr gut                                     |
+|-------------------------------+--------------------------------------+---------------------------------+----------------------------------------------+----------------------------------------------|
+|                             3 | Weiblich                             |                              27 | Gut                                          | Mittel                                       |
+|-------------------------------+--------------------------------------+---------------------------------+----------------------------------------------+----------------------------------------------|
+|                             4 | Männlich                             |                              30 |                                              |                                              |
+|-------------------------------+--------------------------------------+---------------------------------+----------------------------------------------+----------------------------------------------|
+|                             5 | Weiblich                             |                              26 |                                              |                                              |
+|-------------------------------+--------------------------------------+---------------------------------+----------------------------------------------+----------------------------------------------|
+
+#+CAPTION: Benutzerfreundlichkeitsstudie Bewertungsraster
+#+ATTR_LATEX: :align |l|l| :placement [H]
+#+NAME: tab:usability_colours
+|-----------------------------------+---------------------------------------|
+| *Grün*\cellcolor[HTML]{4CAF50}    | Die Aufgabe war sehr einfach.         |
+|-----------------------------------+---------------------------------------|
+| *Gelb*\cellcolor[HTML]{FFEB3B}    | Die Aufgabe war etwas herausfordernd. |
+|-----------------------------------+---------------------------------------|
+| *Orange*\cellcolor[HTML]{FF9800}  | Die Aufgabe war schwierig.            |
+|-----------------------------------+---------------------------------------|
+| *Rot*\cellcolor[HTML]{f44336}     | Die Aufgabe war sehr schwierig.       |
+|-----------------------------------+---------------------------------------|
+| *Schwarz*\cellcolor[HTML]{424242} | Die Aufgabe war unlösbar.             |
+|-----------------------------------+---------------------------------------|
+
+*** Aufgaben
+
+1. Du möchtest deine Dateien sichern. Erstelle dazu eine Datensicherung des Ordners ~/home/testuser/Downloads~.
+2. Du hast aus versehen die Datei ~/home/testuser/Downloads/Example.pdf~
+   gelöscht. Stelle die Datei wieder her. Am Ende soll sie unter
+   ~/home/testuser/Documents/Example.pdf~ zu finden sein.
+3. Stelle ein beliebiges Archiv wieder her. Der Zielpfad ist ~/home/testuser/Documents/~.
+4. Lösche ein Archiv deiner Wahl.
+5. Du möchtest das der Ordner ~/home/testuser/Pictures/~ nicht mehr gesichert
+   wird. Konfiguriere die Applikation entsprechend.
+
+*** Resultate
+
+#+CAPTION: Benutzerfreundlichkeitsstudie Resultate
+#+ATTR_LATEX: :environment longtable :align |>{\columncolor[HTML]{EFEFEF}}l|l|l|l|l|l| :placement [H]
+#+NAME: tab:usability_result
+|--------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------|
+| *Test*\cellcolor[HTML]{C0C0C0} | *Propand 1*\cellcolor[HTML]{C0C0C0} | *Propand 2*\cellcolor[HTML]{C0C0C0} | *Propand 3*\cellcolor[HTML]{C0C0C0} | *Propand 4*\cellcolor[HTML]{C0C0C0} | *Propand 5*\cellcolor[HTML]{C0C0C0} |
+|--------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------|
+|                             1. |                                     |                                     |                                     |                                     |                                     |
+|--------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------|
+|                             2. |                                     |                                     |                                     |                                     |                                     |
+|--------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------|
+|                             3. |                                     |                                     |                                     |                                     |                                     |
+|--------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------|
+|                             4. |                                     |                                     |                                     |                                     |                                     |
+|--------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------|
+|                             5. |                                     |                                     |                                     |                                     |                                     |
+|--------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------|
+
 * TODO Realisierung
 ** Cross-plattform Kompatibilität
 
