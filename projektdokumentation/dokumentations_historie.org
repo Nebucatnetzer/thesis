@@ -7,16 +7,107 @@
 
 * Dokument Historie
 
-#+BEGIN_SRC bash :exports results :eval never-export
+#+BEGIN_SRC shell :exports results :eval never-export
 echo "*Datum*, *Author*, *Änderung*"
 git log --pretty=format:'%ai, %an, %s' | sed s/+0100//g | sed s/+0200//g
 #+END_SRC
 
 #+ATTR_LATEX: :environment longtable :align |p{3cm}|p{3cm}|p{8cm}|
 #+RESULTS:
-|---------------------+----------------+----------------------------------------------------------------|
 | *Datum*             | *Author*       | *Änderung*                                                     |
-|---------------------+----------------+----------------------------------------------------------------|
+| 2019-01-15 21:17:14 | Andreas Zweili | update the tex file                                            |
+| 2019-01-15 21:16:56 | Andreas Zweili | update the work journal                                        |
+| 2019-01-15 21:16:30 | Andreas Zweili | add section about the usability study                          |
+| 2019-01-15 21:09:59 | Andreas Zweili | add section about the UI design                                |
+| 2019-01-15 09:35:03 | Andreas Zweili | Add a missing picture                                          |
+| 2019-01-14 10:42:39 | Andreas Zweili | rearange sections                                              |
+| 2019-01-14 10:41:31 | Andreas Zweili | remove a todo tag                                              |
+| 2019-01-14 10:40:59 | Andreas Zweili | add section about the UI inspiration                           |
+| 2019-01-12 13:41:37 | Andreas Zweili | fix some typos                                                 |
+| 2019-01-11 20:08:56 | Andreas Zweili | update the journal                                             |
+| 2019-01-11 20:05:58 | Andreas Zweili | update tables                                                  |
+| 2019-01-11 20:05:25 | Andreas Zweili | extend the testing section                                     |
+| 2019-01-11 17:55:58 | Andreas Zweili | fixing more typos                                              |
+| 2019-01-10 21:40:35 | Andreas Zweili | move typo fixes                                                |
+| 2019-01-10 21:10:37 | Andreas Zweili | Fix various Typos                                              |
+| 2019-01-10 20:30:18 | Andreas Zweili | Merge branch 'master' of git.2li.ch:Nebucatnetzer/thesis       |
+| 2019-01-10 20:28:10 | Andreas Zweili | add Konzept section                                            |
+| 2019-01-10 20:28:10 | Andreas Zweili | add Konzept section                                            |
+| 2019-01-05 11:44:26 | Andreas Zweili | remove section Vorkenntnisse                                   |
+| 2019-01-03 14:22:47 | Andreas Zweili | add option to create the final zip with the make file          |
+| 2019-01-03 14:22:33 | Andreas Zweili | update the html time plan                                      |
+| 2019-01-03 14:22:05 | Andreas Zweili | ignore zip files                                               |
+| 2019-01-03 14:05:36 | Andreas Zweili | update journal                                                 |
+| 2019-01-03 12:17:45 | Andreas Zweili | add sections about use cases                                   |
+| 2018-12-28 16:03:06 | Andreas Zweili | mark milestones explicitly                                     |
+| 2018-12-28 11:10:22 | Andreas Zweili | reorder the Konzept section                                    |
+| 2018-12-28 11:03:42 | Andreas Zweili | move the Werkzeug section to Konfigurationsmanagement          |
+| 2018-12-25 17:42:57 | Andreas Zweili | use material colours in all the diagramms                      |
+| 2018-12-25 17:07:02 | Andreas Zweili | extend title page                                              |
+| 2018-12-25 17:06:31 | Andreas Zweili | rename the document and other various fixes                    |
+| 2018-12-25 16:53:53 | Andreas Zweili | create an Ist/Soll Analyse                                     |
+| 2018-12-25 16:53:25 | Andreas Zweili | move parts of the risk_analysis to the section Initialisierung |
+| 2018-12-25 15:50:44 | Andreas Zweili | Merge branch 'master' of git.2li.ch:Nebucatnetzer/thesis       |
+| 2018-12-25 15:50:11 | Andreas Zweili | remove todo state                                              |
+| 2018-12-25 15:50:11 | Andreas Zweili | remove todo state                                              |
+| 2018-12-25 15:49:54 | Andreas Zweili | update SWOT analysis                                           |
+| 2018-12-25 13:47:55 | Andreas Zweili | add an Arbeitsjournal                                          |
+| 2018-12-25 13:47:43 | Andreas Zweili | add sections about controlling                                 |
+| 2018-12-25 13:47:28 | Andreas Zweili | various clean ups                                              |
+| 2018-12-25 12:19:16 | Andreas Zweili | describe the time planing                                      |
+| 2018-12-25 11:50:21 | Andreas Zweili | extend ausgangslage                                            |
+| 2018-12-25 11:45:35 | Andreas Zweili | add kontext diagramm                                           |
+| 2018-12-24 16:10:35 | Andreas Zweili | some more modifications                                        |
+| 2018-12-24 15:53:54 | Andreas Zweili | reorder all this shit...                                       |
+| 2018-12-24 12:17:34 | Andreas Zweili | update time plan                                               |
+| 2018-12-24 11:31:53 | Andreas Zweili | extend the readme                                              |
+| 2018-12-24 11:27:26 | Andreas Zweili | update the time management                                     |
+| 2018-12-24 10:56:34 | Andreas Zweili | make symlinks relativ                                          |
+| 2018-12-24 10:54:49 | Andreas Zweili | add a protokoll file                                           |
+| 2018-12-23 12:51:49 | Andreas Zweili | extend the risikomanagement section                            |
+| 2018-12-23 10:07:54 | Andreas Zweili | Merge branch 'master' into risikomanagement                    |
+| 2018-12-23 10:07:34 | Andreas Zweili | remove todo keywords                                           |
+| 2018-12-23 10:07:21 | Andreas Zweili | extend hello_world caption                                     |
+| 2018-12-23 10:06:15 | Andreas Zweili | fix the Risiko Analyse path                                    |
+| 2018-12-23 10:04:25 | Andreas Zweili | Merge branch 'master' into risikomanagement                    |
+| 2018-12-23 10:03:41 | Andreas Zweili | add a screenshot of the hello_world pogramm                    |
+| 2018-12-23 10:00:43 | Andreas Zweili | make distclean                                                 |
+| 2018-12-23 10:00:19 | Andreas Zweili | WIP                                                            |
+| 2018-12-22 16:55:02 | Andreas Zweili | extend the configuration management section                    |
+| 2018-12-22 16:52:24 | Andreas Zweili | write the section about configuration management               |
+| 2018-12-22 16:52:09 | Andreas Zweili | write the section about the project method                     |
+| 2018-12-22 16:27:20 | Andreas Zweili | fix the path and position of the stakeholder diagramm          |
+| 2018-12-22 16:24:17 | Andreas Zweili | finish the umweltanalyse                                       |
+| 2018-12-22 15:49:23 | Andreas Zweili | add swot analysis                                              |
+| 2018-12-22 15:27:25 | Andreas Zweili | extend the Agbrenzung                                          |
+| 2018-12-22 14:15:30 | Andreas Zweili | remove a duplicate entry                                       |
+| 2018-12-22 14:13:58 | Andreas Zweili | update the Vorkenntnisse section                               |
+| 2018-12-22 14:11:30 | Andreas Zweili | add a picture for WIP graphics                                 |
+| 2018-12-22 14:11:03 | Andreas Zweili | fix image positions                                            |
+| 2018-12-22 13:57:08 | Andreas Zweili | extend the Bewertung section                                   |
+| 2018-12-22 13:53:49 | Andreas Zweili | finish writing the variants and the result                     |
+| 2018-12-22 13:53:13 | Andreas Zweili | add wip screenshots of the hello world script                  |
+| 2018-12-22 13:52:54 | Andreas Zweili | move the hello world script out of the documentation           |
+| 2018-12-22 00:40:19 | Andreas Zweili | add hello world pyqt example                                   |
+| 2018-12-22 00:40:03 | Andreas Zweili | add the gtk variant and parts of the electron variant          |
+| 2018-12-22 00:39:29 | Andreas Zweili | add references for meld and gtk_setup                          |
+| 2018-12-22 00:39:15 | Andreas Zweili | add link to code snippet                                       |
+| 2018-12-19 22:28:33 | Andreas Zweili | add gtk and electron references                                |
+| 2018-12-19 22:25:35 | Andreas Zweili | add Qt to frontend section                                     |
+| 2018-12-19 22:25:07 | Andreas Zweili | update refrence titles                                         |
+| 2018-12-19 22:24:46 | Andreas Zweili | add references for Qt                                          |
+| 2018-12-19 21:36:46 | Andreas Zweili | change glossary shorthand                                      |
+| 2018-12-19 21:12:30 | Andreas Zweili | Backend Varianten                                              |
+| 2018-12-19 21:12:05 | Andreas Zweili | add glossary entry for GUI                                     |
+| 2018-12-18 21:59:54 | Andreas Zweili | extend the C++ variant section                                 |
+| 2018-12-18 21:59:31 | Andreas Zweili | fix the python variant section                                 |
+| 2018-12-18 21:58:34 | Andreas Zweili | add glossary entries for compilers and makefiles               |
+| 2018-12-18 21:37:48 | Andreas Zweili | replace all listings with sexylisting when running make        |
+| 2018-12-18 21:16:01 | Andreas Zweili | Varianten                                                      |
+| 2018-12-18 21:15:39 | Andreas Zweili | add two new sections                                           |
+| 2018-12-18 21:15:28 | Andreas Zweili | change section title                                           |
+| 2018-12-18 21:15:15 | Andreas Zweili | add reference for pep8                                         |
+| 2018-12-18 18:16:11 | Andreas Zweili | make the  history a bit pretier                                |
 | 2018-12-18 17:52:28 | Andreas Zweili | add dokument_historie.org                                      |
 | 2018-12-17 22:53:54 | Andreas Zweili | add Konfigurationsmanagement and Projektmethode to Gantt Chart |
 | 2018-12-17 22:53:09 | Andreas Zweili | change the eps logo to svg                                     |
@@ -95,4 +186,3 @@ git log --pretty=format:'%ai, %an, %s' | sed s/+0100//g | sed s/+0200//g
 | 2018-06-03 15:07:10 | Andreas Zweili | ignore the compiled pdfs                                       |
 | 2018-06-03 13:56:41 | Andreas Zweili | change readme from markdown to org-mode format                 |
 | 2018-05-26 15:00:47 | Andreas Zweili | Initial commit                                                 |
-|---------------------+----------------+----------------------------------------------------------------|
