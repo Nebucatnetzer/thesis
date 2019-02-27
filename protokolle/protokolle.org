@@ -153,5 +153,200 @@ Nichts.
 
 
 
+* Meeting vom 26.01.2019
 
+Protokoll der 2. Besprechung
 
+Treffpunkt: IBZ Aarau
+
+Datum: 26.1.2019, 14:00 Uhr - 15:15 Uhr
+
+** Informationen
+
+Beobachtung: exakte Zeitplanung, auch Miteinbezug der eigenen Intensität
+(geplante Stunden Aufwand) pro Woche, Arbeitspakete verständlich,
+Projektstrukturierung soweit detailliert -> erledigt
+
+ausgezeichnet im Zeitplan
+
+open source Projekt als gesamtes Werk, aktuelle Source Code Version auf
+github unter https://github.com/borg-qt/ -> erledigt
+
+einige Kapitel des DA Antrags können 1:1 in die Doku oder allenfalls mit
+ergänzenden Resultaten aus der Analyse übernommen werden -> erledigt
+
+Beobachtung: Feinziele entsprechen bereits den ausgearbeiteten Anforderungen
+aus der bereits durchgeführten Projektanalyse -> erledigt
+
+roter Faden der Gesamtstruktur anhand Analyse und Synthese abgleichen ->
+erledigt
+
+Grobstruktur trennen auf Analyse und Konzept, z.B. vor dem Start der
+Variantendiskussion -> erledigt
+
+zusätzlich Grundidee, Vision in der Einleitung -> erledigt
+
+fiktive Situation im Rahmen der Analyse -> Ist Risikoanalyse zum Leben
+bringen -> Erweiterungen mit use cases abgebildet - erledigt
+
+Überlegung, ob alle Ziele 1:1 den Anforderungen genügen, welche als
+Voraussetzung fürs Testing dienen > erledigt
+
+möglicher Zugriff auf Datenablage -> erledigt
+
+https://github.com/Nebucatnetzer/thesis
+
+Besprechungsprotokoll mit Entscheidungen führen -> erledigt
+
+Zeitplan mit Intensität als Tabelle oder Gantt (250h inkl. mögliche
+Pufferzeit 50h), Einbau in Bericht -> erledigt
+
+detailliertere Informationen zu gewissen Punkten der Konzeptarbeit, d.h.
+Technik BorgBackup erläutern, QT Framework erläutern, Logging zeigen, Backup
+erstellen, Netzwerk prüfen, Datenduplizierung erklären, Konfiguration in
+Plain Textdatei erstellen, Cross Plattfom Techniken erläutern (insbesondere
+da BorgBackup Support nur unter Linux, somit nicht vollständig möglich),
+JSON Format erläutern, Zusammenspiel und Schnittstelle zwischen Python
+Skript und bestehendem Binary beschreiben, Verwendung der Umgebungsvariablen
+für Programmierung, Passwort Handling beim Aufruf des Binary -> auf gutem
+Wege
+
+geplante 1 Woche Reserve in der Phase Realisierung, während dem Codieren ->
+doing
+
+Arbeitsjournal, wochengenau (einfaches Logbuch, z.B. Excel oder in Zeitplan
+integriert, mit Bezug zur erstellten Projektplanung) -> Gitlog führen plus
+erweitern (Planung, Ergebnis, Eindruck) -> doing
+
+Qualitätskontrolle und Controlling ansprechen (wichtiger Bestandteil der
+Bewertung) -> doing
+
+Initialisierung / Voranalyse:
+
+Einleitung -> erledigt
+
+Projekthandbuch (Projektdokumentation) mit Ausgangslage,
+Problembeschreibung, Projektziele, Abgrenzungen, Zeitplanung,
+Projektplanung, Projektmethodik Wasserfallmethodik (Begründung) -> erledigt
+
+Projektrisiken (betriebliches Umfeld) der Ist Umgebung -> erledigt
+
+allenfalls Zeitplan mit Phasen der Wasserfallmethodik anpassen -> erledigt
+
+Milestone setzen -> erledigt
+
+Umfeld, Motivation -> nochmals nachfragen, insbesondere Programmierung mit
+Python und Nutzung des QT Framework für das GUI ist Neuland, Bedeutung
+hervorheben
+
+nachträgliche Berücksichtigung weiterer möglicher Kannziele -> doing
+
+Projektcontrolling Soll-Ist (Zeit, Ressourcen, Kosten), Bewertung -> doing
+
+Analyse:
+
+SWAT (Stärken, Schwächen) -> erledigt
+
+quasi hypothetische Risikoanalyse der Ist Umgebung, um daraus Bewertung der
+eigenen Lösung auch mit einer Risikoanalyse miteinzubeziehen -> recht
+projektbezogene Darstellung -> erledigt
+
+Anforderungskatalog kann aus den Zielen hergeleitet werden, kann evtl. noch
+erweitert oder angepasst werden, z.B. Präzision, Umwelt, Verwendung von
+Testarten etc. -> erledigt
+
+Soll - Analyse -> erledigt
+
+use case Diagramm mit Aktoren festgelegt -> erledigt
+
+Ist - Analyse, Stakeholderanalyse, Umweltanalyse, Marktanalyse -> alle
+Usergruppen festgelegt -> erledigt
+
+allenfalls Wahl bestimmter Usergruppen noch begründen, z.B. für das Testing
+-> doing
+
+geplante Durchführung des Testings -> Transparenz, mit Auswertung der
+Ergebnjsse -> doing
+
+Festlegung der Systemgrenze, evtl. mit UML Werkzeugen -> nochmals prüfen
+
+Konzept:
+
+Aktivitätsdiagramm gemacht -> erledigt
+
+Kontextdiagramm gemacht -> erledigt
+
+Testkonzept. Testarten (Unit, Integrations-Testing), Festlegung der
+Testarten, Rahmenbed. -> 25 Testfälle definiert, Testfälle aus use cases
+abgeleitet -> erledigt
+
+big picture aufzeigen, Zusammenspiel erläutern -> auf gutem Wege, kann mit
+einem zusätzlichen Klassendiagramm vervollständigt werden
+
+Technologien nachvollziehbar beschreiben, insbesondere Zusammenspiel der
+Komponenten (JSON, QT, Python, binary, Umgebungsvariablen -> nochmals
+nachfragen
+
+Variantendiskussion -> nochmals prüfen
+
+Entscheid, Begründung des Lösungswegs -> noch verfeinern, Bedeutung open
+source Projekt dabei hervorheben, doing
+
+Detailkonzept mit techn. Plan -> doing, insbesondere die Zuordnung,
+Abstimmung der Klassen, Funktionen in den entsprechenden SW Modulen
+
+SW Design mit einem «Klassendiagramm» über verwendete Module, Klassen,
+Schnittstellen, Input Output am Schluss der Realisierung fertig darstellen,
+verwendete Module beschreiben, wird im Nachhinein abgebildet -> doing
+
+Konsistente Darstellung von Testfällen und deren Durchführung, auch in Bezug
+zu den Muss- und effektiv realisierten Kannzielen -> doing
+
+Realisierung:
+
+Realisierung mit Linux System Python Skript und QT Framwork -> erledigt
+
+Konfiguration aus dem GUI wird als Plain Text neu erstellt, Passwort als
+Plaintext gespeichert, wird jedoch beim Aufruf dem Binary nicht mitgegeben,
+da dies in einer Umgebungsvariable definiert wird -> erledigt
+
+Bau und Erläuterung der Testumgebung -> doing
+
+Entwicklung basiert auf Python, mit eigen erstellten Realisierungselementen,
+welche nicht einem Standardaufbau entsprechen -> diese kurz erläutern,
+Codeausschnitte einbauen und mit referenzierter Quelle ergänzen -> doing
+
+Implementation der DB als Kannziel, Logging als Kannziel, direkte
+Integration in DB wäre wünschenswert -> nochmals nachfragen
+
+Fehlerbehandlungen erfolgen nur an einer Stelle, entweder direkt über
+vorhandenes Backup Binary oder neu über das erstellte GUI -> doing
+
+Berechtigungsprobleme (z.B. bei include-Verzeichnissen) werden nicht
+speziell behandelt, Verarbeitung wird übersprungen -> doing
+
+allg. gültige Umgebungsvariablen verwenden -> doing
+
+Netzwerk Prüfung erfolgt via Port Check auf Ziel IP, wo Repository drauf
+läuft -> doing
+
+geplanter Abschluss der Programmierung 2. März -> doing
+
+Ausblick:
+
+kritische Würdigung, lessons learned
+
+Weiterverwendung als openSource Projekt für angedachte Weiterentwicklungen
+
+Bewertung der Risiken anhand der eigenen Lösung -> Rückmeldung gegeben
+
+Projektabschluss mit Überprüfung der Ziele, anhand des DA Antrags resp.
+Pflichtenheftes
+
+** Nächstes Treffen
+
+nächstes Treffen am 3.3, 14 Uhr in Olten
+
+noch unvollständig:
+
+nichts
