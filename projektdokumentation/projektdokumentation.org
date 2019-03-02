@@ -2090,7 +2090,7 @@ dem User das Gefühl zu geben das die Applikation noch am Arbeiten ist.
 Der Dialog musste gegenüber der ersten Version in Sektion: [[Erste Umsetzung][Erste Umsetzung]] noch
 etwas angepasst werden. gls:borg gibt während dem Erstellen eines Archives keine
 Informationen zurück welches einem erlauben würden einen Fortschrittsbalken zu
-generieren welcher effektiv den Fortschritt anzeigt. gls:borg gibt einzig die
+generieren, welcher den effektiven Fortschritt anzeigt. gls:borg gibt einzig die
 Anzahl der verarbeiteten Dateien in regelmässigen Abständen zurück. Da gls:borg
 jedoch zu Beginn nicht meldet wieviele Dateien gesichert werden lässt sich
 damit keine Prozentzahl erstellen. Ein paar Experimente bei denen die zu
