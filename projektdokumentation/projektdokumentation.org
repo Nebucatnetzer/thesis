@@ -1843,7 +1843,7 @@ Support für eine Liste von Werten hat. Die wurde insbesondere für ~include~ un
 ~exclude~ Pfade benötigt. Also für die Pfade welche gesichert werden oder von
 einem  Backup ausgeschlossen werden sollen.
 
-Abhilfe schafte hier ein Stackexchange Posts footcite:configlist. Dieser Schlug
+Abhilfe schafte hier ein Stackexchange Post footcite:configlist. Dieser schlug
 vor das man die Liste im gls:json Format speichern soll. Da ~Configparser~ alle
 Werte im Format "String" zurück gibt können dann die gls:json Listen sehr
 einfach von einem gls:json Parser umgewandelt werden. Im Projekt wurde dies
