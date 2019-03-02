@@ -1722,7 +1722,7 @@ beherrscht.
 
 Das Userinterface, zu sehen in Abbildung:([[fig:bit_main]]), ist jedoch sehr
 gelungen und soll Borg-Qt als Vorlage dienen. Insbesondere die einfache und
-direkte Art ein Backup eines spezifischen Pfades zu machen ist sehr spannend.
+direkte Art ein Backup eines spezifischen Pfades zu machen ist sehr gelungen.
 Da sie es dem User so einfach wie möglich macht ein Backup zu erstellen.
 
 #+caption: Screenshot des Hauptfensters der Software "Back in Time"
