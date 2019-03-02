@@ -2102,18 +2102,6 @@ sehr viele Dateien im Quellverzeichnis befinden. Aus diesem Grund wurde der
 Fortschrittsbalken mit Prozentanzeige durch einen sich wiederholenden
 Ladebalken ersetzt.
 
-Damit die Applikation während eines langen Vorgangs wie ein Backup oder ein
-Restore nicht einfriert muss der gls:borg Prozess in einem eigenen Thread
-gestartet werden. Python würde hierzu ein Modul,
-~threading.Thread~footcite:threading, mitliefern. Allerdings war es nicht
-möglich den Fortschrittsdialog und die Thread so zu verknüpfen das sich der
-Dialog schliesst wenn das Backup durchgelaufen ist und der Thread wieder
-entfernt wird. Aus diesem Grund wurde dann ein erfolgreicher Test mit dem PyQt
-Modul ~QThread~footcite:qthread gemacht. Mit diesem war es ohne weiteres
-möglich den Dialog zu schliessen sobald das Backup fertig durchgelaufen war.
-Auch das stoppen des Threads mit einem Klick auf den "Cancel" Button
-funktioniert einwandfrei.
-
 #+caption: Screenshot des "Aktion in Ausführung" Dialogs.
 #+name: fig:borgqt_progress_v2
 #+attr_latex: :width .4\paperwidth :placement [H]
