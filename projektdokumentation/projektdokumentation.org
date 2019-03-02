@@ -1803,15 +1803,6 @@ gleichermassen genutzt werden kann.
 #+attr_latex: :width .6\textwidth :placement [H]
 [[file:pictures/borgqt_progress_v1.png]]
 
-Im "Archive" Dialogfenster, Abbildung:([[fig:borgqt_archiv_v1]]), werden
-Detailinformationen eines Archives angezeigt. Diese sind etwa die Grösse des
-Archives, wieviele Dateien es beinhaltet, wie lange das Erstellen dauerte, etc.
-
-#+caption: Screenshot des Borg-Qt Archivinformationsfenster Version 1
-#+name: fig:borgqt_archiv_v1
-#+attr_latex: :width .6\textwidth :placement [H]
-[[file:pictures/borgqt_archive_v1.png]]
-
 ** Einstellungen
 
 Die Einstellungen werden von der Applikation benötigt um die vom User
