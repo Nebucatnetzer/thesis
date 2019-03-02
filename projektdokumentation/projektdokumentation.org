@@ -1808,7 +1808,7 @@ gleichermassen genutzt werden kann.
 Die Einstellungen werden von der Applikation benötigt um die vom User
 definierten Vorgaben auszuführen, Das Backup Repository zu finden, etc.
 Diese Einstellungen sollen in einer Klar-Text Datei gespeichert werden. Dies
-hat zum einen den Vorteil das man die Einstellungen sehr einfach sicher kann,
+hat zum einen den Vorteil das man die Einstellungen sehr einfach sichern kann,
 zum anderen kann man die Einstellungen der Applikation auch anpassen ohne das
 man die Applikation selber starten muss.
 
