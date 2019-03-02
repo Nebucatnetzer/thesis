@@ -1570,6 +1570,13 @@ beschrieben.
 #+LATEX:}
 #+LATEX:\end{landscape}
 #+LATEX:\newpage
+** Klassendiagramm
+
+Um die Abhängigkeiten zwischen den einzelnen Klassen der Anwendung aufzuzeigen
+wurde ein Klassendiagramm, Abbildung:([[fig:class_diagramm]]), erstellt. Das
+Klassendiagramm basiert auf dem UML Standard. Im Diagramm wurden nicht alle
+"Properties" und Methoden alles Klassen aufgezeichnet sondern nur solche die
+auf eine andere Klasse verweisen. Dadurch bleibt das Diagramm übersichtlicher.
 
 ** Benutzerfreundlichkeitsstudie
 
@@ -2480,6 +2487,14 @@ PLACEHOLDER
 #+LATEX:\newpage
 #+LATEX:\begin{landscape}
 * Arbeitsjournal
+#+LATEX:\newpage
+#+LATEX:\begin{landscape}
+** Klassendiagramm
+#+caption: Klassendiagramm der Borg-Qt Applikation
+#+name: fig:class_diagramm
+#+attr_latex: :height .7\textwidth :placement [H]
+[[file:pictures/class_diagramm.pdf]]
+#+LATEX:\end{landscape}
 
 #+CAPTION: Arbeitsjournal
 #+ATTR_LATEX: :environment longtable :align |p{2cm}|p{5cm}|p{5cm}|p{7cm}|
