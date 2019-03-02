@@ -1478,7 +1478,7 @@ Dabei handelt es sich um die Lizenz des Borg-Qt Repository.
 
 Getestet wird die Applikation jeweils auf dem Computer des Projektleiters. Auf
 diesem läuft die aktuelle Langzeitsupport Version (18.04) von Ubuntu
-footcite:ubuntu Linux, mit der GNOME Desktop Umgebung footcite:gnome, als
+footcite:ubuntu Linux mit der GNOME Desktop Umgebung footcite:gnome, als
 Betriebssystem. Die Tests werden jeweils gegen eine von PyInstaller generierte
 Binärdatei ausgeführt. Der genaue Vorgang der Erstellung dieser Datei wird in
 der Sektion: [[Releases][Releases]] beschrieben. Somit werden die Tests immer gegen eine
