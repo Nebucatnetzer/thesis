@@ -1957,15 +1957,26 @@ self.config['borgqt']['includes'] = json.dumps(includes,
 
 ** Borg Interface
 
-Für die jeweiligen Funktionen von gls:borg wurde eine Hauptklasse
-~BorgQtThread~ erstellt um soviel Code wie möglich zwischen den einzelnen
-Funktionen wiederverwendne zu können. Jede Funktion vererbt die Klasse dann und
-adaptiert sie soweit als nötig.
+Zuerst erschien es sinnvoll die Kommunikation zwischen gls:borg und Borg-Qt
+über einfache Funktionen laufen zu lassen. Dieser Ansatz hatte allerdings zwei
+Probleme. Zum Einen wurde es relativ umständlich Informationen zu verarbeiten
+und weiterzugeben zum anderen führte es zu dem unschönen Nebeneffekt dass, das
+gls:ui eingefroren ist. Threads sollten hier abhilfe schaffen.
+
+Python würde hierzu ein Modul, ~threading.Thread~ footcite:threading,
+mitliefern. Allerdings war es nicht möglich den Fortschrittsdialog und den
+Thread so zu verknüpfen das sich der Dialog schliesst wenn das Backup
+durchgelaufen ist und der Thread wieder entfernt wird. Aus diesem Grund wurde
+dann ein erfolgreicher Test mit dem PyQt Modul ~QThread~ footcite:qthread
+gemacht. Mit diesem war es ohne weiteres möglich den Dialog zu schliessen
+sobald das Backup fertig durchgelaufen war. Auch das stoppen des Threads mit
+einem Klick auf den "Cancel" Button funktioniert einwandfrei.
 
 Damit gls:borg aus der Anwendung angesteuert werden kann wird das Python Modul
-~subprocess~footcite:subprocess verwendet. Dieses erlaubt einem neue Prozesse
+~subprocess~ footcite:subprocess verwendet. Dieses erlaubt einem neue Prozesse
 zu erstellen welche man oftmals benötigt um etwa, wie im Fall von Borg-Qt,
 externe Applikationen zu starten, zu steuern und ihre Ausgabewerte auszulesen.
+Das effektive Kommando wird dann aus dem Property ~self.command~ gelesen.
 
 Damit gls:borg die Ausgabe im gls:json Format ausgibt muss man man noch die
 Parameter ~--log-json~ und ~--json~ ausgeben. Der erste Parameter ändert
@@ -2003,6 +2014,13 @@ def process_json_error(self, json_err):
             err = json.loads(error_list[0])
             raise BorgException(err['message'])
 #+end_src
+
+Die ganze Funktionalität wurde dann in der Klasse ~BorgQtThread~
+zusammengefasst. Somit kann für jede Funktion von gls:borg eine einzelne Klasse
+geschrieben werden welche dann von ~BorgQtThread~ die Funktionen erbt. Die
+Funktionsklassen müssen dann jeweils nur die Methode
+~self.create_command(self)~ implementieren welche das Property ~self.command~
+erstellt und die einfachen Funktionen von gls:borg sollten direkt funktioneren.
 
 ** Backup
 
