@@ -2075,9 +2075,9 @@ wird.
 *** Frontend
 
 Damit die Backups im Frontend funktionieren musste zum einen der "Backup" Knopf
-mit der Funktion ~backup~ verknüpft werden. Desweiteren wurde ein Dateibaum, in
+mit der Method ~create_backup~ verknüpft werden. Desweiteren wurde ein Dateibaum, in
 Abbildung:([[fig:borgqt_file_tree]]) grün umrahmt, eingefügt. Dieser gibt den Pfad
-des angewählten Objektes and die ~backup~ Funktion weiter.
+des angewählten Objektes and die ~create_backup~ Methode weiter.
 
 #+caption: Screenhot des Dateibaumes.
 #+name: fig:borgqt_file_tree
