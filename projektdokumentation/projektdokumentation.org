@@ -1734,7 +1734,7 @@ Da sie es dem User so einfach wie möglich macht ein Backup zu erstellen.
 
 Qt bietet einem mehrere Möglichkeiten zum erstellen der graphischen Oberfläche.
 Zum einen kann die ganze Oberfläche programmatisch erstellt werden. Dies gibt
-dem ein grosses Mass an Kontrolle über das Erstellte ist allerdings nicht sehr
+dem Entwickler ein grosses Mass an Kontrolle, ist allerdings nicht sehr
 intuitiv.
 
 Die angenehmere Variante ist des den Qt Designer, Abbildung:([[fig:qt_designer]]),
