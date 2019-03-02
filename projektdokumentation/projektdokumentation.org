@@ -1926,8 +1926,8 @@ dem ~QListWidget~ geholt und in die Zwischenliste geschoben. Im zweiten Teil
 wird die Liste dann wieder zu einem gls:json String konvertiert und im
 ~Configparser~ Objekt gespeichert. Die Option ~indent=4~ dient dabei der
 Lesbarkeit damit nicht der ganze gls:json String auf ein Zeile in der
-Konfiguration gespeichert wird sondern jedes Listenelement seine eigene Zeile
-erhält.
+Konfigurationsdatei gespeichert wird sondern jedes Listenelement seine eigene
+Zeile erhält.
 
 #+caption: Workaround zum Auslesen aller Elemente in QListWidgets.
 #+name: code:qlistwidgets_items
