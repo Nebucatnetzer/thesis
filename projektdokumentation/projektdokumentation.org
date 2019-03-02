@@ -2423,7 +2423,6 @@ PLACEHOLDER
 
 #+LATEX:\newpage
 #+LATEX:\begin{landscape}
-* Arbeitsjournal
 
 * Anhang
 
@@ -2497,6 +2496,10 @@ PLACEHOLDER
 #+attr_latex: :height .7\textwidth :placement [H]
 [[file:pictures/class_diagramm.pdf]]
 #+LATEX:\end{landscape}
+
+#+LATEX:\newpage
+#+LATEX:\begin{landscape}
+** Arbeitsjournal
 
 #+CAPTION: Arbeitsjournal
 #+ATTR_LATEX: :environment longtable :align |p{2cm}|p{5cm}|p{5cm}|p{7cm}|
