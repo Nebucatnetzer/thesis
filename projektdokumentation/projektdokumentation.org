@@ -29,8 +29,9 @@ zur Diplomarbeit von Andreas Zweili.
 
 ** Aufbau
 
-Alle Inhalte sind chronologisch sortiert, vom ältesten zum jüngsten
-Ereignis, und nach Kapiteln getrennt.
+Alle Inhalte sind in der Regel chronologisch sortiert, vom ältesten zum jüngsten
+Ereignis, und nach Kapiteln getrennt. An gewissen Stellen kann die
+chronologische Reihenfolge allenfalls nicht gewährleistet werden.
 
 ** Lizenz
 
@@ -134,7 +135,7 @@ integriert werden und ist nicht unwichtig.
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                 4. | Der User kann ein Archiv mit 3 Klicks löschen.                                                                                                               | x                              |                                                                |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
-|                                 5. | Der User kann unter Linux ein Archiv mit zwei Klicks "read-only" als Laufwerk mounten.                                                                       | x                              |                                                                |
+|                                 5. | Der User kann unter Linux ein Archiv mit zwei Klicks "red-only" als Laufwerk mounten.                                                                       | x                              |                                                                |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                 6. | Der User kann ein Archiv wieder herstellen.                                                                                                                  | x                              |                                                                |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
@@ -301,7 +302,7 @@ Die Diagramme wurden mit Draw.io footcite:draw erstellt. Draw.io ist gls:libre
 unter Apache Lizenz Version 2.0 footcite:apache und kann sowohl als Desktop
 Applikation wie auch als Webanwendung genutzt werden.
 
-Beim Design der Arbeit wurden soweit als möglich die typografischen Regeln aus
+Beim Design der Arbeit wurden soweit als möglich die typographischen Regeln aus
 dem Buch "Practical Typography" von Matthew Butterick footcite:typo angewandt.
 Bei den Diagrammen wurden ausschliesslich Farben aus der von Google
 entwickelten Design Sprache "Material" footcite:material eingesetzt.
@@ -315,13 +316,13 @@ kollidiert An einem normalen Arbeitstag wurde dabei damit gerechnet das ca. 2
 Stunden Arbeit am Abend möglich sein sollten. An einem arbeitsfreien Tag wurde
 mit 6 Stunden Arbeit gerechnet. Über die Festtage wurden diverse Tage von der
 Planung ausgenommen, da es nicht realistisch schien das an diesen Tagen die
-Arbeit signifikant vorwärtsgehen würde. Auch Schultage wurde nicht, als
+Arbeit signifikant vorwärts gehen würde. Auch Schultage wurde nicht, als
 Arbeitstage gerechnet da man meist nicht mehr für weitere Tätigkeiten gross
 motiviert ist.
 
 Als zusätzliche Massnahme um die Arbeitslast zu verteilen wurde vom 14. Januar
 bis zum 11. März jeder Montag auf der Arbeitsstelle als frei eingegeben.
-Dadurch steht wägend des Projektes etwas mehr Zeit zur Verfügung als sonst mit
+Dadurch steht während des Projektes etwas mehr Zeit zur Verfügung als sonst mit
 einer 100 Prozent Arbeitsstelle möglich wäre.
 
 ** TODO Controlling
@@ -333,7 +334,7 @@ Lehren gezogen werden.
 
 #+LATEX:\newpage
 #+LATEX:\begin{landscape}
-*** TODO Zeit
+*** TODO Zeitaufwand
 
 #+CAPTION: Zeitcontrolling
 #+ATTR_LATEX: :environment longtable :align |p{3cm}|p{5cm}|p{3cm}|p{7cm}|
@@ -344,34 +345,34 @@ Lehren gezogen werden.
 |-----------------------------------+------------------------------------------+-------------------------------------------+--------------------------------------|
 |                                   | *Gesamter Aufwand*                       |                                           |                                      |
 |-----------------------------------+------------------------------------------+-------------------------------------------+--------------------------------------|
+#+LATEX:\end{landscape}
 
-#+LATEX:\newpage
 *** Ressourcen
 
 Folgende Ressourcen werden während der Arbeit benötigt:
 #+CAPTION: Ressourcen
-#+ATTR_LATEX: :environment longtable :align |p{5cm}|p{3cm}|p{3cm}|p{7cm}|
+#+ATTR_LATEX: :environment longtable :align |p{4cm}|p{2cm}|p{2cm}|p{4cm}|
 #+NAME: tab:zeitcontr
 |-------------------------------------+--------------------------------------------+-----------------------------------------+--------------------------------------|
 | *Ressource*\cellcolor[HTML]{C0C0C0} | *geschätzte Stück*\cellcolor[HTML]{C0C0C0} | *effekt. Stück*\cellcolor[HTML]{C0C0C0} | *Begründung*\cellcolor[HTML]{C0C0C0} |
 |-------------------------------------+--------------------------------------------+-----------------------------------------+--------------------------------------|
-| Projektleiter/Mitarbeiter           |                                          1 |                                       1 | -                                    |
-| Diplombetreuer                      |                                          1 |                                       1 | -                                    |
-| Testuser                            |                                          5 |                                       5 | -                                    |
-| Korrekturleser                      |                                          3 |                                       3 | -                                    |
-| iPad                                |                                          1 |                                       1 | -                                    |
-| Notebook                            |                                          1 |                                       1 | -                                    |
+| Projektleiter/Mitarbeiter           |                                          1 |                                       1 | keine Abweichung                     |
+| Diplombetreuer                      |                                          1 |                                       1 | keine Abweichung                     |
+| Testuser                            |                                          5 |                                       5 | keine Abweichung                     |
+| Korrekturleser                      |                                          3 |                                       3 | keine Abweichung                     |
+| iPad                                |                                          1 |                                       1 | keine Abweichung                     |
+| Notebook                            |                                          1 |                                       1 | keine Abweichung                     |
 |-------------------------------------+--------------------------------------------+-----------------------------------------+--------------------------------------|
-#+LATEX:\end{landscape}
 
 *** TODO Kosten
 
 Werden die internen Lohnkosten des Projektleiters auf ca. 60 CHF pro Stunde
-geschätzt ergeben sich aus der Zeitplanung somit theoretische Kosten von 19'200
-CHF für die Umsetzung dieser Arbeit. Da dieses Projekt finanziell jedoch in
-keinster Weise wirtschaftliche relevant ist, sind die Kosten nur ein rein
-theoretischer Faktor.
+geschätzt, ergeben sich gemäss der Berechnung in der Tabelle:([[tab:kosten]]),
+theoretische Kosten von 19'200 CHF für die Umsetzung dieser Arbeit. Die Kosten
+für die Entwicklung werden im Projekt jedoch nicht berücksichtigt, somit sind
+die Kosten nur ein rein theoretischer Faktor.
 #+CAPTION: Kostenrechnung
+#+ATTR_LATEX: :align |l|c|c|r|
 #+NAME: tab:kosten
 |--------------------------------+----------------------------------------+-----------------------------------------|
 | *Name*\cellcolor[HTML]{C0C0C0} | *Aufwand in h*\cellcolor[HTML]{C0C0C0} | *Kosten in CHF*\cellcolor[HTML]{C0C0C0} |
@@ -401,13 +402,11 @@ unvorbereitet gegenüber, sollten sie eintreffen.
 *** Risikobeschreibung
 
 In der Tabelle: ([[tab:risikobeschreibung]]), sind die Risiken des Projektes
-gemeinsam mit ihren Gegenmassnahmen aufgelistet. Jedes Risiko wurde
-entsprechend der Tabelle: ([[tab:wahrscheinlichkeit]]) nach der Wahrscheinlichkeit
-des Eintreffens bewertet und entsprechend der Tabelle: ([[tab:auswirkung]]) nach
-seiner Auswirkung bewertet.
+gemeinsam mit ihren Gegenmassnahmen aufgelistet. Somit können gewisse Risiken
+bereits vorher abgefangen werden.
 
 #+CAPTION: Projektrisiken
-#+ATTR_LATEX: :environment longtable :align |p{0.45\textwidth}|p{0.45\textwidth}| :placement [H]
+#+ATTR_LATEX: :environment longtable :align |p{0.45\textwidth}|p{0.45\textwidth}|
 #+NAME: tab:projektrisiken
 |-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------|
 | <30>                                                                              | <30>                                                                                                                          |
@@ -458,7 +457,7 @@ Verfügung gestellt.
 
 #+LATEX:\newpage
 #+LATEX:\begin{landscape}
-#+CAPTION: Umwelt-Analyse
+#+CAPTION: Umweltanalyse
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{0.8cm}|l|l|p{8cm}|l|
 #+NAME: tab:umweltanalyse
 |-------------------------------+---------------------------------------+------------------------------------+----------------------------------------------------------+----------------------------------------------|
@@ -477,7 +476,7 @@ Verfügung gestellt.
 |-------------------------------+---------------------------------------+------------------------------------+----------------------------------------------------------+----------------------------------------------|
 |                            4. | Projektleiter                         | hoch                               | - Stabile Anwendung erstellen                            | mittel                                       |
 |                               |                                       |                                    | - Ein nachhaltiges Projekt starten                       | mittel                                       |
-|                               |                                       |                                    | - Anerkennung im fachlichen Umfeld                       | hoch                                         |
+|                               |                                       |                                    | - Anerkennung im fachlichen Umfeld                       | niedrig                                      |
 |-------------------------------+---------------------------------------+------------------------------------+----------------------------------------------------------+----------------------------------------------|
 #+LATEX:\end{landscape}
 
@@ -568,13 +567,9 @@ Abbildung:([[fig:swot]]) zu sehen.
 ** Anforderungskatalog
 
 Der Anforderungskatalog entspricht 1 zu 1 den Zielen, welche in der Tabelle
-[[tab:projektziele]] definiert wurden. Es wurde jedoch beschlossen noch die
-Kann-Ziele Nr. 26 und Nr. 19 in die Detail Planung mit aufzunehmen. Die
-grafische Konfiguration der Anwendung (Ziel Nr. 26) ist mit einer Einstufung
-von 3 zwar relativ tief bewertet. Es vereinfacht einem durchschnittlichen
-Computer Benutzer die Konfiguration der Anwendung enorm. Das automatische
-erstellen Backups im Hintergrund (Ziel Nr. 19) wurde fix eingeplant da es einen
-sehr grossen Einfluss auf die Risikobwertung im Kapitel [[Risiko-Analyse][Risiko-Analyse]] hat.
+[[tab:projektziele]] definiert wurden. Im Zeitplan wurde der Fokus hauptsächlich
+auf die Muss-Ziele gelegt. Ein paar der Kann-Ziele sind im Konzept jedoch auch
+abgebildet.
 
 ** Use Cases
 
@@ -964,26 +959,27 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 #+attr_latex: :center :placement [H]
 
 #+LATEX:\newpage
-* TODO Konzept
+* Konzept
 
 ** Varianten
 
-Da Borg eine JSON API zur Verfügung stellt bieten sich diverse Möglichkeiten, um
+Da Borg eine JSON API zur Verfügung stellt gibt es diverse Möglichkeiten, um
 das Programm anzubinden. Da das Ziel ist, das Programm normalen Nutzern
 zugänglicher zu machen, bietet sich ein normales Desktop Programm am ehesten
 an. Desktop Programme werden von allen Computer Usern täglich genutzt und sind
-somit etwas was sie kennen.
-
-Daraus ergeben sich die in diesem Kapitel aufgeführten Möglichkeiten für das
-Projekt.
+somit etwas was sie kennen. Zudem ist es für die User auch viel einfacher zu
+verstehen als sie vor der Nutzung einen lokalen Webserver starten müssten und
+diesen im Anschluss zur Nutzung wieder beenden müssten.
 
 *** Bewertung
 
-Die Bewertungspunkte setzen sich einerseits aus den Projektzielen anderseits
-aus für das Projekt sinnvollen Punkten zusammen. Dadurch ergeben sich dann die
-Bewertungen, welche in der nachfolgenden Tabelle aufgenommen wurden. Die
-möglichen Varianten wurden danach bewertet. Die effektive Berechnung des
-Resultats wird nach folgender Formel durchgeführt.
+Mit der Idee aus der Einleitung zu den Varianten wurde dann eine Tabelle, mit
+Anforderungen an die Technologien, erstellt. Die Bewertungspunkte setzen sich
+einerseits aus Projektzielen anderseits aus für das Projekt sinnvollen Punkten
+zusammen. Dadurch ergeben sich dann die Bewertungen, welche in der
+Tabelle:([[tab:muster]]) aufgenommen wurden. Die möglichen Varianten wurden danach
+bewertet. Die effektive Berechnung des Resultats wird nach folgender Formel
+durchgeführt.
 
 \begin{equation}
 G * EP = KE
@@ -1169,6 +1165,7 @@ ungeeignet.
 #+TBLFM: @3$5=@3$2 * @3$4::@4$5=@4$2 * @4$4::@5$5=@5$2 * @5$4::@6$5=@6$2 * @6$4::@7$5=@7$2 * @7$4::@8$5=@8$2 * @8$4::@9$5=@9$2 * @9$4::@10$5=@10$2 * @10$4::@11$5=@11$2 * @11$4::@12$5=@12$2 * @12$4
 #+TBLFM: @>$5=vsum(@3..@-1)
 
+#+latex:\newpage
 **** Python
 
 Der Python Interpreter ist für eine Vielzahl an Betriebssystemen erhältlich,
@@ -1488,7 +1485,7 @@ Als Testdateien wird jeweils das Code Repository von Borg-Qt selber verwendet.
 Der Pfad des gls:borg Repository für lokale Backups soll ~/tmp/test-borgqt~
 sein, in den Testfällen "Lokales Repository", genannt und das Passwort ~foo~.
 Im Makefile des Repository wird dieses Setup definiert. Somit kann man als
-Entwickler nur ~make repo~ ausführen und hat eine funktionsfähige Testumgebung.
+Entwickler nur ~make init~ ausführen und hat eine funktionsfähige Testumgebung.
 
 Um Backups über SSH testen zu können wird eine virtuelle Maschine mit Ubuntu
 18.04 verwendet. Die Konfiguration der virtuellen Maschine sieht dabei wie
@@ -1514,26 +1511,29 @@ wurde ein Klassendiagramm, Abbildung:([[fig:class_diagramm]]), erstellt. Das
 Klassendiagramm basiert auf dem UML Standard. Im Diagramm wurden nicht alle
 "Properties" und Methoden alles Klassen aufgezeichnet sondern nur solche die
 auf eine andere Klasse verweisen. Dadurch bleibt das Diagramm übersichtlicher.
+Die Klassennamen welche in fetter Schrift gehalten sind wurden dabei vom
+Projektleiter erstellt Die Klassennamen welche kursiv sind, sind Klassen welche
+entweder von Python oder Qt bereitgestellt werden.
 
 ** Benutzerfreundlichkeitsstudie
 
 Um Borg-Qt auf seine Nutzerfreundlichkeit zu testen wird im Rahmen der
 Diplomarbeit noch eine kleine Benutzerfreundlichkeitsstudie gemacht. Bei einer
-solchen Studie erhalten die Probanden, Tabelle:([[tab:probanden]]) ein paar
-Aufgaben, abgebildet in der Sektion [[Aufgaben]], welche sie in einer begrenzten
+solchen Studie erhalten die Probanden, Tabelle:([[tab:probanden]]), ein paar
+Aufgaben, Sektion [[Aufgaben]], welche sie in einer begrenzten
 Zeit zu erledigen haben. Die Aufsichtsperson gibt ihnen dabei keinerlei
 Hilfestellungen. Die Probanden sollen die Aufgaben alleine mit Hilfe der Tipps
-und Hinweisen in der Anwendung lössen. Im Anschluss bewerten die Probanden dann
+und Hinweisen in der Anwendung lösen Im Anschluss bewerten die Probanden dann
 die einzelnen Aufgaben nach ihrer Schwierigkeit,
 Tabelle:([[tab:usability_colours]]). Daraus lässt sich dann eine sogenannte Heatmap
 erstellen. Aus der Heatmap kann man anschaulich herauslesen welche Bereiche für
 die User noch zu kompliziert sind und Nacharbeit benötigen.
 
-Die Propanden wurden aus dem Umfeld des Projektleiters ausgewählt. Es wurde
+Die Probanden wurden aus dem Umfeld des Projektleiters ausgewählt. Es wurde
 dabei versucht ein einigermassen breites Spektrum an Computerkenntnissen
-abzudecken die Anwendung allen Erfahrungsstufen behilflich sein soll. Die
+abzudecken. Da die Anwendung allen Erfahrungsstufen behilflich sein soll. Die
 Angaben in der Tabelle:([[tab:probanden]]) sind jedoch die Selbsteinschätzung der
-Probanden und nicht die des Projektleiters zum jweiligen Tester.
+Probanden und nicht die des Projektleiters.
 
 #+CAPTION: Benutzerfreundlichkeitsstudie Probanden
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}r|c|c|c|c| :placement [H]
@@ -1578,6 +1578,7 @@ Probanden und nicht die des Projektleiters zum jweiligen Tester.
 5. Du möchtest das der Ordner ~/home/testuser/Pictures/~ nicht mehr gesichert
    wird. Konfiguriere die Applikation entsprechend.
 
+#+latex: \newpage
 *** Resultate
 
 #+CAPTION: Benutzerfreundlichkeitsstudie Resultate
@@ -1613,18 +1614,21 @@ wahrgenommen.
 
 **** Proband 3
 
-Proband 3 kam mit der Anwendung an sich gut klar. Bei der Aufgabe zwei wurde
-noch ein Bug entdeckt der näher untersucht werden muss. Die Aufgabe zwei fand
-er über alles gesehen auch am schwierigsten da er mit der Materie nahezu nicht
-vertraut ist. Als zusätzlichen Input gab er an das ein Kontextmenü welches sich
-mit Rechtsklick auf ein Element öffnet etwas sei was er gerne hätte da er
-andere Anwendungen oft so steuert. Aufgabe 5 war auch etwas herausfordernder
-als 1,3 und 4 insbesondere war unklar wie der Ordner zu der Liste hinzugefügt
-werden sollte.
+Proband 3 kam mit der Anwendung an sich gut klar. Die Aufgabe zwei fand er über
+alles gesehen auch am schwierigsten da er mit der Materie nahezu nicht vertraut
+ist. Als zusätzlichen Input gab er an das ein Kontextmenü welches sich mit
+Rechtsklick auf ein Element öffnet etwas sei was er gerne hätte da er andere
+Anwendungen oft so steuert. Aufgabe 5 war auch etwas herausfordernder als 1,3
+und 4 insbesondere war unklar wie der Ordner zu der Liste hinzugefügt werden
+sollte.
+
+Während des Tests ist in der Anwendung noch ein Bug aufgetaucht welcher
+Probleme beim erstellen von Backups machte. Die detaillierte Lösung dafür ist im
+Kapitel [[Realisierung]] beschrieben.
 
 **** Proband 4
 
-Bei Proband 4 war die grösste Hürde dass, das Interface nur in English
+Bei Proband 4 war die grösste Hürde dass, das Interface nur in Englisch
 verfügbar war. Bei Aufgabe zwei hat er sich nach eigenen Angaben etwas verloren
 gefühlt und hätte sich auch ein Kontextmenü auf dem Rechtsklick gewünscht.
 Mit etwas Hilfe bei der Übersetzung waren die restlichen Aufgaben jedoch gut zu
@@ -1637,7 +1641,7 @@ die Tooltips auf den Buttons entdeckt und dann genutzt. Aufgabe 2 war jedoch
 auch schwierig zu lösen danach ging es jedoch ohne Probleme. Als Feedback wurde
 genannt, dass 21:00 Uhr etwas spät für solche Tests sei.
 
-*** TODO Auswertung
+*** Auswertung
 
 Nach den 5 Tests liess sich feststellen das die Anwendung für die Anwender
 insgesamt einfach zu bedienen ist sobald sie einmal wissen welche Buttons
@@ -1657,45 +1661,28 @@ ist, ist eine sehr gute Idee und sollte sich auch realisieren lassen. Dieses
 Feature wird nicht im Rahmen der Diplomarbeit umgesetzt und für die zukünftige
 Entwicklung aufgenommen.
 
-Ein Dialog welcher ein erfolgreiches Erstellen eines Archives bestätigt wird
+Ein Dialog welcher ein erfolgreiches Erstellen eines Archivs bestätigt wird
 nicht eingebaut. Bei erfolgreicher Durchführung verschwindet der
 Fortschrittsdialog und in der Archivlist erscheint ein weiterer Eintrag. Das
 sind zwar nicht die offensichtlichsten Hinweise im Falle eines Fehlers
 erscheint jedoch sofort ein Dialog der darauf hinweist. Somit sollten die
-beiden Vorgänge genügend unterschieden sein und es hat auch kein andere Proband
+beiden Vorgänge genügend unterschieden sein und es hat auch kein anderer Proband
 das Bedürfnis nach einer Bestätigung.
 
-Auch für die Zukunft wird eine deutsche Übersetzung geplant. Dies würde die
+Für die Zukunft wird eine Deutsche Übersetzung geplant. Dies würde die
 Anwendung dann vor allem Leuten mit weniger guten Englisch Kenntnissen
 zugänglich machen.
 
 Im Rahmen der Diplomarbeit werden noch einige Texte angepasst. An gewissen
-Stellen redet die Anwendung von "Backups" und an anderen von "Archives". Da
-gls:borg sie selber "Archives" nennt sollte Borg-Qt noch so angepasst werden
-das überall von "Archives" die Rede ist. Zudem wird bei den "Include" und
+Stellen redet die Anwendung von "Backups" und an anderen von "Archivs". Da
+gls:borg sie selber "Archivs" nennt sollte Borg-Qt noch so angepasst werden
+das überall von "Archivs" die Rede ist. Zudem wird bei den "Includes" und
 "Exclude" Optionen über der Liste noch ein Label hinzugefügt um die Elemente zu
-beschreiben. Desweiteren werden die Buttons "Add file" und "Add folder" zu
+beschreiben. Des weiteren werden die Buttons "Add file" und "Add folder" zu
 "Exclude file" und "Exclude folder" sowie "Include file" und "Include folder"
 umbenannt. Somit zeigen die Buttons dann auch direkt das sie Dateien respektive
-Ordner ein-/auschliessen. Ein paar der Probanden hatten es zuerst über den
+Ordner ein-/ausschliessen Ein paar der Probanden hatten es zuerst über den
 "Remove" Button versucht.
-
-Der Bug der entdeckt wurde tritt immer dann auf wenn ein Archiv gemountet
-ist und man ein Backup erstellen möchte. Dies ist jedoch offenbar eine Funktion
-die von gls:borg nicht unterstützt wird footcite:borgmount. gls:borg könnte
-eigentlich mehrere Archive gleichzeitig mounten. Der User müsste jedoch jedes
-der Archive zuerst wieder unmounten bevor er eine neue Datensicherung erstellen
-kann. Die genaue Lösung wird dann in der [[UI Anpassungen nach Benutzerfreundlichkeitsstudie][Realisierung]] beschrieben.
-
-Insgesamt war der Test eine sehr interessante Erfahrung. Enduser sehen eine
-Anwendung mit ganz anderen Augen als der Entwickler der Anwendung der von jedem
-Element weiss wie der Code dazu aussieht. Er hat auch gezeigt das die Aufgaben
-auch richtig gestellt werden müssen ansonsten wissen die Probanden schon gar
-nicht erst was gefordert ist. Auch sollte wenn möglich darauf geachtet werden
-das auf einem Betriebsystem getestet mit welchem die Probanden bereits etwas
-Erfahrung haben. Zwei der Probanden waren ab dem Verhalten und Aussehen des
-Dateimanagers von Ubuntu 18.04 etwas verwirrt da sie ihn zuvor noch nicht
-gesehen und bentuzt hatten.
 
 * TODO Realisierung
 ** Cross-plattform Kompatibilität
@@ -1750,7 +1737,7 @@ sieht wie sich die Oberflächen auf dem System verhalten.
 Auf Basis der Ziele und der Use Cases wurde eine erste Version des glspl:gui
 erstellt. Im Hauptfenster, Abbildung:([[fig:borgqt_main_v1]]), befinden sich wie
 auch bei "Back in Time" in der einen Hälfte eine Liste der vorhandenen Archive
-und in der anderen Hälfte ein Dateimanagemer. Dieser dient zur Auswahl des zu
+und in der anderen Hälfte ein Dateimanager. Dieser dient zur Auswahl des zu
 sichernden Pfades. Im oberen Bereich findet sich die Toolbar mit den Aktionen
 die der User ausführen kann. Gemäss den Use Cases sind dies "Backup",
 "Restore", "Mount", "Delete" und "Settings".
@@ -1775,7 +1762,7 @@ Im Einstellungsfenster gibt es drei Tabs zur Auswahl. Einmal den "General" Tab,
 Abbildung:([[fig:borgqt_settings_general_v1]]), dieser zeigt allgemeine Optionen
 an. Im zweiten Tab "Include", Abbildung:([[fig:borgqt_settings_include_v1]]), kann
 der User die Ordner und Dateien auswählen die er sichern will. Der dritte Tab
-"Exlcude", Abbildung:([[fig:borgqt_settings_exclude_v1]]), gibt dem User die
+"Exclude", Abbildung:([[fig:borgqt_settings_exclude_v1]]), gibt dem User die
 Möglichkeit einzelne Ordner oder Dateien von den Backups auszuschliessen.
 
 #+caption: Screenshot der Borg-Qt "General" Einstellungen Version 1
@@ -1871,14 +1858,14 @@ def _return_list_option(self, option):
 
 Die Datei wird jeweils beim Start der Applikation gelesen und angewendet. Somit
 weiss die Applikation bereits nach dem Start wo das Repository liegen sollte
-und wie die Login Daten dafür sind. Dies geschiet mittels der Method
+und wie die Login Daten dafür sind. Dies geschiet mittels der Methode
 ~_get_path~, Codesnippet:([[code:config_path]]). Es gibt dabei zwei mögliche Pfade
 wo die Konfigurationsdatei liegen könnte. Befindet sich die Datei nicht am
-vergegeben Pfad ~~/.config/borg_qt/borg_qt.conf~ oder direkt "neben" dem
+vorgegeben Pfad ~~/.config/borg_qt/borg_qt.conf~ oder direkt "neben" dem
 Binary, gibt die Applikation eine entsprechende Meldung,
-Abbildung:([[fig:borgqt_missing_config]]), aus. Der Hauptfad unter
+Abbildung:([[fig:borgqt_missing_config]]), aus. Der Hauptpfad unter
 ~~/.config/borg_qt/borg_qt.conf~ wird dabei gemäss dem Ziel Nr. 21 über die
-Umgebungsvariabel ~HOME~ zusammengesestzt.
+Umgebungsvariable ~HOME~ zusammengesetzt
 
 #+caption: Methode zum Suchen der Konfigurationsdatei
 #+name: code:config_path
@@ -1918,7 +1905,7 @@ Einzel-Werte funktioniert es in etwa gleich. Beim Speichern der geänderten
 Listen jedoch trat eine weitere Herausforderung auf.
 
 Qt kennt keinen Mechanismus zum auslesen aller Elemente aus einem sogenannten
-~QListWidget~, einem UI Element welches Liste darstellt. Somit ist es nötig das
+~QListWidget~, einem gls:gui Element welches Liste darstellt. Somit ist es nötig das
 man die Elemente zuerst in einer Zwischenliste speichert bevor man sie zurück
 in das ~Configparser~ Objekt schreiben kann. Im Code sieht dies dann wie in
 Codesnippet:([[code:qlistwidgets_items]]) aus. Dabei wird jedes Element einzeln aus
@@ -1952,7 +1939,8 @@ Zuerst erschien es sinnvoll die Kommunikation zwischen gls:borg und Borg-Qt
 über einfache Funktionen laufen zu lassen. Dieser Ansatz hatte allerdings zwei
 Probleme. Zum Einen wurde es relativ umständlich Informationen zu verarbeiten
 und weiterzugeben zum anderen führte es zu dem unschönen Nebeneffekt dass, das
-gls:ui eingefroren ist. Threads sollten hier abhilfe schaffen.
+gls:gui eingefroren ist. Eine Recherche ergab dann das Threads hier Abhilfe
+schaffen könnten.
 
 Python würde hierzu ein Modul, ~threading.Thread~ footcite:threading,
 mitliefern. Allerdings war es nicht möglich den Fortschrittsdialog und den
@@ -1972,24 +1960,23 @@ Das effektive Kommando wird dann aus dem Property ~self.command~ gelesen.
 Damit gls:borg die Ausgabe im gls:json Format ausgibt muss man man noch die
 Parameter ~--log-json~ und ~--json~ ausgeben. Der erste Parameter ändert
 hauptsächlich das Format von Errormeldungen und der zweite formatiert dann die
-finale Ausgabe. Die Ausgaben werden dann jeweils an Variabeln weitergegeben
-(~json_output~ und ~json_error~) welche dann im weiteren Code verarbeitet
-werden.
+finale Ausgabe. Die Ausgaben werden jeweils an Variablen weitergegeben
+(~json_output~ und ~json_error~) welche im weiteren Code verarbeitet werden.
 
 Insbesondere ~json_error~ ist für den weiteren Programmablauf von grosser
-Wichtigkeit. Wenn Borg ein Problem feststellt wird dieses an diese Variabel
-weitergegeben. Mittels der Methode im Codesnippet:([[code:json_err]]), wird die
-Variabel ausgewertet und im Falle eines Fehlers wirft der Code eine Exception
-welche im Hauptprogramm abgefangen wird. Dabei wird dann eine Fehlermeldung in
-einem separaten Fenster ausgegeben. Die Methode wurde dabei auf der Klasse
-~BorgQtThread~ umgesetzt und steht somit allen Funktionen zur Verfügung. Die
-Fehlermeldung bei einer fehlenden Konfigurationsdatei,
-Abbildung:([[fig:borgqt_missing_config]]), funktioniert nach dem gleichen Prinzip
-und konnte somit zum grössten Teil wiederverwendet werden. Der restliche
-gls:json Output kann dann einfach mit dem ~json~ Modul geparst werden.
-Somit werden dem User direkt die Fehlermeldungen von gls:borg angezeigt und es
-muss nur an gewissen Stellen noch applikationsspezifisches Exception Handling
-betrieben werden.
+Wichtigkeit. Wenn Borg ein Problem feststellt wird die Error Meldung von
+gls:borg an ~json_error~ weitergegeben. Mittels der Methode im
+Codesnippet:([[code:json_err]]), wird die Variabel ausgewertet und im Falle eines
+Fehlers wirft der Code eine Exception welche im Hauptprogramm abgefangen wird.
+Dabei wird eine Fehlermeldung in einem separaten Fenster ausgegeben. Die
+Methode wurde dabei auf der Klasse ~BorgQtThread~ umgesetzt und steht somit
+allen Funktionen zur Verfügung. Die Fehlermeldung bei einer fehlenden
+Konfigurationsdatei, Abbildung:([[fig:borgqt_missing_config]]), funktioniert nach
+dem gleichen Prinzip und konnte somit zum grössten Teil wiederverwendet werden.
+Der restliche gls:json Output kann dann einfach mit dem ~json~ Modul geparst
+werden. Somit werden dem User, gemäss Ziel Nr. 14, direkt die Fehlermeldungen
+von gls:borg angezeigt und es muss nur an gewissen Stellen noch
+applikationsspezifisches Exception Handling betrieben werden.
 
 #+caption: Auswertung der json err Variabel.
 #+name: code:json_err
@@ -2011,36 +1998,36 @@ zusammengefasst. Somit kann für jede Funktion von gls:borg eine einzelne Klasse
 geschrieben werden welche dann von ~BorgQtThread~ die Funktionen erbt. Die
 Funktionsklassen müssen dann jeweils nur die Methode
 ~self.create_command(self)~ implementieren welche das Property ~self.command~
-erstellt und die einfachen Funktionen von gls:borg sollten direkt funktioneren.
+erstellt und die einfachen Funktionen von gls:borg sollten direkt funktionieren
 
 ** Backup
 
 Bei den Backups handelt es sich ohne Zweifel um die wichtigste Funktion von
-Borg-Qt. Deshalb soll das erstellen eines Backups so schnell und unkompliziert
+Borg-Qt. Deshalb soll das Erstellen eines Backups so schnell und unkompliziert
 wie möglich von statten gehen.
 
 *** Backend
 
 Um Backups erstellen zu können wurde die Klasse ~BackupThread~ erstellt welche
-von ~BorgQtThread~ erbt. Die Klasse ~BackupThread~ nimmt beim instanzieren 3
+von ~BorgQtThread~ erbt. Die Klasse ~BackupThread~ nimmt beim instantiieren 3
 Argumente auf: ~includes~, ~excludes~, ~prefix~. Wobei ~excludes~ und ~prefix~
 beide optional sind. Im Hauptcode werden diese Argumente aus der
 Konfigurationsdatei ausgelesen und übergeben. Die Includes werden im Falle
-eines Backups im Hintergrund auch aus der Konfigurationsdatei gelesen. Wenn es
+eines Backups im Hintergrund aus der Konfigurationsdatei gelesen. Wenn es
 der User manuell ausführt wird der im Frontend ausgewählte Pfad mitgegeben.
 
-Die "Excludes" haben lange nicht funktionert. Der Grund dafür waren zusätzliche
+Die "Excludes" haben lange nicht funktioniert Der Grund dafür waren zusätzliche
 Anführungszeichen um die Exclude Pfade. Diese wurden aus Versehen hinzugefügt
 da gls:borg normalerweise auf der Kommandozeile ausgeführt wird und die
 Anführungszeichen dort notwendig sind um allfällige Leer- oder Sonderzeichen
-abzufangen. Es wurde davon ausgegangen dass, da ~subprocess~ Modull ähnlich
-funktioniert wie die Kommandozeile. Da man an das Modull direkt einen String
+abzufangen. Es wurde davon ausgegangen dass, da ~subprocess~ Modul ähnlich
+funktioniert wie die Kommandozeile. Da man an das Modul direkt einen String
 übergibt sind die zusätzlichen Anführungszeichen nicht notwendig und führen
-sogar dazu das die Pfade gar nicht funktioneren. Somit werden die "Excludes"
-einfach mit dem entsprechenden Parameter gepaart und als gesamte Liste an das
-finale Kommando angehängt. Die Includes funktionieren auf die gleiche Weise ins
-finale Kommando eingebaut benötigen jedoch keine zusätzlichen Paramteter. Zu
-sehen ist dies im Codesnippet:([[code:excludes]]).
+sogar dazu das die Pfade gar nicht funktionieren Somit werden die "Excludes"
+mittels der Methode ~_process_excludes~ mit dem entsprechenden Parameter
+gepaart und als gesamte Liste an das finale Kommando angehängt. Die "Includes"
+funktionieren auf die gleiche Weise, benötigen jedoch keine zusätzlichen
+Parameter Zu sehen ist dies im Codesnippet:([[code:excludes]]).
 
 #+caption: Erstellen des "borg create" Kommandos fürs erstellen von Backups.
 #+name: code:excludes
@@ -2067,19 +2054,14 @@ def create_command(self):
         self.command.extend(self.excludes)
 #+end_src
 
-Aus zeitlichen Gründen konnte die Funktion zur Erkennung eines laufenden
-Hypervisors nicht während der Diplomarbeit entwickelt werden. Dies ist ein
-recht komplexes Features und braucht genügend Zeit damit es richtig umgesetzt
-wird.
-
 *** Frontend
 
 Damit die Backups im Frontend funktionieren musste zum einen der "Backup" Knopf
-mit der Method ~create_backup~ verknüpft werden. Desweiteren wurde ein Dateibaum, in
+mit der Methode ~create_backup~ verknüpft werden. Des weiteren wurde ein Dateibaum, in
 Abbildung:([[fig:borgqt_file_tree]]) grün umrahmt, eingefügt. Dieser gibt den Pfad
 des angewählten Objektes and die ~create_backup~ Methode weiter.
 
-#+caption: Screenhot des Dateibaumes.
+#+caption: Screenshot des Dateibaumes.
 #+name: fig:borgqt_file_tree
 [[file:pictures/borgqt_file_tree.png]]
 
@@ -2088,19 +2070,20 @@ angezeigt, Abbildung:([[fig:borgqt_progress_v2]]). Dieser dient hauptsächlich d
 dem User das Gefühl zu geben das die Applikation noch am Arbeiten ist.
 
 Der Dialog musste gegenüber der ersten Version in Sektion: [[Erste Umsetzung][Erste Umsetzung]] noch
-etwas angepasst werden. gls:borg gibt während dem Erstellen eines Archives keine
-Informationen zurück welches einem erlauben würden einen Fortschrittsbalken zu
-generieren, welcher den effektiven Fortschritt anzeigt. gls:borg gibt einzig die
-Anzahl der verarbeiteten Dateien in regelmässigen Abständen zurück. Da gls:borg
-jedoch zu Beginn nicht meldet wieviele Dateien gesichert werden lässt sich
-damit keine Prozentzahl erstellen. Ein paar Experimente bei denen die zu
-sichernenden Dateien zuerst von Borg-Qt gezählt werden sollten, wurden
-verworfen. Einerseits weil keine Methode gefunden werden konnte welche die
-gleiche Anzahl Dateien zurückgab wie gls:borg. Anderseits weil es den Backup
-Vorgang unnötig in die Länge zieht. Dies ist insbesondere der Fall wenn sich
-sehr viele Dateien im Quellverzeichnis befinden. Aus diesem Grund wurde der
-Fortschrittsbalken mit Prozentanzeige durch einen sich wiederholenden
-Ladebalken ersetzt.
+etwas angepasst werden. gls:borg gibt während dem Erstellen eines Archivs
+keine Informationen zurück welches einem erlauben würden einen
+Fortschrittsbalken zu generieren, welcher den effektiven Fortschritt anzeigt.
+gls:borg gibt einzig die Anzahl der verarbeiteten Dateien in regelmässigen
+Abständen zurück. Da gls:borg jedoch zu Beginn nicht meldet wie viele Dateien
+gesichert werden lässt sich damit keine Prozentzahl erstellen. Ein paar
+Experimente bei denen die zu sichernden Dateien zuerst von Borg-Qt gezählt
+werden sollten, wurden verworfen. Einerseits weil keine Methode gefunden werden
+konnte welche die gleiche Anzahl Dateien zurückgab wie gls:borg. Anderseits
+weil es den Backup Vorgang unnötig in die Länge zieht. Dies ist insbesondere
+der Fall wenn sich sehr viele Dateien im Quellverzeichnis befinden. Es kann
+sogar soweit kommen dass, das Zählen länger als das eigentliche Sichern dauert.
+Aus diesem Grund wurde der Fortschrittsbalken mit Prozentanzeige durch einen
+sich wiederholenden Ladebalken ersetzt.
 
 #+caption: Screenshot des "Aktion in Ausführung" Dialogs.
 #+name: fig:borgqt_progress_v2
@@ -2109,16 +2092,29 @@ Ladebalken ersetzt.
 
 Wurde das Archiv erfolgreich erstellt, wird die Liste mit den Archiven sowie
 die Repository Statistik aktualisiert. Beide Elemente sind in der,
-Abbildung:([[fig:borgqt_archive_list]]), grün respektive rot umrahmt. Beide
-Funktionen wurden im Grossen und Ganzen gleich wie bereits die ~backup~
-Funktion implementiert. Die zurückerhaltenen gls:json Strings werden wieder auf
-die jeweilige Information geparst und die Archive in Python Listen, die
-Repository Statisk in Ganzzahlen umgewahndelt.
+Abbildung:([[fig:borgqt_archive_list]]), grün respektive rot umrahmt. Für die
+Beiden Funktionen wurde jeweils eine eigene Klasse, ~ListThread~ und
+~InfoThread~, erstellt. Beide erben von ~BorgQtThread~. In den Klassen wird wie
+bei ~BackupThread~ gls:borg über einen ~subprocess~ aufgerufen um die Archiv Liste
+respektive Statistik zurückzuerhalten Die gls:json Strings werden wieder auf
+die jeweilige Information geparst und die Archive in eine Python List, die
+Repository Statistik in Zahlen umgewandelt.
 
 Da gls:borg die Repository Grössen in Bytes zurück gibt sollten diese zur
 Anzeige noch in eine menschenlesbarses Format umgerechnet werden. In Borg-Qt
 geschieht dies mit der Helferfunktion ~convert_size~. Die Funktion wurde von
 Stackoverflow footcite:sizeformat übernommen.
+
+Beim Durchführen der Benutzerfreundlichkeitsstudie wurde noch ein Bug entdeckt.
+Der Bug der entdeckt wurde tritt immer dann auf wenn ein Archiv gemountet ist
+und man ein Backup erstellen möchte. Dies ist jedoch offenbar eine Funktion die
+von gls:borg nicht unterstützt wird footcite:borgmount. gls:borg kann mehrere
+Archive gleichzeitig mounten. Der User müsste jedoch jedes der Archive zuerst
+wieder unmounten bevor er eine neue Datensicherung erstellen kann. Das Problem
+wurde dadurch gelöst das dem User ein Dialog angezeigt wird, über welchen er
+vor einer Datensicherung zuerst die gemounteten Archive aushängen kann.
+Anschliessend startet die Datensicherung dann wie wenn kein Archiv gemountet
+gewesen wäre.
 
 #+caption: Screenshot der aktualisierten Archivliste und Repository Statistik.
 #+name: fig:borgqt_archive_list
@@ -2127,7 +2123,7 @@ Stackoverflow footcite:sizeformat übernommen.
 ** Restore
 
 Der Code für das Wiederherstellen eines Backups ist sehr ähnlich wie der Code
-für das Erstellen. Die Besonderheiten bei dieser Funktion sind vorallem die
+für das Erstellen. Die Besonderheiten bei dieser Funktion sind vor allem die
 Kontrolle das ein Archiv angewählt wurde bevor man die Wiederherstellung
 startet, das Erstellen des Zielpfades sowie das Aufräumen bei einem Fehler.
 
@@ -2135,7 +2131,7 @@ Wird der "Restore" Knopf gedrückt ohne das ein Backup angewählt wurde erschein
 folgende Fehlermeldung, Abbildung:([[fig:no_archive_selected]]), um den Benutzer
 darauf hinzuweisen das er dies noch tun sollte.
 
-#+caption: Screenshot der Fehlermeldung eines fehlenden Archives während einem Restore.
+#+caption: Screenshot der Fehlermeldung eines fehlenden Archivs während einem Restore.
 #+name: fig:no_archive_selected
 #+attr_latex: :width .2\paperwidth :placement [H]
 [[file:pictures/borgqt_no_archive_selected.png]]
@@ -2143,7 +2139,7 @@ darauf hinzuweisen das er dies noch tun sollte.
 Das Wiederherstellen an sich läuft so ab das der Benutzer zuerst ein Archiv
 auswählt und dann auf "Restore" klickt. Daraufhin öffnet sich ein Dialog in
 welchem der Benutzer den Zielort auswählen kann. Sobald er dies getan hat
-erstellt Borg-Qt darin einen Order mit dem Namen des Archives und beginnt mit
+erstellt Borg-Qt darin einen Order mit dem Namen des Archivs und beginnt mit
 dem eigentlichen Wiederherstellen. Sollte der Zielort für die Applikation nicht
 beschreibbar sein erscheint eine entsprechende Fehlermeldung,
 Abbildung:([[fig:not_writeable]]), und der Vorgang wird abgebrochen. Nach einer
@@ -2156,14 +2152,14 @@ Dateimanager damit der User gleich mit den Dateien weiterarbeiten kann.
 [[file:pictures/borgqt_not_writeable.png]]
 
 Gibt es während dem Wiederherstellen einen Fehler gibt die Anwendung den
-entsprechenden Fehler aus und löscht zusätlich noch den zu Beginn erstellten
+entsprechenden Fehler aus und löscht zusätzlich noch den zu Beginn erstellten
 Archiv Ordner. Dies aus dem Grund da die Wiederherstellung ja nicht komplett
-durchgelaufen ist befindet sich das Archiv in einem unfertigen Zustand. Somit
-ist es sinnvoller die wiederhergestellten Dateien wegzuräumen als unter
-Umständen defekte Dateien zurückzulassen.
+durchgelaufen ist, somit befindet sich das Archiv in einem unfertigen Zustand.
+Es ist deshalb sinnvoller die wiederhergestellten Dateien wegzuräumen als unter
+Umständen defekte Dateien zurück zulassen
 
 Wird das gleiche Archiv nochmal an den gleichen Zielort wiederhergestellt ist
-das für gls:borg kein Problem. Es überschreibt die Dateien einfach nocheinmal.
+das für gls:borg kein Problem. Es überschreibt die Dateien einfach noch einmal
 
 ** Mount
 
@@ -2173,24 +2169,24 @@ dies nicht der Fall ist eine entsprechende Fehlermeldung aus. Im Gegensatz zur
 "Restore" Funktion zeigt die "Mount" Funktion jedoch keinen Dialog zum
 Auswählen des Zielpfades. Die Funktion erstellt sich diesen selbst. Der
 Zielpfad ist dabei kombiniert aus dem ~/tmp~ Verzeichnis und dem Namen des
-Archives.
+Archivs
 
-gls:borg mountet jedes Archiv nur mit Leserechten. Da es relativ
-unwahrscheinlich ist das der Zielpfad in unbeschreibbarer Form bereits vor dem
-Ausführen der Appliation bereits vorhanden ist. Sollte dies jedoch der Fall
-sein kann davon ausgegangen werden das der Benutzer das Archiv bereits einmal
-gemountet wurde. Genau dies wird in der Applikation auch so überprüft. Falls
-der Zielort schreibbar ist wird das ausgewählte Archiv auf diesem Pfad
+gls:borg mountet jedes Archiv nur mit Leserechten. Es ist relativ
+unwahrscheinlich das der Zielpfad in unbeschreibbarer Form bereits vor dem
+Ausführen der ~mount_backup~ Methode bereits vorhanden ist. Sollte dies jedoch
+der Fall sein kann davon ausgegangen werden das der Benutzer das Archiv bereits
+einmal gemountet hat. Genau dies wird in der Applikation auch so überprüft.
+Falls der Zielort schreibbar ist wird das ausgewählte Archiv auf diesem Pfad
 gemountet. Anschliessend wird wie auch bei der Restore Funktion der Pfad in
 einem Dateimanager geöffnet damit der Benutzer direkt mit den Dateien
-weiterarbeiten kann. Wurde erkannt dass, das Archiv bereits gemountet wurde
-öffnet die Applikation direkt den Dateimanager ohne zu versuchen das Archiv
-nocheinmal zu mounten.
+weiterarbeiten kann. Wurde erkannt dass, das Archiv bereits gemountet wurde,
+also der Pfad nicht schreibbar ist, öffnet die Applikation direkt den
+Dateimanager ohne zu versuchen das Archiv noch einmal zu mounten.
 
-Zusätlich wird der Pfad jedes gemounteten Archives in einer Liste gespeichert.
+Zusätzlich wird der Pfad jedes gemounteten Archivs in einer Liste gespeichert.
 Beim Beenden der Applikation iteriert die Applikation über jeden Pfad in der
-Liste unmountet und löscht ihn. Somit befindet sich das System wieder im
-gleichen Zustand wie vor dem Start der Applikation.
+Liste unmountet das Archiv und löscht den Ordner. Somit befindet sich das
+System wieder im gleichen Zustand wie vor dem Start der Applikation.
 
 ** Delete
 
@@ -2199,9 +2195,10 @@ löschen. Hierbei greift wie bei der "Restore" und "Mount" Funktion auch wieder
 die Überprüfung ob der Benutzer ein Archiv ausgewählt hat. Ist dies gegeben
 zeigt die Applikation dem Benutzer einen Dialog, Abbildung:([[fig:yes_no]]), zum
 sicherstellen das er das Archiv wirklich löschen möchte. Bestätigt er diesen
-mit "Yes" wird der Vorgang vortgesetzt und das Archiv gelöscht. Anschliessend
+mit "Yes" wird der Vorgang fortgesetzt und das Archiv gelöscht. Anschliessend
 werden die Archivliste und die Repository Statistik aktualisiert um den neuen
-Zustand wiederzugeben.
+Zustand wiederzugeben. Klickt der Benutzer stattdessen auf "No" schliesst sich
+der Dialog wieder und nichts weiter passiert.
 
 #+caption: Screenshot des Yes/No Dialogs in der "Delete" Funktion.
 #+name: fig:yes_no
@@ -2221,28 +2218,27 @@ Oberfläche angezeigt wird. Bei Borg-Qt wird dies über ein Kommandozeilen
 Parameter realisiert. Hierfür wurde das Python Standard Paket ~argparser~
 verwendet. Konkret bedeutet dies dass, wenn man die Applikation auf
 der Kommandozeile wie folgt ausführt ~borg_qt -B~ wird die grafische Oberfläche
-nicht angezeigt und es wird direkt die Method ~background_backup~ der Klasse
-~MainWindow~ ausgeführt. Dabei werden alle Ordner welche in den Einstellungen
+nicht angezeigt und es wird direkt die Methode ~background_backup~ der Klasse
+~MainWindow~ ausgeführt. Dabei werden alle Ordner, welche in den Einstellungen
 unter "Include" sowie "Exclude" gespeichert wurden, im Archiv gesichert,
 respektive davon ausgeschlossen. Damit sind die Voraussetzungen für
 automatische Backups gegeben.
 
-Um die Backups in regelmässigen Intervalen auszuführen gibt es zwei
+Um die Backups in regelmässigen Intervallen auszuführen gibt es zwei
 Möglichkeiten wie man dies implementieren könnte. Zum einen könnte man die
 Applikation permanent im Hintergrund laufen lassen, etwa als Trayicon wie man
 das von anderen Applikationen wie etwas Dropbox kennt zum anderen kann man es
-über Werkzeuge des Betriebssystems bewerkstelligen.
-Die drei Desktopbetriebsysteme, Windows, OS X und Linux, bringen alle drei
-Werkzeuge mit um periodisch einen ein Programm auszuführen. Unter Linux wurde
-dies früher mit sogenannten Cron Jobs gemacht. Die moderne Lösung sind
-heutzutage jedoch sogenannte Systemd Timer. Für Borg-Qt wurde beschlossen es
-mit den Werkzeugen des Betriebssystems zu machen. Also konkret Systemd. Dies
-einerseits aus dem Grund das ein Grossteil der Funktion bereits programmiert
-wurde und man somit Zeit sparen kann, zum anderen wurden die Systemd Timer
-genau für solche Zwecke programmiert. Zu guter Letzt soll die Anwendung dem
-Benutzer auch soweit als möglich aus dem Weg gehen. Eine Applikation welche
-permanent in der Taskleiste lebt scheint hier nicht wirklich das Kriterium zu
-erfüllen.
+über Werkzeuge des Betriebssystems bewerkstelligen. Die drei
+Desktopbetriebsysteme, Windows, OS X und Linux, bringen alle drei Werkzeuge
+mit, um periodisch ein Programm auszuführen. Unter Linux wurde dies früher mit
+sogenannten Cron Jobs gemacht. Die moderne Lösung sind heutzutage jedoch
+Systemd Timer. Für Borg-Qt wurde beschlossen es mit den Werkzeugen des
+Betriebssystems zu machen. Also konkret Systemd. Dies aus dem Grund das Systemd
+genau für das Managen von Applikationen programmiert wurde. Ein Grossteil der
+Funktion ist bereits in Systemd enthalten somit kann man Zeit sparen. Zudem
+soll die Anwendung dem Benutzer auch soweit als möglich aus dem Weg gehen. Eine
+Applikation welche permanent in der Taskleiste lebt scheint hier nicht wirklich
+das Kriterium zu erfüllen.
 
 Systemd ist ein init System welches dazu dient dazu die Benutzerumgebung und
 die dazugehörigen Prozesse zu starten und zu verwalten footcite:systemd. Die
@@ -2251,9 +2247,9 @@ einfach in Klartextdateien mit der Dateiendung ~.service~ definiert. Der Inhalt
 orientiert sich dabei praktischerweise am "INI" Stil. In Borg-Qt wurde das INI
 Format bereits bei den Konfigurationsdateien verwendet. Somit können dort
 gesammelte Erfahrungen wiederverwendet werden. Soll ein Service in einem
-gewissen Zeitinterval ausgeführt werden benötigt Systemd eine weiter Datei mit
-dem gleichen Namen jedoch mit der Dateiendung Timer. Der Inhalt ist auch wieder
-im INI Stil gehalten. Systemd versteht eine Vielzahl an Datumsformaten
+gewissen Zeitintervall ausgeführt werden benötigt Systemd eine weiter Datei mit
+dem gleichen Namen jedoch mit der Dateiendung ~.timer~ . Der Inhalt ist auch
+wieder im INI Stil gehalten. Systemd versteht eine Vielzahl an Datumsformaten
 footcite:systemddate. In Borg-Qt wurden zwei Varianten in den Einstellungen
 umgesetzt. Eine welche "Predefined Schedule" genannt wurde und eine mit dem
 Namen "Custom Schedule", zu sehen in, Abbildung:([[fig:schedule]]). Die Predefined
@@ -2272,10 +2268,11 @@ Freitag stündliche Backups." (~Monday, Wednesday, Friday *-*-* *:00:00~).
 #+attr_latex: :placement [H]
 [[file:pictures/borgqt_settings_schedule.png]]
 
-Das erstellen der eigentlichen Systemd Konfiguration passiert in Borg-Qt in der
-~Config~ Klasse. Zum schreiben, und de-/aktivieren des Systemd Services, respektive
-Timers wurde wurde eine Klasse ~SystemdFile~. Somit könnte die Funktion auch
-einfach in einem anderen Projekt verwendet werden.
+Das Erstellen der eigentlichen Systemd Konfiguration passiert in Borg-Qt in der
+~Config~ Klasse zum gleichen Zeitpunkt wie die eigentliche Konfigurationsdatei
+geschrieben wird. Zum schreiben, und de-/aktivieren des Systemd Services,
+respektive Timers wurde wurde eine Klasse ~SystemdFile~ erstellt. Somit könnte
+die Funktion auch einfach in einem anderen Projekt verwendet werden.
 
 Systemd benötigt zum Starten der Anwendung den absoluten Pfad in der Service
 Datei. Da davon ausgegangen werden kann das Borg-Qt im ~PATH~ des Systems
@@ -2285,8 +2282,8 @@ Speicherort der Datei. Zusammen mit den Daten aus den Einstellungen wird diese
 Information in einem ~Configparser~ Objekt gespeichert welches dann mithilfe
 der ~SystemdFile~ Klasse in eine ~borg_qt.service~,
 Codesnippet:([[code:systemdservice]]), respektive ~borg_qt.timer~,
-Codesnippet:([[code:systemdtimer]]), Datei im Systemd Pfad für Benutzerdaten
-~/home/username/.config/systemd/user/~ gespeichert wird und aktiviert.
+Codesnippet:([[code:systemdtimer]]), Datei, im Systemd Pfad
+~/home/username/.config/systemd/user/~ geschrieben und aktiviert wird.
 
 Eine Option in der ~borg_qt.timer~ die noch erwähnenswert ist, ist ~Persistent
 = true~. Ist ~Persistent~ auf ~true~ gesetzt holt Systemd den Tasks nach sollte
@@ -2298,7 +2295,7 @@ eingeschaltet wird kommt.
 
 Mit dem Abschluss des automatischen Backups wurde die für die Entwicklung
 reservierte Zeit aufgebraucht und die Entwicklung neuer Funktionen für den
-Zeitrahmen der Diplomarbeit angehalten.
+Zeitrahmen der Diplomarbeit gestoppt.
 
 #+caption: Systemd Service Datei für Borg-Qt
 #+name: code:systemdservice
@@ -2327,14 +2324,15 @@ Persistent = true
 WantedBy = timers.target
 #+end_src
 
-** UI Anpassungen nach Benutzerfreundlichkeitsstudie
+** gls:gui Anpassungen nach Benutzerfreundlichkeitsstudie
 
 Im Rahmen der durchgeführten [[Benutzerfreundlichkeitsstudie][Benutzerfreundlichkeitsstudie]] wurden einige Punkte
 festgestellt welche im Rahmen der Diplomarbeit angepasst werden konnten. Zum
-einen wurden einige Buttons neu beschriftet um klarer auf ihre Funktion
-hinzuweisen. Dies wurde bei den "Include" Optionen,
-Abbildungen:([[fig:borgqt_settings_include_v2]]) und bei den "Exclude" Optionen,
-Abbildung([[fig:borgqt_settings_exclude_v2]]), gemacht.
+einen wurden in den "Include" sowie "Exclude" Optionen einige Buttons neu
+beschriftet und zwei Labels hinzugefügt um klarer auf ihre Funktion
+hinzuweisen. Zu sehen ist dies in den
+Abbildungen:([[fig:borgqt_settings_include_v2]]) und
+([[fig:borgqt_settings_exclude_v2]]).
 
 #+caption: Screenshot der Borg-Qt "Include" Einstellungen Version 2
 #+name: fig:borgqt_settings_include_v2
@@ -2346,12 +2344,13 @@ Abbildung([[fig:borgqt_settings_exclude_v2]]), gemacht.
 #+attr_latex: :placement [H]
 [[file:pictures/borgqt_settings_exclude_v2.png]]
 
-Zudem wurde ein kleines Hilfe Fenster, Abbildung:([[fig:borgqt_help]]), eingebaut
-welches dem Benutzer beim Start der Applikation angezeigt wird. Dieses soll ihm
-einen kurzen Überblick darüber geben welcher Button welche Aktion auslöst.
-Optional kann der Benutzer dann noch entscheiden das er das Fenster beim
-nächsten Start nicht mehr angezeigt bekokmmen möchte. Über den Button "Help"
-kann das Fenster jederzeit unabhängig der Einstellungen wieder angezeigt werden.
+Zudem wurde ein Hilfe Fenster, Abbildung:([[fig:borgqt_help]]), eingebaut welches
+dem Benutzer beim Start der Applikation angezeigt wird. Dieses soll ihm einen
+kurzen Überblick darüber geben welcher Button welche Aktion auslöst und welche
+Elemente welche Information anzeigen. Optional kann der Benutzer dann noch
+entscheiden das er das Fenster beim nächsten Start nicht mehr angezeigt
+bekommen möchte. Über den Button "Help" kann das Fenster jederzeit unabhängig
+der Einstellungen wieder angezeigt werden.
 
 #+caption: Screenshot des Borg-Qt Hilfe Fenster
 #+name: fig:borgqt_help
@@ -2360,18 +2359,18 @@ kann das Fenster jederzeit unabhängig der Einstellungen wieder angezeigt werden
 
 ** Releases
 
-Für die finale Veröffentlichung wird Borg-Qt als ein sogennantes ausführbares
+Für die finale Veröffentlichung wird Borg-Qt als ein sogenanntes ausführbares
 "Binary" zur Verfügung gestellt. Man kennt diese auf Windows Systemen etwa als
-die Dateien mit der Endung ".exe". In diesem Fall handelt es sich beim Binary
-um ein selbstenpackendes Dateiarchiv. Darin enthalten sind alle benötigten
-Python Modulle und sonstige Dateien wie etwa die Icons oder gls:gui
+die Dateien mit der Endung ~.exe~. In diesem Fall handelt es sich beim Binary
+um ein selbstentpackendes Dateiarchiv. Darin enthalten sind alle benötigten
+Python Module und sonstige Dateien wie etwa die Icons oder gls:gui
 Definitionsdateien. Beim Ausführen entpackt sich das Archiv in einen temporären
-Ordner und liesst dann von dort aus alle benötigten Dateien.
+Ordner und liest dann von dort aus alle benötigten Dateien.
 
 Diese Art der Auslieferung hat dabei den Vorteil das der User das Programm
 nicht speziell installieren muss oder dafür irgendwelche zusätzlichen Dinge
 installieren muss. Der Nachteil ist jedoch das so ein Binary nur auf dem
-jeweilgen Betriebssystem erstellt werden kann. Das heisst das man unter Linux
+jeweiligen Betriebssystem erstellt und ausgeführt werden kann. Das heisst das man unter Linux
 etwa keine Binaries für Mac erstellen kann oder umgekehrt.
 
 Erstellt werden die Dateien mit einem Programm namens
@@ -2392,10 +2391,27 @@ pyinstaller --hidden-import=PyQt5.sip \
     -F borg_qt/borg_qt.py; \
 #+end_src
 
+Auf Github wird jeweils ein Release erstellt und dazu die passenden Binaries
+hochgeladen. Github packt dabei den Source Code beim Erstellen des Releases in
+ein Zip Archiv. Somit kann eine interessierte Person sich zum Binary auch
+direkt den Source Code herunterladen.
+
 * TODO Ausblick
 ** TODO Erreichte Ziele
 
+| Ziel Nr. | Erfüllt | Bemerkung |
+|----------+---------+-----------|
+|          |         |           |
+
+
 *** TODO Risikoanalyse der neuen Ist-Situation
+
+Das Risiko konnte masgeblich gesenkt. Mit den automatischen Backups gibt es nun
+auch eine Möglichkeit das Vergessen zu minimieren.
+
+#+caption: Risikoanalyse der neuen Ist-Situation
+#+name: fig:new-is-risk
+[[file:pictures/ist_risiko_neu.pdf]]
 
 ** TODO Projektmanagement
 
@@ -2410,7 +2426,26 @@ Umständen enorme Zeitersparnise.
 Die regelmässigen Arbeitsessions haben sich als eine gute Variante des Arbeiten
 erwiesen und haben die Last der Diplomarbeit gut verteilt.
 
+** TODO Benutzerfreundlichkeitsstudie
+
+Die Studie war eine sehr interessante Erfahrung. Enduser sehen eine
+Anwendung mit ganz anderen Augen als der Entwickler der Anwendung der von jedem
+Element weiss wie der Code dazu aussieht. Er hat auch gezeigt das die Aufgaben
+auch richtig gestellt werden müssen ansonsten wissen die Probanden schon gar
+nicht erst was gefordert ist. Auch sollte wenn möglich darauf geachtet werden
+das auf einem Betriebsystem getestet mit welchem die Probanden bereits etwas
+Erfahrung haben. Zwei der Probanden waren ab dem Verhalten und Aussehen des
+Dateimanagers von Ubuntu 18.04 etwas verwirrt da sie ihn zuvor noch nicht
+gesehen und bentuzt hatten. Alternativ kann auch die Gruppe der Probanden so
+gewählt werden das sie mit dem Betriebssystem bereits vertraut sind.
+Auf jeden Fall etwas was man bei zukünftigen Projekten wieder machten sollte.
+
 ** TODO Umsetzung
+
+Aus zeitlichen Gründen konnte die Funktion zur Erkennung eines laufenden
+Hypervisors nicht während der Diplomarbeit entwickelt werden. Dies ist ein
+recht komplexes Features und braucht genügend Zeit damit es richtig umgesetzt
+wird.
 
 Unittests sind der Shit brauchen allerdings Zeit und eine gewisse Erfahrung mit
 der Sprache. Qt ist eine hilfreiches Framework wenn auch sehr umfangreich. Wenn
@@ -2418,6 +2453,8 @@ man gewillt ist sich mit dem C++ Code auseinanderzusetzen ist die Dokumentation
 jedoch sehr detailiert.
 
 ** TODO Weiterverwendung von Borg-Qt
+
+Wird bereits produktiv vom Projektleiter eingesetzt.
 
 ** TODO Gelerntes
 
@@ -2443,49 +2480,49 @@ PLACEHOLDER
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
 | *TC-03*                      | Anwendung starten                                  | -                                                                               | 1. Anwendung starten.                                                                                                                                                                                                                                                                  | -                                                      | Die wirft eine Fehlermeldung das sie die Konfigurationsdatei nicht finden kann.                                                         | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-04*                      | Lokales Backup erstellen                           | TC-01 ausgeführt.                                                               | 1. In der Ordnerübersicht das Code Repository auswählen.\newline 2. Den Button “Backup” betätigen.                                                                                                                                                                                     | Testdateien                                            | Die Anwendung zeigt einen Fortschrittsbalken der nach erfolgtem Backup verschwindet.                                                    | Die Backup Liste wird aktualisiert und zeigt ein Backup an.                                                                                                               | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-04*                      | Lokales Backup erstellen                           | TC-01 ausgeführt.                                                               | 1. In der Ordnerübersicht das Code Repository auswählen.\newline 2. Den Button “Backup” betätigen.                                                                                                                                                                                     | Testdateien                                            | Die Anwendung zeigt einen Fortschrittsbalken der nach erfolgreichem Backupen verschwindet.                                              | Die Archiv Liste wird aktualisiert und zeigt ein Archiv an.                                                                                                               | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-05*                      | Lokales Backup erstellen                           | TC-01 ausgeführt.\newline BorgBackup macht bereits ein Backup.                  | 1. In der Ordnerübersicht das Code Repository auswählen.\newline 2. Den Button “Backup” betätigen.                                                                                                                                                                                     | Testdateien                                            | Die Anwendung wirft eine Fehlermeldung das BorgBackup bereits ausgeführt wird.                                                          | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-05*                      | Lokales Backup erstellen                           | TC-01 ausgeführt.\newline BorgBackup erstellt bereits ein Archiv.               | 1. In der Ordnerübersicht das Code Repository auswählen.\newline 2. Den Button “Backup” betätigen.                                                                                                                                                                                     | Testdateien                                            | Die Anwendung wirft eine Fehlermeldung das BorgBackup bereits ausgeführt wird.                                                          | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
 | *TC-06*                      | Lokales Backup erstellen                           | TC-01 ausgeführt.                                                               | 1. Das Lokale Repository an einen beliebigen Ort verschieben.\newline 2. In der Ordnerübersicht das Code Repository auswählen.\newline 3. Den Button “Backup” betätigen.                                                                                                               | Testdateien                                            | Die Anwendung wirft eine Fehlermeldung das sie das lokale Repository nicht finden kann.                                                 | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-07*                      | Lokales Backup erstellen                           | TC-01 ausgeführt.                                                               | 1. Den Button “Backup” betätigen.                                                                                                                                                                                                                                                      | -                                                      | Die Anwendung wirft eine Fehlermeldung das der User einen Pfad angeben soll.                                                            | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-07*                      | In lokales Repository sichern                      | TC-01 ausgeführt.                                                               | 1. Den Button “Backup” betätigen.                                                                                                                                                                                                                                                      | -                                                      | Die Anwendung wirft eine Fehlermeldung das der User einen Pfad angeben soll.                                                            | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-08*                      | Lokales Backup löschen                             | TC-04 ausgeführt.                                                               | 1. In der Backup Liste das Backup auswählen.\newline 2. Den Button “Delete” betätigen.                                                                                                                                                                                                 | -                                                      | Die Anwendung zeigt einen Fortschrittsbalken der nach erfolgtem Löschen verschwindet.                                                   | Die Backup Liste wird aktualisiert und ist nun leer.                                                                                                                      | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-08*                      | Lokales Archiv löschen                             | TC-04 ausgeführt.                                                               | 1. In der Backup Liste das Backup auswählen.\newline 2. Den Button “Delete” betätigen.                                                                                                                                                                                                 | -                                                      | Die Anwendung zeigt einen Fortschrittsbalken der nach erfolgtem Löschen verschwindet.                                                   | Die Archiv Liste wird aktualisiert und ist nun leer.                                                                                                                      | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-09*                      | Lokales Backup löschen                             | TC-04 ausgeführt.                                                               | 1. Das Lokale Repository an einen beliebigen Ort verschieben.\newline 2. In der Backup Liste das Backup auswählen.\newline 3. Den Button “Delete” betätigen.                                                                                                                           | -                                                      | Die Anwendung wirft eine Fehlermeldung das sie das lokale Repository nicht finden kann.                                                 | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-09*                      | Lokales Archiv löschen                             | TC-04 ausgeführt.                                                               | 1. Das Lokale Repository an einen beliebigen Ort verschieben.\newline 2. In der Archiv Liste das Archiv auswählen.\newline 3. Den Button “Delete” betätigen.                                                                                                                           | -                                                      | Die Anwendung wirft eine Fehlermeldung das sie das lokale Repository nicht finden kann.                                                 | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-10*                      | Lokales Backup löschen                             | TC-04 ausgeführt.                                                               | 1. Den Button “Delete” betätigen.                                                                                                                                                                                                                                                      | -                                                      | Die Anwendung wirft eine Fehlermeldung das der User ein Backup auswählen soll.                                                          | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-10*                      | Lokales Archiv löschen                             | TC-04 ausgeführt.                                                               | 1. Den Button “Delete” betätigen.                                                                                                                                                                                                                                                      | -                                                      | Die Anwendung wirft eine Fehlermeldung das der User ein Archiv auswählen soll.                                                          | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-11*                      | Lokales Backup wiederherstellen                    | TC-04 ausgeführt.                                                               | 1. In der Backup Liste das Backup auswählen.\newline 2. Den Button “Restore” betätigen.\newline 3. Im geöffneten Dateidialog den Pfad "/home/andreas/Downloads" auswählen.\newline 4. Den Button “Open” anklicken.                                                                     | -                                                      | Nach erfolgtem Wiederherstellen öffnet ein Dateiexplorer den Ziel Pfad.                                                                 | Die Anwendung und ein Dateiexplorer wird angezeigt.                                                                                                                       | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-11*                      | Lokales Archiv wiederherstellen                    | TC-04 ausgeführt.                                                               | 1. In der Archiv Liste das Archiv auswählen.\newline 2. Den Button “Restore” betätigen.\newline 3. Im geöffneten Dateidialog den Pfad "/home/andreas/Downloads" auswählen.\newline 4. Den Button “Open” anklicken.                                                                     | -                                                      | Nach erfolgtem Wiederherstellen öffnet ein Dateiexplorer den Ziel Pfad.                                                                 | Die Anwendung und ein Dateiexplorer wird angezeigt.                                                                                                                       | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-12*                      | Lokales Backup wiederherstellen                    | TC-01 ausgeführt.                                                               | 1. Den Button “Backup” betätigen.                                                                                                                                                                                                                                                      | -                                                      | Die Anwendung wirft eine Fehlermeldung das der User ein Backup auswählen soll.                                                          | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-12*                      | Lokales Archiv wiederherstellen                    | TC-01 ausgeführt.                                                               | 1. Den Button “Backup” betätigen.                                                                                                                                                                                                                                                      | -                                                      | Die Anwendung wirft eine Fehlermeldung das der User ein Archiv auswählen soll.                                                          | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-13*                      | Lokales Backup wiederherstellen                    | TC-01 ausgeführt.                                                               | 1. Das Lokale Repository an einen beliebigen Ort verschieben.\newline 2. In der Backup Liste das Backup auswählen.\newline 3. Den Button “Restore” betätigen.                                                                                                                          | -                                                      | Die Anwendung wirft eine Fehlermeldung das sie das lokale Repository nicht finden kann.                                                 | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-13*                      | Lokales Archiv wiederherstellen                    | TC-01 ausgeführt.                                                               | 1. Das Lokale Repository an einen beliebigen Ort verschieben.\newline 2. In der Archiv Liste das Archiv auswählen.\newline 3. Den Button “Restore” betätigen.                                                                                                                          | -                                                      | Die Anwendung wirft eine Fehlermeldung das sie das lokale Repository nicht finden kann.                                                 | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-14*                      | Lokales Backup wiederherstellen                    | TC-01 ausgeführt.                                                               | 1. In der Backup Liste das Backup auswählen.\newline 2. Den Button “Restore” betätigen.\newline 3. Im geöffneten Dateidialog den Pfad "/home/andreas/Downloads" auswählen.\newline 4. Den Button “Cancel” anklicken.                                                                   | -                                                      | Der Datei Dialog schliesst sich wieder.                                                                                                 | Die Anwendung wird angezeigt.                                                                                                                                             | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-14*                      | Lokales Archiv wiederherstellen                    | TC-01 ausgeführt.                                                               | 1. In der Archiv Liste das Archiv auswählen.\newline 2. Den Button “Restore” betätigen.\newline 3. Im geöffneten Dateidialog den Pfad "/home/andreas/Downloads" auswählen.\newline 4. Den Button “Cancel” anklicken.                                                                   | -                                                      | Der Datei Dialog schliesst sich wieder.                                                                                                 | Die Anwendung wird angezeigt.                                                                                                                                             | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-15*                      | Home Directory sichern und wiederherstellen        | TC-01 ausgeführt.                                                               | 1. Vom Pfad "/home/andreas/" ein Backup erstellen.\newline 2. In der Backup Liste das gemachte Backup auswählen.\newline 3. Den Button “Restore” betätigen.\newline 4. Im geöffneten Dateidialog den Pfad "/home/andreas/Downloads" auswählen.\newline 5. Den Button “Open” anklicken. | "/home/andreas/"                                       | Nach erfolgtem Wiederherstellen öffnet ein Dateiexplorer den Ziel Pfad.\newline Darin fehlen jedoch temporäre Pfade wie “~/.cache” etc. | Die Anwendung und ein Dateiexplorer wird angezeigt.                                                                                                                       | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-15*                      | Home Directory sichern und wiederherstellen        | TC-01 ausgeführt.                                                               | 1. Vom Pfad "/home/andreas/" ein Archiv erstellen.\newline 2. In der Archiv Liste das gemachte Archiv auswählen.\newline 3. Den Button “Restore” betätigen.\newline 4. Im geöffneten Dateidialog den Pfad "/home/andreas/Downloads" auswählen.\newline 5. Den Button “Open” anklicken. | "/home/andreas/"                                       | Nach erfolgtem Wiederherstellen öffnet ein Dateiexplorer den Ziel Pfad.\newline Darin fehlen jedoch temporäre Pfade wie “~/.cache” etc. | Die Anwendung und ein Dateiexplorer wird angezeigt.                                                                                                                       | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
 | *TC-16*                      | Einzelne Datei wiederherstellen                    | TC-04 ausgeführt.                                                               | 1. In der Backup Liste das Backup auswählen.\newline 2. Den Button “Mount” betätigen.\newline 3. Aus dem sich öffnenden Dateiexplorer die Datei README.org nach "/home/andreas/Downloads" kopieren.                                                                                    | -                                                      | Die wiederhergestellte Datei ist identisch mit der in TC-04 gesicherten.                                                                | Die Anwendung und ein Dateiexplorer wird angezeigt.                                                                                                                       | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-17*                      | Einzelne Datei wiederherstellen                    | TC-01 ausgeführt.                                                               | 1. Das Lokale Repository an einen beliebigen Ort verschieben.\newline 2. In der Backup Liste das Backup auswählen.\newline 3. Den Button “Mount” betätigen.                                                                                                                            | -                                                      | Die Anwendung wirft eine Fehlermeldung das sie das lokale Repository nicht finden kann.                                                 | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-17*                      | Einzelne Datei wiederherstellen                    | TC-01 ausgeführt.                                                               | 1. Das Lokale Repository an einen beliebigen Ort verschieben.\newline 2. In der Archiv Liste das Archiv auswählen.\newline 3. Den Button “Mount” betätigen.                                                                                                                            | -                                                      | Die Anwendung wirft eine Fehlermeldung das sie das lokale Repository nicht finden kann.                                                 | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-18*                      | Pfad des lokalen Backup Repository anpassen        | TC-04 ausgeführt.\newline Backup Repository nach "/tmp/test-borgqt2" verschoben | 1. Den Button "Settings" betätigen.\newline 2. Den Repository Pfad auf "/tmp/test-borgqt2/" ändern.\newline 3. Den Button "Apply" betätigen.                                                                                                                                           | -                                                      | Die Backup Liste wird aktualisiert und zeigt wieder das Backup von TC-04 an.                                                            | Die Anwendung wird angezeigt. Die Konfigurationsdatei zeigt auf den neuen Pfad.                                                                                           | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-18*                      | Pfad des lokalen Backup Repository anpassen        | TC-04 ausgeführt.\newline Backup Repository nach "/tmp/test-borgqt2" verschoben | 1. Den Button "Settings" betätigen.\newline 2. Den Repository Pfad auf "/tmp/test-borgqt2/" ändern.\newline 3. Den Button "Apply" betätigen.                                                                                                                                           | -                                                      | Die Archiv Liste wird aktualisiert und zeigt wieder das Archiv von TC-04 an.                                                            | Die Anwendung wird angezeigt. Die Konfigurationsdatei zeigt auf den neuen Pfad.                                                                                           | Nicht implementiert                      |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-19*                      | Backup Name ändern                                 | TC-01 ausgeführt.                                                               | 1. Den Button "Settings" betätigen.\newline 2. Bei der Option "Archive Prefix" "Muster" eintragen.\newline 3. Den Button "Apply" betätigen.\newline 4. TC-04 durchführen.                                                                                                              | Backupname: Muster                                     | Die Anwendung zeigt einen Fortschrittsbalken der nach erfolgtem Backup verschwindet.                                                    | Die Backup Liste wird aktualisiert und zeigt ein Backup mit dem Präfix "Muster" an. Die Konfigurationsdatei beinhaltet die Option des Präfixes.                           | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-19*                      | Archiv Name ändern                                 | TC-01 ausgeführt.                                                               | 1. Den Button "Settings" betätigen.\newline 2. Bei der Option "Archive Prefix" "Muster" eintragen.\newline 3. Den Button "Apply" betätigen.\newline 4. TC-04 durchführen.                                                                                                              | Archiv Name: Muster                                    | Die Anwendung zeigt einen Fortschrittsbalken der nach erfolgtem Backup verschwindet.                                                    | Die Archiv Liste wird aktualisiert und zeigt ein Archiv mit dem Präfix "Muster" an. Die Konfigurationsdatei beinhaltet die Option des Präfixes.                           | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
 | *TC-20*                      | Keine Einstellungen ändern                         | TC-01 ausgeführt.                                                               | 1. Den Button "Settings" betätigen.\newline 2. Eine beliebige Option ändern.\newline 3. Den Button "Cancel" betätigen.                                                                                                                                                                 | -                                                      | Der Einstellungsdialog schliesst sich.                                                                                                  | Die Anwendung wird angezeigt. Die Konfigurationsdatei ist noch im selben Zustand wie bei TC-01.                                                                           | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-21*                      | Automatische Backups konfigurieren                 | TC-01 ausgeführt.                                                               | 1. Den Button "Settings" betätigen.\newline 2. Bei der Option "Automatic Backups" bei "Backup Path" die Testdateien angeben sowie "Hourly" auswählen und bei "Time" die nächste Stunde angeben.\newline 3. Den Button Apply betätigen.                                                 | Backup-zeit: 2 Minuten nach aktueller Zeit Testdateien | Der Datei Dialog schliesst sich wieder.                                                                                                 | Die Anwendung wird angezeigt. Die Konfigurationsdatei wurde um die Option des automatischen Backups erweitert. Die Anwendung hat einen "Service" auf dem System erstellt. | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-21*                      | Automatische Backups konfigurieren                 | TC-01 ausgeführt.                                                               | 1. Den Button "Settings" betätigen.\newline 2. Bei der Option "Includes" die Testdateien angeben sowie unter Schedule "Custom" auswählen und bei "Time" die nächste Stunde angeben.\newline 3. Den Button Apply betätigen.                                                             | Backup-zeit: 2 Minuten nach aktueller Zeit Testdateien | Der Datei Dialog schliesst sich wieder.                                                                                                 | Die Anwendung wird angezeigt. Die Konfigurationsdatei wurde um die Option des automatischen Backups erweitert. Die Anwendung hat einen "Service" auf dem System erstellt. | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-22*                      | Automatische Backups durchführen                   | TC-16 ausgeführt.                                                               | 1. TC-21 durchführen.\newline 2. Auf Ablauf der Zeit warten.\newline 3. Die Anwendung öffnen.                                                                                                                                                                                          | -                                                      | In der Backup Liste wird ein Backup angezeigt.                                                                                          | Die Anwendung wird angezeigt.                                                                                                                                             | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-22*                      | Automatische Backups durchführen                   | TC-16 ausgeführt.                                                               | 1. TC-21 durchführen.\newline 2. Auf Ablauf der Zeit warten.\newline 3. Die Anwendung öffnen.                                                                                                                                                                                          | -                                                      | In der Archiv Liste wird ein Archiv angezeigt.                                                                                          | Die Anwendung wird angezeigt.                                                                                                                                             | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-23*                      | Server Backup erstellen                            | Server Repository bereit.\newline Server Konfigurationsdatei erstellt.          | TC-04 durchführen.                                                                                                                                                                                                                                                                     | Testdateien                                            | Die Anwendung zeigt einen Fortschrittsbalken der nach erfolgtem Backup verschwindet.                                                    | Die Backup Liste wird aktualisiert und zeigt ein Backup an.                                                                                                               | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-23*                      | Server Archiv erstellen                            | Server Repository bereit.\newline Server Konfigurationsdatei erstellt.          | TC-04 durchführen.                                                                                                                                                                                                                                                                     | Testdateien                                            | Die Anwendung zeigt einen Fortschrittsbalken der nach erfolgtem Backup verschwindet.                                                    | Die Archiv Liste wird aktualisiert und zeigt ein Archiv an.                                                                                                               | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-24*                      | Lokales Backup erstellen während dem eine VM läuft | TC-01 ausgeführt.\newline Virtualbox VM Starten.                                | 1. In der Ordnerübersicht das Code Repository auswählen.\newline 2. Den Button “Backup” betätigen.                                                                                                                                                                                     | Testdateien                                            | Die Anwendung wirft eine Fehlermeldung aus das es zur Zeit aufgrund einer laufenden VM unsicher sei ein Backup durchzuführen.           | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Nicht implementiert                      |
+| *TC-24*                      | Lokales Archiv erstellen während dem eine VM läuft | TC-01 ausgeführt.\newline Virtualbox VM Starten.                                | 1. In der Ordnerübersicht das Code Repository auswählen.\newline 2. Den Button “Backup” betätigen.                                                                                                                                                                                     | Testdateien                                            | Die Anwendung wirft eine Fehlermeldung aus das es zur Zeit aufgrund einer laufenden VM unsicher sei ein Backup durchzuführen.           | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Nicht implementiert                      |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-25*                      | Abgebrochenes Backup bereinigen                    | TC-01 ausgeführt.                                                               | 1. In der Ordnerübersicht das Code Repository auswählen.\newline 2. Den Button “Backup” betätigen.\newline 3. Die Anwendung schliessen.\newline 4. Anwendung wieder öffnen.\newline 5. TC-04 Durchführen.                                                                              | Testdateien                                            | Bei Schritt 4. sollte ein Teilbackup zu sehen sein.\newline Bei Schritt 5 sollte einfach ein normales Backup zu sehen sein.             | Die Anwendung wird angezeigt.                                                                                                                                             | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-25*                      | Abgebrochenes Backup bereinigen                    | TC-01 ausgeführt.                                                               | 1. In der Ordnerübersicht das Code Repository auswählen.\newline 2. Den Button “Backup” betätigen.\newline 3. Die Anwendung schliessen.\newline 4. Anwendung wieder öffnen.\newline 5. TC-04 Durchführen.                                                                              | Testdateien                                            | Bei Schritt 4. sollte ein Teilarchiv zu sehen sein.\newline Bei Schritt 5 sollte einfach ein normales Archiv zu sehen sein.             | Die Anwendung wird angezeigt.                                                                                                                                             | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
 #+LATEX:}
 #+LATEX:\end{landscape}
