@@ -1646,26 +1646,26 @@ genannt, dass 21:00 Uhr etwas spät für solche Tests sei.
 Nach den 5 Tests liess sich feststellen, dass die Anwendung für die Anwender
 insgesamt einfach zu bedienen ist, sobald sie einmal wissen, welche Buttons
 welche Aktion auslösen und wie sich die Anwendung verhält. Um Hilfestellung zu
-leisten wird im Rahmen der Diplomarbeit noch ein Hilfefenster eingebaut welches
-den Benutzern beim ersten Starten der Anwendung angezeigt wird und kurz die
-jeweiligen Elemente des Interfaces anzeigt. Somit sollte auch das Problem bei
-der Aufgabe zwei etwas abgeschwächt werden. Eines der Hauptprobleme war dort
-das die Probanden nicht herausgefunden haben der schnellste Weg eine einzelne
-Datei wieder herzustellen über die "Mount" Funktion ginge. Die Einarbeitung in
-die Thematik von Backups würde sich jedoch wohl nur sehr schwer über das
-gls:gui realisieren lassen. Hier müsste auf jeden Fall eine Dokumentation oder
-im Idealfall ein Schulung Abhilfe schaffen.
+leisten, wird im Rahmen der Diplomarbeit noch ein Hilfefenster eingebaut,
+welches den Benutzern beim ersten Starten der Anwendung angezeigt wird und kurz
+die jeweiligen Elemente des Interfaces anzeigt. Somit sollte auch das Problem
+bei der Aufgabe zwei etwas abgeschwächt werden. Eines der Hauptprobleme war
+dort das die Probanden nicht herausgefunden haben der schnellste Weg eine
+einzelne Datei wieder herzustellen über die "Mount" Funktion ginge. Die
+Einarbeitung in die Thematik von Backups würde sich jedoch wohl nur sehr schwer
+über das gls:gui realisieren lassen. Hier müsste auf jeden Fall eine
+Dokumentation oder im Idealfall eine Schulung Abhilfe schaffen.
 
-Das Kontextmenü auf dem Rechtsklick welches von zwei Usern gewünscht worden
+Das Kontextmenü auf dem Rechtsklick, welches von zwei Usern gewünscht worden
 ist, ist eine sehr gute Idee und sollte sich auch realisieren lassen. Dieses
 Feature wird nicht im Rahmen der Diplomarbeit umgesetzt und für die zukünftige
 Entwicklung aufgenommen.
 
-Ein Dialog welcher ein erfolgreiches Erstellen eines Archivs bestätigt wird
+Ein Dialog, welcher ein erfolgreiches Erstellen eines Archivs bestätigt, wird
 nicht eingebaut. Bei erfolgreicher Durchführung verschwindet der
 Fortschrittsdialog und in der Archivlist erscheint ein weiterer Eintrag. Das
 sind zwar nicht die offensichtlichsten Hinweise im Falle eines Fehlers
-erscheint jedoch sofort ein Dialog der darauf hinweist. Somit sollten die
+erscheint jedoch sofort ein Dialog, der darauf hinweist. Somit sollten die
 beiden Vorgänge genügend unterschieden sein und es hat auch kein anderer Proband
 das Bedürfnis nach einer Bestätigung.
 
@@ -1675,14 +1675,14 @@ zugänglich machen.
 
 Im Rahmen der Diplomarbeit werden noch einige Texte angepasst. An gewissen
 Stellen redet die Anwendung von "Backups" und an anderen von "Archivs". Da
-gls:borg sie selber "Archivs" nennt sollte Borg-Qt noch so angepasst werden
-das überall von "Archivs" die Rede ist. Zudem wird bei den "Includes" und
-"Exclude" Optionen über der Liste noch ein Label hinzugefügt um die Elemente zu
-beschreiben. Des weiteren werden die Buttons "Add file" und "Add folder" zu
+gls:borg sie selber "Archives" nennt, sollte Borg-Qt noch so angepasst werden
+das überall von "Archives" die Rede ist. Zudem wird bei den "Include" und
+"Exclude" Optionen, über der Liste noch ein Label hinzugefügt, um die Elemente
+zu beschreiben. Des Weiteren werden die Buttons "Add file" und "Add folder" zu
 "Exclude file" und "Exclude folder" sowie "Include file" und "Include folder"
-umbenannt. Somit zeigen die Buttons dann auch direkt das sie Dateien respektive
-Ordner ein-/ausschliessen Ein paar der Probanden hatten es zuerst über den
-"Remove" Button versucht.
+umbenannt. Somit zeigen die Buttons dann auch direkt, dass sie Dateien
+respektive Ordner ein-/ausschliessen Ein paar der Probanden hatten es zuerst
+über den "Remove" Button versucht.
 
 * TODO Realisierung
 ** Cross-plattform Kompatibilität
@@ -1703,7 +1703,7 @@ ist.
 
 Bevor gls:borg vom Projektleiter als Backup Software eingesetzt wurde, nutzte
 er die Software "Back in Time"footcite:backintime. Die Software setzt auf Rsync
-zum kopieren der Dateien. Dies erlaubt auch schnelle Backups über SSH zu
+zum Kopieren der Dateien. Dies erlaubt auch schnelle Backups über SSH zu
 machen. "Back in Time" hat allerdings das Problem, dass es keine gls:dedup
 beherrscht.
 
@@ -1719,13 +1719,13 @@ Da sie es dem User so einfach wie möglich macht ein Backup zu erstellen.
 
 *** Erste Umsetzung
 
-Qt bietet einem mehrere Möglichkeiten zum erstellen der graphischen Oberfläche.
+Qt bietet einem mehrere Möglichkeiten zum Erstellen der grafischen Oberfläche.
 Zum einen kann die ganze Oberfläche programmatisch erstellt werden. Dies gibt
 dem Entwickler ein grosses Mass an Kontrolle, ist allerdings nicht sehr
 intuitiv.
 
-Die angenehmere Variante ist des den Qt Designer, Abbildung:([[fig:qt_designer]]),
-zu nutzen. Mit diesem lassen sich die Oberflächen in einer graphischen
+Die angenehmere Variante ist es den Qt Designer, Abbildung:([[fig:qt_designer]]),
+zu nutzen. Mit diesem lassen sich die Oberflächen in einer grafischen
 Oberfläche designen und mit einem Befehl auch gleich starten damit man direkt
 sieht wie sich die Oberflächen auf dem System verhalten.
 
@@ -1738,7 +1738,7 @@ Auf Basis der Ziele und der Use Cases wurde eine erste Version des glspl:gui
 erstellt. Im Hauptfenster, Abbildung:([[fig:borgqt_main_v1]]), befinden sich wie
 auch bei "Back in Time" in der einen Hälfte eine Liste der vorhandenen Archive
 und in der anderen Hälfte ein Dateimanager. Dieser dient zur Auswahl des zu
-sichernden Pfades. Im oberen Bereich findet sich die Toolbar mit den Aktionen
+sichernden Pfades. Im oberen Bereich findet sich die Toolbar mit den Aktionen,
 die der User ausführen kann. Gemäss den Use Cases sind dies "Backup",
 "Restore", "Mount", "Delete" und "Settings".
 
@@ -1749,8 +1749,8 @@ jeweils das passende Icon basierend auf dem System anzeigen. Somit wären die
 Icons passend zum jeweiligen Betriebssystem. Allerdings gab es für die Aktionen
 keine passenden Icons in der Spezifikation. Deshalb wurden schlussendlich das
 "Feather" Icon Theme Set footcite:feathericons ausgewählt. Dabei handelt es
-sich um ein freies Icon Theme unter der MIT Lizenz welches die Icons als SVG
-Dateien bereit stellt. Dadurch können die Icons frei skalieren und
+sich um ein freies Icon Theme unter der MIT Lizenz, welches die Icons als SVG
+Dateien bereitstellt. Dadurch können die Icons frei skalieren und
 funktionieren auch auf Geräten mit einer hohen Auflösung.
 
 #+caption: Screenshot des Borg-Qt Hauptfensters Version 1
@@ -1761,7 +1761,7 @@ funktionieren auch auf Geräten mit einer hohen Auflösung.
 Im Einstellungsfenster gibt es drei Tabs zur Auswahl. Einmal den "General" Tab,
 Abbildung:([[fig:borgqt_settings_general_v1]]), dieser zeigt allgemeine Optionen
 an. Im zweiten Tab "Include", Abbildung:([[fig:borgqt_settings_include_v1]]), kann
-der User die Ordner und Dateien auswählen die er sichern will. Der dritte Tab
+der User die Ordner und Dateien auswählen, die er sichern will. Der dritte Tab
 "Exclude", Abbildung:([[fig:borgqt_settings_exclude_v1]]), gibt dem User die
 Möglichkeit einzelne Ordner oder Dateien von den Backups auszuschliessen.
 
@@ -1781,8 +1781,8 @@ Möglichkeit einzelne Ordner oder Dateien von den Backups auszuschliessen.
 [[file:pictures/borgqt_settings_exclude_v1.png]]
 
 Das "Progress" Dialogfenster, Abbildung:([[fig:borgqt_progress_v1]]), zeigt dem
-User einen Fortschrittsbalken und einen einen "Cancel" Button zum Abbrechen der
-Aktion an. Das Fenster ist generisch gehalten damit es von verschiedenen Tasks
+User einen Fortschrittsbalken und einen "Cancel" Button zum Abbrechen der
+Aktion an. Das Fenster ist generisch gehalten, damit es von verschiedenen Tasks
 gleichermassen genutzt werden kann.
 
 #+caption: Screenshot des Borg-Qt "Progress" Dialogfensters Version 1
@@ -1792,11 +1792,11 @@ gleichermassen genutzt werden kann.
 
 ** Einstellungen
 
-Die Einstellungen werden von der Applikation benötigt um die vom User
-definierten Vorgaben auszuführen, Das Backup Repository zu finden, etc.
+Die Einstellungen werden von der Applikation benötigt, um die vom User
+definierten Vorgaben auszuführen, das Backup Repository zu finden, etc.
 Diese Einstellungen sollen in einer Klar-Text Datei gespeichert werden. Dies
-hat zum einen den Vorteil das man die Einstellungen sehr einfach sichern kann,
-zum anderen kann man die Einstellungen der Applikation auch anpassen ohne das
+hat zum einen den Vorteil, dass man die Einstellungen sehr einfach sichern kann.
+Zum Anderen kann man die Einstellungen der Applikation auch anpassen, ohne das
 man die Applikation selber starten muss.
 
 *** Backend
@@ -1806,7 +1806,7 @@ Modul ~configparser~ footcite:configparser verwendet. Dieses macht es einem
 sehr einfach eine Datei im "INI" Stil zu erstellen und parsen.
 
 "INI" Stil bedeutet dabei das die Einstellungen in "Key/Value" Paaren
-gespeichert werden. Somit kann man einfach auf den benötigten Wert zugreifen in
+gespeichert werden. Somit kann man einfach auf den benötigten Wert zugreifen, in
 dem man seinen Schlüssel angibt. Ein Beispiel ist im Code Snippet:
 ([[code:ini_file]]) zu sehen.
 
@@ -1827,17 +1827,17 @@ prefix = muster
 Das Auslesen und schreiben der Konfigurationsdatei liess sicher relativ einfach
 realisieren. Die grösste Herausforderung dabei war, das ~Configparser~ keinen
 Support für eine Liste von Werten hat. Die wurde insbesondere für ~include~ und
-~exclude~ Pfade benötigt. Also für die Pfade welche gesichert werden oder von
+~exclude~ Pfade benötigt. Also für die Pfade, welche gesichert werden oder von
 einem  Backup ausgeschlossen werden sollen.
 
-Abhilfe schafte hier ein Stackexchange Post footcite:configlist. Dieser schlug
-vor das man die Liste im gls:json Format speichern soll. Da ~Configparser~ alle
-Werte im Format "String" zurück gibt können dann die gls:json Listen sehr
+Abhilfe schaffte hier ein Stackexchange Post footcite:configlist. Dieser schlug
+vor, das man die Liste im gls:json Format speichern soll. Da ~Configparser~ alle
+Werte im Format "String" zurückgibt können dann die gls:json Listen sehr
 einfach von einem gls:json Parser umgewandelt werden. Im Projekt wurde dies
 dann unter anderem als Methode der ~Config~ Klasse, Code
 Snippet:([[code:json_config]]), implementiert. Somit muss man jeweils nur die
 ~_return_list_option()~ Methode mit der benötigten Option als Argument aufrufen
-und bekommt als Result eine funktionierende Python Liste zurück.
+und bekommt als Resultat eine funktionierende Python Liste zurück.
 
 Beim Schreiben der Konfigurationsdatei macht man dann einfach das Umgekehrte.
 Man konvertiert eine Python Liste in einen gls:json String.
@@ -1858,8 +1858,8 @@ def _return_list_option(self, option):
 
 Die Datei wird jeweils beim Start der Applikation gelesen und angewendet. Somit
 weiss die Applikation bereits nach dem Start wo das Repository liegen sollte
-und wie die Login Daten dafür sind. Dies geschiet mittels der Methode
-~_get_path~, Codesnippet:([[code:config_path]]). Es gibt dabei zwei mögliche Pfade
+und wie die Login Daten dafür sind. Dies geschieht mittels der Methode
+~_get_path~, Codesnippet:([[code:config_path]]). Es gibt dabei zwei mögliche Pfade,
 wo die Konfigurationsdatei liegen könnte. Befindet sich die Datei nicht am
 vorgegeben Pfad ~~/.config/borg_qt/borg_qt.conf~ oder direkt "neben" dem
 Binary, gibt die Applikation eine entsprechende Meldung,
@@ -1892,10 +1892,10 @@ def _get_path(self):
 
 *** Frontend
 
-Um es für die User einfacher zu machen wurde beschlossen die Applikation
+Um es für die User einfacher zu machen wurde beschlossen die Applikation,
 um eine grafische Konfigurationsmöglichkeit zu erweitern. Diese stellt dabei
 hauptsächlich die Werte aus der Konfigurationsdatei grafisch dar und übergibt
-allenfalls geänderte Werte ans Backend welches die Konfiguration dann wieder in
+allenfalls geänderte Werte ans Backend welches die Konfiguration, dann wieder in
 der Datei speichert.
 
 Das Meiste davon ist nicht besonders aufregender Code da hauptsächlich nur die
@@ -1904,16 +1904,16 @@ im grafischen Interface geschrieben werden auch beim Speichern der geänderten
 Einzel-Werte funktioniert es in etwa gleich. Beim Speichern der geänderten
 Listen jedoch trat eine weitere Herausforderung auf.
 
-Qt kennt keinen Mechanismus zum auslesen aller Elemente aus einem sogenannten
-~QListWidget~, einem gls:gui Element welches Liste darstellt. Somit ist es nötig das
-man die Elemente zuerst in einer Zwischenliste speichert bevor man sie zurück
-in das ~Configparser~ Objekt schreiben kann. Im Code sieht dies dann wie in
-Codesnippet:([[code:qlistwidgets_items]]) aus. Dabei wird jedes Element einzeln aus
-dem ~QListWidget~ geholt und in die Zwischenliste geschoben. Im zweiten Teil
-wird die Liste dann wieder zu einem gls:json String konvertiert und im
-~Configparser~ Objekt gespeichert. Die Option ~indent=4~ dient dabei der
+Qt kennt keinen Mechanismus zum Auslesen aller Elemente aus einem sogenannten
+~QListWidget~, einem gls:gui Element, welches Listen darstellt. Somit ist es
+nötig das man die Elemente zuerst in einer Zwischenliste speichert bevor man
+sie zurück in das ~Configparser~ Objekt schreiben kann. Im Code sieht dies dann
+wie in Codesnippet:([[code:qlistwidgets_items]]) aus. Dabei wird jedes Element
+einzeln aus dem ~QListWidget~ geholt und in die Zwischenliste geschoben. Im
+zweiten Teil wird die Liste dann wieder zu einem gls:json String konvertiert
+und im ~Configparser~ Objekt gespeichert. Die Option ~indent=4~ dient dabei der
 Lesbarkeit damit nicht der ganze gls:json String auf ein Zeile in der
-Konfigurationsdatei gespeichert wird sondern jedes Listenelement seine eigene
+Konfigurationsdatei gespeichert wird, sondern jedes Listenelement seine eigene
 Zeile erhält.
 
 #+caption: Workaround zum Auslesen aller Elemente in QListWidgets.
@@ -1937,37 +1937,37 @@ self.config['borgqt']['includes'] = json.dumps(includes,
 
 Zuerst erschien es sinnvoll die Kommunikation zwischen gls:borg und Borg-Qt
 über einfache Funktionen laufen zu lassen. Dieser Ansatz hatte allerdings zwei
-Probleme. Zum Einen wurde es relativ umständlich Informationen zu verarbeiten
+Probleme. Zum einen wurde es relativ umständlich Informationen zu verarbeiten
 und weiterzugeben zum anderen führte es zu dem unschönen Nebeneffekt dass, das
-gls:gui eingefroren ist. Eine Recherche ergab dann das Threads hier Abhilfe
+gls:gui eingefroren ist. Eine Recherche ergab, dass Threads hier Abhilfe
 schaffen könnten.
 
 Python würde hierzu ein Modul, ~threading.Thread~ footcite:threading,
 mitliefern. Allerdings war es nicht möglich den Fortschrittsdialog und den
-Thread so zu verknüpfen das sich der Dialog schliesst wenn das Backup
+Thread so zu verknüpfen das sich der Dialog schliesst, wenn das Backup
 durchgelaufen ist und der Thread wieder entfernt wird. Aus diesem Grund wurde
 dann ein erfolgreicher Test mit dem PyQt Modul ~QThread~ footcite:qthread
-gemacht. Mit diesem war es ohne weiteres möglich den Dialog zu schliessen
-sobald das Backup fertig durchgelaufen war. Auch das stoppen des Threads mit
+gemacht. Mit diesem war es ohne weiteres möglich den Dialog zu schliessen,
+sobald das Backup fertig durchgelaufen war. Auch das Stoppen des Threads mit
 einem Klick auf den "Cancel" Button funktioniert einwandfrei.
 
 Damit gls:borg aus der Anwendung angesteuert werden kann wird das Python Modul
 ~subprocess~ footcite:subprocess verwendet. Dieses erlaubt einem neue Prozesse
-zu erstellen welche man oftmals benötigt um etwa, wie im Fall von Borg-Qt,
+zu erstellen, welche man oftmals benötigt um etwa, wie im Fall von Borg-Qt,
 externe Applikationen zu starten, zu steuern und ihre Ausgabewerte auszulesen.
 Das effektive Kommando wird dann aus dem Property ~self.command~ gelesen.
 
-Damit gls:borg die Ausgabe im gls:json Format ausgibt muss man man noch die
-Parameter ~--log-json~ und ~--json~ ausgeben. Der erste Parameter ändert
+Damit gls:borg die Ausgabe im gls:json Format ausgibt, muss man man noch die
+Parameter ~--log-json~ und ~--json~ mitgeben. Der erste Parameter ändert
 hauptsächlich das Format von Errormeldungen und der zweite formatiert dann die
 finale Ausgabe. Die Ausgaben werden jeweils an Variablen weitergegeben
 (~json_output~ und ~json_error~) welche im weiteren Code verarbeitet werden.
 
 Insbesondere ~json_error~ ist für den weiteren Programmablauf von grosser
-Wichtigkeit. Wenn Borg ein Problem feststellt wird die Error Meldung von
+Wichtigkeit. Wenn Borg ein Problem feststellt, wird die Error Meldung von
 gls:borg an ~json_error~ weitergegeben. Mittels der Methode im
 Codesnippet:([[code:json_err]]), wird die Variabel ausgewertet und im Falle eines
-Fehlers wirft der Code eine Exception welche im Hauptprogramm abgefangen wird.
+Fehlers wirft der Code eine Exception, welche im Hauptprogramm abgefangen wird.
 Dabei wird eine Fehlermeldung in einem separaten Fenster ausgegeben. Die
 Methode wurde dabei auf der Klasse ~BorgQtThread~ umgesetzt und steht somit
 allen Funktionen zur Verfügung. Die Fehlermeldung bei einer fehlenden
@@ -1995,7 +1995,7 @@ def process_json_error(self, json_err):
 
 Die ganze Funktionalität wurde dann in der Klasse ~BorgQtThread~
 zusammengefasst. Somit kann für jede Funktion von gls:borg eine einzelne Klasse
-geschrieben werden welche dann von ~BorgQtThread~ die Funktionen erbt. Die
+geschrieben werden, welche dann von ~BorgQtThread~ die Funktionen erbt. Die
 Funktionsklassen müssen dann jeweils nur die Methode
 ~self.create_command(self)~ implementieren welche das Property ~self.command~
 erstellt und die einfachen Funktionen von gls:borg sollten direkt funktionieren
@@ -2004,30 +2004,30 @@ erstellt und die einfachen Funktionen von gls:borg sollten direkt funktionieren
 
 Bei den Backups handelt es sich ohne Zweifel um die wichtigste Funktion von
 Borg-Qt. Deshalb soll das Erstellen eines Backups so schnell und unkompliziert
-wie möglich von statten gehen.
+wie möglich vonstattengehen.
 
 *** Backend
 
-Um Backups erstellen zu können wurde die Klasse ~BackupThread~ erstellt welche
+Um Backups erstellen zu können wurde die Klasse ~BackupThread~ erstellt, welche
 von ~BorgQtThread~ erbt. Die Klasse ~BackupThread~ nimmt beim instantiieren 3
 Argumente auf: ~includes~, ~excludes~, ~prefix~. Wobei ~excludes~ und ~prefix~
 beide optional sind. Im Hauptcode werden diese Argumente aus der
 Konfigurationsdatei ausgelesen und übergeben. Die Includes werden im Falle
 eines Backups im Hintergrund aus der Konfigurationsdatei gelesen. Wenn es
-der User manuell ausführt wird der im Frontend ausgewählte Pfad mitgegeben.
+der User manuell ausführt, wird der im Frontend ausgewählte Pfad mitgegeben.
 
-Die "Excludes" haben lange nicht funktioniert Der Grund dafür waren zusätzliche
+Die "Excludes" haben lange nicht funktioniert. Der Grund dafür waren zusätzliche
 Anführungszeichen um die Exclude Pfade. Diese wurden aus Versehen hinzugefügt
 da gls:borg normalerweise auf der Kommandozeile ausgeführt wird und die
 Anführungszeichen dort notwendig sind um allfällige Leer- oder Sonderzeichen
 abzufangen. Es wurde davon ausgegangen dass, da ~subprocess~ Modul ähnlich
 funktioniert wie die Kommandozeile. Da man an das Modul direkt einen String
-übergibt sind die zusätzlichen Anführungszeichen nicht notwendig und führen
-sogar dazu das die Pfade gar nicht funktionieren Somit werden die "Excludes"
+übergibt, sind die zusätzlichen Anführungszeichen nicht notwendig und führen
+sogar dazu das die Pfade gar nicht funktionieren. Somit werden die "Excludes"
 mittels der Methode ~_process_excludes~ mit dem entsprechenden Parameter
 gepaart und als gesamte Liste an das finale Kommando angehängt. Die "Includes"
 funktionieren auf die gleiche Weise, benötigen jedoch keine zusätzlichen
-Parameter Zu sehen ist dies im Codesnippet:([[code:excludes]]).
+Parameter. Zu sehen ist dies im Codesnippet:([[code:excludes]]).
 
 #+caption: Erstellen des "borg create" Kommandos fürs erstellen von Backups.
 #+name: code:excludes
@@ -2057,7 +2057,7 @@ def create_command(self):
 *** Frontend
 
 Damit die Backups im Frontend funktionieren musste zum einen der "Backup" Knopf
-mit der Methode ~create_backup~ verknüpft werden. Des weiteren wurde ein Dateibaum, in
+mit der Methode ~create_backup~ verknüpft werden. Des Weiteren wurde ein Dateibaum, in
 Abbildung:([[fig:borgqt_file_tree]]) grün umrahmt, eingefügt. Dieser gibt den Pfad
 des angewählten Objektes and die ~create_backup~ Methode weiter.
 
@@ -2067,20 +2067,20 @@ des angewählten Objektes and die ~create_backup~ Methode weiter.
 
 Während dem ein Archiv erstellt wird, wird ein kleiner Dialog mit Ladebalken
 angezeigt, Abbildung:([[fig:borgqt_progress_v2]]). Dieser dient hauptsächlich dazu
-dem User das Gefühl zu geben das die Applikation noch am Arbeiten ist.
+dem User das Gefühl zu geben, das die Applikation noch am Arbeiten ist.
 
 Der Dialog musste gegenüber der ersten Version in Sektion: [[Erste Umsetzung][Erste Umsetzung]] noch
-etwas angepasst werden. gls:borg gibt während dem Erstellen eines Archivs
-keine Informationen zurück welches einem erlauben würden einen
+etwas angepasst werden. gls:borg gibt, während dem Erstellen eines Archivs
+keine Informationen zurück, welche es einem erlauben würden einen
 Fortschrittsbalken zu generieren, welcher den effektiven Fortschritt anzeigt.
 gls:borg gibt einzig die Anzahl der verarbeiteten Dateien in regelmässigen
 Abständen zurück. Da gls:borg jedoch zu Beginn nicht meldet wie viele Dateien
 gesichert werden lässt sich damit keine Prozentzahl erstellen. Ein paar
-Experimente bei denen die zu sichernden Dateien zuerst von Borg-Qt gezählt
+Experimente, bei denen die zu sichernden Dateien zuerst von Borg-Qt gezählt
 werden sollten, wurden verworfen. Einerseits weil keine Methode gefunden werden
-konnte welche die gleiche Anzahl Dateien zurückgab wie gls:borg. Anderseits
+konnte, welche die gleiche Anzahl Dateien zurückgab wie gls:borg. Anderseits,
 weil es den Backup Vorgang unnötig in die Länge zieht. Dies ist insbesondere
-der Fall wenn sich sehr viele Dateien im Quellverzeichnis befinden. Es kann
+der Fall, wenn sich sehr viele Dateien im Quellverzeichnis befinden. Es kann
 sogar soweit kommen dass, das Zählen länger als das eigentliche Sichern dauert.
 Aus diesem Grund wurde der Fortschrittsbalken mit Prozentanzeige durch einen
 sich wiederholenden Ladebalken ersetzt.
@@ -2093,28 +2093,28 @@ sich wiederholenden Ladebalken ersetzt.
 Wurde das Archiv erfolgreich erstellt, wird die Liste mit den Archiven sowie
 die Repository Statistik aktualisiert. Beide Elemente sind in der,
 Abbildung:([[fig:borgqt_archive_list]]), grün respektive rot umrahmt. Für die
-Beiden Funktionen wurde jeweils eine eigene Klasse, ~ListThread~ und
+beiden Funktionen wurde jeweils eine eigene Klasse, ~ListThread~ und
 ~InfoThread~, erstellt. Beide erben von ~BorgQtThread~. In den Klassen wird wie
-bei ~BackupThread~ gls:borg über einen ~subprocess~ aufgerufen um die Archiv Liste
+bei ~BackupThread~ gls:borg über einen ~subprocess~ aufgerufen, um die Archiv Liste
 respektive Statistik zurückzuerhalten Die gls:json Strings werden wieder auf
 die jeweilige Information geparst und die Archive in eine Python List, die
 Repository Statistik in Zahlen umgewandelt.
 
-Da gls:borg die Repository Grössen in Bytes zurück gibt sollten diese zur
-Anzeige noch in eine menschenlesbarses Format umgerechnet werden. In Borg-Qt
+Da gls:borg die Repository Grössen in Bytes zurückgibt, sollten diese zur
+Anzeige noch in eine Menschen lesbarses Format umgerechnet werden. In Borg-Qt
 geschieht dies mit der Helferfunktion ~convert_size~. Die Funktion wurde von
 Stackoverflow footcite:sizeformat übernommen.
 
 Beim Durchführen der Benutzerfreundlichkeitsstudie wurde noch ein Bug entdeckt.
-Der Bug der entdeckt wurde tritt immer dann auf wenn ein Archiv gemountet ist
-und man ein Backup erstellen möchte. Dies ist jedoch offenbar eine Funktion die
-von gls:borg nicht unterstützt wird footcite:borgmount. gls:borg kann mehrere
-Archive gleichzeitig mounten. Der User müsste jedoch jedes der Archive zuerst
-wieder unmounten bevor er eine neue Datensicherung erstellen kann. Das Problem
-wurde dadurch gelöst das dem User ein Dialog angezeigt wird, über welchen er
-vor einer Datensicherung zuerst die gemounteten Archive aushängen kann.
-Anschliessend startet die Datensicherung dann wie wenn kein Archiv gemountet
-gewesen wäre.
+Der Bug, der entdeckt wurde, tritt immer dann auf, wenn ein Archiv gemountet
+ist während man ein Backup erstellen möchte. Dies ist jedoch offenbar eine
+Funktion die von gls:borg nicht unterstützt wird footcite:borgmount. gls:borg
+kann mehrere Archive gleichzeitig mounten. Der User müsste jedoch jedes der
+Archive zuerst wieder unmounten bevor er eine neue Datensicherung erstellen
+kann. Das Problem wurde dadurch gelöst das dem User ein Dialog angezeigt wird,
+über welchen er vor einer Datensicherung zuerst die gemounteten Archive
+aushängen kann. Anschliessend startet die Datensicherung wie, wenn kein
+Archiv gemountet gewesen wäre.
 
 #+caption: Screenshot der aktualisierten Archivliste und Repository Statistik.
 #+name: fig:borgqt_archive_list
@@ -2123,13 +2123,13 @@ gewesen wäre.
 ** Restore
 
 Der Code für das Wiederherstellen eines Backups ist sehr ähnlich wie der Code
-für das Erstellen. Die Besonderheiten bei dieser Funktion sind vor allem die
+für das Erstellen. Die Besonderheiten bei dieser Funktion sind vor allem, die
 Kontrolle das ein Archiv angewählt wurde bevor man die Wiederherstellung
 startet, das Erstellen des Zielpfades sowie das Aufräumen bei einem Fehler.
 
-Wird der "Restore" Knopf gedrückt ohne das ein Backup angewählt wurde erscheint
+Wird der "Restore" Knopf gedrückt ohne das ein Backup angewählt wurde, erscheint
 folgende Fehlermeldung, Abbildung:([[fig:no_archive_selected]]), um den Benutzer
-darauf hinzuweisen das er dies noch tun sollte.
+darauf hinzuweisen, das er dies noch tun sollte.
 
 #+caption: Screenshot der Fehlermeldung eines fehlenden Archivs während einem Restore.
 #+name: fig:no_archive_selected
@@ -2137,34 +2137,34 @@ darauf hinzuweisen das er dies noch tun sollte.
 [[file:pictures/borgqt_no_archive_selected.png]]
 
 Das Wiederherstellen an sich läuft so ab das der Benutzer zuerst ein Archiv
-auswählt und dann auf "Restore" klickt. Daraufhin öffnet sich ein Dialog in
+auswählt und dann auf "Restore" klickt. Daraufhin öffnet sich ein Dialog, in
 welchem der Benutzer den Zielort auswählen kann. Sobald er dies getan hat
 erstellt Borg-Qt darin einen Order mit dem Namen des Archivs und beginnt mit
 dem eigentlichen Wiederherstellen. Sollte der Zielort für die Applikation nicht
 beschreibbar sein erscheint eine entsprechende Fehlermeldung,
 Abbildung:([[fig:not_writeable]]), und der Vorgang wird abgebrochen. Nach einer
 erfolgreichen Wiederherstellung öffnet die Applikation den Zielort in einem
-Dateimanager damit der User gleich mit den Dateien weiterarbeiten kann.
+Dateimanager, damit der User gleich mit den Dateien weiterarbeiten kann.
 
 #+caption: Screenshot der Fehlermeldung wenn der Zielort nicht beschreibbar ist.
 #+name: fig:not_writeable
 #+attr_latex: :width .2\paperwidth :placement [H]
 [[file:pictures/borgqt_not_writeable.png]]
 
-Gibt es während dem Wiederherstellen einen Fehler gibt die Anwendung den
+Gibt es, während dem Wiederherstellen einen Fehler gibt die Anwendung den
 entsprechenden Fehler aus und löscht zusätzlich noch den zu Beginn erstellten
 Archiv Ordner. Dies aus dem Grund da die Wiederherstellung ja nicht komplett
 durchgelaufen ist, somit befindet sich das Archiv in einem unfertigen Zustand.
 Es ist deshalb sinnvoller die wiederhergestellten Dateien wegzuräumen als unter
-Umständen defekte Dateien zurück zulassen
+Umständen defekte Dateien zurückzulassen
 
-Wird das gleiche Archiv nochmal an den gleichen Zielort wiederhergestellt ist
+Wird das gleiche Archiv nochmal an den gleichen Zielort wiederhergestellt, ist
 das für gls:borg kein Problem. Es überschreibt die Dateien einfach noch einmal
 
 ** Mount
 
 Die "Mount" Funktion ist sehr ähnlich wie die "Restore" Funktion. Sie prüft
-auch zuerst ob der Benutzer überhaupt ein Archiv angewählt hat und gibt falls
+auch zuerst ob der Benutzer überhaupt ein Archiv angewählt hat und gibt, falls
 dies nicht der Fall ist eine entsprechende Fehlermeldung aus. Im Gegensatz zur
 "Restore" Funktion zeigt die "Mount" Funktion jedoch keinen Dialog zum
 Auswählen des Zielpfades. Die Funktion erstellt sich diesen selbst. Der
@@ -2172,12 +2172,12 @@ Zielpfad ist dabei kombiniert aus dem ~/tmp~ Verzeichnis und dem Namen des
 Archivs
 
 gls:borg mountet jedes Archiv nur mit Leserechten. Es ist relativ
-unwahrscheinlich das der Zielpfad in unbeschreibbarer Form bereits vor dem
+unwahrscheinlich, dass der Zielpfad in unbeschreibbarer Form bereits vor dem
 Ausführen der ~mount_backup~ Methode bereits vorhanden ist. Sollte dies jedoch
 der Fall sein kann davon ausgegangen werden das der Benutzer das Archiv bereits
 einmal gemountet hat. Genau dies wird in der Applikation auch so überprüft.
-Falls der Zielort schreibbar ist wird das ausgewählte Archiv auf diesem Pfad
-gemountet. Anschliessend wird wie auch bei der Restore Funktion der Pfad in
+Falls der Zielort schreibbar ist, wird das ausgewählte Archiv auf diesem Pfad
+gemountet. Anschliessend wird wie auch bei der Restore Funktion, der Pfad in
 einem Dateimanager geöffnet damit der Benutzer direkt mit den Dateien
 weiterarbeiten kann. Wurde erkannt dass, das Archiv bereits gemountet wurde,
 also der Pfad nicht schreibbar ist, öffnet die Applikation direkt den
@@ -2192,11 +2192,11 @@ System wieder im gleichen Zustand wie vor dem Start der Applikation.
 
 Der Benutzer hat in der Applikation auch die Möglichkeit Archive wieder zu
 löschen. Hierbei greift wie bei der "Restore" und "Mount" Funktion auch wieder
-die Überprüfung ob der Benutzer ein Archiv ausgewählt hat. Ist dies gegeben
+die Überprüfung ob der Benutzer ein Archiv ausgewählt hat. Ist dies gegeben,
 zeigt die Applikation dem Benutzer einen Dialog, Abbildung:([[fig:yes_no]]), zum
-sicherstellen das er das Archiv wirklich löschen möchte. Bestätigt er diesen
+Sicherstellen, dass er das Archiv wirklich löschen möchte. Bestätigt er diesen
 mit "Yes" wird der Vorgang fortgesetzt und das Archiv gelöscht. Anschliessend
-werden die Archivliste und die Repository Statistik aktualisiert um den neuen
+werden die Archivliste und die Repository Statistik aktualisiert, um den neuen
 Zustand wiederzugeben. Klickt der Benutzer stattdessen auf "No" schliesst sich
 der Dialog wieder und nichts weiter passiert.
 
@@ -2207,55 +2207,55 @@ der Dialog wieder und nichts weiter passiert.
 
 ** Automatische Backups
 
-Damit der Benutzer die Backups von Hand machen muss ist es sinnvoll eine
-Funktion bereitzustellen welche die Backups automatisch im Hintergrund
+Damit der Benutzer die Backups von Hand machen muss, ist es sinnvoll eine
+Funktion bereitzustellen, welche die Backups automatisch im Hintergrund
 erledigt. Dadurch ist sichergestellt das die Backups im allgemeinen Trubel des
 Lebens nicht vergessen gehen.
 
 Damit automatische Backups überhaupt möglich sind muss die Applikation zuerst
 Backups im Hintergrund erstellen können, also ohne das die ganze grafische
-Oberfläche angezeigt wird. Bei Borg-Qt wird dies über ein Kommandozeilen
+Oberfläche angezeigt wird. Bei Borg-Qt wird dies über einen Kommandozeilen
 Parameter realisiert. Hierfür wurde das Python Standard Paket ~argparser~
-verwendet. Konkret bedeutet dies dass, wenn man die Applikation auf
-der Kommandozeile wie folgt ausführt ~borg_qt -B~ wird die grafische Oberfläche
+verwendet. Konkret bedeutet dies, dass wenn man die Applikation auf
+der Kommandozeile wie folgt ausführt: ~borg_qt -B~. Wird die grafische Oberfläche
 nicht angezeigt und es wird direkt die Methode ~background_backup~ der Klasse
 ~MainWindow~ ausgeführt. Dabei werden alle Ordner, welche in den Einstellungen
 unter "Include" sowie "Exclude" gespeichert wurden, im Archiv gesichert,
 respektive davon ausgeschlossen. Damit sind die Voraussetzungen für
 automatische Backups gegeben.
 
-Um die Backups in regelmässigen Intervallen auszuführen gibt es zwei
-Möglichkeiten wie man dies implementieren könnte. Zum einen könnte man die
+Um die Backups in regelmässigen Intervallen auszuführen, gibt es zwei
+Möglichkeiten, wie man dies implementieren könnte. Zum einen könnte man die
 Applikation permanent im Hintergrund laufen lassen, etwa als Trayicon wie man
 das von anderen Applikationen wie etwas Dropbox kennt zum anderen kann man es
 über Werkzeuge des Betriebssystems bewerkstelligen. Die drei
-Desktopbetriebsysteme, Windows, OS X und Linux, bringen alle drei Werkzeuge
+Desktop Betriebsysteme, Windows, OS X und Linux, bringen alle drei Werkzeuge
 mit, um periodisch ein Programm auszuführen. Unter Linux wurde dies früher mit
 sogenannten Cron Jobs gemacht. Die moderne Lösung sind heutzutage jedoch
 Systemd Timer. Für Borg-Qt wurde beschlossen es mit den Werkzeugen des
 Betriebssystems zu machen. Also konkret Systemd. Dies aus dem Grund das Systemd
 genau für das Managen von Applikationen programmiert wurde. Ein Grossteil der
-Funktion ist bereits in Systemd enthalten somit kann man Zeit sparen. Zudem
+Funktion ist bereits in Systemd enthalten, somit kann man Zeit sparen. Zudem
 soll die Anwendung dem Benutzer auch soweit als möglich aus dem Weg gehen. Eine
-Applikation welche permanent in der Taskleiste lebt scheint hier nicht wirklich
+Applikation, welche permanent in der Taskleiste lebt scheint hier nicht wirklich
 das Kriterium zu erfüllen.
 
-Systemd ist ein init System welches dazu dient dazu die Benutzerumgebung und
+Systemd ist ein init System, welches dazu dient dazu die Benutzerumgebung und
 die dazugehörigen Prozesse zu starten und zu verwalten footcite:systemd. Die
 Prozesse werden über sogenannte "Services" gestartet. Die Services werden dabei
 einfach in Klartextdateien mit der Dateiendung ~.service~ definiert. Der Inhalt
 orientiert sich dabei praktischerweise am "INI" Stil. In Borg-Qt wurde das INI
 Format bereits bei den Konfigurationsdateien verwendet. Somit können dort
 gesammelte Erfahrungen wiederverwendet werden. Soll ein Service in einem
-gewissen Zeitintervall ausgeführt werden benötigt Systemd eine weiter Datei mit
+gewissen Zeitintervall ausgeführt werden benötigt Systemd eine weitere Datei mit
 dem gleichen Namen jedoch mit der Dateiendung ~.timer~ . Der Inhalt ist auch
 wieder im INI Stil gehalten. Systemd versteht eine Vielzahl an Datumsformaten
 footcite:systemddate. In Borg-Qt wurden zwei Varianten in den Einstellungen
-umgesetzt. Eine welche "Predefined Schedule" genannt wurde und eine mit dem
+umgesetzt. Eine, welche "Predefined Schedule" genannt wurde und eine mit dem
 Namen "Custom Schedule", zu sehen in, Abbildung:([[fig:schedule]]). Die Predefined
 Option wird dabei in die von Systemd unterstützten Formate "hourly", "daily",
-"weekly" und "monthly" übersetzt. Wie der Name schon sagt wird dann stündlich,
-täglich, wöchentlich oder monatlich ein Backup erstellt. Mit der Custom Option
+"weekly" und "monthly" übersetzt. Wie der Name schon sagt, wird dann stündlich,
+täglich, wöchentlich oder monatlich ein Archiv erstellt. Mit der Custom Option
 kann der Benutzer sich den Zeitplan individueller gestalten. Etwa "jeden
 Mittwoch um 12:00 Uhr" für Systemd übersetzt würde dieser Zeitplan dann so
 aussehen: ~Wednesday *-*-* 12:00:00~. Für spätere Versionen von Borg-Qt wäre es
@@ -2269,9 +2269,9 @@ Freitag stündliche Backups." (~Monday, Wednesday, Friday *-*-* *:00:00~).
 [[file:pictures/borgqt_settings_schedule.png]]
 
 Das Erstellen der eigentlichen Systemd Konfiguration passiert in Borg-Qt in der
-~Config~ Klasse zum gleichen Zeitpunkt wie die eigentliche Konfigurationsdatei
-geschrieben wird. Zum schreiben, und de-/aktivieren des Systemd Services,
-respektive Timers wurde wurde eine Klasse ~SystemdFile~ erstellt. Somit könnte
+~Config~ Klasse zum gleichen Zeitpunkt, wie die eigentliche Konfigurationsdatei
+geschrieben wird. Zum Schreiben und he-/aktivieren des Systemd Services,
+respektive Timers wurde eine Klasse ~SystemdFile~ erstellt. Somit könnte
 die Funktion auch einfach in einem anderen Projekt verwendet werden.
 
 Systemd benötigt zum Starten der Anwendung den absoluten Pfad in der Service
@@ -2279,19 +2279,19 @@ Datei. Da davon ausgegangen werden kann das Borg-Qt im ~PATH~ des Systems
 abgelegt wird, wurde das Unix Tool "which" verwendet um den exakten Speicherort
 zu erhalten. Mittels des Befehls ~which borg-qt~ erhält man den absoluten
 Speicherort der Datei. Zusammen mit den Daten aus den Einstellungen wird diese
-Information in einem ~Configparser~ Objekt gespeichert welches dann mithilfe
+Information in einem ~Configparser~ Objekt gespeichert, welches dann mithilfe
 der ~SystemdFile~ Klasse in eine ~borg_qt.service~,
 Codesnippet:([[code:systemdservice]]), respektive ~borg_qt.timer~,
 Codesnippet:([[code:systemdtimer]]), Datei, im Systemd Pfad
 ~/home/username/.config/systemd/user/~ geschrieben und aktiviert wird.
 
-Eine Option in der ~borg_qt.timer~ die noch erwähnenswert ist, ist ~Persistent
-= true~. Ist ~Persistent~ auf ~true~ gesetzt holt Systemd den Tasks nach sollte
-er eine Ausführung verpasst haben. Dies ist insbesondere dann hilfreich wenn
-etwa der Zeitplan auf ~daily~ oder ~weekly~ gesetzt wurde. Sollte also etwa
-jeden Mittwoch ein Backup gemacht werden aber der Computer lief an diesem Tag
-nicht, startet Systemd Borg-Qt sobald der Computer das nächste Mal
-eingeschaltet wird kommt.
+Eine Option in der Datei ~borg_qt.timer~ die noch erwähnenswert ist, ist
+~Persistent = true~. Ist ~Persistent~ auf ~true~ gesetzt, holt Systemd den
+Tasks nach sollte er eine Ausführung verpasst haben. Dies ist insbesondere dann
+hilfreich, wenn etwa der Zeitplan auf ~daily~ oder ~weekly~ gesetzt wurde.
+Sollte also etwa jeden Mittwoch ein Backup gemacht werden aber der Computer
+lief an diesem Tag nicht, startet Systemd Borg-Qt, sobald der Computer das
+nächste Mal eingeschaltet wird kommt.
 
 Mit dem Abschluss des automatischen Backups wurde die für die Entwicklung
 reservierte Zeit aufgebraucht und die Entwicklung neuer Funktionen für den
@@ -2327,9 +2327,9 @@ WantedBy = timers.target
 ** gls:gui Anpassungen nach Benutzerfreundlichkeitsstudie
 
 Im Rahmen der durchgeführten [[Benutzerfreundlichkeitsstudie][Benutzerfreundlichkeitsstudie]] wurden einige Punkte
-festgestellt welche im Rahmen der Diplomarbeit angepasst werden konnten. Zum
+festgestellt, welche im Rahmen der Diplomarbeit angepasst werden konnten. Zum
 einen wurden in den "Include" sowie "Exclude" Optionen einige Buttons neu
-beschriftet und zwei Labels hinzugefügt um klarer auf ihre Funktion
+beschriftet und zwei Labels hinzugefügt, um klarer auf ihre Funktion
 hinzuweisen. Zu sehen ist dies in den
 Abbildungen:([[fig:borgqt_settings_include_v2]]) und
 ([[fig:borgqt_settings_exclude_v2]]).
@@ -2344,11 +2344,11 @@ Abbildungen:([[fig:borgqt_settings_include_v2]]) und
 #+attr_latex: :placement [H]
 [[file:pictures/borgqt_settings_exclude_v2.png]]
 
-Zudem wurde ein Hilfe Fenster, Abbildung:([[fig:borgqt_help]]), eingebaut welches
+Zudem wurde ein Hilfe Fenster, Abbildung:([[fig:borgqt_help]]), eingebaut, welches
 dem Benutzer beim Start der Applikation angezeigt wird. Dieses soll ihm einen
-kurzen Überblick darüber geben welcher Button welche Aktion auslöst und welche
-Elemente welche Information anzeigen. Optional kann der Benutzer dann noch
-entscheiden das er das Fenster beim nächsten Start nicht mehr angezeigt
+kurzen Überblick darüber geben, welcher Button welche Aktion auslöst und welche
+Elemente, welche Information anzeigen. Optional kann der Benutzer noch
+entscheiden, dass er das Fenster beim nächsten Start nicht mehr angezeigt
 bekommen möchte. Über den Button "Help" kann das Fenster jederzeit unabhängig
 der Einstellungen wieder angezeigt werden.
 
@@ -2362,16 +2362,16 @@ der Einstellungen wieder angezeigt werden.
 Für die finale Veröffentlichung wird Borg-Qt als ein sogenanntes ausführbares
 "Binary" zur Verfügung gestellt. Man kennt diese auf Windows Systemen etwa als
 die Dateien mit der Endung ~.exe~. In diesem Fall handelt es sich beim Binary
-um ein selbstentpackendes Dateiarchiv. Darin enthalten sind alle benötigten
+um ein selbst entpackendes Dateiarchiv. Darin enthalten sind alle benötigten
 Python Module und sonstige Dateien wie etwa die Icons oder gls:gui
 Definitionsdateien. Beim Ausführen entpackt sich das Archiv in einen temporären
 Ordner und liest dann von dort aus alle benötigten Dateien.
 
-Diese Art der Auslieferung hat dabei den Vorteil das der User das Programm
+Diese Art der Auslieferung hat dabei den Vorteil, das der User das Programm
 nicht speziell installieren muss oder dafür irgendwelche zusätzlichen Dinge
 installieren muss. Der Nachteil ist jedoch das so ein Binary nur auf dem
-jeweiligen Betriebssystem erstellt und ausgeführt werden kann. Das heisst das man unter Linux
-etwa keine Binaries für Mac erstellen kann oder umgekehrt.
+jeweiligen Betriebssystem erstellt und ausgeführt werden kann. Das heisst das
+man unter Linux etwa keine Binaries für Mac erstellen kann oder umgekehrt.
 
 Erstellt werden die Dateien mit einem Programm namens
 "PyInstaller"footcite:pyinstaller. Man führt das Programm dabei auf der
@@ -2406,7 +2406,7 @@ direkt den Source Code herunterladen.
 
 *** TODO Risikoanalyse der neuen Ist-Situation
 
-Das Risiko konnte masgeblich gesenkt. Mit den automatischen Backups gibt es nun
+Das Risiko konnte massgeblich gesenkt. Mit den automatischen Backups gibt es nun
 auch eine Möglichkeit das Vergessen zu minimieren.
 
 #+caption: Risikoanalyse der neuen Ist-Situation
