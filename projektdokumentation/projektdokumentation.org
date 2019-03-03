@@ -1842,7 +1842,7 @@ und bekommt als Resultat eine funktionierende Python Liste zurück.
 Beim Schreiben der Konfigurationsdatei macht man dann einfach das Umgekehrte.
 Man konvertiert eine Python Liste in einen gls:json String.
 
-#+caption: Methode zum Parsen von gls:json Listen in Konfigurationsdateien.
+#+caption: Methode zum Parsen von JSON Listen in Konfigurationsdateien.
 #+name: code:json_config
 #+begin_src python
 # borg_qt/config.py
