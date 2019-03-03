@@ -49,8 +49,8 @@ Auch die Möglichkeit automatischer im Hintergrund laufender Backups soll dem
 User gegeben sein, damit die Hürde für Backups so tief wie möglich gehalten
 wird.
 
-Die besten Backups sind solche bei denen man gar nicht mehr weiss das man sie
-hat bis man sie braucht.
+Die besten Backups sind solche, bei denen man gar nicht mehr weiss das man sie
+hat, bis man sie braucht.
 
 ** Ausgangslage
 
@@ -104,7 +104,7 @@ jedem Zeitpunkt öffentlich einsehbar sein. Der Quelltext der Dokumentation ist
 unter diesem Link erreichbar: https://git.2li.ch/Nebucatnetzer/thesis
 
 Die Entwicklung wird hauptsächlich auf einem Linux System stattfinden. Da
-BorgBackup einerseits hauptsächlich auf Unix Systeme ausgelegt ist und
+gls:borg einerseits hauptsächlich auf Unix Systeme ausgelegt ist und
 anderseits die Hauptzielgruppe des Projektes auch auf Linux Usern liegt.
 Trotzdem sollen im Projekt cross-plattform fähige Technologien eingesetzt werden
 damit es in der Zukunft möglich ist das Projekt auf andere Plattformen
@@ -187,7 +187,7 @@ integriert werden und ist nicht unwichtig.
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                30. | Der User kann die "Retention Policy" konfigurieren.                                                                                                          |                                |                                                              2 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
-|                                31. | Die Anwendung kann mit allen Features von BorgBackup umgehen.                                                                                                |                                |                                                              2 |
+|                                31. | Die Anwendung kann mit allen Features von gls:borg umgehen.                                                                                                |                                |                                                              2 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                32. | Die Applikation prüft, ob sie sich im richtigen Netzwerk befindet bevor sie eine Verbindung zum Server aufbaut.                                              |                                |                                                              2 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
@@ -231,7 +231,7 @@ versioniert wird und welche allgemeinen Werkzeuge eingesetzt werden.
 *** Versionskontrolle
 
 Die komplette Dokumentation, der Quellcode der Applikation sowie jegliche
-zusätzliche Dokumente wie etwa die Zeitplanung werden mittels der Software Git
+zusätzlichen Dokumente wie etwa die Zeitplanung werden mittels der Software Git
 versioniert. Thematisch zusammengehörende Änderungen werden in einem Commit
 zusammengefasst. Somit ist jederzeit nachvollziehbar was wann geändert hat. Ein
 Commit sollte dabei gemäss dem Artikel von Chris Beams "How to write a Git
@@ -312,17 +312,17 @@ entwickelten Design Sprache "Material" footcite:material eingesetzt.
 Die detaillierte Zeitplanung ist dem Ganttchart in der Datei
 [[file:Zeitplanung_Andreas_Zweili.html][Zeitplanung_Andreas_Zweili.html]] zu entnehmen. Bei der Zeitplanung wurde darauf
 geachtet das die Arbeit soweit, als möglich nicht mit dem Berufsleben
-kollidiert An einem normalen Arbeitstag wurde dabei damit gerechnet das ca. 2
+kollidiert. An einem normalen Arbeitstag wurde dabei damit gerechnet das ca. 2
 Stunden Arbeit am Abend möglich sein sollten. An einem arbeitsfreien Tag wurde
 mit 6 Stunden Arbeit gerechnet. Über die Festtage wurden diverse Tage von der
-Planung ausgenommen, da es nicht realistisch schien das an diesen Tagen die
+Planung ausgenommen, da es nicht realistisch schien, dass an diesen Tagen die
 Arbeit signifikant vorwärts gehen würde. Auch Schultage wurde nicht, als
 Arbeitstage gerechnet da man meist nicht mehr für weitere Tätigkeiten gross
 motiviert ist.
 
 Als zusätzliche Massnahme um die Arbeitslast zu verteilen wurde vom 14. Januar
 bis zum 11. März jeder Montag auf der Arbeitsstelle als frei eingegeben.
-Dadurch steht während des Projektes etwas mehr Zeit zur Verfügung als sonst mit
+Dadurch steht, während des Projektes etwas mehr Zeit zur Verfügung als sonst mit
 einer 100 Prozent Arbeitsstelle möglich wäre.
 
 ** TODO Controlling
@@ -464,7 +464,7 @@ Verfügung gestellt.
 |                           <5> | <20>                                  | <20>                               |                                                          |                                              |
 | *Nr*.\cellcolor[HTML]{C0C0C0} | *Stakeholder*\cellcolor[HTML]{C0C0C0} | *Einfluss*\cellcolor[HTML]{C0C0C0} | *Anforderung/Wünsche*\cellcolor[HTML]{C0C0C0}            | *Wahrscheinlichkeit*\cellcolor[HTML]{C0C0C0} |
 |-------------------------------+---------------------------------------+------------------------------------+----------------------------------------------------------+----------------------------------------------|
-|                            1. | BorgBackup Community                  | gering                             | - Eine Applikation die den Umfang von BorgBackup abdeckt | mittel                                       |
+|                            1. | gls:borg Community                  | gering                             | - Eine Applikation die den Umfang von gls:borg abdeckt | mittel                                       |
 |                               |                                       |                                    | - Open-Source                                            | hoch                                         |
 |                               |                                       |                                    | - Mitsprachrecht bei der Entwicklung                     | niedrig                                      |
 |-------------------------------+---------------------------------------+------------------------------------+----------------------------------------------------------+----------------------------------------------|
@@ -495,8 +495,8 @@ im Bezug auf die Nützlichkeit der gemachten Backups.
 In der Tabelle: ([[tab:risikobeschreibung]]) sind dabei die Risiken für das
 Szenario aufgelistet und nummeriert. In der Abbildung:([[fig:istrisiko]]), ist die
 Bewertung des Ist-Risikos grafisch dargestellt und in der
-Abbildung:([[fig:sollrisiko]]), ist das Soll-Risiko welches mit dieser Arbeit
-angestrebt wird ebenfalls grafisch dargestellt.
+Abbildung:([[fig:sollrisiko]]), ist das Soll-Risiko, welches mit dieser Arbeit
+angestrebt wird, ebenfalls grafisch dargestellt.
 
 Es sollte im Rahmen der Arbeit möglich sein die meisten Risiken zu verringern.
 Da automatische Hintergrundbackups jedoch nur ein Kann-Ziel sind wir in dieser
@@ -963,7 +963,7 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 
 ** Varianten
 
-Da Borg eine JSON API zur Verfügung stellt gibt es diverse Möglichkeiten, um
+Da Borg eine gls:json API zur Verfügung stellt gibt es diverse Möglichkeiten, um
 das Programm anzubinden. Da das Ziel ist, das Programm normalen Nutzern
 zugänglicher zu machen, bietet sich ein normales Desktop Programm am ehesten
 an. Desktop Programme werden von allen Computer Usern täglich genutzt und sind
@@ -1009,7 +1009,7 @@ der Tabelle Projektziele ([[tab:projektziele]]).
 | 6. Lesbarkeit des Codes                     |                                    5 |                                        5 |                                             5 |                                             25 |
 | 7. Einfachheit des Setups                   |                                    5 |                                        5 |                                             5 |                                             25 |
 | 8. Lernfaktor                               |                                    5 |                                        5 |                                             5 |                                             25 |
-| 9. Verbreitung bei der BorgBackup Community |                                    5 |                                        5 |                                             5 |                                             25 |
+| 9. Verbreitung bei der gls:borg Community |                                    5 |                                        5 |                                             5 |                                             25 |
 | 10. Geschwindigkeit der Entwicklung         |                                    3 |                                        5 |                                             5 |                                             15 |
 |---------------------------------------------+--------------------------------------+------------------------------------------+-----------------------------------------------+------------------------------------------------|
 | *Total*                                     |                                      |                                          |                                               |                                            415 |
@@ -1092,7 +1092,7 @@ Jedoch aufgrund des moderneren Unterbaus sicher schneller als C++.
 | 6. Lesbarkeit des Codes                     |                                    5 |                                        5 |                                             4 |                                             20 |
 | 7. Einfachheit des Setups                   |                                    5 |                                        5 |                                             2 |                                             10 |
 | 8. Lernfaktor                               |                                    5 |                                        5 |                                             3 |                                             15 |
-| 9. Verbreitung bei der BorgBackup Community |                                    5 |                                        5 |                                             1 |                                              5 |
+| 9. Verbreitung bei der gls:borg Community |                                    5 |                                        5 |                                             1 |                                              5 |
 | 10. Geschwindigkeit der Entwicklung         |                                    3 |                                        5 |                                             3 |                                              9 |
 |---------------------------------------------+--------------------------------------+------------------------------------------+-----------------------------------------------+------------------------------------------------|
 | *Total*                                     |                                      |                                          |                                               |                                            279 |
@@ -1132,7 +1132,7 @@ Grössten.
 
 Da C++ eine alte Sprache ist geniesst sie auch eine dementsprechende
 Verbreitung. Daher ist anzunehmen das sicher mindestens ein grössere Teil der
-älteren BorgBackup Entwickler C++ oder C gelernt haben.
+älteren gls:borg Entwickler C++ oder C gelernt haben.
 
 Da C++ auch heute noch zu den meistgenutzten Sprachen gehört gibt es
 entsprechend viele Ressourcen dazu und Beispiel Projekte, von denen man ableiten
@@ -1157,7 +1157,7 @@ ungeeignet.
 | 6. Lesbarkeit des Codes                     |                                    5 |                                        5 |                                             2 |                                              10 |
 | 7. Einfachheit des Setups                   |                                    5 |                                        5 |                                             3 |                                              15 |
 | 8. Lernfaktor                               |                                    5 |                                        5 |                                             5 |                                              25 |
-| 9. Verbreitung bei der BorgBackup Community |                                    5 |                                        5 |                                             3 |                                              15 |
+| 9. Verbreitung bei der gls:borg Community |                                    5 |                                        5 |                                             3 |                                              15 |
 | 10. Geschwindigkeit der Entwicklung         |                                    3 |                                        5 |                                             2 |                                               6 |
 |---------------------------------------------+--------------------------------------+------------------------------------------+-----------------------------------------------+-------------------------------------------------|
 | *Total*                                     |                                      |                                          |                                               |                                             271 |
@@ -1235,7 +1235,7 @@ entwickeln kann, dies jedoch zulasten der Performance.
 | 6. Lesbarkeit des Codes                    |                                    5 |                                        5 |                                             4 |                                              20 |
 | 7. Einfachheit des Setups                  |                                    5 |                                        5 |                                             4 |                                              20 |
 | 8. Lernfaktor                              |                                    5 |                                        5 |                                             3 |                                              15 |
-| 9. Verbreitung in der BorgBackup Community |                                    5 |                                        5 |                                             5 |                                              25 |
+| 9. Verbreitung in der gls:borg Community |                                    5 |                                        5 |                                             5 |                                              25 |
 | 10. Geschwindigkeit der Entwicklung        |                                    3 |                                        5 |                                             4 |                                              12 |
 |--------------------------------------------+--------------------------------------+------------------------------------------+-----------------------------------------------+-------------------------------------------------|
 | *Total*                                    |                                      |                                          |                                               |                                             322 |
@@ -1461,13 +1461,13 @@ Aufgrund der Unerfahrenheit im Bereich des automatisierten Testings wurden noch
 die Testfälle in der Tabelle:([[tab:testcases]]), erstellt. Diese werden final von
 Hand überprüft. Somit kann vermieden werden das nicht funktionierende
 automatische Tests den Abschluss des Projektes verhindern. Da die Testfälle
-sich hauptsächlich an den Use Cases orientieren gibt es ein paar Ziele die
-dadurch nicht getestet werden können. Zudem sind zur Zeit nur ca. 20. der Ziele
+sich hauptsächlich an den Use Cases orientieren gibt, es ein paar Ziele die,
+dadurch nicht getestet werden können. Zudem sind zurzeit nur ca. 20. der Ziele
 durch die Use Cases abgedeckt. Die weiteren Ziele lassen sich erst sinnvoll
-integrieren wenn die Basis für das Programm geschaffen wurde. Somit werden
+integrieren, wenn die Basis für das Programm geschaffen wurde. Somit werden
 diese Ziele erst im Anschluss zur Diplomarbeit umgesetzt.
 
-Die Ziele die nicht durch die Testfälle getestet werden können sind Ziel Nr. 1
+Die Ziele, die nicht durch die Testfälle getestet werden können sind Ziel Nr. 1
 und Nr. 2. Für Ziel Nr. 1 wird in der Sektion [[Realisierung]] ein Proof of Concept
 erstellt um die cross-plattform Fähigkeit zu beweisen. Ziel Nr. 2 ist mit
 folgendem Link erfüllt. https://github.com/borg-qt/borg-qt/blob/master/LICENSE.
@@ -1509,10 +1509,10 @@ beschrieben.
 Um die Abhängigkeiten zwischen den einzelnen Klassen der Anwendung aufzuzeigen
 wurde ein Klassendiagramm, Abbildung:([[fig:class_diagramm]]), erstellt. Das
 Klassendiagramm basiert auf dem UML Standard. Im Diagramm wurden nicht alle
-"Properties" und Methoden alles Klassen aufgezeichnet sondern nur solche die
+"Properties" und Methoden alles Klassen aufgezeichnet, sondern nur solche die
 auf eine andere Klasse verweisen. Dadurch bleibt das Diagramm übersichtlicher.
-Die Klassennamen welche in fetter Schrift gehalten sind wurden dabei vom
-Projektleiter erstellt Die Klassennamen welche kursiv sind, sind Klassen welche
+Die Klassennamen welche, in fetter Schrift gehalten sind, wurden dabei vom
+Projektleiter erstellt. Die Klassennamen, welche kursiv sind, sind Klassen, welche
 entweder von Python oder Qt bereitgestellt werden.
 
 ** Benutzerfreundlichkeitsstudie
@@ -1522,11 +1522,11 @@ Diplomarbeit noch eine kleine Benutzerfreundlichkeitsstudie gemacht. Bei einer
 solchen Studie erhalten die Probanden, Tabelle:([[tab:probanden]]), ein paar
 Aufgaben, Sektion [[Aufgaben]], welche sie in einer begrenzten
 Zeit zu erledigen haben. Die Aufsichtsperson gibt ihnen dabei keinerlei
-Hilfestellungen. Die Probanden sollen die Aufgaben alleine mit Hilfe der Tipps
-und Hinweisen in der Anwendung lösen Im Anschluss bewerten die Probanden dann
+Hilfestellungen. Die Probanden sollen die Aufgaben alleine mithilfe der Tipps
+und Hinweisen in der Anwendung lösen. Im Anschluss bewerten die Probanden dann
 die einzelnen Aufgaben nach ihrer Schwierigkeit,
 Tabelle:([[tab:usability_colours]]). Daraus lässt sich dann eine sogenannte Heatmap
-erstellen. Aus der Heatmap kann man anschaulich herauslesen welche Bereiche für
+erstellen. Aus der Heatmap kann man anschaulich herauslesen, welche Bereiche für
 die User noch zu kompliziert sind und Nacharbeit benötigen.
 
 Die Probanden wurden aus dem Umfeld des Projektleiters ausgewählt. Es wurde
@@ -1570,7 +1570,7 @@ Probanden und nicht die des Projektleiters.
 *** Aufgaben
 
 1. Du möchtest deine Dateien sichern. Erstelle dazu eine Datensicherung des Ordners ~/home/testuser/Downloads~.
-2. Du hast aus versehen die Datei ~/home/testuser/Downloads/Example.pdf~
+2. Du hast aus Versehen die Datei ~/home/testuser/Downloads/Example.pdf~
    gelöscht. Stelle die Datei wieder her. Am Ende soll sie unter
    ~/home/testuser/Documents/Example.pdf~ zu finden sein.
 3. Stelle ein beliebiges Archiv wieder her. Der Zielpfad ist ~/home/testuser/Documents/~.
@@ -1601,29 +1601,29 @@ Probanden und nicht die des Projektleiters.
 **** Proband 1
 
 Der Proband fand die Aufgaben grundsätzlich einfach zu lösen. Das die "Mount"
-Funktion zum Wiederherstellen einzelner Dateien gedacht war hat er nicht
+Funktion zum Wiederherstellen einzelner Dateien gedacht war, hat er nicht
 erkannt.
 
 **** Proband 2
 
 Der Proband kam mit den Aufgaben insgesamt gut klar. Bei der ersten Aufgabe
-hätte er sich eine Meldung gewünscht wenn das Backup erfolgreich durchgelaufen
+hätte er sich eine Meldung gewünscht, wenn das Backup erfolgreich durchgelaufen
 ist. Wie Proband 1 hat auch er die "Mount" Funktion nicht genutzt zum
-wiederherstellen einer einzelnen Datei. Text Hinweise wurden nur bedingt
+Wiederherstellen einer einzelnen Datei. Text Hinweise wurden nur bedingt
 wahrgenommen.
 
 **** Proband 3
 
 Proband 3 kam mit der Anwendung an sich gut klar. Die Aufgabe zwei fand er über
-alles gesehen auch am schwierigsten da er mit der Materie nahezu nicht vertraut
-ist. Als zusätzlichen Input gab er an das ein Kontextmenü welches sich mit
-Rechtsklick auf ein Element öffnet etwas sei was er gerne hätte da er andere
+alles gesehen auch am schwierigsten, da er mit der Materie nahezu nicht vertraut
+ist. Als zusätzlichen Input gab er an, das ein Kontextmenü welches sich mit
+Rechtsklick auf ein Element öffnet, etwas sei was er gerne hätte, da er andere
 Anwendungen oft so steuert. Aufgabe 5 war auch etwas herausfordernder als 1,3
 und 4 insbesondere war unklar wie der Ordner zu der Liste hinzugefügt werden
 sollte.
 
-Während des Tests ist in der Anwendung noch ein Bug aufgetaucht welcher
-Probleme beim erstellen von Backups machte. Die detaillierte Lösung dafür ist im
+Während des Tests ist in der Anwendung noch ein Bug aufgetaucht, welcher
+Probleme beim Erstellen von Archiven machte. Die detaillierte Lösung dafür ist im
 Kapitel [[Realisierung]] beschrieben.
 
 **** Proband 4
@@ -1638,13 +1638,13 @@ meistern.
 
 Probandin 5 mit der Anwendung insgesamt sehr gut klar und hat auch als Einzige
 die Tooltips auf den Buttons entdeckt und dann genutzt. Aufgabe 2 war jedoch
-auch schwierig zu lösen danach ging es jedoch ohne Probleme. Als Feedback wurde
+auch schwierig zu lösen, danach ging es jedoch ohne Probleme. Als Feedback wurde
 genannt, dass 21:00 Uhr etwas spät für solche Tests sei.
 
 *** Auswertung
 
-Nach den 5 Tests liess sich feststellen das die Anwendung für die Anwender
-insgesamt einfach zu bedienen ist sobald sie einmal wissen welche Buttons
+Nach den 5 Tests liess sich feststellen, dass die Anwendung für die Anwender
+insgesamt einfach zu bedienen ist, sobald sie einmal wissen, welche Buttons
 welche Aktion auslösen und wie sich die Anwendung verhält. Um Hilfestellung zu
 leisten wird im Rahmen der Diplomarbeit noch ein Hilfefenster eingebaut welches
 den Benutzern beim ersten Starten der Anwendung angezeigt wird und kurz die
@@ -1842,7 +1842,7 @@ und bekommt als Result eine funktionierende Python Liste zurück.
 Beim Schreiben der Konfigurationsdatei macht man dann einfach das Umgekehrte.
 Man konvertiert eine Python Liste in einen gls:json String.
 
-#+caption: Methode zum Parsen von JSON Listen in Konfigurationsdateien.
+#+caption: Methode zum Parsen von gls:json Listen in Konfigurationsdateien.
 #+name: code:json_config
 #+begin_src python
 # borg_qt/config.py
@@ -2043,7 +2043,7 @@ def _process_excludes(self, excludes):
     else:
         return processed_items
 
-# Methode zum Erstellen des BorgBackup Kommandos.
+# Methode zum Erstellen des gls:borg Kommandos.
 def create_command(self):
     self.command = ['borg', 'create', '--log-json', '--json',
                     ('::'
@@ -2482,7 +2482,7 @@ PLACEHOLDER
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
 | *TC-04*                      | Lokales Backup erstellen                           | TC-01 ausgeführt.                                                               | 1. In der Ordnerübersicht das Code Repository auswählen.\newline 2. Den Button “Backup” betätigen.                                                                                                                                                                                     | Testdateien                                            | Die Anwendung zeigt einen Fortschrittsbalken der nach erfolgreichem Backupen verschwindet.                                              | Die Archiv Liste wird aktualisiert und zeigt ein Archiv an.                                                                                                               | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
-| *TC-05*                      | Lokales Backup erstellen                           | TC-01 ausgeführt.\newline BorgBackup erstellt bereits ein Archiv.               | 1. In der Ordnerübersicht das Code Repository auswählen.\newline 2. Den Button “Backup” betätigen.                                                                                                                                                                                     | Testdateien                                            | Die Anwendung wirft eine Fehlermeldung das BorgBackup bereits ausgeführt wird.                                                          | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
+| *TC-05*                      | Lokales Backup erstellen                           | TC-01 ausgeführt.\newline gls:borg erstellt bereits ein Archiv.               | 1. In der Ordnerübersicht das Code Repository auswählen.\newline 2. Den Button “Backup” betätigen.                                                                                                                                                                                     | Testdateien                                            | Die Anwendung wirft eine Fehlermeldung das gls:borg bereits ausgeführt wird.                                                          | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
 | *TC-06*                      | Lokales Backup erstellen                           | TC-01 ausgeführt.                                                               | 1. Das Lokale Repository an einen beliebigen Ort verschieben.\newline 2. In der Ordnerübersicht das Code Repository auswählen.\newline 3. Den Button “Backup” betätigen.                                                                                                               | Testdateien                                            | Die Anwendung wirft eine Fehlermeldung das sie das lokale Repository nicht finden kann.                                                 | Die geöffnete Fehlermeldung blockiert die Applikation.                                                                                                                    | Erfolgreich durchgeführt 25.02.2019 A.Z. |
 |------------------------------+----------------------------------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------|
