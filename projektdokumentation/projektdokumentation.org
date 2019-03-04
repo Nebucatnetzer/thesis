@@ -919,6 +919,9 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 #+attr_latex: :center :placement [H]
 
 #+LATEX:\newpage
+
+** TODO Funktionalität von gls:borg
+
 * Konzept
 
 ** Varianten
