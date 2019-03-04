@@ -2293,10 +2293,6 @@ Sollte also etwa jeden Mittwoch ein Backup gemacht werden aber der Computer
 lief an diesem Tag nicht, startet Systemd Borg-Qt, sobald der Computer das
 nächste Mal eingeschaltet wird kommt.
 
-Mit dem Abschluss des automatischen Backups wurde die für die Entwicklung
-reservierte Zeit aufgebraucht und die Entwicklung neuer Funktionen für den
-Zeitrahmen der Diplomarbeit gestoppt.
-
 #+caption: Systemd Service Datei für Borg-Qt
 #+name: code:systemdservice
 #+begin_src bash
@@ -2356,6 +2352,10 @@ der Einstellungen wieder angezeigt werden.
 #+name: fig:borgqt_help
 #+attr_latex: :placement [H]
 [[file:pictures/borgqt_help.png]]
+
+Mit dem Abschluss der Anpassungen wurde die für die Entwicklung reservierte
+Zeit aufgebraucht und die Entwicklung neuer Funktionen für den Zeitrahmen der
+Diplomarbeit gestoppt.
 
 ** Releases
 
