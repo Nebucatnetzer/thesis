@@ -2459,13 +2459,17 @@ Abbildung:([[fig:new-is-risk]]), eine bessere Risikobewertung als das geplante
 
 ** TODO Projektmanagement
 
-Gantt Chart sehr hilfreich beim behalten des Überblickes für das Projekt. Gibt
-einem einen durchgehenden roten Faden.
+Das zu Beginn erstellte Gantt Chart war sehr hilfreich um den Überblick über
+das Projekt zu behalten. Anhand davon konnte immer abgeschätzt werden wie
+das Projekt etwa im Zeitplan steht.
 
 Die konservativen Zeitschätzungen haben sich als korrekte Entscheidung
 erwiesen. In Zukunft kann noch stärker versucht werden die Zeit welche für
 ähnliche Code Teile verwendet wird kürzer zu schätzen. Copy/Paste erlaubt unter
-Umständen enorme Zeitersparnise.
+Umständen enorme Zeitersparnise. Trotzdem sollte genügend Reserve für
+allfällige Herausforderungen eingeplant werden. In der Entwicklung kann es
+immer wieder vorkommen das man an einem Bug oder Ähnlichem hängen bleibt ohne
+das man es
 
 Die regelmässigen Arbeitsessions haben sich als eine gute Variante des Arbeiten
 erwiesen und haben die Last der Diplomarbeit gut verteilt.
