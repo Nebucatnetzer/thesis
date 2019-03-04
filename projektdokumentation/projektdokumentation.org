@@ -2509,11 +2509,16 @@ der Sprache. Qt ist eine hilfreiches Framework wenn auch sehr umfangreich. Wenn
 man gewillt ist sich mit dem C++ Code auseinanderzusetzen ist die Dokumentation
 jedoch sehr detailiert.
 
-** TODO Weiterverwendung von Borg-Qt
+** Weiterverwendung von Borg-Qt
 
-Wird bereits produktiv vom Projektleiter eingesetzt.
+Borg-Qt wird als Freitzeitprojekt des Projektleiters weiter geführt. Ein paar
+der Kann-Ziele wären noch sehr nützlich wären sie in der Applikation
+integriert. Von Seiten der gls:borg Community kam zum Zeitplunkt der Arbeit
+noch kein spezifisches Feedback zurück. Die Hoffnung besteht das sich hier
+allenfalls noch ein, zwei Interessierte finden um am Projekt mitzurarbeiten.
 
-** TODO Gelerntes
+Die Applikation wird aber auf jeden Fall vom Projektleiter produktiv eingesetzt
+um seine sowie teilweise auch die Daten von Bekannten zu sichern.
 
 * Anhang
 
