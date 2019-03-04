@@ -19,7 +19,7 @@ diesem Dokument.
 ** Beschreibung
 
 Diese Arbeit hat zum Ziel, die Planung und Erstellung einer grafischen
-Oberfläche zum einfachen Bedienen der Software gls:borg footcite:borgbackup ,
+Oberfläche zum einfachen Bedienen der Software gls:borg footcite:borgbackup,
 durchzuführen sowie zu dokumentieren.
 
 ** Zweck und Inhalt
