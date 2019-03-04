@@ -2362,7 +2362,7 @@ Funktionen noch nicht implementiert wurden. TC-18 ist zwar technisch bereits
 möglich wurde im gls:gui jedoch noch nicht umgesetzt. Die Resultate wurden in
 der Tabelle:([[tab:testcases]]) erfasst.
 
-* TODO Ausblick
+* TODO Ausblick/Fazit
 ** Zielbewertung
 
 In der nachfolgenden Tabelle:([[tab:bewertete_projektziele]]) wurden die Ziele nach
