@@ -2407,12 +2407,6 @@ In der nachfolgenden Tabelle:([[tab:bewertete_projektziele]]) wurden die Ziele n
 entspricht dabei der Ziel-Nr. in der Tabelle:([[tab:projektziele]]). In der Spalte
 Bemerkung wird noch kurz ausgeführt in welcher Form das Ziel bewiesen wurde.
 
-Die Ziele, die nicht durch die Testfälle getestet werden können sind Ziel Nr. 1
-und Nr. 2. Für Ziel Nr. 1 wird in der Sektion [[Realisierung]] ein Proof of Concept
-erstellt um die cross-plattform Fähigkeit zu beweisen. Ziel Nr. 2 ist mit
-folgendem Link erfüllt. .
-Dabei handelt es sich um die Lizenz des Borg-Qt Repository.
-
 #+CAPTION: Bewertete Projektziele
 #+ATTR_LATEX: :environment longtable :align |p{1cm}|p{1.5cm}|p{1.5cm}|p{9cm}|
 #+NAME: tab:bewertete_projektziele
