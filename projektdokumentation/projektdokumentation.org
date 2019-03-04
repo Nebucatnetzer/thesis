@@ -1678,7 +1678,7 @@ umbenannt. Somit zeigen die Buttons dann auch direkt, dass sie Dateien
 respektive Ordner ein-/ausschliessen Ein paar der Probanden hatten es zuerst
 über den "Remove" Button versucht.
 
-* TODO Realisierung
+* Realisierung
 ** Cross-plattform Kompatibilität
 
 Um sicherzugehen das die gewählten Technologien auch den Anforderungen
@@ -2400,7 +2400,7 @@ möglich wurde im gls:gui jedoch noch nicht umgesetzt. Die Resultate wurden in
 der Tabelle:([[tab:testcases]]) erfasst.
 
 * TODO Ausblick
-** TODO Zielbewertung
+** Zielbewertung
 
 In der nachfolgenden Tabelle:([[tab:bewertete_projektziele]]) wurden die Ziele nach
 "Erfüllt", "Nicht erfüllt" oder "Teilweise Erfüllt" bewertet. Die Ziel-Nr.
