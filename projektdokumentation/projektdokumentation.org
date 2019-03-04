@@ -2396,6 +2396,15 @@ hochgeladen. Github packt dabei den Source Code beim Erstellen des Releases in
 ein Zip Archiv. Somit kann eine interessierte Person sich zum Binary auch
 direkt den Source Code herunterladen.
 
+** Kontrollieren der Testfälle
+
+Am 25.02.2019 würden gemäss dem Zeitplan die Testfälle durchgegangen. Bis auf
+die Testfälle TC-18 und TC-24 konnten alle Testfälle erfolgreich durchgeführt
+werden. TC-18 und TC-24 konnten deshalb nicht durchgeführt werden, da diese
+Funktionen noch nicht implementiert wurden. TC-18 ist zwar technisch bereits
+möglich wurde im gls:gui jedoch noch nicht umgesetzt. Die Resultate wurden in
+der Tabelle:([[tab:testcases]]) erfasst.
+
 * TODO Ausblick
 ** TODO Erreichte Ziele
 
