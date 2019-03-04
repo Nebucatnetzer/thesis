@@ -2474,25 +2474,12 @@ das man es
 Die regelmässigen Arbeitsessions haben sich als eine gute Variante des Arbeiten
 erwiesen und haben die Last der Diplomarbeit gut verteilt.
 
+*** TODO Zeitaufwand
 
-Die Studie war eine sehr interessante Erfahrung. Enduser sehen eine
-Anwendung mit ganz anderen Augen als der Entwickler der Anwendung der von jedem
-Element weiss wie der Code dazu aussieht. Er hat auch gezeigt das die Aufgaben
-auch richtig gestellt werden müssen ansonsten wissen die Probanden schon gar
-nicht erst was gefordert ist. Auch sollte wenn möglich darauf geachtet werden
-das auf einem Betriebsystem getestet mit welchem die Probanden bereits etwas
-Erfahrung haben. Zwei der Probanden waren ab dem Verhalten und Aussehen des
-Dateimanagers von Ubuntu 18.04 etwas verwirrt da sie ihn zuvor noch nicht
-gesehen und bentuzt hatten. Alternativ kann auch die Gruppe der Probanden so
-gewählt werden das sie mit dem Betriebssystem bereits vertraut sind.
-Auf jeden Fall etwas was man bei zukünftigen Projekten wieder machten sollte.
+*** TODO Ressourcen
 
-** TODO Umsetzung
+*** TODO Kosten
 
-Aus zeitlichen Gründen konnte die Funktion zur Erkennung eines laufenden
-Hypervisors nicht während der Diplomarbeit entwickelt werden. Dies ist ein
-recht komplexes Features und braucht genügend Zeit damit es richtig umgesetzt
-wird.
 ** Benutzerfreundlichkeitsstudie
 
 Die Studie war eine sehr interessante Erfahrung. Enduser sehen eine Anwendung
