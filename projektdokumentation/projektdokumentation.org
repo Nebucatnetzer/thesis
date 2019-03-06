@@ -2489,7 +2489,10 @@ erwiesen und haben die Last der Diplomarbeit gut verteilt.
 
 *** TODO Zeitaufwand
 
-*** TODO Ressourcen
+*** Ressourcen
+
+Die im Projekt eingesetzten Ressourcen entsprechen den in der
+Tabelle:([[tab:ressources]]) geplanten eins zu eins.
 
 *** TODO Kosten
 
