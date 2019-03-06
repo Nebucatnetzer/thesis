@@ -2511,10 +2511,36 @@ sie mit dem Betriebssystem bereits vertraut sind.
 Eine Benutzerfreundlichkeitsstudie ist auf jeden Fall etwas, was man bei
 zukünftigen Software Projekten wieder machten sollte.
 
-Unittests sind der Shit brauchen allerdings Zeit und eine gewisse Erfahrung mit
-der Sprache. Qt ist eine hilfreiches Framework wenn auch sehr umfangreich. Wenn
-man gewillt ist sich mit dem C++ Code auseinanderzusetzen ist die Dokumentation
-jedoch sehr detailiert.
+** Umsetzung
+
+Die Entwicklung mit Qt und Python ging sehr gut von der Hand. Die grafische
+Erstellung des gls:gui mit dem dem Qt Designer war sehr hilfreich und hat es
+ermöglicht mit den Elementen auch einfach mal zu spielen um zu sehen was passt
+und was eher weniger geht. Qt selbst ist ein gutes und sehr umfangreiches
+Framework. Das die Dokumentation den Fokus hauptsächlich auf C++ Code hat
+machte es einem zu Beginn etwas schwieriger als nötig, die gewünschte
+Information zu finden.
+
+Python als Programmiersprache hat sich in der Entwicklung als gute Entscheidung
+bewährt. Die Entwicklung ging schnell und unkompliziert von der Hand. Python
+wurde als eine sehr flexible Sprache wargenommen die einem bei der Entwicklung
+aus dem Weg geht.
+
+Die eingesetzten Unittests waren hilfreiche Werkzeuge bei der Entwicklung.
+Gegen Ende der Entwicklung wurden sie jedoch weniger eingesetzt da die
+Entwicklung davon doch etwas Zeit beansprucht und auch ein gewisses Mass an
+Erfahrung. Wenn man zuerst noch Recherchieren muss wie man den Unittest
+schreibt verliert man wertvolle Zeit die man während einer Diplomarbeit nicht
+zur Verfügung hat.
+
+Diejenigen Tests die jedoch geschrieben wurden haben sich als sehr hilfreich
+erwiesen einem ein Art Sicherheitsnetz zu bieten in dem sie aufgezeigt haben
+das nach einer grösseren Änderung immer noch alles so funktionert wie es
+sollte. Es ist schade das Unittests an der IBZ nicht gelehrt wurden. Sie
+scheinen definitiv etwas zu sein was jeder Programmier beherschen sollte und
+die Grundlagen für jedes Projekt, das über ein paar Zeilen hinausgeht, sein
+sollten. Unittests werden mit Sicherheit eines der Hauptthemen zum lernen in
+den nächsten paar Monaten sein.
 
 ** Weiterverwendung von Borg-Qt
 
