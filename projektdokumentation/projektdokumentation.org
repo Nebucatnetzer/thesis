@@ -337,6 +337,8 @@ Lehren gezogen werden.
 Um den geschätzten Zeitaufwand mit dem effektiv geleisteten Aufwand zu
 vergleichen wurde die Tabelle:([[tab:zeitcontr]]) erstellt. Darin werden die beiden
 Aufwände einander gegenübergestellt und grössere Abweichungen begründet.
+Die Nummer vor jeder Aufgabe in der Tabelle korreliert dabei mit den
+Aufgabennummern im Ganttchart.
 
 *** Ressourcen
 
