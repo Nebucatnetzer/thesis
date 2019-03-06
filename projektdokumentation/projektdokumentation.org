@@ -2520,9 +2520,12 @@ jedoch sehr detailiert.
 
 Borg-Qt wird als Freitzeitprojekt des Projektleiters weiter geführt. Ein paar
 der Kann-Ziele wären noch sehr nützlich wären sie in der Applikation
-integriert. Von Seiten der gls:borg Community kam zum Zeitplunkt der Arbeit
-noch kein spezifisches Feedback zurück. Die Hoffnung besteht das sich hier
-allenfalls noch ein, zwei Interessierte finden um am Projekt mitzurarbeiten.
+integriert. Zudem sind ein paar davon interessante Aufgaben um die eigenen
+Fähigkeiten zu erweitern. Nach Abschluss der Diplomarbeit wird die Entwicklung
+der Anwendung dann auch für Externe geöffnet. Von Seiten der gls:borg Community
+kam zum Zeitplunkt der Arbeit noch kein spezifisches Feedback zurück. Die
+Hoffnung besteht, dass sich allenfalls noch ein, zwei Interessierte finden um
+am Projekt mitzuarbeiten.
 
 Die Applikation wird aber auf jeden Fall vom Projektleiter produktiv eingesetzt
 um seine sowie teilweise auch die Daten von Bekannten zu sichern.
