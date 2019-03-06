@@ -920,7 +920,20 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 
 #+LATEX:\newpage
 
-** TODO Funktionalität von gls:borg
+** Benötigte Funktionalität von gls:borg
+
+Damit nachvollziehbar ist welche Funktionen von gls:borg verwendet wurden um
+die Use Cases umsetzen zu können, werden diese hier in Beziehung zur
+jeweiligen Funktion des gls:gui aufgelistet:
+- Für das Erstellen von Archiven ~borg create~ footcite:borgcreate.
+- Für das Anzeigen der Archiven ~borg list~ footcite:borginfo.
+- Für das Wiederherstellen der Archive ~borg extract~ footcite:borgextract.
+- Für das Löschen der Archive ~borg delete~ footcite:borgdelete.
+- Zum Mounten der Archive ~borg mount~ footcite:borgmount.
+- Zum Unmounten der Archive ~borg umount~ footcite:borgumount.
+- Zum anzeigen der Repository Statistik ~borg info~footcite:borginfo.
+
+Die detaillierte Implementation wird in der Sektion [[Realisierung][Realisierung]] beschrieben.
 
 * Konzept
 
@@ -2065,12 +2078,12 @@ Stackoverflow footcite:sizeformat übernommen.
 Beim Durchführen der Benutzerfreundlichkeitsstudie wurde noch ein Bug entdeckt.
 Der Bug, der entdeckt wurde, tritt immer dann auf, wenn ein Archiv gemountet
 ist während man ein Backup erstellen möchte. Dies ist jedoch offenbar eine
-Funktion die von gls:borg nicht unterstützt wird footcite:borgmount. gls:borg
-kann mehrere Archive gleichzeitig mounten. Der User müsste jedoch jedes der
-Archive zuerst wieder unmounten bevor er eine neue Datensicherung erstellen
-kann. Das Problem wurde dadurch gelöst das dem User ein Dialog angezeigt wird,
-über welchen er vor einer Datensicherung zuerst die gemounteten Archive
-aushängen kann. Anschliessend startet die Datensicherung wie, wenn kein
+Funktion die von gls:borg nicht unterstützt wird footcite:borgmountissue.
+gls:borg kann mehrere Archive gleichzeitig mounten. Der User müsste jedoch
+jedes der Archive zuerst wieder unmounten bevor er eine neue Datensicherung
+erstellen kann. Das Problem wurde dadurch gelöst das dem User ein Dialog
+angezeigt wird, über welchen er vor einer Datensicherung zuerst die gemounteten
+Archive aushängen kann. Anschliessend startet die Datensicherung wie, wenn kein
 Archiv gemountet gewesen wäre.
 
 #+caption: Screenshot der aktualisierten Archivliste und Repository Statistik.
