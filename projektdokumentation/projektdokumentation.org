@@ -2611,11 +2611,10 @@ um seine sowie teilweise auch die Daten von Bekannten zu sichern.
 #+TBLFM: @>$4=vsum(@3..@-1)
 #+TBLFM: @>$5=vsum(@3..@-1)
 
-#+LATEX:\begin{landscape}
 ** TODO Zeitaufwand
 
 #+CAPTION: Zeitcontrolling
-#+ATTR_LATEX: :environment longtable :align |p{3cm}|p{5cm}|p{3cm}|p{7cm}|
+#+ATTR_LATEX: :environment longtable :align |p{3cm}|p{1.5cm}|p{1.5cm}|p{7cm}|
 #+NAME: tab:zeitcontr
 |-----------------------------------+------------------------------------------+-------------------------------------------+--------------------------------------|
 | *Aufgabe*\cellcolor[HTML]{C0C0C0} | *Gesch. Aufwand*\cellcolor[HTML]{C0C0C0} | *Effekt. Aufwand*\cellcolor[HTML]{C0C0C0} | *Begründung*\cellcolor[HTML]{C0C0C0} |
@@ -2624,6 +2623,7 @@ um seine sowie teilweise auch die Daten von Bekannten zu sichern.
 | *Total*                           |                                          |                                           |                                      |
 |-----------------------------------+------------------------------------------+-------------------------------------------+--------------------------------------|
 
+#+LATEX:\begin{landscape}
 ** Testfälle
 #+LATEX:{\footnotesize
 #+CAPTION: Testfälle
