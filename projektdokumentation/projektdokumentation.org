@@ -310,8 +310,8 @@ entwickelten Design Sprache "Material" footcite:material eingesetzt.
 ** Zeitplanung
 
 Die detaillierte Zeitplanung ist dem Ganttchart in der Datei
-[[file:Zeitplanung_Andreas_Zweili.html][Zeitplanung_Andreas_Zweili.html]] zu entnehmen. Bei der Zeitplanung wurde darauf
-geachtet das die Arbeit soweit, als möglich nicht mit dem Berufsleben
+[[file:02_Zeitplanung_Andreas_Zweili.html][02_Zeitplanung_Andreas_Zweili.html]] zu entnehmen. Bei der Zeitplanung wurde
+darauf geachtet das die Arbeit soweit, als möglich nicht mit dem Berufsleben
 kollidiert. An einem normalen Arbeitstag wurde dabei damit gerechnet das ca. 2
 Stunden Arbeit am Abend möglich sein sollten. An einem arbeitsfreien Tag wurde
 mit 6 Stunden Arbeit gerechnet. Über die Festtage wurden diverse Tage von der
@@ -2734,7 +2734,7 @@ um seine sowie teilweise auch die Daten von Bekannten zu sichern.
 
 ** Meeting Protokolle
 
-Die Meeting Protokolle sind in der Datei [[file:Meeting_Protokolle.pdf][Meeting_Protokolle.pdf]] zu finden.
+Die Meeting Protokolle sind in der Datei [[file:03_Meeting_Protokolle.pdf][03_Meeting_Protokolle.pdf]] zu finden.
 
 * Bibliography                                                    :no_export:
 
