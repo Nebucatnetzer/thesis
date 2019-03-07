@@ -161,7 +161,7 @@ Treffpunkt: IBZ Aarau
 
 Datum: 26.1.2019, 14:00 Uhr - 15:15 Uhr
 
-** Informationen
+** Allgemeines
 
 Beobachtung: exakte Zeitplanung, auch Miteinbezug der eigenen Intensität
 (geplante Stunden Aufwand) pro Woche, Arbeitspakete verständlich,
@@ -221,7 +221,9 @@ erweitern (Planung, Ergebnis, Eindruck) -> doing
 Qualitätskontrolle und Controlling ansprechen (wichtiger Bestandteil der
 Bewertung) -> doing
 
-Initialisierung / Voranalyse:
+** Aufbau der Arbeit
+
+*** Initialisierung / Voranalyse:
 
 Einleitung -> erledigt
 
@@ -243,7 +245,7 @@ nachträgliche Berücksichtigung weiterer möglicher Kannziele -> doing
 
 Projektcontrolling Soll-Ist (Zeit, Ressourcen, Kosten), Bewertung -> doing
 
-Analyse:
+*** Analyse:
 
 SWAT (Stärken, Schwächen) -> erledigt
 
@@ -270,7 +272,7 @@ Ergebnjsse -> doing
 
 Festlegung der Systemgrenze, evtl. mit UML Werkzeugen -> nochmals prüfen
 
-Konzept:
+*** Konzept:
 
 Aktivitätsdiagramm gemacht -> erledigt
 
@@ -302,7 +304,7 @@ verwendete Module beschreiben, wird im Nachhinein abgebildet -> doing
 Konsistente Darstellung von Testfällen und deren Durchführung, auch in Bezug
 zu den Muss- und effektiv realisierten Kannzielen -> doing
 
-Realisierung:
+*** Realisierung:
 
 Realisierung mit Linux System Python Skript und QT Framwork -> erledigt
 
@@ -332,7 +334,7 @@ läuft -> doing
 
 geplanter Abschluss der Programmierung 2. März -> doing
 
-Ausblick:
+*** Ausblick:
 
 kritische Würdigung, lessons learned
 
@@ -350,3 +352,22 @@ nächstes Treffen am 3.3, 14 Uhr in Olten
 noch unvollständig:
 
 nichts
+
+* Meeting vom 02.03.2019
+
+Protokoll der 3. Besprechung
+
+Treffpunkt: IBZ Aarau
+
+Datum: 26.1.2019, 14:00 Uhr - 15:00 Uhr
+
+** Ablauf
+
+Kurze Einleitung mit Smalltalk.
+Erkundigung nach Stand der Arbeit und Besprechung der noch offenen Punkte.
+Sind soweit alle erfüllt.
+Analye könnte um Funktionen von Borg erweitert werden. -> Roter Faden fehlt
+noch ein bisschen.
+
+Ansonsten soweit gut auf Kurs noch finalisieren und dann die digitale Abgabe
+wie beim ersten Meeting besprochen.
