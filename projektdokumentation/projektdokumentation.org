@@ -2484,10 +2484,14 @@ erwiesen. In Zukunft kann noch stärker versucht werden die Zeit welche für
 Umständen enorme Zeitersparnise. Trotzdem sollte genügend Reserve für
 allfällige Herausforderungen eingeplant werden. In der Entwicklung kann es
 immer wieder vorkommen das man an einem Bug oder Ähnlichem hängen bleibt ohne
-das man es
+das man es mit mehr Arbeitskräften-/ Zeit schneller beheben kann.
 
 Die regelmässigen Arbeitsessions haben sich als eine gute Variante des Arbeiten
 erwiesen und haben die Last der Diplomarbeit gut verteilt.
+
+Für die Planung der Arbeiten haben sie die User Cases und Aktivitätsdiagramme
+als eine grosse Hilfe erwiesen. Auch um den roten Faden während der Entwicklung
+zu behalten waren sie sehr hilfreich.
 
 *** TODO Zeitaufwand
 
