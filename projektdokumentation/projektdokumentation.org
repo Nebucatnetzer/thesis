@@ -395,8 +395,8 @@ bereits vorher abgefangen werden.
 Die SWOT-Analyse ist eine Methode, die Stärken, Schwächen, Chancen und
 Gefahren zu erkennen, indem eine 4-Felder-Matrix ausgefüllt wird.
 
-Wichtig vor dem Ausfüllen der SWOT-Analyse ist es, ein klares Ziel zu
-haben. Die ausgefüllte SWOT-Analyse für dieses Projekt ist in der
+Grundlage einer guten SWOT Analyse ist eine klare Zieldefinition und
+Fragestellung.. Die ausgefüllte SWOT-Analyse für dieses Projekt ist in der
 Abbildung:([[fig:swot]]) zu sehen.
 
 #+caption: SWOT Analyse des Projektes
