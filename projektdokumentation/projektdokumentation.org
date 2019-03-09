@@ -281,14 +281,15 @@ Diese Dokumentation wurde in Org-mode footcite:orgmode, einer Erweiterung für
 den Text Editor Emacs, geschrieben. Die Syntax von Org-mode erinnert an
 Markdown. Org-mode bietet einem eine Vielzahl an Hilfen inklusive dem Erstellen
 von Tabellen und Spreadsheet Funktionen. Für die finale Version des Dokuments
-kann Org-mode die ursprünglich Textdatei über LaTeX in ein PDF exportieren.
+kann Org-mode die ursprünglich Textdatei über LaTeX in eine PDF Datei
+exportieren.
 
 LaTeX footcite:latex ist eine Software, welche einem die Benutzung des
 Textsatzsystems TeXs vereinfacht. LaTeX wurde gegenüber einem "What You See Is
 What You Get" (z.Bsp. MS. Word) Editor gewählt, weil es einem mit seiner Markup
 Sprache erlaubt das Dokument in Text Dateien zu erstellen, gerade für
 Programmiere ist dies eine sehr interessante Lösung. Dadurch, dass LaTeX auch
-nur aus reinen Textdateien besteht, kann man die Dokumente auch ohne weiteres
+nur aus reinen Textdateien besteht, können die Dokumente auch ohne weiteres
 in die Versionskontrollsoftware einchecken und die Entwicklung im Log
 zurückverfolgen. LaTeX ist gls:libre unter der LaTeX Project Public
 License.
@@ -319,17 +320,16 @@ Arbeit signifikant vorwärts gehen würde. Auch Schultage wurde nicht, als
 Arbeitstage gerechnet da man meist nicht mehr für weitere Tätigkeiten gross
 motiviert ist.
 
-Als zusätzliche Massnahme um die Arbeitslast zu verteilen wurde vom 14. Januar
-bis zum 11. März jeder Montag auf der Arbeitsstelle als frei eingegeben.
-Dadurch steht, während des Projektes etwas mehr Zeit zur Verfügung als sonst mit
-einer 100 Prozent Arbeitsstelle möglich wäre.
+Um die Arbeitslast zu verteilen wurde vom 14. Januar bis zum 11. März jeder
+Montag auf der Arbeitsstelle als frei eingegeben. Dadurch steht, während des
+Projektes etwas mehr Zeit zur Verfügung als sonst mit einer 100 Prozent
+Arbeitsstelle möglich wäre.
 
 ** Controlling
 
-Das Controlling wird verwendet, um zu kontrollieren, dass die eigentliche
-Planung mit dem effektiv geleisteten Aufwand respektive den effektiv
-verwendeten Ressourcen übereinstimmt. Somit können für zukünftige Projekte
-Lehren gezogen werden.
+Mit dem Controlling wird die Planung mit den effektiv verwendeten Ressourcen
+verglichen und ausgewertet. Somit können für zukünftige Projekte Lehren gezogen
+werden.
 
 *** Zeitaufwand
 
