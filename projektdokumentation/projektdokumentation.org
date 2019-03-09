@@ -527,7 +527,7 @@ Arbeit reduzieren kann.
 #+LATEX:\newpage
 ** Anforderungskatalog
 
-Der Anforderungskatalog entspricht 1 zu 1 den Zielen, welche in der Tabelle
+Der Anforderungskatalog entspricht 1:1 den Zielen, welche in der Tabelle
 [[tab:projektziele]] definiert wurden. Im Zeitplan wurde der Fokus hauptsächlich
 auf die Muss-Ziele gelegt. Ein paar der Kann-Ziele sind im Konzept jedoch auch
 abgebildet.
@@ -2504,7 +2504,7 @@ zurückzuführen.
 *** Ressourcen
 
 Die im Projekt eingesetzten Ressourcen entsprechen den in der
-Tabelle:([[tab:ressources]]) geplanten eins zu eins.
+Tabelle:([[tab:ressources]]) geplanten 1:1.
 
 *** Kosten
 
