@@ -114,11 +114,12 @@ auszuweiten.
 
 Im Projektantrag wurden vorgängig folgende Ziele definiert und entsprechend
 gewichtet. Die Gewichtung wurde dabei so vorgenommen, dass Ziele mit einer
-Muss-Gewichtung den Minimalanforderungen der Software entsprechen. Die weiteren
-Ziele wurden dann mit Ziffern von 5 bis 1 gewichtet. Eine 5 bedeutet dabei
-dass, das Ziel in naher Zukunft sehr nützlich/wichtig für die Software wäre
-ist. Eine tiefe Zahl sollte dabei, wenn möglich, auch einmal in die Software
-integriert werden und ist nicht unwichtig.
+Muss-Gewichtung den Minimalanforderungen der zu entwickelnden Software
+entsprechen. Die weiteren Ziele wurden von 5 bis 1 gewichtet. Die Bewertung 5
+bedeutet, das Umsetzung sehr nützlich und oder wichtig für die Software ist und
+daher in naher Zukunft zu implementieren ist. Ein Ziel mit einer tiefen
+Bewertung sollte, wenn möglich, auch einmal in die Software integriert werden
+und ist nicht unwichtig.
 
 #+CAPTION: Projektziele
 #+ATTR_LATEX: :environment longtable :align |p{1cm}|p{9cm}|p{1.5cm}|p{2cm}|
