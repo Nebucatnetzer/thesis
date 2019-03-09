@@ -1431,9 +1431,9 @@ weiteren Verlauf der Arbeit nun Borg-Qt genannt
 ** Testing
 
 Die Anwendung wird während der Realisierung soweit als möglich mit
-automatischen glspl:unittest und Funktionstests überprüft. Dies hauptsächlich um die
-Erfahrung in diesem Bereich zu erweitern und um ein gutes Fundament für die
-Zukunft des Projektes zu bauen.
+automatischen glspl:unittest und glspl:funktionstest überprüft. Dies
+hauptsächlich um die Erfahrung in diesem Bereich zu erweitern und um ein gutes
+Fundament für die Zukunft des Projektes zu bauen.
 
 Aufgrund der Unerfahrenheit im Bereich des automatisierten Testings wurden noch
 die Testfälle in der Tabelle:([[tab:testcases]]), erstellt. Diese werden final von
