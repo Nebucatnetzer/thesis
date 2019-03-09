@@ -13,9 +13,6 @@
 
 * Über dieses Dokument
 
-Im nachfolgenden Abschnitt finden Sie allgemeine Informationen zu
-diesem Dokument.
-
 ** Beschreibung
 
 Diese Arbeit hat zum Ziel, die Planung und Erstellung einer grafischen
@@ -224,9 +221,6 @@ Somit macht das iterative Vorgehen der Wasserfall-Methode für dieses Projekt am
 meisten Sinn.
 
 ** Konfigurationsmanagement
-
-In der nachfolgenden Sektion wird definiert wie die Software und Dokumentation
-versioniert wird und welche allgemeinen Werkzeuge eingesetzt werden.
 
 *** Versionskontrolle
 
