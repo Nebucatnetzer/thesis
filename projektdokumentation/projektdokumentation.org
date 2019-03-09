@@ -149,7 +149,7 @@ integriert werden und ist nicht unwichtig.
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                11. | Die Archivliste wird nach einer Aktion automatisch aktualisiert.                                                                                             | x                              |                                                                |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
-|                                12. | Der User kann sein Repository auf einem über SSH erreichbaren Server ablegen.                                                                                |                                |                                                              5 |
+|                                12. | Der User kann sein Repository auf einem über gls:ssh erreichbaren Server ablegen.                                                                                |                                |                                                              5 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                13. | Der User kann den Namen eines Archivs selbst bestimmen.                                                                                                      |                                |                                                              5 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
@@ -1459,7 +1459,7 @@ sein, in den Testfällen "Lokales Repository", genannt und das Passwort ~foo~.
 Im Makefile des Repository wird dieses Setup definiert. Somit kann man als
 Entwickler nur ~make init~ ausführen und hat eine funktionsfähige Testumgebung.
 
-Um Backups über SSH testen zu können wird eine virtuelle Maschine mit Ubuntu
+Um Backups über gls:ssh testen zu können wird eine virtuelle Maschine mit Ubuntu
 18.04 verwendet. Die Konfiguration der virtuellen Maschine sieht dabei wie
 folgt aus:
 - 2 CPU Kerne
@@ -1468,7 +1468,7 @@ folgt aus:
 - Ein User ~borg~ mit Passwort ~borg~
 - gls:borg Repository unter ~/home/borg/backup/diplom~ mit Passwort ~foo~, in
   den Testfällen "Server Repository" genannt
-- Der SSH Key des Entwicklers wird in den User ~borg~ importiert. Dies
+- Der gls:ssh Key des Entwicklers wird in den User ~borg~ importiert. Dies
   ermöglicht Passwort freie Logins.
 
 Die Testfälle werden während der Entwicklung kontinuierlich durchgeführt. Am
@@ -1675,7 +1675,7 @@ ist.
 
 Bevor gls:borg vom Projektleiter als Backup Software eingesetzt wurde, nutzte
 er die Software "Back in Time"footcite:backintime. Die Software setzt auf Rsync
-zum Kopieren der Dateien. Dies erlaubt auch schnelle Backups über SSH zu
+zum Kopieren der Dateien. Dies erlaubt auch schnelle Backups über gls:ssh zu
 machen. "Back in Time" hat allerdings das Problem, dass es keine gls:dedup
 beherrscht.
 
