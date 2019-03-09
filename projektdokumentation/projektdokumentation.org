@@ -243,6 +243,7 @@ nach diesem Schema aufgebaut, MAJOR.MINOR.PATCH. Bei Änderungen wir die:
 2. MINOR Version erhöht, wenn man Funktionalität hinzufügt, die
    abwärtskompatibel ist.
 3. PATCH Version erhöht, wenn man abwärtskompatibel Bug-Fixes hinzufügt.
+Eine Versionsnummer würde dann so aussehen Version 1.2.3.
 
 Auf jeden Fall sollte, wenn möglich immer nur lauffähiger Code im Master Branch
 eingecheckt sein damit der Master Branch immer eine funktionierende Software
