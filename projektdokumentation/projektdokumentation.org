@@ -26,7 +26,7 @@ zur Diplomarbeit von Andreas Zweili.
 
 ** Aufbau
 
-Alle Inhalte sind in der Regel chronologisch sortiert, vom ältesten zum jüngsten
+Inhalte sind in der Regel chronologisch sortiert, vom ältesten zum jüngsten
 Ereignis, und nach Kapiteln getrennt. An gewissen Stellen kann die
 chronologische Reihenfolge allenfalls nicht gewährleistet werden.
 
