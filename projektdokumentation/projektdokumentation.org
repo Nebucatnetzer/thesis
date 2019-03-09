@@ -1239,7 +1239,7 @@ verhalten und "anfühlen" soll.
 
 Die Rechte an Qt hält die Firma "The Qt Company". Das Framework Qt wird jedoch
 offen entwickelt und die Community hat ein Mitspracherecht. Die Linux
-Desktopumgebung KDE nutzt das Qt Framework intensiv. Qt ist gls:libre und der
+gls:desktopumgebung KDE nutzt das Qt Framework intensiv. Qt ist gls:libre und der
 gls:gpl v3 footcite:qtlicense oder mit einer kostenpflichtigen proprietären
 Lizenz erhältlich, falls die gls:gpl nicht genutzt werden kann.
 
