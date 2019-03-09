@@ -278,10 +278,10 @@ und Emails schreiben ist alles möglich.
 *** Dokumentation
 
 Diese Dokumentation wurde in Org-mode footcite:orgmode, einer Erweiterung für
-den Text Editor Emacs, geschrieben. Die Syntax erinnert an Markdown und
-Org-mode bietet einem eine Vielzahl an Hilfen dafür inklusive dem Erstellen von
-Tabellen und Spreadsheet Funktionen. Für finale Version des Dokuments kann
-Org-mode die ursprünglich Textdatei über LaTeX in ein PDF exportieren.
+den Text Editor Emacs, geschrieben. Die Syntax von Org-mode erinnert an
+Markdown. Org-mode bietet einem eine Vielzahl an Hilfen inklusive dem Erstellen
+von Tabellen und Spreadsheet Funktionen. Für die finale Version des Dokuments
+kann Org-mode die ursprünglich Textdatei über LaTeX in ein PDF exportieren.
 
 LaTeX footcite:latex ist eine Software, welche einem die Benutzung des
 Textsatzsystems TeXs vereinfacht. LaTeX wurde gegenüber einem "What You See Is
