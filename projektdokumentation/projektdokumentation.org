@@ -419,12 +419,12 @@ Abbildung:([[fig:umweltgrafik]]) grafisch dargestellt.
 
 Da das Projekt so ausgelegt ist das der Projektleiter es in Eigenarbeit
 verwirklichen kann ist der Einfluss der Stakeholder während der Umsetzung sehr
-gering. Die User werden bei der Entwicklung mittels einer "Usability" Studie
-miteinbezogen und die gls:borg Community wird mit regelmässigen Posts auf dem
-offiziellen Github Repository auf dem Laufenden gehalten.
-Nach Ende der Diplomarbeit soll das Projekt für interessierte Entwickler jedoch
-offen sein. Der Quellcode wird bereits während der Arbeit öffentlich zur
-Verfügung gestellt.
+gering. Die User werden bei der Entwicklung mittels einer
+Benutzerfreundlichkeitsstudie miteinbezogen und die gls:borg Community wird mit
+regelmässigen Posts auf dem offiziellen Github Repository auf dem Laufenden
+gehalten. Nach Ende der Diplomarbeit soll das Projekt für interessierte
+Entwickler jedoch offen sein. Der Quellcode wird bereits während der Arbeit
+öffentlich zur Verfügung gestellt.
 
 #+CAPTION: Stakeholder Diagramm
 #+ATTR_LATEX: :width .9\textwidth
