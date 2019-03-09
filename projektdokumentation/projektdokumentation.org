@@ -1431,7 +1431,7 @@ weiteren Verlauf der Arbeit nun Borg-Qt genannt
 ** Testing
 
 Die Anwendung wird während der Realisierung soweit als möglich mit
-automatischen Unittests und Funktionstests überprüft. Dies hauptsächlich um die
+automatischen glspl:unittest und Funktionstests überprüft. Dies hauptsächlich um die
 Erfahrung in diesem Bereich zu erweitern und um ein gutes Fundament für die
 Zukunft des Projektes zu bauen.
 
@@ -2547,20 +2547,20 @@ bewährt. Die Entwicklung ging schnell und unkompliziert von der Hand. Python
 wurde als eine sehr flexible Sprache wargenommen die einem bei der Entwicklung
 aus dem Weg geht.
 
-Die eingesetzten Unittests waren hilfreiche Werkzeuge bei der Entwicklung.
+Die eingesetzten glspl:unittest waren hilfreiche Werkzeuge bei der Entwicklung.
 Gegen Ende der Entwicklung wurden sie jedoch weniger eingesetzt da die
 Entwicklung davon doch etwas Zeit beansprucht und auch ein gewisses Mass an
-Erfahrung. Wenn man zuerst noch Recherchieren muss wie man den Unittest
+Erfahrung. Wenn man zuerst noch Recherchieren muss wie man den gls:unittest
 schreibt verliert man wertvolle Zeit die man während einer Diplomarbeit nicht
 zur Verfügung hat.
 
 Diejenigen Tests die jedoch geschrieben wurden haben sich als sehr hilfreich
 erwiesen einem ein Art Sicherheitsnetz zu bieten in dem sie aufgezeigt haben
 das nach einer grösseren Änderung immer noch alles so funktionert wie es
-sollte. Es ist schade das Unittests an der IBZ nicht gelehrt wurden. Sie
+sollte. Es ist schade das glspl:unittest an der IBZ nicht gelehrt wurden. Sie
 scheinen definitiv etwas zu sein was jeder Programmier beherschen sollte und
 die Grundlagen für jedes Projekt, das über ein paar Zeilen hinausgeht, sein
-sollten. Unittests werden mit Sicherheit eines der Hauptthemen zum lernen in
+sollten. glspl:unittest werden mit Sicherheit eines der Hauptthemen zum lernen in
 den nächsten paar Monaten sein.
 
 ** Weiterverwendung von Borg-Qt
@@ -2742,7 +2742,7 @@ um seine sowie teilweise auch die Daten von Bekannten zu sichern.
 |-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                    14.-20.01.2019 | Backend "Read Config" Funktion schreiben, Frontend "Read Config"  Funktion beginnen                                                                                                                                                  | "Frontend Read Config", "Backend Write Config", "Frontend Write Config", Funktion bereits abgeschlossen.                                              | Soweit sehr gut im Zeitplan. Die Arbeitssessions mit den Kollegen helfen. Seltsam das Qt keine Methode list.items() kennt.                                                          |
 |-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                    21.-27.01.2019 | "Backend Backup" Funktion, "Frontend Backup" Funktion beginnen, Automatische Backups recherchieren                                                                                                                                   | keine Abweichung                                                                                                                                      | Erkältung drückt etwas auf die Performance. Unittest sind nocht nicht perfekt aber sind eine grosse Hilfe.                                                                          |
+|                    21.-27.01.2019 | "Backend Backup" Funktion, "Frontend Backup" Funktion beginnen, Automatische Backups recherchieren                                                                                                                                   | keine Abweichung                                                                                                                                      | Erkältung drückt etwas auf die Performance. gls:unittest sind nocht nicht perfekt aber sind eine grosse Hilfe.                                                                          |
 |-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                    28.-03.02.2019 | "Frontend Backup" Funktion fertigstellen, "Backend und Frontend Restore" Funktion                                                                                                                                                    | Geplantes erreicht sowie "Mounting" und "Delete" Funktion sowohl im Backend wie auch im Frontend bereits umgesetzt.                                   | Da die Funktionen immer von gls:borg ausgeführt werden konnte sehr viel Code von den "Backup" und "Restore" Funktionen übernommen werden was die Entwicklung sehr beschleunigt hat. |
 |-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
