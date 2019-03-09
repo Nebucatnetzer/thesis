@@ -230,10 +230,10 @@ meisten Sinn.
 
 Die komplette Dokumentation, der Quellcode der Applikation sowie jegliche
 zusätzlichen Dokumente wie etwa die Zeitplanung werden mittels der Software gls:git
-versioniert. Thematisch zusammengehörende Änderungen werden in einem Commit
+versioniert. Thematisch zusammengehörende Änderungen werden in einem gls:commit
 zusammengefasst. Somit ist jederzeit nachvollziehbar was wann geändert hat. Ein
-Commit sollte dabei gemäss dem Artikel von Chris Beams "How to write a Git
-Commit Message" footcite:commit und in englischer Sprache geschrieben sein.
+gls:commit sollte dabei gemäss dem Artikel von Chris Beams "How to write a Git
+gls:commit Message" footcite:commit und in englischer Sprache geschrieben sein.
 
 Versionsnummern sind für die Applikation zum jetzigen Zeitpunkt noch nicht
 vorgesehen. Sollten sie zukünftig einmal verwendet werden soll eine semantische
@@ -256,7 +256,7 @@ Gründen ausgewählt:
 - Ist der de facto Standard bei Versionskontrollsoftware
 - Läuft auf allen gängigen Betriebssystemen
 - Es gäbe gratis Services, die man nutzen könnte (Github, Gitlab)
-- Man kann offline arbeiten und Commits erstellen
+- Man kann offline arbeiten und glspl:commit erstellen
 - Der Autor hat bereits einen eigenen gls:git Server zur Verfügung
 - Der Autor ist bereits mit gls:git aus vorhergehenden Projekten vertraut,
   dadurch muss man keine Ressourcen aufwenden eine neue Software zu lernen.
