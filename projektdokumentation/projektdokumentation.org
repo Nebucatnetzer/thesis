@@ -349,10 +349,11 @@ geplanten Ressourcen den effektiv verwendeten gegenübergestellt.
 *** Kosten
 
 Werden die internen Lohnkosten des Projektleiters auf ca. 60 CHF pro Stunde
-geschätzt, ergeben sich gemäss der Berechnung in der Tabelle:([[tab:kosten]]),
-theoretische Kosten von 14'880 CHF für die Umsetzung dieser Arbeit. Die Kosten
-für die Entwicklung werden im Projekt jedoch nicht berücksichtigt, somit sind
-die Kosten nur ein rein theoretischer Faktor.
+geschätzt (dies entspricht in etwa dem doppelten reelen Stundenlohn des
+Projektleiters), ergeben sich gemäss der Berechnung in der
+Tabelle:([[tab:kosten]]), theoretische Kosten von 19080 CHF für die Umsetzung
+dieser Arbeit. Die Kosten für die Entwicklung werden im Projekt jedoch nicht
+berücksichtigt, somit sind die Kosten nur ein rein theoretischer Faktor.
 
 ** Projektrisiken
 
