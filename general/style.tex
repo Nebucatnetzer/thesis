@@ -143,6 +143,14 @@
 \renewcommand{\lstlistoflistings}{\begingroup
 \tocfile{\lstlistlistingname}{lol}
 \endgroup}
+
+\renewcommand*{\glslinkcheckfirsthyperhook}{%
+  \ifglsused{\glslabel}%
+  {%
+    \setkeys{glslink}{hyper=false}%
+  }%
+  {}%
+}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "main"
