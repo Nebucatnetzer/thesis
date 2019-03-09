@@ -112,7 +112,7 @@ auszuweiten.
 
 *** Ziele inklusive Gewichtung
 
-Im Projektantrag wurden vor gängig folgende Ziele definiert und entsprechend
+Im Projektantrag wurden vorgängig folgende Ziele definiert und entsprechend
 gewichtet. Die Gewichtung wurde dabei so vorgenommen, dass Ziele mit einer
 Muss-Gewichtung den Minimalanforderungen der Software entsprechen. Die weiteren
 Ziele wurden dann mit Ziffern von 5 bis 1 gewichtet. Eine 5 bedeutet dabei
