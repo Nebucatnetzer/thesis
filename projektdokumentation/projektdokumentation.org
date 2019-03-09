@@ -1363,9 +1363,9 @@ Bei der Installation muss Node.js und der Paket Manager von Node.js, NPM,
 vorhanden sein. Zum Programmieren selber braucht es keine speziellen Tools. Ein
 Editor und ein Webbrowser sollten ausreichend sein.
 
-Electron Applikationen bestehen hauptsächlich aus HTML, CSS und JavaScript
+Electron Applikationen bestehen hauptsächlich aus gls:html, CSS und JavaScript
 Code. Wenn man sich die komplette Applikation in Node.js programmieren möchte
-kommt dann noch eine zusätzliche Sprache hinzu. HTML ist ähnlich mühsam zu
+kommt dann noch eine zusätzliche Sprache hinzu. gls:html ist ähnlich mühsam zu
 lesen wie gls:xml. CSS und JavaScript sind relativ angenehm zu lesen, wobei es für
 beide keine offiziellen Styleguides gibt. Was bei Webanwendungen jedoch immer
 das schwierigste ist, ist der Wechsel zwischen verschiedenen Sprachen und
