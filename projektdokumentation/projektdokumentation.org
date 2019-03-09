@@ -231,7 +231,7 @@ versioniert wird und welche allgemeinen Werkzeuge eingesetzt werden.
 *** Versionskontrolle
 
 Die komplette Dokumentation, der Quellcode der Applikation sowie jegliche
-zusätzlichen Dokumente wie etwa die Zeitplanung werden mittels der Software Git
+zusätzlichen Dokumente wie etwa die Zeitplanung werden mittels der Software gls:git
 versioniert. Thematisch zusammengehörende Änderungen werden in einem Commit
 zusammengefasst. Somit ist jederzeit nachvollziehbar was wann geändert hat. Ein
 Commit sollte dabei gemäss dem Artikel von Chris Beams "How to write a Git
@@ -252,19 +252,19 @@ repräsentiert. Dies gilt auch für das Repository der Dokumentation. Der Master
 Branch der Dokumentation sollte maximal mit zwei Befehlen ~make clean~ und
 ~make~ "kompilierbar" sein.
 
-Als Software für die Versionskontrolle wurde Git footcite:git aus folgenden
+Als Software für die Versionskontrolle wurde gls:git footcite:git aus folgenden
 Gründen ausgewählt:
 
 - Ist der de facto Standard bei Versionskontrollsoftware
 - Läuft auf allen gängigen Betriebssystemen
 - Es gäbe gratis Services, die man nutzen könnte (Github, Gitlab)
 - Man kann offline arbeiten und Commits erstellen
-- Der Autor hat bereits einen eigenen Git Server zur Verfügung
-- Der Autor ist bereits mit Git aus vorhergehenden Projekten vertraut,
+- Der Autor hat bereits einen eigenen gls:git Server zur Verfügung
+- Der Autor ist bereits mit gls:git aus vorhergehenden Projekten vertraut,
   dadurch muss man keine Ressourcen aufwenden eine neue Software zu lernen.
-  Zusätzlich hat sich Git in den vorhergehenden Projekten als robuste
+  Zusätzlich hat sich gls:git in den vorhergehenden Projekten als robuste
   und schnelle Software erwiesen.
-- Git ist gls:libre unter der gls:gpl v2.
+- gls:git ist gls:libre unter der gls:gpl v2.
 
 *** Editor
 
