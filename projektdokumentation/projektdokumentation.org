@@ -1721,7 +1721,7 @@ jeweils das passende Icon basierend auf dem System anzeigen. Somit wären die
 Icons passend zum jeweiligen Betriebssystem. Allerdings gab es für die Aktionen
 keine passenden Icons in der Spezifikation. Deshalb wurden schlussendlich das
 "Feather" Icon Theme Set footcite:feathericons ausgewählt. Dabei handelt es
-sich um ein freies Icon Theme unter der MIT Lizenz, welches die Icons als SVG
+sich um ein freies Icon Theme unter der MIT Lizenz, welches die Icons als gls:svg
 Dateien bereitstellt. Dadurch können die Icons frei skalieren und
 funktionieren auch auf Geräten mit einer hohen Auflösung.
 
