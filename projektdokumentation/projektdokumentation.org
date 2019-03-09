@@ -785,7 +785,7 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 |                     | <30>                                                                        |
 | *Identifier + Name* | 4.1 Backup mounten                                                          |
 |---------------------+-----------------------------------------------------------------------------|
-| *Description*       | Ein Backup wird als FUSE gemountet.                                         |
+| *Description*       | Ein Backup wird als gls:fuse gemountet.                                         |
 |---------------------+-----------------------------------------------------------------------------|
 | *Actors*            | Borg GUI, gls:borg                                                          |
 |---------------------+-----------------------------------------------------------------------------|
@@ -801,12 +801,12 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 |---------------------+-----------------------------------------------------------------------------|
 | *Normal Flow*       | 1. Borg GUI sammelt die Backup ID in Use Case 4.0.                          |
 |                     | 2. Borg GUI übergibt die Backup ID an gls:borg zusammen mit einem Zielpfad. |
-|                     | 3. gls:borg hängt das Backup als FUSE Laufwerk am Zielpfad ein.             |
+|                     | 3. gls:borg hängt das Backup als gls:fuse Laufwerk am Zielpfad ein.             |
 |                     | 4. gls:borg meldet Erfolg an Borg GUI.                                      |
 |---------------------+-----------------------------------------------------------------------------|
 | *Alternative Flow*  | 1. Borg GUI sammelt die Backup ID in Use Case 4.0.                          |
 |                     | 2. Borg GUI übergibt die Backup ID an gls:borg zusammen mit einem Zielpfad. |
-|                     | 3. gls:borg hängt das Backup als FUSE Laufwerk am Zielpfad ein.             |
+|                     | 3. gls:borg hängt das Backup als gls:fuse Laufwerk am Zielpfad ein.             |
 |                     | 4. gls:borg meldet einen Fehler an Borg GUI.                                |
 |---------------------+-----------------------------------------------------------------------------|
 | *Notes*             | -                                                                           |
