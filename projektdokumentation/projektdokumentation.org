@@ -1247,11 +1247,11 @@ Vorkenntnisse zu Qt sind nur sehr wenig vorhanden. Mehr als ein paar Tests
 wurden damit noch nicht gemacht.
 
 Eine Qt Oberfläche kann direkt in der jeweiligen Sprache des Backends
-geschrieben werden oder Mittels des Qt Designers als XML Datei gespeichert und
+geschrieben werden oder Mittels des Qt Designers als gls:xml Datei gespeichert und
 dann in die eigentliche Applikation importiert werden. Somit ist keine
 spezielle Software nötig.
 
-XML ist nicht übermässig gut lesbar, allerdings kann man Qt in der verwendeten
+gls:xml ist nicht übermässig gut lesbar, allerdings kann man Qt in der verwendeten
 Sprache programmiert werden somit ist es hauptsächlich von der Sprache im
 Backend abhängig. Die Dokumentation ist in C++ geschrieben was für einen
 Entwickler ohne C++ Kenntnisse die Software etwas unzugänglich macht.
@@ -1311,7 +1311,7 @@ Qt hat man jedoch die Möglichkeit das gls:gui mit einem gls:gui Designer
 grafisch zu erstellen.
 
 Wie auch Qt kann man Gtk entweder direkt in der Backend Sprache programmieren
-oder aus dem gls:gui Designer dann als XML exportieren. Der Code in der
+oder aus dem gls:gui Designer dann als gls:xml exportieren. Der Code in der
 Dokumentation ist in C geschrieben, welches auch nicht die zugänglichste
 Sprache ist.
 
@@ -1366,7 +1366,7 @@ Editor und ein Webbrowser sollten ausreichend sein.
 Electron Applikationen bestehen hauptsächlich aus HTML, CSS und JavaScript
 Code. Wenn man sich die komplette Applikation in Node.js programmieren möchte
 kommt dann noch eine zusätzliche Sprache hinzu. HTML ist ähnlich mühsam zu
-lesen wie XML. CSS und JavaScript sind relativ angenehm zu lesen, wobei es für
+lesen wie gls:xml. CSS und JavaScript sind relativ angenehm zu lesen, wobei es für
 beide keine offiziellen Styleguides gibt. Was bei Webanwendungen jedoch immer
 das schwierigste ist, ist der Wechsel zwischen verschiedenen Sprachen und
 Konzepten. Dieses Problem hat man bei Electron leider auch.
