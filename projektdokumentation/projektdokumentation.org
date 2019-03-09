@@ -77,8 +77,9 @@ denn sie zu bedienen.
 gls:borg bietet Entwicklern eine gls:json, gls:api, mit welcher sie, von gls:borg
 ausgegebenen Dateien einfach weiterverarbeiten können.
 
-gls:borg steht unter einer gls:bsd footcite:bsd Lizenz zur Verfügung und ist somit
-gls:libre.
+gls:borg steht unter einer gls:bsd footcite:bsd Lizenz zur Verfügung und ist
+somit gemäss den Richtlinien der Free Software Foundation
+gls:libre footcite:fsflicenses.
 
 Das Projekt muss dabei vom Studenten in Eigenarbeit und einer Zeit von 250
 Stunden bis zum 18. März 2019 erarbeitet werden.
