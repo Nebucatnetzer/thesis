@@ -256,8 +256,8 @@ Gründen ausgewählt:
 
 - Ist der de facto Standard bei Versionskontrollsoftware
 - Läuft auf allen gängigen Betriebssystemen
-- Es gäbe gratis Services, die man nutzen könnte (Github, Gitlab)
-- Man kann offline arbeiten und glspl:commit erstellen
+- Es gibt gratis Services, die man nutzen könnte (Github, Gitlab)
+- Ermöglicht es offline zu arbeiten und glspl:commit erstellen
 - Der Autor hat bereits einen eigenen gls:git Server zur Verfügung
 - Der Autor ist bereits mit gls:git aus vorhergehenden Projekten vertraut,
   dadurch muss man keine Ressourcen aufwenden eine neue Software zu lernen.
