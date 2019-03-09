@@ -2381,9 +2381,9 @@ der Tabelle:([[tab:testcases]]) erfasst.
 ** Zielbewertung
 
 In der nachfolgenden Tabelle:([[tab:bewertete_projektziele]]) wurden die Ziele nach
-"Erfüllt", "Nicht erfüllt" oder "Teilweise Erfüllt" bewertet. Die Ziel-Nr.
+"Erfüllt", "Nicht erfüllt" oder "Teilweise erfüllt" bewertet. Die Ziel-Nr.
 entspricht dabei der Ziel-Nr. in der Tabelle:([[tab:projektziele]]). In der Spalte
-Bemerkung wird noch kurz ausgeführt in welcher Form das Ziel bewiesen wurde.
+Bemerkung wird noch kurz ausgeführt, in welcher Form das Ziel bewiesen wurde.
 
 #+CAPTION: Bewertete Projektziele
 #+ATTR_LATEX: :environment longtable :align |p{1cm}|p{1.5cm}|p{1.5cm}|p{9cm}|
@@ -2410,7 +2410,7 @@ Bemerkung wird noch kurz ausgeführt in welcher Form das Ziel bewiesen wurde.
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                 9. | x                              | Erfüllt                             | Wurde mit TC-04 bewiesen.                                                                                                                                                 |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                10. | x                              | Erfüllt                             | Die Konfigurationsdatei kommt standardmässig mit einer Liste an Excludes welche für ein Linux Desktop System sinnvoll sind. Wurde mit TC-15 bewiesen.                     |
+|                                10. | x                              | Erfüllt                             | Die Konfigurationsdatei kommt standardmässig mit einer Liste an Excludes, welche für ein Linux Desktop System sinnvoll sind. Wurde mit TC-15 bewiesen.                    |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                11. | x                              | Erfüllt                             | Wurde mit TC-04 und TC-08 bewiesen.                                                                                                                                       |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2418,9 +2418,9 @@ Bemerkung wird noch kurz ausgeführt in welcher Form das Ziel bewiesen wurde.
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                13. |                                | Erfüllt                             | Wurde mit TC-19 bewiesen.                                                                                                                                                 |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                14. |                                | Erfüllt                             | Wurde mit TC-02, TC-06, TC-09, TC-13 und  TC-17 bewiesen.                                                                                                                 |
+|                                14. |                                | Erfüllt                             | Wurde mit TC-02, TC-06, TC-09, TC-13 und TC-17 bewiesen.                                                                                                                 |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                15. |                                | Nicht erfüllt                       | Dies ist ein sehr komplexes Features und braucht genügend Zeit damit es richtig umgesetzt werden kann. Konnte deshalb nicht im Rahmen der Diplomarbeit realisiert werden. |
+|                                15. |                                | Nicht erfüllt                       | Dies ist ein sehr komplexes Feature und braucht genügend Zeit, damit es richtig umgesetzt werden kann. Konnte deshalb nicht im Rahmen der Diplomarbeit realisiert werden. |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                16. |                                | Erfüllt                             | Wurde mit TC-02, TC-05, TC-06, TC-09, TC-13 und TC-17 bewiesen. Die angezeigten Fehlermeldungen sind Meldungen von gls:borg welche 1:1 an den User durchgereicht werden.  |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2432,9 +2432,9 @@ Bemerkung wird noch kurz ausgeführt in welcher Form das Ziel bewiesen wurde.
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                20. |                                | Nicht erfüllt                       | Wurde noch nicht umgesetzt.                                                                                                                                               |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                21. |                                | Erfüllt                             | Ist in der Sektion [[Einstellungen][Einstellungen]] beschrieben. Zur Zeit wird jedoch nur ~$HOME~ verwendet.                                                                                 |
+|                                21. |                                | Erfüllt                             | Ist in der Sektion [[Einstellungen][Einstellungen]] beschrieben. Zurzeit wird jedoch nur ~$HOME~ verwendet.                                                                               |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                22. |                                | Nicht erfüllt                       | Zur Zeit werden noch alle Daten direkt aus dem gls:borg Repository gelesen.                                                                                               |
+|                                22. |                                | Nicht erfüllt                       | Zurzeit werden noch alle Daten direkt aus dem gls:borg Repository gelesen.                                                                                              |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                23. |                                | Nicht erfüllt                       | Wurde noch nicht umgesetzt.                                                                                                                                               |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2444,15 +2444,15 @@ Bemerkung wird noch kurz ausgeführt in welcher Form das Ziel bewiesen wurde.
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                26. |                                | Erfüllt                             | Wurde mit TC-19 - TC-21 bewiesen.                                                                                                                                         |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                27. |                                | Nicht erfüllt                       | Zur Zeit werden alle gemounteten Archive beim Schliessen der Anwendung wieder ausgehängt.                                                                                 |
+|                                27. |                                | Nicht erfüllt                       | Zurzeit werden alle gemounteten Archive beim Schliessen der Anwendung wieder ausgehängt.                                                                                |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                28. |                                | Erfüllt                             | Der Benutzer kann das Repository wechseln allerdings muss er hierzu die Anwendung neustarten. Ein fliegender Wechsel ist zur Zeit nicht unterstützt.                      |
+|                                28. |                                | Erfüllt                             | Der Benutzer kann das Repository wechseln, allerdings muss er hierzu die Anwendung neustarten. Ein fliegender Wechsel ist zur Zeit nicht unterstützt.                     |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                29. |                                | Teilweise erfüllt                   | Hat der Benutzer ein Archiv gemountet kann er darin mit einem Drittwerkzeug oder von Hand nach einer Datei suchen.                                                        |
+|                                29. |                                | Teilweise erfüllt                   | Hat der Benutzer ein Archiv gemountet kann, er darin mit einem Drittwerkzeug oder von Hand nach einer Datei suchen.                                                       |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                30. |                                | Nicht erfüllt                       | Zur Zeit gibt es keine Einstellungen zur "Retention Policy" in Borg-Qt.                                                                                                   |
+|                                30. |                                | Nicht erfüllt                       | Zurzeit gibt es keine Einstellungen zur "Retention Policy" in Borg-Qt.                                                                                                  |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                31. |                                | Nicht erfüllt                       | Zur Zeit sind nur die Features ~create~, ~delete~, ~mount~, ~list~, ~info~ und ~extract~ zu Teilen implementiert.                                                         |
+|                                31. |                                | Nicht erfüllt                       | Zurzeit sind nur die Features ~create~, ~delete~, ~mount~, ~list~, ~info~ und ~extract~ zu Teilen implementiert.                                                        |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                32. |                                | Nicht erfüllt                       | Wurde noch nicht umgesetzt.                                                                                                                                               |
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2462,7 +2462,7 @@ Bemerkung wird noch kurz ausgeführt in welcher Form das Ziel bewiesen wurde.
 
 Das Ist-Riskio in der Sektion [[Risiko-Analyse][Risiko-Analyse]] könnte wie prognostiziert
 erhehblich gesenkt werden. Entgegen der ursprünglichen Annahme konnten die
-automatischen Backups doch noch während der Diplmarbeit implementiert werden.
+automatischen Backups doch noch während der Diplomarbeit implementiert werden.
 Dadurch konnte auch das Risiko Nr. 5 (Der Benutzer vergisst Backups zu machen)
 erheblich gesenkt werden. Somit hat die neue Ist-Situation,
 Abbildung:([[fig:new-is-risk]]), eine bessere Risikobewertung als das geplante
@@ -2474,32 +2474,32 @@ Abbildung:([[fig:new-is-risk]]), eine bessere Risikobewertung als das geplante
 
 ** Projektmanagement
 
-Das zu Beginn erstellte Gantt Chart war sehr hilfreich um den Überblick über
+Das zu Beginn erstellte Gantt Chart war sehr hilfreich, um den Überblick über
 das Projekt zu behalten. Anhand davon konnte immer abgeschätzt werden wie das
 Projekt etwa im Zeitplan steht. Durch die Annahme das an arbeitsfreien Tagen
 nur 6 Stunden gearbeitet wird, konnte unter der Woche auch mal ein Abend
-ausgesetzt werden wenn am Wochenende zuvor einmal 8 Stunden gearbeitet wurde.
+ausgesetzt werden, wenn am Wochenende zuvor einmal 8 Stunden gearbeitet wurde.
 
-Die regelmässigen Arbeitsessions an jedem schulfreiem Samstag und an den freien
+Die regelmässigen Arbeitsessions an jedem schulfreien Samstag und an den freien
 Montagen haben sich als eine gute Variante des Arbeiten erwiesen und haben die
 Last der Diplomarbeit gut verteilt.
 
 Die konservativen Zeitschätzungen haben sich als korrekte Entscheidung
-erwiesen. In Zukunft kann noch stärker versucht werden die Zeit welche für
+erwiesen. In Zukunft kann noch stärker versucht werden die Zeit, welche für
 ähnliche Code Teile verwendet wird kürzer zu schätzen. Copy/Paste erlaubt unter
 Umständen enorme Zeitersparnise. Trotzdem sollte genügend Reserve für
 allfällige Herausforderungen eingeplant werden. In der Entwicklung kann es
 immer wieder vorkommen das man an einem Bug oder Ähnlichem hängen bleibt ohne
-das man es mit mehr Arbeitskräften-/ Zeit schneller beheben kann.
+das man es mit mehr Arbeitskräften oder Zeit schneller beheben kann.
 
-Für die Planung der Programmierarbeiten haben sie die User Cases und
+Für die Planung der Programmierarbeiten haben sie die Use Cases und
 Aktivitätsdiagramme als eine grosse Hilfe erwiesen. Besonders um den roten Faden
 während der Entwicklung zu behalten waren sie sehr hilfreich.
 
 *** Zeitaufwand
 
 Der Zeitaufwand ist wie in Tabelle:([[tab:zeitcontr]]) zu sehen, leicht tiefer als
-geplant. Dies ist vorallem auf die Zeitersparnise bei der Realisierung
+geplant. Dies ist vor allem auf die Zeitersparnisse bei der Realisierung
 zurückzuführen.
 
 *** Ressourcen
@@ -2509,7 +2509,7 @@ Tabelle:([[tab:ressources]]) geplanten eins zu eins.
 
 *** Kosten
 
-Da die geleisteten Stunden tiefer als geplant waren sind auch die geschätzten
+Da die geleisteten Stunden tiefer als geplant waren, sind auch die geschätzten
 Kosten tiefer. Wie in der Tabelle:([[tab:kosten]]) zu sehen würden sich die
 angenommenen, internen Kosten für die Arbeit auf ca. 17302.20 CHF belaufen.
 Dies stellt eine Einsparung von 1777.8 CHF dar.
@@ -2522,7 +2522,7 @@ Element wie der Code dazu aussieht. Es wurde auch klar, dass die Aufgaben in
 einer Studie richtig gestellt werden müssen. Ansonsten wissen die Probanden
 schon gar nicht erst was von ihnen gefordert wird.
 
-Auch sollte wenn möglich darauf geachtet werden das auf einem Betriebsystem
+Auch sollte, wenn möglich, darauf geachtet werden das auf einem Betriebssystem
 getestet mit welchem die Probanden bereits etwas Erfahrung haben. Zwei der
 Probanden waren ab dem Verhalten und Aussehen des Dateimanagers von Ubuntu
 18.04 etwas verwirrt. Sie hatten ihn zuvor weder gesehen geschweige den
@@ -2530,51 +2530,51 @@ genutzt. Alternativ könnte auch die Gruppe der Probanden so gewählt werden das
 sie mit dem Betriebssystem bereits vertraut sind.
 
 Eine Benutzerfreundlichkeitsstudie ist auf jeden Fall etwas, was man bei
-zukünftigen Software Projekten wieder machten sollte.
+zukünftigen Software Projekten, wieder machten sollte.
 
 ** Umsetzung
 
 Die Entwicklung mit Qt und Python ging sehr gut von der Hand. Die grafische
-Erstellung des gls:gui mit dem dem Qt Designer war sehr hilfreich und hat es
-ermöglicht mit den Elementen auch einfach mal zu spielen um zu sehen was passt
+Erstellung des gls:gui mit dem Qt Designer war sehr hilfreich und hat es
+ermöglicht mit den Elementen auch einfach mal zu spielen, um zu sehen was passt
 und was eher weniger geht. Qt selbst ist ein gutes und sehr umfangreiches
-Framework. Das die Dokumentation den Fokus hauptsächlich auf C++ Code hat
+Framework. Das die Dokumentation den Fokus hauptsächlich auf C++ Code hat,
 machte es einem zu Beginn etwas schwieriger als nötig, die gewünschte
 Information zu finden.
 
 Python als Programmiersprache hat sich in der Entwicklung als gute Entscheidung
 bewährt. Die Entwicklung ging schnell und unkompliziert von der Hand. Python
-wurde als eine sehr flexible Sprache wargenommen die einem bei der Entwicklung
+wurde, als eine sehr flexible Sprache wahrgenommen die einem bei der Entwicklung
 aus dem Weg geht.
 
 Die eingesetzten glspl:unittest waren hilfreiche Werkzeuge bei der Entwicklung.
 Gegen Ende der Entwicklung wurden sie jedoch weniger eingesetzt da die
 Entwicklung davon doch etwas Zeit beansprucht und auch ein gewisses Mass an
 Erfahrung. Wenn man zuerst noch Recherchieren muss wie man den gls:unittest
-schreibt verliert man wertvolle Zeit die man während einer Diplomarbeit nicht
+schreibt verliert man wertvolle Zeit die man, während einer Diplomarbeit nicht
 zur Verfügung hat.
 
-Diejenigen Tests die jedoch geschrieben wurden haben sich als sehr hilfreich
+Diejenigen Tests die jedoch geschrieben wurden haben sich, als sehr hilfreich
 erwiesen einem ein Art Sicherheitsnetz zu bieten in dem sie aufgezeigt haben
-das nach einer grösseren Änderung immer noch alles so funktionert wie es
+das nach einer grösseren Änderung immer noch alles so funktionert, wie es
 sollte. Es ist schade das glspl:unittest an der IBZ nicht gelehrt wurden. Sie
-scheinen definitiv etwas zu sein was jeder Programmier beherschen sollte und
+scheinen definitiv etwas zu sein was jeder Programmierer beherrschen sollte und
 die Grundlagen für jedes Projekt, das über ein paar Zeilen hinausgeht, sein
-sollten. glspl:unittest werden mit Sicherheit eines der Hauptthemen zum lernen in
+sollten. glspl:unittest werden mit Sicherheit eines der Hauptthemen zum Lernen in
 den nächsten paar Monaten sein.
 
 ** Weiterverwendung von Borg-Qt
 
-Borg-Qt wird als Freitzeitprojekt des Projektleiters weiter geführt. Ein paar
+Borg-Qt wird als Freizeitprojekt des Projektleiters weiter geführt. Ein paar
 der Kann-Ziele wären noch sehr nützlich wären sie in der Applikation
 integriert. Zudem sind ein paar davon interessante Aufgaben um die eigenen
 Fähigkeiten zu erweitern. Nach Abschluss der Diplomarbeit wird die Entwicklung
-der Anwendung dann auch für Externe geöffnet. Von Seiten der gls:borg Community
-kam zum Zeitplunkt der Arbeit noch kein spezifisches Feedback zurück. Die
-Hoffnung besteht, dass sich allenfalls noch ein, zwei Interessierte finden um
+der Anwendung dann auch für Externe geöffnet. Vonseiten der gls:borg Community
+kam zum Zeitpunkt der Arbeit noch kein spezifisches Feedback zurück. Die
+Hoffnung besteht, dass sich allenfalls noch ein, zwei Interessierte finden, um
 am Projekt mitzuarbeiten.
 
-Die Applikation wird aber auf jeden Fall vom Projektleiter produktiv eingesetzt
+Die Applikation wird aber auf jeden Fall vom Projektleiter produktiv eingesetzt,
 um seine sowie teilweise auch die Daten von Bekannten zu sichern.
 
 * Anhang
