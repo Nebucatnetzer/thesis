@@ -922,7 +922,7 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 
 #+LATEX:\newpage
 
-** Benötigte Funktionalität von gls:borg
+** Benötigte Funktionalität von Borg
 
 Damit nachvollziehbar ist welche Funktionen von gls:borg verwendet wurden um
 die Use Cases umsetzen zu können, werden diese hier in Beziehung zur
