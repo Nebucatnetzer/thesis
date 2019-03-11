@@ -2124,25 +2124,24 @@ werden bereits vorhandene Dateien überschrieben.
 
 ** Mount
 
-Die "Mount" Funktion ist sehr ähnlich wie die "Restore" Funktion. Sie prüft
-auch zuerst ob der Benutzer überhaupt ein Archiv angewählt hat und gibt, falls
-dies nicht der Fall ist eine entsprechende Fehlermeldung aus. Im Gegensatz zur
-"Restore" Funktion zeigt die "Mount" Funktion jedoch keinen Dialog zum
-Auswählen des Zielpfades. Die Funktion erstellt sich diesen selbst. Der
-Zielpfad ist dabei kombiniert aus dem ~/tmp~ Verzeichnis und dem Namen des
+Die "Mount" Funktion prüft zuerst ob der Benutzer ein Archiv angewählt hat und
+gibt, falls dies nicht der Fall ist, eine entsprechende Fehlermeldung aus. Im
+Gegensatz zur "Restore" Funktion zeigt die "Mount" Funktion jedoch keinen
+Dialog zum Auswählen des Zielpfades. Die Funktion erstellt sich diesen selbst.
+Der Zielpfad ist dabei kombiniert aus dem ~/tmp~ Verzeichnis und dem Namen des
 Archivs
 
 gls:borg mountet jedes Archiv nur mit Leserechten. Es ist relativ
 unwahrscheinlich, dass der Zielpfad in unbeschreibbarer Form bereits vor dem
-Ausführen der ~mount_backup~ Methode bereits vorhanden ist. Sollte dies jedoch
-der Fall sein kann davon ausgegangen werden das der Benutzer das Archiv bereits
-einmal gemountet hat. Genau dies wird in der Applikation auch so überprüft.
-Falls der Zielort schreibbar ist, wird das ausgewählte Archiv auf diesem Pfad
-gemountet. Anschliessend wird wie auch bei der Restore Funktion, der Pfad in
-einem Dateimanager geöffnet damit der Benutzer direkt mit den Dateien
-weiterarbeiten kann. Wurde erkannt dass, das Archiv bereits gemountet wurde,
-also der Pfad nicht schreibbar ist, öffnet die Applikation direkt den
-Dateimanager ohne zu versuchen das Archiv noch einmal zu mounten.
+Ausführen der ~mount_backup~ Methode bereits vorhanden ist. Ist dies der Fall
+kann davon ausgegangen werden das der Benutzer das Archiv bereits einmal
+gemountet hat. Genau dies wird in der Applikation auch so überprüft. Hat die
+Applikation Schreibrechte auf den Zielpfad, wird das ausgewählte Archiv auf
+diesem Pfad gemountet. Anschliessend wird der Pfad in einem Dateimanager
+geöffnet damit der Benutzer direkt mit den Dateien weiterarbeiten kann. Wurde
+erkannt dass, das Archiv bereits gemountet wurde, also der Pfad nicht
+schreibbar ist, öffnet die Applikation direkt den Dateimanager ohne zu
+versuchen das Archiv noch einmal zu mounten.
 
 Zusätzlich wird der Pfad jedes gemounteten Archivs in einer Liste gespeichert.
 Beim Beenden der Applikation iteriert die Applikation über jeden Pfad in der
