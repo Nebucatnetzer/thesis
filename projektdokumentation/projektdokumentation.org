@@ -2286,7 +2286,7 @@ WantedBy = timers.target
 
 Im Rahmen der durchgeführten [[Usability-Studie][Usability-Studie]] machten die User folgenden
 Feststellungen:
-- "Include" und "Exclude" Funktionen sind klar beschriftet.
+- "Include" und "Exclude" Funktionen sind unklar beschriftet.
 - Die Funktionen sind unklar.
 - Texte sind nicht einheitlich.
 
@@ -2309,11 +2309,11 @@ Abbildungen:([[fig:borgqt_settings_include_v2]]) und
 
 Um die Funktionen der Applikation zur erklären wurde ein Hilfe Fenster,
 Abbildung:([[fig:borgqt_help]]), eingebaut. Dieses wird dem Benutzer beim Start der
-Applikation angezeigt wird. Es gibt ihm einen kurzen Überblick welcher Button
-welche Aktion auslöst und welche Elemente, welche Information anzeigen.
-Optional kann der Benutzer entscheiden, dass er das Fenster beim nächsten Start
-nicht mehr angezeigt bekommen möchte. Über den Button "Help" kann das Fenster
-jederzeit unabhängig der Einstellungen wieder angezeigt werden.
+Applikation angezeigt. Es gibt ihm einen kurzen Überblick welcher Button welche
+Aktion auslöst und welche Elemente, welche Information anzeigen. Optional kann
+der Benutzer entscheiden, dass er das Fenster beim nächsten Start nicht mehr
+angezeigt bekommen möchte. Über den Button "Help" kann das Fenster jederzeit
+unabhängig der Einstellungen wieder angezeigt werden.
 
 #+caption: Screenshot des Borg-Qt Hilfe Fenster
 #+name: fig:borgqt_help
