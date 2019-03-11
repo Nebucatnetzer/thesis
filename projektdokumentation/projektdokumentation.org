@@ -1905,14 +1905,14 @@ und weiterzugeben zum anderen führte es zu dem unschönen Nebeneffekt dass, das
 gls:gui eingefroren ist. Eine Recherche ergab, dass Threads hier Abhilfe
 schaffen könnten.
 
-Python würde hierzu ein Modul, ~threading.Thread~ footcite:threading,
-mitliefern. Allerdings war es nicht möglich den Fortschrittsdialog und den
-Thread so zu verknüpfen das sich der Dialog schliesst, wenn das Backup
-durchgelaufen ist und der Thread wieder entfernt wird. Aus diesem Grund wurde
-dann ein erfolgreicher Test mit dem PyQt Modul ~QThread~ footcite:qthread
-gemacht. Mit diesem war es ohne weiteres möglich den Dialog zu schliessen,
-sobald das Backup fertig durchgelaufen war. Auch das Stoppen des Threads mit
-einem Klick auf den "Cancel" Button funktioniert einwandfrei.
+Python liefert für Threads das Modul ~threading.Thread~ footcite:threading,
+mit. In der Praxis lies sich der Fortschrittsdialog und der Thread jedoch nicht
+so zu verknüpfen das sich der Dialog schliesst, wenn das Backup durchgelaufen
+ist und der Thread wieder entfernt wird. Aus diesem Grund wurde dann ein
+erfolgreicher Test mit dem PyQt Modul ~QThread~ footcite:qthread gemacht. Nach
+Beendigung des Backups wird der Fortschrittsdialog automatisch geschlossen.
+Auch das Stoppen des Threads mit einem Klick auf den "Cancel" Button
+funktioniert einwandfrei.
 
 Damit gls:borg aus der Anwendung angesteuert werden kann wird das Python Modul
 ~subprocess~ footcite:subprocess verwendet. Dieses erlaubt einem neue Prozesse
@@ -1961,7 +1961,7 @@ zusammengefasst. Somit kann für jede Funktion von gls:borg eine einzelne Klasse
 geschrieben werden, welche dann von ~BorgQtThread~ die Funktionen erbt. Die
 Funktionsklassen müssen dann jeweils nur die Methode
 ~self.create_command(self)~ implementieren welche das Property ~self.command~
-erstellt und die einfachen Funktionen von gls:borg sollten direkt funktionieren
+erstellt und die einfachen Funktionen von gls:borg sollten direkt funktionieren.
 
 ** Backup
 
