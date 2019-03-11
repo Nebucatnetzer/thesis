@@ -2282,7 +2282,7 @@ Persistent = true
 WantedBy = timers.target
 #+end_src
 
-** gls:gui Anpassungen nach Usability-Studie
+** GUI Anpassungen nach Usability-Studie
 
 Im Rahmen der durchgeführten [[Usability-Studie][Usability-Studie]] wurden einige Punkte
 festgestellt, welche im Rahmen der Diplomarbeit angepasst werden konnten. Zum
