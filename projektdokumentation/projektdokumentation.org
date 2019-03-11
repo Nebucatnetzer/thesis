@@ -2090,7 +2090,7 @@ für das Erstellen. Die Besonderheiten bei dieser Funktion sind vor allem, die
 Kontrolle das ein Archiv angewählt wurde bevor man die Wiederherstellung
 startet, das Erstellen des Zielpfades sowie das Aufräumen bei einem Fehler.
 
-Wird der "Restore" Knopf gedrückt ohne das ein Backup angewählt wurde, erscheint
+Wird der "Restore" Knopf gedrückt ohne das ein Archiv angewählt wurde, erscheint
 folgende Fehlermeldung, Abbildung:([[fig:no_archive_selected]]), um den Benutzer
 darauf hinzuweisen, das er dies noch tun sollte.
 
@@ -2099,15 +2099,16 @@ darauf hinzuweisen, das er dies noch tun sollte.
 #+attr_latex: :width .2\paperwidth :placement [H]
 [[file:pictures/borgqt_no_archive_selected.png]]
 
-Das Wiederherstellen an sich läuft so ab das der Benutzer zuerst ein Archiv
-auswählt und dann auf "Restore" klickt. Daraufhin öffnet sich ein Dialog, in
-welchem der Benutzer den Zielort auswählen kann. Sobald er dies getan hat
-erstellt Borg-Qt darin einen Order mit dem Namen des Archivs und beginnt mit
-dem eigentlichen Wiederherstellen. Sollte der Zielort für die Applikation nicht
-beschreibbar sein erscheint eine entsprechende Fehlermeldung,
-Abbildung:([[fig:not_writeable]]), und der Vorgang wird abgebrochen. Nach einer
-erfolgreichen Wiederherstellung öffnet die Applikation den Zielort in einem
-Dateimanager, damit der User gleich mit den Dateien weiterarbeiten kann.
+Für die Wiederherstellung einer Datensicherung, selektiert der User das
+gewünschte Archiv. Als zweiten Schritt startet er den Prozess mit Klick auf
+"Restore". Im sich automatisch öffnenden Dialogfenster, ist der gewünschte
+Zielort auszuwählen. Ist der Zielort festgelegt, erstellt Borg-Qt
+Subverzeichnis mit dem Namen des Archivs und beginnt mit der eigentlichen
+Wiederherstellung. Ist der Zielort für die Applikation nicht beschreibbar sein
+erscheint die Fehlermeldung, Abbildung:([[fig:not_writeable]]), und der Vorgang
+wird abgebrochen. Nach der erfolgreichen Wiederherstellung öffnet die
+Applikation den Zielort in einem Dateimanager, damit der User gleich mit den
+Dateien weiterarbeiten kann.
 
 #+caption: Screenshot der Fehlermeldung wenn der Zielort nicht beschreibbar ist.
 #+name: fig:not_writeable
@@ -2116,13 +2117,10 @@ Dateimanager, damit der User gleich mit den Dateien weiterarbeiten kann.
 
 Gibt es, während dem Wiederherstellen einen Fehler gibt die Anwendung den
 entsprechenden Fehler aus und löscht zusätzlich noch den zu Beginn erstellten
-Archiv Ordner. Dies aus dem Grund da die Wiederherstellung ja nicht komplett
-durchgelaufen ist, somit befindet sich das Archiv in einem unfertigen Zustand.
-Es ist deshalb sinnvoller die wiederhergestellten Dateien wegzuräumen als unter
-Umständen defekte Dateien zurückzulassen
+Archiv Ordner.
 
-Wird das gleiche Archiv nochmal an den gleichen Zielort wiederhergestellt, ist
-das für gls:borg kein Problem. Es überschreibt die Dateien einfach noch einmal
+Wird das gleiche Archiv nochmal an den gleichen Zielort wiederhergestellt,
+werden bereits vorhandene Dateien überschrieben.
 
 ** Mount
 
