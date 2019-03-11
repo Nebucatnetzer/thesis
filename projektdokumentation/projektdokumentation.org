@@ -219,10 +219,10 @@ entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
 
 ** Projektmethode
 
-Für das Projekt wurde die Wasserfall-Methode gewählt. Da nur eine
+Für das Projekt wurde die gls:wasserfall gewählt. Da nur eine
 einzige Person am Projekt arbeitet, kann nur ein Task nach dem anderen
 abgearbeitet werden und viele Aufgaben stehen in Abhängigkeiten zueinander.
-Somit macht das iterative Vorgehen der Wasserfall-Methode für dieses Projekt am
+Somit macht das iterative Vorgehen der gls:wasserfall für dieses Projekt am
 meisten Sinn.
 
 ** Konfigurationsmanagement
