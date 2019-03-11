@@ -1965,9 +1965,9 @@ erstellt und die einfachen Funktionen von gls:borg sollten direkt funktionieren.
 
 ** Backup
 
-Bei den Backups handelt es sich ohne Zweifel um die wichtigste Funktion von
-Borg-Qt. Deshalb soll das Erstellen eines Backups so schnell und unkompliziert
-wie möglich vonstattengehen.
+Daten zu sichern ist die primäre Funktion von Borg-Qt. Deshalb soll das
+Erstellen eines Backups so schnell und unkompliziert wie möglich
+vonstattengehen.
 
 *** Backend
 
