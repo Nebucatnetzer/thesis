@@ -200,9 +200,10 @@ Die Anwendung beschränkt sich darauf Funktionen von gls:borg grafisch
 darzustellen oder nützlich zu erweitern soweit dies über die gls:api möglich
 ist. Wie in Abbildung:([[fig:kontext]]) zu sehen ist, werden die Aktionen effektiv
 immer vom Borg Binary ausgeführt und nicht von der grafischen Oberfläche. Eine
-Erweiterung von gls:borg ist nicht vorgesehen. Backup und Verschlüsselung sind
-heikle Themen und sollten unbedingt nur von Experten angegangen werden. Das
-Potenzial für Fehler und die Auswirkungen derer, sind einfach schlicht zu gross.
+Erweiterung von gls:borg ist nicht vorgesehen. Dies aus dem Grund das Backups,
+Deduplikation und Verschlüsselung sowie deren korrekte Implementation komplexe
+Themen sind und unbedingt nur von Experten angegangen werden sollten. Die
+Auswirkungen von Fehlern sind sind schlicht zu gross.
 
 Des Weiteren wird die Grundlage für eine kollaborative Entwicklung geschaffen.
 Während der Laufzeit der Diplomarbeit werden jedoch keine Inputs aus der Borg
