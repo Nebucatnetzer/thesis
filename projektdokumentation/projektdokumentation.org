@@ -46,19 +46,19 @@ Auch die Möglichkeit automatischer im Hintergrund laufender Backups soll dem
 User gegeben sein, damit die Hürde für Backups so tief wie möglich gehalten
 wird.
 
-Die besten Backups sind solche, bei denen man gar nicht mehr weiss das man sie
-hat, bis man sie braucht.
+Die besten Backups sind solche, bei denen man gar nicht mehr weiss, dass man sie
+hat bis man sie braucht.
 
 ** Ausgangslage
 
 gls:borg ist deshalb interessant, weil es während einem Backup relativ
 wenig Ressource im Vergleich zu anderen Systemen benötigt und schon relativ
 lange aktiv entwickelt wird. Dadurch ist es im Alltag geprüft worden.
-Des Weiteren bietet gls:borg die Funktion für Verschlüsselung was es einem User
+Des Weiteren bietet gls:borg die Funktion für Verschlüsselung, was es einem User
 ermöglicht die Daten auf einem unsicheren Cloud Speicher abzulegen.
 
 Des Weiteren speichert gls:borg die Daten mit Block basierter gls:dedup ab. Dies
-hat den riesigen Vorteil das bei einem Backup nur die Änderungen auf
+hat den riesigen Vorteil, dass bei einem Backup nur die Änderungen auf
 Block-Ebene gespeichert werden und nicht jedes Mal die ganze Datei kopiert
 werden muss.
 
@@ -66,12 +66,12 @@ Damit ermöglicht die Software auch Backups von sehr grossen Dateien, wie Videos
 oder Disk Images von virtuellen Maschinen, in mehreren Versionen. Ohne dabei
 jedoch signifikant mehr an Speicher zu benötigen. Zusätzlich werden die Backups
 dadurch rasend schnell ausgeführt. Gerade dieses Feature macht gls:borg in den
-Augen des Autors besonders interessant da sich der durchschnittliche User
+Augen des Autors besonders interessant, da sich der durchschnittliche User
 möglichst wenig mit Dingen wie Backups auseinandersetzen möchte. Umso besser
 also, wenn sie schnell gehen und so wenig Speicherplatz wie möglich verbrauchen.
 
 gls:borg wird jedoch komplett über die Kommandozeile bedient. Somit ist es für
-normale Benutzer eher schwierig den Zugang zu der Software zu finden geschweige
+normale Benutzer eher schwierig den Zugang zu der Software zu finden, geschweige
 denn sie zu bedienen.
 
 gls:borg bietet Entwicklern eine gls:json, gls:api, mit welcher sie, von gls:borg
@@ -87,12 +87,12 @@ Stunden bis zum 18. März 2019 erarbeitet werden.
 ** Projektziele
 
 gls:borg ist eine Kommandozeilen basierte Backup Software. Ziel dieser Arbeit
-ist, ein gls:gui für die Software gls:borg zu entwickeln um die . Da gls:borg
-selber freie Software ist und der Autor dieser Arbeit mit gls:libre viel gute
-Erfahrungen gemacht hat, soll das Projekt selber auch wieder gls:libre sein.
-Zum einen um der Community etwas zurückzugeben des weiteren, um anderen
-Entwicklern die Möglichkeit zu geben die Software zu verbessern und weiter zu
-entwickeln.
+ist, ein gls:gui für die Software gls:borg zu entwickeln um die Nutzung zu
+vereinfachen. Da gls:borg selber freie Software ist und mit freier Software
+viel gute Erfahrungen gemacht wurden, soll das Projekt selber auch wieder
+gls:libre sein. Zum einen, um der Community etwas zurückzugeben, des weiteren,
+um anderen Entwicklern die Möglichkeit zu geben die Software zu verbessern und
+weiter zu entwickeln.
 
 Als neben läufiges Ziel soll mit dieser Arbeit auch die Verbreitung von freier
 Software gefördert werden. Dies wird insbesondere dadurch erreicht, dass die
@@ -104,11 +104,10 @@ Zeitpunkt öffentlich einsehbar sein. Der Quelltext der Dokumentation ist unter
 diesem Link erreichbar: https://git.2li.ch/Nebucatnetzer/thesis
 
 Die Entwicklung wird hauptsächlich auf einem Linux System stattfinden. Da
-gls:borg einerseits hauptsächlich auf Unix Systeme ausgelegt ist und
-anderseits die Hauptzielgruppe des Projektes auch auf Linux Usern liegt.
-Trotzdem sollen im Projekt cross-plattform fähige Technologien eingesetzt werden
-damit es in der Zukunft möglich ist das Projekt auf andere Plattformen
-auszuweiten.
+gls:borg einerseits hauptsächlich auf Unix Systeme ausgelegt ist und anderseits
+die Hauptzielgruppe des Projektes auch auf Linux Usern liegt. Trotzdem sollen
+im Projekt cross-plattform fähige Technologien eingesetzt werden, damit es in
+der Zukunft möglich ist das Projekt auf andere Plattformen auszuweiten.
 
 *** Ziele inklusive Gewichtung
 
@@ -116,8 +115,8 @@ Im Projektantrag wurden vorgängig folgende Ziele definiert und entsprechend
 gewichtet. Die Gewichtung wurde dabei so vorgenommen, dass Ziele mit einer
 Muss-Gewichtung den Minimalanforderungen der zu entwickelnden Software
 entsprechen. Die weiteren Ziele wurden von 5 bis 1 gewichtet. Die Bewertung 5
-bedeutet, das Umsetzung sehr nützlich und oder wichtig für die Software ist und
-daher in naher Zukunft zu implementieren ist. Ein Ziel mit einer tiefen
+bedeutet, dass die Umsetzung sehr nützlich und oder wichtig für die Software
+ist und daher in naher Zukunft zu implementieren ist. Ein Ziel mit einer tiefen
 Bewertung sollte, wenn möglich, auch einmal in die Software integriert werden
 und ist nicht unwichtig.
 
@@ -180,7 +179,7 @@ und ist nicht unwichtig.
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                26. | Der User kann die Anwendung grafisch konfigurieren.                                                                                                          |                                |                                                              3 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
-|                                27. | Der User kann entscheiden ob, ein gemountetes Archiv nach dem Schliessen der Applikation noch weiter verfügbar ist.                                          |                                |                                                              2 |
+|                                27. | Der User kann entscheiden, ob ein gemountetes Archiv nach dem Schliessen der Applikation noch weiter verfügbar ist.                                          |                                |                                                              2 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
 |                                28. | Der User kann das Repository wechseln.                                                                                                                       |                                |                                                              2 |
 |------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+----------------------------------------------------------------|
@@ -197,7 +196,7 @@ und ist nicht unwichtig.
 ** Projektabgrenzung
 
 Die Anwendung beschränkt sich darauf Funktionen von gls:borg grafisch
-darzustellen oder nützlich zu erweitern soweit dies über die gls:api möglich
+darzustellen oder nützlich zu erweitern, soweit dies über die gls:api möglich
 ist. Wie in Abbildung:([[fig:kontext]]) zu sehen ist, werden die Aktionen effektiv
 immer vom Borg Binary ausgeführt und nicht von der grafischen Oberfläche. Eine
 Erweiterung von gls:borg ist nicht vorgesehen. Dies aus dem Grund das Backups,
@@ -230,27 +229,29 @@ meisten Sinn.
 *** Versionskontrolle
 
 Die komplette Dokumentation, der Quellcode der Applikation sowie jegliche
-zusätzlichen Dokumente wie etwa die Zeitplanung werden mittels der Software gls:git
-versioniert. Thematisch zusammengehörende Änderungen werden in einem gls:commit
-zusammengefasst. Somit ist jederzeit nachvollziehbar was wann geändert hat. Ein
-gls:commit sollte dabei gemäss dem Artikel von Chris Beams "How to write a Git
-gls:commit Message" footcite:commit und in englischer Sprache geschrieben sein.
+zusätzlichen Dokumente, wie etwa die Zeitplanung, werden mittels der Software
+gls:git versioniert. Thematisch zusammengehörende Änderungen werden in einem
+gls:commit zusammengefasst. Somit ist jederzeit nachvollziehbar, was wann
+geändert hat. Ein gls:commit sollte dabei gemäss dem Artikel von Chris Beams
+"How to write a Git gls:commit Message" footcite:commit und in englischer
+Sprache geschrieben sein.
 
 Versionsnummern sind für die Applikation zum jetzigen Zeitpunkt noch nicht
-vorgesehen. Sollten sie zukünftig einmal verwendet werden soll eine semantische
-Versionierung footcite:semver verwendet. Dabei ist eine Versionsnummer immer
-nach diesem Schema aufgebaut, MAJOR.MINOR.PATCH. Bei Änderungen wir die:
+vorgesehen. Sollten sie zukünftig einmal verwendet werden, soll eine
+semantische Versionierung footcite:semver verwendet werden. Dabei ist eine
+Versionsnummer immer nach diesem Schema aufgebaut, MAJOR.MINOR.PATCH. Bei
+Änderungen wir die:
 1. MAJOR Version erhöht, wenn man inkompatible Änderungen an der gls:api macht.
 2. MINOR Version erhöht, wenn man Funktionalität hinzufügt, die
    abwärtskompatibel ist.
 3. PATCH Version erhöht, wenn man abwärtskompatibel Bug-Fixes hinzufügt.
 Eine Versionsnummer würde dann so aussehen Version 1.2.3.
 
-Auf jeden Fall sollte, wenn möglich immer nur lauffähiger Code im Master Branch
-eingecheckt sein damit der Master Branch immer eine funktionierende Software
-repräsentiert. Dies gilt auch für das Repository der Dokumentation. Der Master
-Branch der Dokumentation sollte maximal mit zwei Befehlen ~make clean~ und
-~make~ "kompilierbar" sein.
+Auf jeden Fall sollte, wenn möglich, immer nur lauffähiger Code im Master
+Branch eingecheckt sein, damit der Master Branch immer eine funktionierende
+Software repräsentiert. Dies gilt auch für das Repository der Dokumentation.
+Der Master Branch der Dokumentation sollte maximal mit zwei Befehlen ~make
+clean~ und ~make~ "kompilierbar" sein.
 
 Als Software für die Versionskontrolle wurde gls:git footcite:git aus folgenden
 Gründen ausgewählt:
@@ -271,18 +272,18 @@ Gründen ausgewählt:
 Sowohl bei der Dokumentation wie auch bei der Programmierung wurde
 hauptsächlich der Editor GNU Emacs footcite:emacs verwendet. GNU Emacs ist mit
 32 Jahren (obwohl seine Wurzeln bis ins Jahre 1976 zurückgehen) wohl eines der
-ältesten noch aktiven Software Projekte. Emacs ist gls:libre unter der
-gls:gpl v3. Emacs wurde gewählt da es ein schneller, schlanker und sehr
-flexibler Texteditor ist. Von normaler Textmanipulation über Taskmanagement
-und Emails schreiben ist alles möglich.
+ältesten noch aktiven Software Projekte. Emacs ist gls:libre unter der gls:gpl
+v3. Emacs wurde gewählt, da es ein schneller, schlanker und sehr flexibler
+Texteditor ist. Von normaler Textmanipulation über Taskmanagement und Emails
+schreiben ist alles möglich.
 
 *** Dokumentation
 
 Diese Dokumentation wurde in Org-mode footcite:orgmode, einer Erweiterung für
 den Text Editor Emacs, geschrieben. Die Syntax von Org-mode erinnert an
-Markdown. Org-mode bietet einem eine Vielzahl an Hilfen inklusive dem Erstellen
-von Tabellen und Spreadsheet Funktionen. Für die finale Version des Dokuments
-kann Org-mode die ursprünglich Textdatei über LaTeX in eine PDF Datei
+Markdown. Org-mode bietet einem eine Vielzahl an Hilfen, inklusive dem
+Erstellen von Tabellen und Spreadsheet Funktionen. Für die finale Version des
+Dokuments kann Org-mode die ursprünglich Textdatei über LaTeX in eine PDF Datei
 exportieren.
 
 LaTeX footcite:latex ist eine Software, welche einem die Benutzung des
@@ -312,18 +313,17 @@ entwickelten Design Sprache "Material" footcite:material eingesetzt.
 
 Die detaillierte Zeitplanung ist dem Ganttchart in der Datei
 [[file:02_Zeitplanung_Andreas_Zweili.html][02_Zeitplanung_Andreas_Zweili.html]] zu entnehmen. Bei der Zeitplanung wurde
-darauf geachtet das die Arbeit soweit, als möglich nicht mit dem Berufsleben
+darauf geachtet, dass die Arbeit soweit als möglich nicht mit dem Berufsleben
 kollidiert. An einem normalen Arbeitstag wurde dabei damit gerechnet das ca. 2
 Stunden Arbeit am Abend möglich sein sollten. An einem arbeitsfreien Tag wurde
 mit 6 Stunden Arbeit gerechnet. Über die Festtage wurden diverse Tage von der
 Planung ausgenommen, da es nicht realistisch schien, dass an diesen Tagen die
-Arbeit signifikant vorwärts gehen würde. Auch Schultage wurde nicht, als
-Arbeitstage gerechnet da man meist nicht mehr für weitere Tätigkeiten gross
-motiviert ist.
+Arbeit signifikant vorwärts gehen würde. Auch Schultage wurde nicht als
+Arbeitstage gerechnet.
 
-Um die Arbeitslast zu verteilen wurde vom 14. Januar bis zum 11. März jeder
-Montag auf der Arbeitsstelle als frei eingegeben. Dadurch steht, während des
-Projektes etwas mehr Zeit zur Verfügung als sonst mit einer 100 Prozent
+Um die Arbeitslast zu verteilen, wurde vom 14. Januar bis zum 11. März jeder
+Montag auf der Arbeitsstelle als frei eingegeben. Dadurch steht während des
+Projektes etwas mehr Zeit zur Verfügung, als mit einer 100 Prozent
 Arbeitsstelle möglich wäre.
 
 ** Controlling
@@ -364,7 +364,7 @@ unvorbereitet gegenüber, sollten sie eintreffen.
 
 *** Risikobeschreibung
 
-In der Tabelle: ([[tab:risikobeschreibung]]), sind die Risiken des Projektes
+In der Tabelle: ([[tab:risikobeschreibung]]) sind die Risiken des Projektes
 gemeinsam mit ihren Gegenmassnahmen aufgelistet. Somit können gewisse Risiken
 bereits vorher vermieden werden.
 
@@ -393,7 +393,7 @@ bereits vorher vermieden werden.
 * Analyse
 ** SWOT-Analyse
 
-Die SWOT-Analyse ist eine Methode, die Stärken, Schwächen, Chancen und
+Die SWOT-Analyse ist eine Methode die Stärken, Schwächen, Chancen und
 Gefahren zu erkennen, indem eine 4-Felder-Matrix ausgefüllt wird.
 
 Grundlage einer guten SWOT Analyse ist eine klare Zieldefinition und
@@ -407,7 +407,7 @@ Abbildung:([[fig:swot]]) zu sehen.
 
 ** Umweltanalyse
 
-Die Projektumwelt-Analyse ist eine Methode, die Beziehungen,
+Die Projektumwelt-Analyse ist eine Methode die Beziehungen,
 Erwartungshaltungen und Einflüsse auf das Projekt durch interne und
 externe soziale Umwelt zu betrachten und zu bewerten. Auf Grundlage
 der Analyseergebnisse werden erforderliche Massnahmen zur Gestaltung
@@ -418,8 +418,8 @@ mit Einschätzung der Wahrscheinlichkeit und der Einflussnahme aufgenommen.
 Zusätzlich ist die Beziehung der Stakeholder zum Projekt noch in der
 Abbildung:([[fig:umweltgrafik]]) grafisch dargestellt.
 
-Da das Projekt so ausgelegt ist das der Projektleiter es in Eigenarbeit
-verwirklichen kann ist der Einfluss der Stakeholder während der Umsetzung sehr
+Da das Projekt so ausgelegt ist, dass der Projektleiter es in Eigenarbeit
+verwirklichen kann, ist der Einfluss der Stakeholder während der Umsetzung sehr
 gering. Die User werden bei der Entwicklung mittels einer
 Usability-Studie miteinbezogen und die gls:borg Community wird mit
 regelmässigen Posts auf dem offiziellen Github Repository auf dem Laufenden
@@ -441,7 +441,7 @@ Entwickler jedoch offen sein. Der Quellcode wird bereits während der Arbeit
 |                           <5> | <20>                                  | <20>                               |                                                      |                                              |
 | *Nr*.\cellcolor[HTML]{C0C0C0} | *Stakeholder*\cellcolor[HTML]{C0C0C0} | *Einfluss*\cellcolor[HTML]{C0C0C0} | *Anforderung/Wünsche*\cellcolor[HTML]{C0C0C0}        | *Wahrscheinlichkeit*\cellcolor[HTML]{C0C0C0} |
 |-------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+----------------------------------------------|
-|                            1. | gls:borg Community                    | gering                             | Eine Applikation die den Umfang von gls:borg abdeckt | mittel                                       |
+|                            1. | gls:borg Community                    | gering                             | Eine Applikation, die den Umfang von gls:borg abdeckt | mittel                                       |
 |                               |                                       |                                    | Open-Source                                          | hoch                                         |
 |                               |                                       |                                    | Mitspracherecht bei der Entwicklung                  | niedrig                                      |
 |-------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+----------------------------------------------|
@@ -469,14 +469,14 @@ bewertet und entsprechend der Tabelle: ([[tab:auswirkung]]) nach seiner Auswirku
 im Bezug auf die Nützlichkeit der gemachten Backups.
 
 In der Tabelle: ([[tab:risikobeschreibung]]) sind dabei die Risiken für das
-Szenario aufgelistet und nummeriert. In der Abbildung:([[fig:istrisiko]]), ist die
+Szenario aufgelistet und nummeriert. In der Abbildung:([[fig:istrisiko]]) ist die
 Bewertung des Ist-Risikos grafisch dargestellt und in der
-Abbildung:([[fig:sollrisiko]]), ist das Soll-Risiko, welches mit dieser Arbeit
+Abbildung:([[fig:sollrisiko]]) ist das Soll-Risiko, welches mit dieser Arbeit
 angestrebt wird, ebenfalls grafisch dargestellt.
 
 Es sollte im Rahmen der Arbeit möglich sein die meisten Risiken zu verringern.
 Da automatische Hintergrundbackups jedoch ein Kann-Ziel sind wir in dieser
-Analyse nicht davon ausgegangen das man das Risiko Nr. 5 im Rahmen dieser
+Analyse nicht davon ausgegangen, dass man das Risiko Nr. 5 im Rahmen dieser
 Arbeit reduzieren kann.
 
 #+CAPTION: Risikobewertung Wahrscheinlichkeit
@@ -703,13 +703,13 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 | *Normal Flow*       | 1. Ein Backup aus der Liste auswählen.                                                           |
 |                     | 2. Den Button "Restore" klicken.                                                                 |
 |                     | 3. Ein Pop-up zur Auswahl eines Zielpfades erscheint.                                            |
-|                     | 4. Den Zielpfad mit klick auf "Choose" bestätigen.                                               |
+|                     | 4. Den Zielpfad mit Klick auf "Choose" bestätigen.                                               |
 |                     | 5. Ein Dateiexplorer öffnet sich mit dem ausgewählt Pfad und enthält die Dateien aus dem Backup. |
 |---------------------+--------------------------------------------------------------------------------------------------|
 | *Alternative Flow*  | 1. Ein Backup aus der Liste auswählen.                                                           |
 |                     | 2. Den Button "Restore" klicken.                                                                 |
 |                     | 3. Ein Pop-up zur Auswahl eines Zielpfades erscheint.                                            |
-|                     | 4. Die Aktion mit klick auf "Cancel" abbrechen.                                                  |
+|                     | 4. Die Aktion mit Klick auf "Cancel" abbrechen.                                                  |
 |---------------------+--------------------------------------------------------------------------------------------------|
 | *Notes*             | -                                                                                                |
 |---------------------+--------------------------------------------------------------------------------------------------|
@@ -946,8 +946,8 @@ Verfügung, um das Programm anzubinden. Da das Ziel ist, das Programm normalen
 Nutzern zugänglicher zu machen, bietet sich ein normales Desktop Programm am
 ehesten an. Desktop Programme werden von allen Computer Usern täglich genutzt
 und sind somit etwas was sie kennen. Zudem ist es für die User auch viel
-einfacher zu verstehen als sie vor der Nutzung einen lokalen Webserver starten
-müssten und diesen im Anschluss zur Nutzung wieder beenden müssten.
+einfacher zu verstehen, als wenn sie vor der Nutzung einen lokalen Webserver
+starten müssten und diesen im Anschluss zur Nutzung wieder beenden müssten.
 
 *** Bewertung
 
@@ -1003,7 +1003,7 @@ gut für Desktop Applikationen eignen.
 
 **** C#
 
-C# ist eine von Microsoft entwickelte Programmiersprache welche viele
+C# ist eine von Microsoft entwickelte Programmiersprache, welche viele
 Frameworks zur Verfügung stellt. Insbesondere aufgrund der grossen
 kommerziellen Nutzung und der guten Integration mit Microsoft Windows hat C#
 eine relative grosse Verbreitung. Bei Linux und OS X ist es jedoch schwieriger
@@ -1012,7 +1012,7 @@ der Fokus von C# hauptsächlich auf Microsoft Windows liegt.
 
 Sie ist zu Teilen gls:libre. Die Common Language Runtime, welche für das
 Ausführen von Software zuständig ist, ist unter der MIT Lizenz lizenziert
-footcite:csharp der aktuelle Compiler Roslyn ist unter der Apache Lizenz
+footcite:csharp, der aktuelle Compiler Roslyn ist unter der Apache Lizenz
 verfügbar footcite:roslyn. Da es sehr viele offizielle Teile um die Sprache C#
 gibt, kann im Rahmen des Projektes nicht direkt abgeschätzt werden, ob alle
 benötigten Teile gls:libre sind. Für die Bewertung wird deshalb ein kleinerer
@@ -1041,14 +1041,14 @@ installieren und nutzbar zu machen. Auf anderen Plattform wird dies leider
 nicht einfacher und unter Linux ist es bereits schwierig eine funktionierende
 Umgebung in Gang zu bringen.
 
-Da C# bereits an der IBZ gelehrt wird, ist der Lernfaktor hier im Vergleich zu
-den anderen Sprachen sicher am kleinsten. Allerdings gibt es noch keinerlei
+Da C# bereits an der IBZ gelehrt wird, ist der Lernfaktor hier, im Vergleich zu
+den anderen Sprachen, sicher am kleinsten. Allerdings gibt es noch keinerlei
 Kenntnisse beim Einbinden eines der unten aufgeführten gls:gui Frameworks.
 Daher gibt es auf jeden Fall noch genügend zu lernen.
 
 Die gls:borg Community hat vor relativ kurzer Zeit die offizielle Unterstützung
 von Windows zurückgezogen. Da C# eine sehr Windows lastige Sprache ist, wird
-daher davon ausgegangen das die Sprache innerhalb der gls:borg Community nicht
+daher davon ausgegangen, dass die Sprache innerhalb der gls:borg Community nicht
 sehr verbreitet ist.
 
 C# ist eine stark typisiert Sprache und kompilierte Sprache. Des Weiteren ist
@@ -1096,9 +1096,9 @@ läuft sehr gut auf jedem System. C++ ist im Vergleich zu modernen Sprachen
 jedoch relativ komplex und bietet diverse Stolpersteine für Programmierer.
 
 Zum Entwickeln braucht es verhältnismässig wenig. Da die Sprache bereits sehr
-alt ist, stammt sie noch aus einer Zeit wo man noch etwas rudimentärer
-programmierte. Allerdings braucht man in jedem Fall einen gls:compiler um ein
-ausführbares Programm zu erzeugen. Bei komplexeren Programmen wird man um
+alt ist, stammt sie noch aus einer Zeit, wo man noch etwas rudimentärer
+programmierte. Allerdings braucht man in jedem Fall einen gls:compiler, um ein
+ausführbares Programm zu erzeugen. Bei komplexeren Programmen wird man, um
 mindestens so etwas wie glspl:makefile auch nicht herumkommen
 
 Im Vergleich zu Python oder C# ist C++ wohl die am schwersten lesbare Sprache.
@@ -1109,15 +1109,15 @@ Standards etabliert.
 Der Lernfaktor wäre aufgrund der mangelnden Vorkenntnisse hier ganz klar am
 Grössten.
 
-Da C++ eine alte Sprache ist geniesst sie auch eine dementsprechende
-Verbreitung. Daher ist anzunehmen das sicher mindestens ein grössere Teil der
+Da C++ eine alte Sprache ist, geniesst sie auch eine dementsprechende
+Verbreitung. Daher ist anzunehmens dass sicher mindestens ein grössere Teil der
 älteren gls:borg Entwickler C++ oder C gelernt haben.
 
-Da C++ auch heute noch zu den meistgenutzten Sprachen gehört gibt es
+Da C++ auch heute noch zu den meistgenutzten Sprachen gehört, gibt es
 entsprechend viele Ressourcen dazu und Beispiel Projekte, von denen man ableiten
 kann. Auch hilfreiche Libraries gibt es sehr viele, welche den Programmierer
 unterstützen können. Die Sprache selber ist jedoch eher umständlich zu
-schreiben. Hinzu kommt noch das man, während der Entwicklung immer wieder den
+schreiben. Hinzu kommt noch, dass man, während der Entwicklung immer wieder den
 Code kompilieren muss. In einem Projekt mit dieser begrenzten Zeitspanne eher
 ungeeignet.
 
@@ -1165,7 +1165,7 @@ grösseres Projekt realisiert und ansonsten mehrere kleine Projekte im Privaten
 erstellen.
 
 Für Python gibt es ein paar glspl:ide welchen den Programmierer bei seiner
-Arbeit unterstützen können. Keine davon ist allerdings ein Muss um Python
+Arbeit unterstützen können. Keine davon ist allerdings ein Muss, um Python
 programmieren zu können. Im einfachsten Fall wäre dies mit Notepad möglich. Ein
 Editor mit etwas fortgeschritteneren Features wäre jedoch empfehlenswert.
 
@@ -1175,7 +1175,7 @@ von Python wurde sehr grossen Wert auf die Lesbarkeit der Sprache gelegt. Dies
 mit dem Hintergedanken das eine Programmiersprache viel häufiger gelesen als
 effektiv geschrieben wird footcite:pep8.
 
-Um ein Python Programm zu starten braucht es eigentlich kein grosses Setup.
+Um ein Python Programm zu starten, braucht es eigentlich kein grosses Setup.
 Solange die Abhängigkeiten vorhanden sind, kann man ein Skript mit einem
 einfachen Befehl, Code Snippet ([[code:minimal_python]]) starten.
 
@@ -1193,10 +1193,10 @@ Beispiel multiple Vererbung von Klassen.
 gls:borg selber wurde in Python geschrieben. Daher ist davon auszugehen das
 Python innerhalb dieser Community eine sehr hohe Verbreitung geniesst.
 
-Python ist eine dynamisch typisierte und interpretierte Sprache. Dies bedeutet
-das man bei Variablen nicht explizit den Typ angeben muss und die Programme zur
+Python ist eine dynamisch typisierte und interpretierte Sprache. Dies bedeutet,
+dass man bei Variablen nicht explizit den Typ angeben muss und die Programme zur
 Laufzeit für den Computer übersetzt werden. Interpretierte Sprachen haben den
-Vorteil das man mit ihnen in der Regel sehr schnell und unkompliziert
+Vorteil, dass man mit ihnen in der Regel sehr schnell und unkompliziert
 entwickeln kann, dies jedoch zulasten der Performance.
 
 #+CAPTION: Python Bewertungstabelle
@@ -1253,8 +1253,8 @@ dann in die eigentliche Applikation importiert werden. Somit ist keine
 spezielle Software nötig.
 
 gls:xml ist nicht übermässig gut lesbar, allerdings kann man Qt in der verwendeten
-Sprache programmiert werden somit ist es hauptsächlich von der Sprache im
-Backend abhängig. Die Dokumentation ist in C++ geschrieben was für einen
+Sprache programmiert werden, somit ist es hauptsächlich von der Sprache im
+Backend abhängig. Die Dokumentation ist in C++ geschrieben, was für einen
 Entwickler ohne C++ Kenntnisse die Software etwas unzugänglich macht.
 
 Qt scheint, soweit dies bis jetzt abgeschätzt werden kann, sehr leicht in ein
@@ -1312,7 +1312,7 @@ Qt hat man jedoch die Möglichkeit das gls:gui mit einem gls:gui Designer
 grafisch zu erstellen.
 
 Wie auch Qt kann man Gtk entweder direkt in der Backend Sprache programmieren
-oder aus dem gls:gui Designer dann als gls:xml exportieren. Der Code in der
+oder aus dem gls:gui Designer, dann als gls:xml exportieren. Der Code in der
 Dokumentation ist in C geschrieben, welches auch nicht die zugänglichste
 Sprache ist.
 
@@ -1345,7 +1345,7 @@ Da die Kenntnisse gleich null sind, ist der Lernfaktor auf dem Maximum.
 
 **** Electron
 
-Electron ist ein cross-plattform Framework zum Entwickeln von glspl:gui welches
+Electron ist ein cross-plattform Framework zum Entwickeln von glspl:gui, welches
 dabei jedoch auf Technologien aus der Webentwicklung benutzt. Entwickelt wird
 Electron von der Firma Github und ist gls:libre unter der MIT Lizenz
 footcite:electronlicense.
@@ -1365,7 +1365,7 @@ vorhanden sein. Zum Programmieren selber braucht es keine speziellen Tools. Ein
 Editor und ein Webbrowser sollten ausreichend sein.
 
 Electron Applikationen bestehen hauptsächlich aus gls:html, gls:css und JavaScript
-Code. Wenn man sich die komplette Applikation in Node.js programmieren möchte
+Code. Wenn man sich die komplette Applikation in Node.js programmieren möchte,
 kommt dann noch eine zusätzliche Sprache hinzu. gls:html ist ähnlich mühsam zu
 lesen wie gls:xml. gls:css und JavaScript sind relativ angenehm zu lesen, wobei es für
 beide keine offiziellen Styleguides gibt. Was bei Webanwendungen jedoch immer
@@ -1433,22 +1433,22 @@ weiteren Verlauf der Arbeit nun Borg-Qt genannt
 
 Die Anwendung wird während der Realisierung soweit als möglich mit
 automatischen glspl:unittest und glspl:funktionstest überprüft. Dies
-hauptsächlich um die Erfahrung in diesem Bereich zu erweitern und um ein gutes
+hauptsächlich, um die Erfahrung in diesem Bereich zu erweitern um ein gutes
 Fundament für die Zukunft des Projektes zu bauen.
 
 Aufgrund der Unerfahrenheit im Bereich des automatisierten Testings wurden noch
 die Testfälle in der Tabelle:([[tab:testcases]]), erstellt. Diese werden final von
-Hand überprüft. Somit kann vermieden werden das nicht funktionierende
+Hand überprüft. Somit kann vermieden werden, dass nicht funktionierende
 automatische Tests den Abschluss des Projektes verhindern. Da die Testfälle
-sich hauptsächlich an den Use Cases orientieren gibt, es ein paar Ziele die,
-dadurch nicht getestet werden können. Zudem sind zurzeit nur ca. 20. der Ziele
+sich hauptsächlich an den Use Cases orientieren, gibt es ein paar Ziele die,
+dadurch nicht getestet werden können. Zudem sind zurzeit nur ca. 20 der Ziele
 durch die Use Cases abgedeckt. Die weiteren Ziele lassen sich erst sinnvoll
 integrieren, wenn die Basis für das Programm geschaffen wurde. Somit werden
 diese Ziele erst im Anschluss zur Diplomarbeit umgesetzt.
 
 Getestet wird die Applikation jeweils auf dem Computer des Projektleiters. Auf
 diesem läuft die aktuelle Langzeitsupport Version (18.04) von Ubuntu
-footcite:ubuntu Linux mit der GNOME Desktop Umgebung footcite:gnome, als
+footcite:ubuntu Linux, mit der GNOME Desktop Umgebung footcite:gnome, als
 Betriebssystem. Die Tests werden jeweils gegen eine von PyInstaller generierte
 Binärdatei ausgeführt. Der genaue Vorgang der Erstellung dieser Datei wird in
 der Sektion: [[Releases][Releases]] beschrieben. Somit werden die Tests immer gegen eine
@@ -1456,11 +1456,11 @@ veröffentlichbare Version gemacht.
 
 Als Testdateien wird jeweils das Code Repository von Borg-Qt selber verwendet.
 Der Pfad des gls:borg Repository für lokale Backups soll ~/tmp/test-borgqt~
-sein, in den Testfällen "Lokales Repository", genannt und das Passwort ~foo~.
+sein, in den Testfällen "Lokales Repository" genannt und das Passwort ~foo~.
 Im Makefile des Repository wird dieses Setup definiert. Somit kann man als
 Entwickler nur ~make init~ ausführen und hat eine funktionsfähige Testumgebung.
 
-Um Backups über gls:ssh testen zu können wird eine virtuelle Maschine mit Ubuntu
+Um Backups über gls:ssh testen zu können, wird eine virtuelle Maschine mit Ubuntu
 18.04 verwendet. Die Konfiguration der virtuellen Maschine sieht dabei wie
 folgt aus:
 - 2 CPU Kerne
@@ -1479,18 +1479,18 @@ beschrieben.
 
 ** Klassendiagramm
 
-Um die Abhängigkeiten zwischen den einzelnen Klassen der Anwendung aufzuzeigen
+Um die Abhängigkeiten zwischen den einzelnen Klassen der Anwendung aufzuzeigen,
 wurde ein Klassendiagramm, Abbildung:([[fig:class_diagramm]]), erstellt. Das
 Klassendiagramm basiert auf dem UML Standard. Im Diagramm wurden nicht alle
-"Properties" und Methoden alles Klassen aufgezeichnet, sondern nur solche die
+"Properties" und Methoden alles Klassen aufgezeichnet, sondern nur solche, die
 auf eine andere Klasse verweisen. Dadurch bleibt das Diagramm übersichtlicher.
-Die Klassennamen welche, in fetter Schrift gehalten sind, wurden dabei vom
+Die Klassennamen, welche in fetter Schrift gehalten sind, wurden dabei vom
 Projektleiter erstellt. Die Klassennamen, welche kursiv sind, sind Klassen, welche
 entweder von Python oder Qt bereitgestellt werden.
 
 ** Usability-Studie
 
-Um Borg-Qt auf seine Nutzerfreundlichkeit zu testen wird im Rahmen der
+Um Borg-Qt auf seine Nutzerfreundlichkeit zu testen, wird im Rahmen der
 Diplomarbeit noch eine kleine Usability-Studie gemacht. Bei einer
 solchen Studie erhalten die Probanden, Tabelle:([[tab:probanden]]), ein paar
 Aufgaben, Sektion [[Aufgaben]], welche sie in einer begrenzten
@@ -1548,7 +1548,7 @@ Probanden und nicht die des Projektleiters.
    ~/home/testuser/Documents/Example.pdf~ zu finden sein.
 3. Stelle ein beliebiges Archiv wieder her. Der Zielpfad ist ~/home/testuser/Documents/~.
 4. Lösche ein Archiv deiner Wahl.
-5. Du möchtest das der Ordner ~/home/testuser/Pictures/~ nicht mehr gesichert
+5. Du möchtest, dass der Ordner ~/home/testuser/Pictures/~ nicht mehr gesichert
    wird. Konfiguriere die Applikation entsprechend.
 
 #+latex: \newpage
@@ -1573,7 +1573,7 @@ Probanden und nicht die des Projektleiters.
 
 **** Proband 1
 
-Der Proband fand die Aufgaben grundsätzlich einfach zu lösen. Das die "Mount"
+Der Proband fand die Aufgaben grundsätzlich einfach zu lösen. Dass die "Mount"
 Funktion zum Wiederherstellen einzelner Dateien gedacht war, hat er nicht
 erkannt.
 
@@ -1587,12 +1587,12 @@ wahrgenommen.
 
 **** Proband 3
 
-Proband 3 kam mit der Anwendung an sich gut klar. Die Aufgabe zwei fand er über
+Proband 3 kam mit der Anwendung an sich gut klar. Die Aufgabe Zwei fand er über
 alles gesehen auch am schwierigsten, da er mit der Materie nahezu nicht vertraut
-ist. Als zusätzlichen Input gab er an, das ein Kontextmenü welches sich mit
+ist. Als zusätzlichen Input gab er an, dass ein Kontextmenü, welches sich mit
 Rechtsklick auf ein Element öffnet, etwas sei was er gerne hätte, da er andere
 Anwendungen oft so steuert. Aufgabe 5 war auch etwas herausfordernder als 1,3
-und 4 insbesondere war unklar wie der Ordner zu der Liste hinzugefügt werden
+und 4, insbesondere war unklar wie der Ordner zu der Liste hinzugefügt werden
 sollte.
 
 Während des Tests ist in der Anwendung noch ein Bug aufgetaucht, welcher unter
@@ -1601,8 +1601,8 @@ detaillierte Lösung dafür ist im Kapitel [[Realisierung]] beschrieben.
 
 **** Proband 4
 
-Bei Proband 4 war die grösste Hürde dass, das Interface nur in Englisch
-verfügbar war. Bei Aufgabe zwei hat er sich nach eigenen Angaben etwas verloren
+Bei Proband 4 war die grösste Hürde, dass das Interface nur in Englisch
+verfügbar war. Bei Aufgabe Zwei hatte er sich nach eigenen Angaben etwas verloren
 gefühlt und hätte sich auch ein Kontextmenü auf dem Rechtsklick gewünscht.
 Mit etwas Hilfe bei der Übersetzung waren die restlichen Aufgaben jedoch gut zu
 meistern.
@@ -1620,8 +1620,8 @@ Bedienungsschwierigkeiten sehr gut bedienen. Um Hilfestellung zu leisten, wird
 im Rahmen der Diplomarbeit noch ein Hilfefenster eingebaut, welches den
 Benutzern beim ersten Starten der Anwendung angezeigt wird und kurz die
 jeweiligen Elemente des Interfaces anzeigt. Somit sollte auch das Problem bei
-der Aufgabe zwei etwas abgeschwächt werden. Eines der Hauptprobleme war dort
-das die Probanden nicht herausgefunden haben das der schnellste Weg eine
+der Aufgabe Zwei etwas abgeschwächt werden. Eines der Hauptprobleme war dort,
+dass die Probanden nicht herausgefunden haben, dass der schnellste Weg eine
 einzelne Datei wieder herzustellen über die "Mount" Funktion ginge. Die
 Einarbeitung in die Thematik von Backups würde sich jedoch wohl nur sehr schwer
 über das gls:gui realisieren lassen. Hier müsste auf jeden Fall eine
@@ -1634,7 +1634,7 @@ eingepflegt. Aus Ressourcengründen allerdings erst nach der Diplomarbeit.
 Ein Pop-Up, welches ein erfolgreiches Erstellen eines Archivs bestätigt, wird
 nicht eingebaut. Bei erfolgreicher Durchführung verschwindet der
 Fortschrittsdialog und in der Archivlist erscheint ein weiterer Eintrag. Das
-sind zwar nicht die offensichtlichsten Hinweise im Falle eines Fehlers
+sind zwar nicht die offensichtlichsten Hinweise im Falle eines Fehlers,
 erscheint jedoch sofort ein Dialog, der darauf hinweist. Somit sollten die
 beiden Vorgänge genügend unterschieden sein und es hat auch kein anderer Proband
 das Bedürfnis nach einer Bestätigung.
@@ -1647,7 +1647,7 @@ Im Rahmen der Diplomarbeit werden noch einige Texte angepasst. An gewissen
 Stellen war die Rede von "Backups" und an anderen von "Archives". Da gls:borg
 sie selber "Archives" nennt, sollte Borg-Qt noch so angepasst werden das
 überall von "Archives" die Rede ist. Zudem wird bei den "Include" und "Exclude"
-Optionen, über der Liste noch ein Label hinzugefügt, um die Elemente zu
+Optionen über der Liste noch ein Label hinzugefügt, um die Elemente zu
 beschreiben. Schlussendlich werden die Buttons "Add file" und "Add folder" zu
 "Exclude file" und "Exclude folder" sowie "Include file" und "Include folder"
 umbenannt. Somit zeigen die Buttons dann auch direkt, dass sie Dateien
@@ -1657,7 +1657,7 @@ respektive Ordner ein-/ausschliessen. Ein paar der Probanden hatten es zuerst
 * Realisierung
 ** Cross-plattform Kompatibilität
 
-Um sicherzugehen das die gewählten Technologien auch den Anforderungen
+Um sicherzugehen, dass die gewählten Technologien auch den Anforderungen
 entsprechen wurde ein kleines "Hello World" Programm mit Python3 und Qt
 geschrieben. Dieses läuft ohne jegliche Probleme und Anpassung auf Windows,
 Linux und OS X. Wie in den Screenshots in Abbildung:([[fig:hello_world]]) zu sehen
@@ -1708,8 +1708,8 @@ umgesetzt. Im Hauptfenster, Abbildung:([[fig:borgqt_main_v1]]), befinden sich wi
 auch bei "Back in Time" in der einen Hälfte eine Liste der vorhandenen Archive
 und in der anderen Hälfte ein Dateimanager. Dieser dient zur Auswahl des zu
 sichernden Pfades. Im oberen Bereich findet sich die Toolbar mit den Aktionen,
-die der User ausführen kann. Gemäss den Use Cases sind dies "Backup",
-"Restore", "Mount", "Delete" und "Settings".
+die der User ausführen kann. Gemäss den Use Cases sind dies "Backup,
+Restore, Mount, Delete und Settings".
 
 Bei den Icons wurde zuerst versucht diese nach der "Icon Naming
 Specification"footcite:iconnamespec auszuwählen. Diese Spezifikationen würden
@@ -1765,7 +1765,7 @@ Die Einstellungen werden von der Applikation benötigt, um die vom User
 definierten Vorgaben auszuführen, das Backup Repository zu finden, etc.
 Diese Einstellungen sollen in einer Klar-Text Datei gespeichert werden. Dies
 hat zum einen den Vorteil, dass man die Einstellungen sehr einfach sichern kann.
-Zum Anderen kann man die Einstellungen der Applikation auch anpassen, ohne das
+Zum anderen kann man die Einstellungen der Applikation auch anpassen, ohne dass
 man die Applikation selber starten muss.
 
 *** Backend
@@ -1793,15 +1793,15 @@ password = foo
 prefix = muster
 #+end_src
 
-Das Auslesen und schreiben der Konfigurationsdatei liess sicher relativ einfach
-realisieren. Die grösste Herausforderung dabei war, das ~Configparser~ keinen
+Das Auslesen und Schreiben der Konfigurationsdatei liess sicher relativ einfach
+realisieren. Die grösste Herausforderung dabei war, dass ~Configparser~ keinen
 Support für eine Liste von Werten hat. Die wurde insbesondere für ~include~ und
 ~exclude~ Pfade benötigt. Also für die Pfade, welche gesichert werden oder von
 einem  Backup ausgeschlossen werden sollen.
 
 Abhilfe schaffte hier ein Stackexchange Post footcite:configlist. Dieser schlug
-vor, das man die Liste im gls:json Format speichern soll. Da ~Configparser~ alle
-Werte im Format "String" zurückgibt können dann die gls:json Listen sehr
+vor, dass man die Liste im gls:json Format speichern soll. Da ~Configparser~ alle
+Werte im Format "String" zurückgibt, können dann die gls:json Listen sehr
 einfach von einem gls:json Parser umgewandelt werden. Im Projekt wurde dies
 dann unter anderem als Methode der ~Config~ Klasse, Code
 Snippet:([[code:json_config]]), implementiert. Somit muss man jeweils nur die
@@ -1862,20 +1862,20 @@ def _get_path(self):
 *** Frontend
 
 Zur Vereinfachung der Bedienbarkeit wurde die Applikation, um eine grafische
-Konfigurationsmöglichkeit zu erweitern. Diese stellt dabei hauptsächlich die
+Konfigurationsmöglichkeit erweitert. Diese stellt dabei hauptsächlich die
 Werte aus der Konfigurationsdatei grafisch dar und übergibt allenfalls
-geänderte Werte ans Backend welches die Konfiguration, dann wieder in der Datei
+geänderte Werte ans Backend, welches die Konfiguration, dann wieder in der Datei
 speichert.
 
 Qt kennt keinen Mechanismus zum Auslesen aller Elemente aus einem sogenannten
 ~QListWidget~, einem gls:gui Element, welches Listen darstellt. Die Elemente
-müssen somit zuerst in einer Zwischenliste gespeichert werden bevor sie zurück
+müssen somit zuerst in einer Zwischenliste gespeichert werden, bevor sie zurück
 in das ~Configparser~ Objekt geschrieben. Im Code sieht dies dann wie in
 Codesnippet:([[code:qlistwidgets_items]]) aus. Dabei wird jedes Element einzeln aus
 dem ~QListWidget~ geholt und in die Zwischenliste geschoben. Im zweiten Teil
 wird die Liste dann wieder zu einem gls:json String konvertiert und im
 ~Configparser~ Objekt gespeichert. Die Option ~indent=4~ dient dabei der
-Lesbarkeit damit nicht der ganze gls:json String auf ein Zeile in der
+Lesbarkeit, damit nicht der ganze gls:json String auf ein Zeile in der
 Konfigurationsdatei gespeichert wird, sondern jedes Listenelement seine eigene
 Zeile erhält.
 
@@ -1901,13 +1901,13 @@ self.config['borgqt']['includes'] = json.dumps(includes,
 Zuerst erschien es sinnvoll die Kommunikation zwischen gls:borg und Borg-Qt
 über einfache Funktionen laufen zu lassen. Dieser Ansatz hatte allerdings zwei
 Probleme. Zum einen wurde es relativ umständlich Informationen zu verarbeiten
-und weiterzugeben zum anderen führte es zu dem unschönen Nebeneffekt dass, das
+und weiterzugeben, zum anderen führte es zu dem unschönen Nebeneffekt, dass das
 gls:gui eingefroren ist. Eine Recherche ergab, dass Threads hier Abhilfe
 schaffen könnten.
 
 Python liefert für Threads das Modul ~threading.Thread~ footcite:threading,
 mit. In der Praxis lies sich der Fortschrittsdialog und der Thread jedoch nicht
-so zu verknüpfen das sich der Dialog schliesst, wenn das Backup durchgelaufen
+so verknüpfen das sich der Dialog schliesst, wenn das Backup durchgelaufen
 ist und der Thread wieder entfernt wird. Aus diesem Grund wurde dann ein
 erfolgreicher Test mit dem PyQt Modul ~QThread~ footcite:qthread gemacht. Nach
 Beendigung des Backups wird der Fortschrittsdialog automatisch geschlossen.
@@ -1960,7 +1960,7 @@ Die ganze Funktionalität wurde dann in der Klasse ~BorgQtThread~
 zusammengefasst. Somit kann für jede Funktion von gls:borg eine einzelne Klasse
 geschrieben werden, welche dann von ~BorgQtThread~ die Funktionen erbt. Die
 Funktionsklassen müssen dann jeweils nur die Methode
-~self.create_command(self)~ implementieren welche das Property ~self.command~
+~self.create_command(self)~ implementieren, welche das Property ~self.command~
 erstellt und die einfachen Funktionen von gls:borg sollten direkt funktionieren.
 
 ** Backup
@@ -1971,7 +1971,7 @@ vonstattengehen.
 
 *** Backend
 
-Um Backups erstellen zu können wurde die Klasse ~BackupThread~ erstellt, welche
+Um Backups erstellen zu können, wurde die Klasse ~BackupThread~ erstellt, welche
 von ~BorgQtThread~ erbt. Die Klasse ~BackupThread~ nimmt beim instantiieren 3
 Argumente auf: ~includes~, ~excludes~, ~prefix~. Wobei ~excludes~ und ~prefix~
 beide optional sind. Im Hauptcode werden diese Argumente aus der
@@ -1980,13 +1980,13 @@ eines Backups im Hintergrund aus der Konfigurationsdatei gelesen. Wenn es
 der User manuell ausführt, wird der im Frontend ausgewählte Pfad mitgegeben.
 
 Die "Excludes" haben lange nicht funktioniert. Der Grund dafür waren zusätzliche
-Anführungszeichen um die Exclude Pfade. Diese wurden aus Versehen hinzugefügt
+Anführungszeichen um die Exclude Pfade. Diese wurden aus Versehen hinzugefügt,
 da gls:borg normalerweise auf der Kommandozeile ausgeführt wird und die
-Anführungszeichen dort notwendig sind um allfällige Leer- oder Sonderzeichen
-abzufangen. Es wurde davon ausgegangen dass, da ~subprocess~ Modul ähnlich
+Anführungszeichen dort notwendig sind, um allfällige Leer- oder Sonderzeichen
+abzufangen. Es wurde davon ausgegangen, dass das ~subprocess~ Modul ähnlich
 funktioniert wie die Kommandozeile. Da man an das Modul direkt einen String
 übergibt, sind die zusätzlichen Anführungszeichen nicht notwendig und führen
-sogar dazu das die Pfade gar nicht funktionieren. Somit werden die "Excludes"
+sogar dazu, dass die Pfade gar nicht funktionieren. Somit werden die "Excludes"
 mittels der Methode ~_process_excludes~ mit dem entsprechenden Parameter
 gepaart und als gesamte Liste an das finale Kommando angehängt. Die "Includes"
 funktionieren auf die gleiche Weise, benötigen jedoch keine zusätzlichen
@@ -2019,7 +2019,7 @@ def create_command(self):
 
 *** Frontend
 
-Damit die Backups im Frontend funktionieren musste zum einen der "Backup" Knopf
+Damit die Backups im Frontend funktionieren, musste zum einen der "Backup" Knopf
 mit der Methode ~create_backup~ verknüpft werden. Des Weiteren wurde ein Dateibaum, in
 Abbildung:([[fig:borgqt_file_tree]]) grün umrahmt, eingefügt. Dieser gibt den Pfad
 des angewählten Objektes and die ~create_backup~ Methode weiter.
@@ -2030,21 +2030,21 @@ des angewählten Objektes and die ~create_backup~ Methode weiter.
 
 Während dem ein Archiv erstellt wird, wird ein kleiner Dialog mit Ladebalken
 angezeigt, Abbildung:([[fig:borgqt_progress_v2]]). Dieser dient hauptsächlich dazu
-dem User das Gefühl zu geben, das die Applikation noch am Arbeiten ist.
+dem User das Gefühl zu geben, dass die Applikation noch am Arbeiten ist.
 
 Der Dialog musste gegenüber der ersten Version in Sektion: [[Erste Umsetzung][Erste Umsetzung]] noch
 etwas angepasst werden. gls:borg gibt, während dem Erstellen eines Archivs
 keine Informationen zurück, welche es einem erlauben würden einen
 Fortschrittsbalken zu generieren, welcher den effektiven Fortschritt anzeigt.
 gls:borg gibt einzig die Anzahl der verarbeiteten Dateien in regelmässigen
-Abständen zurück. Da gls:borg jedoch zu Beginn nicht meldet wie viele Dateien
-gesichert werden lässt sich damit keine Prozentzahl erstellen. Ein paar
+Abständen zurück. Da gls:borg jedoch zu Beginn nicht meldet, wie viele Dateien
+gesichert werden, lässt sich damit keine Prozentzahl erstellen. Ein paar
 Experimente, bei denen die zu sichernden Dateien zuerst von Borg-Qt gezählt
 werden sollten, wurden verworfen. Einerseits weil keine Methode gefunden werden
 konnte, welche die gleiche Anzahl Dateien zurückgab wie gls:borg. Anderseits,
 weil es den Backup Vorgang unnötig in die Länge zieht. Dies ist insbesondere
 der Fall, wenn sich sehr viele Dateien im Quellverzeichnis befinden. Es kann
-sogar soweit kommen dass, das Zählen länger als das eigentliche Sichern dauert.
+sogar soweit kommen, dass das Zählen länger als das eigentliche Sichern dauert.
 Aus diesem Grund wurde der Fortschrittsbalken mit Prozentanzeige durch einen
 sich wiederholenden Ladebalken ersetzt.
 
@@ -2054,30 +2054,30 @@ sich wiederholenden Ladebalken ersetzt.
 [[file:pictures/borgqt_progress_v2.png]]
 
 Wurde das Archiv erfolgreich erstellt, wird die Liste mit den Archiven sowie
-die Repository Statistik aktualisiert. Beide Elemente sind in der,
+die Repository Statistik aktualisiert. Beide Elemente sind in der
 Abbildung:([[fig:borgqt_archive_list]]), grün respektive rot umrahmt. Für die
 beiden Funktionen wurde jeweils eine eigene Klasse, ~ListThread~ und
 ~InfoThread~, erstellt. Beide erben von ~BorgQtThread~. In den Klassen wird wie
 bei ~BackupThread~ gls:borg über einen ~subprocess~ aufgerufen, um die Archiv Liste
 respektive Statistik zurückzuerhalten Die gls:json Strings werden wieder auf
-die jeweilige Information geparst und die Archive in eine Python List, die
-Repository Statistik in Zahlen umgewandelt.
+die jeweilige Information geparst und die Archive in eine Python Liste, die
+Repository Statistik, in Zahlen umgewandelt.
 
 Da gls:borg die Repository Grössen in Bytes zurückgibt, sollten diese zur
 Anzeige noch in eine Menschen lesbarses Format umgerechnet werden. In Borg-Qt
 geschieht dies mit der Helferfunktion ~convert_size~. Die Funktion wurde von
 Stackoverflow footcite:sizeformat übernommen.
 
-Beim Durchführen der Usability-Studie wurde noch ein Bug entdeckt.
-Der Bug, der entdeckt wurde, tritt immer dann auf, wenn ein Archiv gemountet
-ist während man ein Backup erstellen möchte. Dies ist jedoch offenbar eine
-Funktion die von gls:borg nicht unterstützt wird footcite:borgmountissue.
-gls:borg kann mehrere Archive gleichzeitig mounten. Der User müsste jedoch
-jedes der Archive zuerst wieder unmounten bevor er eine neue Datensicherung
-erstellen kann. Das Problem wurde dadurch gelöst das dem User ein Dialog
-angezeigt wird, über welchen er vor einer Datensicherung zuerst die gemounteten
-Archive aushängen kann. Anschliessend startet die Datensicherung wie, wenn kein
-Archiv gemountet gewesen wäre.
+Beim Durchführen der Usability-Studie wurde noch ein Bug entdeckt welcher die
+Anwendung zum Abstürzen brachte. Der Bug, der entdeckt wurde, tritt immer dann
+auf, wenn ein Archiv gemountet ist während man ein Archiv erstellen möchte.
+Dies ist jedoch offenbar eine Funktion die von gls:borg nicht unterstützt wird
+footcite:borgmountissue. gls:borg kann mehrere Archive gleichzeitig mounten.
+Der User müsste jedoch jedes der Archive zuerst wieder unmounten bevor er eine
+neue Datensicherung erstellen kann. Das Problem wurde dadurch gelöst, dass dem
+User ein Dialog angezeigt wird, über welchen er vor einer Datensicherung zuerst
+die gemounteten Archive aushängen kann. Anschliessend startet die
+Datensicherung, wie wenn kein Archiv gemountet gewesen wäre.
 
 #+caption: Screenshot der aktualisierten Archivliste und Repository Statistik.
 #+name: fig:borgqt_archive_list
@@ -2085,9 +2085,9 @@ Archiv gemountet gewesen wäre.
 
 ** Restore
 
-Der Code für das Wiederherstellen eines Backups ist sehr ähnlich wie der Code
-für das Erstellen. Die Besonderheiten bei dieser Funktion sind vor allem, die
-Kontrolle das ein Archiv angewählt wurde bevor man die Wiederherstellung
+Der Code für das Wiederherstellen eines Archivs ist sehr ähnlich wie der Code
+für das Erstellen. Die Besonderheiten bei dieser Funktion sind vor allem die
+Kontrolle, dass ein Archiv angewählt wurde, bevor man die Wiederherstellung
 startet, das Erstellen des Zielpfades sowie das Aufräumen bei einem Fehler.
 
 Wird der "Restore" Knopf gedrückt ohne das ein Archiv angewählt wurde, erscheint
@@ -2102,9 +2102,9 @@ darauf hinzuweisen, das er dies noch tun sollte.
 Für die Wiederherstellung einer Datensicherung, selektiert der User das
 gewünschte Archiv. Als zweiten Schritt startet er den Prozess mit Klick auf
 "Restore". Im sich automatisch öffnenden Dialogfenster, ist der gewünschte
-Zielort auszuwählen. Ist der Zielort festgelegt, erstellt Borg-Qt
+Zielort auszuwählen. Ist der Zielort festgelegt, erstellt Borg-Qt ein
 Subverzeichnis mit dem Namen des Archivs und beginnt mit der eigentlichen
-Wiederherstellung. Ist der Zielort für die Applikation nicht beschreibbar sein
+Wiederherstellung. Ist der Zielort für die Applikation nicht beschreibbar
 erscheint die Fehlermeldung, Abbildung:([[fig:not_writeable]]), und der Vorgang
 wird abgebrochen. Nach der erfolgreichen Wiederherstellung öffnet die
 Applikation den Zielort in einem Dateimanager, damit der User gleich mit den
@@ -2115,7 +2115,7 @@ Dateien weiterarbeiten kann.
 #+attr_latex: :width .2\paperwidth :placement [H]
 [[file:pictures/borgqt_not_writeable.png]]
 
-Gibt es, während dem Wiederherstellen einen Fehler gibt die Anwendung den
+Gibt es, während dem Wiederherstellen, einen Fehler gibt die Anwendung den
 entsprechenden Fehler aus und löscht zusätzlich noch den zu Beginn erstellten
 Archiv Ordner.
 
@@ -2134,13 +2134,13 @@ Archivs
 gls:borg mountet jedes Archiv nur mit Leserechten. Es ist relativ
 unwahrscheinlich, dass der Zielpfad in unbeschreibbarer Form bereits vor dem
 Ausführen der ~mount_backup~ Methode bereits vorhanden ist. Ist dies der Fall
-kann davon ausgegangen werden das der Benutzer das Archiv bereits einmal
+kann davon ausgegangen werden, dass der Benutzer das Archiv bereits einmal
 gemountet hat. Genau dies wird in der Applikation auch so überprüft. Hat die
 Applikation Schreibrechte auf den Zielpfad, wird das ausgewählte Archiv auf
 diesem Pfad gemountet. Anschliessend wird der Pfad in einem Dateimanager
-geöffnet damit der Benutzer direkt mit den Dateien weiterarbeiten kann. Wurde
-erkannt dass, das Archiv bereits gemountet wurde, also der Pfad nicht
-schreibbar ist, öffnet die Applikation direkt den Dateimanager ohne zu
+geöffnet, damit der Benutzer direkt mit den Dateien weiterarbeiten kann. Wurde
+erkannt, dass das Archiv bereits gemountet wurde, also der Pfad nicht
+schreibbar ist, öffnet die Applikation direkt den Dateimanager, ohne zu
 versuchen das Archiv noch einmal zu mounten.
 
 Zusätzlich wird der Pfad jedes gemounteten Archivs in einer Liste gespeichert.
@@ -2169,7 +2169,7 @@ Funktion bereitzustellen, welche die Backups automatisch im Hintergrund
 erledigt. Dadurch ist sichergestellt das die Backups im allgemeinen Trubel des
 Lebens nicht vergessen gehen.
 
-Voraussetzung für automatisierte Backups ist das die Datensicherung ohne
+Voraussetzung für automatisierte Backups ist, dass die Datensicherung ohne
 gls:gui gestartet werden kann. Bei Borg-Qt wird dies über einen Kommandozeilen
 Parameter realisiert. Hierfür wurde das Python Standard Paket ~argparser~
 verwendet. Konkret bedeutet dies, dass wenn die Applikation auf der
@@ -2187,12 +2187,12 @@ Variante a), die Applikation permanent im Hintergrund laufen lassen, etwa als
 Trayicon wie man das von anderen Applikationen wie etwas Dropbox kennt.
 
 Variante b) über Werkzeuge des Betriebssystems. Die drei Desktop
-Betriebsysteme, Windows, OS X und Linux, bringen alle drei Werkzeuge mit, um
+Betriebsysteme, Windows, OS X und Linux bringen alle drei Werkzeuge mit, um
 periodisch ein Programm auszuführen.
 
 Für Borg-Qt wurde beschlossen Variante b) zu realisieren. Die Anwendung soll
 dem Benutzer soweit als möglich aus dem Weg gehen. Eine Anwendung welche
-permanent in der Taskleiste lebt erfüllt das Kriterum nicht.
+permanent in der Taskleiste lebt, erfüllt das Kriterum nicht.
 
 Unter Linux wurden sich wiederholende Aufgaben, früher mit sogenannten Cron
 Jobs umgesetzt. Die moderne Lösung sind heutzutage jedoch Systemd Timer. Also
@@ -2208,7 +2208,7 @@ einfach in Klartextdateien mit der Dateiendung ~.service~ definiert. Der Inhalt
 orientiert sich dabei praktischerweise am "INI" Stil. In Borg-Qt wurde das INI
 Format bereits bei den Konfigurationsdateien verwendet. Somit können die dort
 gesammelte Erfahrungen zur Implementation von ~configparser~ wiederverwendet
-werden. Soll ein Service in einem gewissen Zeitintervall ausgeführt werden
+werden. Soll ein Service in einem gewissen Zeitintervall ausgeführt werden,
 benötigt Systemd eine weitere Datei mit dem gleichen Namen jedoch mit der
 Dateiendung ~.timer~ . Der Inhalt ist auch wieder im INI Stil gehalten. Systemd
 versteht eine Vielzahl an Datumsformaten footcite:systemddate. In Borg-Qt
@@ -2221,7 +2221,7 @@ Mit der Custom Option kann der Benutzer sich den Zeitplan individueller
 gestalten. Etwa "jeden Mittwoch um 12:00 Uhr" für Systemd übersetzt würde
 dieser Zeitplan dann so aussehen: ~Wednesday *-*-* 12:00:00~. Für spätere
 Versionen von Borg-Qt wäre es allenfalls auch möglich die Auswahl von mehreren
-Wochentagen zu ermöglichen damit der Benutzer etwa folgenden Zeitplan erstellen
+Wochentagen zu ermöglichen, damit der Benutzer etwa folgenden Zeitplan erstellen
 könnte "Montag, Mittwoch, Freitag stündliche Backups." (~Monday, Wednesday,
 Friday *-*-* *:00:00~).
 
@@ -2237,8 +2237,8 @@ respektive Timers wurde eine Klasse ~SystemdFile~ erstellt. Somit könnte
 die Funktion auch einfach in einem anderen Projekt verwendet werden.
 
 Systemd benötigt zum Starten der Anwendung den absoluten Pfad in der Service
-Datei. Da davon ausgegangen werden kann das Borg-Qt im ~PATH~ des Systems
-abgelegt wird, wurde das Unix Tool "which" verwendet um den exakten Speicherort
+Datei. Da davon ausgegangen werden kann, das Borg-Qt im ~PATH~ des Systems
+abgelegt wird, wurde das Unix Tool ~which~ verwendet, um den exakten Speicherort
 zu erhalten. Mittels des Befehls ~which borg-qt~ erhält man den absoluten
 Speicherort der Datei. Zusammen mit den Daten aus den Einstellungen wird diese
 Information in einem ~Configparser~ Objekt gespeichert, welches dann mithilfe
@@ -2247,7 +2247,7 @@ Codesnippet:([[code:systemdservice]]), respektive ~borg_qt.timer~,
 Codesnippet:([[code:systemdtimer]]), Datei, im Systemd Pfad
 ~/home/username/.config/systemd/user/~ geschrieben und aktiviert wird.
 
-Eine Option in der Datei ~borg_qt.timer~ die noch erwähnenswert ist, ist
+Eine Option in der Datei ~borg_qt.timer~, die noch erwähnenswert ist, ist
 ~Persistent = true~. Ist ~Persistent~ auf ~true~ gesetzt, holt Systemd den
 Tasks nach sollte er eine Ausführung verpasst haben. Dies ist insbesondere dann
 hilfreich, wenn etwa der Zeitplan auf ~daily~ oder ~weekly~ gesetzt wurde.
@@ -2310,7 +2310,7 @@ Abbildungen:([[fig:borgqt_settings_include_v2]]) und
 Um die Funktionen der Applikation zur erklären wurde ein Hilfe Fenster,
 Abbildung:([[fig:borgqt_help]]), eingebaut. Dieses wird dem Benutzer beim Start der
 Applikation angezeigt. Es gibt ihm einen kurzen Überblick welcher Button welche
-Aktion auslöst und welche Elemente, welche Information anzeigen. Optional kann
+Aktion auslöst und welche Elemente welche Information anzeigen. Optional kann
 der Benutzer entscheiden, dass er das Fenster beim nächsten Start nicht mehr
 angezeigt bekommen möchte. Über den Button "Help" kann das Fenster jederzeit
 unabhängig der Einstellungen wieder angezeigt werden.
@@ -2333,10 +2333,10 @@ entpackendes Dateiarchiv. Sämtliche benötigten Python Module und sonstige
 Dateien wie etwa die Icons oder gls:gui Definitionsdateien sind darin
 enthalten.
 
-Diese Art der Auslieferung hat den Vorteil, das der User das Programm nicht
+Diese Art der Auslieferung hat den Vorteil, dass der User das Programm nicht
 speziell installieren muss oder dafür irgendwelche zusätzlichen Dinge
-installieren muss. Der Nachteil ist jedoch das so ein Binary nur auf dem
-jeweiligen Betriebssystem erstellt und ausgeführt werden kann. Das heisst das
+installieren muss. Der Nachteil ist jedoch, dass ein solches Binary nur auf dem
+jeweiligen Betriebssystem erstellt und ausgeführt werden kann. Das heisst, dass
 man unter Linux etwa keine Binaries für Mac erstellen kann oder umgekehrt.
 
 Das Binary wird mit dem Programm "PyInstaller"footcite:pyinstaller erstellt.
@@ -2466,6 +2466,7 @@ Abbildung:([[fig:new-is-risk]]), eine bessere Risikobewertung als das geplante
 
 #+caption: Risikoanalyse der neuen Ist-Situation
 #+name: fig:new-is-risk
+#+ATTR_LATEX: :placement [H]
 [[file:pictures/ist_risiko_neu.pdf]]
 
 ** Projektmanagement
@@ -2518,11 +2519,11 @@ Element wie der Code dazu aussieht. Es wurde auch klar, dass die Aufgaben in
 einer Studie richtig gestellt werden müssen. Ansonsten wissen die Probanden
 schon gar nicht erst was von ihnen gefordert wird.
 
-Auch sollte, wenn möglich, darauf geachtet werden das auf einem Betriebssystem
+Auch sollte, wenn möglich, darauf geachtet werden, dass auf einem Betriebssystem
 getestet mit welchem die Probanden bereits etwas Erfahrung haben. Zwei der
 Probanden waren ab dem Verhalten und Aussehen des Dateimanagers von Ubuntu
 18.04 etwas verwirrt. Sie hatten ihn zuvor weder gesehen noch genutzt.
-Alternativ könnte auch die Gruppe der Probanden so gewählt werden das sie mit
+Alternativ könnte auch die Gruppe der Probanden so gewählt werden, dass sie mit
 dem Betriebssystem bereits vertraut sind.
 
 Eine Usability-Studie ist auf jeden Fall etwas, was man bei
@@ -2730,38 +2731,38 @@ um seine sowie teilweise auch die Daten von Bekannten zu sichern.
 #+CAPTION: Arbeitsjournal
 #+ATTR_LATEX: :environment longtable :align |p{2cm}|p{5cm}|p{5cm}|p{7cm}|
 #+NAME: tab:arbeitsjournal
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                               <8> | <20>                                                                                                                                                                                                                                 | <20>                                                                                                                                                  | <20>                                                                                                                                                                                |
-| *Von/Bis*\cellcolor[HTML]{C0C0C0} | *Geplante Arbeiten*\cellcolor[HTML]{C0C0C0}                                                                                                                                                                                          | *Erreichte Arbeiten*\cellcolor[HTML]{C0C0C0}                                                                                                          | *Eindruck*\cellcolor[HTML]{C0C0C0}                                                                                                                                                  |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                    10.-16.12.2018 | Zeitplan erarbeiten, Ziele dokumentieren                                                                                                                                                                                             | keine Abweichung                                                                                                                                      | -                                                                                                                                                                                   |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                    17.-23.12.2018 | Lösungsvarianten erfassen, Lösungsvarianten bewerten, Lösungsvariante bestimmen, SWOT Analyse erstellen, 1. Meeting                                                                                                                  | keine Abweichung                                                                                                                                      | Marco Frei hat noch diverse Punkte eingebracht die, die Planung ziemlich durcheinander bringen. Bedeute viel zusätzliche Arbeit.                                                    |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                    24.-30.12.2018 | Controlling erarbeiten, Ist- und Soll-Analyse, SWOT Analyse, Umweltanalyse, Massnahmen Katalog erarbeiten, User Stories erarbeiten, Use Case Diagramm erstellen, Use Cases ausarbeiten, Anforderungskatalog erstellen, UML Diagramme | keine Abweichung                                                                                                                                      | UML Diagramme für eine Software zu erstellen die nicht existiert ist noch eine interessante Herausforderung.                                                                        |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                  31.12-06.01.2019 | Lösungsvarianten erarbeiten und entscheiden, Test Konzept beschreiben und Testfälle erstellen, Github Repository erstellen                                                                                                           | Testfälle liessen sich noch nicht für alle Ziele erstellen. Gewisse Features hängen noch sehr davon ab wie die Basis der Applikation sich entwickelt. | Insgesamt gut gelaufen. Das Repository auf Github konnte ich unter einer eigenen Organisation erstellen dadurch wird das Zusammenarbeiten in der Zukunf einfacher.                  |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                    07.-13.01.2019 | UI ausarbeiten, UI Test ausarbeiten                                                                                                                                                                                                  | keine Abweichung                                                                                                                                      | Das das Projekt gut im Zeitplan ist soweit ein positiver Ausblick.                                                                                                                  |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                    14.-20.01.2019 | Backend "Read Config" Funktion schreiben, Frontend "Read Config"  Funktion beginnen                                                                                                                                                  | "Frontend Read Config", "Backend Write Config", "Frontend Write Config", Funktion bereits abgeschlossen.                                              | Soweit sehr gut im Zeitplan. Die Arbeitssessions mit den Kollegen helfen. Seltsam das Qt keine Methode list.items() kennt.                                                          |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                    21.-27.01.2019 | "Backend Backup" Funktion, "Frontend Backup" Funktion beginnen, Automatische Backups recherchieren                                                                                                                                   | keine Abweichung                                                                                                                                      | Erkältung drückt etwas auf die Performance. gls:unittest sind nocht nicht perfekt aber sind eine grosse Hilfe.                                                                      |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                    28.-03.02.2019 | "Frontend Backup" Funktion fertigstellen, "Backend und Frontend Restore" Funktion                                                                                                                                                    | Geplantes erreicht sowie "Mounting" und "Delete" Funktion sowohl im Backend wie auch im Frontend bereits umgesetzt.                                   | Da die Funktionen immer von gls:borg ausgeführt werden konnte sehr viel Code von den "Backup" und "Restore" Funktionen übernommen werden was die Entwicklung sehr beschleunigt hat. |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                 04.02.-10.02.2019 | Meeting Pendenzen nochmal durchgehen. Die Interface Funktionen bereinigen. Automatische Backups implementieren.                                                                                                                      | Meeting Pendenzen wurden aufgenommen und das Interface wurde bereinigt. Automatische Backups konnten noch nicht fertig gestellt werden.               | Automatische Backups sind noch relativ komplex und benötigen Kenntnisse der Systemd Timer.                                                                                          |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                 11.02.-17.02.2019 | UI Tests mit den Usern durchführen, Resultate auswerten, Feedback in Applikation einarbeiten                                                                                                                                         | keine Abweichung                                                                                                                                      | Es ist sehr spannend zu sehen wie Benutzer mit der Anwendung interagieren und welche Featues sie vermissen.                                                                         |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                 18.02.-24.02.2019 | Automatische Backups implementieren, 1. Release veröffentlichen, Readme updaten                                                                                                                                                      | keine Abweichung                                                                                                                                      | Das Projekt ist soweit sehr gut im Zeitplan. Die Systemd Timer sind können mit vielen verschiedenen Zeitformaten umgehen und sind sehr flexibel.                                    |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                 25.02.-03.03.2019 | Testfälle durchgehen, Dokumentation zur Realisierung abschliessen                                                                                                                                                                    | keine Abweichung                                                                                                                                      | Das Projekt befindet sich immer noch auf gutem Kurs. Nun fehlt noch der Feinschliff.                                                                                                |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                 04.03.-10.03.2019 | Ausblick abschliessen, Controlling abschliessen                                                                                                                                                                                      | keine Abweichung                                                                                                                                      | -                                                                                                                                                                                   |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                 11.03.-18.03.2019 | Korrekturen der Korrekturleser einarbeiten, Abgabe                                                                                                                                                                                   | keine Abweichung                                                                                                                                      | -                                                                                                                                                                                   |
-|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                               <8> | <20>                                                                                                                                                                                                                                 | <20>                                                                                                                                                   | <20>                                                                                                                                                                                 |
+| *Von/Bis*\cellcolor[HTML]{C0C0C0} | *Geplante Arbeiten*\cellcolor[HTML]{C0C0C0}                                                                                                                                                                                          | *Erreichte Arbeiten*\cellcolor[HTML]{C0C0C0}                                                                                                           | *Eindruck*\cellcolor[HTML]{C0C0C0}                                                                                                                                                   |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                    10.-16.12.2018 | Zeitplan erarbeiten, Ziele dokumentieren                                                                                                                                                                                             | keine Abweichung                                                                                                                                       | -                                                                                                                                                                                    |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                    17.-23.12.2018 | Lösungsvarianten erfassen, Lösungsvarianten bewerten, Lösungsvariante bestimmen, SWOT Analyse erstellen, 1. Meeting                                                                                                                  | keine Abweichung                                                                                                                                       | Marco Frei hat noch diverse Punkte eingebracht, die die Planung ziemlich durcheinander bringen. Bedeute viel zusätzliche Arbeit.                                                     |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                    24.-30.12.2018 | Controlling erarbeiten, Ist- und Soll-Analyse, SWOT Analyse, Umweltanalyse, Massnahmen Katalog erarbeiten, User Stories erarbeiten, Use Case Diagramm erstellen, Use Cases ausarbeiten, Anforderungskatalog erstellen, UML Diagramme | keine Abweichung                                                                                                                                       | UML Diagramme für eine Software zu erstellen die nicht existiert ist noch eine interessante Herausforderung.                                                                         |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                  31.12-06.01.2019 | Lösungsvarianten erarbeiten und entscheiden, Test Konzept beschreiben und Testfälle erstellen, Github Repository erstellen                                                                                                           | Testfälle liessen sich noch nicht für alle Ziele erstellen. Gewisse Features hängen noch sehr davon ab, wie die Basis der Applikation sich entwickelt. | Insgesamt gut gelaufen. Das Repository auf Github konnte ich unter einer eigenen Organisation erstellen, dadurch wird das Zusammenarbeiten in der Zukunf einfacher.                  |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                    07.-13.01.2019 | UI ausarbeiten, UI Test ausarbeiten                                                                                                                                                                                                  | keine Abweichung                                                                                                                                       | Da das Projekt gut im Zeitplan ist besteht zur Zeit ein positiver Eindruck.                                                                                                          |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                    14.-20.01.2019 | Backend "Read Config" Funktion schreiben, Frontend "Read Config"  Funktion beginnen                                                                                                                                                  | "Frontend Read Config", "Backend Write Config", "Frontend Write Config", Funktion bereits abgeschlossen.                                               | Soweit sehr gut im Zeitplan. Die Arbeitssessions mit den Kollegen helfen. Seltsam das Qt keine Methode list.items() kennt.                                                           |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                    21.-27.01.2019 | "Backend Backup" Funktion, "Frontend Backup" Funktion beginnen, Automatische Backups recherchieren                                                                                                                                   | keine Abweichung                                                                                                                                       | Erkältung drückt etwas auf die Performance. gls:unittest sind nocht nicht perfekt aber sind eine grosse Hilfe.                                                                       |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                    28.-03.02.2019 | "Frontend Backup" Funktion fertigstellen, "Backend und Frontend Restore" Funktion                                                                                                                                                    | Geplantes erreicht sowie "Mounting" und "Delete" Funktion sowohl im Backend wie auch im Frontend bereits umgesetzt.                                    | Da die Funktionen immer von gls:borg ausgeführt werden konnte sehr viel Code von den "Backup" und "Restore" Funktionen übernommen werden, was die Entwicklung sehr beschleunigt hat. |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                 04.02.-10.02.2019 | Meeting Pendenzen nochmal durchgehen. Die Interface Funktionen bereinigen. Automatische Backups implementieren.                                                                                                                      | Meeting Pendenzen wurden aufgenommen und das Interface wurde bereinigt. Automatische Backups konnten noch nicht fertig gestellt werden.                | Automatische Backups sind noch relativ komplex und benötigen Kenntnisse der Systemd Timer.                                                                                           |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                 11.02.-17.02.2019 | UI Tests mit den Usern durchführen, Resultate auswerten, Feedback in Applikation einarbeiten                                                                                                                                         | keine Abweichung                                                                                                                                       | Es ist sehr spannend zu sehen wie Benutzer mit der Anwendung interagieren und welche Featues sie vermissen.                                                                          |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                 18.02.-24.02.2019 | Automatische Backups implementieren, 1. Release veröffentlichen, Readme updaten                                                                                                                                                      | keine Abweichung                                                                                                                                       | Das Projekt ist soweit sehr gut im Zeitplan. Die Systemd Timer sind können mit vielen verschiedenen Zeitformaten umgehen und sind sehr flexibel.                                     |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                 25.02.-03.03.2019 | Testfälle durchgehen, Dokumentation zur Realisierung abschliessen                                                                                                                                                                    | keine Abweichung                                                                                                                                       | Das Projekt befindet sich immer noch auf gutem Kurs. Nun fehlt noch der Feinschliff.                                                                                                 |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                 04.03.-10.03.2019 | Ausblick abschliessen, Controlling abschliessen                                                                                                                                                                                      | keine Abweichung                                                                                                                                       | -                                                                                                                                                                                    |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                 11.03.-18.03.2019 | Korrekturen der Korrekturleser einarbeiten, Abgabe                                                                                                                                                                                   | keine Abweichung                                                                                                                                       | -                                                                                                                                                                                    |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 #+LATEX:\end{landscape}
 
 ** Meeting Protokolle
