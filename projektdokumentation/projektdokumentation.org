@@ -2521,9 +2521,9 @@ schon gar nicht erst was von ihnen gefordert wird.
 Auch sollte, wenn möglich, darauf geachtet werden das auf einem Betriebssystem
 getestet mit welchem die Probanden bereits etwas Erfahrung haben. Zwei der
 Probanden waren ab dem Verhalten und Aussehen des Dateimanagers von Ubuntu
-18.04 etwas verwirrt. Sie hatten ihn zuvor weder gesehen geschweige den
-genutzt. Alternativ könnte auch die Gruppe der Probanden so gewählt werden das
-sie mit dem Betriebssystem bereits vertraut sind.
+18.04 etwas verwirrt. Sie hatten ihn zuvor weder gesehen noch genutzt.
+Alternativ könnte auch die Gruppe der Probanden so gewählt werden das sie mit
+dem Betriebssystem bereits vertraut sind.
 
 Eine Usability-Studie ist auf jeden Fall etwas, was man bei
 zukünftigen Software Projekten, wieder machten sollte.
@@ -2535,8 +2535,8 @@ Erstellung des gls:gui mit dem Qt Designer war sehr hilfreich und hat es
 ermöglicht mit den Elementen auch einfach mal zu spielen, um zu sehen was passt
 und was eher weniger geht. Qt selbst ist ein gutes und sehr umfangreiches
 Framework. Das die Dokumentation den Fokus hauptsächlich auf C++ Code hat,
-machte es einem zu Beginn etwas schwieriger als nötig, die gewünschte
-Information zu finden.
+machte es einem zu Beginn etwas schwieriger die gewünschte Information zu
+finden.
 
 Python als Programmiersprache hat sich in der Entwicklung als gute Entscheidung
 bewährt. Die Entwicklung ging schnell und unkompliziert von der Hand. Python
