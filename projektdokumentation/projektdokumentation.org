@@ -420,7 +420,7 @@ Abbildung:([[fig:umweltgrafik]]) grafisch dargestellt.
 Da das Projekt so ausgelegt ist das der Projektleiter es in Eigenarbeit
 verwirklichen kann ist der Einfluss der Stakeholder während der Umsetzung sehr
 gering. Die User werden bei der Entwicklung mittels einer
-Benutzerfreundlichkeitsstudie miteinbezogen und die gls:borg Community wird mit
+Usability-Studie miteinbezogen und die gls:borg Community wird mit
 regelmässigen Posts auf dem offiziellen Github Repository auf dem Laufenden
 gehalten. Nach Ende der Diplomarbeit soll das Projekt für interessierte
 Entwickler jedoch offen sein. Der Quellcode wird bereits während der Arbeit
@@ -1486,10 +1486,10 @@ Die Klassennamen welche, in fetter Schrift gehalten sind, wurden dabei vom
 Projektleiter erstellt. Die Klassennamen, welche kursiv sind, sind Klassen, welche
 entweder von Python oder Qt bereitgestellt werden.
 
-** Benutzerfreundlichkeitsstudie
+** Usability-Studie
 
 Um Borg-Qt auf seine Nutzerfreundlichkeit zu testen wird im Rahmen der
-Diplomarbeit noch eine kleine Benutzerfreundlichkeitsstudie gemacht. Bei einer
+Diplomarbeit noch eine kleine Usability-Studie gemacht. Bei einer
 solchen Studie erhalten die Probanden, Tabelle:([[tab:probanden]]), ein paar
 Aufgaben, Sektion [[Aufgaben]], welche sie in einer begrenzten
 Zeit zu erledigen haben. Die Aufsichtsperson gibt ihnen dabei keinerlei
@@ -1506,7 +1506,7 @@ abzudecken. Da die Anwendung allen Erfahrungsstufen behilflich sein soll. Die
 Angaben in der Tabelle:([[tab:probanden]]) sind jedoch die Selbsteinschätzung der
 Probanden und nicht die des Projektleiters.
 
-#+CAPTION: Benutzerfreundlichkeitsstudie Probanden
+#+CAPTION: Usability-Studie Probanden
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}r|c|c|c|c| :placement [H]
 #+NAME: tab:probanden
 |-------------------------------+--------------------------------------+---------------------------------+----------------------------------------------+----------------------------------------------|
@@ -1523,7 +1523,7 @@ Probanden und nicht die des Projektleiters.
 |                             5 | Weiblich                             |                              26 | Gut                                          | Mittel                                       |
 |-------------------------------+--------------------------------------+---------------------------------+----------------------------------------------+----------------------------------------------|
 
-#+CAPTION: Benutzerfreundlichkeitsstudie Bewertungsraster
+#+CAPTION: Usability-Studie Bewertungsraster
 #+ATTR_LATEX: :align |l|l| :placement [H]
 #+NAME: tab:usability_colours
 |-----------------------------------+---------------------------------------|
@@ -1552,7 +1552,7 @@ Probanden und nicht die des Projektleiters.
 #+latex: \newpage
 *** Resultate
 
-#+CAPTION: Benutzerfreundlichkeitsstudie Resultate
+#+CAPTION: Resultate zur Usability-Studie
 #+ATTR_LATEX: :environment longtable :align |>{\columncolor[HTML]{EFEFEF}}l|l|l|l|l|l| :placement [H]
 #+NAME: tab:usability_result
 |--------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+---------------------------------------|
@@ -2076,7 +2076,7 @@ Anzeige noch in eine Menschen lesbarses Format umgerechnet werden. In Borg-Qt
 geschieht dies mit der Helferfunktion ~convert_size~. Die Funktion wurde von
 Stackoverflow footcite:sizeformat übernommen.
 
-Beim Durchführen der Benutzerfreundlichkeitsstudie wurde noch ein Bug entdeckt.
+Beim Durchführen der Usability-Studie wurde noch ein Bug entdeckt.
 Der Bug, der entdeckt wurde, tritt immer dann auf, wenn ein Archiv gemountet
 ist während man ein Backup erstellen möchte. Dies ist jedoch offenbar eine
 Funktion die von gls:borg nicht unterstützt wird footcite:borgmountissue.
@@ -2291,9 +2291,9 @@ Persistent = true
 WantedBy = timers.target
 #+end_src
 
-** gls:gui Anpassungen nach Benutzerfreundlichkeitsstudie
+** gls:gui Anpassungen nach Usability-Studie
 
-Im Rahmen der durchgeführten [[Benutzerfreundlichkeitsstudie][Benutzerfreundlichkeitsstudie]] wurden einige Punkte
+Im Rahmen der durchgeführten [[Usability-Studie][Usability-Studie]] wurden einige Punkte
 festgestellt, welche im Rahmen der Diplomarbeit angepasst werden konnten. Zum
 einen wurden in den "Include" sowie "Exclude" Optionen einige Buttons neu
 beschriftet und zwei Labels hinzugefügt, um klarer auf ihre Funktion
@@ -2513,7 +2513,7 @@ Kosten tiefer. Wie in der Tabelle:([[tab:kosten]]) zu sehen würden sich die
 angenommenen, internen Kosten für die Arbeit auf ca. 17302.20 CHF belaufen.
 Dies stellt eine Einsparung von 1777.8 CHF dar.
 
-** Benutzerfreundlichkeitsstudie
+** Usability-Studie
 
 Die Studie war eine sehr interessante Erfahrung. Enduser sehen eine Anwendung
 mit ganz anderen Augen als der Entwickler der Anwendung. Dieser weiss von jedem
@@ -2528,7 +2528,7 @@ Probanden waren ab dem Verhalten und Aussehen des Dateimanagers von Ubuntu
 genutzt. Alternativ könnte auch die Gruppe der Probanden so gewählt werden das
 sie mit dem Betriebssystem bereits vertraut sind.
 
-Eine Benutzerfreundlichkeitsstudie ist auf jeden Fall etwas, was man bei
+Eine Usability-Studie ist auf jeden Fall etwas, was man bei
 zukünftigen Software Projekten, wieder machten sollte.
 
 ** Umsetzung
