@@ -2328,26 +2328,25 @@ Diplomarbeit gestoppt.
 
 Für die finale Veröffentlichung wird Borg-Qt als ein sogenanntes ausführbares
 "Binary" zur Verfügung gestellt. Man kennt diese auf Windows Systemen etwa als
-die Dateien mit der Endung ~.exe~. In diesem Fall handelt es sich beim Binary
-um ein selbst entpackendes Dateiarchiv. Darin enthalten sind alle benötigten
-Python Module und sonstige Dateien wie etwa die Icons oder gls:gui
-Definitionsdateien. Beim Ausführen entpackt sich das Archiv in einen temporären
-Ordner und liest dann von dort aus alle benötigten Dateien.
+die Dateien mit der Endung ~.exe~. Beim Binary handelt es sich um ein selbst
+entpackendes Dateiarchiv. Sämtliche benötigten Python Module und sonstige
+Dateien wie etwa die Icons oder gls:gui Definitionsdateien sind darin
+enthalten.
 
-Diese Art der Auslieferung hat dabei den Vorteil, das der User das Programm
-nicht speziell installieren muss oder dafür irgendwelche zusätzlichen Dinge
+Diese Art der Auslieferung hat den Vorteil, das der User das Programm nicht
+speziell installieren muss oder dafür irgendwelche zusätzlichen Dinge
 installieren muss. Der Nachteil ist jedoch das so ein Binary nur auf dem
 jeweiligen Betriebssystem erstellt und ausgeführt werden kann. Das heisst das
 man unter Linux etwa keine Binaries für Mac erstellen kann oder umgekehrt.
 
-Erstellt werden die Dateien mit einem Programm namens
-"PyInstaller"footcite:pyinstaller. Man führt das Programm dabei auf der
-Kommandozeile gegen die Hauptdatei des Codes aus. Der Befehl dafür ist relativ
-einfach, Codesnippet:([[code:pyinstaller]]). Wichtig dabei ist das man die Pfade
-der zusätzlichen Dateien wie etwa Icons mit angibt da PyInstaller diese nicht
-selber finden kann. Der gezeigte Code wurde dabei in ein Makefile
-implementiert. Somit kann man in der obersten Ebene des Repository einfach den
-Befehl ~make~ ausführen und das Binary wird im Ordner ~dist~ erstellt.
+Das Binary wird mit dem Programm "PyInstaller"footcite:pyinstaller erstellt.
+PyInstaller wird auf der Kommandozeile mit Angabe der Hauptdatei des Codes
+ausgeführt. Der Befehl dafür ist relativ einfach,
+Codesnippet:([[code:pyinstaller]]). Pfade zusätzlicher Dateien wie etwa Icons
+müssen mit angegeben werden. PyInstaller kann diese sonst nicht in das Binary
+einbinden. Der gezeigte Code wurde dabei in ein Makefile implementiert. Somit
+kann man in der obersten Ebene des Repository einfach den Befehl ~make~
+ausführen und das Binary wird im Ordner ~dist~ erstellt.
 
 #+caption: Code zum Erstellen der finalen Binaries von Borg-Qt
 #+name: code:pyinstaller
@@ -2360,8 +2359,10 @@ pyinstaller --hidden-import=PyQt5.sip \
 
 Auf Github wird jeweils ein Release erstellt und dazu die passenden Binaries
 hochgeladen. Github packt dabei den Source Code beim Erstellen des Releases in
-ein Zip Archiv. Somit kann eine interessierte Person sich zum Binary auch
-direkt den Source Code herunterladen.
+ein Zip Archiv. Somit steht der exakte Source Code zu jedem Binary direkt zu
+Verfügung. Dies um den Regeln der gls:gpl zu folgen sowie um Benutzern die
+Möglichkeit zu geben den Code vor einer Nutzung zu überprüfen und als sicher zu
+befinden.
 
 ** Kontrollieren der Testfälle
 
