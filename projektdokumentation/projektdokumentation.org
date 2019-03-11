@@ -97,7 +97,7 @@ weiter zu entwickeln.
 Als Nebenziel soll mit dieser Arbeit auch die Verbreitung von freier
 Software gefördert werden. Dies wird insbesondere dadurch erreicht, dass die
 Software selbst unter der gls:gpl Version 3 footcite:gplv3 veröffentlicht wird.
-Wenn möglich sollen während der Entwicklung auch hauptsächlich freie Software
+Wenn möglich soll während der Entwicklung auch hauptsächlich freie Software
 verwendet werden, um aufzuzeigen das ein solches Projekte nicht zwingend von
 proprietärer Software abhängig ist. Die gesamte Arbeit wird zudem zu jedem
 Zeitpunkt öffentlich einsehbar sein. Der Quelltext der Dokumentation ist unter
@@ -209,7 +209,7 @@ Während der Laufzeit der Diplomarbeit werden jedoch keine Inputs aus der Borg
 Community im Bezug auf die Entwicklung entgegengenommen.
 
 Bugs von gls:borg welche während der Dauer der Diplomarbeit vom Studenten
-entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
+entdeckt werden, wird dieser dem Projekt melden, jedoch nicht selber beheben.
 
 #+caption: Kontextdiagramm des Borg GUI
 #+name: fig:kontext
@@ -220,7 +220,7 @@ entdeckt werden, wird dieser dem Projekt melden jedoch nicht selber beheben.
 
 Für das Projekt wurde die gls:wasserfall gewählt. Da nur eine
 einzige Person am Projekt arbeitet, kann nur ein Task nach dem anderen
-abgearbeitet werden und viele Aufgaben stehen in Abhängigkeiten zueinander.
+abgearbeitet werden und viele Aufgaben stehen in Abhängigkeit zueinander.
 Somit macht das iterative Vorgehen der gls:wasserfall für dieses Projekt am
 meisten Sinn.
 
@@ -240,29 +240,29 @@ Versionsnummern sind für die Applikation zum jetzigen Zeitpunkt noch nicht
 vorgesehen. Sollten sie zukünftig einmal verwendet werden, soll eine
 semantische Versionierung footcite:semver verwendet werden. Dabei ist eine
 Versionsnummer immer nach diesem Schema aufgebaut, MAJOR.MINOR.PATCH. Bei
-Änderungen wir die:
+Änderungen wird die:
 1. MAJOR Version erhöht, wenn man inkompatible Änderungen an der gls:api macht.
 2. MINOR Version erhöht, wenn man Funktionalität hinzufügt, die
    abwärtskompatibel ist.
 3. PATCH Version erhöht, wenn man abwärtskompatibel Bug-Fixes hinzufügt.
 Eine Versionsnummer würde dann so aussehen Version 1.2.3.
 
-Auf jeden Fall sollte, wenn möglich, immer nur lauffähiger Code im Master
+Auf jeden Fall sollte, sofern möglich, immer nur lauffähiger Code im Master
 Branch eingecheckt sein, damit der Master Branch immer eine funktionierende
 Software repräsentiert. Dies gilt auch für das Repository der Dokumentation.
 Der Master Branch der Dokumentation sollte maximal mit zwei Befehlen ~make
 clean~ und ~make~ "kompilierbar" sein.
 
-Als Software für die Versionskontrolle wurde gls:git footcite:git aus folgenden
-Gründen ausgewählt:
+Als Software für die Versionskontrolle wurde gls:git footcite:git aus den
+folgenden Gründen ausgewählt:
 
 - Ist der de facto Standard bei Versionskontrollsoftware
 - Läuft auf allen gängigen Betriebssystemen
-- Es gibt gratis Services, die man nutzen könnte (Github, Gitlab)
+- Es gibt gratis Services, die man nutzen kann (Github, Gitlab)
 - Ermöglicht es offline zu arbeiten und glspl:commit erstellen
-- Der Autor hat bereits einen eigenen gls:git Server zur Verfügung
-- Der Autor ist bereits mit gls:git aus vorhergehenden Projekten vertraut,
-  dadurch muss man keine Ressourcen aufwenden eine neue Software zu lernen.
+- Es steht bereits ein eigener gls:git Server zur Verfügung
+- gls:git ist aus vorhergehenden Projekten vertraut,
+  dadurch muss kein Aufwand betrieben werden, eine neue Software zu lernen.
   Zusätzlich hat sich gls:git in den vorhergehenden Projekten als robuste
   und schnelle Software erwiesen.
 - gls:git ist gls:libre unter der gls:gpl v2.
@@ -271,10 +271,10 @@ Gründen ausgewählt:
 
 Sowohl bei der Dokumentation wie auch bei der Programmierung wurde
 hauptsächlich der Editor GNU Emacs footcite:emacs verwendet. GNU Emacs ist mit
-32 Jahren (obwohl seine Wurzeln bis ins Jahre 1976 zurückgehen) wohl eines der
+32 Jahren (seine Wurzeln reichen bis ins Jahre 1976 zurück) wohl eines der
 ältesten noch aktiven Software Projekte. Emacs ist gls:libre unter der gls:gpl
 v3. Emacs wurde gewählt, da es ein schneller, schlanker und sehr flexibler
-Texteditor ist. Von normaler Textmanipulation über Taskmanagement und Emails
+Texteditor ist. Von normaler Textmanipulation über Taskmanagement bis zu Emails
 schreiben ist alles möglich.
 
 *** Dokumentation
@@ -289,8 +289,8 @@ exportieren.
 LaTeX footcite:latex ist eine Software, welche einem die Benutzung des
 Textsatzsystems TeXs vereinfacht. LaTeX wurde gegenüber einem "What You See Is
 What You Get" (z.Bsp. MS. Word) Editor gewählt, weil es einem mit seiner Markup
-Sprache erlaubt das Dokument in Text Dateien zu erstellen, gerade für
-Programmiere ist dies eine sehr interessante Lösung. Dadurch, dass LaTeX auch
+Sprache erlaubt das Dokument in Textdateien zu erstellen, gerade für
+Programmierer ist dies eine sehr interessante Lösung. Dadurch, dass LaTeX auch
 nur aus reinen Textdateien besteht, können die Dokumente auch ohne weiteres
 in die Versionskontrollsoftware einchecken und die Entwicklung im Log
 zurückverfolgen. LaTeX ist gls:libre unter der LaTeX Project Public
@@ -321,8 +321,8 @@ Planung ausgenommen, da es nicht realistisch schien, dass an diesen Tagen die
 Arbeit signifikant vorwärts gehen würde. Auch Schultage wurde nicht als
 Arbeitstage gerechnet.
 
-Um die Arbeitslast zu verteilen, wurde vom 14. Januar bis zum 11. März jeder
-Montag auf der Arbeitsstelle als frei eingegeben. Dadurch steht während des
+Um die Arbeitslast zu verteilen, wurde vom 14. Januar bis zum 11. März auf der
+Arbeitsstelle jeder Montag als frei eingegeben. Dadurch steht während des
 Projektes etwas mehr Zeit zur Verfügung, als mit einer 100 Prozent
 Arbeitsstelle möglich wäre.
 
@@ -354,12 +354,12 @@ geschätzt (dies entspricht in etwa dem doppelten reelen Stundenlohn des
 Projektleiters), ergeben sich gemäss der Berechnung in der
 Tabelle:([[tab:kosten]]), theoretische Kosten von 19080 CHF für die Umsetzung
 dieser Arbeit. Die Kosten für die Entwicklung werden im Projekt jedoch nicht
-berücksichtigt, somit sind die Kosten nur ein rein theoretischer Faktor.
+berücksichtigt. Somit sind diese nur ein rein theoretischer Faktor.
 
 ** Projektrisiken
 
 Das Risikomanagement dient dazu Risiken im Projekt zu erkennen und Massnahmen
-zur Vermeidung der Risiken zu definieren. Dadurch steht man ihnen nicht
+zur Vermeidung zu definieren. Dadurch steht man Risiken nicht
 unvorbereitet gegenüber, sollten sie eintreffen.
 
 *** Risikobeschreibung
@@ -947,7 +947,7 @@ Nutzern zugänglicher zu machen, bietet sich ein normales Desktop Programm am
 ehesten an. Desktop Programme werden von allen Computer Usern täglich genutzt
 und sind somit etwas was sie kennen. Zudem ist es für die User auch viel
 einfacher zu verstehen, als wenn sie vor der Nutzung einen lokalen Webserver
-starten müssten und diesen im Anschluss zur Nutzung wieder beenden müssten.
+starten und diesen im Anschluss zur Nutzung wieder beenden müssten.
 
 *** Bewertung
 
@@ -998,7 +998,7 @@ der Tabelle Projektziele ([[tab:projektziele]]).
 *** Backend
 
 Für die Backend Programmierung bieten sich die folgende drei Sprachen an: [[C#][C#]],
-[[C++][C++]], [[Python][Python]]. Dies vor allem, weil alle drei Allrounder Sprachen sind und sich
+[[C++][C++]] und [[Python][Python]]. Dies vor allem, weil alle drei Allrounder Sprachen sind und sich
 gut für Desktop Applikationen eignen.
 
 **** C#
@@ -1019,14 +1019,13 @@ benötigten Teile gls:libre sind. Für die Bewertung wird deshalb ein kleinerer
 Wert als bei C++ und Python genommen.
 
 C# ist die Programmiersprache, welche an der IBZ hauptsächlich gelehrt wird.
-Dadurch sind die Kenntnisse der Sprache und ihrer Anwendung bereits
-einigermassen vorhanden. Ausserhalb der Schule wurde die Sprache jedoch noch nie
-eingesetzt.
+Dadurch sind die Kenntnisse der Sprache und ihrer Anwendung bereits vorhanden.
+Ausserhalb der Schule wurde die Sprache jedoch noch nie eingesetzt.
 
-Entwickelt wird C# hauptsächlich mit der gls:ide Microsoft Visual Studio.
-Eine sehr umfangreiche und komplexe Software. Visual Studio ist dabei nur für
-Windows und OS X erhältlich. Es ist auch möglich C# Projekte ausserhalb von
-Visual Studio zu erstellen, es ist jedoch nicht sehr einfach.
+Entwickelt wird C# hauptsächlich mit der gls:ide Microsoft Visual Studio. Dies
+ist eine sehr umfangreiche und komplexe Software. Visual Studio ist dabei nur
+für Windows und OS X erhältlich. Es ist auch möglich C# Projekte ausserhalb von
+Visual Studio zu erstellen, dies ist jedoch nicht sehr einfach.
 
 Der Code ist gut lesbar und es gibt offizielle Styleguides von Microsoft was
 den Code über Projekte hinaus einheitlich aussehen lässt. Zudem
@@ -1054,7 +1053,7 @@ sehr verbreitet ist.
 C# ist eine stark typisiert Sprache und kompilierte Sprache. Des Weiteren ist
 Visual Studio der Erfahrung nach nicht die schnellste Software. Dies alles
 führt dazu das C# nicht gerade die schnellste Sprache zum Programmieren ist.
-Jedoch aufgrund des moderneren Unterbaus sicher schneller als C++.
+Jedoch aufgrund des moderneren Unterbaus ist sie sicher schneller als C++.
 
 #+CAPTION: C# Bewertungstabelle
 #+ATTR_LATEX: :align |>{\columncolor[HTML]{EFEFEF}}p{4cm}|c|p{2cm}|p{2cm}|p{2cm}|
@@ -1095,11 +1094,11 @@ C++ kompiliert direkt zu Maschinensprache und ist dadurch sehr performant und
 läuft sehr gut auf jedem System. C++ ist im Vergleich zu modernen Sprachen
 jedoch relativ komplex und bietet diverse Stolpersteine für Programmierer.
 
-Zum Entwickeln braucht es verhältnismässig wenig. Da die Sprache bereits sehr
-alt ist, stammt sie noch aus einer Zeit, wo man noch etwas rudimentärer
-programmierte. Allerdings braucht man in jedem Fall einen gls:compiler, um ein
-ausführbares Programm zu erzeugen. Bei komplexeren Programmen wird man, um
-mindestens so etwas wie glspl:makefile auch nicht herumkommen
+Zum Entwickeln braucht es verhältnismässig wenig Werkzeuge. Da die Sprache
+bereits sehr alt ist, stammt sie noch aus einer Zeit, wo man noch etwas
+rudimentärer programmierte. Allerdings braucht man in jedem Fall einen
+gls:compiler, um ein Programm zu erzeugen. Bei komplexeren Programmen wird man,
+um mindestens so etwas wie glspl:makefile auch nicht herumkommen
 
 Im Vergleich zu Python oder C# ist C++ wohl die am schwersten lesbare Sprache.
 Zudem gibt es auch keinen zentralen Styleguide, welcher einem vorgeben würde wie
@@ -1110,11 +1109,11 @@ Der Lernfaktor wäre aufgrund der mangelnden Vorkenntnisse hier ganz klar am
 Grössten.
 
 Da C++ eine alte Sprache ist, geniesst sie auch eine dementsprechende
-Verbreitung. Daher ist anzunehmens dass sicher mindestens ein grössere Teil der
+Verbreitung. Daher ist anzunehmens dass sicher mindestens ein grösserer Teil der
 älteren gls:borg Entwickler C++ oder C gelernt haben.
 
 Da C++ auch heute noch zu den meistgenutzten Sprachen gehört, gibt es
-entsprechend viele Ressourcen dazu und Beispiel Projekte, von denen man ableiten
+entsprechend viele Ressourcen dazu und Beispielprojekte, von denen man ableiten
 kann. Auch hilfreiche Libraries gibt es sehr viele, welche den Programmierer
 unterstützen können. Die Sprache selber ist jedoch eher umständlich zu
 schreiben. Hinzu kommt noch, dass man, während der Entwicklung immer wieder den
@@ -1170,7 +1169,7 @@ programmieren zu können. Im einfachsten Fall wäre dies mit Notepad möglich. E
 Editor mit etwas fortgeschritteneren Features wäre jedoch empfehlenswert.
 
 Python unterstützt mehrere Programmierungsparadigmen wie etwa
-objektorientiert, funktionale oder Prozedurale Paradigmen. Bei der Entwicklung
+objektorientiert, funktionale oder prozedurale Paradigmen. Bei der Entwicklung
 von Python wurde sehr grossen Wert auf die Lesbarkeit der Sprache gelegt. Dies
 mit dem Hintergedanken das eine Programmiersprache viel häufiger gelesen als
 effektiv geschrieben wird footcite:pep8.
@@ -1190,7 +1189,7 @@ Sprache selber nicht mehr so hoch. Allerdings gibt es noch viele interessante
 Konzepte, die man im Zusammenhang mit der Sprache lernen kann. Wie etwa zum
 Beispiel multiple Vererbung von Klassen.
 
-gls:borg selber wurde in Python geschrieben. Daher ist davon auszugehen das
+gls:borg selber wurde in Python geschrieben. Daher ist davon auszugehen, dass
 Python innerhalb dieser Community eine sehr hohe Verbreitung geniesst.
 
 Python ist eine dynamisch typisierte und interpretierte Sprache. Dies bedeutet,
@@ -1234,7 +1233,7 @@ In beiden Fällen wäre nicht mal eine ungenaue Schätzung wirklich möglich.
 **** Qt
 
 Qt footcite:qt, "cute" ausgesprochen, ist ein Framework zum Entwickeln von
-grafischen Oberflächen, welche auf verschiedenen System ohne grosse Änderungen
+grafischen Oberflächen, welche auf verschiedenen Systemen ohne grosse Änderungen
 laufen sollen und sich dabei soweit als möglich wie eine native Applikation
 verhalten und "anfühlen" soll.
 
@@ -1258,7 +1257,7 @@ Backend abhängig. Die Dokumentation ist in C++ geschrieben, was für einen
 Entwickler ohne C++ Kenntnisse die Software etwas unzugänglich macht.
 
 Qt scheint, soweit dies bis jetzt abgeschätzt werden kann, sehr leicht in ein
-Projekt zu integrieren sein.
+Projekt integrierbar zu sein.
 
 Da noch sehr wenig Kenntnisse vorhanden sind, ist der Lernfaktor entsprechend
 gross.
@@ -1355,7 +1354,7 @@ Vergleich zu den anderen Frameworks bereit gute Kenntnisse vorhanden. Über die
 genau Funktion und Implementierung sind noch keine Kenntnisse vorhanden.
 
 Die Verwendung von Webtechnologien macht Electron zwar sehr kompatibel auf den
-unterstützten Systemen, oftmals sehen die Applikationen jedoch doch eher wie
+unterstützten Systemen, oftmals sehen die Applikationen jedoch eher wie
 eine Webseite als wie eine Desktop Applikation aus. Ein weiterer Nachteil ist
 der hohe Ressourcenverbrauch, da jede Applikation nahezu einer eigenen Instanz
 des Google Chrome Browsers gleich kommt.
