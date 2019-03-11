@@ -2284,11 +2284,16 @@ WantedBy = timers.target
 
 ** GUI Anpassungen nach Usability-Studie
 
-Im Rahmen der durchgeführten [[Usability-Studie][Usability-Studie]] wurden einige Punkte
-festgestellt, welche im Rahmen der Diplomarbeit angepasst werden konnten. Zum
-einen wurden in den "Include" sowie "Exclude" Optionen einige Buttons neu
-beschriftet und zwei Labels hinzugefügt, um klarer auf ihre Funktion
-hinzuweisen. Zu sehen ist dies in den
+Im Rahmen der durchgeführten [[Usability-Studie][Usability-Studie]] machten die User folgenden
+Feststellungen:
+- "Include" und "Exclude" Funktionen sind klar beschriftet.
+- Die Funktionen sind unklar.
+- Texte sind nicht einheitlich.
+
+Die Korrekturen wurden im Rahmen der Diplomarbeit angepasst.
+
+In den "Include" sowie "Exclude" Optionen wurden einige Buttons neu beschriftet
+und zwei Labels hinzugefügt, nun wird klarer auf ihre Funktion hingewiesen,
 Abbildungen:([[fig:borgqt_settings_include_v2]]) und
 ([[fig:borgqt_settings_exclude_v2]]).
 
@@ -2302,13 +2307,13 @@ Abbildungen:([[fig:borgqt_settings_include_v2]]) und
 #+attr_latex: :placement [H]
 [[file:pictures/borgqt_settings_exclude_v2.png]]
 
-Zudem wurde ein Hilfe Fenster, Abbildung:([[fig:borgqt_help]]), eingebaut, welches
-dem Benutzer beim Start der Applikation angezeigt wird. Dieses soll ihm einen
-kurzen Überblick darüber geben, welcher Button welche Aktion auslöst und welche
-Elemente, welche Information anzeigen. Optional kann der Benutzer noch
-entscheiden, dass er das Fenster beim nächsten Start nicht mehr angezeigt
-bekommen möchte. Über den Button "Help" kann das Fenster jederzeit unabhängig
-der Einstellungen wieder angezeigt werden.
+Um die Funktionen der Applikation zur erklären wurde ein Hilfe Fenster,
+Abbildung:([[fig:borgqt_help]]), eingebaut. Dieses wird dem Benutzer beim Start der
+Applikation angezeigt wird. Es gibt ihm einen kurzen Überblick welcher Button
+welche Aktion auslöst und welche Elemente, welche Information anzeigen.
+Optional kann der Benutzer entscheiden, dass er das Fenster beim nächsten Start
+nicht mehr angezeigt bekommen möchte. Über den Button "Help" kann das Fenster
+jederzeit unabhängig der Einstellungen wieder angezeigt werden.
 
 #+caption: Screenshot des Borg-Qt Hilfe Fenster
 #+name: fig:borgqt_help
