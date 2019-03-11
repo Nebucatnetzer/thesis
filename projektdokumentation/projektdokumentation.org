@@ -1861,26 +1861,20 @@ def _get_path(self):
 
 *** Frontend
 
-Um es für die User einfacher zu machen wurde beschlossen die Applikation,
-um eine grafische Konfigurationsmöglichkeit zu erweitern. Diese stellt dabei
-hauptsächlich die Werte aus der Konfigurationsdatei grafisch dar und übergibt
-allenfalls geänderte Werte ans Backend welches die Konfiguration, dann wieder in
-der Datei speichert.
-
-Das Meiste davon ist nicht besonders aufregender Code da hauptsächlich nur die
-Werte aus der Konfigurationsdatei in die entsprechenden Textfelder und Listen
-im grafischen Interface geschrieben werden auch beim Speichern der geänderten
-Einzel-Werte funktioniert es in etwa gleich. Beim Speichern der geänderten
-Listen jedoch trat eine weitere Herausforderung auf.
+Zur Vereinfachung der Bedienbarkeit wurde die Applikation, um eine grafische
+Konfigurationsmöglichkeit zu erweitern. Diese stellt dabei hauptsächlich die
+Werte aus der Konfigurationsdatei grafisch dar und übergibt allenfalls
+geänderte Werte ans Backend welches die Konfiguration, dann wieder in der Datei
+speichert.
 
 Qt kennt keinen Mechanismus zum Auslesen aller Elemente aus einem sogenannten
-~QListWidget~, einem gls:gui Element, welches Listen darstellt. Somit ist es
-nötig das man die Elemente zuerst in einer Zwischenliste speichert bevor man
-sie zurück in das ~Configparser~ Objekt schreiben kann. Im Code sieht dies dann
-wie in Codesnippet:([[code:qlistwidgets_items]]) aus. Dabei wird jedes Element
-einzeln aus dem ~QListWidget~ geholt und in die Zwischenliste geschoben. Im
-zweiten Teil wird die Liste dann wieder zu einem gls:json String konvertiert
-und im ~Configparser~ Objekt gespeichert. Die Option ~indent=4~ dient dabei der
+~QListWidget~, einem gls:gui Element, welches Listen darstellt. Die Elemente
+müssen somit zuerst in einer Zwischenliste gespeichert werden bevor sie zurück
+in das ~Configparser~ Objekt geschrieben. Im Code sieht dies dann wie in
+Codesnippet:([[code:qlistwidgets_items]]) aus. Dabei wird jedes Element einzeln aus
+dem ~QListWidget~ geholt und in die Zwischenliste geschoben. Im zweiten Teil
+wird die Liste dann wieder zu einem gls:json String konvertiert und im
+~Configparser~ Objekt gespeichert. Die Option ~indent=4~ dient dabei der
 Lesbarkeit damit nicht der ganze gls:json String auf ein Zeile in der
 Konfigurationsdatei gespeichert wird, sondern jedes Listenelement seine eigene
 Zeile erhält.
