@@ -2150,15 +2150,12 @@ System wieder im gleichen Zustand wie vor dem Start der Applikation.
 
 ** Delete
 
-Der Benutzer hat in der Applikation auch die Möglichkeit Archive wieder zu
-löschen. Hierbei greift wie bei der "Restore" und "Mount" Funktion auch wieder
-die Überprüfung ob der Benutzer ein Archiv ausgewählt hat. Ist dies gegeben,
-zeigt die Applikation dem Benutzer einen Dialog, Abbildung:([[fig:yes_no]]), zum
-Sicherstellen, dass er das Archiv wirklich löschen möchte. Bestätigt er diesen
-mit "Yes" wird der Vorgang fortgesetzt und das Archiv gelöscht. Anschliessend
-werden die Archivliste und die Repository Statistik aktualisiert, um den neuen
-Zustand wiederzugeben. Klickt der Benutzer stattdessen auf "No" schliesst sich
-der Dialog wieder und nichts weiter passiert.
+Soll ein Archiv gelöscht werden wird, wie bei der "Restore" und "Mount"
+Funktion, überprüft ob eines angewählt ist. Ist dies gegeben, zeigt die
+Applikation dem Benutzer einen Dialog, Abbildung:([[fig:yes_no]]). Bestätigt er
+diesen mit "Yes" wird der Vorgang fortgesetzt und das Archiv gelöscht mit "No"
+wird der Vorgang abgebrochen. Nach der Löschung werden die Archivliste und die
+Repository Statistik aktualisiert, um den neuen Zustand wiederzugeben.
 
 #+caption: Screenshot des Yes/No Dialogs in der "Delete" Funktion.
 #+name: fig:yes_no
