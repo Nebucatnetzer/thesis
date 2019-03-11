@@ -86,15 +86,15 @@ Stunden bis zum 18. März 2019 erarbeitet werden.
 
 ** Projektziele
 
-gls:borg ist eine Kommandozeilen basierte Backup Software. Ziel dieser Arbeit
-ist, ein gls:gui für die Software gls:borg zu entwickeln um die Nutzung zu
-vereinfachen. Da gls:borg selber freie Software ist und mit freier Software
+gls:borg ist eine Kommandozeilen basierte Backup Software. Hauptziel dieser
+Arbeit ist, ein gls:gui für die Software gls:borg zu entwickeln um die Nutzung
+zu vereinfachen. Da gls:borg selber freie Software ist und mit freier Software
 viel gute Erfahrungen gemacht wurden, soll das Projekt selber auch wieder
 gls:libre sein. Zum einen, um der Community etwas zurückzugeben, des weiteren,
 um anderen Entwicklern die Möglichkeit zu geben die Software zu verbessern und
 weiter zu entwickeln.
 
-Als neben läufiges Ziel soll mit dieser Arbeit auch die Verbreitung von freier
+Als Nebenziel soll mit dieser Arbeit auch die Verbreitung von freier
 Software gefördert werden. Dies wird insbesondere dadurch erreicht, dass die
 Software selbst unter der gls:gpl Version 3 footcite:gplv3 veröffentlicht wird.
 Wenn möglich sollen während der Entwicklung auch hauptsächlich freie Software
