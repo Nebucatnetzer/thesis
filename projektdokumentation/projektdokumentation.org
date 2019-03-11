@@ -2164,61 +2164,66 @@ Repository Statistik aktualisiert, um den neuen Zustand wiederzugeben.
 
 ** Automatische Backups
 
-Damit der Benutzer die Backups von Hand machen muss, ist es sinnvoll eine
+Damit der Benutzer die Backups nicht von Hand machen muss, ist es sinnvoll eine
 Funktion bereitzustellen, welche die Backups automatisch im Hintergrund
 erledigt. Dadurch ist sichergestellt das die Backups im allgemeinen Trubel des
 Lebens nicht vergessen gehen.
 
-Damit automatische Backups überhaupt möglich sind muss die Applikation zuerst
-Backups im Hintergrund erstellen können, also ohne das die ganze grafische
-Oberfläche angezeigt wird. Bei Borg-Qt wird dies über einen Kommandozeilen
+Voraussetzung für automatisierte Backups ist das die Datensicherung ohne
+gls:gui gestartet werden kann. Bei Borg-Qt wird dies über einen Kommandozeilen
 Parameter realisiert. Hierfür wurde das Python Standard Paket ~argparser~
-verwendet. Konkret bedeutet dies, dass wenn man die Applikation auf
-der Kommandozeile wie folgt ausführt: ~borg_qt -B~. Wird die grafische Oberfläche
-nicht angezeigt und es wird direkt die Methode ~background_backup~ der Klasse
-~MainWindow~ ausgeführt. Dabei werden alle Ordner, welche in den Einstellungen
-unter "Include" sowie "Exclude" gespeichert wurden, im Archiv gesichert,
-respektive davon ausgeschlossen. Damit sind die Voraussetzungen für
-automatische Backups gegeben.
+verwendet. Konkret bedeutet dies, dass wenn die Applikation auf der
+Kommandozeile mit folgendem Befehl ausgeführt wird: ~borg_qt -B~. Wird die
+grafische Oberfläche nicht angezeigt und es wird direkt die Methode
+~background_backup~ der Klasse ~MainWindow~ ausgeführt. Dabei werden alle
+Ordner, welche in den Einstellungen unter "Include" sowie "Exclude" gespeichert
+wurden, im Archiv gesichert, respektive davon ausgeschlossen. Damit sind die
+Voraussetzungen für automatische Backups gegeben.
 
 Um die Backups in regelmässigen Intervallen auszuführen, gibt es zwei
-Möglichkeiten, wie man dies implementieren könnte. Zum einen könnte man die
-Applikation permanent im Hintergrund laufen lassen, etwa als Trayicon wie man
-das von anderen Applikationen wie etwas Dropbox kennt zum anderen kann man es
-über Werkzeuge des Betriebssystems bewerkstelligen. Die drei
-Desktop Betriebsysteme, Windows, OS X und Linux, bringen alle drei Werkzeuge
-mit, um periodisch ein Programm auszuführen. Unter Linux wurde dies früher mit
-sogenannten Cron Jobs gemacht. Die moderne Lösung sind heutzutage jedoch
-Systemd Timer. Für Borg-Qt wurde beschlossen es mit den Werkzeugen des
-Betriebssystems zu machen. Also konkret Systemd. Dies aus dem Grund das Systemd
-genau für das Managen von Applikationen programmiert wurde. Ein Grossteil der
-Funktion ist bereits in Systemd enthalten, somit kann man Zeit sparen. Zudem
-soll die Anwendung dem Benutzer auch soweit als möglich aus dem Weg gehen. Eine
-Applikation, welche permanent in der Taskleiste lebt scheint hier nicht wirklich
-das Kriterium zu erfüllen.
+Möglichkeiten, wie man dies implementieren könnte.
+
+Variante a), die Applikation permanent im Hintergrund laufen lassen, etwa als
+Trayicon wie man das von anderen Applikationen wie etwas Dropbox kennt.
+
+Variante b) über Werkzeuge des Betriebssystems. Die drei Desktop
+Betriebsysteme, Windows, OS X und Linux, bringen alle drei Werkzeuge mit, um
+periodisch ein Programm auszuführen.
+
+Für Borg-Qt wurde beschlossen Variante b) zu realisieren. Die Anwendung soll
+dem Benutzer soweit als möglich aus dem Weg gehen. Eine Anwendung welche
+permanent in der Taskleiste lebt erfüllt das Kriterum nicht.
+
+Unter Linux wurden sich wiederholende Aufgaben, früher mit sogenannten Cron
+Jobs umgesetzt. Die moderne Lösung sind heutzutage jedoch Systemd Timer. Also
+konkret Systemd. Dies aus dem Grund das Systemd genau für das Managen von
+Systemdiensten programmiert wurde. Ein Grossteil der benötigten Funktion ist
+bereits in Systemd enthalten, somit kann bei der Entwicklung zusätzlich Zeit
+gespart werden.
 
 Systemd ist ein init System, welches dazu dient dazu die Benutzerumgebung und
 die dazugehörigen Prozesse zu starten und zu verwalten footcite:systemd. Die
 Prozesse werden über sogenannte "Services" gestartet. Die Services werden dabei
 einfach in Klartextdateien mit der Dateiendung ~.service~ definiert. Der Inhalt
 orientiert sich dabei praktischerweise am "INI" Stil. In Borg-Qt wurde das INI
-Format bereits bei den Konfigurationsdateien verwendet. Somit können dort
-gesammelte Erfahrungen wiederverwendet werden. Soll ein Service in einem
-gewissen Zeitintervall ausgeführt werden benötigt Systemd eine weitere Datei mit
-dem gleichen Namen jedoch mit der Dateiendung ~.timer~ . Der Inhalt ist auch
-wieder im INI Stil gehalten. Systemd versteht eine Vielzahl an Datumsformaten
-footcite:systemddate. In Borg-Qt wurden zwei Varianten in den Einstellungen
-umgesetzt. Eine, welche "Predefined Schedule" genannt wurde und eine mit dem
-Namen "Custom Schedule", zu sehen in, Abbildung:([[fig:schedule]]). Die Predefined
-Option wird dabei in die von Systemd unterstützten Formate "hourly", "daily",
-"weekly" und "monthly" übersetzt. Wie der Name schon sagt, wird dann stündlich,
-täglich, wöchentlich oder monatlich ein Archiv erstellt. Mit der Custom Option
-kann der Benutzer sich den Zeitplan individueller gestalten. Etwa "jeden
-Mittwoch um 12:00 Uhr" für Systemd übersetzt würde dieser Zeitplan dann so
-aussehen: ~Wednesday *-*-* 12:00:00~. Für spätere Versionen von Borg-Qt wäre es
-allenfalls auch möglich die Auswahl von mehreren Wochentagen zu ermöglichen
-damit der Benutzer etwa folgenden Zeitplan erstellen könnte "Montag, Mittwoch,
-Freitag stündliche Backups." (~Monday, Wednesday, Friday *-*-* *:00:00~).
+Format bereits bei den Konfigurationsdateien verwendet. Somit können die dort
+gesammelte Erfahrungen zur Implementation von ~configparser~ wiederverwendet
+werden. Soll ein Service in einem gewissen Zeitintervall ausgeführt werden
+benötigt Systemd eine weitere Datei mit dem gleichen Namen jedoch mit der
+Dateiendung ~.timer~ . Der Inhalt ist auch wieder im INI Stil gehalten. Systemd
+versteht eine Vielzahl an Datumsformaten footcite:systemddate. In Borg-Qt
+wurden zwei Varianten in den Einstellungen umgesetzt. Eine, welche "Predefined
+Schedule" genannt wurde und eine mit dem Namen "Custom Schedule", zu sehen in,
+Abbildung:([[fig:schedule]]). Die Predefined Option wird dabei in die von Systemd
+unterstützten Formate "hourly, daily, weekly und monthly" übersetzt.
+Entsprechend der gewählten Wiederholung wird automatisch ein Archiv erstellt.
+Mit der Custom Option kann der Benutzer sich den Zeitplan individueller
+gestalten. Etwa "jeden Mittwoch um 12:00 Uhr" für Systemd übersetzt würde
+dieser Zeitplan dann so aussehen: ~Wednesday *-*-* 12:00:00~. Für spätere
+Versionen von Borg-Qt wäre es allenfalls auch möglich die Auswahl von mehreren
+Wochentagen zu ermöglichen damit der Benutzer etwa folgenden Zeitplan erstellen
+könnte "Montag, Mittwoch, Freitag stündliche Backups." (~Monday, Wednesday,
+Friday *-*-* *:00:00~).
 
 #+caption: Screenshot der "Schedule" Einstellungen
 #+name: fig:schedule
@@ -2227,7 +2232,7 @@ Freitag stündliche Backups." (~Monday, Wednesday, Friday *-*-* *:00:00~).
 
 Das Erstellen der eigentlichen Systemd Konfiguration passiert in Borg-Qt in der
 ~Config~ Klasse zum gleichen Zeitpunkt, wie die eigentliche Konfigurationsdatei
-geschrieben wird. Zum Schreiben und he-/aktivieren des Systemd Services,
+geschrieben wird. Zum Schreiben und de-/aktivieren des Systemd Services,
 respektive Timers wurde eine Klasse ~SystemdFile~ erstellt. Somit könnte
 die Funktion auch einfach in einem anderen Projekt verwendet werden.
 
