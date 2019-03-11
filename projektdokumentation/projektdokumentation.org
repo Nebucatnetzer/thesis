@@ -2382,7 +2382,7 @@ entspricht dabei der Ziel-Nr. in der Tabelle:([[tab:projektziele]]). In der Spal
 Bemerkung wird noch kurz ausgeführt, in welcher Form das Ziel bewiesen wurde.
 
 #+CAPTION: Bewertete Projektziele
-#+ATTR_LATEX: :environment longtable :align |p{1cm}|p{1.5cm}|p{2cm}|p{8.5cm}|
+#+ATTR_LATEX: :environment longtable :align |p{1.5cm}|p{1cm}|p{2cm}|p{8.5cm}|
 #+NAME: tab:bewertete_projektziele
 |------------------------------------+--------------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *Ziel-Nr.*\cellcolor[HTML]{C0C0C0} | *Muss*\cellcolor[HTML]{C0C0C0} | *Bewertung*\cellcolor[HTML]{C0C0C0} | *Bemerkung*\cellcolor[HTML]{C0C0C0}                                                                                                                                       |
