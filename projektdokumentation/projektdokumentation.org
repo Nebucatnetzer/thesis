@@ -365,7 +365,7 @@ unvorbereitet gegenüber, sollten sie eintreffen.
 
 In der Tabelle: ([[tab:risikobeschreibung]]), sind die Risiken des Projektes
 gemeinsam mit ihren Gegenmassnahmen aufgelistet. Somit können gewisse Risiken
-bereits vorher abgefangen werden.
+bereits vorher vermieden werden.
 
 #+CAPTION: Projektrisiken
 #+ATTR_LATEX: :environment longtable :align |p{0.45\textwidth}|p{0.45\textwidth}|
@@ -474,7 +474,7 @@ Abbildung:([[fig:sollrisiko]]), ist das Soll-Risiko, welches mit dieser Arbeit
 angestrebt wird, ebenfalls grafisch dargestellt.
 
 Es sollte im Rahmen der Arbeit möglich sein die meisten Risiken zu verringern.
-Da automatische Hintergrundbackups jedoch nur ein Kann-Ziel sind wir in dieser
+Da automatische Hintergrundbackups jedoch ein Kann-Ziel sind wir in dieser
 Analyse nicht davon ausgegangen das man das Risiko Nr. 5 im Rahmen dieser
 Arbeit reduzieren kann.
 
@@ -585,40 +585,40 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 #+CAPTION: Use Case 1.0 Backup erstellen
 #+ATTR_LATEX::environment longtable :align |>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}| :placement [H]
 #+NAME: tab:uc_backup
-|---------------------+---------------------------------------------------------------------------------------------|
-|                     | <30>                                                                                        |
-| *Identifier + Name* | 1.0 Backup erstellen                                                                        |
-|---------------------+---------------------------------------------------------------------------------------------|
-| *Description*       | Das erstellen einer Datensicherung durch gls:borg anstossen.                                |
-|---------------------+---------------------------------------------------------------------------------------------|
-| *Actors*            | Benutzer                                                                                    |
-|---------------------+---------------------------------------------------------------------------------------------|
-| *Status*            | Freigegeben                                                                                 |
-|---------------------+---------------------------------------------------------------------------------------------|
-| *Includes*          | -                                                                                           |
-|---------------------+---------------------------------------------------------------------------------------------|
-| *Trigger*           | User möchte ein Backup erstellen.                                                           |
-|---------------------+---------------------------------------------------------------------------------------------|
-| *Preconditions*     | Die Applikation wurde gestartet.                                                            |
-|---------------------+---------------------------------------------------------------------------------------------|
-| *Postconditions*    | Das erstellte Backup wird angezeigt.                                                        |
-|---------------------+---------------------------------------------------------------------------------------------|
-| *Normal Flow*       | 1. Den Quellpfad auswählen.                                                                 |
-|                     | 2. Den Button "Backup" anklicken.                                                           |
-|                     | 3. Ein Pop mit Fortschrittsbalken erscheint und zeigt die Zeit bis zum Ende des Backups an. |
-|                     | 4. Am Ende des Backups verschwindet das Pop-up wieder.                                      |
-|                     | 5. Die Liste der Backups aktualisiert sich.                                                 |
-|---------------------+---------------------------------------------------------------------------------------------|
-| *Alternative Flow*  | -                                                                                           |
-|---------------------+---------------------------------------------------------------------------------------------|
-| *Notes*             | -                                                                                           |
-|---------------------+---------------------------------------------------------------------------------------------|
-| *UC History*        | 1.0 Draft erstellt durch AZ                                                                 |
-|---------------------+---------------------------------------------------------------------------------------------|
-| *Author*            | A. Zweili                                                                                   |
-|---------------------+---------------------------------------------------------------------------------------------|
-| *Date*              | 30.12.2018                                                                                  |
-|---------------------+---------------------------------------------------------------------------------------------|
+|---------------------+------------------------------------------------------------------------------------------------|
+|                     | <30>                                                                                           |
+| *Identifier + Name* | 1.0 Backup erstellen                                                                           |
+|---------------------+------------------------------------------------------------------------------------------------|
+| *Description*       | Das Erstellen einer Datensicherung durch gls:borg anstossen.                                   |
+|---------------------+------------------------------------------------------------------------------------------------|
+| *Actors*            | Benutzer                                                                                       |
+|---------------------+------------------------------------------------------------------------------------------------|
+| *Status*            | Freigegeben                                                                                    |
+|---------------------+------------------------------------------------------------------------------------------------|
+| *Includes*          | -                                                                                              |
+|---------------------+------------------------------------------------------------------------------------------------|
+| *Trigger*           | User möchte ein Backup erstellen.                                                              |
+|---------------------+------------------------------------------------------------------------------------------------|
+| *Preconditions*     | Die Applikation wurde gestartet.                                                               |
+|---------------------+------------------------------------------------------------------------------------------------|
+| *Postconditions*    | Das erstellte Backup wird angezeigt.                                                           |
+|---------------------+------------------------------------------------------------------------------------------------|
+| *Normal Flow*       | 1. Den Quellpfad auswählen.                                                                    |
+|                     | 2. Den Button "Backup" anklicken.                                                              |
+|                     | 3. Ein Pop-Up mit Fortschrittsbalken erscheint und zeigt die Zeit bis zum Ende des Backups an. |
+|                     | 4. Am Ende des Backups verschwindet das Pop-up wieder.                                         |
+|                     | 5. Die Liste der Backups aktualisiert sich.                                                    |
+|---------------------+------------------------------------------------------------------------------------------------|
+| *Alternative Flow*  | -                                                                                              |
+|---------------------+------------------------------------------------------------------------------------------------|
+| *Notes*             | -                                                                                              |
+|---------------------+------------------------------------------------------------------------------------------------|
+| *UC History*        | 1.0 Draft erstellt durch AZ                                                                    |
+|---------------------+------------------------------------------------------------------------------------------------|
+| *Author*            | A. Zweili                                                                                      |
+|---------------------+------------------------------------------------------------------------------------------------|
+| *Date*              | 30.12.2018                                                                                     |
+|---------------------+------------------------------------------------------------------------------------------------|
 #+LATEX:}
 #+caption: Aktivitätsdiagramm zum Erstellen eines Backups
 #+name: fig:activity_backup
@@ -881,7 +881,7 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 |                     | <30>                                                                  |
 | *Identifier + Name* | 6.0 automatische Backups aktivieren                                   |
 |---------------------+-----------------------------------------------------------------------|
-| *Description*       | Ein Systemdienst wird hinterlegt zum ausführen automatischer Backups. |
+| *Description*       | Ein Systemdienst wird hinterlegt zum Ausführen automatischer Backups. |
 |---------------------+-----------------------------------------------------------------------|
 | *Actors*            | User                                                                  |
 |---------------------+-----------------------------------------------------------------------|
@@ -940,17 +940,17 @@ Die detaillierte Implementation wird in der Sektion [[Realisierung][Realisierung
 
 ** Varianten
 
-Da Borg eine gls:json API zur Verfügung stellt gibt es diverse Möglichkeiten, um
-das Programm anzubinden. Da das Ziel ist, das Programm normalen Nutzern
-zugänglicher zu machen, bietet sich ein normales Desktop Programm am ehesten
-an. Desktop Programme werden von allen Computer Usern täglich genutzt und sind
-somit etwas was sie kennen. Zudem ist es für die User auch viel einfacher zu
-verstehen als sie vor der Nutzung einen lokalen Webserver starten müssten und
-diesen im Anschluss zur Nutzung wieder beenden müssten.
+Mit der gls:json gls:api von gls:borg stehen einem diverse Möglichkeiten zur
+Verfügung, um das Programm anzubinden. Da das Ziel ist, das Programm normalen
+Nutzern zugänglicher zu machen, bietet sich ein normales Desktop Programm am
+ehesten an. Desktop Programme werden von allen Computer Usern täglich genutzt
+und sind somit etwas was sie kennen. Zudem ist es für die User auch viel
+einfacher zu verstehen als sie vor der Nutzung einen lokalen Webserver starten
+müssten und diesen im Anschluss zur Nutzung wieder beenden müssten.
 
 *** Bewertung
 
-Mit der Idee aus der Einleitung zu den Varianten wurde dann eine Tabelle, mit
+Mit der Idee aus der "Einleitung zu den Varianten" wurde dann eine Tabelle, mit
 Anforderungen an die Technologien, erstellt. Die Bewertungspunkte setzen sich
 einerseits aus Projektzielen anderseits aus für das Projekt sinnvollen Punkten
 zusammen. Dadurch ergeben sich dann die Bewertungen, welche in der
@@ -996,17 +996,18 @@ der Tabelle Projektziele ([[tab:projektziele]]).
 
 *** Backend
 
-Fürs Backend bieten sich die folgende drei Sprachen an: [[C#][C#]], [[C++][C++]], [[Python][Python]].
-Dies vor allem, weil alle Allrounder Sprachen sind und sich gut für Desktop
-Applikationen eignen.
+Für die Backend Programmierung bieten sich die folgende drei Sprachen an: [[C#][C#]],
+[[C++][C++]], [[Python][Python]]. Dies vor allem, weil alle drei Allrounder Sprachen sind und sich
+gut für Desktop Applikationen eignen.
 
 **** C#
 
 C# ist eine von Microsoft entwickelte Programmiersprache welche viele
-Frameworks zur Verfügung hat. Insbesondere aufgrund der grossen kommerziellen
-Nutzung und der guten Integration mit Windows hat C# eine relative grosse
-Verbreitung. Bei Linux und OS X ist es jedoch schwieriger C# zu integrieren und
-zu nutzen.
+Frameworks zur Verfügung stellt. Insbesondere aufgrund der grossen
+kommerziellen Nutzung und der guten Integration mit Microsoft Windows hat C#
+eine relative grosse Verbreitung. Bei Linux und OS X ist es jedoch schwieriger
+C# zu integrieren und zu nutzen da es nicht standardmässig installiert ist und
+der Fokus von C# hauptsächlich auf Microsoft Windows liegt.
 
 Sie ist zu Teilen gls:libre. Die Common Language Runtime, welche für das
 Ausführen von Software zuständig ist, ist unter der MIT Lizenz lizenziert
@@ -1027,7 +1028,7 @@ Windows und OS X erhältlich. Es ist auch möglich C# Projekte ausserhalb von
 Visual Studio zu erstellen, es ist jedoch nicht sehr einfach.
 
 Der Code ist gut lesbar und es gibt offizielle Styleguides von Microsoft was
-den Code über Projekte hinaus einigermassen einheitlich aussehen lässt. Zudem
+den Code über Projekte hinaus einheitlich aussehen lässt. Zudem
 hilft hier auch Visual Studio stark den Code entsprechend zu formatieren.
 Besonders angenehm sind die Klassen- und Methodennamen der offiziellen
 Frameworks. Insgesamt sehr gut gelöst aber in Sachen Lesbarkeit noch etwas
@@ -1039,7 +1040,7 @@ installieren und nutzbar zu machen. Auf anderen Plattform wird dies leider
 nicht einfacher und unter Linux ist es bereits schwierig eine funktionierende
 Umgebung in Gang zu bringen.
 
-Da C# bereits an der IBZ gelernt wird, ist der Lernfaktor hier im Vergleich zu
+Da C# bereits an der IBZ gelehrt wird, ist der Lernfaktor hier im Vergleich zu
 den anderen Sprachen sicher am kleinsten. Allerdings gibt es noch keinerlei
 Kenntnisse beim Einbinden eines der unten aufgeführten gls:gui Frameworks.
 Daher gibt es auf jeden Fall noch genügend zu lernen.
@@ -1303,9 +1304,9 @@ Abbildung ([[fig:meld]]).
 [[file:pictures/meld.png]]
 #+attr_latex: :center
 
-Die Gtk Dokumentation empfiehlt footcite:gtk_setup, dass man unter Windows das
-Programm MSYS2 installiert, um Gtk einzurichten. Zum Programmieren an sich
-braucht es offenbar nicht zwingend weitere Tools aus einem Editor. Wie auch bei
+Die Gtk Dokumentation empfiehlt footcite:gtk_setup, dass man unter Microsoft
+Windows das Programm MSYS2 installiert, um Gtk einzurichten. Zum Programmieren
+an sich braucht es nicht zwingend weitere Tools aus einem Editor. Wie auch bei
 Qt hat man jedoch die Möglichkeit das gls:gui mit einem gls:gui Designer
 grafisch zu erstellen.
 
@@ -1593,9 +1594,9 @@ Anwendungen oft so steuert. Aufgabe 5 war auch etwas herausfordernder als 1,3
 und 4 insbesondere war unklar wie der Ordner zu der Liste hinzugefügt werden
 sollte.
 
-Während des Tests ist in der Anwendung noch ein Bug aufgetaucht, welcher
-Probleme beim Erstellen von Archiven machte. Die detaillierte Lösung dafür ist im
-Kapitel [[Realisierung]] beschrieben.
+Während des Tests ist in der Anwendung noch ein Bug aufgetaucht, welcher unter
+gewissen Umständen Probleme beim Erstellen von Archiven machte. Die
+detaillierte Lösung dafür ist im Kapitel [[Realisierung]] beschrieben.
 
 **** Proband 4
 
@@ -1609,30 +1610,27 @@ meistern.
 
 Probandin 5 mit der Anwendung insgesamt sehr gut klar und hat auch als Einzige
 die Tooltips auf den Buttons entdeckt und dann genutzt. Aufgabe 2 war jedoch
-auch schwierig zu lösen, danach ging es jedoch ohne Probleme. Als Feedback wurde
-genannt, dass 21:00 Uhr etwas spät für solche Tests sei.
+auch schwierig zu lösen, danach ging es jedoch ohne Probleme.
 
 *** Auswertung
 
-Nach den 5 Tests liess sich feststellen, dass die Anwendung für die Anwender
-insgesamt einfach zu bedienen ist, sobald sie einmal wissen, welche Buttons
-welche Aktion auslösen und wie sich die Anwendung verhält. Um Hilfestellung zu
-leisten, wird im Rahmen der Diplomarbeit noch ein Hilfefenster eingebaut,
-welches den Benutzern beim ersten Starten der Anwendung angezeigt wird und kurz
-die jeweiligen Elemente des Interfaces anzeigt. Somit sollte auch das Problem
-bei der Aufgabe zwei etwas abgeschwächt werden. Eines der Hauptprobleme war
-dort das die Probanden nicht herausgefunden haben der schnellste Weg eine
+Alle Testpersonen konnten die Applikation nach anfänglichen
+Bedienungsschwierigkeiten sehr gut bedienen. Um Hilfestellung zu leisten, wird
+im Rahmen der Diplomarbeit noch ein Hilfefenster eingebaut, welches den
+Benutzern beim ersten Starten der Anwendung angezeigt wird und kurz die
+jeweiligen Elemente des Interfaces anzeigt. Somit sollte auch das Problem bei
+der Aufgabe zwei etwas abgeschwächt werden. Eines der Hauptprobleme war dort
+das die Probanden nicht herausgefunden haben das der schnellste Weg eine
 einzelne Datei wieder herzustellen über die "Mount" Funktion ginge. Die
 Einarbeitung in die Thematik von Backups würde sich jedoch wohl nur sehr schwer
 über das gls:gui realisieren lassen. Hier müsste auf jeden Fall eine
 Dokumentation oder im Idealfall eine Schulung Abhilfe schaffen.
 
-Das Kontextmenü auf dem Rechtsklick, welches von zwei Usern gewünscht worden
-ist, ist eine sehr gute Idee und sollte sich auch realisieren lassen. Dieses
-Feature wird nicht im Rahmen der Diplomarbeit umgesetzt und für die zukünftige
-Entwicklung aufgenommen.
+Der von zwei Usern geäusserte wertvolle Hinweis, ein Kontextmenü
+anzubieten, wird in die künftige Weiterentwicklung der Applikation
+eingepflegt. Aus Ressourcengründen allerdings erst nach der Diplomarbeit.
 
-Ein Dialog, welcher ein erfolgreiches Erstellen eines Archivs bestätigt, wird
+Ein Pop-Up, welches ein erfolgreiches Erstellen eines Archivs bestätigt, wird
 nicht eingebaut. Bei erfolgreicher Durchführung verschwindet der
 Fortschrittsdialog und in der Archivlist erscheint ein weiterer Eintrag. Das
 sind zwar nicht die offensichtlichsten Hinweise im Falle eines Fehlers
@@ -1640,19 +1638,19 @@ erscheint jedoch sofort ein Dialog, der darauf hinweist. Somit sollten die
 beiden Vorgänge genügend unterschieden sein und es hat auch kein anderer Proband
 das Bedürfnis nach einer Bestätigung.
 
-Für die Zukunft wird eine Deutsche Übersetzung geplant. Dies würde die
-Anwendung dann vor allem Leuten mit weniger guten Englisch Kenntnissen
-zugänglich machen.
+Eine Deutschübersetzung, eine weitere Anforderung der Usability Tester, wird
+auch für zukünftige Entwicklungen aufgenommen und nicht im Rahmen der
+Diplomarbeit umgesetzt.
 
 Im Rahmen der Diplomarbeit werden noch einige Texte angepasst. An gewissen
-Stellen redet die Anwendung von "Backups" und an anderen von "Archivs". Da
-gls:borg sie selber "Archives" nennt, sollte Borg-Qt noch so angepasst werden
-das überall von "Archives" die Rede ist. Zudem wird bei den "Include" und
-"Exclude" Optionen, über der Liste noch ein Label hinzugefügt, um die Elemente
-zu beschreiben. Des Weiteren werden die Buttons "Add file" und "Add folder" zu
+Stellen war die Rede von "Backups" und an anderen von "Archives". Da gls:borg
+sie selber "Archives" nennt, sollte Borg-Qt noch so angepasst werden das
+überall von "Archives" die Rede ist. Zudem wird bei den "Include" und "Exclude"
+Optionen, über der Liste noch ein Label hinzugefügt, um die Elemente zu
+beschreiben. Schlussendlich werden die Buttons "Add file" und "Add folder" zu
 "Exclude file" und "Exclude folder" sowie "Include file" und "Include folder"
 umbenannt. Somit zeigen die Buttons dann auch direkt, dass sie Dateien
-respektive Ordner ein-/ausschliessen Ein paar der Probanden hatten es zuerst
+respektive Ordner ein-/ausschliessen. Ein paar der Probanden hatten es zuerst
 über den "Remove" Button versucht.
 
 * Realisierung
@@ -1672,16 +1670,15 @@ ist.
 ** Benutzerinterface
 *** Inspiration
 
-Bevor gls:borg vom Projektleiter als Backup Software eingesetzt wurde, nutzte
-er die Software "Back in Time"footcite:backintime. Die Software setzt auf Rsync
-zum Kopieren der Dateien. Dies erlaubt auch schnelle Backups über gls:ssh zu
-machen. "Back in Time" hat allerdings das Problem, dass es keine gls:dedup
-beherrscht.
+In der Vorstudie zur Diplomarbeit wurde gls:borg mit der Software "Back in
+Time"footcite:backintime verglichen. "Back in Time" setzt auf Rsync zum
+Kopieren der Dateien. Dies erlaubt es "Back in Time" auch schnelle Backups über
+gls:ssh zu machen allerdings ohne gls:dedup.
 
-Das Userinterface, zu sehen in Abbildung:([[fig:bit_main]]), ist jedoch sehr
-gelungen und soll Borg-Qt als Vorlage dienen. Insbesondere die einfache und
-direkte Art ein Backup eines spezifischen Pfades zu machen ist sehr gelungen.
-Da sie es dem User so einfach wie möglich macht ein Backup zu erstellen.
+Das übersichtliche Userinterface in Abbildung:([[fig:bit_main]]), wurde für Borg-Qt
+als Vorlage genommen. Insbesondere die einfache und direkte Art ein Backup
+eines spezifischen Pfades zu machen ist sehr gelungen. Da sie es dem User so
+einfach wie möglich macht ein Backup zu erstellen.
 
 #+caption: Screenshot des Hauptfensters der Software "Back in Time"
 #+name: fig:bit_main
@@ -1697,16 +1694,16 @@ intuitiv.
 
 Die angenehmere Variante ist es den Qt Designer, Abbildung:([[fig:qt_designer]]),
 zu nutzen. Mit diesem lassen sich die Oberflächen in einer grafischen
-Oberfläche designen und mit einem Befehl auch gleich starten damit man direkt
-sieht wie sich die Oberflächen auf dem System verhalten.
+Oberfläche designen und auch gleich starten. Damit ist direkt zu sehen wie sich
+die Oberflächen auf dem System verhalten.
 
 #+caption: Ein Screenshot der Applikation Qt Designer
 #+name: fig:qt_designer
 [[file:pictures/qt_designer.png]]
 #+attr_latex: :center
 
-Auf Basis der Ziele und der Use Cases wurde eine erste Version des glspl:gui
-erstellt. Im Hauptfenster, Abbildung:([[fig:borgqt_main_v1]]), befinden sich wie
+Mit der ersten gls:gui Version wurden die ersten Basisziele der Projektarbeit
+umgesetzt. Im Hauptfenster, Abbildung:([[fig:borgqt_main_v1]]), befinden sich wie
 auch bei "Back in Time" in der einen Hälfte eine Liste der vorhandenen Archive
 und in der anderen Hälfte ein Dateimanager. Dieser dient zur Auswahl des zu
 sichernden Pfades. Im oberen Bereich findet sich die Toolbar mit den Aktionen,
