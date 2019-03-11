@@ -2315,8 +2315,8 @@ der Einstellungen wieder angezeigt werden.
 #+attr_latex: :placement [H]
 [[file:pictures/borgqt_help.png]]
 
-Mit dem Abschluss der Anpassungen wurde die für die Entwicklung reservierte
-Zeit aufgebraucht und die Entwicklung neuer Funktionen für den Zeitrahmen der
+Mit Fertigstellung der Anpassungen wurde die Realisierung erfolgreich
+abgeschlossen und die Entwicklung neuer Funktionen für den Zeitrahmen der
 Diplomarbeit gestoppt.
 
 ** Releases
