@@ -659,6 +659,7 @@ um den Ablauf verständlicher zu machen.
 Ein Aktivitätsdiagramm ist dabei ein hilfreiches UML Diagramm zum Erweitern von
 Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 
+\newpage
 \paragraph{Use Case 1.0 Backup erstellen}
 \label{sec:orgf1b47d8}
 
@@ -1112,13 +1113,13 @@ Damit nachvollziehbar ist welche Funktionen von \gls{borg} verwendet wurden um
 die Use Cases umsetzen zu können, werden diese hier in Beziehung zur
 jeweiligen Funktion des \gls{gui} aufgelistet:
 \begin{itemize}
-\item Für das Erstellen von Archiven \texttt{borg create} \footcite{borgcreate}.
-\item Für das Anzeigen der Archiven \texttt{borg list} \footcite{borginfo}.
-\item Für das Wiederherstellen der Archive \texttt{borg extract} \footcite{borgextract}.
-\item Für das Löschen der Archive \texttt{borg delete} \footcite{borgdelete}.
-\item Zum Mounten der Archive \texttt{borg mount} \footcite{borgmount}.
-\item Zum Unmounten der Archive \texttt{borg umount} \footcite{borgumount}.
-\item Zum anzeigen der Repository Statistik \textasciitilde{}borg info\textasciitilde{}\footcite{borginfo}.
+\item Für das Erstellen von Archiven: \texttt{borg create} \footcite{borgcreate}.
+\item Für das Anzeigen der Archiven: \texttt{borg list} \footcite{borglist}.
+\item Für das Wiederherstellen der Archive: \texttt{borg extract} \footcite{borgextract}.
+\item Für das Löschen der Archive: \texttt{borg delete} \footcite{borgdelete}.
+\item Zum Mounten der Archive: \texttt{borg mount} \footcite{borgmount}.
+\item Zum Unmounten der Archive: \texttt{borg umount} \footcite{borgumount}.
+\item Zum Anzeigen der Repository Statistik: \texttt{borg info} \footcite{borginfo}.
 \end{itemize}
 
 Die detaillierte Implementation wird in der Sektion \hyperref[sec:orgb833f22]{Realisierung} beschrieben.
@@ -1272,7 +1273,7 @@ Jedoch aufgrund des moderneren Unterbaus ist sie sicher schneller als C++.
 C\# Bewertungstabelle}
 
 \end{table}
-
+\newpage
 \paragraph{C++}
 \label{sec:orga42458f}
 
@@ -1375,10 +1376,9 @@ effektiv geschrieben wird \footcite{pep8}.
 
 Um ein Python Programm zu starten, braucht es eigentlich kein grosses Setup.
 Solange die Abhängigkeiten vorhanden sind, kann man ein Skript mit einem
-einfachen Befehl, Code Snippet (\ref{org8b94e5d}) starten.
+einfachen Befehl, Codesnippet:(\ref{org8b94e5d}), starten.
 
-\lstset{language=bash,label=org8b94e5d,caption={Minimal Python Setup},captionpos=b,numbers=none}
-\begin{sexylisting}{Minimal Python Setup}
+\begin{sexylisting}[label=org8b94e5d]{Minimal Python Setup}
 python3 example.py
 \end{sexylisting}
 
@@ -1420,7 +1420,7 @@ entwickeln kann, dies jedoch zulasten der Performance.
 Python Bewertungstabelle}
 
 \end{table}
-
+\newpage
 \subsubsection{Frontend}
 \label{sec:org296c098}
 
@@ -1486,7 +1486,7 @@ gross.
 Qt Bewertungstabelle}
 
 \end{table}
-
+\newpage
 \paragraph{Gtk}
 \label{sec:orgbac0846}
 
@@ -1504,9 +1504,9 @@ OS X können die Applikationen schnell etwas fremd wirken. Dies ist gut bei der
 Applikation Meld \footcite{meld} zu sehen, wenn man eine Datei auswählen möchte,
 Abbildung (\ref{fig:org7ef2fd3}).
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
-\includegraphics[width=.9\linewidth]{pictures/meld.png}
+\includegraphics[width=.7\linewidth]{pictures/meld.png}
 \caption{\label{fig:org7ef2fd3}
 Screenshot der Applikation Meld unter Windows 10}
 \end{figure}
@@ -1549,7 +1549,7 @@ Da die Kenntnisse gleich null sind, ist der Lernfaktor auf dem Maximum.
 Gtk Bewertungstabelle}
 
 \end{table}
-
+\newpage
 \paragraph{Electron}
 \label{sec:org408db76}
 
@@ -1645,7 +1645,7 @@ die Applikation ableiten. Oftmals werden die grafischen Applikationen gleich
 benannt wie die Kommandozeilen Applikation aber mit dem Namen des \gls{gui}
 Frameworks als Suffix. Somit wird das zu erstellende \gls{gui} für \gls{borg} im
 weiteren Verlauf der Arbeit nun Borg-Qt genannt
-
+\newpage
 \subsection{Testing}
 \label{sec:orge549d43}
 
@@ -1772,15 +1772,18 @@ Usability-Studie Bewertungsraster}
 
 \end{table}
 
+\newpage
 \subsubsection{Aufgaben}
 \label{sec:org8253c40}
 
 \begin{enumerate}
 \item Du möchtest deine Dateien sichern. Erstelle dazu eine Datensicherung des Ordners \texttt{/home/testuser/Downloads}.
-\item Du hast aus Versehen die Datei \texttt{/home/testuser/Downloads/Example.pdf}
-gelöscht. Stelle die Datei wieder her. Am Ende soll sie unter
-\texttt{/home/testuser/Documents/Example.pdf} zu finden sein.
-\item Stelle ein beliebiges Archiv wieder her. Der Zielpfad ist \texttt{/home/testuser/Documents/}.
+\item Du hast aus Versehen die Datei
+  \texttt{/home/testuser/Downloads/Example.pdf} gelöscht. Stelle die Datei
+  wieder her.\newline
+  Am Ende soll sie unter \texttt{/home/testuser/Documents/Example.pdf} zu finden sein.
+\item Stelle ein beliebiges Archiv wieder her.\newline
+  Der Zielpfad ist: \texttt{/home/testuser/Documents/}.
 \item Lösche ein Archiv deiner Wahl.
 \item Du möchtest, dass der Ordner \texttt{/home/testuser/Pictures/} nicht mehr gesichert
 wird. Konfiguriere die Applikation entsprechend.
@@ -2034,7 +2037,7 @@ gleichermassen genutzt werden kann.
 \caption{\label{fig:org54f4a2c}
 Screenshot des Borg-Qt "`Progress"' Dialogfensters Version 1}
 \end{figure}
-
+\newpage
 \subsection{Einstellungen}
 \label{sec:org9933429}
 
@@ -2054,11 +2057,9 @@ sehr einfach eine Datei im "`INI"' Stil zu erstellen und parsen.
 
 "`INI"' Stil bedeutet dabei das die Einstellungen in "`Key/Value"' Paaren
 gespeichert werden. Somit kann man einfach auf den benötigten Wert zugreifen, in
-dem man seinen Schlüssel angibt. Ein Beispiel ist im Code Snippet:
-(\ref{org7734c7e}) zu sehen.
+dem man seinen Schlüssel angibt. Ein Beispiel ist im CodeSnippet:(\ref{org7734c7e}) zu sehen.
 
-\lstset{language=bash,label=org7734c7e,caption={Ein Beispiel einer INI Datei.},captionpos=b,numbers=none}
-\begin{sexylisting}{Ein Beispiel einer INI Datei.}
+\begin{sexylisting}[label=org7734c7e]{Ein Beispiel einer INI Datei.}
 # docs/borg_qt.conf.example
 [borgqt]
 includes = [
@@ -2088,8 +2089,7 @@ und bekommt als Resultat eine funktionierende Python Liste zurück.
 Beim Schreiben der Konfigurationsdatei macht man dann einfach das Umgekehrte.
 Man konvertiert eine Python Liste in einen \gls{json} String.
 
-\lstset{language=Python,label=orgd4f11c4,caption={Methode zum Parsen von JSON Listen in Konfigurationsdateien.},captionpos=b,numbers=none}
-\begin{sexylisting}{Methode zum Parsen von JSON Listen in Konfigurationsdateien.}
+\begin{sexylisting}[label=orgd4f11c4]{Methode zum Parsen von JSON Listen in Konfigurationsdateien.}
 # borg_qt/config.py
 
 def _return_list_option(self, option):
@@ -2112,8 +2112,7 @@ Abbildung:(\ref{fig:orgb4e2c3c}), aus. Der Hauptpfad unter
 \texttt{\textasciitilde{}/.config/borg\_qt/borg\_qt.conf} wird dabei gemäss dem Ziel Nr. 21 über die
 Umgebungsvariable \texttt{HOME} zusammengesetzt
 
-\lstset{language=Python,label=org9b19969,caption={Methode zum Suchen der Konfigurationsdatei},captionpos=b,numbers=none}
-\begin{sexylisting}{Methode zum Suchen der Konfigurationsdatei}
+\begin{sexylisting}[label=org9b19969]{Methode zum Suchen der Konfigurationsdatei}
 # borg_qt/config.py
 
 def _get_path(self):
@@ -2157,8 +2156,7 @@ Lesbarkeit, damit nicht der ganze \gls{json} String auf ein Zeile in der
 Konfigurationsdatei gespeichert wird, sondern jedes Listenelement seine eigene
 Zeile erhält.
 
-\lstset{language=Python,label=org11848b0,caption={Workaround zum Auslesen aller Elemente in QListWidgets.},captionpos=b,numbers=none}
-\begin{sexylisting}{Workaround zum Auslesen aller Elemente in QListWidgets.}
+\begin{sexylisting}[label=org11848b0]{Workaround zum Auslesen aller Elemente in QListWidgets.}
 # borg_qt/config.py
 
 # Workaraound to get all items of a QListWidget as a list
@@ -2219,8 +2217,7 @@ werden. Somit werden dem User, gemäss Ziel Nr. 14, direkt die Fehlermeldungen
 von \gls{borg} angezeigt und es muss nur an gewissen Stellen noch
 applikationsspezifisches Exception Handling betrieben werden.
 
-\lstset{language=Python,label=orgb83002e,caption={Auswertung der json err Variabel.},captionpos=b,numbers=none}
-\begin{sexylisting}{Auswertung der json err Variabel.}
+\begin{sexylisting}[label=orgb83002e]{Auswertung der json err Variabel.}
 # borg_qt/borg_interface.py
 
 def process_json_error(self, json_err):
@@ -2271,8 +2268,7 @@ gepaart und als gesamte Liste an das finale Kommando angehängt. Die "`Includes"
 funktionieren auf die gleiche Weise, benötigen jedoch keine zusätzlichen
 Parameter. Zu sehen ist dies im Codesnippet:(\ref{org73b9775}).
 
-\lstset{language=Python,label=org73b9775,caption={Erstellen des "`borg create"' Kommandos fürs erstellen von Backups.},captionpos=b,numbers=none}
-\begin{sexylisting}{Erstellen des "`borg create"' Kommandos fürs erstellen von Backups.}
+\begin{sexylisting}[label=org73b9775]{Erstellen des "`borg create"' Kommandos fürs erstellen von Backups.}
 # borg_qt/borg_interface.py
 # Funktion zum Verarbeiten der "Excludes"
 def _process_excludes(self, excludes):
@@ -2554,8 +2550,7 @@ Sollte also etwa jeden Mittwoch ein Backup gemacht werden aber der Computer
 lief an diesem Tag nicht, startet Systemd Borg-Qt, sobald der Computer das
 nächste Mal eingeschaltet wird kommt.
 
-\lstset{language=bash,label=org686435b,caption={Systemd Service Datei für Borg-Qt},captionpos=b,numbers=none}
-\begin{sexylisting}{Systemd Service Datei für Borg-Qt}
+\begin{sexylisting}[label=org686435b]{Systemd Service Datei für Borg-Qt}
 #~/.config/systemd/user/borg_qt.service
 [Unit]
 Description = Runs Borg-Qt once in the backround to take a backup according to the configuration.
@@ -2565,8 +2560,7 @@ Type = oneshot
 ExecStart = /home/andreas/bin/borg_qt -B
 \end{sexylisting}
 
-\lstset{language=bash,label=orgc9b6ece,caption={Systemd Timer Datei für Borg-Qt},captionpos=b,numbers=none}
-\begin{sexylisting}{Systemd Timer Datei für Borg-Qt}
+\begin{sexylisting}[label=orgc9b6ece]{Systemd Timer Datei für Borg-Qt}
 #~/.config/systemd/user/borg_qt.timer
 [Unit]
 Description = Starts the borg_qt.service according to the configured schedule.
@@ -2621,7 +2615,7 @@ unabhängig der Einstellungen wieder angezeigt werden.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.9\linewidth]{pictures/borgqt_help.png}
+\includegraphics[width=.95\linewidth]{pictures/borgqt_help.png}
 \caption{\label{fig:orgf44d24c}
 Screenshot des Borg-Qt Hilfe Fenster}
 \end{figure}
@@ -2655,8 +2649,7 @@ einbinden. Der gezeigte Code wurde dabei in ein Makefile implementiert. Somit
 kann man in der obersten Ebene des Repository einfach den Befehl \texttt{make}
 ausführen und das Binary wird im Ordner \texttt{dist} erstellt.
 
-\lstset{language=bash,label=orga8745e6,caption={Code zum Erstellen der finalen Binaries von Borg-Qt},captionpos=b,numbers=none}
-\begin{sexylisting}{Code zum Erstellen der finalen Binaries von Borg-Qt}
+\begin{sexylisting}[label=orga8745e6]{Code zum Erstellen der finalen Binaries von Borg-Qt}
 pyinstaller --hidden-import=PyQt5.sip \
     --add-data=borg_qt/static/icons:static/icons \
     --add-data=borg_qt/static/UI:static/UI \
@@ -2943,7 +2936,7 @@ Projektressourcen}
 \subsection{Kosten}
 \label{sec:orgb1cd490}
 
-\begin{longtable}{|l|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|}
+\begin{longtable}{|p{3cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
 \hline
 \textbf{Name}\cellcolor[HTML]{C0C0C0} & \textbf{geschätzter Aufwand in h}\cellcolor[HTML]{C0C0C0} & \textbf{geschätzte Kosten in CHF}\cellcolor[HTML]{C0C0C0} & \textbf{effektiver Aufwand in h}\cellcolor[HTML]{C0C0C0} & \textbf{effektive Kosten in CHF}\cellcolor[HTML]{C0C0C0}\\
 \hline
@@ -2979,7 +2972,7 @@ Kostenrechnung}
 \subsection{Zeitaufwand}
 \label{sec:org60e1849}
 
-\begin{longtable}{|p{4cm}|p{1.5cm}|p{1.5cm}|p{6.5cm}|}
+\begin{longtable}{|p{3cm}|p{1.5cm}|p{1.5cm}|p{6.5cm}|}
 \hline
 \textbf{Aufgabe}\cellcolor[HTML]{C0C0C0} & \textbf{Gesch. Aufwand in h}\cellcolor[HTML]{C0C0C0} & \textbf{Effekt. Aufwand in h}\cellcolor[HTML]{C0C0C0} & \textbf{Begründung}\cellcolor[HTML]{C0C0C0}\\
 \hline
@@ -3082,6 +3075,7 @@ Zeitcontrolling}
 \hline
 \textbf{TC-21} & Automatische Backups konfigurieren & TC-01 ausgeführt. & 1. Den Button "`Settings"' betätigen.\newline 2. Bei der Option "`Includes"' die Testdateien angeben sowie unter Schedule "`Custom"' auswählen und bei "`Time"' die nächste Stunde angeben.\newline 3. Den Button Apply betätigen. & Backupzeit: 2 Minuten nach aktueller Zeit Testdateien & Der Datei Dialog schliesst sich wieder. & Die Anwendung wird angezeigt. Die Konfigurationsdatei wurde um die Option des automatischen Backups erweitert. Die Anwendung hat einen "`Service"' auf dem System erstellt. & Erfolgreich durchgeführt 25.02.2019 A.Z.\\
 \hline
+\newpage
 \textbf{TC-22} & Automatische Backups durchführen & TC-16 ausgeführt. & 1. TC-21 durchführen.\newline 2. Auf Ablauf der Zeit warten.\newline 3. Die Anwendung öffnen. & - & In der Archiv Liste wird ein Archiv angezeigt. & Die Anwendung wird angezeigt. & Erfolgreich durchgeführt 25.02.2019 A.Z.\\
 \hline
 \textbf{TC-23} & Server Archiv erstellen & Server Repository bereit.\newline Server Konfigurationsdatei erstellt. & TC-04 durchführen. & Testdateien & Die Anwendung zeigt einen Fortschrittsbalken der nach erfolgtem Backup verschwindet. & Die Archiv Liste wird aktualisiert und zeigt ein Archiv an. & Erfolgreich durchgeführt 25.02.2019 A.Z.\\
@@ -3093,8 +3087,7 @@ Zeitcontrolling}
 \caption{\label{tab:org88fa4b9}
 Testfälle}
 \\
-\end{longtable}
-}
+\end{longtable}}
 \end{landscape}
 
 \newpage
@@ -3167,4 +3160,9 @@ Arbeitsjournal}
 \subsection{Meeting Protokolle}
 \label{sec:orgc2c5a7d}
 
-Die Meeting Protokolle sind in der Datei \href{03\_Meeting\_Protokolle.pdf}{03\_Meeting\_Protokolle.pdf} zu finden.
+Die Meeting Protokolle sind in der Datei \MYhref{03\_Meeting\_Protokolle.pdf}{03\_Meeting\_Protokolle.pdf} zu finden.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "Projektdokumentation_Andreas_Zweili"
+%%% End:
