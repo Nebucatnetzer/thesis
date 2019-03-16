@@ -18,7 +18,7 @@ PUML_PDF=$(FIGURES_PUML:.puml=.svg)
 all: Projektdokumentation_Andreas_Zweili.pdf ## Build full thesis (LaTeX + figures)
 
 Projektdokumentation_Andreas_Zweili.pdf: $(SVG_PDF) $(EPS_PDF) $(DOT_PDF) $(TEX_PDF) \
-	$(PUML_PDF) projekthandbuch.tex general/ibzlogo.pdf $(BIBLIOGRAPHY)
+	$(PUML_PDF) general/ibzlogo.pdf $(BIBLIOGRAPHY)
 	latexmk -quiet -pdf -pdflatex="pdflatex -interaction=nonstopmode" \
 	-use-make $(PAPER)
 
@@ -69,10 +69,10 @@ pictures/%.pdf: pictures/%.tex  ## Figures for the manuscript
 pictures/%.svg: pictures/%.puml
 	java -jar ~/bin/plantuml.jar -tsvg $<
 
-projekthandbuch.tex: projektdokumentation.org
-	emacs -l general/thesis.el --batch \
-	--eval="(progn (find-file \"projektdokumentation.org\") (org-latex-export-to-latex nil nil nil t))"
-	replace-listings.sh projektdokumentation.tex
+#projekthandbuch.tex: projektdokumentation.org
+#	emacs -l general/thesis.el --batch \
+#	--eval="(progn (find-file \"projektdokumentation.org\") (org-latex-export-to-latex nil nil nil t))"
+#	replace-listings.sh projektdokumentation.tex
 
 final: Projektdokumentation_Andreas_Zweili.pdf
 	zip -r Projektdokumentation_Andreas_Zweili.zip \
