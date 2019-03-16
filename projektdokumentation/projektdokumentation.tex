@@ -519,50 +519,21 @@ Bei der Risiko-Analyse wird von einem durchschnittlichen Benutzer ausgegangen,
 der zur Zeit noch keine Backups macht und beginnen möchte \gls{borg} zu nutzen, um
 auf einer externen Harddisk seine Backups zu speichern.
 
-Es wird eine Ist/Soll Analyse gemacht. Jedes Risiko wurde entsprechend der
-Tabelle:(\ref{tab:orgc24b878}) nach der Wahrscheinlichkeit des Eintreffens
-bewertet und entsprechend der Tabelle:(\ref{tab:org8a27a35}) nach seiner Auswirkung
-im Bezug auf die Nützlichkeit der gemachten Backups.
-
-In der Tabelle:(\ref{tab:orgb156d31}) sind dabei die Risiken für das
-Szenario aufgelistet und nummeriert. In der Abbildung:(\ref{fig:org2c84d03}) ist die
+In der Tabelle:(\ref{tab:orgb156d31}) sind die Risiken für das Szenario
+aufgelistet und nummeriert. In der Abbildung:(\ref{fig:org2c84d03}) ist die
 Bewertung des Ist-Risikos grafisch dargestellt und in der
 Abbildung:(\ref{fig:org525577a}) ist das Soll-Risiko, welches mit dieser Arbeit
 angestrebt wird, ebenfalls grafisch dargestellt.
+
+Jedes Risiko wurde entsprechend der Tabelle:(\ref{tab:orgc24b878}) nach der
+Wahrscheinlichkeit des Eintreffens bewertet und entsprechend der
+Tabelle:(\ref{tab:org8a27a35}) nach seiner Auswirkung im Bezug auf die
+Nützlichkeit der gemachten Backups.
 
 Es sollte im Rahmen der Arbeit möglich sein die meisten Risiken zu verringern.
 Da automatische Hintergrundbackups jedoch ein Kann-Ziel sind wir in dieser
 Analyse nicht davon ausgegangen, dass man das Risiko Nr. 5 im Rahmen dieser
 Arbeit reduzieren kann.
-
-\begin{table}[H]
-\centering
-\begin{tabular}{l|l}
-\textbf{Bewertung} & \textbf{Beschreibung: Wahrscheinlichkeit (W)}\\
-\hline
-1 = gering & Unwahrscheinlich, <20\%\\
-2 = mittel & Mässig wahrscheinlich, 20-50\%\\
-3 = hoch & Hohe Wahrscheinlichkeit > 50\%\\
-\end{tabular}
-\caption{\label{tab:orgc24b878}
-Risikobewertung Wahrscheinlichkeit}
-
-\end{table}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{l|l}
-\textbf{Bewertung} & \textbf{Beschreibung: Auswirkung (A)}\\
-\hline
-1 = gering & Geringe Auswirkungen auf Nützlichkeit\\
-2 = mittel & Mittlere Auswirkung auf die Nützlichkeit\\
-3 = hoch & Hohe Auswirkung auf die Nützlichkeit\\
-\end{tabular}
-\caption{\label{tab:org8a27a35}
-Risikobewertung Auswirkung}
-
-\end{table}
-
 \begin{table}[H]
 \centering
 \begin{tabular}{|>{\columncolor[HTML]{EFEFEF}}p{0.1\textwidth}|p{0.8\textwidth}|}
@@ -598,6 +569,35 @@ Grafische Darstellung der Ist-Risikoanalyse}
 \caption{\label{fig:org525577a}
 Grafische Darstellung der Soll-Risikoanalyse}
 \end{figure}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{l|l}
+\textbf{Bewertung} & \textbf{Beschreibung: Wahrscheinlichkeit (W)}\\
+\hline
+1 = gering & Unwahrscheinlich, <20\%\\
+2 = mittel & Mässig wahrscheinlich, 20-50\%\\
+3 = hoch & Hohe Wahrscheinlichkeit > 50\%\\
+\end{tabular}
+\caption{\label{tab:orgc24b878}
+Risikobewertung Wahrscheinlichkeit}
+
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{l|l}
+\textbf{Bewertung} & \textbf{Beschreibung: Auswirkung (A)}\\
+\hline
+1 = gering & Geringe Auswirkungen auf Nützlichkeit\\
+2 = mittel & Mittlere Auswirkung auf die Nützlichkeit\\
+3 = hoch & Hohe Auswirkung auf die Nützlichkeit\\
+\end{tabular}
+\caption{\label{tab:org8a27a35}
+Risikobewertung Auswirkung}
+
+\end{table}
 
 \newpage
 \subsection{Anforderungskatalog}
