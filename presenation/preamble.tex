@@ -1,0 +1,65 @@
+\usepackage{appendixnumberbeamer}
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+\definecolor{sbase03}{HTML}{002B36}
+\definecolor{sbase02}{HTML}{073642}
+\definecolor{sbase01}{HTML}{586E75}
+\definecolor{sbase00}{HTML}{657B83}
+\definecolor{sbase0}{HTML}{839496}
+\definecolor{sbase1}{HTML}{93A1A1}
+\definecolor{sbase2}{HTML}{EEE8D5}
+\definecolor{sbase3}{HTML}{FDF6E3}
+\definecolor{red}{HTML}{DC322F}
+\definecolor{pink}{HTML}{D33682}
+\definecolor{purple}{HTML}{6C71C4}
+\definecolor{blue}{HTML}{268BD2}
+\definecolor{brown}{HTML}{795548}
+\definecolor{cyan}{HTML}{2AA198}
+\definecolor{darkgray}{HTML}{616161}
+\definecolor{gray}{HTML}{9E9E9E}
+\definecolor{lightgray}{HTML}{E0E0E0}
+\definecolor{lime}{HTML}{CDDC39}
+\definecolor{olive}{HTML}{827717}
+\definecolor{orange}{HTML}{CB4B16}
+\definecolor{teal}{HTML}{009688}
+\definecolor{yellow}{HTML}{B58900}
+\definecolor{green}{HTML}{859900}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{sourcecodepro}
+\lstset{
+  breaklines,
+  literate={ö}{{\"o}}1
+           {ä}{{\"a}}1
+           {ü}{{\"u}}1,
+  captionpos=b,                    % sets the caption-position to bottom
+  sensitive=true,
+  xleftmargin=\parindent,
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  basicstyle=\color{sbase00}\ttfamily,
+  keywordstyle=\color{cyan},
+  commentstyle=\color{sbase1},
+  stringstyle=\color{blue},
+  numberstyle=\color{purple},
+  identifierstyle=\color{sbase00},
+  showstringspaces=false,          % Removes the strange symboles where spaces are
+}
+
+\usepackage[most]{tcolorbox}
+\newtcblisting{sexylisting}[2][]{
+  sharp corners,
+  fonttitle=\bfseries,
+  colframe=gray,
+  listing only,
+  listing options={
+    basicstyle=\color{sbase00}\ttfamily,
+    keywordstyle=\color{cyan},
+    commentstyle=\color{sbase1},
+    stringstyle=\color{blue},
+    numberstyle=\color{purple},
+    identifierstyle=\color{sbase00},
+    language=C,
+  },
+  title=\thetcbcounter #2, #1
+}
+\useoutertheme{sidebar}

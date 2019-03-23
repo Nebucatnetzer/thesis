@@ -1,0 +1,41 @@
+#+title: Präsentation Diplomarbeit
+:preamble:
+#+author: Andreas Zweili
+#+startup: beamer
+#+LATEX_CLASS_OPTIONS: [aspectratio=169]
+#+language: de
+#+columns: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \include{preamble}
+:end:
+
+* Einführung
+** Einführung
+*** Wieso BorgBackup?
+
+** Deduplikation
+
+Some text
+
+* Projekt Management
+** Projektmethode
+Some text
+
+** Planung
+Some text
+
+** Controlling
+Some text
+
+* Varianten
+
+
+* Umsetzung
+** Umsetzung
+Some text
+
+* Abschluss
+** Fazit
+** Abschluss
+*\huge{Vielen Dank für die Aufmerksamkeit!}*
+
+** Abschluss
