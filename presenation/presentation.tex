@@ -1,4 +1,4 @@
-% Created 2019-03-24 Sun 14:54
+% Created 2019-03-24 Sun 22:09
 % Intended LaTeX compiler: pdflatex
 \documentclass[aspectratio=1610]{beamer}
 
@@ -23,17 +23,27 @@
 
 
 \section{Einführung}
-\label{sec:orgc228211}
-\begin{frame}[label={sec:orgbe50b36}]{Einführung}
+\label{sec:org99f6eb2}
+\begin{frame}[label={sec:orga9c23ae}]{Einführung}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
 \alert{Inspiration}
 \begin{itemize}
 \item <2-> Fehlende Backups im Umfeld
 \item <3-> Fehlendes Know-How im Umfeld
 \item <4-> Software "`Back in Time"'
 \end{itemize}
+\end{column}
+
+\begin{column}{0.5\columnwidth}
+\begin{center}
+\includegraphics[width=.9\linewidth]{pictures/inspiration.png}
+\end{center}
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgcc7a93d}]{Einführung}
+\begin{frame}[label={sec:org4752b01}]{Einführung}
 \begin{columns}
 \begin{column}{0.5\columnwidth}
 \alert{Wieso BorgBackup?}
@@ -52,64 +62,137 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgf24b504}]{Einführung}
-\begin{block}{Deduplikation}
-\end{block}
+\begin{frame}[label={sec:org450e9a4}]{Einführung}
+\alert{Blockbasierte Deduplikation}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{pictures/deduplication.png}
+\end{center}
 \end{frame}
 
 
 \section{Projekt Management}
-\label{sec:org53db976}
-\begin{frame}[label={sec:orge311931}]{Projekt Mangement}
-\begin{block}{Projektmethode}
-\end{block}
+\label{sec:org63927d5}
+\begin{frame}[label={sec:org900c9bb}]{Projekt Mangement}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\alert{Projekt Methode}
+\begin{itemize}
+\item <2-> Funktioniert gut für Einzelpersonen
+\item <3-> Phasenbasierte Methode
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\columnwidth}
+\begin{center}
+\includegraphics[width=.8\linewidth]{pictures/waterfall_stairs.jpg}
+\end{center}
+\end{column}
+\end{columns}
 \end{frame}
 
-
-\begin{frame}[label={sec:orgfc90a0e}]{Projekt Mangement}
+\begin{frame}[label={sec:org3edc69c}]{Projekt Mangement}
 \begin{block}{Planung}
 Some text
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:org1e305d7}]{Projekt Mangement}
+\begin{frame}[label={sec:org8eae014}]{Projekt Mangement}
 \begin{block}{Controlling}
 \end{block}
 \end{frame}
 
 \section{Varianten}
-\label{sec:org39ae06a}
-\begin{frame}[label={sec:orged7a56a}]{Varianten}
-\begin{block}{Backend}
-\end{block}
+\label{sec:org60b701c}
+\begin{frame}[label={sec:orge2242e6}]{Varianten}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\alert{Backend}
+\begin{itemize}
+\item <2-> C\#
+\item <3-> Python
+\item <4-> C++
+\end{itemize}
+\end{column}
 
-\begin{block}{Frontend}
-\end{block}
+\begin{column}{0.5\columnwidth}
+\begin{center}
+\includegraphics<2>[width=.9\linewidth]{pictures/backend1.png}
+\includegraphics<3>[width=.9\linewidth]{pictures/backend2.png}
+\includegraphics<4>[width=.9\linewidth]{pictures/backend3.png}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
 
+\begin{frame}[label={sec:org5634525}]{Varianten}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\alert{Frontend}
+\begin{itemize}
+\item <2-> Qt
+\item <3-> Gtk
+\item <4-> Electron
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\columnwidth}
+\begin{center}
+\includegraphics<2>[width=.9\linewidth]{pictures/frontend1.png}
+\includegraphics<3>[width=.9\linewidth]{pictures/frontend2.png}
+\includegraphics<4>[width=.9\linewidth]{pictures/frontend3.png}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[label={sec:org3f6b452}]{Varianten}
 \begin{block}{Resultat}
 \end{block}
 \end{frame}
 
 \section{Umsetzung}
-\label{sec:orgc54cdd6}
-\begin{frame}[label={sec:org05474ad}]{Umsetzung}
-\begin{block}{Werkzeuge}
+\label{sec:org5f9f7e3}
+\begin{frame}[label={sec:org593acf8}]{Umsetzung}
+\begin{columns}
+\begin{column}{0.4\columnwidth}
+\alert{Werkzeuge}
+
 \begin{itemize}
-\item Emacs
-\item Qt-Designer
-\item Virtualbox
+\item <2-> Gnome Planner
+\item <3-> Emacs
+\item <4-> Git
+\item <5-> Qt-Designer
+\item <6-> Inkscape
+\item <7-> Draw.io
+\item <8-> Virtualbox
 \end{itemize}
-\end{block}
+\end{column}
+
+\begin{column}{0.6\columnwidth}
+\begin{center}
+\includegraphics<2>[width=.9\linewidth]{pictures/tools1.png}
+\includegraphics<3>[width=.9\linewidth]{pictures/tools2.png}
+\includegraphics<4>[width=.9\linewidth]{pictures/tools3.png}
+\includegraphics<5>[width=.9\linewidth]{pictures/tools4.png}
+\includegraphics<6>[width=.9\linewidth]{pictures/tools5.png}
+\includegraphics<7>[width=.9\linewidth]{pictures/tools6.png}
+\includegraphics<8>[width=.9\linewidth]{pictures/tools8.png}
+\end{center}
+\end{column}
+\end{columns}
 \end{frame}
 
 \section{Abschluss}
-\label{sec:org5ca0d87}
-\begin{frame}[label={sec:org25531ec}]{Abschluss}
-\begin{block}{Fazit}
-\end{block}
+\label{sec:orgd701daf}
+\begin{frame}[label={sec:orge94d6f9}]{Abschluss}
+\alert{Fazit}
 \end{frame}
 
-\begin{frame}[label={sec:org7a268b1}]{}
+\begin{frame}[label={sec:org132a5be}]{}
+\alert{\huge{Fragen?}}
+\end{frame}
+\begin{frame}[label={sec:orga3abd2f}]{}
 \alert{\huge{Vielen Dank für die Aufmerksamkeit!}}
 \end{frame}
 \end{document}
