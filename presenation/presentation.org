@@ -2,40 +2,76 @@
 :preamble:
 #+author: Andreas Zweili
 #+startup: beamer
-#+LATEX_CLASS_OPTIONS: [aspectratio=169]
+#+latex_class_options: [aspectratio=1610]
 #+language: de
+#+beamer_theme: metropolis
 #+columns: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
 #+latex_header: \include{preamble}
 :end:
 
 * Einführung
 ** Einführung
-*** Wieso BorgBackup?
+*Inspiration*
+- <2-> Fehlende Backups im Umfeld
+- <3-> Fehlendes Know-How im Umfeld
+- <4-> Software "Back in Time"
 
-** Deduplikation
+** Einführung
+*** Wieso BorgBackup?                                               :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
 
-Some text
+*Wieso BorgBackup?*
+- <3-> Open Source Software
+- <4-> War cross-plattform fähig
+- <5-> Blockbasierte Deduplikation
+
+*** Wieso BorgBackup                                                :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:BEAMER_envargs: <1->
+:END:
+[[file:pictures/borg.jpeg]]
+
+** Einführung
+*** Deduplikation
+
 
 * Projekt Management
-** Projektmethode
+** Projekt Mangement
+*** Projektmethode
+
+
+** Projekt Mangement
+*** Planung
 Some text
 
-** Planung
-Some text
-
-** Controlling
-Some text
+** Projekt Mangement
+*** Controlling
 
 * Varianten
+** Varianten
+*** Backend
 
+*** Frontend
+
+*** Resultat
 
 * Umsetzung
 ** Umsetzung
-Some text
+*** Werkzeuge
+
+- Emacs
+- Qt-Designer
+- Virtualbox
 
 * Abschluss
-** Fazit
 ** Abschluss
-*\huge{Vielen Dank für die Aufmerksamkeit!}*
+*** Fazit
 
-** Abschluss
+* Abschluss                                                     :B_fullframe:
+:PROPERTIES:
+:BEAMER_env: fullframe
+:END:
+*\huge{Vielen Dank für die Aufmerksamkeit!}*
