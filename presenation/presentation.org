@@ -222,10 +222,16 @@ file:pictures/pyqt.png
 
 #+begin_export latex
 \begin{center}
-\includegraphics<2>[height=.8\textheight]{pictures/borgqt1.png}%
-\includegraphics<3>[height=.7\textheight]{pictures/borgqt2.png}%
-\includegraphics<4>[height=.7\textheight]{pictures/borgqt3.png}%
-\includegraphics<5>[height=.6\textheight]{pictures/borgqt4.png}%
+\includegraphics[height=.8\textheight]{pictures/borgqt1.png}%
+\end{center}
+#+end_export
+
+** Umsetzung
+*Finales Produkt*
+
+#+begin_export latex
+\begin{center}
+\frame{\includegraphics[width=\textwidth]{pictures/borgqt5.png}}%
 \end{center}
 #+end_export
 
@@ -235,10 +241,10 @@ file:pictures/pyqt.png
 :BEAMER_col: 0.45
 :END:
 
-\onslide<2->\alert{Soll-Risiko}
+\alert{Soll-Risiko}
 #+begin_export latex
 \begin{center}
-\includegraphics<2->[width=\linewidth]{pictures/sollrisiko_grey.pdf}%
+\includegraphics[width=\linewidth]{pictures/sollrisiko_grey.pdf}%
 \end{center}
 #+end_export
 
@@ -247,10 +253,10 @@ file:pictures/pyqt.png
 :BEAMER_col: 0.45
 :END:
 
-\onslide<3->\alert{Neues Ist-Risiko}
+\onslide<2->\alert{Neues Ist-Risiko}
 #+begin_export latex
 \begin{center}
-\includegraphics<3->[width=\linewidth]{pictures/ist_risiko_neu.pdf}%
+\includegraphics<2->[width=\linewidth]{pictures/ist_risiko_neu.pdf}%
 \end{center}
 #+end_export
 
