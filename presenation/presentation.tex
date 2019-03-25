@@ -1,4 +1,4 @@
-% Created 2019-03-25 Mon 07:27
+% Created 2019-03-25 Mon 21:49
 % Intended LaTeX compiler: pdflatex
 \documentclass[aspectratio=1610]{beamer}
 
@@ -23,8 +23,8 @@
 
 
 \section{Einführung}
-\label{sec:org358b03e}
-\begin{frame}[label={sec:orgdb2fb88}]{Einführung}
+\label{sec:orgaaedf5e}
+\begin{frame}[label={sec:org9acca1f}]{Einführung}
 \begin{columns}
 \begin{column}{0.5\columnwidth}
 \alert{Inspiration}
@@ -43,7 +43,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgc3c12f6}]{Einführung}
+\begin{frame}[label={sec:org713f9f1}]{Einführung}
 \begin{columns}
 \begin{column}{0.5\columnwidth}
 \alert{Wieso BorgBackup?}
@@ -62,7 +62,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgac9713c}]{Einführung}
+\begin{frame}[label={sec:org0e0831f}]{Einführung}
 \alert{Blockbasierte Deduplikation}
 
 \begin{center}
@@ -72,14 +72,14 @@
 
 
 \section{Projekt Management}
-\label{sec:orgb0802f8}
-\begin{frame}[label={sec:org89ce744}]{Projekt Mangement}
+\label{sec:org2606737}
+\begin{frame}[label={sec:org85bffaa}]{Projekt Mangement}
 \begin{columns}
 \begin{column}{0.5\columnwidth}
-\alert{Projekt Methode}
+\alert{Wasserfallmodell}
 \begin{itemize}
 \item <2-> Funktioniert gut für Einzelpersonen
-\item <3-> Phasenbasierte Methode
+\item <3-> Phasenbasiertes Modell
 \end{itemize}
 \end{column}
 
@@ -91,20 +91,57 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgc76b159}]{Projekt Mangement}
-\begin{block}{Planung}
-Some text
-\end{block}
+\begin{frame}[label={sec:org4d6c66e}]{Projekt Management}
+\begin{columns}
+\begin{column}{0.45\columnwidth}
+\alert{Ist-Risiko}
+\begin{itemize}
+\item <2-> Nutzung einer Kommandozeilen Applikation
+\item <3-> Backups ohne Verschlüsselung
+\item <4-> Falscher Speicherort
+\item <5-> Versehentliche Löschung
+\item <6-> User vergisst Backups zu machen
+\end{itemize}
+\end{column}
+
+\begin{column}{0.45\columnwidth}
+\begin{center}
+\includegraphics<2>[width=\linewidth]{pictures/istrisiko1.pdf}%
+\includegraphics<3>[width=\linewidth]{pictures/istrisiko2.pdf}%
+\includegraphics<4>[width=\linewidth]{pictures/istrisiko3.pdf}%
+\includegraphics<5>[width=\linewidth]{pictures/istrisiko4.pdf}%
+\includegraphics<6>[width=\linewidth]{pictures/istrisiko.pdf}%
+\end{center}
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgc50b7de}]{Projekt Mangement}
+\begin{frame}[label={sec:org7421e7b}]{Projekt Mangement}
+\begin{columns}
+\begin{column}{0.45\columnwidth}
+\alert{Ist-Risiko}
+\begin{center}
+\includegraphics[width=\linewidth]{pictures/istrisiko.pdf}%
+\end{center}
+\end{column}
+
+\begin{column}{0.45\columnwidth}
+\onslide<2->\alert{Soll-Risiko}
+\begin{center}
+\includegraphics<2->[width=\linewidth]{pictures/sollrisiko.pdf}%
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[label={sec:org9c94e3f}]{Projekt Mangement}
 \begin{block}{Controlling}
 \end{block}
 \end{frame}
 
 \section{Varianten}
-\label{sec:org4ecb7ea}
-\begin{frame}[label={sec:org3926227}]{Varianten}
+\label{sec:org32df577}
+\begin{frame}[label={sec:org4ea50f9}]{Varianten}
 \begin{columns}
 \begin{column}{0.3\columnwidth}
 \alert{Backend}
@@ -125,7 +162,7 @@ Some text
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgdb54007}]{Varianten}
+\begin{frame}[label={sec:org807d9ec}]{Varianten}
 \begin{columns}
 \begin{column}{0.3\columnwidth}
 \alert{Frontend}
@@ -146,7 +183,7 @@ Some text
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:org3ae8797}]{Varianten}
+\begin{frame}[label={sec:org9f11d8c}]{Varianten}
 \alert{Resultat}
 
 \begin{center}
@@ -155,8 +192,8 @@ Some text
 \end{frame}
 
 \section{Umsetzung}
-\label{sec:org9a5dc75}
-\begin{frame}[label={sec:orgd577d35}]{Umsetzung}
+\label{sec:orgb08d7e9}
+\begin{frame}[label={sec:orgaf9cafa}]{Umsetzung}
 \begin{columns}
 \begin{column}{0.3\columnwidth}
 \alert{Werkzeuge}
@@ -186,16 +223,51 @@ Some text
 \end{columns}
 \end{frame}
 
-\section{Abschluss}
-\label{sec:orge1e678c}
-\begin{frame}[label={sec:org3fba83f}]{Abschluss}
-\alert{Fazit}
+\begin{frame}[label={sec:org360c70b}]{Umsetzung}
+\alert{Finales Produkt}
+
+\begin{center}
+\includegraphics<2>[height=.8\textheight]{pictures/borgqt1.png}%
+\includegraphics<3>[height=.7\textheight]{pictures/borgqt2.png}%
+\includegraphics<4>[height=.7\textheight]{pictures/borgqt3.png}%
+\includegraphics<5>[height=.6\textheight]{pictures/borgqt4.png}%
+\end{center}
 \end{frame}
 
-\begin{frame}[label={sec:orgf7ac1b9}]{}
+\begin{frame}[label={sec:org568a438}]{Umsetzung}
+\begin{columns}
+\begin{column}{0.45\columnwidth}
+\onslide<2->\alert{Soll-Risiko}
+\begin{center}
+\includegraphics<2->[width=\linewidth]{pictures/sollrisiko_grey.pdf}%
+\end{center}
+\end{column}
+
+\begin{column}{0.45\columnwidth}
+\onslide<3->\alert{Neues Ist-Risiko}
+\begin{center}
+\includegraphics<3->[width=\linewidth]{pictures/ist_risiko_neu.pdf}%
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\section{Abschluss}
+\label{sec:org534288c}
+\begin{frame}[label={sec:org386620f}]{Abschluss}
+\alert{Fazit}
+\begin{itemize}
+\item <2-> Die Arbeit war sehr interessant und zeitintensiv
+\item <3-> Ganttcharts können sehr hilfreich sein um den Fokus zu halten
+\item <4-> Unittests sind ein Must-have für Entwickler sind jedoch auch zeitintensiv
+\item <5-> Mehr Erfahrung im Bereich "`Test-Driven-Developement"' sammeln
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgcfa874c}]{}
 \alert{\huge{Fragen?}}
 \end{frame}
-\begin{frame}[label={sec:orgc8de723}]{}
+\begin{frame}[label={sec:org6ea4a23}]{}
 \alert{\huge{Vielen Dank für die Aufmerksamkeit!}}
 \end{frame}
 \end{document}
