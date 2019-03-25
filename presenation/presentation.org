@@ -83,7 +83,7 @@ Some text
 ** Varianten
 *** Backend                                                         :BMCOL:
 :PROPERTIES:
-:BEAMER_col: 0.5
+:BEAMER_col: 0.3
 :END:
 
 *Backend*
@@ -98,16 +98,16 @@ Some text
 
 #+begin_export latex
 \begin{center}
-\includegraphics<2>[width=.9\linewidth]{pictures/backend1.png}
-\includegraphics<3>[width=.9\linewidth]{pictures/backend2.png}
-\includegraphics<4>[width=.9\linewidth]{pictures/backend3.png}
+\includegraphics<2>[width=\linewidth]{pictures/backend1.png}%
+\includegraphics<3>[width=\linewidth]{pictures/backend2.png}%
+\includegraphics<4>[width=\linewidth]{pictures/backend3.png}%
 \end{center}
 #+end_export
 
 ** Varianten
 *** Frontend                                                        :BMCOL:
 :PROPERTIES:
-:BEAMER_col: 0.5
+:BEAMER_col: 0.3
 :END:
 
 *Frontend*
@@ -122,20 +122,23 @@ Some text
 
 #+begin_export latex
 \begin{center}
-\includegraphics<2>[width=.9\linewidth]{pictures/frontend1.png}
-\includegraphics<3>[width=.9\linewidth]{pictures/frontend2.png}
-\includegraphics<4>[width=.9\linewidth]{pictures/frontend3.png}
+\includegraphics<2>[width=.9\linewidth]{pictures/frontend1.png}%
+\includegraphics<3>[width=.9\linewidth]{pictures/frontend2.png}%
+\includegraphics<4>[width=.9\linewidth]{pictures/frontend3.png}%
 \end{center}
 #+end_export
 
 ** Varianten
-*** Resultat
+*Resultat*
+
+#+attr_latex: :height .5\textheight
+file:pictures/pyqt.png
 
 * Umsetzung
 ** Umsetzung
 *** Umsetzung                                                       :BMCOL:
 :PROPERTIES:
-:BEAMER_col: 0.4
+:BEAMER_col: 0.3
 :END:
 
 *Werkzeuge*
@@ -150,18 +153,18 @@ Some text
 
 *** Umsetzung                                                       :BMCOL:
 :PROPERTIES:
-:BEAMER_col: 0.6
+:BEAMER_col: 0.5
 :END:
 
 #+begin_export latex
 \begin{center}
-\includegraphics<2>[width=.9\linewidth]{pictures/tools1.png}
-\includegraphics<3>[width=.9\linewidth]{pictures/tools2.png}
-\includegraphics<4>[width=.9\linewidth]{pictures/tools3.png}
-\includegraphics<5>[width=.9\linewidth]{pictures/tools4.png}
-\includegraphics<6>[width=.9\linewidth]{pictures/tools5.png}
-\includegraphics<7>[width=.9\linewidth]{pictures/tools6.png}
-\includegraphics<8>[width=.9\linewidth]{pictures/tools8.png}
+\includegraphics<2>[width=.9\linewidth]{pictures/tools1.png}%
+\includegraphics<3>[width=.9\linewidth]{pictures/tools2.png}%
+\includegraphics<4>[width=.9\linewidth]{pictures/tools3.png}%
+\includegraphics<5>[width=.9\linewidth]{pictures/tools3.png}%
+\includegraphics<6>[width=.9\linewidth]{pictures/tools5.png}%
+\includegraphics<7>[width=.9\linewidth]{pictures/tools6.png}%
+\includegraphics<8>[width=.9\linewidth]{pictures/tools7.png}%
 \end{center}
 #+end_export
 
