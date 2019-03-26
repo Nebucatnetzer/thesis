@@ -2,7 +2,7 @@
 :preamble:
 #+author: Andreas Zweili
 #+startup: beamer
-#+latex_class_options: [aspectratio=1610]
+#+latex_class_options: [12pt, aspectratio=1610]
 #+language: de
 #+beamer_theme: metropolis
 #+columns: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
@@ -10,6 +10,12 @@
 :end:
 
 * Einführung
+** Einführung
+
+- <2-> Grafische Oberfläche für das \newline Kommandozeilen Programm "BorgBackup"
+- <3-> Evaluation der Technologien
+- <4-> Programmieren der Basis-Funktionen
+
 ** Einführung
 *** Einführung                                                      :BMCOL:
 :PROPERTIES:
@@ -79,7 +85,7 @@ file:pictures/deduplication.png
 :END:
 
 *Ist-Risiko*
-- <2-> Nutzung einer Kommandozeilen Applikation
+- <2-> Ungewohnte Nutzung einer Kommandozeilen Applikation
 - <3-> Backups ohne Verschlüsselung
 - <4-> Falscher Speicherort
 - <5-> Versehentliche Löschung
@@ -130,6 +136,14 @@ file:pictures/deduplication.png
 
 * Varianten
 ** Varianten
+*Kriterien*
+- <2-> Cross-plattform kompatibel
+- <3-> Freie Software
+- <4-> Vorkenntnisse
+- <5-> Integriert sich gut ins System
+- <6-> Ohne spezielle Tools nutzbar
+
+** Varianten
 *** Backend                                                         :BMCOL:
 :PROPERTIES:
 :BEAMER_col: 0.3
@@ -152,6 +166,9 @@ file:pictures/deduplication.png
 \includegraphics<4>[width=\linewidth]{pictures/backend3.png}%
 \end{center}
 #+end_export
+
+** Varianten
+*Frontend*
 
 ** Varianten
 *** Frontend                                                        :BMCOL:
@@ -234,6 +251,17 @@ file:pictures/pyqt.png
 \frame{\includegraphics[width=\textwidth]{pictures/borgqt5.png}}%
 \end{center}
 #+end_export
+
+** Umsetzung
+
+| \textbf{Speicherverbrauch} |           |
+|----------------------------+-----------|
+| Reale Grösse               | 13.41 TB  |
+| Deduplizierte Grösse       | 556.67 GB |
+
+\begin{center}
+24x weniger Speicherverbrauch
+\end{center}
 
 ** Umsetzung
 *** Risikoanalyse                                                   :BMCOL:

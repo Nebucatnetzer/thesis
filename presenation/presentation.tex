@@ -1,6 +1,6 @@
-% Created 2019-03-25 Mon 21:58
+% Created 2019-03-26 Tue 22:29
 % Intended LaTeX compiler: pdflatex
-\documentclass[aspectratio=1610]{beamer}
+\documentclass[12pt, aspectratio=1610]{beamer}
 
 \include{preamble}
 \usetheme{metropolis}
@@ -23,8 +23,16 @@
 
 
 \section{Einführung}
-\label{sec:org5090bb1}
-\begin{frame}[label={sec:org449ace4}]{Einführung}
+\label{sec:orge023b06}
+\begin{frame}[label={sec:org9f49b5e}]{Einführung}
+\begin{itemize}
+\item <2-> Grafische Oberfläche für das \newline Kommandozeilen Programm "`BorgBackup"'
+\item <3-> Evaluation der Technologien
+\item <4-> Programmieren der Basis-Funktionen
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org25c7176}]{Einführung}
 \begin{columns}
 \begin{column}{0.5\columnwidth}
 \alert{Inspiration}
@@ -43,7 +51,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:org55fce3e}]{Einführung}
+\begin{frame}[label={sec:org4ab726b}]{Einführung}
 \begin{columns}
 \begin{column}{0.5\columnwidth}
 \alert{Wieso BorgBackup?}
@@ -62,7 +70,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:org4bd6e25}]{Einführung}
+\begin{frame}[label={sec:orgc1dff6b}]{Einführung}
 \alert{Blockbasierte Deduplikation}
 
 \begin{center}
@@ -72,8 +80,8 @@
 
 
 \section{Projekt Management}
-\label{sec:org394ef3d}
-\begin{frame}[label={sec:orgf0dd204}]{Projekt Mangement}
+\label{sec:org7c0fc40}
+\begin{frame}[label={sec:org26940da}]{Projekt Mangement}
 \begin{columns}
 \begin{column}{0.5\columnwidth}
 \alert{Wasserfallmodell}
@@ -91,12 +99,12 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:org5561025}]{Projekt Management}
+\begin{frame}[label={sec:org31b6f31}]{Projekt Management}
 \begin{columns}
 \begin{column}{0.45\columnwidth}
 \alert{Ist-Risiko}
 \begin{itemize}
-\item <2-> Nutzung einer Kommandozeilen Applikation
+\item <2-> Ungewohnte Nutzung einer Kommandozeilen Applikation
 \item <3-> Backups ohne Verschlüsselung
 \item <4-> Falscher Speicherort
 \item <5-> Versehentliche Löschung
@@ -116,7 +124,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgd13dfbc}]{Projekt Mangement}
+\begin{frame}[label={sec:org3a5c2b2}]{Projekt Mangement}
 \begin{columns}
 \begin{column}{0.45\columnwidth}
 \alert{Ist-Risiko}
@@ -134,14 +142,25 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:org6e73eeb}]{Projekt Mangement}
+\begin{frame}[label={sec:org5c7b81d}]{Projekt Mangement}
 \begin{block}{Controlling}
 \end{block}
 \end{frame}
 
 \section{Varianten}
-\label{sec:org7796df5}
-\begin{frame}[label={sec:org6d47afb}]{Varianten}
+\label{sec:org15ff9ea}
+\begin{frame}[label={sec:org15f8ca7}]{Varianten}
+\alert{Kriterien}
+\begin{itemize}
+\item <2-> Cross-plattform kompatibel
+\item <3-> Freie Software
+\item <4-> Vorkenntnisse
+\item <5-> Integriert sich gut ins System
+\item <6-> Ohne spezielle Tools nutzbar
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org5d04a57}]{Varianten}
 \begin{columns}
 \begin{column}{0.3\columnwidth}
 \alert{Backend}
@@ -162,7 +181,11 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgf33a652}]{Varianten}
+\begin{frame}[label={sec:org260fa3e}]{Varianten}
+\alert{Frontend}
+\end{frame}
+
+\begin{frame}[label={sec:org0e7c972}]{Varianten}
 \begin{columns}
 \begin{column}{0.3\columnwidth}
 \alert{Frontend}
@@ -183,7 +206,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgb57e4b3}]{Varianten}
+\begin{frame}[label={sec:org14d576a}]{Varianten}
 \alert{Resultat}
 
 \begin{center}
@@ -192,8 +215,8 @@
 \end{frame}
 
 \section{Umsetzung}
-\label{sec:orgd286a2e}
-\begin{frame}[label={sec:orgca493d2}]{Umsetzung}
+\label{sec:orga98862e}
+\begin{frame}[label={sec:org96597b8}]{Umsetzung}
 \begin{columns}
 \begin{column}{0.3\columnwidth}
 \alert{Werkzeuge}
@@ -223,7 +246,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:org4cc5b06}]{Umsetzung}
+\begin{frame}[label={sec:org999a1cb}]{Umsetzung}
 \alert{Finales Produkt}
 
 \begin{center}
@@ -231,7 +254,7 @@
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:orga673e6e}]{Umsetzung}
+\begin{frame}[label={sec:orgee133bf}]{Umsetzung}
 \alert{Finales Produkt}
 
 \begin{center}
@@ -239,7 +262,23 @@
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:org4ae44b8}]{Umsetzung}
+\begin{frame}[label={sec:org60e3ecf}]{Umsetzung}
+\begin{center}
+\begin{tabular}{ll}
+\textbf{Speicherverbrauch} & \\
+\hline
+Reale Grösse & 13.41 TB\\
+Deduplizierte Grösse & 556.67 GB\\
+\end{tabular}
+
+\end{center}
+
+\begin{center}
+24x weniger Speicherverbrauch
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:orgc5d4229}]{Umsetzung}
 \begin{columns}
 \begin{column}{0.45\columnwidth}
 \alert{Soll-Risiko}
@@ -258,8 +297,8 @@
 \end{frame}
 
 \section{Abschluss}
-\label{sec:orga4e92ec}
-\begin{frame}[label={sec:orgfd4d0ec}]{Abschluss}
+\label{sec:org17a94ab}
+\begin{frame}[label={sec:org1bf9035}]{Abschluss}
 \alert{Fazit}
 \begin{itemize}
 \item <2-> Die Arbeit war sehr interessant und zeitintensiv
@@ -269,10 +308,10 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgd422098}]{}
+\begin{frame}[label={sec:orgccda786}]{}
 \alert{\huge{Fragen?}}
 \end{frame}
-\begin{frame}[label={sec:org5565cf5}]{}
+\begin{frame}[label={sec:org5fbcdb2}]{}
 \alert{\huge{Vielen Dank für die Aufmerksamkeit!}}
 \end{frame}
 \end{document}
