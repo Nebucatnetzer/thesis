@@ -12,9 +12,11 @@
 * Einführung
 ** Einführung
 
-- <2-> Grafische Oberfläche für das \newline Kommandozeilen Programm "BorgBackup"
-- <3-> Evaluation der Technologien
+- <2-> Das Kommandozeilen Programm "BorgBackup" mittels einer grafischen
+  Oberfläche für normale Benutzer zugänglich machen
+- <3-> Evaluation der benötigten Technologien
 - <4-> Programmieren der Basis-Funktionen
+- <5-> Die Grundlage für ein Open-Source Projekt schaffen
 
 ** Einführung
 *** Einführung                                                      :BMCOL:
@@ -40,14 +42,13 @@ file:pictures/inspiration.png
 :END:
 
 *Wieso BorgBackup?*
-- <3-> Open Source Software
-- <4-> War cross-plattform fähig
-- <5-> Blockbasierte Deduplikation
+- <2-> Open-Source Software
+- <3-> Ist cross-plattform fähig
+- <4-> Blockbasierte Deduplikation
 
 *** Wieso BorgBackup                                                :BMCOL:
 :PROPERTIES:
 :BEAMER_col: 0.5
-:BEAMER_envargs: <1->
 :END:
 [[file:pictures/borg.jpeg]]
 
@@ -81,15 +82,15 @@ file:pictures/deduplication.png
 ** Projekt Management
 *** Risikoanalyse                                                   :BMCOL:
 :PROPERTIES:
-:BEAMER_col: 0.45
+:BEAMER_col: 0.50
 :END:
 
-*Ist-Risiko*
-- <2-> Ungewohnte Nutzung einer Kommandozeilen Applikation
-- <3-> Backups ohne Verschlüsselung
-- <4-> Falscher Speicherort
-- <5-> Versehentliche Löschung
-- <6-> User vergisst Backups zu machen
+*Ist-Risiko nicht funktionaler Backups*
+1. <2-> Falsche Nutzung einer Kommandozeilen Applikation
+2. <3-> Backups ohne Verschlüsselung
+3. <4-> Falscher Speicherort
+4. <5-> Versehentliche Löschung
+5. <6-> User vergisst Backups zu machen
 
 *** Risikoanalyse                                                   :BMCOL:
 :PROPERTIES:
@@ -134,6 +135,21 @@ file:pictures/deduplication.png
 ** Projekt Mangement
 *** Controlling
 
+| *Aufgabe*              | *Gesch. Aufwand* | *Effekt. Aufwand* |
+| <30>                   | <10>             | <10>              |
+|------------------------+------------------+-------------------|
+| Initialisierung        | 22h              | 20.3h             |
+|------------------------+------------------+-------------------|
+| Analyse                | 47h              | 41.6h             |
+|------------------------+------------------+-------------------|
+| Konzept                | 34h              | 35.1h             |
+|------------------------+------------------+-------------------|
+| Realisierung           | 172h             | 149.3h            |
+|------------------------+------------------+-------------------|
+| Abschluss und Meetings | 43h              | 42.07h            |
+|------------------------+------------------+-------------------|
+| *Total*                | 318h             | 288.37h           |
+
 * Varianten
 ** Varianten
 *Kriterien*
@@ -166,9 +182,6 @@ file:pictures/deduplication.png
 \includegraphics<4>[width=\linewidth]{pictures/backend3.png}%
 \end{center}
 #+end_export
-
-** Varianten
-*Frontend*
 
 ** Varianten
 *** Frontend                                                        :BMCOL:
@@ -209,13 +222,13 @@ file:pictures/pyqt.png
 
 *Werkzeuge*
 
-- <2-> Gnome Planner
-- <3-> Emacs
-- <4-> Git
-- <5-> Qt-Designer
-- <6-> Inkscape
-- <7-> Draw.io
-- <8-> Virtualbox
+- Gnome Planner
+- Emacs
+- Git
+- Qt-Designer
+- Inkscape
+- Draw.io
+- Virtualbox
 
 *** Umsetzung                                                       :BMCOL:
 :PROPERTIES:
@@ -224,13 +237,7 @@ file:pictures/pyqt.png
 
 #+begin_export latex
 \begin{center}
-\includegraphics<2>[width=.9\linewidth]{pictures/tools1.png}%
-\includegraphics<3>[width=.9\linewidth]{pictures/tools2.png}%
-\includegraphics<4>[width=.9\linewidth]{pictures/tools3.png}%
-\includegraphics<5>[width=.9\linewidth]{pictures/tools3.png}%
-\includegraphics<6>[width=.9\linewidth]{pictures/tools5.png}%
-\includegraphics<7>[width=.9\linewidth]{pictures/tools6.png}%
-\includegraphics<8>[width=.9\linewidth]{pictures/tools7.png}%
+\includegraphics[width=.9\linewidth]{pictures/tools7.png}%
 \end{center}
 #+end_export
 
