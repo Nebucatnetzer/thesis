@@ -133,25 +133,25 @@ file:pictures/deduplication.png
 #+end_export
 
 ** Projekt Mangement
-*** Controlling
+*Controlling*
 
-| *Aufgabe*              | *Gesch. Aufwand* | *Effekt. Aufwand* |
-| <30>                   | <10>             | <10>              |
-|------------------------+------------------+-------------------|
-| Initialisierung        | 22h              | 20.3h             |
-|------------------------+------------------+-------------------|
-| Analyse                | 47h              | 41.6h             |
-|------------------------+------------------+-------------------|
-| Konzept                | 34h              | 35.1h             |
-|------------------------+------------------+-------------------|
-| Realisierung           | 172h             | 149.3h            |
-|------------------------+------------------+-------------------|
-| Abschluss und Meetings | 43h              | 42.07h            |
-|------------------------+------------------+-------------------|
-| *Total*                | 318h             | 288.37h           |
+| \textbf{Phase}  | \textbf{Gesch. Aufwand} | \textbf{Effekt. Aufwand} |
+| <30>                   | <10>                    | <10>                     |
+|------------------------+-------------------------+--------------------------|
+| Initialisierung        | 22h                     | 20.3h                    |
+|------------------------+-------------------------+--------------------------|
+| Analyse                | 47h                     | 41.6h                    |
+|------------------------+-------------------------+--------------------------|
+| Konzept                | 34h                     | 35.1h                    |
+|------------------------+-------------------------+--------------------------|
+| Realisierung           | 172h                    | 149.3h                   |
+|------------------------+-------------------------+--------------------------|
+| Abschluss und Meetings | 43h                     | 42.07h                   |
+|------------------------+-------------------------+--------------------------|
+| *Total*                | 318h                    | 288.37h                  |
 
-* Varianten
-** Varianten
+* Lösungsvarianten
+** Lösungsvarianten
 *Kriterien*
 - <2-> Cross-plattform kompatibel
 - <3-> Freie Software
@@ -159,7 +159,7 @@ file:pictures/deduplication.png
 - <5-> Integriert sich gut ins System
 - <6-> Ohne spezielle Tools nutzbar
 
-** Varianten
+** Lösungsvarianten
 *** Backend                                                         :BMCOL:
 :PROPERTIES:
 :BEAMER_col: 0.3
@@ -183,7 +183,7 @@ file:pictures/deduplication.png
 \end{center}
 #+end_export
 
-** Varianten
+** Lösungsvarianten
 *** Frontend                                                        :BMCOL:
 :PROPERTIES:
 :BEAMER_col: 0.3
@@ -207,7 +207,7 @@ file:pictures/deduplication.png
 \end{center}
 #+end_export
 
-** Varianten
+** Lösungsvarianten
 *Resultat*
 
 #+attr_latex: :height .5\textheight
