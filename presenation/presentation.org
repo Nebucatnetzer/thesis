@@ -260,6 +260,15 @@ file:pictures/pyqt.png
 #+end_export
 
 ** Umsetzung
+*Finales Produkt*
+
+#+begin_export latex
+\begin{center}
+\includegraphics[height=.8\textheight]{pictures/borgqt2.png}%
+\end{center}
+#+end_export
+
+** Umsetzung
 
 | \textbf{Speicherverbrauch} |           |
 |----------------------------+-----------|
@@ -300,8 +309,7 @@ file:pictures/pyqt.png
 *Fazit*
 - <2-> Die Arbeit war sehr interessant und zeitintensiv
 - <3-> Ganttcharts können sehr hilfreich sein um den Fokus zu halten
-- <4-> Unittests sind ein Must-have für Entwickler sind jedoch auch zeitintensiv
-- <5-> Mehr Erfahrung im Bereich "Test-Driven-Developement" sammeln
+- <4-> Automatisierte Tests sind ein Must-have für Entwickler, sind jedoch zeitintensiv
 
 * Abschluss                                                     :B_fullframe:
 :PROPERTIES:
