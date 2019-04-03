@@ -7,6 +7,7 @@
     linkcolor=blue,
     urlcolor=blue,
 }
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
 \urlstyle{same}
 
 %glossary
@@ -82,6 +83,9 @@
 \usepackage{rotating}
 \usepackage{pdflscape}
 
+%required for left alligned paragraph columns
+\usepackage{array}
+
 %Support for images
 \usepackage{graphicx}
 \usepackage{float}
@@ -106,7 +110,7 @@
 %Support for Code Snippets and Syntax Highlighting
 \usepackage{listings}
 \usepackage{color}
-\usepackage{sourcecodepro}
+\usepackage{courier}
 \lstset{
   basicstyle=\ttfamily,
   language=bash,
@@ -143,6 +147,14 @@
 \renewcommand{\lstlistoflistings}{\begingroup
 \tocfile{\lstlistlistingname}{lol}
 \endgroup}
+
+\renewcommand*{\glslinkcheckfirsthyperhook}{%
+  \ifglsused{\glslabel}%
+  {%
+    \setkeys{glslink}{hyper=false}%
+  }%
+  {}%
+}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "main"

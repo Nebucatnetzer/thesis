@@ -1,37 +1,57 @@
-#+title: Meeting Protokolle
-:preamble:
-#+author: Andreas Zweili
-#+latex_class: article
-#+latex_class_options: [a4paper,11pt]
-#+latex_header: \input{general/style}
-#+options: toc:nil num:nil
-:end:
+% Created 2019-03-11 Mon 16:46
+% Intended LaTeX compiler: pdflatex
+\documentclass[a4paper,11pt]{article}
 
-* Meeting vom 23.12.2018
+\input{general/style}
+\author{Andreas Zweili}
+\date{\today}
+\title{Meeting Protokolle}
+\hypersetup{
+ pdfauthor={Andreas Zweili},
+ pdftitle={Meeting Protokolle},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.1 (Org mode 9.2.2)},
+ pdflang={English}}
+\begin{document}
+
+\maketitle\newpage
+
+\section*{Meeting vom 23.12.2018}
+\label{sec:org473d299}
 Protokoll der 1. Besprechung
 
 Treffpunkt: Bhf Olten
 
 Datum: 23.12.2018, 14:00 Uhr - 15:30 Uhr
 
-** Informationen:
+\subsection*{Informationen:}
+\label{sec:org1431703}
 
-*** Vorstellungsrunde
-**** Marco
-- Beruflich :: Bereits viel gemacht mit ca. 40 selbständig gemacht.
-- Schulisch :: Kam nach und nach und nimmt mittlerweile einen Grossteil seiner
-               Zeit in Anspruch.
-- Familie :: Hat Frau und Kinder.
-- Hobbies/Interessen :: Südamerika (lebte 2 Jahre dort) und Salsa?
+\subsubsection*{Vorstellungsrunde}
+\label{sec:orgcfc00b6}
+\paragraph*{Marco}
+\label{sec:org08684d1}
+\begin{description}
+\item[{Beruflich}] Bereits viel gemacht mit ca. 40 selbständig gemacht.
+\item[{Schulisch}] Kam nach und nach und nimmt mittlerweile einen Grossteil seiner
+Zeit in Anspruch.
+\item[{Familie}] Hat Frau und Kinder.
+\item[{Hobbies/Interessen}] Südamerika (lebte 2 Jahre dort) und Salsa?
+\end{description}
 
-**** Andreas
-- Beruflich :: Quereinsteiger, gelernter Automatiker, Faszination Informatik,
-             Deployment, Orchestrierung, Automatisation
-- Schulisch :: API Spezialisierung mehr angesprochen aufgrund der Dozenten
-               während IBZ Ausbildung.
-- Hobbies :: IBZ, Musik, Konzerte
+\paragraph*{Andreas}
+\label{sec:orge2cf9cd}
+\begin{description}
+\item[{Beruflich}] Quereinsteiger, gelernter Automatiker, Faszination Informatik,
+Deployment, Orchestrierung, Automatisation
+\item[{Schulisch}] API Spezialisierung mehr angesprochen aufgrund der Dozenten
+während IBZ Ausbildung.
+\item[{Hobbies}] IBZ, Musik, Konzerte
+\end{description}
 
-*** Termine besprochen
+\subsubsection*{Termine besprochen}
+\label{sec:org4967130}
 
 Abgabe der DA Informatik erfolgt vereinfacht, Widerspruch zur offiziellen
 Vorgabe. Email mit den Unterlagen am 18.3. an Marco Frei reicht. Man muss
@@ -41,7 +61,8 @@ Nur 1 Diplomordner z.Hd. Kandidat mit separat Selbständigkeitserklärung
 unterschrieben. Ist an der Präsentation mitzunehmen. Die Erklärung wird dann
 gleich von C.Herren kontrolliert.
 
-*** Beobachtung von Marco Frei:
+\subsubsection*{Beobachtung von Marco Frei:}
+\label{sec:org0b2a6f7}
 Exakte Zeitplanung, auch Miteinbezug der eigenen Intensität (geplante Stunden
 Aufwand) pro Woche, Arbeitspakte verständlich, PSP soweit detailliert.
 
@@ -51,109 +72,138 @@ ergänzenden Resultaten aus der Analyse übernommen werden.
 Feinziele entsprechen bereits den ausgearbeiteten Anforderungen aus der bereits
 durchgeführten Projektanalyse.
 
-*** Feedback Andreas:
+\subsubsection*{Feedback Andreas:}
+\label{sec:orgced5a2b}
 Mussziele müssen erreicht werden.
 
-** Aufbau der Arbeit
-*** Initialisierung / Voranalyse
+\subsection*{Aufbau der Arbeit}
+\label{sec:org6130b96}
+\subsubsection*{Initialisierung / Voranalyse}
+\label{sec:orgf4cbead}
 
-- Einleitung
-- Umfeld, Motivation
-- Projekthandbuch (Projektdokumentation) mit Ausgangslage, Problembeschreibung,
-  Projektziele, Abgrenzungen, Zeitplanung, Projektplanung, Projektmethodik
-  Wasserfallmethodik (Begründung)
-- Projektrisiken (betriebliches Umfeld) der Ist Umgebung
-- Projektcontrolling Soll-Ist (Zeit, Ressourcen, Kosten (eigene Lohnkosten
-  annehmen)), Bewertung
-- allenfalls Zeitplan mit Phasen der Wasserfallmethodik anpassen, Milestone
-  setzen
+\begin{itemize}
+\item Einleitung
+\item Umfeld, Motivation
+\item Projekthandbuch (Projektdokumentation) mit Ausgangslage, Problembeschreibung,
+Projektziele, Abgrenzungen, Zeitplanung, Projektplanung, Projektmethodik
+Wasserfallmethodik (Begründung)
+\item Projektrisiken (betriebliches Umfeld) der Ist Umgebung
+\item Projektcontrolling Soll-Ist (Zeit, Ressourcen, Kosten (eigene Lohnkosten
+annehmen)), Bewertung
+\item allenfalls Zeitplan mit Phasen der Wasserfallmethodik anpassen, Milestone
+setzen
+\end{itemize}
 
-*** Analyse
+\subsubsection*{Analyse}
+\label{sec:orgaa137c0}
 
-- Ist - Analyse, Stakeholderanalyse, Umweltanalyse, Marktanalyse
-- SWOT (Stärken, Schwächen)
-- quasi hypothetische Risikoanalyse der Ist Umgebung, um daraus Bewertung der
-  eigenen Lösung auch mit einer Risikoanalyse miteinzubeziehen, evtl. durch
-  fiktiver User, Use Case
-- Soll - Analyse
-- Use Case mit Aktoren festlegen
-- Anforderungskatalog kann aus den Zielen hergeleitet werden, kann evtl. noch
-  erweitert oder angepasst werden, z.B. Präzision, Umwelt, Verwendung von
-  Testarten etc.
+\begin{itemize}
+\item Ist - Analyse, Stakeholderanalyse, Umweltanalyse, Marktanalyse
+\item SWOT (Stärken, Schwächen)
+\item quasi hypothetische Risikoanalyse der Ist Umgebung, um daraus Bewertung der
+eigenen Lösung auch mit einer Risikoanalyse miteinzubeziehen, evtl. durch
+fiktiver User, Use Case
+\item Soll - Analyse
+\item Use Case mit Aktoren festlegen
+\item Anforderungskatalog kann aus den Zielen hergeleitet werden, kann evtl. noch
+erweitert oder angepasst werden, z.B. Präzision, Umwelt, Verwendung von
+Testarten etc.
+\end{itemize}
 
-*** Konzept
+\subsubsection*{Konzept}
+\label{sec:org86ed441}
 
-- Big Picture aufzeigen, Zusammenspiel erläutern
-- Start der Variantendiskussion
-- Entscheid, Begründung des Lösungswegs
-- Detailkonzept mit techn. Plan
-- Diagramme. UML, Klassendiagramm, etc.
-- Testkonzept. Testarten (Unit, Integrations-Testing), Festlegung der
-  Testarten, Rahmenbed.
+\begin{itemize}
+\item Big Picture aufzeigen, Zusammenspiel erläutern
+\item Start der Variantendiskussion
+\item Entscheid, Begründung des Lösungswegs
+\item Detailkonzept mit techn. Plan
+\item Diagramme. UML, Klassendiagramm, etc.
+\item Testkonzept. Testarten (Unit, Integrations-Testing), Festlegung der
+Testarten, Rahmenbed.
+\end{itemize}
 
-*** Realisierung
+\subsubsection*{Realisierung}
+\label{sec:org5a3b2e4}
 
-- Open-Source Projekt als gesamtes Werk, leistet im Rahmen der DA wichtige
-  Vorarbeit
-- mit minimalen Funktionen (welche?) -> Backup, Restore, mount, delete, Archiv
-- Beweis der Funktion? wie? -> Testumgebung aufbauen, erläutern
-- Linux System Python Skript -> self extracting binary wird interpretieren
+\begin{itemize}
+\item Open-Source Projekt als gesamtes Werk, leistet im Rahmen der DA wichtige
+Vorarbeit
+\item mit minimalen Funktionen (welche?) -> Backup, Restore, mount, delete, Archiv
+\item Beweis der Funktion? wie? -> Testumgebung aufbauen, erläutern
+\item Linux System Python Skript -> self extracting binary wird interpretieren
+\end{itemize}
 
-*** Ausblick:
+\subsubsection*{Ausblick:}
+\label{sec:orga5f61a3}
 
-- kritische Würdigung, lessons learned
-- Verwendung im kommerziellen Umfeld
-- Bewertung der Risiken anhand der eigenen Lösung
+\begin{itemize}
+\item kritische Würdigung, lessons learned
+\item Verwendung im kommerziellen Umfeld
+\item Bewertung der Risiken anhand der eigenen Lösung
+\end{itemize}
 
-** Nächste Termine
+\subsection*{Nächste Termine}
+\label{sec:org00f1cab}
 
-Meeting #2: 26.01.2019 14:00
+Meeting \#2: 26.01.2019 14:00
 
-Meeting #3: Ende Feb. exakter Termin noch ausstehend.
+Meeting \#3: Ende Feb. exakter Termin noch ausstehend.
 
-** Pendent
+\subsection*{Pendent}
+\label{sec:org88ab40d}
 
-- roter Faden der Gesamtstruktur anhand Analyse und Synthese abgleichen
-- Grobstruktur trennen auf Analyse und Konzept, z.B. vor dem Start der
-  Variantendiskussion
-- zusätzlich Grundidee, Vision in der Einleitung
-- fiktive Situation im Rahmen der Analyse -> Ist Risikoanalyse zum Leben bringen
-- Überlegung, ob alle Ziele 1:1 den Anforderungen genügen, welche als
-  Voraussetzung fürs Testing dienen
-- möglicher Zugriff auf Datenablage
+\begin{itemize}
+\item roter Faden der Gesamtstruktur anhand Analyse und Synthese abgleichen
+\item Grobstruktur trennen auf Analyse und Konzept, z.B. vor dem Start der
+Variantendiskussion
+\item zusätzlich Grundidee, Vision in der Einleitung
+\item fiktive Situation im Rahmen der Analyse -> Ist Risikoanalyse zum Leben bringen
+\item Überlegung, ob alle Ziele 1:1 den Anforderungen genügen, welche als
+Voraussetzung fürs Testing dienen
+\item möglicher Zugriff auf Datenablage
+\end{itemize}
 
-** Doing
+\subsection*{Doing}
+\label{sec:orgb6455fc}
 
 Andreas erstellt folgende Lieferobjekte:
-- Besprechungsprotokoll mit Entscheidungen
-- Arbeitsjournal, wochengenau (einfaches Logbuch, z.B. Excel oder in Zeitplan
-  integriert, mit Bezug zur erstellten Projektplanung) -> Gitlog führen plus
-  erweitern (Planung, Ergebnis, Eindruck)
-- Projektplan mit Phasen, Milestones, Arbeitspaketen
-- Zeitplan mit Intensität als Tabelle oder Gantt (250h inkl. mögliche
-  Pufferzeit 50h), Einbau in Bericht
-- Festlegung der Systemgrenze, evtl. mit UML Werkzeugen (Bubble Charts)
-- messbare Muss- und Kannziele
-- Traktandenliste für nächstes Meeting erstellen
-- Risikoanalyse machen
-- Festlegung der Grobstruktur, in Bezug zum Projektantrag
+\begin{itemize}
+\item Besprechungsprotokoll mit Entscheidungen
+\item Arbeitsjournal, wochengenau (einfaches Logbuch, z.B. Excel oder in Zeitplan
+integriert, mit Bezug zur erstellten Projektplanung) -> Gitlog führen plus
+erweitern (Planung, Ergebnis, Eindruck)
+\item Projektplan mit Phasen, Milestones, Arbeitspaketen
+\item Zeitplan mit Intensität als Tabelle oder Gantt (250h inkl. mögliche
+Pufferzeit 50h), Einbau in Bericht
+\item Festlegung der Systemgrenze, evtl. mit UML Werkzeugen (Bubble Charts)
+\item messbare Muss- und Kannziele
+\item Traktandenliste für nächstes Meeting erstellen
+\item Risikoanalyse machen
+\item Festlegung der Grobstruktur, in Bezug zum Projektantrag
+\end{itemize}
 
-** Noch unvollständig
+\subsection*{Noch unvollständig}
+\label{sec:orgc7259b5}
 
 Nichts.
 
-** Persönlicher Eindruck von Marco Frei:
+\subsection*{Persönlicher Eindruck von Marco Frei:}
+\label{sec:orga54b0a7}
 
-- präzise Analyse
-- klare Ziele, Vorstellung
-- ausgezeichnet im Zeitplan
-- detaillierte Ergebnisse
-- aktuelle Ausgangssituation könnte präziser formuliert werden
-- Engineering Vorgehen verstärkt hervorheben
+\begin{itemize}
+\item präzise Analyse
+\item klare Ziele, Vorstellung
+\item ausgezeichnet im Zeitplan
+\item detaillierte Ergebnisse
+\item aktuelle Ausgangssituation könnte präziser formuliert werden
+\item Engineering Vorgehen verstärkt hervorheben
+\end{itemize}
 
 
 
-* Meeting vom 26.01.2019
+\section*{Meeting vom 26.01.2019}
+\label{sec:orgcd851ef}
 
 Protokoll der 2. Besprechung
 
@@ -161,7 +211,8 @@ Treffpunkt: IBZ Aarau
 
 Datum: 26.1.2019, 14:00 Uhr - 15:15 Uhr
 
-** Allgemeines
+\subsection*{Allgemeines}
+\label{sec:org1cc8060}
 
 Beobachtung: exakte Zeitplanung, auch Miteinbezug der eigenen Intensität
 (geplante Stunden Aufwand) pro Woche, Arbeitspakete verständlich,
@@ -170,7 +221,7 @@ Projektstrukturierung soweit detailliert -> erledigt
 ausgezeichnet im Zeitplan
 
 open source Projekt als gesamtes Werk, aktuelle Source Code Version auf
-github unter https://github.com/borg-qt/ -> erledigt
+github unter \url{https://github.com/borg-qt/} -> erledigt
 
 einige Kapitel des DA Antrags können 1:1 in die Doku oder allenfalls mit
 ergänzenden Resultaten aus der Analyse übernommen werden -> erledigt
@@ -194,7 +245,7 @@ Voraussetzung fürs Testing dienen > erledigt
 
 möglicher Zugriff auf Datenablage -> erledigt
 
-https://github.com/Nebucatnetzer/thesis
+\url{https://github.com/Nebucatnetzer/thesis}
 
 Besprechungsprotokoll mit Entscheidungen führen -> erledigt
 
@@ -221,9 +272,11 @@ erweitern (Planung, Ergebnis, Eindruck) -> doing
 Qualitätskontrolle und Controlling ansprechen (wichtiger Bestandteil der
 Bewertung) -> doing
 
-** Aufbau der Arbeit
+\subsection*{Aufbau der Arbeit}
+\label{sec:org9c6b87a}
 
-*** Initialisierung / Voranalyse:
+\subsubsection*{Initialisierung / Voranalyse:}
+\label{sec:org50b579a}
 
 Einleitung -> erledigt
 
@@ -245,7 +298,8 @@ nachträgliche Berücksichtigung weiterer möglicher Kannziele -> doing
 
 Projektcontrolling Soll-Ist (Zeit, Ressourcen, Kosten), Bewertung -> doing
 
-*** Analyse:
+\subsubsection*{Analyse:}
+\label{sec:orgeb0951a}
 
 SWAT (Stärken, Schwächen) -> erledigt
 
@@ -272,7 +326,8 @@ Ergebnjsse -> doing
 
 Festlegung der Systemgrenze, evtl. mit UML Werkzeugen -> nochmals prüfen
 
-*** Konzept:
+\subsubsection*{Konzept:}
+\label{sec:org758371d}
 
 Aktivitätsdiagramm gemacht -> erledigt
 
@@ -304,7 +359,8 @@ verwendete Module beschreiben, wird im Nachhinein abgebildet -> doing
 Konsistente Darstellung von Testfällen und deren Durchführung, auch in Bezug
 zu den Muss- und effektiv realisierten Kannzielen -> doing
 
-*** Realisierung:
+\subsubsection*{Realisierung:}
+\label{sec:org340ef25}
 
 Realisierung mit Linux System Python Skript und QT Framwork -> erledigt
 
@@ -334,7 +390,8 @@ läuft -> doing
 
 geplanter Abschluss der Programmierung 2. März -> doing
 
-*** Ausblick:
+\subsubsection*{Ausblick:}
+\label{sec:orge31e851}
 
 kritische Würdigung, lessons learned
 
@@ -345,15 +402,15 @@ Bewertung der Risiken anhand der eigenen Lösung -> Rückmeldung gegeben
 Projektabschluss mit Überprüfung der Ziele, anhand des DA Antrags resp.
 Pflichtenheftes
 
-** Nächstes Treffen
+\subsection*{Nächstes Treffen}
+\label{sec:org603308d}
 
 nächstes Treffen am 3.3, 14 Uhr in Olten
 
-noch unvollständig:
+noch unvollständig: nichts
 
-nichts
-
-* Meeting vom 02.03.2019
+\section*{Meeting vom 02.03.2019}
+\label{sec:orga10f177}
 
 Protokoll der 3. Besprechung
 
@@ -361,7 +418,8 @@ Treffpunkt: IBZ Aarau
 
 Datum: 26.1.2019, 14:00 Uhr - 15:00 Uhr
 
-** Ablauf
+\subsection*{Ablauf}
+\label{sec:orgf598b1e}
 
 Kurze Einleitung mit Smalltalk.
 Erkundigung nach Stand der Arbeit und Besprechung der noch offenen Punkte.
@@ -371,3 +429,8 @@ noch ein bisschen.
 
 Ansonsten soweit gut auf Kurs noch finalisieren und dann die digitale Abgabe
 wie beim ersten Meeting besprochen.
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
