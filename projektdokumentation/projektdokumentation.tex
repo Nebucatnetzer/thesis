@@ -30,6 +30,7 @@ Schule erstellt und steht unter der \gls{cc} BY-SA 4.0 \footcite{cc} Lizenz.
 Dadurch darf die Arbeit unter Beibehalten der Lizenz kopiert und
 weiterverarbeitet werden. Zusätzlich muss der Urheber genannt werden.
 
+\cleardoublepage
 \section{Initialisierung}
 \label{sec:orgdbad29f}
 \subsection{Vision}
@@ -203,8 +204,8 @@ und ist nicht unwichtig.
 Projektziele}
 \\
 \end{longtable}
-\newpage
 
+\newpage
 \subsection{Projektabgrenzung}
 \label{sec:org82d5209}
 
@@ -434,6 +435,7 @@ Projektrisiken}
 \\
 \end{longtable}
 
+\cleardoublepage
 \section{Analyse}
 \label{sec:org61eed6c}
 \subsection{SWOT-Analyse}
@@ -483,7 +485,6 @@ Entwickler jedoch offen sein. Der Quellcode wird bereits während der Arbeit
 Stakeholder Diagramm}
 \end{figure}
 
-\newpage
 \begin{landscape}
 \begin{table}[htbp]
 \centering
@@ -556,14 +557,14 @@ Risikobeschreibung}
 
 \end{table}
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=9cm]{pictures/istrisiko.pdf}
 \caption{\label{fig:org2c84d03}
 Grafische Darstellung der Ist-Risikoanalyse}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=9cm]{pictures/sollrisiko.pdf}
 \caption{\label{fig:org525577a}
@@ -571,7 +572,7 @@ Grafische Darstellung der Soll-Risikoanalyse}
 \end{figure}
 
 
-\begin{table}[H]
+\begin{table}
 \centering
 \begin{tabular}{l|l}
 \textbf{Bewertung} & \textbf{Beschreibung: Wahrscheinlichkeit (W)}\\
@@ -585,7 +586,7 @@ Risikobewertung Wahrscheinlichkeit}
 
 \end{table}
 
-\begin{table}[H]
+\begin{table}
 \centering
 \begin{tabular}{l|l}
 \textbf{Bewertung} & \textbf{Beschreibung: Auswirkung (A)}\\
@@ -599,7 +600,6 @@ Risikobewertung Auswirkung}
 
 \end{table}
 
-\newpage
 \subsection{Anforderungskatalog}
 \label{sec:org90be6e5}
 
@@ -631,17 +631,6 @@ Abhängigkeiten und Beziehungen dar."'\footcite{usecasediagramm}
 Das Anwendungsfalldiagramm für das \gls{borg} \gls{gui} ist in der Abbildung:
 (\ref{fig:org49a405a}) zu sehen.
 
-\newpage
-\begin{landscape}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.75\linewidth]{pictures/use_case.pdf}
-\caption{\label{fig:org49a405a}
-Anwendungsfalldiagramm}
-\end{figure}
-\end{landscape}
-\newpage
-
 \subsubsection{Use Cases Detailbeschreibung}
 \label{sec:org7eb46b4}
 
@@ -660,7 +649,16 @@ um den Ablauf verständlicher zu machen.
 Ein Aktivitätsdiagramm ist dabei ein hilfreiches UML Diagramm zum Erweitern von
 Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 
-\newpage
+\begin{landscape}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.75\linewidth]{pictures/use_case.pdf}
+\caption{\label{fig:org49a405a}
+Anwendungsfalldiagramm}
+\end{figure}
+\end{landscape}
+
+\
 \paragraph{Use Case 1.0 Backup erstellen}
 \label{sec:orgf1b47d8}
 
@@ -786,6 +784,7 @@ Use Case 2.0 Backup löschen}
 \caption{\label{fig:org288e5d3}
 Aktivitätsdiagramm zum Löschen eines Backups}
 \end{figure}
+
 \newpage
 \paragraph{Use Case 3.0 Backup wiederherstellen}
 \label{sec:org8be05c9}
@@ -852,6 +851,7 @@ Use Case 3.0 Backup wiederherstellen}
 \caption{\label{fig:org613ab2a}
 Aktivitätsdiagramm zum Wiederherstellen eines Backups}
 \end{figure}
+
 \newpage
 \paragraph{Use Case 4.0 Einzelne Datei wiederherstellen}
 \label{sec:org2c8981d}
@@ -909,12 +909,6 @@ Use Case 4.0 Einzelne Datei wiederherstellen}
 \end{longtable}
 }
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{pictures/activity_mount.pdf}
-\caption{\label{fig:orgbcf997e}
-Aktivitätsdiagramm für das spezifische Wiederherstellen einer Datei}
-\end{figure}
 \newpage
 \paragraph{Use Case 4.1 Backup mounten}
 \label{sec:org0eb4e4f}
@@ -974,7 +968,14 @@ Use Case 4.1 Backup mounten}
 \end{longtable}
 }
 
-\newpage
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{pictures/activity_mount.pdf}
+\caption{\label{fig:orgbcf997e}
+Aktivitätsdiagramm für das spezifische Wiederherstellen einer Datei}
+\end{figure}
+
+\cleardoublepage
 \paragraph{Use Case 5.0 Konfiguration ändern}
 \label{sec:org43cc091}
 
@@ -1041,6 +1042,7 @@ Use Case 5.0 Konfiguration ändern}
 \caption{\label{fig:orgec8a55e}
 Aktivitätsdiagramm zum Ändern von Einstellungen}
 \end{figure}
+
 \newpage
 \paragraph{Use Case 6.0 automatische Backups aktivieren}
 \label{sec:orgf4aa53a}
@@ -1105,8 +1107,8 @@ Use Case 6.0 automatische Backups aktivieren}
 \caption{\label{fig:orge73dce1}
 Aktivitätsdiagramm zum Aktivieren von automatischen Backups}
 \end{figure}
-\newpage
 
+\newpage
 \subsection{Benötigte Funktionalität von Borg}
 \label{sec:orgc8db247}
 
@@ -1125,6 +1127,7 @@ jeweiligen Funktion des \gls{gui} aufgelistet:
 
 Die detaillierte Implementation wird in der Sektion \hyperref[sec:orgb833f22]{Realisierung} beschrieben.
 
+\cleardoublepage
 \section{Konzept}
 \label{sec:org3462c4c}
 
@@ -1274,6 +1277,7 @@ Jedoch aufgrund des moderneren Unterbaus ist sie sicher schneller als C++.
 C\# Bewertungstabelle}
 
 \end{table}
+
 \newpage
 \paragraph{C++}
 \label{sec:orga42458f}
@@ -1421,6 +1425,7 @@ entwickeln kann, dies jedoch zulasten der Performance.
 Python Bewertungstabelle}
 
 \end{table}
+
 \newpage
 \subsubsection{Frontend}
 \label{sec:org296c098}
@@ -1488,6 +1493,7 @@ gross.
 Qt Bewertungstabelle}
 
 \end{table}
+
 \newpage
 \paragraph{Gtk}
 \label{sec:orgbac0846}
@@ -1507,12 +1513,6 @@ OS X können die Applikationen schnell etwas fremd wirken. Dies ist gut bei der
 Applikation Meld \footcite{meld} zu sehen, wenn man eine Datei auswählen möchte,
 Abbildung:(\ref{fig:org7ef2fd3}).
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=.7\linewidth]{pictures/meld.png}
-\caption{\label{fig:org7ef2fd3}
-Screenshot der Applikation Meld unter Windows 10}
-\end{figure}
 Die Gtk Dokumentation empfiehlt \footcite{gtk_setup}, dass man unter Microsoft
 Windows das Programm MSYS2 installiert, um Gtk einzurichten. Zum Programmieren
 an sich braucht es nicht zwingend weitere Tools aus einem Editor. Wie auch bei
@@ -1529,6 +1529,12 @@ wie bei Qt. Die Installation ist allerdings unter Windows eher das Gegenteil
 von einfach.
 
 Da die Kenntnisse gleich null sind, ist der Lernfaktor auf dem Maximum.
+\begin{figure}[H]
+\centering
+\includegraphics[width=.9\linewidth]{pictures/meld.png}
+\caption{\label{fig:org7ef2fd3}
+Screenshot der Applikation Meld unter Windows 10}
+\end{figure}
 
 \begin{table}[htbp]
 \centering
@@ -1552,6 +1558,7 @@ Da die Kenntnisse gleich null sind, ist der Lernfaktor auf dem Maximum.
 Gtk Bewertungstabelle}
 
 \end{table}
+
 \newpage
 \paragraph{Electron}
 \label{sec:org408db76}
@@ -1639,7 +1646,7 @@ Electron & 275\\
 Variantenbewertung Ergebnis}
 
 \end{table}
-
+\newpage
 \subsection{Applikationsname}
 \label{sec:orgef6c2a4}
 
@@ -1648,7 +1655,7 @@ die Applikation ableiten. Oftmals werden die grafischen Applikationen gleich
 benannt wie die Kommandozeilen Applikation aber mit dem Namen des \gls{gui}
 Frameworks als Suffix. Somit wird das zu erstellende \gls{gui} für \gls{borg} im
 weiteren Verlauf der Arbeit nun Borg-Qt genannt
-\newpage
+
 \subsection{Testing}
 \label{sec:orge549d43}
 
@@ -1680,7 +1687,7 @@ Der Pfad des \gls{borg} Repository für lokale Backups soll \texttt{/tmp/test-bo
 sein, in den Testfällen "`Lokales Repository"' genannt und das Passwort \texttt{foo}.
 Im Makefile des Repository wird dieses Setup definiert. Somit kann man als
 Entwickler nur \texttt{make init} ausführen und hat eine funktionsfähige Testumgebung.
-\newpage
+
 Um Backups über \gls{ssh} testen zu können, wird eine virtuelle Maschine mit Ubuntu
 18.04 verwendet. Die Konfiguration der virtuellen Maschine sieht dabei wie
 folgt aus:
@@ -1712,6 +1719,18 @@ Die Klassennamen, welche in fetter Schrift gehalten sind, wurden dabei vom
 Projektleiter erstellt. Die Klassennamen, welche kursiv sind, sind Klassen, welche
 entweder von Python oder Qt bereitgestellt werden.
 
+\newpage
+\begin{landscape}
+\label{sec:orgc41601b}
+\begin{figure}
+\centering
+\includegraphics[height=.8\textwidth]{pictures/class_diagramm.pdf}
+\caption{\label{fig:org7e6152c}
+Klassendiagramm der Borg-Qt Applikation}
+\end{figure}
+\end{landscape}
+
+\newpage
 \subsection{Usability-Studie}
 \label{sec:org4a36f83}
 
@@ -1755,7 +1774,7 @@ Usability-Studie Probanden}
 
 \end{table}
 
-\begin{table}[H]
+\begin{table}
 \centering
 \begin{tabular}{|l|l|}
 \hline
@@ -1916,6 +1935,7 @@ umbenannt. Somit zeigen die Buttons dann auch direkt, dass sie Dateien
 respektive Ordner ein-/ausschliessen. Ein paar der Probanden hatten es zuerst
 über den "`Remove"' Button versucht.
 
+\cleardoublepage
 \section{Realisierung}
 \label{sec:orgb833f22}
 \subsection{Cross-plattform Kompatibilität}
@@ -1994,7 +2014,7 @@ sich um ein freies Icon Theme unter der MIT Lizenz, welches die Icons als \gls{s
 Dateien bereitstellt. Dadurch können die Icons frei skalieren und
 funktionieren auch auf Geräten mit einer hohen Auflösung.
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=.9\linewidth]{pictures/borgqt_main_v1.png}
 \caption{\label{fig:org0896aa2}
@@ -2008,21 +2028,21 @@ der User die Ordner und Dateien auswählen, die er sichern will. Der dritte Tab
 "`Exclude"', Abbildung:(\ref{fig:org2f0384f}), gibt dem User die
 Möglichkeit einzelne Ordner oder Dateien von den Backups auszuschliessen.
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=.7\textwidth]{pictures/borgqt_settings_general_v1.png}
 \caption{\label{fig:org90add12}
 Screenshot der Borg-Qt "`General"' Einstellungen Version 1}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=.7\textwidth]{pictures/borgqt_settings_include_v1.png}
 \caption{\label{fig:org197b06d}
 Screenshot der Borg-Qt "`Include"' Einstellungen Version 1}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=.7\textwidth]{pictures/borgqt_settings_exclude_v1.png}
 \caption{\label{fig:org2f0384f}
@@ -2034,7 +2054,7 @@ User einen Fortschrittsbalken und einen "`Cancel"' Button zum Abbrechen der
 Aktion an. Das Fenster ist generisch gehalten, damit es von verschiedenen Tasks
 gleichermassen genutzt werden kann.
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=.6\textwidth]{pictures/borgqt_progress_v1.png}
 \caption{\label{fig:org54f4a2c}
@@ -2114,7 +2134,14 @@ vorgegeben Pfad \texttt{\textasciitilde{}/.config/borg\_qt/borg\_qt.conf} oder d
 Binary, gibt die Applikation eine entsprechende Meldung,
 Abbildung:(\ref{fig:orgb4e2c3c}), aus. Der Hauptpfad unter
 \texttt{\textasciitilde{}/.config/borg\_qt/borg\_qt.conf} wird dabei gemäss dem Ziel Nr. 21 über die
-Umgebungsvariable \texttt{HOME} zusammengesetzt
+Umgebungsvariable \texttt{HOME} zusammengesetzt.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.3\textwidth]{pictures/borgqt_missing_config.png}
+\caption{\label{fig:orgb4e2c3c}
+Screenshot der Borg-Qt Fehlermeldung bei fehlender Konfigurationsdatei.}
+\end{figure}
 
 \begin{sexylisting}[label=org9b19969]{Methode zum Suchen der Konfigurationsdatei}
 # borg_qt/config.py
@@ -2131,14 +2158,6 @@ def _get_path(self):
     else:
         raise BorgException("Configuration file not found!")
 \end{sexylisting}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=.3\textwidth]{pictures/borgqt_missing_config.png}
-\caption{\label{fig:orgb4e2c3c}
-Screenshot der Borg-Qt Fehlermeldung bei fehlender Konfigurationsdatei.}
-\end{figure}
-
 \subsubsection{Frontend}
 \label{sec:org783aac8}
 
@@ -2175,6 +2194,7 @@ self.config['borgqt']['includes'] = json.dumps(includes,
                                                sort_keys=True)
 \end{sexylisting}
 
+\newpage
 \subsection{Borg Interface}
 \label{sec:org06b15d6}
 
@@ -2205,7 +2225,7 @@ Parameter \texttt{-{}-log-json} und \texttt{-{}-json} mitgeben. Der erste Parame
 hauptsächlich das Format von Errormeldungen und der zweite formatiert dann die
 finale Ausgabe. Die Ausgaben werden jeweils an Variablen weitergegeben
 (\texttt{json\_output} und \texttt{json\_error}) welche im weiteren Code verarbeitet werden.
-
+\newpage
 Insbesondere \texttt{json\_error} ist für den weiteren Programmablauf von grosser
 Wichtigkeit. Wenn Borg ein Problem feststellt, wird die Error Meldung von
 \gls{borg} an \texttt{json\_error} weitergegeben. Mittels der Methode im
@@ -2240,6 +2260,7 @@ geschrieben werden, welche dann von \texttt{BorgQtThread} die Funktionen erbt. D
 Funktionsklassen müssen dann jeweils nur die Methode
 \texttt{self.create\_command(self)} implementieren, welche das Property \texttt{self.command}
 erstellt und die einfachen Funktionen von \gls{borg} sollten direkt funktionieren.
+
 \newpage
 \subsection{Backup}
 \label{sec:org89c69ff}
@@ -2251,26 +2272,28 @@ vonstattengehen.
 \subsubsection{Backend}
 \label{sec:orgf0c2da8}
 
-Um Backups erstellen zu können, wurde die Klasse \texttt{BackupThread} erstellt, welche
-von \texttt{BorgQtThread} erbt. Die Klasse \texttt{BackupThread} nimmt beim instantiieren 3
-Argumente auf: \texttt{includes}, \texttt{excludes}, \texttt{prefix}. Wobei \texttt{excludes} und \texttt{prefix}
-beide optional sind. Im Hauptcode werden diese Argumente aus der
-Konfigurationsdatei ausgelesen und übergeben. Die Includes werden im Falle
-eines Backups im Hintergrund aus der Konfigurationsdatei gelesen. Wenn es
+Um Backups erstellen zu können, wurde die Klasse \texttt{BackupThread}
+erstellt, welche von \texttt{BorgQtThread} erbt. Die Klasse
+\texttt{BackupThread} nimmt beim instantiieren 3 Argumente auf:
+\texttt{includes}, \texttt{excludes}, \texttt{prefix}. Wobei \texttt{excludes}
+und \texttt{prefix} beide optional sind. Im Hauptcode werden diese Argumente
+aus der Konfigurationsdatei ausgelesen und übergeben. Die Includes werden im
+Falle eines Backups im Hintergrund aus der Konfigurationsdatei gelesen. Wenn es
 der User manuell ausführt, wird der im Frontend ausgewählte Pfad mitgegeben.
 
-Die "`Excludes"' haben lange nicht funktioniert. Der Grund dafür waren zusätzliche
-Anführungszeichen um die Exclude Pfade. Diese wurden aus Versehen hinzugefügt,
-da \gls{borg} normalerweise auf der Kommandozeile ausgeführt wird und die
-Anführungszeichen dort notwendig sind, um allfällige Leer- oder Sonderzeichen
-abzufangen. Es wurde davon ausgegangen, dass das \texttt{subprocess} Modul ähnlich
-funktioniert wie die Kommandozeile. Da man an das Modul direkt einen String
-übergibt, sind die zusätzlichen Anführungszeichen nicht notwendig und führen
-sogar dazu, dass die Pfade gar nicht funktionieren. Somit werden die "`Excludes"'
-mittels der Methode \texttt{\_process\_excludes} mit dem entsprechenden Parameter
-gepaart und als gesamte Liste an das finale Kommando angehängt. Die "`Includes"'
-funktionieren auf die gleiche Weise, benötigen jedoch keine zusätzlichen
-Parameter. Zu sehen ist dies im Codesnippet:(\ref{org73b9775}).
+Die "`Excludes"' haben lange nicht funktioniert. Der Grund dafür waren
+zusätzliche Anführungszeichen um die Exclude Pfade. Diese wurden aus Versehen
+hinzugefügt, da \gls{borg} normalerweise auf der Kommandozeile ausgeführt wird
+und die Anführungszeichen dort notwendig sind, um allfällige Leer- oder
+Sonderzeichen abzufangen. Es wurde davon ausgegangen, dass das
+\texttt{subprocess} Modul ähnlich funktioniert wie die Kommandozeile. Da man an
+das Modul direkt einen String übergibt, sind die zusätzlichen Anführungszeichen
+nicht notwendig und führen sogar dazu, dass die Pfade gar nicht funktionieren.\newpage
+Somit werden die "`Excludes"' mittels der Methode \texttt{\_process\_excludes}
+mit dem entsprechenden Parameter gepaart und als gesamte Liste an das finale
+Kommando angehängt. Die "`Includes"' funktionieren auf die gleiche Weise,
+benötigen jedoch keine zusätzlichen Parameter. Zu sehen ist dies im
+Codesnippet:(\ref{org73b9775}).
 
 \begin{sexylisting}[label=org73b9775]{Erstellen des "`borg create"' Kommandos fürs erstellen von Backups.}
 # borg_qt/borg_interface.py
@@ -2295,13 +2318,15 @@ def create_command(self):
         self.command.extend(self.excludes)
 \end{sexylisting}
 
+\newpage
 \subsubsection{Frontend}
 \label{sec:org148b087}
 
-Damit die Backups im Frontend funktionieren, musste zum einen der "`Backup"' Knopf
-mit der Methode \texttt{create\_backup} verknüpft werden. Des Weiteren wurde ein Dateibaum, in
-Abbildung:(\ref{fig:org6491a3c}) grün umrahmt, eingefügt. Dieser gibt den Pfad
-des angewählten Objektes and die \texttt{create\_backup} Methode weiter.
+Damit die Backups im Frontend funktionieren, musste zum einen der "`Backup"'
+Knopf mit der Methode \texttt{create\_backup} verknüpft werden. Des Weiteren
+wurde ein Dateibaum, in Abbildung:(\ref{fig:org6491a3c}) grün umrahmt,
+eingefügt. Dieser gibt den Pfad des angewählten Objektes and die
+\texttt{create\_backup} Methode weiter.
 
 \begin{figure}[htbp]
 \centering
@@ -2330,7 +2355,7 @@ sogar soweit kommen, dass das Zählen länger als das eigentliche Sichern dauert
 Aus diesem Grund wurde der Fortschrittsbalken mit Prozentanzeige durch einen
 sich wiederholenden Ladebalken ersetzt.
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=.4\paperwidth]{pictures/borgqt_progress_v2.png}
 \caption{\label{fig:org52ca607}
@@ -2346,6 +2371,14 @@ bei \texttt{BackupThread} \gls{borg} über einen \texttt{subprocess} aufgerufen,
 respektive Statistik zurückzuerhalten Die \gls{json} Strings werden wieder auf
 die jeweilige Information geparst und die Archive in eine Python Liste, die
 Repository Statistik, in Zahlen umgewandelt.
+\newpage
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{pictures/borgqt_archive_list.png}
+\caption{\label{fig:org24ed7cf}
+Screenshot der aktualisierten Archivliste und Repository Statistik.}
+\end{figure}
 
 Da \gls{borg} die Repository Grössen in Bytes zurückgibt, sollten diese zur
 Anzeige noch in eine Menschen lesbarses Format umgerechnet werden. In Borg-Qt
@@ -2356,19 +2389,12 @@ Beim Durchführen der Usability-Studie wurde noch ein Bug entdeckt welcher die
 Anwendung zum Abstürzen brachte. Der Bug, der entdeckt wurde, tritt immer dann
 auf, wenn ein Archiv gemountet ist während man ein Archiv erstellen möchte.
 Dies ist jedoch offenbar eine Funktion die von \gls{borg} nicht unterstützt wird
-\footcite{borgmountissue}. \gls{borg} kann mehrere Archive gleichzeitig mounten.
+\footcite{borgmountissue}. \gls{borg} kann mehrere Archive gleichzeitig mounten.\newpage
 Der User müsste jedoch jedes der Archive zuerst wieder unmounten bevor er eine
 neue Datensicherung erstellen kann. Das Problem wurde dadurch gelöst, dass dem
 User ein Dialog angezeigt wird, über welchen er vor einer Datensicherung zuerst
 die gemounteten Archive aushängen kann. Anschliessend startet die
 Datensicherung, wie wenn kein Archiv gemountet gewesen wäre.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{pictures/borgqt_archive_list.png}
-\caption{\label{fig:org24ed7cf}
-Screenshot der aktualisierten Archivliste und Repository Statistik.}
-\end{figure}
 
 \subsection{Restore}
 \label{sec:org5c152c9}
@@ -2382,13 +2408,6 @@ Wird der "`Restore"' Knopf gedrückt ohne das ein Archiv angewählt wurde, ersch
 folgende Fehlermeldung, Abbildung:(\ref{fig:org40b5f27}), um den Benutzer
 darauf hinzuweisen, das er dies noch tun sollte.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=.2\paperwidth]{pictures/borgqt_no_archive_selected.png}
-\caption{\label{fig:org40b5f27}
-Screenshot der Fehlermeldung eines fehlenden Archivs während einem Restore.}
-\end{figure}
-
 Für die Wiederherstellung einer Datensicherung, selektiert der User das
 gewünschte Archiv. Als zweiten Schritt startet er den Prozess mit Klick auf
 "`Restore"'. Im sich automatisch öffnenden Dialogfenster, ist der gewünschte
@@ -2400,13 +2419,6 @@ wird abgebrochen. Nach der erfolgreichen Wiederherstellung öffnet die
 Applikation den Zielort in einem Dateimanager, damit der User gleich mit den
 Dateien weiterarbeiten kann.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=.2\paperwidth]{pictures/borgqt_not_writeable.png}
-\caption{\label{fig:org49c2dc3}
-Screenshot der Fehlermeldung wenn der Zielort nicht beschreibbar ist.}
-\end{figure}
-
 Gibt es, während dem Wiederherstellen, einen Fehler gibt die Anwendung den
 entsprechenden Fehler aus und löscht zusätzlich noch den zu Beginn erstellten
 Archiv Ordner.
@@ -2414,6 +2426,21 @@ Archiv Ordner.
 Wird das gleiche Archiv nochmal an den gleichen Zielort wiederhergestellt,
 werden bereits vorhandene Dateien überschrieben.
 
+\begin{figure}
+\centering
+\includegraphics[width=.2\paperwidth]{pictures/borgqt_no_archive_selected.png}
+\caption{\label{fig:org40b5f27}
+Screenshot der Fehlermeldung eines fehlenden Archivs während einem Restore.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=.2\paperwidth]{pictures/borgqt_not_writeable.png}
+\caption{\label{fig:org49c2dc3}
+Screenshot der Fehlermeldung wenn der Zielort nicht beschreibbar ist.}
+\end{figure}
+
+\newpage
 \subsection{Mount}
 \label{sec:orgb1a6a89}
 
@@ -2435,7 +2462,7 @@ geöffnet, damit der Benutzer direkt mit den Dateien weiterarbeiten kann. Wurde
 erkannt, dass das Archiv bereits gemountet wurde, also der Pfad nicht
 schreibbar ist, öffnet die Applikation direkt den Dateimanager, ohne zu
 versuchen das Archiv noch einmal zu mounten.
-
+\newpage
 Zusätzlich wird der Pfad jedes gemounteten Archivs in einer Liste gespeichert.
 Beim Beenden der Applikation iteriert die Applikation über jeden Pfad in der
 Liste unmountet das Archiv und löscht den Ordner. Somit befindet sich das
@@ -2511,18 +2538,20 @@ Dateiendung \texttt{.timer} . Der Inhalt ist auch wieder im INI Stil gehalten. S
 versteht eine Vielzahl an Datumsformaten \footcite{systemddate}. In Borg-Qt
 wurden zwei Varianten in den Einstellungen umgesetzt. Eine, welche "`Predefined
 Schedule"' genannt wurde und eine mit dem Namen "`Custom Schedule"', zu sehen in,
-Abbildung:(\ref{fig:orga59a60c}). Die Predefined Option wird dabei in die von Systemd
-unterstützten Formate "`hourly, daily, weekly und monthly"' übersetzt.
-Entsprechend der gewählten Wiederholung wird automatisch ein Archiv erstellt.
-Mit der Custom Option kann der Benutzer sich den Zeitplan individueller
-gestalten. Etwa "`jeden Mittwoch um 12:00 Uhr"' für Systemd übersetzt würde
-dieser Zeitplan dann so aussehen: \texttt{Wednesday *-*-* 12:00:00}. Für spätere
-Versionen von Borg-Qt wäre es allenfalls auch möglich die Auswahl von mehreren
-Wochentagen zu ermöglichen, damit der Benutzer etwa folgenden Zeitplan erstellen
-könnte "`Montag, Mittwoch, Freitag stündliche Backups."' (\texttt{Monday, Wednesday,
-Friday *-*-* *:00:00}).
+Abbildung:(\ref{fig:orga59a60c}).
 
-\begin{figure}[H]
+Die Predefined Option wird dabei in die von Systemd unterstützten Formate
+"`hourly, daily, weekly und monthly"' übersetzt. Entsprechend der gewählten
+Wiederholung wird automatisch ein Archiv erstellt. Mit der Custom Option kann
+der Benutzer sich den Zeitplan individueller gestalten. Etwa "`jeden Mittwoch
+um 12:00 Uhr"' für Systemd übersetzt würde dieser Zeitplan dann so aussehen:
+\texttt{Wednesday *-*-* 12:00:00}. Für spätere Versionen von Borg-Qt wäre es
+allenfalls auch möglich die Auswahl von mehreren Wochentagen zu ermöglichen,
+damit der Benutzer etwa folgenden Zeitplan erstellen könnte "`Montag, Mittwoch,
+Freitag stündliche Backups."' (\texttt{Monday, Wednesday, Friday *-*-*
+*:00:00}).
+
+\begin{figure}
 \centering
 \includegraphics[width=.9\linewidth]{pictures/borgqt_settings_schedule.png}
 \caption{\label{fig:orga59a60c}
@@ -2535,6 +2564,7 @@ geschrieben wird. Zum Schreiben und de-/aktivieren des Systemd Services,
 respektive Timers wurde eine Klasse \texttt{SystemdFile} erstellt. Somit könnte
 die Funktion auch einfach in einem anderen Projekt verwendet werden.
 
+\newpage
 Systemd benötigt zum Starten der Anwendung den absoluten Pfad in der Service
 Datei. Da davon ausgegangen werden kann, das Borg-Qt im \texttt{PATH} des Systems
 abgelegt wird, wurde das Unix Tool \texttt{which} verwendet, um den exakten Speicherort
@@ -2576,7 +2606,7 @@ Persistent = true
 [Install]
 WantedBy = timers.target
 \end{sexylisting}
-
+\newpage
 \subsection{GUI Anpassungen nach Usability-Studie}
 \label{sec:org7b2251d}
 
@@ -2595,20 +2625,6 @@ und zwei Labels hinzugefügt, nun wird klarer auf ihre Funktion hingewiesen,
 Abbildungen:(\ref{fig:org7af081d}) und
 (\ref{fig:org562e65a}).
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=.9\linewidth]{pictures/borgqt_settings_include_v2.png}
-\caption{\label{fig:org7af081d}
-Screenshot der Borg-Qt "`Include"' Einstellungen Version 2}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=.9\linewidth]{pictures/borgqt_settings_exclude_v2.png}
-\caption{\label{fig:org562e65a}
-Screenshot der Borg-Qt "`Exclude"' Einstellungen Version 2}
-\end{figure}
-
 Um die Funktionen der Applikation zur erklären wurde ein Hilfe Fenster,
 Abbildung:(\ref{fig:orgf44d24c}), eingebaut. Dieses wird dem Benutzer beim Start der
 Applikation angezeigt. Es gibt ihm einen kurzen Überblick welcher Button welche
@@ -2617,17 +2633,35 @@ der Benutzer entscheiden, dass er das Fenster beim nächsten Start nicht mehr
 angezeigt bekommen möchte. Über den Button "`Help"' kann das Fenster jederzeit
 unabhängig der Einstellungen wieder angezeigt werden.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=.95\linewidth]{pictures/borgqt_help.png}
-\caption{\label{fig:orgf44d24c}
-Screenshot des Borg-Qt Hilfe Fenster}
-\end{figure}
-
 Mit Fertigstellung der Anpassungen wurde die Realisierung erfolgreich
 abgeschlossen und die Entwicklung neuer Funktionen für den Zeitrahmen der
 Diplomarbeit gestoppt.
 
+\newpage
+\begin{figure}[H]
+\centering
+\includegraphics[height=.40\textheight]{pictures/borgqt_settings_include_v2.png}
+\caption{\label{fig:org7af081d}
+Screenshot der Borg-Qt "`Include"' Einstellungen Version 2}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=.40\textheight]{pictures/borgqt_settings_exclude_v2.png}
+\caption{\label{fig:org562e65a}
+Screenshot der Borg-Qt "`Exclude"' Einstellungen Version 2}
+\end{figure}
+
+\begin{landscape}
+\begin{figure}
+\centering
+\includegraphics[width=17cm]{pictures/borgqt_help.png}
+\caption{\label{fig:orgf44d24c}
+Screenshot des Borg-Qt Hilfe Fenster}
+\end{figure}
+\end{landscape}
+
+\newpage
 \subsection{Releases}
 \label{sec:org3adb3b3}
 
@@ -2659,7 +2693,7 @@ pyinstaller --hidden-import=PyQt5.sip \
     --add-data=borg_qt/static/UI:static/UI \
     -F borg_qt/borg_qt.py; \
 \end{sexylisting}
-
+\newpage
 Auf Github wird jeweils ein Release erstellt und dazu die passenden Binaries
 hochgeladen. Github packt dabei den Source Code beim Erstellen des Releases in
 ein Zip Archiv. Somit steht der exakte Source Code zu jedem Binary direkt zu
@@ -2677,6 +2711,7 @@ Funktionen noch nicht implementiert wurden. TC-18 ist zwar technisch bereits
 möglich wurde im \gls{gui} jedoch noch nicht umgesetzt. Die Resultate wurden in
 der Tabelle:(\ref{tab:org88fa4b9}) erfasst.
 
+\cleardoublepage
 \section{Ausblick/Fazit}
 \label{sec:org859a9c9}
 \subsection{Zielbewertung}
@@ -2771,7 +2806,6 @@ Bemerkung wird noch kurz ausgeführt, in welcher Form das Ziel bewiesen wurde.
 Bewertete Projektziele}
 \\
 \end{longtable}
-\newpage
 
 \subsubsection{Risikoanalyse der neuen Ist-Situation}
 \label{sec:orgc98cda5}
@@ -2784,14 +2818,14 @@ vergisst Backups zu machen) erheblich gesenkt werden. Somit hat die neue
 Ist-Situation, Abbildung:(\ref{fig:org47eb5a8}), eine bessere Risikobewertung
 als das geplante Soll-Risiko, Abbildung:(\ref{fig:sollgrau}).
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=7.2cm]{pictures/sollrisiko_grey.pdf}
 \caption{\label{fig:sollgrau}
 Risikoanalyse der Soll-Situation in grau}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=7.2cm]{pictures/ist_risiko_neu.pdf}
 \caption{\label{fig:org47eb5a8}
@@ -2910,6 +2944,7 @@ am Projekt mitzuarbeiten.
 Die Applikation wird aber auf jeden Fall vom Projektleiter produktiv eingesetzt,
 um seine sowie teilweise auch die Daten von Bekannten zu sichern.
 
+\cleardoublepage
 \section{Anhang}
 \label{sec:orga97ab9e}
 
@@ -3101,19 +3136,6 @@ Testfälle}
 \end{longtable}}
 \end{landscape}
 
-\newpage
-\begin{landscape}
-\subsection{Klassendiagramm}
-\label{sec:orgc41601b}
-\begin{figure}[H]
-\centering
-\includegraphics[height=.7\textwidth]{pictures/class_diagramm.pdf}
-\caption{\label{fig:org7e6152c}
-Klassendiagramm der Borg-Qt Applikation}
-\end{figure}
-\end{landscape}
-
-\newpage
 \begin{landscape}
 \subsection{Arbeitsjournal}
 \label{sec:orgbda3d36}
