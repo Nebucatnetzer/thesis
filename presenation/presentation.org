@@ -85,7 +85,7 @@ file:pictures/deduplication.png
 :BEAMER_col: 0.50
 :END:
 
-*Ist-Risiko nicht funktionaler Backups*
+*Ist-Risiko*
 1. <2-> Falsche Nutzung einer Kommandozeilen Applikation
 2. <3-> Backups ohne Verschlüsselung
 3. <4-> Falscher Speicherort
