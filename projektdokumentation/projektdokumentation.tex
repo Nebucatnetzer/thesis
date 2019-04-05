@@ -1,4 +1,3 @@
-
 \section{Über dieses Dokument}
 \label{sec:orgcce6e7f}
 
@@ -585,7 +584,6 @@ Grafische Darstellung der Soll-Risikoanalyse}
 Risikobewertung Wahrscheinlichkeit}
 
 \end{table}
-
 \begin{table}
 \centering
 \begin{tabular}{l|l}
@@ -656,9 +654,9 @@ Use Cases und zeigt einem gut die Zuständigkeiten der Aktoren auf.
 \caption{\label{fig:org49a405a}
 Anwendungsfalldiagramm}
 \end{figure}
+\afterpage{\blankpage}
 \end{landscape}
 
-\
 \paragraph{Use Case 1.0 Backup erstellen}
 \label{sec:orgf1b47d8}
 
@@ -853,142 +851,19 @@ Aktivitätsdiagramm zum Wiederherstellen eines Backups}
 \end{figure}
 
 \newpage
-\paragraph{Use Case 4.0 Einzelne Datei wiederherstellen}
-\label{sec:org2c8981d}
-
-{\footnotesize
-\begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}|}
-\hline
-\textbf{Identifier + Name} & 4.0 Einzelne Datei wiederherstellen\\
-\hline
-\endfirsthead
-\multicolumn{2}{l}{Fortsetzung von vorheriger Seite} \\
-\hline
-
-\textbf{Identifier + Name} & 4.0 Einzelne Datei wiederherstellen \\
-
-\hline
-\endhead
-\hline\multicolumn{2}{r}{Fortsetzung nächste Seite} \\
-\endfoot
-\endlastfoot
-\hline
-\textbf{Description} & Das spezifische Wiederherstellen von einer oder mehreren Dateien.\\
-\hline
-\textbf{Actors} & User\\
-\hline
-\textbf{Status} & Freigegeben\\
-\hline
-\textbf{Includes} & Use Case 4.1\\
-\hline
-\textbf{Trigger} & Daten sollen wieder hergestellt werden.\\
-\hline
-\textbf{Preconditions} & Use Case 1.0 wurde ausgeführt.\\
-\hline
-\textbf{Postconditions} & -\\
-\hline
-\textbf{Normal Flow} & 1. Ein Backup aus der Liste auswählen.\\
- & 2. Auf den Button "`Mount"' klicken.\\
- & 3. Use Case 4.1 wird ausgeführt.\\
- & 4. Ein Dateiexplorer öffnet sich mit dem ausgewählt Pfad und enthält die Dateien aus dem Backup.\\
- & 5. Wird die Applikation geschlossen wird das Backup ausgehängt.\\
-\hline
-\textbf{Alternative Flow} & -\\
-\hline
-\textbf{Notes} & -\\
-\hline
-\textbf{UC History} & 1.0 Draft erstellt durch AZ\\
-\hline
-\textbf{Author} & A. Zweili\\
-\hline
-\textbf{Date} & 30.12.2018\\
-\hline
-\caption{\label{tab:org79c987d}
-Use Case 4.0 Einzelne Datei wiederherstellen}
-\\
-\end{longtable}
-}
-
-\newpage
-\paragraph{Use Case 4.1 Backup mounten}
-\label{sec:org0eb4e4f}
-
-{\footnotesize
-\begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}|}
-\hline
-\textbf{Identifier + Name} & 4.1 Backup mounten\\
-\hline
-\endfirsthead
-\multicolumn{2}{l}{Fortsetzung von vorheriger Seite} \\
-\hline
-
-\textbf{Identifier + Name} & 4.1 Backup mounten \\
-
-\hline
-\endhead
-\hline\multicolumn{2}{r}{Fortsetzung nächste Seite} \\
-\endfoot
-\endlastfoot
-\hline
-\textbf{Description} & Ein Backup wird als \gls{fuse} gemountet.\\
-\hline
-\textbf{Actors} & Borg GUI, \gls{borg}\\
-\hline
-\textbf{Status} & Freigegeben\\
-\hline
-\textbf{Includes} & -\\
-\hline
-\textbf{Trigger} & Das Borg GUI gibt an \gls{borg} den Input zum mounten weiter.\\
-\hline
-\textbf{Preconditions} & Use Case 1.0 wurde ausgeführt.\\
-\hline
-\textbf{Postconditions} & Das Backup wurde gemountet.\\
-\hline
-\textbf{Normal Flow} & 1. Borg GUI sammelt die Backup ID in Use Case 4.0.\\
- & 2. Borg GUI übergibt die Backup ID an \gls{borg} zusammen mit einem Zielpfad.\\
- & 3. \gls{borg} hängt das Backup als \gls{fuse} Laufwerk am Zielpfad ein.\\
- & 4. \gls{borg} meldet Erfolg an Borg GUI.\\
-\hline
-\textbf{Alternative Flow} & 1. Borg GUI sammelt die Backup ID in Use Case 4.0.\\
- & 2. Borg GUI übergibt die Backup ID an \gls{borg} zusammen mit einem Zielpfad.\\
- & 3. \gls{borg} hängt das Backup als \gls{fuse} Laufwerk am Zielpfad ein.\\
- & 4. \gls{borg} meldet einen Fehler an Borg GUI.\\
-\hline
-\textbf{Notes} & -\\
-\hline
-\textbf{UC History} & 1.0 Draft erstellt durch AZ\\
-\hline
-\textbf{Author} & A. Zweili\\
-\hline
-\textbf{Date} & 30.12.2018\\
-\hline
-\caption{\label{tab:org4e10c56}
-Use Case 4.1 Backup mounten}
-\\
-\end{longtable}
-}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{pictures/activity_mount.pdf}
-\caption{\label{fig:orgbcf997e}
-Aktivitätsdiagramm für das spezifische Wiederherstellen einer Datei}
-\end{figure}
-
-\cleardoublepage
-\paragraph{Use Case 5.0 Konfiguration ändern}
+\paragraph{Use Case 4.0 Konfiguration ändern}
 \label{sec:org43cc091}
 
 {\footnotesize
 \begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}|}
 \hline
-\textbf{Identifier + Name} & 5.0 Konfiguration ändern\\
+\textbf{Identifier + Name} & 4.0 Konfiguration ändern\\
 \hline
 \endfirsthead
 \multicolumn{2}{l}{Fortsetzung von vorheriger Seite} \\
 \hline
 
-\textbf{Identifier + Name} & 5.0 Konfiguration ändern \\
+\textbf{Identifier + Name} & 4.0 Konfiguration ändern \\
 
 \hline
 \endhead
@@ -1031,7 +906,7 @@ Aktivitätsdiagramm für das spezifische Wiederherstellen einer Datei}
 \textbf{Date} & 30.12.2018\\
 \hline
 \caption{\label{tab:org6501146}
-Use Case 5.0 Konfiguration ändern}
+Use Case 4.0 Konfiguration ändern}
 \\
 \end{longtable}
 }
@@ -1044,19 +919,19 @@ Aktivitätsdiagramm zum Ändern von Einstellungen}
 \end{figure}
 
 \newpage
-\paragraph{Use Case 6.0 automatische Backups aktivieren}
+\paragraph{Use Case 5.0 automatische Backups aktivieren}
 \label{sec:orgf4aa53a}
 
 {\footnotesize
 \begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}|}
 \hline
-\textbf{Identifier + Name} & 6.0 automatische Backups aktivieren\\
+\textbf{Identifier + Name} & 5.0 automatische Backups aktivieren\\
 \hline
 \endfirsthead
 \multicolumn{2}{l}{Fortsetzung von vorheriger Seite} \\
 \hline
 
-\textbf{Identifier + Name} & 6.0 automatische Backups aktivieren \\
+\textbf{Identifier + Name} & 5.0 automatische Backups aktivieren \\
 
 \hline
 \endhead
@@ -1096,7 +971,7 @@ Aktivitätsdiagramm zum Ändern von Einstellungen}
 \textbf{Date} & 30.12.2018\\
 \hline
 \caption{\label{tab:orgc962647}
-Use Case 6.0 automatische Backups aktivieren}
+Use Case 5.0 automatische Backups aktivieren}
 \\
 \end{longtable}
 }
@@ -1107,6 +982,128 @@ Use Case 6.0 automatische Backups aktivieren}
 \caption{\label{fig:orge73dce1}
 Aktivitätsdiagramm zum Aktivieren von automatischen Backups}
 \end{figure}
+\newpage
+\paragraph{Use Case 6.0 Einzelne Datei wiederherstellen}
+\label{sec:org2c8981d}
+
+{\footnotesize
+\begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}|}
+\hline
+\textbf{Identifier + Name} & 6.0 Einzelne Datei wiederherstellen\\
+\hline
+\endfirsthead
+\multicolumn{2}{l}{Fortsetzung von vorheriger Seite} \\
+\hline
+
+\textbf{Identifier + Name} & 6.0 Einzelne Datei wiederherstellen \\
+
+\hline
+\endhead
+\hline\multicolumn{2}{r}{Fortsetzung nächste Seite} \\
+\endfoot
+\endlastfoot
+\hline
+\textbf{Description} & Das spezifische Wiederherstellen von einer oder mehreren Dateien.\\
+\hline
+\textbf{Actors} & User\\
+\hline
+\textbf{Status} & Freigegeben\\
+\hline
+\textbf{Includes} & Use Case 6.1\\
+\hline
+\textbf{Trigger} & Daten sollen wieder hergestellt werden.\\
+\hline
+\textbf{Preconditions} & Use Case 1.0 wurde ausgeführt.\\
+\hline
+\textbf{Postconditions} & -\\
+\hline
+\textbf{Normal Flow} & 1. Ein Backup aus der Liste auswählen.\\
+ & 2. Auf den Button "`Mount"' klicken.\\
+ & 3. Use Case 6.1 wird ausgeführt.\\
+ & 4. Ein Dateiexplorer öffnet sich mit dem ausgewählt Pfad und enthält die Dateien aus dem Backup.\\
+ & 5. Wird die Applikation geschlossen wird das Backup ausgehängt.\\
+\hline
+\textbf{Alternative Flow} & -\\
+\hline
+\textbf{Notes} & -\\
+\hline
+\textbf{UC History} & 1.0 Draft erstellt durch AZ\\
+\hline
+\textbf{Author} & A. Zweili\\
+\hline
+\textbf{Date} & 30.12.2018\\
+\hline
+\caption{\label{tab:org79c987d}
+Use Case 6.0 Einzelne Datei wiederherstellen}
+\\
+\end{longtable}
+}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{pictures/activity_mount.pdf}
+\caption{\label{fig:orgbcf997e}
+Aktivitätsdiagramm für das spezifische Wiederherstellen einer Datei}
+\end{figure}
+
+\newpage
+\paragraph{Use Case 6.1 Backup mounten}
+\label{sec:org0eb4e4f}
+
+{\footnotesize
+\begin{longtable}{|>{\columncolor[HTML]{EFEFEF}}p{.235\textwidth}|p{.7\textwidth}|}
+\hline
+\textbf{Identifier + Name} & 6.1 Backup mounten\\
+\hline
+\endfirsthead
+\multicolumn{2}{l}{Fortsetzung von vorheriger Seite} \\
+\hline
+
+\textbf{Identifier + Name} & 6.1 Backup mounten \\
+
+\hline
+\endhead
+\hline\multicolumn{2}{r}{Fortsetzung nächste Seite} \\
+\endfoot
+\endlastfoot
+\hline
+\textbf{Description} & Ein Backup wird als \gls{fuse} gemountet.\\
+\hline
+\textbf{Actors} & Borg GUI, \gls{borg}\\
+\hline
+\textbf{Status} & Freigegeben\\
+\hline
+\textbf{Includes} & -\\
+\hline
+\textbf{Trigger} & Das Borg GUI gibt an \gls{borg} den Input zum mounten weiter.\\
+\hline
+\textbf{Preconditions} & Use Case 1.0 wurde ausgeführt.\\
+\hline
+\textbf{Postconditions} & Das Backup wurde gemountet.\\
+\hline
+\textbf{Normal Flow} & 1. Borg GUI sammelt die Backup ID in Use Case 6.0.\\
+ & 2. Borg GUI übergibt die Backup ID an \gls{borg} zusammen mit einem Zielpfad.\\
+ & 3. \gls{borg} hängt das Backup als \gls{fuse} Laufwerk am Zielpfad ein.\\
+ & 4. \gls{borg} meldet Erfolg an Borg GUI.\\
+\hline
+\textbf{Alternative Flow} & 1. Borg GUI sammelt die Backup ID in Use Case 6.0.\\
+ & 2. Borg GUI übergibt die Backup ID an \gls{borg} zusammen mit einem Zielpfad.\\
+ & 3. \gls{borg} hängt das Backup als \gls{fuse} Laufwerk am Zielpfad ein.\\
+ & 4. \gls{borg} meldet einen Fehler an Borg GUI.\\
+\hline
+\textbf{Notes} & -\\
+\hline
+\textbf{UC History} & 1.0 Draft erstellt durch AZ\\
+\hline
+\textbf{Author} & A. Zweili\\
+\hline
+\textbf{Date} & 30.12.2018\\
+\hline
+\caption{\label{tab:org4e10c56}
+Use Case 6.1 Backup mounten}
+\\
+\end{longtable}
+}
 
 \newpage
 \subsection{Benötigte Funktionalität von Borg}

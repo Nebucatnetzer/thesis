@@ -33,7 +33,9 @@
 \makeatother
 
 %page dimensions
-\usepackage[a4paper,includeheadfoot, top=2.5cm, bottom=2.5cm, left=3.5cm, right=3cm]{geometry}
+\usepackage[paperwidth=216mm,paperheight=303mm,includeheadfoot, top=2.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
+\geometry{bindingoffset=0.5cm}
+\setlength{\marginparwidth}{0pt}
 
 %Font settings
 \usepackage{tgpagella}
@@ -156,7 +158,9 @@
   {}%
 }
 \usepackage{emptypage}
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-master: "main"
-%%% End:
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \newpage}
